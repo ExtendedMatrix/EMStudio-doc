@@ -7,7 +7,7 @@ copyright = '2026, Emanuel Demetrescu'
 author = 'Emanuel Demetrescu'
 
 release = '1.6'
-version = '1.6.0'
+version = '1.6.0-dev.10'  # deve seguire frontend/package.json di EMStudio
 
 # -- General configuration
 
