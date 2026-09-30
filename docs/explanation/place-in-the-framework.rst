@@ -13,6 +13,42 @@ the EM language. Because they share it, they speak the same EM: EMStudio, the Bl
 tools, Heriverse and the others all read the same nodes, edges and datamodel. A
 change to the language happens once, in the library, and propagates.
 
+How the change reaches EMStudio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+"Propagates" is a step someone runs. The frontend is a browser application and
+cannot import the Python library, so it keeps a **vendored copy** of the datamodel
+in ``frontend/src/assets/``:
+
+- the datamodel files (``s3Dgraphy_node_datamodel.json``,
+  ``s3Dgraphy_connections_datamodel.json``, ``em_qualia_types.json``);
+- the visual rules and the generated class registry (``em_visual_rules.json``,
+  ``node_registry.generated.json``);
+- the translations (``datamodel_translations.json``);
+- the 2D icons and DTC glyphs.
+
+After a datamodel change in s3Dgraphy, refresh the copy from the EMStudio
+repository, then review and commit the diff:
+
+.. code-block:: bash
+
+   ./em.sh sync                              # auto-detect s3Dgraphy
+   frontend/scripts/sync-datamodels.sh       # the same script, called directly
+
+Never edit the copies by hand. The script also writes the visual rules for the
+Rust core (``crates/em-core/assets/em_visual_rules.core.json``, without the glyph
+paths), and ``cargo test -p em-core --test visual_rules_core`` checks that the two
+copies agree. From the s3Dgraphy side, ``python -m s3dgraphy.tools.consumer_drift
+--check`` fails when EMStudio's connections datamodel is behind the library.
+
+EMStudio's Python sidecar does not use the vendored copy. It installs s3dgraphy
+at the version pinned in ``tools/requirements.txt``, so it moves only when that
+pin moves.
+
+The whole chain, from the datamodel JSON to every tool, is documented once in the
+s3Dgraphy manual: `Datamodel propagation
+<https://docs.extendedmatrix.org/projects/s3dgraphy/en/v1.6/DATAMODEL_PROPAGATION.html>`__.
+
 Connectors: one contract, many tools
 ------------------------------------
 
