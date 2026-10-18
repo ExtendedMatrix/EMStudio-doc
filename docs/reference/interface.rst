@@ -26,11 +26,11 @@ Documentation
 
 Where material comes in. The default arrangement is a **Storage** window in
 Filesystem mode (the disk, fenced to allowed folders), a second **Storage** window
-in MinIO mode (the room's object store), and the **Inspector**.
+in S3 mode (the room's object store), and the **Inspector**.
 
 .. image:: ../_static/interface/01_documentation.jpg
    :width: 100%
-   :alt: The Documentation tab — filesystem Storage, MinIO Storage, and the Inspector
+   :alt: The Documentation tab — filesystem Storage, S3 Storage, and the Inspector
 
 The object store belongs to a *room*: in Standalone there is nothing to publish to,
 so it explains itself rather than showing an empty box.
