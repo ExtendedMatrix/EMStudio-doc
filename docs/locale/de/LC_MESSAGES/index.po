@@ -34,7 +34,7 @@ msgstr ""
 
 msgid ""
 "EMStudio is a component of the `Extended Matrix Framework "
-"<https://www.extendedmatrix.org/discover/emf>`_, an Open Source and Open "
+"<https://extendedmatrix.org/about/>`_, an Open Source and Open "
 "Science project developed to manage, visualize, represent and share the "
 "data and paradata associated with the documentation and the "
 "reconstruction of an archaeological context, an object, or a collection. "

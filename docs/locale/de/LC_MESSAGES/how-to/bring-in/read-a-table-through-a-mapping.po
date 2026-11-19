@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-19 16:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -192,7 +192,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Where and how it enters"
+msgid "4 · Where and how it enters"
 msgstr "Wo und wie sie hineinkommt"
 
 msgid ""
