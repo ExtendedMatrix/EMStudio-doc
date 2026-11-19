@@ -66,8 +66,9 @@ Installed plugins can add further formats to this menu.
 Every file is a **snapshot** of the narrative and carries its embeds as real
 figures, drawn by EMStudio itself: a matrix as a slice of the same Matrix you see
 on the canvas, a map as its vector layer (marker, footprint, north arrow,
-coordinates, scale) without the background tiles, and a timeline. A 3D embed stays
-a link, because 3D is navigated rather than printed. A query block is written as
+coordinates, scale) without the background tiles, and a timeline. A 3D embed with
+a saved framing becomes the still of that framing, and one without a saved
+framing stays a link, because 3D is navigated rather than printed. A query block is written as
 the text of its answer, with its date.
 
 The export keeps out what a person has not validated. The menu says how many

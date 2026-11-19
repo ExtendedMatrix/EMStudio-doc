@@ -16,7 +16,7 @@ A key acts on the part of the window that has the focus, and the tables are
 grouped the same way.
 
 - **Everywhere**: the keys of the whole application, such as saving, the
-  settings, **Where you are** and adding a node.
+  settings, the chip's menu at **Where you work** and adding a node.
 - **On the graph**: the keys of a Graph window (the matrix, the free graph, the
   DTC) and of the Outliner. They act on the canvas and on the Outliner, and leave
   a field you are typing in, or a focused button, alone.

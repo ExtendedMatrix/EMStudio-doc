@@ -16,8 +16,8 @@ system's menu bar; on the web, on Windows and on Linux it is in the **Help** men
 
 The dialog has six tabs: **General**, **Identity**, **Connections**,
 **Viewers**, **Advanced** and **Add-ons**. The dialog reopens on the tab you last
-used. Some commands open it directly on the section they need: the AI button of
-the narrative opens **AI provider**, an author's **Edit** opens **Identity**.
+used. Some commands open it directly on the section they need: asking the
+narrative for a draft before an AI is set up opens **AI provider**, an author's **Edit** opens **Identity**.
 **Save** applies the changes, **Cancel** leaves everything as it was.
 
 General

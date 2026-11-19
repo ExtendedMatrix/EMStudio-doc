@@ -439,7 +439,7 @@ Window (macOS menu bar)
 Mode
 ----
 
-The mode, the node and the room are no longer a menu of the top bar: their one place is **Where you are**, the left label of the status bar (:kbd:`⇧⌘L`). The buttons below stay in the page, hidden, and that panel uses them; their labels and tooltips are these.
+The mode, the node and the room are no longer a menu of the top bar: their one place is the section **Where you work** of the chip's menu, opened by the left label of the status bar (:kbd:`⇧⌘L`). The buttons below stay in the page, hidden, and that menu uses them; their labels and tooltips are these.
 
 .. list-table::
    :header-rows: 1

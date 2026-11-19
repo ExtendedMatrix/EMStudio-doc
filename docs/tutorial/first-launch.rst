@@ -17,7 +17,8 @@ Before you start
 
 You need EMStudio (see :doc:`get-emstudio`) and the file of the study, an
 ``.em.json``. On the web, the study is in a room of your node: enter it from
-**Where you are** and skip the first section.
+the chip's menu at the top right (see :doc:`/how-to/rooms/enter-and-share-a-room`)
+and skip the first section.
 
 Open the study
 --------------
@@ -138,7 +139,8 @@ The status bar
 At the bottom of the window, the status bar says where you are working. Its
 label on the left reads **On this computer** for a file of your disk, or the name
 of the room and of the node when you are in a room; click it (or press
-:kbd:`⇧⌘L`, :kbd:`Ctrl+Shift+L`) to open the panel **Where you are**.
+:kbd:`⇧⌘L`, :kbd:`Ctrl+Shift+L`) to open the chip's menu at the
+section **Where you work**.
 
 What next
 ---------

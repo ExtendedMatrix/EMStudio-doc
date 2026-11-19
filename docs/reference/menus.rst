@@ -45,13 +45,15 @@ names say it:
 - **EM legend** opens the legend of the shapes and lines of the Extended Matrix
   (see :doc:`em-legend`).
 
-Where you are: the mode, the node, the room
--------------------------------------------
+Where you work: the mode, the node, the room
+--------------------------------------------
 
 The way you are working (a file of this computer, a live link with another
 application, a room of a node) is not a menu of the bar. It has one place, the
-panel **Where you are**: click the label at the left of the status bar, or press
-:kbd:`⇧⌘L` (:kbd:`Ctrl+Shift+L`). Under **Mode** the panel offers three choices,
+section **Where you work** of the chip's menu, the chip at the top right of the
+window: click the label at the left of the status bar, or press :kbd:`⇧⌘L`
+(:kbd:`Ctrl+Shift+L`), and the menu opens at that section. Under **Mode** it
+offers three choices,
 which correspond to the three verbs of this manual (see
 :doc:`/explanation/open-enter-create`):
 
@@ -61,16 +63,17 @@ which correspond to the three verbs of this manual (see
   *Sidecar*;
 - **In a room**: a room you *enter* on a StratiGraph node.
 
-The panel also says which node is active and how you entered it, offers
-**Enter the room**, **Leave the room** and **Change room…**, and lists the
-applications that are synchronised. Inside a room, two more commands appear:
-**Open this room in…**, which opens the same room in the other editor, and
-**Share this room…**, which opens the node's page where the people of the room
-are managed.
+Under **Synchronised apps** the section lists the applications linked to
+EMStudio, with **Find** to look for EM Tools on this computer. Inside a room,
+under **Room**, it names the room and offers **Room settings…**, **Open on the
+node**, **Leave the room**, **Resources of the room…** and **Open this room
+in…**, which opens the same room in the other editor. The node, your account on
+it and your rooms are in the other sections of the same menu, **Node and
+account** and **My space** (see :doc:`/how-to/rooms/sign-in`).
 
-The table at the end of this page, **Mode**, lists the buttons that the panel
+The table at the end of this page, **Mode**, lists the buttons that the menu
 presses for these choices, with the names they carry in the code of the
-application (**Standalone**, **Sidecar (sync)**, **Join Room**). The panel shows
+application (**Standalone**, **Sidecar (sync)**, **Join Room**). The menu shows
 the three choices above in their place.
 
 .. include:: _generated/menus.rst

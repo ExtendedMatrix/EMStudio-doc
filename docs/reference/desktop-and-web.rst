@@ -79,19 +79,21 @@ saves by downloading. The table below lists every difference of version
        picker.
    * - **Print sheets…**
      - **Print…** opens the system's print dialog, which also makes the PDF
-       (**Save as PDF**). One PDF per sheet: a folder is asked once and every PDF
-       is written there.
-     - **Print…** prints the preview. The bridge makes the PDF when it can, and
-       one PDF per sheet is downloaded file by file.
+       (**Save as PDF**). **One PDF per sheet** needs a bridge that makes PDFs;
+       the installed application makes its PDF through the print dialog.
+     - **Print…** prints the preview through the browser's print dialog, which
+       also makes the single PDF. When the node makes PDFs, one PDF per sheet is
+       downloaded file by file.
    * - The title of the window
      - Shows the open file, with a dot when it has unsaved changes.
      - The browser's tab keeps its own title.
    * - **Open in a new window**
      - The window becomes a window of the system, kept above the main window.
      - The window becomes a separate browser window.
-   * - Signing in to a node (**Settings… ▸ Identity**)
+   * - Signing in to a node (the chip's menu, **Node and account**)
      - The sign-in runs in the system's browser and comes back to the
-       application. EMStudio asks to sign in only when you ask.
+       application; when it does not, the node's answer is pasted in **Paste
+       the node's answer**. EMStudio asks to sign in only when you ask.
      - The sign-in runs in the same page. EMStudio can renew it quietly.
    * - **Verify with ORCID**
      - The application goes straight to ORCID.
@@ -124,14 +126,17 @@ saves by downloading. The table below lists every difference of version
        change the profile by hand on both.
    * - **Extensions…** ▸ **Install from disk…**
      - From a .zip archive or from a folder.
-     - From a .zip archive.
+     - Served by a node, the window lists the packages that the node's
+       administrator installed; the page installs nothing.
    * - Repositories of extensions in a folder (for example on a NAS), and the
        development folder of a plugin
      - Chosen through the system's folder dialog.
      - These folders belong to the desktop application.
-   * - Plugin commands that read a file of this computer
+   * - Plugins of your own computer, and ``Tools ▸ Python console…``
      - Available.
-     - The command says that it needs EMStudio desktop.
+     - The plugins installed on the node, turned on for the room, run on the
+       node; plugins and the console of a computer belong to the desktop
+       application.
    * - **Check for updates…**
      - In **Help** on Windows and Linux, in the **EMStudio** menu on macOS.
        EMStudio compares its version with the published releases, and offers

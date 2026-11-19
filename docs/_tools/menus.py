@@ -240,9 +240,10 @@ def main():
     out.append(menu_table(menus['window'], en) + '\n')
     out.append(title('Mode'))
     out.append('The mode, the node and the room are no longer a menu of the top bar: their '
-               f'one place is **{rst_text(en["keys.where"])}**, the left label of the status bar '
+               f'one place is the section **{rst_text(en["who.sect.where"])}** of the chip\'s menu, '
+               f'opened by the left label of the status bar '
                f'({rst_kbd(next(r for r in keymap_rows(src) if r[0] == "where")[1])}). '
-               'The buttons below stay in the page, hidden, and that panel uses them; '
+               'The buttons below stay in the page, hidden, and that menu uses them; '
                'their labels and tooltips are these.\n\n')
     out.append(mode_table(page, en))
     write(a.out, ''.join(out))

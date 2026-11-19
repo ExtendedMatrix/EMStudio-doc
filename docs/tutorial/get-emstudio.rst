@@ -116,11 +116,12 @@ can be brought into a room of the node later (see
       Online, a study lives in a **room** of the node, where the people of
       the project work on it together. (The web version can also open an
       ``.em.json`` from your computer; it gives it back to you as a
-      download.) Open the address in the browser, then the panel **Where you are**
-      (the label at the left of the status bar, or :kbd:`⇧⌘L` on the Mac and
-      :kbd:`Ctrl+Shift+L` elsewhere). There you sign in to the node, with
-      **Enter with ORCID** or **Enter with the node's password**, and you
-      choose the room with **Choose the room…**.
+      download.) Open the address in the browser, then the chip at the top right of
+      the window. Its menu leads you through the steps: you declare who signs,
+      you sign in to the node with **Enter with ORCID** or **Enter with the
+      node's password**, and you choose the room in the section **My space**,
+      under **Rooms on this node** (see :doc:`/how-to/rooms/sign-in` and
+      :doc:`/how-to/rooms/enter-and-share-a-room`).
 
       A room can also open EMStudio by itself: on the node's own pages, the
       button that opens a room in EMStudio brings you to ``/em/studio/`` with
