@@ -3,7 +3,8 @@
 Blender and extensions
 ======================
 
-EM Tools in Blender, vocabularies, community packages and plugins.
+Work live with EM Tools in Blender, compose working .blend files from the graph,
+and extend EMStudio with vocabularies, community packages, plugins and Python.
 
 .. toctree::
    :maxdepth: 1

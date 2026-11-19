@@ -3,6 +3,86 @@
 Use the Python console
 ======================
 
-*Run Python against the open study.*
+*Run Python on the open study, with every change one step of undo and its code recorded.*
 
-.. TODO MAN04: write this page (map §3, how-to «Blender and extensions»).
+The **Python console** runs Python on the study open in EMStudio, through the
+``em`` library of s3Dgraphy, the same that EM Tools and the plugins use. It
+reads the graph, the selection and the vocabularies, and it writes through
+``em.write``: each write is one step of ``Edit ▸ Undo``, a line in the Log, and
+an act whose chain keeps the code that ran. The console is among the
+experimental functions, and a Python script has the powers of your user on this
+computer.
+
+Before you start
+----------------
+
+- Use the desktop application: the console works through its local service.
+- Turn on the experimental functions: ``Settings… ▸ Advanced``, section
+  **Experimental functions**, tick **Turn on the experimental functions on this
+  machine**, press **Save**, and reload EMStudio when it asks. Off, the console
+  and its command are not there.
+- Open a study. The console works on the open one; with none, it says so.
+
+Open the console
+----------------
+
+#. Choose ``Tools ▸ Python console…``. The window **Python console** opens; like
+   the other tool windows, it can float or be detached.
+#. Its head says **Python · em on «…»** with the name of the open study, and
+   **experimental**. The first line reminds you that ``em`` is imported, that
+   ``g`` is ``em.graph``, the graph shown, and that ``sel`` is the selection.
+
+Read the study
+--------------
+
+#. Select SU001 in the Matrix.
+#. In the field at the bottom, write ``sel`` and press :kbd:`Enter`. The console
+   prints, under your line, the list of the selected nodes (their identifiers):
+   ``sel`` is read again at every run.
+#. Press **Help** to print ``em.help()``: what ``em`` offers here.
+
+:kbd:`Enter` runs a complete line; for a block of several lines, end it with an
+empty line, or press :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run at once.
+:kbd:`Shift+Enter` starts a new line. :kbd:`Tab` completes a name.
+
+Write into the study
+--------------------
+
+A write is a block opened by ``em.write`` with a label. The label names the step
+in the Log and in ``Edit ▸ Undo``.
+
+.. code-block:: python
+
+   with em.write("Description of the selected unit") as tx:
+       tx.update(sel[0], "description", "Foundation of the colonnade")
+
+#. Before writing, press **Try** (:kbd:`⌘⇧Enter`, :kbd:`Ctrl+Shift+Enter`). The
+   same code runs with every write made a proof: the console shows, line by
+   line, what it would add or change, and that nothing was applied.
+#. Press **Run**. The console says **written** with the label, the number of
+   nodes, and that its code is in the chain of the act. The **Inspector** shows
+   the new description at once.
+#. ``Edit ▸ Undo`` takes the whole block back as one step.
+
+The history
+-----------
+
+:kbd:`↑` and :kbd:`↓` bring back the code you ran, also from earlier sessions:
+the history belongs to this computer. :kbd:`Ctrl+R` searches it; :kbd:`Enter`
+takes the line found and :kbd:`Esc` goes back. **Clear** (:kbd:`Ctrl+L`) empties
+the console's lines and keeps the history.
+
+What you get
+------------
+
+Python on the study, with the safety of the rest of EMStudio: every change one
+step of undo, a line in the Log, and an act that records the code that made it,
+so that a script's work can be read and checked like any other.
+
+See also
+--------
+
+- :doc:`install-packages-and-plugins`, for the plugins, and the development
+  folder for a plugin you are writing.
+- :doc:`/reference/settings`, section *Advanced*, for the experimental functions.
+- :doc:`/how-to/sources/declare-provenance`, to read the chain of an act.
