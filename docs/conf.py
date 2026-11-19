@@ -52,6 +52,12 @@ locale_dirs = ['locale/']
 gettext_compact = False                     # one catalogue per page
 gettext_uuid = False
 gettext_location = False                    # line numbers would churn the catalogue
+# The screenshots (docs/_tools/screenshots.mjs) are taken in each language of the
+# interface. English is the source, at the path the pages name
+# (_static/screens/<section>/<name>); a language's own picture sits in a folder
+# of its name beside it (_static/screens/<section>/<lang>/<name>) and is used
+# when present; otherwise the English one stays.
+figure_language_filename = '{path}{language}/{basename}{ext}'
 
 # -- Options for HTML output
 
