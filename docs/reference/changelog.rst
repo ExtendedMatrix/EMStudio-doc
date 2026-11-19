@@ -3,31 +3,230 @@
 Changelog
 =========
 
-.. TODO MAN05: the 1.6 told by themes, from CHANGELOG.md. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
-
-EMStudio is a fast-moving project; this manual tracks the **1.6** line.
-
-The authoritative, per-release list of changes lives with the software (the
-release notes on the EMStudio repository). This appendix records only the
-milestones a reader of the manual should know about.
+This manual follows the **1.6** line of EMStudio, and this version of the manual
+describes EMStudio 1.6.0-dev.136. The page tells what the 1.6 line has brought,
+grouped by theme rather than release by release. The complete list of changes,
+with the date and the reason of each one, is kept in the CHANGELOG file of the
+EMStudio repository. That file starts on 16 October 2026; the earlier work of the
+1.6 line is recorded in the history of the repository, and its main themes are
+summarised at the end of this page.
 
 1.6
 ---
 
-- The shell became a **windowing** environment: everything is a tileable window,
-  and the top tabs are **arrangements** of windows (Documentation · Graph · DTC ·
-  Comparisons · Narrative · Annotator), replacing the earlier "phases and views"
-  split.
-- The interface is **English by default**, with Italian selectable.
-- The **narrative** authoring surface matured: auto-scaffolding, AI-assisted drafts
-  with human validation, live embeds, and exports to HTML, Word, LaTeX and Jupyter
-  that carry their figures.
-- **Rooms** and the object store: shared editing (CRDT), per-asset rights that bite,
-  and the DTC provenance model.
-- The **connector** contract that lets other tools (Blender first) plug in as
-  Sidecar or Hub.
+Workspaces and windows
+~~~~~~~~~~~~~~~~~~~~~~
 
-.. note::
+The windows of every workspace now behave in the same way, so that what you learn
+in one window serves in all the others. The six workspaces are described in
+:doc:`/reference/workspaces` and the windows in :doc:`/reference/windows`.
 
-   Because the software moves faster than the printed page, where a screenshot in
-   this manual has fallen behind the interface, trust the text.
+- Every window has the same head, with its controls always in the same order. The
+  search field of a window stays in its head: you type into it directly, the
+  ``/`` key places the cursor in it, and Esc empties it.
+- One **Outliner** replaces the three lists of earlier versions. It shows the open
+  files and rooms, each with its graphs, and inside each graph its units,
+  documents, authors, epochs, models, proxies, GIS layers and paradata. You can
+  order it by epoch, alphabetically or by type.
+- The **Inspector** is divided into sections that open and close, and it
+  remembers which sections you keep open for each type of node. A search at its
+  top keeps only the fields that match.
+- The **Viewer** shows one node at a time and takes the place of the former
+  document window. The former Annotator workspace became part of **Sources**.
+- A single kind of help sign, the **?**, explains a control in the place where
+  you use it. Menus and context menus always open inside the window.
+
+Files, sources and projects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can keep several sources open side by side: a file opened from disk, a room
+you have entered, and a room read from a node for consultation only. One source at
+a time is active, and its colour marks the title bar. Between two sources EMStudio
+copies and never moves: **Copy the selection into…** brings a unit together with
+its paradata, its documents, its files and their rights, keeps their identifiers,
+and shows any difference before it applies the copy as one step of undo. The
+explanation of the three verbs is in :doc:`/explanation/open-enter-create`.
+
+- ``File ▸ Open Recent`` lists both the last files and the last rooms.
+- ``File ▸ Open project…``, ``File ▸ Reorder by the standard…`` and
+  ``File ▸ Close the project`` sit beside ``File ▸ New EM project…``. A project
+  is its folder, arranged by the standard tree of an EM project.
+- A dot beside the name of the file marks unsaved changes, and a click on the dot
+  saves.
+- A GraphML file is read once into a new em.json. The drawing details of yEd stay
+  out of the data, and only what EMStudio reads, such as the colour of an epoch,
+  is kept.
+- The date of a document lives in its own dating property, and the **Warnings**
+  sheet offers to move an older copy of the date there.
+
+Stratigraphy: the Matrix and the Graph
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The **Matrix** is laid out on exactly what it draws, so it is much more compact
+  than before, and the layout saved in the file stays as it was.
+- A group dropped in the **Matrix** stays where you put it, and the other nodes
+  make room around it. **Reorder the group** in its menu gives it back to the
+  automatic layout.
+- The **Graph** draws every node of the study, including those of the heritage
+  model (study, heritage entity, digital twin, project), which now have their own
+  glyphs. The view of the paradata of several graphs is called **Graphs
+  paradata**.
+- A unit, a model or a whole container can be moved to another epoch or extended
+  to a further one, from the keyboard (M and Alt+M), from the **Outliner**, from
+  the **Matrix** and from the tables. EMStudio shows the plan of the change before
+  it applies it.
+- The **Inspector** of every node shows which values are its own and which are
+  inherited, and from which node they come. An inherited value can be made the
+  node's own after a question. The limit of an epoch is never presented as the end
+  of a unit.
+- Between a property and a document there is always an extractor. When you link a
+  property to a document, EMStudio creates the extractor in between and asks for
+  its name and text.
+
+Sources: documents, images and readings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The **Viewer** shows a document whole: its file, its linked resources, the
+  regions read by its extractors, and its 3D models as a small scene. It loads the
+  lightest version first, and you choose a heavier version when you need it.
+- Every node shows a strip of thumbnails under its title. A click opens the image
+  viewer, where pictures can be assigned to units, gathered into groups with a
+  role, recorded as documents or placed in the **Space**.
+- The thumbnails come from a cache shared with EM Tools, so the same picture is
+  prepared only once on your computer.
+- On a 3D model you can take a spot height, an impost height, a bedding plane or a
+  line, and each reading becomes an extractor of the document. **Interpretation**
+  turns a reading into the source of a property.
+- A document named outside the series D.01, D.02… is pointed out, with a proposed
+  name and a renaming that keeps the old name on record.
+
+Space: 3D and GIS
+~~~~~~~~~~~~~~~~~
+
+The **Space** has become a place to work in, with the gestures of Blender.
+
+- The mouse, the trackpad and the numeric keypad move the view as they do in
+  Blender, and the **N** panel shows the 3D cursor, the transform of the selected
+  object and the lens.
+- A click selects the proxy under the pointer, Alt and a click select the model,
+  and a double click moves the centre of the view to the point.
+- The position, rotation and scale of a model or a proxy are kept in the data, and
+  the 3D file itself stays unchanged.
+- Proxies can be sketched from fifteen base shapes and then associated with a
+  unit.
+- **Visibility ▾** in the head of each 3D view is the one place to switch the
+  categories of the scene, with **Follow the Outliner** or a **Custom** choice.
+- The **Georeferencing** card edits the georeference of one graph at a time and
+  of each model: the coordinate system, found by its code or by its name, the
+  shift, the azimuth and, when two models of the Earth meet, the datum
+  transformation. One command applies the same values to all the graphs of the
+  file as a single step of undo.
+
+Archive: files, stamps and optimisation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The **Files** window is organised as in Blender: the places on the left (the
+  standard tree of the project, favourites, recent folders), the files in the
+  centre with search, filters and thumbnails, and four tabs of tools on the right:
+  **Stamp**, **Optimise**, **Room** and **Info**.
+- **Optimise** makes lighter variants of a model for the web, for mobile devices,
+  for Heriverse and ATON, and for print. Each variant is recorded as a version of
+  its model and is stamped as derived from it.
+- A tileset is packed as a single .3tz file, which is also recorded in the
+  transformation chain. Building a tileset from a textured mesh is available as an
+  experimental option.
+- The tools that do this work are add-ons, downloaded on request with their
+  licence shown first. Their jobs run in the background, so you can go on working
+  while they run.
+
+Tables and warnings
+~~~~~~~~~~~~~~~~~~~
+
+- Every table can be sorted by a click on a heading and filtered column by column,
+  and it remembers how you left it.
+- The **Tabular** window has three new computed sheets: **Resources**,
+  **Interpretations** and **Combiners**.
+- With **Zoom to selection**, every open table scrolls to the row of the selected
+  node.
+- In the **Warnings** sheet you can select several rows and act on them together,
+  for example to assign an author to several extractors or to apply a cure to
+  many rows at once.
+
+Narrative
+~~~~~~~~~
+
+- Two blocks show the evidence in the story. **Document** shows an image, a PDF
+  page, a text or the models of a document, with its citation. **3D scene** shows
+  a container, a document, an epoch or the whole graph, with a framing saved in
+  the block.
+- The **Matrix** of an epoch, the tables with a scope and filters, and the chapters
+  created where you are writing make the story easier to build.
+- Three standard blocks ask the graph and show its answer: **History of
+  research**, **Bibliography** and **Heritage involved**. A new outline proposes
+  them, and an existing story can add them from its **Index**.
+- The title and subtitle of the story are written directly on the page.
+- A story has a language, which is used when an AI draft is requested. A paragraph
+  drafted by an AI carries a badge until you confirm that you have verified it.
+- The exports render tables, scenes and document images as figures. The export
+  formats are listed in :doc:`/reference/export-formats`.
+
+Rooms, identity and the node
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The chip of your identity, at the top right of the window, shows its state by
+  its outline: dashed when the name is declared, solid when ORCID has verified it,
+  and with the node's mark when a node has accredited it.
+- The menu of the chip has a section, **Where you work**, that holds the mode,
+  the synchronised applications such as Blender, and the nodes and rooms, with
+  their sign-in by ORCID or by the node's password.
+- ``File ▸ Bring this into a new room…`` uses the same engine as the s3Dgraphy library. It
+  creates the room, sends each file once, hosts the resources at their own path,
+  and seats the graph only at the end.
+- The owner of a room and the operator of a node can delete a room, and the
+  operator can review the files that no room uses any more.
+- The **Settings** are arranged by topic in six tabs: General, Identity,
+  Connections, Viewers, Advanced and Add-ons (see :doc:`/reference/settings`).
+
+Desktop and web
+~~~~~~~~~~~~~~~
+
+- The menus of the desktop application and of the web page come from one list of
+  commands, so ``File`` holds the same entries on both and the shortcuts agree.
+- The desktop application checks for updates on request. When a release carries a
+  signed update, it installs the update after it has verified the signature.
+- The differences between the two forms of EMStudio are described in
+  :doc:`/reference/desktop-and-web`.
+
+Earlier in the 1.6 line
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Some themes of 1.6 came before the CHANGELOG began. They are described in the
+pages of this manual.
+
+- The six workspaces, each with its question: **Stratigraphy**, **Sources**,
+  **Archive**, **Narrative**, **Space** and **Sheets** (see
+  :doc:`/explanation/workspaces-are-questions`).
+- *Porta dentro* ("bringing files in as documents"): one window that turns a
+  file into a document of the study, with its role and its dates (see
+  :doc:`/how-to/bring-in/porta-dentro`).
+- The three verbs, *open* a file, *enter* a room, *create* a room, in place of
+  the former modes (see :doc:`/explanation/open-enter-create`).
+- The **Sheets** workspace, with the recording sheet of a unit and the printing of
+  sheets (see :doc:`/how-to/sheets/index`).
+- Vocabularies installed on the computer like fonts, with a copy of the terms
+  used in the file (see :doc:`/explanation/vocabularies`).
+- Community packages, plugins, repositories and signatures, shared with EM Tools
+  (see :doc:`/explanation/extensions-and-trust`).
+- Colour schemes kept in the ``em.json``, beside the graph (see
+  :doc:`/how-to/space/colours-and-legend`).
+- The web version served by a StratiGraph node at ``/em/studio/`` (see
+  :doc:`/reference/desktop-and-web`).
+- An interface in nine languages: English, Italian, German, Greek, Hebrew
+  (written from right to left), Spanish, Polish, Romanian and French.
+
+The complete list
+-----------------
+
+Every change, with its date, the reason for it and the checks that accompany it,
+is in the CHANGELOG file of the EMStudio repository:
+https://github.com/ExtendedMatrix/EMStudio/blob/main/CHANGELOG.md
