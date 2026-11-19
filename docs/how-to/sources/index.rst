@@ -3,7 +3,7 @@
 Sources
 =======
 
-Recipes for the Sources workspace: where a piece of data comes from.
+Recipes for where a datum comes from: the stamps and the rights of the files, the pictures of a unit, the regions read on an image.
 
 .. toctree::
    :maxdepth: 1

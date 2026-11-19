@@ -3,6 +3,121 @@
 Attach documents and media to a unit
 ====================================
 
-*Tie documents, images and models to the units they support.*
+*Tie photographs, drawings and models to the units they show, and gather them in groups and documents.*
 
-.. TODO MAN03: write this page (map §3, how-to «Sources»).
+A unit is described by the pictures that show it: the photographs of a
+campaign, a drawing, a detail, a model. EMStudio links them to the unit without
+copying them: a file stays where it is on the disk, and the graph records which
+unit it shows. The **Inspector** of every node opens with a strip of its media,
+and from the strip a viewer of the images lets you sort them, group them and
+make documents of them.
+
+Before you start
+----------------
+
+- Open a study (the copy of Templu Mare from :doc:`/tutorial/first-study` is
+  fine). The **Sources** workspace is a good place: the **Outliner** lists the
+  units and the documents, and the **Inspector** shows the strip.
+- The pictures must be in a folder that EMStudio can read.
+
+Link pictures to a unit
+-----------------------
+
+#. Select the unit, for example SU001, in the **Outliner** or in the Matrix.
+   Under its name and description, the **Inspector** shows the strip of its
+   media, with **Add images…** and **Link by name…**.
+#. Press **Add images…**. The window **Images for SU001** asks whether to add
+   **A picture…** or **A folder…**; choose one, then pick the file or the folder
+   in EMStudio's file picker. Each picture is identified by its fingerprint
+   (sha256): a picture whose bytes are already in the graph is reused, not
+   added twice.
+#. To link many pictures at once, press **Link by name…**. EMStudio proposes
+   every picture whose file name opens with the code of a unit (for example
+   ``SU001_north.jpg`` for SU001). The window **Link by name** lists the pairs,
+   and the ambiguous names apart, which it never chooses for you. Press **Link**.
+
+A picture that is already a node of the graph can also be dragged from the
+viewer of the images onto a unit: onto its row in the **Outliner**, or onto its
+strip in the **Inspector**. :kbd:`Esc` cancels the drag.
+
+Look at the media of a node
+---------------------------
+
+#. Select a unit or a document. The strip shows the first pictures, the
+   frontispiece first, and the count, for example **33 media**, with the number
+   of models beside it when there are some.
+#. Click the count or a picture. The viewer of the images opens in a Viewer
+   window, or under the **Inspector** when the workspace has none.
+#. Choose how the tree on the left groups the pictures: **by folder**,
+   **by group** or **by role**. Each picture says whether it is
+   **in the document** that holds it or **not censused**.
+#. Click a picture to see it large; ‹ and › go to the previous and the next,
+   :kbd:`Esc` goes back to the grid.
+
+The viewer stays on the node that opened it. Press ✕ (**Back to the node's
+viewer**) to follow the selection again.
+
+Assign the photographs of a document to a unit
+----------------------------------------------
+
+A photographic campaign often covers many units. Open its pictures once, and
+give each unit its own.
+
+#. Select the document of the campaign and open its pictures from the strip.
+#. Select a unit in the **Outliner** or in the Matrix. The viewer stays on the
+   document, and the unit becomes the target of its commands. Tick
+   **only the photos of SU001** to see only the pictures the unit already has.
+#. Pick the pictures with a click while holding :kbd:`⌘` on macOS, or
+   :kbd:`Ctrl` on Windows and Linux (:kbd:`⇧` works too). A second click
+   with the same key leaves a picture out again.
+#. Press **Assign to SU001**: the button also shows how many pictures are
+   picked. **Remove from SU001** takes the picked pictures away from the
+   unit.
+
+Group the pictures and make documents of them
+---------------------------------------------
+
+With some pictures picked in the viewer, the bar above the grid offers:
+
+**Make a group…**
+   A logical group of the picked files, with a **Name** and a **Role** taken
+   from a vocabulary: photogrammetry, frontispiece, detail, vector drawing,
+   raster drawing, 3D model, orthophoto, archival documentation. **＋ new role…**
+   adds a role of the project. The group can be linked to the selected unit, and
+   the files stay where they are on the disk. Press **Make the group**.
+
+**Give a name…**
+   A **Name** and a **Description** for one picture, which becomes a node of
+   the graph. Press **Give the name**.
+
+**Census as a document…**
+   A new document, with the next free code of the series D.nn, that holds the
+   picked files (or the whole set shown). Press **Census**.
+
+**Place in the Space**
+   The picture, or the document, as a representation in the 3D scene, at the
+   3D cursor. It is a placement made by you, and it can be moved (see
+   :doc:`/how-to/space/place-objects`).
+
+Each of these commands is one step of the history: ``Edit ▸ Undo`` takes it
+back.
+
+What you get
+------------
+
+The **Inspector** of a unit shows all the pictures that reach it, each one
+once, and the viewer says by which road it comes: linked to the unit; from a
+document that the unit cites; through the readings of a property, that is a
+region traced on a picture (see :doc:`trace-regions-on-images`); or because the
+picture illustrates a property of the unit. A frontispiece comes
+first in every list. In the **Sheets** workspace, the **Viewer & card** under
+the sheet shows the same pictures for the unit chosen.
+
+See also
+--------
+
+- :doc:`/tutorial/files-to-documents` and :doc:`/how-to/bring-in/porta-dentro`
+  bring files into the study as documents, with their date and licence.
+- :doc:`declare-provenance` says where each file comes from.
+- :ref:`reference-inspector` describes the sections of a document and of a
+  resource.
