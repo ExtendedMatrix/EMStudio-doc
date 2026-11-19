@@ -3,7 +3,7 @@
 Narrative
 =========
 
-Recipes for the Narrative workspace: telling the study, and what the story rests on.
+Recipes for the Narrative workspace: writing the story, showing the graph in it, drafting with AI and exporting the files.
 
 .. toctree::
    :maxdepth: 1

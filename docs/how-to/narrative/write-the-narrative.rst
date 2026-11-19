@@ -3,53 +3,128 @@
 Write the narrative
 ===================
 
-.. TODO MAN04: update (index window, modules, menus). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*Tell the study as a story in chapters, written in the page itself.*
 
-*Goal: turn the graph into a story you can read and publish.* This is the
-**Narrative** tab. The narrative is the graph *read as prose* — chapters that anchor
-to epochs and activities, with embeds that stay live references to the record.
+The narrative is a node of the graph, saved in the ``.em.json`` with the rest of
+the study. It is made of chapters, and each chapter holds blocks: paragraphs that
+you write, and blocks that show a part of the graph (see :doc:`embeds`). A
+chapter can narrate a *lane* of the graph, an epoch or an activity; the lane is
+what the Matrix beside the page follows and what an AI draft is asked about.
 
-It scaffolds itself
--------------------
+Before you start
+----------------
 
-Open the Narrative tab on a study with epochs and EMStudio builds a first draft of
-the structure: an *Introduction* chapter and one chapter per epoch, each with a live
-**matrix embed** of that epoch's units. You start from a skeleton, not a blank page.
+- Open a study. The Templu Mare file used in :doc:`/tutorial/first-study`
+  already carries a story, *The Great Temple: survey, analysis and
+  reconstruction*, with chapters such as *Virtual Activity 2: colonnade*.
+- Click **Narrative** in the bar of the workspaces. The workspace shows the
+  **Index** of the story above the **Outliner** on the left, the **Narrative**
+  window (the page) in the middle, and a **Graph** window in **Matrix** mode
+  beside the **Inspector** on the right (see :doc:`/reference/workspaces`).
 
-.. image:: /_static/interface/05_narrative.jpg
-   :width: 100%
-   :alt: The Narrative tab — the auto-scaffolded narrative of Templu Mare with a live matrix embed
+Start a story
+-------------
 
-Turn on writing
----------------
+When the graph has no narrative yet, the page says **This graph has no narrative
+yet** and offers **Propose the chapters**.
 
-The narrative opens read-only. Click the **pencil** (``✎``) in the toolbar to enter
-*write mode*: now each chapter shows its controls (move, delete, author) and the
-authoring affordances appear.
+#. Press **Propose the chapters**. EMStudio writes a first structure: an
+   **Introduction** with the name of the site, then one chapter for each epoch,
+   from the oldest to the most recent, each narrating its epoch and showing its
+   Matrix, with a paragraph marked «to be written». The standard blocks
+   **History of research**, **Heritage involved (HDT-O)** and **Bibliography**
+   are added at the start and at the end.
+#. The proposal is one step of the history: ``Edit ▸ Undo`` takes it back.
 
-.. image:: /_static/how-to/narrative-write-mode.jpg
-   :width: 100%
-   :alt: The narrative in write mode — the palette with + Chapter and draggable views, chapter controls, and + prose
+Nothing else is written for you: every paragraph waits for your text.
 
-- **Add a chapter** with **+ Chapter** in the left palette.
-- **Add prose** with **+ prose** under a chapter; type into the paragraph.
-- **Add an embed** by dragging a *view* from the palette — matrix, us, rm, document,
-  source, paradata, timeline, table, scene3d, map — onto a chapter. Embeds are
-  references: a matrix embed of an epoch stays in sync with the graph.
+Write in the page
+-----------------
 
-Draft with AI, then sign it
+The **Narrative** window has four readings in its header: **Write**, **Read**,
+**Print** and **Notebook**. The Narrative workspace opens in **Write**.
+
+#. Click the title of the story at the top of the page and type; press
+   :kbd:`Enter` or click elsewhere to keep it. Under the title, click
+   **Add a subtitle** to write one. The same two fields are in the
+   **Inspector** of the story, which a click on the head of the page opens.
+#. Click a paragraph and write. An empty paragraph shows **(empty paragraph —
+   click to write)**, or the words «to be written» of the proposal, which your
+   text replaces. The paragraph is kept when you leave it.
+#. To add a paragraph, move the pointer between two blocks and press the **+**
+   (**Insert a block here**), then choose **Text**.
+#. To rename a chapter, click its title in the page, type, and press
+   :kbd:`Enter`.
+
+Each change is one step of the history, saved with the file by ``File ▸ Save``.
+
+Add, order and remove chapters
+------------------------------
+
+#. A new chapter is born where you write. In the **+** between two blocks,
+   **New chapter here** puts a chapter title at that point, and the blocks that
+   follow become its text. The new title is selected, ready to type.
+#. Right-click the title of a chapter for **New chapter before this one**,
+   **New chapter after this one**, **Move up** and **Move down**. Right-click
+   the margin of a block for **New chapter from this block**.
+#. In the **Index**, **Add…** offers **A chapter** (after the current chapter,
+   or at the end), the **Standard blocks** the story still lacks, and under
+   **Epochs not told yet** a chapter for each epoch that no chapter narrates.
+#. To move a chapter, drag its row in the **Index**, or drag the grip ⠿ before
+   its title in the page. A line shows where it will fall.
+#. To remove a chapter, select it and press **Delete** in its **Inspector**.
+
+Set what a chapter narrates
 ---------------------------
 
-The **IA** menu can draft the prose of the current chapter from its scope (the
-epoch, its units, the paradata). First set the provider, model and key in the AI
-data panel (the key lives only in the local bridge for the session, never in the
-document). The draft arrives labelled as an **AI draft**; you read it, edit it, and
-**validate** it — the act of a human taking responsibility for the text. Whoever
-validates is credited among those responsible, and the byline reads "with the
-assistance of *the model*".
+#. Click the title of a chapter. Its **Inspector** shows **Title**,
+   **Narrates the lane** and **Signed by**.
+#. In **Narrates the lane**, choose an epoch, or an activity listed under its
+   epoch, for example *II A.D. › VAct.03 Lintel of the columnade*. The chapter
+   shows the name of its lane beside the title when the two differ, and the
+   Matrix beside the page follows the chapter you are in.
+#. Press **I sign** to sign the chapter with your identity. A signature needs
+   an identity: if none is declared, EMStudio opens the panel **Who you are**
+   (see :doc:`/how-to/rooms/sign-in`).
+#. **☆ make canonical** marks a chapter that a new proposal of the structure
+   leaves alone; the Index shows it with ★.
 
-.. note::
+Find your way in a long story
+-----------------------------
 
-   A window that has lost focus keeps its content and scroll position, and a
-   secondary narrative window is read-only — the editable narrative is the one you
-   are focused on. See :doc:`export-the-narrative` for getting the story out.
+The **Index** lists the chapters, with what each one still needs: the paragraphs
+still to be written, and the AI paragraphs not verified yet. A click on a row
+takes the page to that chapter. **Find in chapters and text…** filters the rows
+and marks the paragraphs that match. **Story coverage**, closed at first, counts
+how much of the graph the story cites: the units of each epoch, the sources, and
+the reconstructions that no chapter explains yet.
+
+Read the story
+--------------
+
+- **Read** shows the page as a reader with the link sees it, on white paper.
+  A click on a block that shows a node goes to that node.
+- **Print** shows what the Word and LaTeX files will contain: the blocks as
+  figures or citations, and a gap, **does not go out: to be verified**, where an
+  AI paragraph waits for a person.
+- **Notebook** shows the cells of the Jupyter notebook.
+
+**Print** and **Notebook** are previews computed from the story: you write in
+**Write**.
+
+What you get
+------------
+
+A story that lives in the graph: saved in the study file, signed chapter by
+chapter, with its lanes tied to the epochs and activities of the Matrix. Two
+**Narrative** windows can show the same story in two readings, one written and
+one read.
+
+See also
+--------
+
+- :doc:`embeds` puts the graph in the text; :doc:`ai-drafts` asks a model for a
+  first draft; :doc:`export-the-narrative` makes the files.
+- :doc:`/reference/windows` describes the **Narrative** and **Index** windows.
+- :doc:`/explanation/narrative-as-graph` explains why the story is part of the
+  graph.
