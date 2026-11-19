@@ -19,8 +19,11 @@ sphinx:
   configuration: docs/conf.py
   # You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs
   # builder: "dirhtml"
-  # Fail on all warnings to avoid broken references
-  # fail_on_warning: true
+  # Fail on all warnings to avoid broken references.
+  # Acceso il 19 nov 2026: le due build di controllo (en e it) passano con
+  # `-W --keep-going`, quindi da oggi un riferimento rotto ferma la
+  # pubblicazione invece di arrivare in pagina.
+  fail_on_warning: true
 
 # Optionally build your docs in additional formats such as PDF and ePub
 formats:
