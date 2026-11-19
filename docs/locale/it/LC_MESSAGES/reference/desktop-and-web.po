@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Desktop and web"
+msgstr "Desktop e web"
+
+msgid ""
+"*What differs between the desktop application and EMStudio served by a "
+"StratiGraph node.*"
+msgstr ""
+"*Che cosa cambia tra l'app desktop ed EMStudio servito da un nodo "
+"StratiGraph.*"
+
+msgid ""
+"EMStudio is one application with two ways of reaching it. The **desktop "
+"application** runs on macOS, Windows and Linux and brings its own local "
+"helper, the *bridge*, which reads and writes the files of this computer. "
+"The **web version** is the same editor served by a StratiGraph node at "
+"the address ``/em/studio/`` of that node: you reach it with a browser and"
+" sign in to the node."
+msgstr ""
+"EMStudio è un'unica applicazione con due modi per raggiungerla. L’**app "
+"desktop** funziona su macOS, Windows e Linux e porta con sé il suo "
+"servizio locale, il *bridge*, che legge e scrive i file di questo "
+"computer. La **versione web** è lo stesso editor servito da un nodo "
+"StratiGraph all'indirizzo ``/em/studio/`` di quel nodo: la raggiungi con "
+"un browser e accedi al nodo."
+
+msgid ""
+"The windows, the workspaces, the graph and almost every command are the "
+"same in both. They differ where a browser and a desktop program are "
+"different by nature: a page in a browser receives the content of a file "
+"but never learns where the file lives on the disk, it cannot choose a "
+"folder through the system's dialog, and it saves by downloading. The "
+"table below lists every difference of version 1.6.0-dev.136, grouped by "
+"theme."
+msgstr ""
+"Le finestre, gli spazi di lavoro, il grafo e quasi tutti i comandi sono "
+"gli stessi nelle due forme. Cambiano dove un browser e un programma "
+"desktop sono diversi per natura: una pagina nel browser riceve il "
+"contenuto di un file ma non sa mai dove il file si trovi sul disco, non "
+"può scegliere una cartella con la finestra di dialogo del sistema, e "
+"salva scaricando. La tabella che segue elenca tutte le differenze della "
+"versione 1.6.0-dev.136, raggruppate per tema."
+
+msgid "Area"
+msgstr "Ambito"
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "Web"
+msgstr "Web"
+
+msgid "**Open…** and **Open in place of the open files…**"
+msgstr "**Apri…** e **Apri al posto dei file aperti…**"
+
+msgid ""
+"The system's dialog opens. EMStudio keeps the path of the file, so it can"
+" save it in place and reopen it later."
+msgstr ""
+"Si apre la finestra di dialogo del sistema. EMStudio conserva il percorso"
+" del file, così può salvarlo al suo posto e riaprirlo in seguito."
+
+msgid ""
+"The browser's file picker opens. EMStudio receives the content of the "
+"file without its path."
+msgstr ""
+"Si apre il selettore di file del browser. EMStudio riceve il contenuto "
+"del file senza il suo percorso."
+
+msgid "**Save**"
+msgstr "**Salva**"
+
+msgid ""
+"The file is written in its place on the disk. A file that came from a "
+"drop or from a room has no place yet, so the first **Save** asks for one."
+msgstr ""
+"Il file viene scritto al suo posto sul disco. Un file arrivato "
+"trascinandolo o da una stanza non ha ancora un posto, quindi il primo "
+"**Salva** ne chiede uno."
+
+msgid "The em.json is downloaded by the browser."
+msgstr "Il browser scarica l'em.json."
+
+msgid "**Save As…**"
+msgstr "**Salva come…**"
+
+msgid ""
+"The system's dialog proposes the file's own folder. In another folder, "
+"EMStudio offers to rewrite the paths of the resources so that they still "
+"point at the same files."
+msgstr ""
+"La finestra di dialogo del sistema propone la cartella del file stesso. "
+"In un'altra cartella, EMStudio si offre di riscrivere i percorsi delle "
+"risorse perché puntino ancora agli stessi file."
+
+msgid ""
+"The em.json is downloaded under a new name. A dialog reminds you that its"
+" resource paths are relative to the folder where you keep it."
+msgstr ""
+"L'em.json viene scaricato con un nome nuovo. Una finestra di dialogo ti "
+"ricorda che i percorsi delle sue risorse sono relativi alla cartella in "
+"cui lo conservi."
+
+msgid "**Open Recent ▸**"
+msgstr "**Apri recenti ▸**"
+
+msgid ""
+"A recent file reopens from its path. A file that has disappeared is said "
+"so, and you can remove it from the list."
+msgstr ""
+"Un file recente si riapre dal suo percorso. Se un file è scomparso, "
+"EMStudio lo dice, e puoi toglierlo dall'elenco."
+
+msgid ""
+"A file dropped into the browser has no path: drag it in again to reopen "
+"it. A recent room reopens on both platforms."
+msgstr ""
+"Un file trascinato nel browser non ha percorso: per riaprirlo trascinalo "
+"di nuovo. Una stanza recente si riapre su entrambe le piattaforme."
+
+msgid "Files given at launch, and files dropped from the system"
+msgstr "File passati all'avvio e file trascinati dal sistema"
+
+msgid ""
+"Files opened with EMStudio from the system, and files or folders dropped "
+"on the window, arrive with their path."
+msgstr ""
+"I file aperti con EMStudio dal sistema, e i file o le cartelle trascinati"
+" sulla finestra, arrivano con il loro percorso."
+
+msgid "A file dropped on the page arrives as its content only."
+msgstr "Un file trascinato sulla pagina arriva solo come contenuto."
+
+msgid "**New EM project…** and **Open project…**"
+msgstr "**Nuovo progetto EM…** e **Apri progetto…**"
+
+msgid "The system's folder dialog opens."
+msgstr "Si apre la finestra di dialogo del sistema per le cartelle."
+
+msgid ""
+"EMStudio's own folder selector opens inside the page, starting from the "
+"folder that the **Files** window is showing."
+msgstr ""
+"Si apre dentro la pagina il selettore di cartelle di EMStudio, a partire "
+"dalla cartella che la finestra **File** sta mostrando."
+
+msgid "Choosing a folder in the **Files** window, and **another folder…**"
+msgstr "Scegliere una cartella nella finestra **File**, e **un'altra cartella…**"
+
+msgid "The system's folder dialog."
+msgstr "La finestra di dialogo del sistema per le cartelle."
+
+msgid "EMStudio's own folder selector, or a path that you type."
+msgstr "Il selettore di cartelle di EMStudio, o un percorso che scrivi."
+
+msgid "**Find missing files…**"
+msgstr "**Ritrova i file…**"
+
+msgid ""
+"You can add one more folder to the search through the system's dialog, "
+"and point a missing file at its new place by choosing it."
+msgstr ""
+"Puoi aggiungere un'altra cartella alla ricerca con la finestra di dialogo"
+" del sistema, e indicare a un file mancante il suo nuovo posto "
+"scegliendolo."
+
+msgid ""
+"The folder to search is given as a path that you type; a missing file is "
+"pointed at its new place through EMStudio's own selector."
+msgstr ""
+"La cartella in cui cercare si indica con un percorso che scrivi; il nuovo"
+" posto di un file mancante si indica con il selettore di EMStudio."
+
+msgid "**Porta dentro…**"
+msgstr "**Porta dentro…**"
+
+msgid "The system's dialog lets you choose several files at once."
+msgstr ""
+"La finestra di dialogo del sistema ti permette di scegliere più file alla"
+" volta."
+
+msgid "EMStudio's own selector lets you choose one file at a time."
+msgstr "Il selettore di EMStudio ti permette di scegliere un file alla volta."
+
+msgid "**Import ▸ GraphML…**, **Import ▸ Table with a mapping…**, **StratiMiner**"
+msgstr ""
+"**Importa ▸ GraphML…**, **Importa ▸ Tabella con mappatura…**, "
+"**StratiMiner**"
+
+msgid ""
+"The system's dialog returns the file with its path. A GraphML matrix kept"
+" as em.json is saved beside the GraphML."
+msgstr ""
+"La finestra di dialogo del sistema restituisce il file con il suo "
+"percorso. Una matrix GraphML conservata come em.json viene salvata "
+"accanto al GraphML."
+
+msgid ""
+"The browser hands the file over and the bridge keeps a working copy. A "
+"GraphML matrix kept as em.json is downloaded under the name you give."
+msgstr ""
+"Il browser consegna il file e il bridge ne tiene una copia di lavoro. Una"
+" matrix GraphML conservata come em.json viene scaricata con il nome che "
+"le dai."
+
+msgid "**Export ▸ Turtle (.ttl)**, the files an extension exports"
+msgstr "**Esporta ▸ Turtle (.ttl)**, i file che esporta un'estensione"
+
+msgid "Saved where you choose."
+msgstr "Salvati dove scegli."
+
+msgid "Downloaded."
+msgstr "Scaricati."
+
+msgid "**Colours…**: the colour schemes of the file"
+msgstr "**Colori…**: gli schemi colori del file"
+
+msgid ""
+"Written into a folder that you choose, and read from several files at "
+"once."
+msgstr "Scritti in una cartella che scegli, e letti da più file alla volta."
+
+msgid ""
+"Written into the browser's downloads, and read through the browser's file"
+" picker."
+msgstr ""
+"Scritti nei download del browser, e letti con il selettore di file del "
+"browser."
+
+msgid "**Print sheets…**"
+msgstr "**Stampa schede…**"
+
+msgid ""
+"**Print…** opens the system's print dialog, which also makes the PDF "
+"(**Save as PDF**). **One PDF per sheet** needs a bridge that makes PDFs; "
+"the installed application makes its PDF through the print dialog."
+msgstr ""
+"**Stampa…** apre la finestra di stampa del sistema, che produce anche il "
+"PDF (**Salva come PDF**). **Un PDF per scheda** chiede un bridge che "
+"faccia i PDF; l'applicazione installata fa il suo PDF attraverso la "
+"finestra di stampa."
+
+msgid ""
+"**Print…** prints the preview through the browser's print dialog, which "
+"also makes the single PDF. When the node makes PDFs, one PDF per sheet is"
+" downloaded file by file."
+msgstr ""
+"**Stampa…** stampa l'anteprima con la finestra di stampa del browser, che"
+" produce anche il PDF unico. Quando il nodo fa i PDF, si scarica un PDF "
+"per scheda, file per file."
+
+msgid "The title of the window"
+msgstr "Il titolo della finestra"
+
+msgid "Shows the open file, with a dot when it has unsaved changes."
+msgstr "Mostra il file aperto, con un punto quando ha modifiche non salvate."
+
+msgid "The browser's tab keeps its own title."
+msgstr "La scheda del browser mantiene il suo titolo."
+
+msgid "**Open in a new window**"
+msgstr "**Apri in una nuova finestra**"
+
+msgid "The window becomes a window of the system, kept above the main window."
+msgstr ""
+"La finestra diventa una finestra del sistema, tenuta sopra la finestra "
+"principale."
+
+msgid "The window becomes a separate browser window."
+msgstr "La finestra diventa una finestra del browser a sé."
+
+msgid "Signing in to a node (the chip's menu, **Node and account**)"
+msgstr "Accedere a un nodo (il menu del chip, **Nodo e account**)"
+
+msgid ""
+"The sign-in runs in the system's browser and comes back to the "
+"application; when it does not, the node's answer is pasted in **Paste the"
+" node's answer**. EMStudio asks to sign in only when you ask."
+msgstr ""
+"L'accesso avviene nel browser del sistema e torna all'applicazione; "
+"quando non torna, la risposta del nodo si incolla in **Incolla la "
+"risposta del nodo**. EMStudio chiede di accedere solo quando sei tu a "
+"chiederlo."
+
+msgid "The sign-in runs in the same page. EMStudio can renew it quietly."
+msgstr ""
+"L'accesso avviene nella stessa pagina. EMStudio può rinnovarlo senza "
+"disturbarti."
+
+msgid "**Verify with ORCID**"
+msgstr "**Verifica con ORCID**"
+
+msgid "The application goes straight to ORCID."
+msgstr "L'applicazione va direttamente a ORCID."
+
+msgid ""
+"On the node's default configuration, the verification goes through the "
+"node's own ORCID sign-in."
+msgstr ""
+"Con la configurazione predefinita del nodo, la verifica passa per "
+"l'accesso ORCID del nodo stesso."
+
+msgid "The node"
+msgstr "Il nodo"
+
+msgid "None until you configure one in **Settings… ▸ Connections**."
+msgstr "Nessuno, finché non ne configuri uno in **Impostazioni… ▸ Connessioni**."
+
+msgid "The node that serves the page, found from the page's own address."
+msgstr "Il nodo che serve la pagina, ricavato dall'indirizzo stesso della pagina."
+
+msgid ""
+"**My space on the node**, and pages opened by **Open with…** "
+"(StratiField, Heriverse)"
+msgstr ""
+"**Il mio spazio sul nodo**, e le pagine aperte da **Apri con…** "
+"(StratiField, Heriverse)"
+
+msgid "Opened in the system's browser."
+msgstr "Aperte nel browser del sistema."
+
+msgid "Opened in a new tab of the browser."
+msgstr "Aperte in una nuova scheda del browser."
+
+msgid "Nodes on the local network, and the personal node of this computer"
+msgstr "I nodi della rete locale, e il nodo personale di questo computer"
+
+msgid ""
+"The bridge searches the local network and can turn on a node on this "
+"computer."
+msgstr ""
+"Il bridge cerca nella rete locale e può accendere un nodo su questo "
+"computer."
+
+msgid ""
+"The search of the local network belongs to the bridge of the desktop "
+"application. The saved nodes and the address you type are checked."
+msgstr ""
+"La ricerca nella rete locale spetta al bridge dell'app desktop. Vengono "
+"verificati i nodi salvati e l'indirizzo che scrivi."
+
+msgid "The AI key (**Settings… ▸ Advanced ▸ API key**)"
+msgstr "La chiave AI (**Impostazioni… ▸ Avanzate ▸ Chiave API**)"
+
+msgid "Kept in the system's keychain."
+msgstr "Conservata nel portachiavi del sistema."
+
+msgid "Kept by the bridge for the session."
+msgstr "Conservata dal bridge per la durata della sessione."
+
+msgid "**Pack this tileset into a .3tz**"
+msgstr "**Impacchetta il tileset in .3tz**"
+
+msgid "Available."
+msgstr "Disponibile."
+
+msgid ""
+"Available in the **Files** window for a folder served by the helper "
+"service, which writes the archive. A tileset of your own computer is "
+"packed in the desktop application."
+msgstr ""
+"Disponibile nella finestra **File** per una cartella servita dal servizio"
+" di supporto, che scrive l'archivio. Un tileset del tuo computer si "
+"impacchetta nell'app desktop."
+
+msgid "The hardware profile of the **Space** (**Use of this device**)"
+msgstr "Il profilo hardware dello **Spazio** (**Uso di questo dispositivo**)"
+
+msgid ""
+"Read as *desktop* on a machine with a graphics card: the scene loads the "
+"realtime versions of the models."
+msgstr ""
+"Letto come *desktop* su una macchina con una scheda grafica: la scena "
+"carica le versioni realtime dei modelli."
+
+msgid ""
+"Read as *web*: the scene loads the versions made for the web. You can "
+"change the profile by hand on both."
+msgstr ""
+"Letto come *web*: la scena carica le versioni fatte per il web. Su "
+"entrambe puoi cambiare il profilo a mano."
+
+msgid "**Extensions…** ▸ **Install from disk…**"
+msgstr "**Estensioni…** ▸ **Installa da disco…**"
+
+msgid "From a .zip archive or from a folder."
+msgstr "Da un archivio .zip o da una cartella."
+
+msgid ""
+"Served by a node, the window lists the packages that the node's "
+"administrator installed; the page installs nothing."
+msgstr ""
+"Servita da un nodo, la finestra elenca i pacchetti che l'amministratore "
+"del nodo ha installato; la pagina non installa nulla."
+
+msgid ""
+"Repositories of extensions in a folder (for example on a NAS), and the "
+"development folder of a plugin"
+msgstr ""
+"Repository di estensioni in una cartella (per esempio su un NAS), e la "
+"cartella di sviluppo di un plugin"
+
+msgid "Chosen through the system's folder dialog."
+msgstr "Scelti con la finestra di dialogo del sistema per le cartelle."
+
+msgid "These folders belong to the desktop application."
+msgstr "Queste cartelle appartengono all'app desktop."
+
+msgid "Plugins of your own computer, and ``Tools ▸ Python console…``"
+msgstr "I plugin del tuo computer, e ``Strumenti ▸ Console Python…``"
+
+msgid ""
+"The plugins installed on the node, turned on for the room, run on the "
+"node; plugins and the console of a computer belong to the desktop "
+"application."
+msgstr ""
+"I plugin installati sul nodo, attivati per la stanza, girano sul nodo; i "
+"plugin e la console di un computer appartengono all'app desktop."
+
+msgid "**Check for updates…**"
+msgstr "**Cerca aggiornamenti…**"
+
+msgid ""
+"In **Help** on Windows and Linux, in the **EMStudio** menu on macOS. "
+"EMStudio compares its version with the published releases, and offers "
+"**Download** and, where it can, **Install and restart**."
+msgstr ""
+"In **Aiuto** su Windows e Linux, nel menu **EMStudio** su macOS. EMStudio"
+" confronta la sua versione con le release pubblicate, e offre **Scarica**"
+" e, dove può, **Installa e riavvia**."
+
+msgid "The version is the one the node serves."
+msgstr "La versione è quella che il nodo serve."
+
+msgid "Menus"
+msgstr "Menu"
+
+msgid ""
+"On macOS the system's menu bar carries **File**, **Edit** and **Help**, "
+"plus the **EMStudio** menu (**About EMStudio**, **Settings…**, **Check "
+"for updates…**) and the **Window** menu. On Windows and Linux the menu "
+"bar is inside the window, and **File** ends with **Quit EMStudio**."
+msgstr ""
+"Su macOS la barra dei menu del sistema porta **File**, **Modifica** e "
+"**Aiuto**, più il menu **EMStudio** (**Informazioni su EMStudio**, "
+"**Impostazioni…**, **Cerca aggiornamenti…**) e il menu **Finestra**. Su "
+"Windows e Linux la barra dei menu è dentro la finestra, e **File** "
+"termina con **Esci da EMStudio**."
+
+msgid ""
+"The menu bar is inside the page. **About EMStudio** and **Settings…** are"
+" in **Help**."
+msgstr ""
+"La barra dei menu è dentro la pagina. **Informazioni su EMStudio** e "
+"**Impostazioni…** stanno in **Aiuto**."
+
+msgid "Keys"
+msgstr "Tasti"
+
+msgid ":kbd:`⌘` on macOS, :kbd:`Ctrl` on Windows and Linux."
+msgstr ":kbd:`⌘` su macOS, :kbd:`Ctrl` su Windows e Linux."
+
+msgid ""
+"The same keys, except those the browser keeps for itself: **Close** has "
+"no key on the web, because :kbd:`⌘W` and :kbd:`Ctrl+W` close the "
+"browser's tab."
+msgstr ""
+"Gli stessi tasti, tranne quelli che il browser tiene per sé: **Chiudi** "
+"non ha tasto sul web, perché :kbd:`⌘W` e :kbd:`Ctrl+W` chiudono la scheda"
+" del browser."
+
+msgid "How the manual marks the differences"
+msgstr "Come il manuale segnala le differenze"
+
+msgid ""
+"The manual describes the two platforms with one text. Where the steps of "
+"a task really diverge, a page shows two tabs, **Desktop** and **Web**: "
+"choose yours once, and every page of the manual follows your choice. "
+"Where the steps are the same, there are no tabs."
+msgstr ""
+"Il manuale descrive le due piattaforme con un solo testo. Dove i passi di"
+" un'operazione divergono davvero, una pagina mostra due schede, "
+"**Desktop** e **Web**: scegli la tua una volta, e ogni pagina del manuale"
+" segue la tua scelta. Dove i passi sono gli stessi, non ci sono schede."
+
+msgid ""
+"In the reference tables, *desktop only* marks a command that the web "
+"version does not draw (see :doc:`menus`). A difference among macOS, "
+"Windows and Linux is said in the text of the **Desktop** tab."
+msgstr ""
+"Nelle tabelle di riferimento, *solo desktop* segna un comando che la "
+"versione web non mostra (vedi :doc:`menus`). Una differenza tra macOS, "
+"Windows e Linux è detta nel testo della scheda **Desktop**."
+

@@ -1,0 +1,862 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Keyboard shortcuts"
+msgstr "Scorciatoie da tastiera"
+
+msgid "*Every key and gesture of EMStudio, grouped by where it acts.*"
+msgstr ""
+"*Ogni tasto e ogni gesto di EMStudio, raggruppati secondo il punto in cui"
+" agiscono.*"
+
+msgid ""
+"The same list is in the application under ``Help ▸ Shortcuts``, where you"
+" can search it. The tables below are drawn from the same source, so they "
+"say what the application does."
+msgstr ""
+"Lo stesso elenco si trova nell'applicazione in ``Aiuto ▸ Scorciatoie``, "
+"dove puoi cercarvi dentro. Le tabelle che seguono vengono dalla stessa "
+"fonte, e dicono quindi ciò che l'applicazione fa."
+
+msgid "Where a key acts"
+msgstr "Dove agisce un tasto"
+
+msgid ""
+"A key acts on the part of the window that has the focus, and the tables "
+"are grouped the same way."
+msgstr ""
+"Un tasto agisce sulla parte della finestra che ha il focus, e le tabelle "
+"sono raggruppate allo stesso modo."
+
+msgid ""
+"**Everywhere**: the keys of the whole application, such as saving, the "
+"settings, the chip's menu at **Where you work** and adding a node."
+msgstr ""
+"**Ovunque**: i tasti dell'intera applicazione, come il salvataggio, le "
+"impostazioni, il menu del chip alla sezione **Dove lavori** e l'aggiunta "
+"di un nodo."
+
+msgid ""
+"**On the graph**: the keys of a Graph window (the matrix, the free graph,"
+" the DTC) and of the Outliner. They act on the canvas and on the "
+"Outliner, and leave a field you are typing in, or a focused button, "
+"alone."
+msgstr ""
+"**Sul grafo**: i tasti di una finestra Grafo (la matrix, il grafo libero,"
+" il DTC) e dell'Outliner. Agiscono sul canvas e sull'Outliner, e lasciano"
+" stare il campo in cui stai scrivendo o il pulsante che ha il focus."
+
+msgid ""
+"**In the Space**: the keys of the 3D scene when it has the focus. They "
+"follow the conventions of Blender, so that whoever models in Blender "
+"finds the same hands here: :kbd:`G`, :kbd:`R` and :kbd:`S` move, rotate "
+"and scale, the numeric keypad chooses the views, :kbd:`⇧A` adds a shape "
+"at the 3D cursor."
+msgstr ""
+"**Nello Spazio**: i tasti della scena 3D quando ha il focus. Seguono le "
+"convenzioni di Blender, così chi modella in Blender ritrova qui gli "
+"stessi gesti: :kbd:`G`, :kbd:`R` e :kbd:`S` spostano, ruotano e scalano, "
+"il tastierino numerico sceglie le viste, :kbd:`⇧A` aggiunge una forma al "
+"cursore 3D."
+
+msgid ""
+"**Tracing in the document**: the keys of the Viewer while you trace a "
+"region on an image."
+msgstr ""
+"**Tracciare nel documento**: i tasti del Visualizzatore mentre tracci una"
+" regione su un'immagine."
+
+msgid ""
+"**Windows and spaces**: the gestures that arrange the windows and the "
+"workspaces."
+msgstr ""
+"**Finestre e spazi**: i gesti che dispongono le finestre e gli spazi di "
+"lavoro."
+
+msgid ""
+"**In a field** and **in menus and buttons**: the keys of typing and of "
+"moving through a menu."
+msgstr ""
+"**In un campo** e **Nei menu e sui pulsanti**: i tasti della scrittura e "
+"del movimento dentro un menu."
+
+msgid ""
+"The same key can mean different things in different places: :kbd:`⇧A` "
+"adds a node to the graph when the pointer is on the matrix, and a shape "
+"to the scene when the 3D has the focus."
+msgstr ""
+"Lo stesso tasto può voler dire cose diverse in punti diversi: :kbd:`⇧A` "
+"aggiunge un nodo al grafo quando il puntatore è sulla matrix, e una forma"
+" alla scena quando il 3D ha il focus."
+
+msgid "Keys and gestures"
+msgstr "Tasti e gesti"
+
+msgid ""
+"The keys are given as the Mac shows them and as Windows and Linux show "
+"them: ⌘ (Command) becomes :kbd:`Ctrl`, ⌥ (Option) becomes :kbd:`Alt`, ⇧ "
+"is :kbd:`Shift`. A gesture (a click, a drag, the wheel) is described in "
+"words and is the same on every platform; where its description names ⌘ or"
+" ⌥, read :kbd:`Ctrl` or :kbd:`Alt` on Windows and Linux."
+msgstr ""
+"I tasti sono indicati come li mostra il Mac e come li mostrano Windows e "
+"Linux: ⌘ (Command) diventa :kbd:`Ctrl`, ⌥ (Option) diventa :kbd:`Alt`, ⇧ "
+"è :kbd:`Shift`. Un gesto (un clic, un trascinamento, la rotella) è "
+"descritto a parole ed è lo stesso su ogni piattaforma; dove la sua "
+"descrizione nomina ⌘ o ⌥, leggi :kbd:`Ctrl` o :kbd:`Alt` su Windows e "
+"Linux."
+
+msgid ""
+"On the web the browser keeps some keys for itself, for example the one "
+"that closes the tab: the last table, *In the menus*, says which keys the "
+"menus show and which of them the web leaves to the browser."
+msgstr ""
+"Sul web il browser tiene per sé alcuni tasti, per esempio quello che "
+"chiude la scheda: l'ultima tabella, *Nei menu*, dice quali tasti mostrano"
+" i menu e quali di essi il web lascia al browser."
+
+msgid "Everywhere"
+msgstr "Ovunque"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Windows, Linux"
+msgstr "Windows, Linux"
+
+msgid "Action"
+msgstr "Gesto"
+
+msgid ":kbd:`⌘N`"
+msgstr ":kbd:`⌘N`"
+
+msgid ":kbd:`Ctrl+N`"
+msgstr ":kbd:`Ctrl+N`"
+
+msgid "New graph"
+msgstr "Nuovo grafo"
+
+msgid ":kbd:`⌘S`"
+msgstr ":kbd:`⌘S`"
+
+msgid ":kbd:`Ctrl+S`"
+msgstr ":kbd:`Ctrl+S`"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid ":kbd:`⇧⌘S`"
+msgstr ":kbd:`⇧⌘S`"
+
+msgid ":kbd:`Ctrl+Shift+S`"
+msgstr ":kbd:`Ctrl+Shift+S`"
+
+msgid "Save as…"
+msgstr "Salva con nome…"
+
+msgid ":kbd:`⌘,`"
+msgstr ":kbd:`⌘,`"
+
+msgid ":kbd:`Ctrl+,`"
+msgstr ":kbd:`Ctrl+,`"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid ":kbd:`⇧⌘L`"
+msgstr ":kbd:`⇧⌘L`"
+
+msgid ":kbd:`Ctrl+Shift+L`"
+msgstr ":kbd:`Ctrl+Shift+L`"
+
+msgid "Where you are"
+msgstr "Dove sei"
+
+msgid ":kbd:`⌘Z`"
+msgstr ":kbd:`⌘Z`"
+
+msgid ":kbd:`Ctrl+Z`"
+msgstr ":kbd:`Ctrl+Z`"
+
+msgid "Undo"
+msgstr "Annulla"
+
+msgid ":kbd:`⇧⌘Z`"
+msgstr ":kbd:`⇧⌘Z`"
+
+msgid ":kbd:`Ctrl+Shift+Z`"
+msgstr ":kbd:`Ctrl+Shift+Z`"
+
+msgid "Redo"
+msgstr "Ripeti"
+
+msgid ":kbd:`⇧A`"
+msgstr ":kbd:`⇧A`"
+
+msgid ":kbd:`Shift+A`"
+msgstr ":kbd:`Shift+A`"
+
+msgid "Add a node where the pointer is"
+msgstr "Aggiungi un nodo dove sta il puntatore"
+
+msgid ":kbd:`/`"
+msgstr ":kbd:`/`"
+
+msgid "Search the graph"
+msgstr "Cerca nel grafo"
+
+msgid ":kbd:`⌃Space`"
+msgstr ":kbd:`⌃Space`"
+
+msgid ":kbd:`Ctrl+Space`"
+msgstr ":kbd:`Ctrl+Space`"
+
+msgid "Magnify the window / restore"
+msgstr "Ingrandisci la finestra / ripristina"
+
+msgid ":kbd:`Esc`"
+msgstr ":kbd:`Esc`"
+
+msgid "Close a menu, leave a group, deselect"
+msgstr "Chiudi un menu, esci da un gruppo, deseleziona"
+
+msgid "On the graph (canvas, Outliner)"
+msgstr "Sul grafo (canvas, Outliner)"
+
+msgid ":kbd:`⌫` · :kbd:`Del`"
+msgstr ":kbd:`⌫` · :kbd:`Del`"
+
+msgid ":kbd:`Backspace` · :kbd:`Del`"
+msgstr ":kbd:`Backspace` · :kbd:`Del`"
+
+msgid "Delete the selection (a toast gives it back)"
+msgstr "Elimina la selezione (un avviso la restituisce)"
+
+msgid "Undo (toast)"
+msgstr "Annulla (avviso)"
+
+msgid "The toast's «Undo» puts back what was deleted"
+msgstr "«Annulla» nell'avviso rimette ciò che è stato eliminato"
+
+msgid ":kbd:`← → ↑ ↓`"
+msgstr ":kbd:`← → ↑ ↓`"
+
+msgid "Nudge the selection by 1 px"
+msgstr "Sposta la selezione di 1 px"
+
+msgid ":kbd:`⇧ ← → ↑ ↓`"
+msgstr ":kbd:`⇧ ← → ↑ ↓`"
+
+msgid ":kbd:`Shift ← → ↑ ↓`"
+msgstr ":kbd:`Shift ← → ↑ ↓`"
+
+msgid "Nudge by 10 px"
+msgstr "Sposta di 10 px"
+
+msgid ":kbd:`0` · :kbd:`⇧C`"
+msgstr ":kbd:`0` · :kbd:`⇧C`"
+
+msgid ":kbd:`0` · :kbd:`Shift+C`"
+msgstr ":kbd:`0` · :kbd:`Shift+C`"
+
+msgid "Fit the graph in the window"
+msgstr "Adatta il grafo alla finestra"
+
+msgid ":kbd:`⌘[` · :kbd:`⌥←`"
+msgstr ":kbd:`⌘[` · :kbd:`⌥←`"
+
+msgid ":kbd:`Ctrl+[` · :kbd:`Alt+←`"
+msgstr ":kbd:`Ctrl+[` · :kbd:`Alt+←`"
+
+msgid "Back to the view before the last jump"
+msgstr "Indietro, alla vista prima dell'ultimo salto"
+
+msgid ":kbd:`+` · :kbd:`=`"
+msgstr ":kbd:`+` · :kbd:`=`"
+
+msgid "Zoom in"
+msgstr "Ingrandisci"
+
+msgid ":kbd:`−`"
+msgstr ":kbd:`−`"
+
+msgid "Zoom out"
+msgstr "Riduci"
+
+msgid "Space + drag"
+msgstr "Spazio + trascina"
+
+msgid "Pan"
+msgstr "Sposta la vista"
+
+msgid "middle button + drag"
+msgstr "tasto centrale + trascina"
+
+msgid "wheel"
+msgstr "rotella"
+
+msgid "Zoom at the pointer"
+msgstr "Zoom sul puntatore"
+
+msgid "click"
+msgstr "clic"
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "⇧/⌘ click"
+msgstr "⇧/⌘ clic"
+
+msgid "Add to / remove from the selection"
+msgstr "Aggiungi o togli dalla selezione"
+
+msgid "drag on the empty canvas"
+msgstr "trascina sul vuoto"
+
+msgid "Select with a rectangle"
+msgstr "Seleziona con un rettangolo"
+
+msgid "double-click"
+msgstr "doppio clic"
+
+msgid "Enter a group"
+msgstr "Entra in un gruppo"
+
+msgid "drag from the handle"
+msgstr "trascina dalla maniglia"
+
+msgid "Connect two nodes"
+msgstr "Collega due nodi"
+
+msgid "⇧/⌥ release"
+msgstr "⇧/⌥ rilascio"
+
+msgid "Release in the void: add a linked node"
+msgstr "Rilascia nel vuoto: aggiungi un nodo collegato"
+
+msgid "⇧ drag"
+msgstr "⇧ trascina"
+
+msgid "Drag out of its container"
+msgstr "Trascina fuori dal contenitore"
+
+msgid "⌥ drop"
+msgstr "⌥ rilascio"
+
+msgid "Change only the epoch (lane)"
+msgstr "Cambia solo l'epoca (corsia)"
+
+msgid "Esc while dragging"
+msgstr "Esc mentre trascini"
+
+msgid "Put back what is being dragged"
+msgstr "Rimetti a posto ciò che trascini"
+
+msgid "right click"
+msgstr "tasto destro"
+
+msgid "The menu of a node or of the empty canvas"
+msgstr "Il menu di un nodo o del canvas vuoto"
+
+msgid "right click on a lane"
+msgstr "tasto destro su una corsia"
+
+msgid "Reflow the lane, new epoch, check the chronology"
+msgstr "Riordina la corsia, nuova epoca, verifica la cronologia"
+
+msgid "long press"
+msgstr "pressione lunga"
+
+msgid "The add menu, on touch"
+msgstr "Il menu Aggiungi, al tocco"
+
+msgid "⌥ Layout"
+msgstr "⌥ Layout"
+
+msgid ""
+"Recompute layout from scratch: a fresh arrangement, the manual one "
+"dropped (the only command that moves the nodes)"
+msgstr ""
+"Ricalcola layout da capo: una disposizione nuova, senza quella fatta a "
+"mano (il solo comando che sposta i nodi)"
+
+msgid "In the Space (the 3D in focus)"
+msgstr "Nello Spazio (il 3D a fuoco)"
+
+msgid "Click"
+msgstr "Clic"
+
+msgid "Select the proxy under the cursor (a sketch too)"
+msgstr "Seleziona il proxy sotto il cursore (anche uno schizzo)"
+
+msgid "Alt + click (⌘-click, Ctrl-click on Windows/Linux, too)"
+msgstr "Alt + clic (anche ⌘-clic, Ctrl-clic su Windows/Linux)"
+
+msgid "Select the mesh under the cursor (the representation model, a tileset)"
+msgstr ""
+"Seleziona la mesh sotto il cursore (il modello di rappresentazione, un "
+"tileset)"
+
+msgid "Right click (⌘ / Ctrl: the model's)"
+msgstr "Clic destro (⌘ / Ctrl: del modello)"
+
+msgid ""
+"The menu of the proxy (or, with ⌘ / Ctrl, of the model): soloing, frame, "
+"isolate, show in the graph, select the unit"
+msgstr ""
+"Il menu del proxy (o, con ⌘ / Ctrl, del modello): soloing, inquadra, "
+"isola, mostra nel grafo, seleziona l'unità"
+
+msgid ""
+"Move: the centre of rotation and the zoom go to the point under the "
+"cursor; nothing is selected"
+msgstr ""
+"Muoversi: il centro di rotazione e lo zoom vanno sul punto sotto il "
+"cursore; non seleziona niente"
+
+msgid ":kbd:`⇧B`"
+msgstr ":kbd:`⇧B`"
+
+msgid ":kbd:`Shift+B`"
+msgstr ":kbd:`Shift+B`"
+
+msgid "Zoom to a box: draw a rectangle and the view fills it"
+msgstr "Zoom a riquadro: traccia un rettangolo e la vista lo riempie"
+
+msgid "Shift + right click"
+msgstr "Maiusc + clic destro"
+
+msgid "Lay the 3D cursor on the surface under the pointer"
+msgstr "Posa il cursore 3D sulla superficie sotto il puntatore"
+
+msgid ":kbd:`⇧C`"
+msgstr ":kbd:`⇧C`"
+
+msgid ":kbd:`Shift+C`"
+msgstr ":kbd:`Shift+C`"
+
+msgid "The 3D cursor to the median of what is drawn, and the view on most of it"
+msgstr ""
+"Il cursore 3D al punto mediano di ciò che è disegnato, e la vista sulla "
+"gran parte"
+
+msgid "Wheel · pinch · Ctrl + two fingers"
+msgstr "Rotella · pinch · Ctrl + due dita"
+
+msgid "Zoom toward the pointer (the orbit centre goes with it)"
+msgstr "Avvicina verso il puntatore (il centro d'orbita lo segue)"
+
+msgid "Middle drag · two fingers · left drag (while the left does not select)"
+msgstr ""
+"Trascinamento col tasto centrale · due dita · trascinamento sinistro "
+"(finché il sinistro non seleziona)"
+
+msgid "Orbit"
+msgstr "Orbita"
+
+msgid ""
+"Shift + middle drag · Shift + two fingers · Shift + left drag (while the "
+"left does not select)"
+msgstr ""
+"Maiusc + centrale · Maiusc + due dita · Maiusc + sinistro (finché il "
+"sinistro non seleziona)"
+
+msgid "right drag (two fingers pressed on a trackpad)"
+msgstr "trascinamento destro (due dita premute sul trackpad)"
+
+msgid "Pan: the scene follows the pointer"
+msgstr "Panoramica: la scena segue il puntatore"
+
+msgid "Ctrl + middle drag (Mac too)"
+msgstr "Ctrl + trascinamento col centrale (anche su Mac)"
+
+msgid "Continuous zoom toward the point pressed"
+msgstr "Zoom continuo verso il punto premuto"
+
+msgid "Left drag (with a middle button, or «Emulate 3 button mouse»)"
+msgstr "Trascinamento sinistro (con un tasto centrale, o «Emula mouse a 3 tasti»)"
+
+msgid "Box selection of the proxies (Shift: added to the selection)"
+msgstr "Selezione a riquadro dei proxy (Maiusc: si aggiungono)"
+
+msgid "Alt + left drag («Emulate 3 button mouse»)"
+msgstr "Alt + trascinamento sinistro («Emula mouse a 3 tasti»)"
+
+msgid "The middle button, without one"
+msgstr "Il tasto centrale, quando non c'è"
+
+msgid "Numpad 1"
+msgstr "Tastierino 1"
+
+msgid "Front view (with «Emulate numpad»: 1 of the top row)"
+msgstr "Vista frontale (con «Emula tastierino»: 1 della riga in alto)"
+
+msgid "Numpad 3"
+msgstr "Tastierino 3"
+
+msgid "Right view"
+msgstr "Vista laterale destra"
+
+msgid "Numpad 7"
+msgstr "Tastierino 7"
+
+msgid "Top view"
+msgstr "Vista dall'alto"
+
+msgid "Ctrl + Numpad 1 · 3 · 7"
+msgstr "Ctrl + tastierino 1 · 3 · 7"
+
+msgid "The opposite views: back, left, bottom"
+msgstr "Le viste opposte: retro, sinistra, sotto"
+
+msgid "Numpad 5"
+msgstr "Tastierino 5"
+
+msgid "Perspective ⇄ orthographic"
+msgstr "Prospettiva ⇄ ortometrica"
+
+msgid "Numpad 0"
+msgstr "Tastierino 0"
+
+msgid "The camera view, when there is a camera (none yet: nothing)"
+msgstr "La vista della camera, se c'è una camera (per ora nessuna: nulla)"
+
+msgid "Numpad ."
+msgstr "Tastierino ."
+
+msgid "Frame the selection"
+msgstr "Inquadra la selezione"
+
+msgid ":kbd:`N`"
+msgstr ":kbd:`N`"
+
+msgid "The «View» panel on the right: 3D cursor, selected object, view"
+msgstr "Il pannello «Vista» a destra: cursore 3D, oggetto selezionato, vista"
+
+msgid ":kbd:`.` · :kbd:`F`"
+msgstr ":kbd:`.` · :kbd:`F`"
+
+msgid ":kbd:`Home`"
+msgstr ":kbd:`Home`"
+
+msgid "Frame everything"
+msgstr "Inquadra tutto"
+
+msgid ":kbd:`T`"
+msgstr ":kbd:`T`"
+
+msgid "Open and close the Space's Outliner"
+msgstr "Apre e chiude l'Outliner dello Spazio"
+
+msgid "Add a base shape at the 3D cursor"
+msgstr "Aggiungi una forma base al cursore 3D"
+
+msgid ":kbd:`G` · :kbd:`R` · :kbd:`S`"
+msgstr ":kbd:`G` · :kbd:`R` · :kbd:`S`"
+
+msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
+msgstr "Sposta, ruota, scala un abbozzo: poi X Y Z, un numero, Invio o Esc"
+
+msgid ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
+msgstr ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
+
+msgid ":kbd:`X Y Z` · :kbd:`Shift+X Shift+Y Shift+Z`"
+msgstr ":kbd:`X Y Z` · :kbd:`Shift+X Shift+Y Shift+Z`"
+
+msgid ""
+"During G / R / S: the axis; Shift + the axis: the plane without it; "
+"twice: local; three times: none; middle click: the nearest axis"
+msgstr ""
+"Durante G / R / S: l'asse; Maiusc + l'asse: il piano senza di lui; due "
+"volte: locale; tre volte: nessuno; clic centrale: l'asse più vicino"
+
+msgid ":kbd:`Ctrl`"
+msgstr ":kbd:`Ctrl`"
+
+msgid ""
+"During G: snap to the face under the pointer; during R / S: steps of 5° /"
+" 0.1"
+msgstr ""
+"Durante G: aggancio alla faccia sotto il puntatore; durante R / S: passi "
+"di 5° / 0,1"
+
+msgid ":kbd:`Ctrl+P`"
+msgstr ":kbd:`Ctrl+P`"
+
+msgid "Associate the selected sketches with the active unit"
+msgstr "Associa gli abbozzi selezionati all'unità attiva"
+
+msgid ":kbd:`X` · :kbd:`⌫`"
+msgstr ":kbd:`X` · :kbd:`⌫`"
+
+msgid ":kbd:`X` · :kbd:`Backspace`"
+msgstr ":kbd:`X` · :kbd:`Backspace`"
+
+msgid "Delete the selected sketch"
+msgstr "Elimina l'abbozzo selezionato"
+
+msgid "Back to the view before a jump"
+msgstr "Torna alla vista di prima di un salto"
+
+msgid ":kbd:`⇧ + click`"
+msgstr ":kbd:`⇧ + click`"
+
+msgid ":kbd:`Shift + click`"
+msgstr ":kbd:`Shift + click`"
+
+msgid "Add to the selection / make active / remove the active"
+msgstr "Aggiungi alla selezione / rendi attivo / togli l'attivo"
+
+msgid ":kbd:`A`"
+msgstr ":kbd:`A`"
+
+msgid "Select everything visible"
+msgstr "Seleziona tutto il visibile"
+
+msgid ":kbd:`⌥A`"
+msgstr ":kbd:`⌥A`"
+
+msgid ":kbd:`Alt+A`"
+msgstr ":kbd:`Alt+A`"
+
+msgid "Deselect everything"
+msgstr "Deseleziona tutto"
+
+msgid ":kbd:`B`"
+msgstr ":kbd:`B`"
+
+msgid "Box select"
+msgstr "Selezione a riquadro"
+
+msgid ":kbd:`H`"
+msgstr ":kbd:`H`"
+
+msgid "Hide the selected"
+msgstr "Nascondi i selezionati"
+
+msgid ":kbd:`⌥H`"
+msgstr ":kbd:`⌥H`"
+
+msgid ":kbd:`Alt+H`"
+msgstr ":kbd:`Alt+H`"
+
+msgid "Show everything"
+msgstr "Mostra tutto"
+
+msgid ":kbd:`⇧H`"
+msgstr ":kbd:`⇧H`"
+
+msgid ":kbd:`Shift+H`"
+msgstr ":kbd:`Shift+H`"
+
+msgid "Hide the unselected"
+msgstr "Nascondi i non selezionati"
+
+msgid "Tracing in the document"
+msgstr "Tracciare nel documento"
+
+msgid "Put the tool down: back to looking"
+msgstr "Posa lo strumento: torna a guardare"
+
+msgid "Enter · double-click"
+msgstr "Invio · doppio clic"
+
+msgid "Close the polygon / polyline"
+msgstr "Chiudi il poligono / la polilinea"
+
+msgid "click the first vertex"
+msgstr "clic sul primo vertice"
+
+msgid "Close the polygon"
+msgstr "Chiudi il poligono"
+
+msgid ":kbd:`↑ ↓` · :kbd:`Enter`"
+msgstr ":kbd:`↑ ↓` · :kbd:`Enter`"
+
+msgid "Pick what you extract"
+msgstr "Scegli cosa estrai"
+
+msgid "Windows and spaces"
+msgstr "Finestre e spazi"
+
+msgid "drag a corner"
+msgstr "trascina un angolo"
+
+msgid "Split or join windows"
+msgstr "Dividi o unisci le finestre"
+
+msgid "drag a divider"
+msgstr "trascina un divisore"
+
+msgid "Resize (to the edge: close)"
+msgstr "Ridimensiona (fino al bordo: chiudi)"
+
+msgid "double-click the bar"
+msgstr "doppio clic sulla barra"
+
+msgid "Magnify the window"
+msgstr "Ingrandisci la finestra"
+
+msgid "double-click a tab"
+msgstr "doppio clic su una scheda"
+
+msgid "Rename the space"
+msgstr "Rinomina lo spazio"
+
+msgid "right click on a tab"
+msgstr "tasto destro su una scheda"
+
+msgid "Rename, reset, remove the space"
+msgstr "Rinomina, ripristina, elimina lo spazio"
+
+msgid "⌘/⇧ click"
+msgstr "⌘/⇧ clic"
+
+msgid "Pick several files for one stamp"
+msgstr "Scegli più file per un timbro"
+
+msgid "click a folder"
+msgstr "clic su una cartella"
+
+msgid "Open the folder"
+msgstr "Apri la cartella"
+
+msgid "In a field"
+msgstr "In un campo"
+
+msgid ":kbd:`Enter`"
+msgstr ":kbd:`Enter`"
+
+msgid "Commit the field"
+msgstr "Conferma il campo"
+
+msgid ":kbd:`Tab`"
+msgstr ":kbd:`Tab`"
+
+msgid "Commit and go to the next field"
+msgstr "Conferma e vai al campo successivo"
+
+msgid "In an empty paragraph: the Blocks menu"
+msgstr "In un paragrafo vuoto: il menu Blocchi"
+
+msgid ":kbd:`[[`"
+msgstr ":kbd:`[[`"
+
+msgid "Mention a node"
+msgstr "Cita un nodo"
+
+msgid "In menus and buttons"
+msgstr "Nei menu e sui pulsanti"
+
+msgid ":kbd:`↑ ↓ → ← Enter`"
+msgstr ":kbd:`↑ ↓ → ← Enter`"
+
+msgid "Move and choose in a menu"
+msgstr "Muoviti e scegli in un menu"
+
+msgid ":kbd:`Space` · :kbd:`Enter`"
+msgstr ":kbd:`Space` · :kbd:`Enter`"
+
+msgid "Press the focused button"
+msgstr "Premi il pulsante con il focus"
+
+msgid "In the menus"
+msgstr "Nei menu"
+
+msgid ""
+"The keys the menus show beside their commands. On the web the browser "
+"keeps some of them for itself."
+msgstr ""
+"I tasti che i menu mostrano accanto ai loro comandi. Sul web il browser "
+"ne tiene alcuni per sé."
+
+msgid "Command"
+msgstr "Comando"
+
+msgid "Where"
+msgstr "Dove"
+
+msgid "EMStudio ▸ Settings…"
+msgstr "EMStudio ▸ Impostazioni…"
+
+msgid "macOS menu bar"
+msgstr "barra dei menu di macOS"
+
+msgid "File ▸ New"
+msgstr "File ▸ Nuovo"
+
+msgid "everywhere"
+msgstr "ovunque"
+
+msgid ":kbd:`⌘O`"
+msgstr ":kbd:`⌘O`"
+
+msgid ":kbd:`Ctrl+O`"
+msgstr ":kbd:`Ctrl+O`"
+
+msgid "File ▸ Open…"
+msgstr "File ▸ Apri…"
+
+msgid ":kbd:`⌘W`"
+msgstr ":kbd:`⌘W`"
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ":kbd:`Ctrl+W`"
+
+msgid "File ▸ Close"
+msgstr "File ▸ Chiudi"
+
+msgid "*desktop only*: macOS, Windows, Linux (the browser keeps the key)"
+msgstr "*solo desktop*: macOS, Windows, Linux (il browser tiene il tasto per sé)"
+
+msgid "File ▸ Save"
+msgstr "File ▸ Salva"
+
+msgid "File ▸ Save As…"
+msgstr "File ▸ Salva come…"
+
+msgid ":kbd:`⌥⌘S`"
+msgstr ":kbd:`⌥⌘S`"
+
+msgid ":kbd:`Ctrl+Alt+S`"
+msgstr ":kbd:`Ctrl+Alt+S`"
+
+msgid "File ▸ Save all"
+msgstr "File ▸ Salva tutto"
+
+msgid ":kbd:`⌘Q`"
+msgstr ":kbd:`⌘Q`"
+
+msgid ":kbd:`Ctrl+Q`"
+msgstr ":kbd:`Ctrl+Q`"
+
+msgid "File ▸ Quit EMStudio"
+msgstr "File ▸ Esci da EMStudio"
+
+msgid "*desktop only*: Windows, Linux"
+msgstr "*solo desktop*: Windows, Linux"
+
+msgid "Help ▸ Settings…"
+msgstr "Aiuto ▸ Impostazioni…"
+
+msgid "web, Windows, Linux"
+msgstr "web, Windows, Linux"
+

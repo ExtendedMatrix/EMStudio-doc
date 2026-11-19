@@ -1,0 +1,830 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Menus"
+msgstr "Menu"
+
+msgid "*Every command of the menus, where it appears and what it does.*"
+msgstr "*Ogni comando dei menu, dove compare e che cosa fa.*"
+
+msgid ""
+"The menu bar at the top of the window holds **File**, **Edit**, **Tools**"
+" and **Help**: the commands that belong to the whole study rather than to"
+" one window. The same menus appear on the desktop and on the web, because"
+" EMStudio draws them from one table of commands. On the macOS desktop the"
+" system's menu bar carries them too, together with the **EMStudio** and "
+"**Window** menus of the Mac; on Windows and Linux the menu bar inside the"
+" window is the only one."
+msgstr ""
+"La barra dei menu in cima alla finestra contiene **File**, **Modifica**, "
+"**Strumenti** e **Aiuto**: i comandi che riguardano l'intero studio e non"
+" una sola finestra. Gli stessi menu compaiono sul desktop e sul web, "
+"perché EMStudio li disegna a partire da un'unica tabella di comandi. Sul "
+"desktop macOS li porta anche la barra dei menu del sistema, insieme ai "
+"menu **EMStudio** e **Finestra** del Mac; su Windows e Linux la barra dei"
+" menu dentro la finestra è l'unica."
+
+msgid "The File menu open."
+msgstr "Il menu File aperto."
+
+msgid "The Edit menu open."
+msgstr "Il menu Modifica aperto."
+
+msgid "The Tools menu open."
+msgstr "Il menu Strumenti aperto."
+
+msgid "The Help menu open."
+msgstr "Il menu Aiuto aperto."
+
+msgid ""
+"The commands of a single window are elsewhere: in the window's own "
+"header, in the menu that opens with a right click on the window, and in "
+"the menu *This window's tools* at the right of the header. :doc:`windows`"
+" describes them with each type of window."
+msgstr ""
+"I comandi di una singola finestra stanno altrove: nell'intestazione della"
+" finestra stessa, nel menu che si apre con un clic destro sulla finestra "
+"e nel menu *Strumenti di questa finestra* a destra dell'intestazione. "
+":doc:`windows` li descrive con ciascun tipo di finestra."
+
+msgid "How to read the tables"
+msgstr "Come leggere le tabelle"
+
+msgid ""
+"A command that exists on some platforms only is drawn only there. In the "
+"tables below, the **Where** column says where each command appears: "
+"*everywhere*, a list of platforms, *desktop only*, or *macOS menu bar* "
+"for the commands that the Mac also shows in the system's menu bar. :doc"
+":`desktop-and-web` collects every difference between the desktop and the "
+"web in one table."
+msgstr ""
+"Un comando che esiste solo su alcune piattaforme compare solo lì. Nelle "
+"tabelle che seguono, la colonna **Dove** dice dove compare ciascun "
+"comando: *ovunque*, un elenco di piattaforme, *solo desktop*, oppure "
+"*barra dei menu di macOS* per i comandi che il Mac mostra anche nella "
+"barra dei menu del sistema. :doc:`desktop-and-web` raccoglie in una sola "
+"tabella tutte le differenze tra desktop e web."
+
+msgid ""
+"The keys are given as the Mac shows them (⌘) and as Windows and Linux "
+"show them (Ctrl). Some keys work in the page and are not written beside a"
+" menu command: ``Edit ▸ Undo`` and ``Edit ▸ Redo`` answer to :kbd:`⌘Z` "
+"and :kbd:`⇧⌘Z` (:kbd:`Ctrl+Z`, :kbd:`Ctrl+Shift+Z`), as :doc:`shortcuts` "
+"lists. On the Mac, the **Edit** menu of the system's menu bar holds the "
+"usual commands of text editing (Undo, Redo, Cut, Copy, Paste, Select "
+"All), which act on the field being typed in."
+msgstr ""
+"I tasti sono indicati come li mostra il Mac (⌘) e come li mostrano "
+"Windows e Linux (Ctrl). Alcuni tasti funzionano nella pagina e non sono "
+"scritti accanto a un comando di menu: ``Modifica ▸ Annulla`` e ``Modifica"
+" ▸ Ripristina`` rispondono a :kbd:`⌘Z` e :kbd:`⇧⌘Z` (:kbd:`Ctrl+Z`, "
+":kbd:`Ctrl+Shift+Z`), come elenca :doc:`shortcuts`. Sul Mac, il menu "
+"**Modifica** della barra dei menu del sistema contiene i soliti comandi "
+"di modifica del testo (Undo, Redo, Cut, Copy, Paste, Select All), che "
+"agiscono sul campo in cui stai scrivendo."
+
+msgid ""
+"The **What it does** column repeats the description that EMStudio shows "
+"when the pointer rests on the command. Three commands of **Help** have "
+"none, because their names say it:"
+msgstr ""
+"La colonna **Che cosa fa** riporta la descrizione che EMStudio mostra "
+"quando il puntatore si ferma sul comando. Tre comandi di **Aiuto** non ne"
+" hanno, perché lo dice già il loro nome:"
+
+msgid ""
+"**Workspaces…** opens the table of the six workspaces, with the question "
+"each answers and its windows (see :doc:`workspaces`);"
+msgstr ""
+"**Spazi di lavoro…** apre la tabella dei sei spazi di lavoro, con la "
+"domanda a cui risponde ciascuno e le sue finestre (vedi "
+":doc:`workspaces`);"
+
+msgid ""
+"**Shortcuts** opens the list of every key and gesture, with a search "
+"field (see :doc:`shortcuts`);"
+msgstr ""
+"**Scorciatoie** apre l'elenco di tutti i tasti e i gesti, con un campo di"
+" ricerca (vedi :doc:`shortcuts`);"
+
+msgid ""
+"**EM legend** opens the legend of the shapes and lines of the Extended "
+"Matrix (see :doc:`em-legend`)."
+msgstr ""
+"**Legenda EM** apre la legenda delle forme e delle linee dell'Extended "
+"Matrix (vedi :doc:`em-legend`)."
+
+msgid "Where you work: the mode, the node, the room"
+msgstr "Dove lavori: il modo, il nodo, la stanza"
+
+msgid ""
+"The chip's menu open under the identity chip at the top right: the "
+"sections Author, Node and account, Where you work, and My space."
+msgstr ""
+"Il menu del chip aperto sotto il chip dell'identità, in alto a destra: le"
+" sezioni Autore, Nodo e account, Dove lavori e Il mio spazio."
+
+msgid ""
+"The way you are working (a file of this computer, a live link with "
+"another application, a room of a node) is not a menu of the bar. It has "
+"one place, the section **Where you work** of the chip's menu, the chip at"
+" the top right of the window: click the label at the left of the status "
+"bar, or press :kbd:`⇧⌘L` (:kbd:`Ctrl+Shift+L`), and the menu opens at "
+"that section. Under **Mode** it offers three choices, which correspond to"
+" the three verbs of this manual (see :doc:`/explanation/open-enter-"
+"create`):"
+msgstr ""
+"Il modo in cui stai lavorando (un file di questo computer, un "
+"collegamento dal vivo con un'altra applicazione, una stanza di un nodo) "
+"non è un menu della barra. Ha un solo posto, la sezione **Dove lavori** "
+"del menu del chip, il chip in alto a destra della finestra: clicca "
+"l'etichetta a sinistra della barra di stato, o premi :kbd:`⇧⌘L` "
+"(:kbd:`Ctrl+Shift+L`), e il menu si apre su quella sezione. Sotto "
+"**Modo** offre tre scelte, che corrispondono ai tre verbi di questo "
+"manuale (vedi :doc:`/explanation/open-enter-create`):"
+
+msgid "**On this computer**: a file you *open* from the disk;"
+msgstr "**Sul computer**: un file che *apri* dal disco;"
+
+msgid ""
+"**With an app**: the live link with EM Tools in Blender (or another "
+"application that synchronises with EMStudio), the link the older versions"
+" called *Sidecar*;"
+msgstr ""
+"**Con un'app**: il collegamento dal vivo con EM Tools in Blender (o con "
+"un'altra applicazione che si sincronizza con EMStudio), il collegamento "
+"che le versioni precedenti chiamavano *Sidecar*;"
+
+msgid "**In a room**: a room you *enter* on a StratiGraph node."
+msgstr "**In una stanza**: una stanza in cui *entri* su un nodo StratiGraph."
+
+msgid ""
+"Under **Synchronised apps** the section lists the applications linked to "
+"EMStudio, with **Find** to look for EM Tools on this computer. Inside a "
+"room, under **Room**, it names the room and offers **Room settings…**, "
+"**Open on the node**, **Leave the room**, **Resources of the room…** and "
+"**Open this room in…**, which opens the same room in the other editor. "
+"The node, your account on it and your rooms are in the other sections of "
+"the same menu, **Node and account** and **My space** (see :doc:`/how-"
+"to/rooms/sign-in`)."
+msgstr ""
+"Sotto **App sincronizzate** la sezione elenca le applicazioni collegate a"
+" EMStudio, con **Trova** per cercare EM Tools su questo computer. Dentro "
+"una stanza, sotto **Stanza**, nomina la stanza e offre **Impostazioni "
+"della stanza…**, **Apri sul nodo**, **Esci dalla stanza**, **Risorse "
+"della stanza…** e **Apri questa stanza in…**, che apre la stessa stanza "
+"nell'altro editor. Il nodo, il tuo account e le tue stanze stanno nelle "
+"altre sezioni dello stesso menu, **Nodo e account** e **Il mio spazio** "
+"(vedi :doc:`/how-to/rooms/sign-in`)."
+
+msgid ""
+"The table at the end of this page, **Mode**, lists the buttons that the "
+"menu presses for these choices, with the names they carry in the code of "
+"the application (**Standalone**, **Sidecar (sync)**, **Join Room**). The "
+"menu shows the three choices above in their place."
+msgstr ""
+"La tabella in fondo a questa pagina, **Modo**, elenca i pulsanti che il "
+"menu preme per queste scelte, con i nomi che portano nel codice "
+"dell'applicazione (**Standalone**, **Sidecar (sync)**, **Join Room**). Al"
+" loro posto il menu mostra le tre scelte descritte sopra."
+
+msgid "The menus at a glance"
+msgstr "I menu in breve"
+
+msgid ""
+"The menu bar inside the window, on every platform, and the menu bar of "
+"the system, which only the macOS desktop draws."
+msgstr ""
+"La barra dei menu dentro la finestra, su ogni piattaforma, e la barra dei"
+" menu del sistema, che disegna soltanto il desktop macOS."
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "In the window"
+msgstr "Nella finestra"
+
+msgid "macOS menu bar"
+msgstr "barra dei menu di macOS"
+
+msgid "EMStudio"
+msgstr "EMStudio"
+
+msgid "—"
+msgstr "—"
+
+msgid "yes"
+msgstr "sì"
+
+msgid "File"
+msgstr "File"
+
+msgid "everywhere"
+msgstr "ovunque"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Tools"
+msgstr "Strumenti"
+
+msgid "Window"
+msgstr "Finestra"
+
+msgid "Help"
+msgstr "Aiuto"
+
+msgid "Command"
+msgstr "Comando"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Windows, Linux"
+msgstr "Windows, Linux"
+
+msgid "Where"
+msgstr "Dove"
+
+msgid "What it does"
+msgstr "Che cosa fa"
+
+msgid "New"
+msgstr "Nuovo"
+
+msgid ":kbd:`⌘N`"
+msgstr ":kbd:`⌘N`"
+
+msgid ":kbd:`Ctrl+N`"
+msgstr ":kbd:`Ctrl+N`"
+
+msgid "everywhere · macOS menu bar"
+msgstr "ovunque · barra dei menu di macOS"
+
+msgid "New empty .em.json"
+msgstr "Nuovo .em.json vuoto"
+
+msgid "New EM project…"
+msgstr "Nuovo progetto EM…"
+
+msgid ""
+"Make the folders of a new EM project (the EM standard tree) in a folder "
+"you choose"
+msgstr ""
+"Crea le cartelle di un nuovo progetto EM (l'albero standard EM) in una "
+"cartella che scegli"
+
+msgid "Open project…"
+msgstr "Apri progetto…"
+
+msgid "Opens a project's folder and the em.json in its EM/"
+msgstr "Apre la cartella di un progetto e l'em.json nella sua EM/"
+
+msgid "Reorder by the standard…"
+msgstr "Riordina secondo lo standard…"
+
+msgid ""
+"Shows the plan for the open project's folder (the folders to make, the "
+"files to move) and asks"
+msgstr ""
+"Mostra il piano per la cartella del progetto aperto (le cartelle da "
+"creare, i file da spostare) e chiede"
+
+msgid "Close the project"
+msgstr "Chiudi il progetto"
+
+msgid "Closes every file of the project: the Shelf goes with it"
+msgstr "Chiude tutti i file del progetto: lo Scaffale va con lui"
+
+msgid "Open the project folder"
+msgstr "Apri la cartella del progetto"
+
+msgid ""
+"Shows the folder of the active .em.json in the Finder / Explorer / file "
+"manager, the file selected where the system allows it (in a browser "
+"alone: the path, copied)"
+msgstr ""
+"Mostra la cartella dell'.em.json attivo nel Finder / Esplora file / "
+"gestore dei file, con il file selezionato dove il sistema lo permette "
+"(nel solo browser: il percorso, copiato)"
+
+msgid "Open…"
+msgstr "Apri…"
+
+msgid ":kbd:`⌘O`"
+msgstr ":kbd:`⌘O`"
+
+msgid ":kbd:`Ctrl+O`"
+msgstr ":kbd:`Ctrl+O`"
+
+msgid "Open an .em.json file"
+msgstr "Apri un file .em.json"
+
+msgid "Open Recent ▸"
+msgstr "Apri recenti ▸"
+
+msgid "The last files and rooms you opened. Filled when the sub-menu opens."
+msgstr ""
+"Gli ultimi file e stanze che hai aperto. Si riempie quando il sottomenu "
+"si apre."
+
+msgid "Open in place of the open files…"
+msgstr "Apri al posto dei file aperti…"
+
+msgid ""
+"Choose a file, then close the open ones (asking for those with unsaved "
+"changes) and open it"
+msgstr ""
+"Scegli un file, poi chiudi quelli aperti (chiedendo per quelli con "
+"modifiche non salvate) e aprilo"
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid ":kbd:`⌘W`"
+msgstr ":kbd:`⌘W`"
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ":kbd:`Ctrl+W`"
+
+msgid ""
+"everywhere · macOS menu bar · the key on the desktop only (the browser "
+"keeps it)"
+msgstr ""
+"ovunque · barra dei menu di macOS · il tasto solo sul desktop (il browser"
+" lo tiene per sé)"
+
+msgid ""
+"Close the active document (asking to save it if needed) and go back to "
+"the start screen"
+msgstr ""
+"Chiudi il documento attivo (chiedendo di salvarlo se serve) e torna alla "
+"schermata iniziale"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid ":kbd:`⌘S`"
+msgstr ":kbd:`⌘S`"
+
+msgid ":kbd:`Ctrl+S`"
+msgstr ":kbd:`Ctrl+S`"
+
+msgid "Save .em.json (⌘S)"
+msgstr "Salva .em.json (⌘S)"
+
+msgid "Save As…"
+msgstr "Salva come…"
+
+msgid ":kbd:`⇧⌘S`"
+msgstr ":kbd:`⇧⌘S`"
+
+msgid ":kbd:`Ctrl+Shift+S`"
+msgstr ":kbd:`Ctrl+Shift+S`"
+
+msgid "Save .em.json to a new file (⇧⌘S)"
+msgstr "Salva .em.json in un file nuovo (⇧⌘S)"
+
+msgid "Save all"
+msgstr "Salva tutto"
+
+msgid ":kbd:`⌥⌘S`"
+msgstr ":kbd:`⌥⌘S`"
+
+msgid ":kbd:`Ctrl+Alt+S`"
+msgstr ":kbd:`Ctrl+Alt+S`"
+
+msgid "Save every file with unsaved changes (⌥⌘S)"
+msgstr "Salva ogni file con modifiche non salvate (⌥⌘S)"
+
+msgid "Pin version…"
+msgstr "Fissa versione…"
+
+msgid ""
+"Freeze the project as a citable snapshot. The DOI is minted by the "
+"Catalog; this is the stable thing it points at."
+msgstr ""
+"Congela il progetto come istantanea citabile. Il DOI lo conia il Catalog;"
+" questa è la cosa stabile a cui punta."
+
+msgid "Porta dentro…"
+msgstr "Porta dentro…"
+
+msgid ""
+"Bring files into the graph as part of a document: what each is, the "
+"document, its date, the epoch it represents"
+msgstr ""
+"Porta i file nel grafo come parte di un documento: che cos'è ciascuno, il"
+" documento, la sua data, l'epoca che rappresenta"
+
+msgid "Georeferencing…"
+msgstr "Georeferenziazione…"
+
+msgid "The coordinate system of each graph of the file, and of its models"
+msgstr "Il sistema di coordinate di ciascun grafo del file, e dei suoi modelli"
+
+msgid "Import ▸"
+msgstr "Importa ▸"
+
+msgid "Installed plugins add their commands here, after the rows below."
+msgstr ""
+"I plugin installati aggiungono qui i loro comandi, dopo le righe che "
+"seguono."
+
+msgid "Import ▸ GraphML…"
+msgstr "Importa ▸ GraphML…"
+
+msgid "Import a yEd GraphML file (needs the local bridge)"
+msgstr "Importa un file GraphML di yEd (serve il bridge locale)"
+
+msgid "Import ▸ Table with a mapping…"
+msgstr "Importa ▸ Tabella con mappatura…"
+
+msgid ""
+"Read a table or an XML through a mapping: into a new graph, or onto this "
+"one"
+msgstr ""
+"Leggi una tabella o un XML con una mappatura: in un grafo nuovo, o su "
+"questo"
+
+msgid "Export ▸"
+msgstr "Esporta ▸"
+
+msgid ""
+"Export the current document. Installed plugins add their commands here, "
+"after the rows below."
+msgstr ""
+"Esporta il documento corrente. I plugin installati aggiungono qui i loro "
+"comandi, dopo le righe che seguono."
+
+msgid "Export ▸ SVG"
+msgstr "Esporta ▸ SVG"
+
+msgid "Export the current view as SVG"
+msgstr "Esporta la vista corrente come SVG"
+
+msgid "Export ▸ Turtle (.ttl)"
+msgstr "Esporta ▸ Turtle (.ttl)"
+
+msgid "Export as RDF/CIDOC Turtle (.ttl) via the s3Dgraphy projection"
+msgstr "Esporta come Turtle RDF/CIDOC (.ttl) con la proiezione di s3Dgraphy"
+
+msgid "Print sheets…"
+msgstr "Stampa schede…"
+
+msgid ""
+"Print the recording sheets of the graph: all, the selection, or those the"
+" criteria keep (type, epoch, activity, state, numbers, words)"
+msgstr ""
+"Stampa le schede di rilevamento del grafo: tutte, la selezione, o quelle "
+"che i criteri tengono (tipo, epoca, attività, stato, numeri, parole)"
+
+msgid "Integrate into this file…"
+msgstr "Integra in questo file…"
+
+msgid ""
+"Merge another emj's graphs into the active graph's file (shared nodes "
+"merge by UUID — offline, no server)"
+msgstr ""
+"Fonde i grafi di un altro emj nel file del grafo attivo (i nodi condivisi"
+" si fondono per UUID — offline, nessun server)"
+
+msgid "Find missing files…"
+msgstr "Ritrova i file…"
+
+msgid ""
+"Look in a folder you choose for the files this document cannot find — by "
+"their sha256, else by name and size — and rewrite their paths relative to"
+" the em.json. One undo."
+msgstr ""
+"Cerca in una cartella che scegli i file che questo documento non trova — "
+"per sha256, altrimenti per nome e dimensione — e riscrivi i loro percorsi"
+" relativi all'em.json. Un annulla."
+
+msgid "Collect resources…"
+msgstr "Raccogli le risorse…"
+
+msgid ""
+"Copy into the study's folder the files it names outside it (absolute "
+"paths, onedrive://, a .blend elsewhere) — only what each needs, every "
+"copy checked by sha256 — and rewrite their paths relative to the em.json."
+" Never a move; one undo."
+msgstr ""
+"Copia nella cartella dello studio i file che nomina fuori da essa "
+"(percorsi assoluti, onedrive://, un .blend altrove) — solo ciò che serve "
+"a ciascuno, ogni copia verificata per sha256 — e riscrivi i loro percorsi"
+" relativi all'em.json. Mai uno spostamento; un annulla."
+
+msgid "Clean the file…"
+msgstr "Pulisci il file…"
+
+msgid ""
+"Take out of the em.json what is only a way of looking at it (the colour "
+"schemes), after showing what goes. The graphs do not change. One undo."
+msgstr ""
+"Togli dall'em.json ciò che è solo un modo di guardarlo (gli schemi "
+"colori), dopo aver mostrato cosa va via. I grafi non cambiano. Un "
+"annulla."
+
+msgid "Create a room…"
+msgstr "Crea una stanza…"
+
+msgid "A room on this node, yours, empty. Whoever creates it is its owner."
+msgstr "Una stanza su questo nodo, tua, vuota. Chi la crea ne è proprietario."
+
+msgid "Bring this into a new room…"
+msgstr "Porta questo in una stanza nuova…"
+
+msgid ""
+"Put the graph you have open on a table on this node. From that moment the"
+" live copy is the node's."
+msgstr ""
+"Metti il grafo che hai aperto su un tavolo di questo nodo. Da quel "
+"momento la copia viva è quella del nodo."
+
+msgid "Consolidate for…"
+msgstr "Consolida per…"
+
+msgid ""
+"Archive › Assets for a target: each asset with its versions and textures,"
+" what Heriverse, ATON, the web or a phone will load, what is to do, the "
+"scene's bars against the bands, the queue. Nothing is written until an "
+"action of the queue runs."
+msgstr ""
+"Archivio › Asset per un target: ogni asset con le sue versioni e texture,"
+" che cosa caricano Heriverse, ATON, il web o un telefono, che cosa c'è da"
+" fare, le barre della scena contro le fasce, la coda. Non scrive nulla "
+"finché un'azione della coda non parte."
+
+msgid "Compose a .blend from the graph…"
+msgstr "Componi un .blend dal grafo…"
+
+msgid ""
+"A working .blend for Blender from what there is on the disk or in the "
+"room, with no .blend to start from: a working profile, the containers or "
+"epochs; each object carries the graph's tags"
+msgstr ""
+"Un .blend di lavoro per Blender da ciò che c'è sul disco o nella stanza, "
+"senza un .blend di partenza: un profilo di lavoro, i contenitori o le "
+"epoche; ogni oggetto porta i tag del grafo"
+
+msgid "Quit EMStudio"
+msgstr "Esci da EMStudio"
+
+msgid ":kbd:`⌘Q`"
+msgstr ":kbd:`⌘Q`"
+
+msgid ":kbd:`Ctrl+Q`"
+msgstr ":kbd:`Ctrl+Q`"
+
+msgid "*desktop only*: Windows, Linux"
+msgstr "*solo desktop*: Windows, Linux"
+
+msgid "Undo"
+msgstr "Annulla"
+
+msgid "Redo"
+msgstr "Ripristina"
+
+msgid "Drawn by the system."
+msgstr "Disegnato dal sistema."
+
+msgid "Cut"
+msgstr "Cut"
+
+msgid "Copy"
+msgstr "Copy"
+
+msgid "Paste"
+msgstr "Paste"
+
+msgid "Select All"
+msgstr "Select All"
+
+msgid "Add node…"
+msgstr "Aggiungi nodo…"
+
+msgid ":kbd:`⇧A`"
+msgstr ":kbd:`⇧A`"
+
+msgid ":kbd:`Shift+A`"
+msgstr ":kbd:`Shift+A`"
+
+msgid "Add a node (⇧A)"
+msgstr "Aggiungi un nodo (⇧A)"
+
+msgid "StratiMiner"
+msgstr "StratiMiner"
+
+msgid ""
+"StratiMiner: build a graph from a folder of unstructured sources, via the"
+" reviewable em\\_data.xlsx table"
+msgstr ""
+"StratiMiner: costruisci un grafo da una cartella di fonti non "
+"strutturate, passando per la tabella em\\_data.xlsx da rivedere"
+
+msgid "Normalise spellings…"
+msgstr "Uniforma le grafie…"
+
+msgid ""
+"Bring the edges written with an older spelling to the canonical one, in "
+"the whole graph — one undo step"
+msgstr ""
+"Porta alla grafia canonica gli archi scritti con una grafia vecchia, in "
+"tutto il grafo — un solo annulla"
+
+msgid "Colours…"
+msgstr "Colori…"
+
+msgid ""
+"The Colours window of the active Space: colour the proxies by type, epoch"
+" or a property"
+msgstr ""
+"La finestra Colori dello Spazio attivo: colora i proxy per tipo, epoca o "
+"una proprietà"
+
+msgid "Vocabularies…"
+msgstr "Vocabolari…"
+
+msgid ""
+"The vocabularies installed on this computer, those this file uses, and "
+"the copy of their terms in the file"
+msgstr ""
+"I vocabolari installati su questo computer, quelli che il file usa, e la "
+"copia dei loro termini nel file"
+
+msgid "Extensions…"
+msgstr "Estensioni…"
+
+msgid ""
+"The extensions of this computer — community packages and plugins: install"
+" from disk, enable, remove"
+msgstr ""
+"Le estensioni di questo computer — pacchetti di comunità e plugin: "
+"installa da disco, attiva, rimuovi"
+
+msgid "Check the chronology…"
+msgstr "Verifica la cronologia…"
+
+msgid ""
+"The epochs on a time axis, the overlaps with their delta and their "
+"remedies"
+msgstr ""
+"Le epoche su un asse del tempo, le sovrapposizioni con il loro delta e i "
+"rimedi"
+
+msgid "Resources"
+msgstr "Risorse"
+
+msgid ""
+"Resources: read a DosCo folder against the active graph's documents; the "
+"graph's documents and resources"
+msgstr ""
+"Risorse: leggi una cartella DosCo contro i documenti del grafo attivo; i "
+"documenti e le risorse del grafo"
+
+msgid "Workspaces…"
+msgstr "Spazi di lavoro…"
+
+msgid "Shortcuts"
+msgstr "Scorciatoie"
+
+msgid "EM legend"
+msgstr "Legenda EM"
+
+msgid "About EMStudio"
+msgstr "Informazioni su EMStudio"
+
+msgid "web, Windows, Linux"
+msgstr "web, Windows, Linux"
+
+msgid "Settings…"
+msgstr "Impostazioni…"
+
+msgid ":kbd:`⌘,`"
+msgstr ":kbd:`⌘,`"
+
+msgid ":kbd:`Ctrl+,`"
+msgstr ":kbd:`Ctrl+,`"
+
+msgid "Check for updates…"
+msgstr "Cerca aggiornamenti…"
+
+msgid "EMStudio (macOS menu bar)"
+msgstr "EMStudio (barra dei menu di macOS)"
+
+msgid "Services"
+msgstr "Servizi"
+
+msgid "Hide EMStudio"
+msgstr "Nascondi EMStudio"
+
+msgid "Hide Others"
+msgstr "Nascondi altre"
+
+msgid "Show All"
+msgstr "Mostra tutte"
+
+msgid "Window (macOS menu bar)"
+msgstr "Finestra (barra dei menu di macOS)"
+
+msgid "Minimize"
+msgstr "Minimize"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "Enter Full Screen"
+msgstr "Enter Full Screen"
+
+msgid "Mode"
+msgstr "Modo"
+
+msgid ""
+"The mode, the node and the room are no longer a menu of the top bar: "
+"their one place is the section **Where you work** of the chip's menu, "
+"opened by the left label of the status bar (:kbd:`⇧⌘L`). The buttons "
+"below stay in the page, hidden, and that menu uses them; their labels and"
+" tooltips are these."
+msgstr ""
+"Il modo, il nodo e la stanza non sono più un menu della barra in alto: il"
+" loro unico posto è la sezione **Dove lavori** del menu del chip, che si "
+"apre con l'etichetta a sinistra della barra di stato (:kbd:`⇧⌘L`). I "
+"pulsanti qui sotto restano nella pagina, nascosti, e quel menu li usa; le"
+" loro etichette e i loro suggerimenti sono questi."
+
+msgid "Button"
+msgstr "Pulsante"
+
+msgid "When"
+msgstr "Quando"
+
+msgid "Standalone"
+msgstr "Standalone"
+
+msgid "Standalone: editing a local .em.json"
+msgstr "Autonomo: modifichi un .em.json locale"
+
+msgid "Sidecar (sync)"
+msgstr "Sidecar (sync)"
+
+msgid "Sidecar: live-synced to a host (Blender/EMtools)"
+msgstr "Sidecar: sincronizzato dal vivo con un host (Blender/EMtools)"
+
+msgid "Join Room"
+msgstr "Join Room"
+
+msgid ""
+"In a room on a StratiGraph node: the graph lives in the room, shared with"
+" its participants."
+msgstr ""
+"In una stanza su un nodo StratiGraph: il grafo vive nella stanza, "
+"condiviso con chi vi partecipa."
+
+msgid "Open this room in…"
+msgstr "Apri questa stanza in…"
+
+msgid "only in a room"
+msgstr "solo in una stanza"
+
+msgid ""
+"Open the same room in the other editor — the graph is the room's, so "
+"nothing is transferred"
+msgstr ""
+"Apri la stessa stanza nell'altro editor — il grafo è della stanza, quindi"
+" non si trasferisce niente"
+
+msgid "Share this room…"
+msgstr "Condividi questa stanza…"
+
+msgid ""
+"Who is at this table, and whose the live copy is. Opens the node's panel "
+"for this room, in a new tab — that is where the ACL and the owner live, "
+"and where people, teams, invitations and the transfer are all in one "
+"place. EMStudio used to draw its own; it showed people but not teams, so "
+"it was retired."
+msgstr ""
+"Chi è a questo tavolo, e di chi è la copia viva. Apre il pannello del "
+"nodo per questa stanza, in una scheda nuova — là vivono l'ACL e il "
+"proprietario, e persone, squadre, inviti e trasferimento stanno in un "
+"posto solo. EMStudio ne disegnava uno suo; mostrava le persone e non le "
+"squadre, quindi è stato ritirato."
+
