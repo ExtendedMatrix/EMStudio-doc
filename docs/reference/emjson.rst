@@ -1,5 +1,9 @@
-The ``em.json`` file
-====================
+.. _reference-emjson:
+
+The em.json file
+================
+
+.. TODO MAN02: update to the 24 Oct specification. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 ``em.json`` is EMStudio's native file: the Extended Matrix as a flat graph, plus the
 metadata to read it and an optional layout. It is the record; the file is how it

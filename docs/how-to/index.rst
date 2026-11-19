@@ -5,40 +5,21 @@
 How-to Guides
 =============
 
-Task-oriented recipes, grouped by goal. Each guide assumes basic familiarity with
-EMStudio (see :ref:`tutorial`) and helps you accomplish one objective. The guides
-follow the arc of the work — bring material in, interpret it, document its
-provenance, compare, tell the story — which is also the order of the tabs.
+Task-oriented recipes, grouped by workspace. Each guide assumes basic familiarity
+with EMStudio (see :ref:`tutorial`) and helps you reach one objective.
+
+.. TODO MAN05: a line per group once the recipes are written.
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Bring material in
+   :maxdepth: 2
 
-   bring-material-in
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Interpret
-
-   interpret-in-graph
-   declare-provenance
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Compare
-
-   compare-on-the-shelf
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Tell the story
-
-   write-the-narrative
-   export-the-narrative
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Images and collaboration
-
-   annotate-images
-   collaborate-in-a-room
+   files/index
+   bring-in/index
+   stratigraphy/index
+   sources/index
+   space/index
+   sheets/index
+   archive/index
+   narrative/index
+   rooms/index
+   extensions/index

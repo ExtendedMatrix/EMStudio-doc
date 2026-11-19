@@ -1,5 +1,9 @@
+.. _reference-export-formats:
+
 Export formats
 ==============
+
+.. TODO MAN02: only what exists (SVG, Turtle, the narrative). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 EMStudio exports both the **graph** and the **narrative**.
 

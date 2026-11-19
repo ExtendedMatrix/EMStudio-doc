@@ -13,9 +13,11 @@ understand the model rather than to perform a task.
    :caption: Concepts
 
    what-is-emstudio
-   two-tier
-   tabs-as-arrangements
-   dtc-model
-   narrative-as-graph
-   rooms-and-collaboration
    place-in-the-framework
+   workspaces-are-questions
+   open-enter-create
+   two-tier
+   dtc-and-em
+   narrative-as-graph
+   extensions-and-trust
+   vocabularies

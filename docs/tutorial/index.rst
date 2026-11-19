@@ -5,13 +5,14 @@
 Getting Started
 ===============
 
-The Tutorial guides a first-time user through installing EMStudio and a guided
-first contact: open an example study from the Extended Matrix case studies and
-read its stratigraphic matrix. Follow it linearly the first time.
+The Tutorial takes a first-time user from getting EMStudio to a first study of
+their own. Follow it in order the first time; the examples use Templu Mare.
 
 .. toctree::
    :maxdepth: 1
    :caption: Tutorial
 
-   installation
+   get-emstudio
    first-launch
+   first-study
+   files-to-documents

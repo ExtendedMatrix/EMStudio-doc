@@ -1,5 +1,9 @@
-Two tiers: property graph and RDF
-=================================
+.. _explanation-two-tier:
+
+Two tiers
+=========
+
+.. TODO MAN05: touch up. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 EMStudio keeps the Extended Matrix in **two tiers at once**, and this is a
 deliberate design choice rather than a compromise.

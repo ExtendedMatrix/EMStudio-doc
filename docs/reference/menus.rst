@@ -32,7 +32,7 @@ Mode
 The **session mode** — Standalone, or in a room (**Hub**) — and where the app asks
 for the room's access token. The mode is *derived* from whether you are connected,
 not a switch you set for its own sake (see
-:doc:`../explanation/rooms-and-collaboration`).
+:doc:`../explanation/open-enter-create`).
 
 Tools
 -----

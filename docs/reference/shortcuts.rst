@@ -25,4 +25,4 @@ full set evolves with the software.
 
 Mouse gestures in the graph — dragging a node, dragging from a node's edge to
 connect, double-clicking a group to enter it — are described in
-:doc:`../how-to/interpret-in-graph`.
+:doc:`../how-to/stratigraphy/add-and-connect-units`.

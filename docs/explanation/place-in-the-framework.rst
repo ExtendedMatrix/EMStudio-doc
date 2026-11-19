@@ -1,5 +1,9 @@
-EMStudio in the Extended Matrix Framework
-=========================================
+.. _explanation-place-in-the-framework:
+
+Place in the framework
+======================
+
+.. TODO MAN05: update (the node, EMStudio as a service). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 EMStudio does not try to be every tool. It is the **hub** other software plugs into,
 the editor that *owns* the EM record while the rest of the ecosystem reads and writes
@@ -71,7 +75,7 @@ rung: **direct** on one machine (a **Sidecar**, no server), a **LAN** server (a 
 on the local network), or a **cloud** server (a **Hub** on the internet). "Standalone,
 Sidecar, Hub" are the cells of two independent axes — being in a room, and having a
 tool connected — that compose rather than exclude. See
-:doc:`rooms-and-collaboration` for the axes and the three layers (document, ephemeral
+:doc:`open-enter-create` for the axes and the three layers (document, ephemeral
 interaction, presence) that keep one user's click from driving another's screen.
 
 The tools around EMStudio

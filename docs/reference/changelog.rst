@@ -1,5 +1,9 @@
+.. _reference-changelog:
+
 Changelog
 =========
+
+.. TODO MAN05: the 1.6 told by themes, from CHANGELOG.md. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 EMStudio is a fast-moving project; this manual tracks the **1.6** line.
 

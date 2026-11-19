@@ -5,29 +5,33 @@
 Reference
 =========
 
-Tab-by-tab and window-by-window descriptions of EMStudio. Use this section as the
-canonical source for what each part of the interface does, the menus, the
-Inspector fields, the export formats, and the ``em.json`` file.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Interface
-
-   interface
-   windows/index
-   menus
-   inspector
+The parts of EMStudio described one by one: the workspaces and the windows, the
+menus and the keys, the settings and the Inspector, what differs between desktop
+and web, and the files EMStudio reads and writes.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Data and output
+   :caption: Interface
 
-   export-formats
+   workspaces
+   windows
+   menus
+   settings
+   inspector
+   shortcuts
+   desktop-and-web
+   em-legend
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Data and files
+
    emjson
+   export-formats
+   file-locations
 
 .. toctree::
    :maxdepth: 1
    :caption: Appendix
 
-   shortcuts
    changelog

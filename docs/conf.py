@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
+import os
+
 # -- Project information
 
 project = 'EMStudio'
@@ -7,7 +9,8 @@ copyright = '2026, Emanuel Demetrescu'
 author = 'Emanuel Demetrescu'
 
 release = '1.6'
-version = '1.6.0-dev.10'  # deve seguire frontend/package.json di EMStudio
+# The version described, copied from EMStudio's frontend/package.json (tag v1.6.0-dev.136).
+version = '1.6.0-dev.136'
 
 # -- General configuration
 
@@ -18,7 +21,12 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
+    'sphinx.ext.autosectionlabel',
+    'sphinx_design',
 ]
+
+# Every heading is a target, prefixed by its page: :ref:`reference/menus:File`.
+autosectionlabel_prefix_document = True
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -28,8 +36,22 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
-# The user manual is written in English (the application's default language).
-language = 'en'
+# _includes holds examples to copy, reference/_generated the tables written by
+# _tools/ (they are included by their pages, never built on their own).
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_tools', '_includes',
+                    'reference/_generated', 'locale']
+
+# -- Languages
+# English is the source; Italian is a gettext translation in
+# docs/locale/it/LC_MESSAGES/, one catalogue per page, as in stratigraph-templates.
+# On Read the Docs the build language comes from READTHEDOCS_LANGUAGE.
+# `sphinx-build -b gettext docs docs/_build/gettext` and
+# `sphinx-intl update -p docs/_build/gettext -l it -d docs/locale` refresh it.
+language = os.environ.get('READTHEDOCS_LANGUAGE', os.environ.get('DOCS_LANGUAGE', 'en')).split('-')[0]
+locale_dirs = ['locale/']
+gettext_compact = False                     # one catalogue per page
+gettext_uuid = False
+gettext_location = False                    # line numbers would churn the catalogue
 
 # -- Options for HTML output
 

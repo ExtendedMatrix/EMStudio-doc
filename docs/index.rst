@@ -94,13 +94,13 @@ Choose your path
 
    Begin with the formal language at `the EM language docs
    <https://docs.extendedmatrix.org>`__, then come back here for
-   :doc:`tutorial/index` and the :doc:`how-to/interpret-in-graph` loop. Most of
+   :doc:`tutorial/index` and the :doc:`how-to/stratigraphy/add-and-connect-units` loop. Most of
    your work happens in the **Graph** tab.
 
 .. admonition:: I write and publish the story
    :class: tip
 
-   Go to :doc:`how-to/write-the-narrative` and :doc:`how-to/export-the-narrative`.
+   Go to :doc:`how-to/narrative/write-the-narrative` and :doc:`how-to/narrative/export-the-narrative`.
    The **Narrative** tab is where the graph becomes prose, with AI drafts you sign,
    and the export bar carries it to HTML, Word, LaTeX and Jupyter.
 

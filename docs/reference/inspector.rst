@@ -1,5 +1,9 @@
-The Inspector
-=============
+.. _reference-inspector:
+
+Inspector
+=========
+
+.. TODO MAN02: rewrite (sections, own and inherited, georeferencing). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 The **Inspector** shows the fields of whatever is selected. With **nothing
 selected** it shows the graph's own metadata — the defaults a study inherits from.

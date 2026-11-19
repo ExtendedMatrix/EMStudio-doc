@@ -1,5 +1,9 @@
-First launch: read a study
-==========================
+.. _tutorial-first-launch:
+
+First launch: the six workspaces
+================================
+
+.. TODO MAN02: rewrite as a tour of Templu Mare. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 This walkthrough opens an existing Extended Matrix study and reads its
 stratigraphic matrix. We use **Templu Mare**, an open case study shared across
@@ -43,7 +47,7 @@ Move between the tabs
 ---------------------
 
 The six tabs across the top are **arrangements** — layouts of windows for a kind
-of work (see :doc:`../explanation/tabs-as-arrangements`). Click through them to
+of work (see :doc:`../explanation/workspaces-are-questions`). Click through them to
 feel the shape of the tool:
 
 - **Documentation** — where files and the object store come in;

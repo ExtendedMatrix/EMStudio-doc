@@ -1,5 +1,9 @@
-The narrative is a reading of the graph
-=======================================
+.. _explanation-narrative-as-graph:
+
+Narrative as graph
+==================
+
+.. TODO MAN05: touch up. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 The **Narrative** is not a separate document you write *about* the study. It is the
 graph **read as a story** — a view of the same record, in prose, with its evidence
@@ -43,6 +47,6 @@ From editing to dissemination
 -----------------------------
 
 You author the narrative in EMStudio and export it (HTML, Word, LaTeX, Jupyter — see
-:doc:`../how-to/export-the-narrative`). Beyond the exports, a served **reader** page
+:doc:`../how-to/narrative/export-the-narrative`). Beyond the exports, a served **reader** page
 disseminates it with the embeds live, for people who do not run EMStudio. Same
 record, three stages: authored, exported, published.

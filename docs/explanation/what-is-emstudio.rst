@@ -1,5 +1,9 @@
-What EMStudio is
+.. _explanation-what-is-emstudio:
+
+What is EMStudio
 ================
+
+.. TODO MAN05: update. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
 
 EMStudio is the **standalone editor of the Extended Matrix (EM) language**. Where
 the earlier EM tooling lived inside Blender or yEd, EMStudio is the place that
@@ -34,7 +38,7 @@ Narrative, Annotator. Each is an **arrangement**: a named layout of windows for 
 kind of work, in the spirit of a Blender workspace. They read as an arc — bring
 material in, interpret it, document its provenance, compare, tell the story — but
 you are free to move between them as you like. The model is explained in
-:doc:`tabs-as-arrangements`.
+:doc:`workspaces-are-questions`.
 
 A hub the ecosystem plugs into
 ------------------------------
@@ -45,7 +49,7 @@ sources, PyArchInit for excavation data, and more. They all speak the same wire 
 ``em.json`` for the graph, a content-addressed object store for assets, a CRDT for
 real-time sharing — and every write carries its provenance. How this works, and
 the difference between working alone, in Sidecar with one tool, or in a shared
-room, is covered in :doc:`rooms-and-collaboration` and :doc:`place-in-the-framework`.
+room, is covered in :doc:`open-enter-create` and :doc:`place-in-the-framework`.
 
 Where EMStudio sits in the Extended Matrix Framework
 ----------------------------------------------------
