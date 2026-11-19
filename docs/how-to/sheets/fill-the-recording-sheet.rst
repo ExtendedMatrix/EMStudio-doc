@@ -3,6 +3,190 @@
 Fill the recording sheet
 ========================
 
-*Fill the recording sheet of a stratigraphic unit.*
+*Read the recording sheet of a stratigraphic unit and fill its boxes, each one written into the graph.*
 
-.. TODO MAN04: write this page (map §3, how-to «Sheets»).
+The **Sheet** window shows a stratigraphic unit as the recording sheet of an
+excavation standard, box by box, with the layout of the paper form. The sheet is
+a way of reading the graph, not a second copy of the data: every box reads its
+value from the graph, and every value you write in a box goes into the graph as
+a description, a property, a relation or a node. EMStudio comes with the Italian
+sheet **ICCD US 2021**, defined by stratigraph-templates, the same definition
+that StratiField reads in the field.
+
+Before you start
+----------------
+
+- Open a study, for example a copy of Templu Mare (see :doc:`/tutorial/first-study`).
+- The sheet is drawn for stratigraphic units (SU, USV and the other unit
+  types). Other nodes, such as documents or properties, have no sheet.
+
+Open the sheet of a unit
+------------------------
+
+#. Choose the **Sheets** workspace in the bar across the top of the window.
+   Its question is **What does the recording sheet say of this unit?**
+#. Select a unit, for example SU004, in the **Outliner**, in the Matrix or in the
+   **3D scene**. The **Sheet** in the middle shows its recording sheet.
+#. The other windows follow the same unit: the **3D scene** frames its proxy,
+   the **Graph** window on the right frames it in the Matrix with the units it
+   touches, and the **Viewer & card** underneath shows its photographs and
+   documents.
+
+When you select something that is not a unit, for example a property in the
+Matrix, the sheet stays on the last unit and says so in a line above the sheet.
+
+Read the head and the boxes
+---------------------------
+
+The head of the window holds, from left to right: the definition the study uses
+(for example **ICCD US 2021 · 4.0.0**), the name and type of the unit, a count
+of its boxes by state (**full**, **empty**, **outside the graph**,
+**undecided**), the status of the record, and **Print A4…** (see
+:doc:`print-sheets`).
+
+Each box is in one of these states:
+
+- *Full*: the graph says it, and the box shows the value.
+- *Empty*: the graph could say it and does not yet. The box is a field you can
+  fill.
+- *Outside the graph*: the definition keeps this box outside the graph, for
+  example **RESPONSIBLE BODY**, **MiC OFFICE RESPONSIBLE FOR PROTECTION** and
+  **SAMPLING**. The box is hatched and reads **not in the graph**.
+- *Undecided*: two boxes of the definition write the same place in the graph,
+  and nothing says which one a value belongs to. The box is yellow and lists
+  the candidates. In ICCD US 2021 this happens to **PERIOD** and **PHASE**,
+  which both read the first epoch of the unit.
+
+Hold the pointer on a box to read where its value lives in the graph (the
+unit's description, a property, a relation) or why it is empty. A box marked
+**lens** reads a value that another tool wrote without the mark of this sheet,
+for example a property of the right kind added in the **Inspector**: the sheet
+shows it and attributes it to the box.
+
+At the foot of the sheet, **Properties of the unit no box of this sheet reads**
+lists the properties of the unit that have no box, with their values. Nothing
+of the unit is hidden by the sheet.
+
+Write in the boxes
+------------------
+
+#. Click an empty or full box and write. Press :kbd:`Enter` to confirm a short
+   field. In a long text, such as **DESCRIPTION**, press :kbd:`⌘Enter`
+   (:kbd:`Ctrl+Enter` on Windows and Linux), or click outside the box.
+#. The value goes into the graph at once. Each confirmed box is one step of
+   ``Edit ▸ Undo``, and the **Inspector**, the Matrix and the **3D scene** show
+   the change.
+#. In a box with a vocabulary, such as **CONSISTENCY**, **COLOUR** or
+   **STATE OF PRESERVATION**, the field suggests the terms of the vocabulary as
+   you type. A word that is not one of the terms is written as a word, and a
+   message says so.
+#. For **MODE OF FORMATION (nature)**, choose one of the options.
+
+Some boxes need a few words of explanation:
+
+**DEFINITION** and **INTERPRETATION**
+   The definition is a short phrase, written as the value of the unit's
+   *definition* property. Under it, **Term** offers the terms of the
+   vocabulary of definitions, to classify the phrase. The interpretation is
+   written on the same property, as its description, so write the definition
+   first. Under the interpretation, **Sources:** lists the extractors,
+   combiners and documents the definition rests on; double-click one to select
+   it.
+
+**DESCRIPTION**
+   The description of the unit. When it repeats the definition, a line under
+   the box says so: the description says what is seen.
+
+Boxes of places and activities
+   **LOCALITY**, **AREA / BUILDING / STRUCTURE**, **TRENCH**, **ROOM /
+   FUNCTIONAL UNIT** and **ACTIVITY** tie the unit to a node of the graph. Write
+   its name: EMStudio finds the node with that name, or creates it, and a
+   message says that it was created.
+
+Persons
+   The boxes of persons, such as **FIELD RECORDER**, take the name of a person
+   already in the graph, and point to that node.
+
+Dates and the year
+   **YEAR** ties the unit to the excavation of that year. **DATE OF FIELD
+   RECORDING** and **DATE OF REVISION** are written as dates (YYYY-MM-DD) on an
+   act of recording or of revision of the unit, created the first time; the
+   responsible of each act is written after its date.
+
+Write the relations
+-------------------
+
+The boxes of relations, such as **COVERS**, **CUT BY** or **EARLIER THAN**,
+show one chip for each unit in that relation. Each chip is a connector of the
+Matrix.
+
+#. To add a relation, click the **+** field of the box, write the name or the
+   number of the other unit, for example SU001, and press :kbd:`Enter`. One
+   connector is written, in the direction the box says: **COVERS** SU001 means
+   that this unit covers SU001. The other unit's sheet shows the inverse
+   relation, and the Matrix on the right shows the new connector.
+#. To remove a relation, press **×** on its chip. The connector goes, from both
+   sheets.
+#. Double-click a chip to select that unit and read its sheet.
+
+The sheet checks a relation as the Matrix does. It writes only relations that
+the datamodel admits between the two types of unit, and it creates no unit: a
+name that matches no unit, or a number that could be several units, is refused
+with a message that says why. A relation that closes a cycle is written, and the
+message names the cycle, which the Matrix draws in red (see
+:doc:`/how-to/stratigraphy/check-the-chronology`).
+
+What stays read only
+--------------------
+
+Hold the pointer on a read-only box to read the reason. In ICCD US 2021:
+
+- the number of the unit (**SU**) is its name: rename the unit in the
+  **Inspector**;
+- **MODE OF FORMATION (sign)** is the type of the unit, decided when the unit
+  is created;
+- **PERIOD** and **PHASE** are the epoch of the unit: move the unit to another
+  epoch in the Matrix (see :doc:`/how-to/stratigraphy/edit-many-units`);
+- the lists of rows, such as **ELEVATIONS** and **MEASUREMENTS**, and the
+  lists of documents, such as **PLANS** and **PHOTOGRAPHS**, show what the
+  graph holds; their rows are written in the **Inspector** of the unit, and its
+  pictures and documents as described in
+  :doc:`/how-to/sources/documents-and-media`.
+
+Set the status of the record
+----------------------------
+
+The menu in the head, **status: not said** until you choose, records whether the
+sheet is still **from the field** or **revised**. The choice is written on the
+unit, and it is one of the criteria for printing (see :doc:`print-sheets`).
+
+Choose the definition of the study
+----------------------------------
+
+The first menu of the head chooses the recording-sheet definition the study
+uses. The choice is kept in the study, so it travels with the file, and it is
+one step of ``Edit ▸ Undo``. A study that names none uses ICCD US 2021.
+Definitions brought by community packages appear in the same menu, with the
+name of their package (see :doc:`/how-to/extensions/install-packages-and-plugins`).
+
+The labels of the boxes are those of the definition, in the language of the
+interface when the definition has it. ICCD US 2021 has Italian and English;
+in the other languages its labels are Italian, and a line above the sheet says
+so.
+
+What you get
+------------
+
+The recording sheet of the unit, filled from the graph and written back into
+it: descriptions, properties, places, acts and relations that every other
+window of EMStudio reads, that the file keeps when you save it, and that
+StratiField reads with the same definition.
+
+See also
+--------
+
+- :doc:`print-sheets`
+- :doc:`/reference/workspaces`
+- :doc:`/reference/inspector`
+- :doc:`/explanation/vocabularies`
+- :doc:`/how-to/stratigraphy/add-and-connect-units`

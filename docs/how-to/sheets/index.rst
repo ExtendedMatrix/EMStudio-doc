@@ -3,7 +3,7 @@
 Sheets
 ======
 
-Recipes for the Sheets workspace: what the sheet of a unit says.
+Recipes for the Sheets workspace: read and fill the recording sheet of a unit, and print the sheets of a graph.
 
 .. toctree::
    :maxdepth: 1
