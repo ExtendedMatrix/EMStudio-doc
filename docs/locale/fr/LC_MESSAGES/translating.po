@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Translating the manual"
+msgstr ""
+
+msgid "*How a language of the manual is added, kept up to date and published.*"
+msgstr ""
+
+msgid ""
+"The manual is written in English, and every other language is a "
+"translation of it kept in catalogues of the gettext format, one catalogue"
+" for each page. The languages are those of the EMStudio interface, the "
+"partners' languages of the project: Italian (``it``), German (``de``), "
+"Greek (``el``), Hebrew (``he``), Spanish (``es``), Polish (``pl``), "
+"Romanian (``ro``) and French (``fr``). Each has a folder "
+"``docs/locale/<language>/LC_MESSAGES/`` with a ``.po`` file for every "
+"page, in the same tree as the pages themselves. Italian is complete; the "
+"other languages hold their catalogues ready, with the labels of the "
+"interface already filled in."
+msgstr ""
+
+msgid ""
+"A translator works on these files and never on the English pages. A "
+"paragraph is translated as a whole: the catalogue offers it as one "
+"string, and the translation replaces it in the page of that language. A "
+"paragraph that is changed in English and not yet translated appears in "
+"English on the translated site until a translator takes it up: the page "
+"is incomplete for a while, never wrong."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"You need a copy of the manual's repository, ``EMStudio-doc``, and Python "
+"3 with the packages of ``docs/requirements.txt`` (Sphinx, the Read the "
+"Docs theme, ``sphinx-design`` and ``sphinx-intl``):"
+msgstr ""
+
+msgid ""
+"To fill in the labels of the interface you also need a copy of EMStudio's"
+" repository, which the tools read and never change."
+msgstr ""
+
+msgid ""
+"Any editor of ``.po`` files serves for the translation itself: Poedit, "
+"the translation views of Weblate or of an editor of code, or a plain text"
+" editor."
+msgstr ""
+
+msgid "Update the catalogues after the English has changed"
+msgstr ""
+
+msgid "From the root of the repository, extract the strings of the English pages:"
+msgstr ""
+
+msgid "Merge them into the catalogues of every language:"
+msgstr ""
+
+msgid ""
+"The strings already translated stay. A string whose English has changed "
+"is marked *fuzzy*, with the old translation kept as a suggestion; a new "
+"string arrives empty."
+msgstr ""
+
+msgid "Fill in the labels of the interface in the new strings:"
+msgstr ""
+
+msgid ""
+"Give the tag of the version that the manual describes, the same as "
+"``version`` in ``docs/conf.py``."
+msgstr ""
+
+msgid ""
+"Translate what is empty or *fuzzy*, and remove the *fuzzy* mark from each"
+" string once it is right. Sphinx leaves *fuzzy* strings out of the build,"
+" so the English appears in their place until they are confirmed."
+msgstr ""
+
+msgid "Add a language"
+msgstr ""
+
+msgid ""
+"Check that the language is among the ``LOCALES`` of "
+"``frontend/src/i18n.ts`` in EMStudio: the manual follows the languages of"
+" the interface, so that its words and the words on the screen are the "
+"same."
+msgstr ""
+
+msgid ""
+"Create its catalogues with ``sphinx-intl update`` as above, giving only "
+"the new code with ``-l``, and add the code to ``LANGS`` in "
+"``docs/_tools/ui_terms.py``."
+msgstr ""
+
+msgid "Fill in the labels of the interface with ``ui_terms.py -l <language>``."
+msgstr ""
+
+msgid ""
+"For a language written from right to left, add its code to "
+"``RTL_LANGUAGES`` in ``docs/conf.py``: its pages are then drawn from "
+"right to left, with the menu of the manual on the right, while code, keys"
+" and file names stay from left to right."
+msgstr ""
+
+msgid ""
+"Ask the maintainer of the manual to create the language's project on Read"
+" the Docs (see :ref:`translating-publish`)."
+msgstr ""
+
+msgid "The labels of the interface"
+msgstr ""
+
+msgid ""
+"The manual names every menu, window, workspace, command and field with "
+"its English label, written in bold or in a menu path such as ``File ▸ "
+"Save As…``. A reader of another language must find the label of their own"
+" interface, letter by letter. ``docs/_tools/ui_terms.py`` takes these "
+"labels from EMStudio's dictionary, ``frontend/src/i18n.ts``, the same "
+"that the application draws, and writes them into the catalogues:"
+msgstr ""
+
+msgid ""
+"a string that is nothing but a label (a heading named after a menu, a "
+"cell of the tables of menus and shortcuts, a label in bold, a menu path, "
+"the description that EMStudio shows when the pointer rests on a command) "
+"receives the label of that language;"
+msgstr ""
+
+msgid ""
+"the strings in which a label could also be an ordinary word are marked "
+"*fuzzy*: the translator confirms them or writes the right word;"
+msgstr ""
+
+msgid ""
+"a label that the dictionary of a language does not hold yet stays empty, "
+"because the interface of that language shows it in English: the "
+"translator writes the English label."
+msgstr ""
+
+msgid ""
+"Inside the sentences the translator does the same by hand: each label in "
+"bold, and each part of a menu path, takes the label of the interface in "
+"that language. ``ui_terms.py`` with ``--dump labels.json`` writes the "
+"whole table of labels, English and translated, for every language."
+msgstr ""
+
+msgid "Words that stay as they are"
+msgstr ""
+
+msgid "Some words are names and are written the same in every language:"
+msgstr ""
+
+msgid ""
+"the names of the types of nodes of the Extended Matrix and their "
+"abbreviations: US, USV, USM, SF, VSF and the others of :doc:`/reference"
+"/em-legend`;"
+msgstr ""
+
+msgid "DTC, HDT, ORCID, IIIF, CRS, EPSG;"
+msgstr ""
+
+msgid "``em.json`` and every other name of a file, folder or extension;"
+msgstr ""
+
+msgid ""
+"*Porta dentro*, the proper name of the gesture that brings files in as "
+"documents, written in italics the first time on a page;"
+msgstr ""
+
+msgid ""
+"the names of the programs and places of the framework: EMStudio, EM "
+"Tools, s3Dgraphy, StratiGraph, Heriverse, Blender, Tropy, StratiMiner, "
+"and the Catalog of a node;"
+msgstr ""
+
+msgid ""
+"the identifiers in the examples (SU001, D.08) and the name of the example"
+" dataset, Templu Mare."
+msgstr ""
+
+msgid ""
+"The keys between ``:kbd:`` marks, the targets of the links "
+"(``:doc:`…```), the images and the code blocks are not translated: the "
+"catalogue offers only the text around them. In a link with its own title,"
+" such as ``:doc:`the first study </tutorial/first-study>```, only the "
+"title is translated."
+msgstr ""
+
+msgid "Regenerate the pictures of a language"
+msgstr ""
+
+msgid ""
+"The pictures of the manual are taken from the application by "
+"``docs/_tools/screenshots.mjs`` (its ``README.md`` in ``docs/_tools/`` "
+"describes the bench). The script takes the language of the interface as a"
+" parameter:"
+msgstr ""
+
+msgid ""
+"The pictures of a language are written beside the English ones, in a "
+"folder named after the language "
+"(``docs/_static/screens/menus/it/file.png`` beside "
+"``docs/_static/screens/menus/file.png``). The build of that language "
+"takes them when they are there and the English ones otherwise, so a "
+"language can start without pictures of its own. The pages are the same "
+"for every language: only the pictures change."
+msgstr ""
+
+msgid "Build a language"
+msgstr ""
+
+msgid ""
+"``DOCS_LANGUAGE`` takes any code of the list above; without it the build "
+"is in English. Add ``-W --keep-going`` to stop at every warning, as the "
+"English build does before each release of the manual."
+msgstr ""
+
+msgid "Publish a language"
+msgstr ""
+
+msgid ""
+"On Read the Docs each language is a project of its own, linked to the "
+"English one as its translation. The maintainer of the English project "
+"creates it once: a new project from the same repository and branch, with "
+"the language of the project set to the language of the translation, then,"
+" in the English project, *Settings ▸ Translations* adds it. Read the Docs"
+" then builds each language from the same sources and shows the languages "
+"in the menu of versions; the build reads the language from the project, "
+"so nothing in the repository changes."
+msgstr ""
+

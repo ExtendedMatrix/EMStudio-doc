@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Bring a file into a room"
+msgstr ""
+
+msgid "*Bring the file you are working on into a new room.*"
+msgstr ""
+
+msgid ""
+"A study you have on your disk can become a room: EMStudio creates the "
+"room, sends the files the graph cites, puts the graph in the room and "
+"enters it. From that moment the live copy of the study is the room's. "
+"Your file stays where it was, unchanged, and keeping a copy on the disk "
+"later is a separate gesture."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the study from its ``.em.json`` (see :doc:`/how-to/files/open-save-"
+"recent`). The files the graph cites with a relative path are looked for "
+"in the folder of the ``.em.json``, and in the DosCo folders the file "
+"declares."
+msgstr ""
+
+msgid ""
+"Do the three steps of the chip's menu at the top right: an **Author**, a "
+"**Node** that answers, and **Sign in** on it (see :doc:`sign-in`). If one"
+" is missing, the gesture opens the menu at that step and goes on by "
+"itself once it is done."
+msgstr ""
+
+msgid ""
+"The files are read where they are on your computer, by EMStudio's local "
+"service, the bridge. The desktop application starts its own. In the web "
+"version, the page needs a bridge running on your computer: without one, "
+"the window below stops with **The room importer stopped:** and the "
+"reason."
+msgstr ""
+
+msgid "Create the room with the study in it"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Bring this into a new room…``. The same command is "
+"**Bring into a room…** in the section **My space** of the chip's menu."
+msgstr ""
+
+msgid ""
+"The dialog **Bring this into a new room** asks for the room's name, for "
+"example «Templu Mare 2026». Press **Create and put it there**."
+msgstr ""
+
+msgid ""
+"The window **Resources of the graph → room**, followed by the name, opens"
+" and says **Creating the room and reading what the graph cites…**. Then "
+"it shows the files of the study in five groups, each with the number of "
+"files and their size:"
+msgstr ""
+
+msgid "**Found on this computer**"
+msgstr ""
+
+msgid ""
+"The files that will be sent. For each one choose **Upload** (the "
+"default), **Leave as a reference** or **Skip**. **All of them:** sets the"
+" choice for the whole group, and the line that ends in **files, one by "
+"one** opens the list file by file. A folder of tiles (a 3D Tiles tileset)"
+" goes up as one ``.3tz`` file."
+msgstr ""
+
+msgid "**Already in the room's storage**"
+msgstr ""
+
+msgid "Files the node already holds with the same content: nothing is sent again."
+msgstr ""
+
+msgid "**At home in another room**"
+msgstr ""
+
+msgid ""
+"Files already on the node, kept by another room. By default this room "
+"hosts them as they are (**Host it here (its home stays)**). **Move here**"
+" brings them under this room, and their rights become this room's; "
+"**Leave as a reference** keeps them as a reference to the other room."
+msgstr ""
+
+msgid "**External references (NAS, URL)**"
+msgstr ""
+
+msgid ""
+"Addresses that are not files of this computer: counted and left as they "
+"are."
+msgstr ""
+
+msgid "**Missing**"
+msgstr ""
+
+msgid ""
+"Paths that cannot be found: counted, named and left. To find them first, "
+"see :doc:`/how-to/files/find-missing-files`."
+msgstr ""
+
+msgid ""
+"Photographs taken in one session appear as a **Proposed lot**. Tick **one"
+" lot (one acquisition)** to record them as a single acquisition."
+msgstr ""
+
+msgid ""
+"Read the line **To upload:**, with the number of files and their size, "
+"and press **Upload**. If you chose **Move here** for some files, a "
+"confirmation lists the rooms they leave and the rooms whose graphs will "
+"cite them as a reference; answer **Move here** or **Leave them as "
+"references**."
+msgstr ""
+
+msgid ""
+"The window shows the progress (**Sending ·** the bytes sent of the "
+"total). **Pause** stops the upload between two pieces and **Resume** "
+"takes it up again."
+msgstr ""
+
+msgid ""
+"To stop before anything is sent, press **Later**: the room exists and is "
+"empty, and the graph is not in it. Choosing ``File ▸ Bring this into a "
+"new room…`` again with the same name takes it up again."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A new room on the node with the graph in it and you as its **owner**. The"
+" window ends with one line, **Uploaded** … **already in the storage** … "
+"**references** … **missing** …, and the link to the room on the node."
+msgstr ""
+
+msgid ""
+"EMStudio enters the room: the status bar reads **Room**, followed by the "
+"name of the room and of the node, and the graph you see is the room's "
+"copy."
+msgstr ""
+
+msgid ""
+"What goes up is visible only to the room's participants, unless its "
+"resource node (or its lot) says otherwise."
+msgstr ""
+
+msgid ""
+"Your ``.em.json`` on the disk is unchanged. To keep a copy of the room's "
+"study on your disk, use ``File ▸ Save As…``."
+msgstr ""
+
+msgid ""
+"If a room with that name already exists on the node, it is taken up again"
+" only when you are its owner or an admin, as after **Later**. For anybody"
+" else the window stops and says that only its owner takes it up again: "
+"enter that room instead, or choose another name."
+msgstr ""
+
+msgid "Send more files later"
+msgstr ""
+
+msgid ""
+"Inside a room, **Resources of the room…** in the section **Where you "
+"work** of the chip's menu opens the same window for the room you are in, "
+"for its owner and its admins: the files the graph cites that the room "
+"already holds appear under **Already in the room's storage**, and the "
+"others can be sent as above."
+msgstr ""
+
+msgid ""
+"Files can also be deposited in the room by hand, as one lot with its "
+"licence and its author: in the **Archive** workspace, switch the "
+"**Files** window to the mode **In the room**, sign the delivery and drop "
+"the files (see :doc:`/how-to/archive/storage`)."
+msgstr ""
+
+msgid "Declare a derivation"
+msgstr ""
+
+msgid ""
+"In the same mode **In the room**, the form **Declare a derivation** "
+"records that a resource came out of others: an orthophoto out of a flight"
+" of photographs, a mesh out of a lot. Nothing is guessed from dates or "
+"names: the derivation is what you declare. The form appears once the "
+"study has documentation (lots or resources), also when you are not in a "
+"room."
+msgstr ""
+
+msgid "In **Output**, pick the resource that resulted."
+msgstr ""
+
+msgid ""
+"In **Inputs**, pick what it came from: the lots first (marked ▣), then "
+"single resources. Several can be picked together."
+msgstr ""
+
+msgid ""
+"In **Tool**, write the name of the program, for example Metashape, "
+"Blender or QGIS. The name is enough."
+msgstr ""
+
+msgid ""
+"Press **Declare**. The panel's trail says that the output is declared as "
+"derived from its inputs."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`create-a-room`, to create an empty room."
+msgstr ""
+
+msgid ":doc:`enter-and-share-a-room`, to invite the people of the project."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/sources/declare-provenance`, for stamps and the "
+"transformation chain of the files on disk."
+msgstr ""
+
+msgid ":doc:`/explanation/open-enter-create`, on where the copy you edit lives."
+msgstr ""
+

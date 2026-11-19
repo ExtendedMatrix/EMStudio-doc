@@ -1,0 +1,807 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Keyboard shortcuts"
+msgstr ""
+
+msgid "*Every key and gesture of EMStudio, grouped by where it acts.*"
+msgstr ""
+
+msgid ""
+"The same list is in the application under ``Help ▸ Shortcuts``, where you"
+" can search it. The tables below are drawn from the same source, so they "
+"say what the application does."
+msgstr ""
+
+msgid "Where a key acts"
+msgstr ""
+
+msgid ""
+"A key acts on the part of the window that has the focus, and the tables "
+"are grouped the same way."
+msgstr ""
+
+msgid ""
+"**Everywhere**: the keys of the whole application, such as saving, the "
+"settings, the chip's menu at **Where you work** and adding a node."
+msgstr ""
+
+msgid ""
+"**On the graph**: the keys of a Graph window (the matrix, the free graph,"
+" the DTC) and of the Outliner. They act on the canvas and on the "
+"Outliner, and leave a field you are typing in, or a focused button, "
+"alone."
+msgstr ""
+
+msgid ""
+"**In the Space**: the keys of the 3D scene when it has the focus. They "
+"follow the conventions of Blender, so that whoever models in Blender "
+"finds the same hands here: :kbd:`G`, :kbd:`R` and :kbd:`S` move, rotate "
+"and scale, the numeric keypad chooses the views, :kbd:`⇧A` adds a shape "
+"at the 3D cursor."
+msgstr ""
+
+msgid ""
+"**Tracing in the document**: the keys of the Viewer while you trace a "
+"region on an image."
+msgstr ""
+
+msgid ""
+"**Windows and spaces**: the gestures that arrange the windows and the "
+"workspaces."
+msgstr ""
+
+msgid ""
+"**In a field** and **in menus and buttons**: the keys of typing and of "
+"moving through a menu."
+msgstr ""
+
+msgid ""
+"The same key can mean different things in different places: :kbd:`⇧A` "
+"adds a node to the graph when the pointer is on the matrix, and a shape "
+"to the scene when the 3D has the focus."
+msgstr ""
+
+msgid "Keys and gestures"
+msgstr ""
+
+msgid ""
+"The keys are given as the Mac shows them and as Windows and Linux show "
+"them: ⌘ (Command) becomes :kbd:`Ctrl`, ⌥ (Option) becomes :kbd:`Alt`, ⇧ "
+"is :kbd:`Shift`. A gesture (a click, a drag, the wheel) is described in "
+"words and is the same on every platform; where its description names ⌘ or"
+" ⌥, read :kbd:`Ctrl` or :kbd:`Alt` on Windows and Linux."
+msgstr ""
+
+msgid ""
+"On the web the browser keeps some keys for itself, for example the one "
+"that closes the tab: the last table, *In the menus*, says which keys the "
+"menus show and which of them the web leaves to the browser."
+msgstr ""
+
+msgid "Everywhere"
+msgstr ""
+
+msgid "macOS"
+msgstr ""
+
+msgid "Windows, Linux"
+msgstr ""
+
+msgid "Action"
+msgstr ""
+
+msgid ":kbd:`⌘N`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+N`"
+msgstr ""
+
+msgid "New graph"
+msgstr ""
+
+msgid ":kbd:`⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+S`"
+msgstr ""
+
+msgid "Save"
+msgstr "Salvează"
+
+msgid ":kbd:`⇧⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Shift+S`"
+msgstr ""
+
+msgid "Save as…"
+msgstr ""
+
+msgid ":kbd:`⌘,`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+,`"
+msgstr ""
+
+msgid "Settings"
+msgstr "Setări"
+
+msgid ":kbd:`⇧⌘L`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Shift+L`"
+msgstr ""
+
+msgid "Where you are"
+msgstr ""
+
+msgid ":kbd:`⌘Z`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Z`"
+msgstr ""
+
+msgid "Undo"
+msgstr "Anulează"
+
+msgid ":kbd:`⇧⌘Z`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Shift+Z`"
+msgstr ""
+
+msgid "Redo"
+msgstr "Refă"
+
+msgid ":kbd:`⇧A`"
+msgstr ""
+
+msgid ":kbd:`Shift+A`"
+msgstr ""
+
+msgid "Add a node where the pointer is"
+msgstr ""
+
+msgid ":kbd:`/`"
+msgstr ""
+
+msgid "Search the graph"
+msgstr ""
+
+msgid ":kbd:`⌃Space`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Space`"
+msgstr ""
+
+msgid "Magnify the window / restore"
+msgstr ""
+
+msgid ":kbd:`Esc`"
+msgstr ""
+
+msgid "Close a menu, leave a group, deselect"
+msgstr ""
+
+msgid "On the graph (canvas, Outliner)"
+msgstr ""
+
+msgid ":kbd:`⌫` · :kbd:`Del`"
+msgstr ""
+
+msgid ":kbd:`Backspace` · :kbd:`Del`"
+msgstr ""
+
+msgid "Delete the selection (a toast gives it back)"
+msgstr ""
+
+msgid "Undo (toast)"
+msgstr ""
+
+msgid "The toast's «Undo» puts back what was deleted"
+msgstr ""
+
+msgid ":kbd:`← → ↑ ↓`"
+msgstr ""
+
+msgid "Nudge the selection by 1 px"
+msgstr ""
+
+msgid ":kbd:`⇧ ← → ↑ ↓`"
+msgstr ""
+
+msgid ":kbd:`Shift ← → ↑ ↓`"
+msgstr ""
+
+msgid "Nudge by 10 px"
+msgstr ""
+
+msgid ":kbd:`0` · :kbd:`⇧C`"
+msgstr ""
+
+msgid ":kbd:`0` · :kbd:`Shift+C`"
+msgstr ""
+
+msgid "Fit the graph in the window"
+msgstr ""
+
+msgid ":kbd:`⌘[` · :kbd:`⌥←`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+[` · :kbd:`Alt+←`"
+msgstr ""
+
+msgid "Back to the view before the last jump"
+msgstr ""
+
+msgid ":kbd:`+` · :kbd:`=`"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid ":kbd:`−`"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
+msgid "Space + drag"
+msgstr ""
+
+msgid "Pan"
+msgstr ""
+
+msgid "middle button + drag"
+msgstr ""
+
+msgid "wheel"
+msgstr ""
+
+msgid "Zoom at the pointer"
+msgstr ""
+
+msgid "click"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "⇧/⌘ click"
+msgstr ""
+
+msgid "Add to / remove from the selection"
+msgstr ""
+
+msgid "drag on the empty canvas"
+msgstr ""
+
+msgid "Select with a rectangle"
+msgstr ""
+
+msgid "double-click"
+msgstr ""
+
+msgid "Enter a group"
+msgstr ""
+
+msgid "drag from the handle"
+msgstr ""
+
+msgid "Connect two nodes"
+msgstr ""
+
+msgid "⇧/⌥ release"
+msgstr ""
+
+msgid "Release in the void: add a linked node"
+msgstr ""
+
+msgid "⇧ drag"
+msgstr ""
+
+msgid "Drag out of its container"
+msgstr ""
+
+msgid "⌥ drop"
+msgstr ""
+
+msgid "Change only the epoch (lane)"
+msgstr ""
+
+msgid "Esc while dragging"
+msgstr ""
+
+msgid "Put back what is being dragged"
+msgstr ""
+
+msgid "right click"
+msgstr ""
+
+msgid "The menu of a node or of the empty canvas"
+msgstr ""
+
+msgid "right click on a lane"
+msgstr ""
+
+msgid "Reflow the lane, new epoch, check the chronology"
+msgstr ""
+
+msgid "long press"
+msgstr ""
+
+msgid "The add menu, on touch"
+msgstr ""
+
+msgid "⌥ Layout"
+msgstr ""
+
+msgid ""
+"Recompute layout from scratch: a fresh arrangement, the manual one "
+"dropped (the only command that moves the nodes)"
+msgstr ""
+
+msgid "In the Space (the 3D in focus)"
+msgstr ""
+
+msgid "Click"
+msgstr ""
+
+msgid "Select the proxy under the cursor (a sketch too)"
+msgstr ""
+
+msgid "Alt + click (⌘-click, Ctrl-click on Windows/Linux, too)"
+msgstr ""
+
+msgid "Select the mesh under the cursor (the representation model, a tileset)"
+msgstr ""
+
+msgid "Right click (⌘ / Ctrl: the model's)"
+msgstr ""
+
+msgid ""
+"The menu of the proxy (or, with ⌘ / Ctrl, of the model): soloing, frame, "
+"isolate, show in the graph, select the unit"
+msgstr ""
+
+msgid ""
+"Move: the centre of rotation and the zoom go to the point under the "
+"cursor; nothing is selected"
+msgstr ""
+
+msgid ":kbd:`⇧B`"
+msgstr ""
+
+msgid ":kbd:`Shift+B`"
+msgstr ""
+
+msgid "Zoom to a box: draw a rectangle and the view fills it"
+msgstr ""
+
+msgid "Shift + right click"
+msgstr ""
+
+msgid "Lay the 3D cursor on the surface under the pointer"
+msgstr ""
+
+msgid ":kbd:`⇧C`"
+msgstr ""
+
+msgid ":kbd:`Shift+C`"
+msgstr ""
+
+msgid "The 3D cursor to the median of what is drawn, and the view on most of it"
+msgstr ""
+
+msgid "Wheel · pinch · Ctrl + two fingers"
+msgstr ""
+
+msgid "Zoom toward the pointer (the orbit centre goes with it)"
+msgstr ""
+
+msgid "Middle drag · two fingers · left drag (while the left does not select)"
+msgstr ""
+
+msgid "Orbit"
+msgstr ""
+
+msgid ""
+"Shift + middle drag · Shift + two fingers · Shift + left drag (while the "
+"left does not select)"
+msgstr ""
+
+msgid "right drag (two fingers pressed on a trackpad)"
+msgstr ""
+
+msgid "Pan: the scene follows the pointer"
+msgstr ""
+
+msgid "Ctrl + middle drag (Mac too)"
+msgstr ""
+
+msgid "Continuous zoom toward the point pressed"
+msgstr ""
+
+msgid "Left drag (with a middle button, or «Emulate 3 button mouse»)"
+msgstr ""
+
+msgid "Box selection of the proxies (Shift: added to the selection)"
+msgstr ""
+
+msgid "Alt + left drag («Emulate 3 button mouse»)"
+msgstr ""
+
+msgid "The middle button, without one"
+msgstr ""
+
+msgid "Numpad 1"
+msgstr ""
+
+msgid "Front view (with «Emulate numpad»: 1 of the top row)"
+msgstr ""
+
+msgid "Numpad 3"
+msgstr ""
+
+msgid "Right view"
+msgstr ""
+
+msgid "Numpad 7"
+msgstr ""
+
+msgid "Top view"
+msgstr ""
+
+msgid "Ctrl + Numpad 1 · 3 · 7"
+msgstr ""
+
+msgid "The opposite views: back, left, bottom"
+msgstr ""
+
+msgid "Numpad 5"
+msgstr ""
+
+msgid "Perspective ⇄ orthographic"
+msgstr ""
+
+msgid "Numpad 0"
+msgstr ""
+
+msgid "The camera view, when there is a camera (none yet: nothing)"
+msgstr ""
+
+msgid "Numpad ."
+msgstr ""
+
+msgid "Frame the selection"
+msgstr ""
+
+msgid ":kbd:`N`"
+msgstr ""
+
+msgid "The «View» panel on the right: 3D cursor, selected object, view"
+msgstr ""
+
+msgid ":kbd:`.` · :kbd:`F`"
+msgstr ""
+
+msgid ":kbd:`Home`"
+msgstr ""
+
+msgid "Frame everything"
+msgstr ""
+
+msgid ":kbd:`T`"
+msgstr ""
+
+msgid "Open and close the Space's Outliner"
+msgstr ""
+
+msgid "Add a base shape at the 3D cursor"
+msgstr ""
+
+msgid ":kbd:`G` · :kbd:`R` · :kbd:`S`"
+msgstr ""
+
+msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
+msgstr ""
+
+msgid ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
+msgstr ""
+
+msgid ":kbd:`X Y Z` · :kbd:`Shift+X Shift+Y Shift+Z`"
+msgstr ""
+
+msgid ""
+"During G / R / S: the axis; Shift + the axis: the plane without it; "
+"twice: local; three times: none; middle click: the nearest axis"
+msgstr ""
+
+msgid ":kbd:`Ctrl`"
+msgstr ""
+
+msgid ""
+"During G: snap to the face under the pointer; during R / S: steps of 5° /"
+" 0.1"
+msgstr ""
+
+msgid ":kbd:`Ctrl+P`"
+msgstr ""
+
+msgid "Associate the selected sketches with the active unit"
+msgstr ""
+
+msgid ":kbd:`X` · :kbd:`⌫`"
+msgstr ""
+
+msgid ":kbd:`X` · :kbd:`Backspace`"
+msgstr ""
+
+msgid "Delete the selected sketch"
+msgstr ""
+
+msgid "Back to the view before a jump"
+msgstr ""
+
+msgid ":kbd:`⇧ + click`"
+msgstr ""
+
+msgid ":kbd:`Shift + click`"
+msgstr ""
+
+msgid "Add to the selection / make active / remove the active"
+msgstr ""
+
+msgid ":kbd:`A`"
+msgstr ""
+
+msgid "Select everything visible"
+msgstr ""
+
+msgid ":kbd:`⌥A`"
+msgstr ""
+
+msgid ":kbd:`Alt+A`"
+msgstr ""
+
+msgid "Deselect everything"
+msgstr ""
+
+msgid ":kbd:`B`"
+msgstr ""
+
+msgid "Box select"
+msgstr ""
+
+msgid ":kbd:`H`"
+msgstr ""
+
+msgid "Hide the selected"
+msgstr ""
+
+msgid ":kbd:`⌥H`"
+msgstr ""
+
+msgid ":kbd:`Alt+H`"
+msgstr ""
+
+msgid "Show everything"
+msgstr ""
+
+msgid ":kbd:`⇧H`"
+msgstr ""
+
+msgid ":kbd:`Shift+H`"
+msgstr ""
+
+msgid "Hide the unselected"
+msgstr ""
+
+msgid "Tracing in the document"
+msgstr ""
+
+msgid "Put the tool down: back to looking"
+msgstr ""
+
+msgid "Enter · double-click"
+msgstr ""
+
+msgid "Close the polygon / polyline"
+msgstr ""
+
+msgid "click the first vertex"
+msgstr ""
+
+msgid "Close the polygon"
+msgstr ""
+
+msgid ":kbd:`↑ ↓` · :kbd:`Enter`"
+msgstr ""
+
+msgid "Pick what you extract"
+msgstr ""
+
+msgid "Windows and spaces"
+msgstr ""
+
+msgid "drag a corner"
+msgstr ""
+
+msgid "Split or join windows"
+msgstr ""
+
+msgid "drag a divider"
+msgstr ""
+
+msgid "Resize (to the edge: close)"
+msgstr ""
+
+msgid "double-click the bar"
+msgstr ""
+
+msgid "Magnify the window"
+msgstr ""
+
+msgid "double-click a tab"
+msgstr ""
+
+msgid "Rename the space"
+msgstr ""
+
+msgid "right click on a tab"
+msgstr ""
+
+msgid "Rename, reset, remove the space"
+msgstr ""
+
+msgid "⌘/⇧ click"
+msgstr ""
+
+msgid "Pick several files for one stamp"
+msgstr ""
+
+msgid "click a folder"
+msgstr ""
+
+msgid "Open the folder"
+msgstr ""
+
+msgid "In a field"
+msgstr ""
+
+msgid ":kbd:`Enter`"
+msgstr ""
+
+msgid "Commit the field"
+msgstr ""
+
+msgid ":kbd:`Tab`"
+msgstr ""
+
+msgid "Commit and go to the next field"
+msgstr ""
+
+msgid "In an empty paragraph: the Blocks menu"
+msgstr ""
+
+msgid ":kbd:`[[`"
+msgstr ""
+
+msgid "Mention a node"
+msgstr ""
+
+msgid "In menus and buttons"
+msgstr ""
+
+msgid ":kbd:`↑ ↓ → ← Enter`"
+msgstr ""
+
+msgid "Move and choose in a menu"
+msgstr ""
+
+msgid ":kbd:`Space` · :kbd:`Enter`"
+msgstr ""
+
+msgid "Press the focused button"
+msgstr ""
+
+msgid "In the menus"
+msgstr ""
+
+msgid ""
+"The keys the menus show beside their commands. On the web the browser "
+"keeps some of them for itself."
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "Where"
+msgstr ""
+
+msgid "EMStudio ▸ Settings…"
+msgstr ""
+
+msgid "macOS menu bar"
+msgstr ""
+
+msgid "File ▸ New"
+msgstr "Fișier ▸ Nou"
+
+msgid "everywhere"
+msgstr ""
+
+msgid ":kbd:`⌘O`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+O`"
+msgstr ""
+
+msgid "File ▸ Open…"
+msgstr "Fișier ▸ Deschide…"
+
+msgid ":kbd:`⌘W`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ""
+
+msgid "File ▸ Close"
+msgstr "Fișier ▸ Închide"
+
+msgid "*desktop only*: macOS, Windows, Linux (the browser keeps the key)"
+msgstr ""
+
+msgid "File ▸ Save"
+msgstr "Fișier ▸ Salvează"
+
+msgid "File ▸ Save As…"
+msgstr "Fișier ▸ Salvează ca…"
+
+msgid ":kbd:`⌥⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+S`"
+msgstr ""
+
+msgid "File ▸ Save all"
+msgstr ""
+
+msgid ":kbd:`⌘Q`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Q`"
+msgstr ""
+
+msgid "File ▸ Quit EMStudio"
+msgstr ""
+
+msgid "*desktop only*: Windows, Linux"
+msgstr ""
+
+msgid "Help ▸ Settings…"
+msgstr ""
+
+msgid "web, Windows, Linux"
+msgstr ""
+

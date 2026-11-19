@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "From files to documents in five minutes"
+msgstr ""
+
+msgid ""
+"*Bring photographs, drawings and models into a study as documents, with* "
+"Porta dentro."
+msgstr ""
+
+msgid ""
+"A file on the disk is not yet part of a study. It becomes part of it when"
+" the graph knows what the file is, which **document** it belongs to, when"
+" that document was made and, for a model, which epoch it shows. EMStudio "
+"does all of this in one window, *Porta dentro* (“bringing files in”, the "
+"Italian name kept in every language, like Templu Mare). In this tutorial "
+"you bring a few files into Templu Mare and find them in the study as one "
+"document."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"You need a study open in EMStudio (the copy of Templu Mare from :doc"
+":`first-study` is fine) and a few files that belong together: for example"
+" three photographs of the same wall taken on the same day, or a drawing "
+"and its scan."
+msgstr ""
+
+msgid "Bring the files in"
+msgstr ""
+
+msgid "Choose ``File ▸ Porta dentro…``."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "The system's dialog opens: pick all the files at once and confirm."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"EMStudio's own file picker opens, inside the page: pick one file and "
+"confirm. To bring in several files, repeat the command for each file and "
+"choose the same document every time."
+msgstr ""
+
+msgid ""
+"The window **Porta dentro…** lists the files. Next to each name, EMStudio"
+" says what the file is (a picture, a 3D model, a tileset, a drawing, a "
+"GIS layer) and what it becomes in the study: a picture is **a file of the"
+" document**, a model can be the representation of the place in an epoch."
+msgstr ""
+
+msgid ""
+"Under **Document**, leave **New document** selected and write what the "
+"document is in the field beside it, for example ``Photographs of the "
+"north wall``. To add the files to a document the study already has, "
+"choose it in the list instead."
+msgstr ""
+
+msgid ""
+"Fill **When was this document made?** with a year, a month or a day, for "
+"example ``2015`` or ``2015-06``. The date is required: it is the date of "
+"the document, which is often different from the date of what the document"
+" shows."
+msgstr ""
+
+msgid ""
+"If the files are 3D models, choose in **Which epoch does it represent?** "
+"the epoch the models show, and say in **When were the models acquired?** "
+"when the survey was made. A reconstruction made in 2026 can represent the"
+" II century A.D.: the two dates are kept apart."
+msgstr ""
+
+msgid "Choose a **Licence**, or leave **— as it is —**."
+msgstr ""
+
+msgid "Press **Porta dentro**."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A message confirms how many files came in and into which document. The "
+"new document is a node of the graph, with its files, its date and its "
+"licence."
+msgstr ""
+
+msgid ""
+"In the **Outliner**, the document is listed under **Documents**. Select "
+"it, and the **Inspector** shows its fields."
+msgstr ""
+
+msgid "In the **Sources** workspace, the **Viewer & card** shows its files."
+msgstr ""
+
+msgid ""
+"A model brought in as the representation of an epoch appears in the "
+"**Space** workspace when that epoch is chosen."
+msgstr ""
+
+msgid ""
+"The whole operation is one step of the history: ``Edit ▸ Undo`` takes it "
+"all back."
+msgstr ""
+
+msgid "Other ways in"
+msgstr ""
+
+msgid ""
+"``File ▸ Porta dentro…`` is one of several doors to the same window. You "
+"also reach it by dropping a file on the **3D scene**, with the **+** in "
+"the bar of the Space, and from a selection of files in the **Files** "
+"window of the **Archive** workspace. A study file (an ``.em.json`` or a "
+"GraphML) is not brought in this way: it opens as a graph."
+msgstr ""
+
+msgid "What next"
+msgstr ""
+
+msgid ""
+"The how-to guides of :doc:`/how-to/bring-in/index` cover the other ways "
+"material enters a study: a GraphML matrix, a table read through a "
+"mapping, a folder of sources read by StratiMiner. :doc:`/how-to/sources"
+"/declare-provenance` explains how to say where each file comes from."
+msgstr ""
+

@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: he\n"
+"Language-Team: he <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Your first study"
+msgstr ""
+
+msgid "*Open a study, read its matrix, add a unit, connect it and save.*"
+msgstr ""
+
+msgid ""
+"In this tutorial you make your first change to a stratigraphic matrix: "
+"you add a unit, place it in the sequence and save the study. It takes "
+"about fifteen minutes. We continue on Templu Mare, but work on a copy of "
+"the file, so that the original stays as it is."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"You need EMStudio and a copy of the ``.em.json`` of Templu Mare (or of "
+"any study of yours). :doc:`first-launch` shows how the workspaces are "
+"arranged."
+msgstr ""
+
+msgid "Open the study and read the matrix"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Open…`` and pick the copy of the study. It opens in the "
+"**Stratigraphy** workspace."
+msgstr ""
+
+msgid "Press :kbd:`0` with the pointer on the matrix to see the whole graph."
+msgstr ""
+
+msgid ""
+"The matrix reads from the bottom up, like an excavation seen in section: "
+"the older units are lower, the more recent higher. Each horizontal band "
+"is an **epoch**, named at its left edge. A line between two units is a "
+"stratigraphic relation: the unit above came after the unit below."
+msgstr ""
+
+msgid ""
+"The shape of each unit says what kind of unit it is. A rectangle is a "
+"stratigraphic unit observed in the field; the other shapes are the "
+"virtual units of a reconstruction and the special finds. ``Help ▸ EM "
+"legend`` lists every shape and every kind of line, and :doc:`/reference"
+"/em-legend` describes them."
+msgstr ""
+
+msgid ""
+"Click a unit. The **Inspector** on the right shows its name, its "
+"description, its epoch and its relations."
+msgstr ""
+
+msgid ""
+"Press :kbd:`/` and type the name of a unit, for example ``SU004``: the "
+"matrix moves to it."
+msgstr ""
+
+msgid "Add a unit"
+msgstr ""
+
+msgid "Click the unit under which the new one lies, so that it is selected."
+msgstr ""
+
+msgid ""
+"With the pointer on the matrix, press :kbd:`⇧A` (:kbd:`Shift+A` on "
+"Windows and Linux). The **Add** menu opens where the pointer is."
+msgstr ""
+
+msgid ""
+"Under **Linked to** and the name of the selected unit, the menu offers "
+"the kinds of unit that can sit above or below it. Choose a stratigraphic "
+"unit *above* the selected one. You can also type in the search field, for"
+" example ``US``, and press :kbd:`Enter`."
+msgstr ""
+
+msgid ""
+"The new unit appears in the matrix, already connected to the one you had "
+"selected, in the epoch where you placed it. EMStudio gives it a name; to "
+"change it, write the new name in the Inspector and press :kbd:`Enter`. "
+"Write a short description in the Inspector too."
+msgstr ""
+
+msgid ""
+"Without a selection, :kbd:`⇧A` adds a unit alone, in the epoch under the "
+"pointer."
+msgstr ""
+
+msgid "Connect two units"
+msgstr ""
+
+msgid ""
+"A unit usually has more than one relation. To connect the new unit to "
+"another one:"
+msgstr ""
+
+msgid "Hold the pointer on the new unit: a small **handle** appears on it."
+msgstr ""
+
+msgid ""
+"Drag the handle upwards onto a unit that lies above it, or downwards onto"
+" a unit that lies below it, and release."
+msgstr ""
+
+msgid ""
+"EMStudio offers the relations that the Extended Matrix allows between the"
+" two kinds of unit, in that direction. When only one is allowed, it is "
+"drawn at once; when several are allowed, a small menu lets you choose "
+"one. A direction that the language does not allow is refused, with a "
+"message that says why. If you release the handle on the empty canvas "
+"instead, the **Add** menu opens to create a new unit already connected."
+msgstr ""
+
+msgid ""
+"Every change can be taken back with ``Edit ▸ Undo`` (:kbd:`⌘Z` on the "
+"Mac, :kbd:`Ctrl+Z` elsewhere)."
+msgstr ""
+
+#, fuzzy
+msgid "Save"
+msgstr "שמירה"
+
+msgid "Choose ``File ▸ Save`` (:kbd:`⌘S`, :kbd:`Ctrl+S`)."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"The study is written back to its ``.em.json``, in the same place. To keep"
+" the original untouched and write a new file, choose ``File ▸ Save As…`` "
+"instead."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"A file opened from your computer comes back to you as a download: the "
+"browser saves the ``.em.json`` in its downloads folder. In a room the "
+"changes reach the room as you make them."
+msgstr ""
+
+msgid "A matrix made in yEd"
+msgstr ""
+
+msgid ""
+"Many studies begin as a GraphML matrix drawn in yEd. EMStudio reads such "
+"a file once and from then on the study lives in an ``.em.json``."
+msgstr ""
+
+msgid "Choose ``File ▸ Import ▸ GraphML…``."
+msgstr ""
+
+msgid ""
+"Pick the ``.graphml`` file in the system's dialog. A second dialog asks "
+"where to keep the ``.em.json``, beside the GraphML by default: give it a "
+"name and confirm."
+msgstr ""
+
+msgid ""
+"Pick the ``.graphml`` file in the browser's dialog, then type the name of"
+" the ``.em.json`` the graph will live in. The browser downloads the new "
+"``.em.json``."
+msgstr ""
+
+msgid ""
+"The message **GraphML read once into** and the name of the new file "
+"confirms the reading. Continue your work on the ``.em.json``: it holds "
+"everything the GraphML held, and what EMStudio adds to it. The shapes and"
+" colours of yEd are left out, because EMStudio draws every unit from the "
+"rules of the Extended Matrix. :doc:`/how-to/bring-in/import-graphml` "
+"gives the details."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A copy of Templu Mare with one more unit, placed in the sequence and "
+"saved. The next tutorial, :doc:`files-to-documents`, brings files into "
+"the study as documents."
+msgstr ""
+

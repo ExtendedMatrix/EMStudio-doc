@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Print sheets"
+msgstr ""
+
+msgid ""
+"*Choose which sheets to print, how many and in which order, and make the "
+"PDF.*"
+msgstr ""
+
+msgid ""
+"EMStudio prints the recording sheets of a graph on A4, recto and verso, "
+"as the definition lays them out. The printed page is drawn by "
+"stratigraph-templates, the same renderer StratiField uses, through the "
+"bridge: the bridge of the desktop application, or the StratiGraph node on"
+" the web. One window decides which sheets go to print: one sheet, the "
+"selection, or the units of the graph that meet a set of criteria."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open a study whose sheets you want to print (see :doc:`fill-the-"
+"recording-sheet`)."
+msgstr ""
+
+msgid ""
+"Select the units first if you want to print only those, in the Matrix or "
+"in the **Outliner**."
+msgstr ""
+
+msgid "Open the window"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Print sheets…``, or press **Print A4…** in the head of "
+"the **Sheet** window. The window **Print sheets** opens, with the name "
+"and version of the definition beside its title."
+msgstr ""
+
+msgid ""
+"The Print sheets window: what to print, the criteria by unit type, epoch,"
+" activity and state, the order, the sides and the output, with the count "
+"of sheets and pages."
+msgstr ""
+
+msgid "Under **What**, choose the sheets to start from:"
+msgstr ""
+
+msgid ""
+"**This sheet**, followed by the name of the unit the **Sheet** shows (the"
+" choice when you came from **Print A4…**);"
+msgstr ""
+
+msgid ""
+"**The selection**, with the number of selected units (the choice when you"
+" came from the menu with units selected);"
+msgstr ""
+
+msgid "**Every unit of the graph**, with their number."
+msgstr ""
+
+msgid ""
+"Narrow them down with the lists of criteria. Each entry shows how many "
+"units of the graph it has."
+msgstr ""
+
+msgid "**Unit type**: SU, USV and the other types present in the graph."
+msgstr ""
+
+msgid ""
+"**Epoch**: the epochs of the graph, from the oldest. A unit counts for "
+"the epoch in which it begins and for those in which it survives."
+msgstr ""
+
+msgid "**Activity / group**: the activities and groups the units belong to."
+msgstr ""
+
+msgid ""
+"**State of the sheet**: **Full**, **With empty boxes**, or **To complete "
+"(a required box empty)**. The required boxes are those the definition "
+"marks with an asterisk; in ICCD US 2021, **SU**, **LOCALITY** and "
+"**DEFINITION**."
+msgstr ""
+
+msgid ""
+"**Record status**: the status set in the head of the sheet, and **No "
+"status**."
+msgstr ""
+
+msgid ""
+"Ticked entries combine: a unit must meet every list, and within one list "
+"one of the ticked entries is enough. To filter by state or status, "
+"EMStudio reads the sheets one by one; the window shows **Reading the "
+"sheets** with the progress."
+msgstr ""
+
+msgid ""
+"Write in **Numbers** the numbers or the names you want, for example "
+"``1-20, 35, 40-45, USM12``. A number or a range matches the last number "
+"in a unit's name, so ``4`` keeps SU004; a word matches the whole name."
+msgstr ""
+
+msgid ""
+"Write in **Search** words that must all appear in the name or in the "
+"description of the unit."
+msgstr ""
+
+msgid ""
+"Choose the **Order**: **By number**, **By epoch (oldest first)**, or **As"
+" in the Matrix (top to bottom)**."
+msgstr ""
+
+msgid "Choose the **Sides**: **Recto and verso**, or **Recto only**."
+msgstr ""
+
+msgid ""
+"Choose the **Output**: **One PDF (the print dialog)**, or **One PDF per "
+"sheet (a folder)**."
+msgstr ""
+
+msgid ""
+"At the foot, the window counts the sheets and the pages, for example **11"
+" sheets, 22 pages**, and shows the name of the file: the definition, the "
+"graph and the day, such as ``ICCD US 2021 · Temple · 2026-11-19.pdf``. "
+"When no unit meets every criterion it says **No sheet: no unit meets "
+"every criterion**."
+msgstr ""
+
+msgid ""
+"The criteria start empty each time the window opens; the order, the sides"
+" and the output stay as you last chose them."
+msgstr ""
+
+msgid "Print them as one PDF"
+msgstr ""
+
+msgid ""
+"Press **Print…**. The bridge draws the sheets twenty at a time, and the "
+"window shows **Drawing the sheets** with the progress. **Stop** "
+"interrupts the work between two groups of sheets, and nothing is printed."
+msgstr ""
+
+msgid "The preview shows all the pages. Its line says how to make the PDF."
+msgstr ""
+
+msgid "Press **Print…** in the preview."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"A window of its own opens with the sheets, and the system's print dialog "
+"opens over it. Choose a printer, or **Save as PDF** in the dialog to "
+"write the PDF. The window with the sheets stays open as a preview: close "
+"it when you are done."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"The browser's print dialog opens on the preview. Choose a printer, or the"
+" destination **Save as PDF** to write the PDF."
+msgstr ""
+
+msgid ""
+"Press **Close** to leave the preview. The Log records how many sheets "
+"were drawn, the pages and the name of the file."
+msgstr ""
+
+msgid "Print one PDF per sheet"
+msgstr ""
+
+msgid ""
+"Each sheet in its own file, named after the definition, the graph, the "
+"day and the unit, needs a bridge that makes PDFs by itself."
+msgstr ""
+
+msgid ""
+"The bridge of the desktop application prints through the system's print "
+"dialog. With **One PDF per sheet (a folder)** chosen, the window says "
+"**the desktop makes its PDF with the print dialog («Save as PDF»): choose"
+" «One PDF»** and **Print…** stays off. Print the sheets as one PDF, as "
+"above."
+msgstr ""
+
+msgid ""
+"When the node makes PDFs, press **Print…**: every PDF is downloaded, one "
+"file per sheet, and a message counts them. When it does not, the window "
+"says why at its foot, and **Print…** stays off."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The sheets you chose, in the order you chose, on A4 pages ready to print "
+"or to keep as a PDF, with a file name that says which definition, which "
+"graph and which day."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`fill-the-recording-sheet`"
+msgstr ""
+
+msgid ":doc:`/reference/desktop-and-web`"
+msgstr ""
+
+msgid ":doc:`/reference/menus`"
+msgstr ""
+

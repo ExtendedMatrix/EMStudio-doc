@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Embed the graph in the text"
+msgstr ""
+
+msgid "*Insert embeds that stay live references to the graph.*"
+msgstr ""
+
+msgid ""
+"An embed is a block of the story that shows a part of the graph: a "
+"document, a 3D scene, the Matrix of an epoch, a table of units, the "
+"epochs on a time axis, the position of the site, the chain of a value. It"
+" keeps a reference to a node, never a copy: it is computed from the graph"
+" every time the page is drawn, so a unit renamed or moved to another "
+"epoch changes in the story as well. What you choose in the block is only "
+"how it is shown and its caption."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the story in the Narrative workspace, in **Write** (see :doc:`write-"
+"the-narrative`)."
+msgstr ""
+
+msgid "Insert a block"
+msgstr ""
+
+msgid ""
+"Move the pointer between two blocks of a chapter and press the **+** "
+"(**Insert a block here**). In an empty paragraph you can also type "
+":kbd:`/`: the same menu opens, and the block takes the place of the empty"
+" paragraph."
+msgstr ""
+
+msgid "The menu **Insert** lists, from the top:"
+msgstr ""
+
+msgid "**Blocks**"
+msgstr ""
+
+msgid ""
+"**Document** (it shows the thing: photo, PDF, plan, model), **3D scene** "
+"(a container, a document with models, an epoch) and **Text**."
+msgstr ""
+
+msgid "**Views of the graph**"
+msgstr ""
+
+msgid ""
+"**Matrix** (an epoch's sequence), **Table** (a query on the graph), "
+"**Timeline** (the epochs over the years), **Map** (the site's position) "
+"and **Paradata** (how a value is reached)."
+msgstr ""
+
+msgid "**Standard blocks**"
+msgstr "**Bloques estándar**"
+
+msgid ""
+"**History of research**, **Heritage involved (HDT-O)** and "
+"**Bibliography**, which ask the whole file and are recomputed at every "
+"opening."
+msgstr ""
+
+msgid ""
+"Then the gestures **Mention a node**, **AI-assisted draft** and **New "
+"chapter here**, and last **Or cite a node**: the nodes of the graph by "
+"kind, each shown in the way that suits it."
+msgstr ""
+
+msgid ""
+"Choose a kind of block. A second menu, **what it shows**, lists what that"
+" block can show. For a **3D scene** it groups **The graph**, the "
+"**Epochs**, the **Containers** and the **Documents that publish models**;"
+" a single model is found by typing its name. For a **Matrix** choose an "
+"epoch, for example *II A.D.*. The **Map** goes straight to the graph's "
+"position."
+msgstr ""
+
+msgid "Type in the field at the top to search any of these lists."
+msgstr ""
+
+msgid ""
+"The block appears where you pressed the **+**, selected, and its "
+"**Inspector** opens. ``Edit ▸ Undo`` takes it back."
+msgstr ""
+
+msgid "Other ways in"
+msgstr ""
+
+msgid ""
+"*From the graph.* Select a node in the Matrix or in the **Outliner** "
+"while the story is open: its **Inspector** has a section **In the "
+"story**, with **Cite in «chapter»** and the way it will be shown. The "
+"block goes at the end of the current chapter. The section also says where"
+" the node is already cited."
+msgstr ""
+
+msgid ""
+"*A file from the disk.* Drop a file onto a chapter. The form **New "
+"document** asks its **ID (e.g. D.1)**, **Description** and **File**; "
+"**Create the document** makes the document and shows it in the chapter, "
+"as a **3D scene** if the file is a model. The message reminds you to "
+"stamp the file in Archive (see :doc:`/how-to/sources/declare-"
+"provenance`)."
+msgstr ""
+
+msgid ""
+"*A mention in the text.* Type :kbd:`[[` in a paragraph, or choose "
+"**Mention a node**, and pick a node: its name enters the sentence as a "
+"mention, which follows the node when it is renamed and counts as a "
+"citation in the coverage of the **Index**."
+msgstr ""
+
+msgid "Adjust a block in the Inspector"
+msgstr ""
+
+msgid "Click a block to select it. Its **Inspector** shows:"
+msgstr ""
+
+msgid "**Shown as**"
+msgstr ""
+
+msgid ""
+"The ways this node can be shown, each with a line that says what changes."
+" A document can be shown as **Document** (the image, the PDF page, the "
+"text or the models, with its citation) or as **Source** (how this graph "
+"uses it: the extractors that read it, what they yield, the criticism of "
+"the source)."
+msgstr ""
+
+msgid "**Caption**"
+msgstr ""
+
+msgid "The text under the block."
+msgstr ""
+
+msgid "**Outside EMStudio**"
+msgstr ""
+
+msgid ""
+"How the block will come out in the live reader, in Word and LaTeX, and in"
+" Jupyter: a figure, a citation with its entry in the bibliography, a link"
+" or a query cell."
+msgstr ""
+
+msgid ""
+"▲ and ▼ move the block, and **Delete** removes it. The node itself stays "
+"in the graph: what the block says is changed in the node."
+msgstr ""
+
+msgid "Some kinds of block have their own controls:"
+msgstr ""
+
+msgid "**Table**"
+msgstr ""
+
+msgid ""
+"**The table's question** sets the **Scope** (what the block points at, "
+"the units cited in the chapter, the units cited in the text above, or an "
+"epoch or an activity), the **Types**, the **Certainty**, the **First "
+"epoch**, the **Columns**, the **Order** and the **Direction**. The title "
+"and the caption of the table say the scope and the filters."
+msgstr ""
+
+msgid "**3D scene**"
+msgstr ""
+
+msgid ""
+"The scene is loaded only when you ask: the button **▶ Load the scene** "
+"says how many objects it holds. A story with many scenes stays light. "
+"Turn the view, then press **Save this framing**: the camera and a picture"
+" of it are kept in the block, and the picture becomes the figure in Word "
+"and LaTeX. **Frame** returns to the saved framing, and **Open in the "
+"Space** opens the Space on the scene's epoch with the same camera."
+msgstr ""
+
+msgid "**Document**"
+msgstr "**Documento**"
+
+msgid "For a PDF, **Page** chooses the page that the block shows."
+msgstr ""
+
+msgid "**Map**"
+msgstr ""
+
+msgid ""
+"When the site has no position yet, the block says **site not positioned**"
+" and offers **Set the site position…** (see :doc:`/how-"
+"to/space/georeference-a-study`)."
+msgstr ""
+
+msgid ""
+"**Scope**, **Include** and **Order** choose which graphs, documents and "
+"heritage entities the block lists."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"Blocks that stay true to the graph. A Matrix of *II A.D.* shows the units"
+" that the epoch's lane holds, with the units whose first epoch is another"
+" one marked ↺; a reference whose node has been removed says **unresolved "
+"reference** instead of showing something stale. In **Read** a click on a "
+"block goes to its node; in **Print** you see the figures and citations "
+"the files will carry."
+msgstr ""
+
+msgid ""
+"A study from an earlier version may hold blocks that show one model or "
+"one unit; they still open, and their **Shown as** keeps those ways."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`write-the-narrative` for chapters and paragraphs."
+msgstr ""
+
+msgid ":doc:`export-the-narrative` for what each block becomes in the files."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/sources/documents-and-media` for the documents a block "
+"shows."
+msgstr ""
+
+msgid ":doc:`/reference/inspector` for the Inspector of the nodes."
+msgstr ""
+

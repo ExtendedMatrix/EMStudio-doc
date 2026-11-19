@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "What is EMStudio"
+msgstr ""
+
+msgid "*The editor where an Extended Matrix study is made, read and told.*"
+msgstr ""
+
+msgid ""
+"EMStudio is the editor of the **Extended Matrix** (EM), the language with"
+" which an archaeologist records a stratigraphic sequence, the sources "
+"that support each statement about it, and the reconstructions built on "
+"them. Earlier EM tools lived inside Blender or yEd. EMStudio is the place"
+" where the record itself is made: it reads and writes the ``em.json`` "
+"file, lays out the matrix with its own engine, and every other tool of "
+"the framework reads what it writes."
+msgstr ""
+
+msgid "A study you build, not a file you convert"
+msgstr ""
+
+msgid ""
+"An EM study is a record you reason with. It holds the stratigraphic units"
+" and their relations, the epochs that order them, the documents and the "
+"extractions that justify every interpretation, the representation models "
+"that give them a shape in space, and the chain of transformations that "
+"produced every file. EMStudio keeps all of this in one study, and every "
+"window shows a part of the same study: a selection made in the matrix is "
+"the selection of the 3D scene, of the recording sheet and of the story."
+msgstr ""
+
+msgid "Six workspaces, six questions"
+msgstr ""
+
+msgid ""
+"Across the top of the window run six workspaces: **Stratigraphy**, "
+"**Sources**, **Archive**, **Narrative**, **Space** and **Sheets**. Each "
+"one is an arrangement of windows that answers one question about the "
+"study, for example *where does this datum come from?* or *where is it, "
+"and what shape does it have in each epoch?*. You move between them as the"
+" work asks; the study stays the same. :doc:`workspaces-are-questions` "
+"explains the idea."
+msgstr ""
+
+msgid "Three places for a study"
+msgstr ""
+
+msgid ""
+"A study lives in one of three places, and EMStudio names the gesture that"
+" reaches each of them. You *open* a file of yours from the disk; you "
+"*enter* a room, where a study lives on a StratiGraph node and the people "
+"of a project work on it together; you *create* a room, empty or with a "
+"file you bring into it. A study published in a node's Catalog is a third "
+"thing again: a citable version that EMStudio reads, and from which new "
+"work starts. :doc:`open-enter-create` describes the three places and the "
+"verbs between them."
+msgstr ""
+
+msgid "Desktop and web"
+msgstr ""
+
+msgid ""
+"EMStudio runs as a desktop application on macOS, Windows and Linux, and "
+"as a web page served by a StratiGraph node. The two are one program and "
+"this manual describes them together. Where a step differs, the page shows"
+" two tabs, *Desktop* and *Web*, and :doc:`/reference/desktop-and-web` "
+"lists every difference in one table."
+msgstr ""
+
+msgid "Part of a framework"
+msgstr ""
+
+msgid ""
+"EMStudio is one component of the `Extended Matrix Framework "
+"<https://www.extendedmatrix.org/discover/emf>`_. It shares the s3Dgraphy "
+"library with the other tools, so that all of them speak the same EM; it "
+"works live with EM Tools in Blender; and the studies it produces are the "
+"ones that a StratiGraph node keeps and Heriverse shows. :doc:`place-in-"
+"the-framework` gives the whole picture. EMStudio is free software under "
+"the GPL-3.0 licence."
+msgstr ""
+

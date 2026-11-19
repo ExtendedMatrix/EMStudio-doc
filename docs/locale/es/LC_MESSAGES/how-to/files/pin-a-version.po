@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Pin a version"
+msgstr ""
+
+msgid "*Fix a citable version of the study.*"
+msgstr ""
+
+msgid ""
+"A study changes for years, while a paper, a report or a delivery cites "
+"the study as it was on a given day. **Pin version…** writes that state as"
+" a separate file which later work cannot reach: the stable thing a "
+"citation, and a DOI, can point at."
+msgstr ""
+
+msgid "Read the version of the study"
+msgstr ""
+
+msgid ""
+"When the study has a version, the status bar shows **Project** followed "
+"by the version number, for example *Project v12*. Hold the pointer on it "
+"to read:"
+msgstr ""
+
+msgid "the **content digest**, a fingerprint computed from the graphs;"
+msgstr ""
+
+msgid "**revision of**, the fingerprint of the version it came from;"
+msgstr ""
+
+msgid "**modified**, the date and time of the version."
+msgstr ""
+
+msgid ""
+"The version advances only when the content changes: when the file is "
+"saved or pinned after a change to its graphs, and when it receives the "
+"graphs of another file (see :doc:`integrate-another-file`). Saving a file"
+" whose graphs have not changed leaves the number as it is, and so does a "
+"change that is only a way of looking at the graphs, such as a colour "
+"scheme (see :doc:`clean-the-file`)."
+msgstr ""
+
+msgid "Pin"
+msgstr ""
+
+msgid ""
+"Save the study first, so that the pinned version is the one on the disk "
+"(see :doc:`open-save-recent`)."
+msgstr ""
+
+msgid ""
+"Click a graph of the file you want to pin: EMStudio pins the file of the "
+"active graph."
+msgstr ""
+
+msgid "Choose ``File ▸ Pin version…``."
+msgstr ""
+
+msgid ""
+"EMStudio settles the version and hands the snapshot over as a download, "
+"named after the graph with the version number and the ending "
+"``.pinned.em.json``, for example ``Temple-v12.pinned.em.json``. The file "
+"holds the whole study as it is, with its version, its fingerprint and the"
+" date and time of the pinning. The message **pinned** repeats the version"
+" and its fingerprint, and the Log keeps the same line."
+msgstr ""
+
+msgid ""
+"If the study has no graph yet, a message says that there is nothing to "
+"pin."
+msgstr ""
+
+msgid "Keep the pinned file"
+msgstr ""
+
+msgid ""
+"Move the pinned file into the folder of the project, beside the study, or"
+" into the archive where your citable data lives. Do not edit it: its "
+"value is to stay as it was written. Continue your work in the "
+"``.em.json`` of the study, whose version will advance with the next "
+"changes."
+msgstr ""
+
+msgid ""
+"The DOI is minted by the Catalog; the pinned file is the stable thing it "
+"points at."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A snapshot of the study with a version number and a fingerprint, which a "
+"citation can name and anyone can check against the content."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`/reference/emjson`, the version numbers of an ``.em.json`` and the "
+"version of the work."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/archive/versions-for-each-use`, the versions of the models "
+"for each use, a different thing from the version of the study."
+msgstr ""
+
+msgid ":doc:`project-folder`, where to keep the study and its files."
+msgstr ""
+

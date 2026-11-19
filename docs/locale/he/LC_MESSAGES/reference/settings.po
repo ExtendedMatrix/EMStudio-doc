@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: he\n"
+"Language-Team: he <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#, fuzzy
+msgid "Settings"
+msgstr "הגדרות"
+
+msgid "*The six tabs of the Settings dialog, section by section.*"
+msgstr ""
+
+msgid ""
+"The Settings dialog holds the choices that belong to this computer and to"
+" you, not to a study: the language of the interface, the theme, your "
+"identity, the nodes you know, the viewers, the AI provider and the add-"
+"ons. A study carries its own texts, colours and vocabularies with it; the"
+" settings stay on the machine."
+msgstr ""
+
+msgid ""
+"Open the dialog with **Settings…** (:kbd:`⌘,` on macOS, :kbd:`Ctrl+,` on "
+"Windows and Linux). On the macOS desktop the command is in the "
+"**EMStudio** menu of the system's menu bar; on the web, on Windows and on"
+" Linux it is in the **Help** menu."
+msgstr ""
+
+msgid ""
+"The dialog has six tabs: **General**, **Identity**, **Connections**, "
+"**Viewers**, **Advanced** and **Add-ons**. The dialog reopens on the tab "
+"you last used. Some commands open it directly on the section they need: "
+"asking the narrative for a draft before an AI is set up opens **AI "
+"provider**, an author's **Edit** opens **Identity**. **Save** applies the"
+" changes, **Cancel** leaves everything as it was."
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+#, fuzzy
+msgid "Language"
+msgstr "שפה"
+
+msgid ""
+"The language of this interface. Node labels and narrative text are "
+"separate: they travel with the document, not with the app. EMStudio "
+"starts in English and keeps the language you choose. For a language whose"
+" translation is an AI draft, the option **I have read this translation — "
+"mark it validated** turns off the “AI draft” badge on this computer."
+msgstr ""
+
+msgid ""
+"Settings, the General tab: language, texts of the graph, theme, Matrix "
+"layout and interaction."
+msgstr ""
+
+msgid "Texts of the graph"
+msgstr ""
+
+msgid ""
+"**Show the texts in** sets the language the texts of the graph are shown "
+"in, where the study holds a translation of them."
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid ""
+"**Auto (follows the system)**, **Light** or **Dark**. The theme changes "
+"the interface and the canvas."
+msgstr ""
+
+msgid "Matrix · layout"
+msgstr ""
+
+msgid ""
+"**«Layout» respects where I drop the nodes**: a node dropped by hand "
+"keeps its place beside the nearest node at the next **Layout**. With the "
+"option off, a drop moves the node by the same amount in the stored layout"
+" too."
+msgstr ""
+
+#, fuzzy
+msgid "Interaction"
+msgstr "אינטראקציה"
+
+msgid ""
+"**Show connector tooltip on hover** is on by default. **Over a node of "
+"the Chain: who, when, licence** shows three lines over a node of the "
+"transformation chain; it is off by default, to try. **Strict document "
+"naming (D.n)** is recommended: a document is called D.1, D.10 and so on. "
+"The two **Photo lot** fields set when photographs of one camera, close in"
+" time, are proposed as one lot: a new session after a number of minutes, "
+"and at least a number of photographs. The lot is always confirmed by "
+"whoever uploads."
+msgstr ""
+
+msgid "Files on this computer"
+msgstr ""
+
+msgid ""
+"A study may name files in a OneDrive folder in a form that holds on every"
+" computer. **OneDrive folder** says where OneDrive is on this one; **Find"
+" it** looks for it. Until it is set, those files are marked as files to "
+"link."
+msgstr ""
+
+msgid "Identity"
+msgstr ""
+
+msgid ""
+"Settings, the Identity tab: the ORCID iD, name and surname, with Declare "
+"and Verify with ORCID."
+msgstr ""
+
+msgid "Identity (ORCID)"
+msgstr ""
+
+msgid ""
+"The ORCID iD is the identity: what you create and change carries the "
+"signature of the current author. Write the **ORCID iD**, and if you wish "
+"a **Name** and a **Surname**, then choose **Declare** to work at once, "
+"offline. **Verify with ORCID** confirms the identity with ORCID; "
+"verifying it is what unlocks publishing as that person. **Sign out · "
+"forget this identity** removes it from this computer."
+msgstr ""
+
+msgid ""
+"The closed **Advanced** box holds the **ORCID client id (public)** and "
+"the choice between orcid.org and its sandbox. These concern whoever "
+"deploys EMStudio. Left empty, the desktop application uses EMStudio's own"
+" client on orcid.org; a sandbox, or a web installation, needs a client of"
+" its own, registered with its page."
+msgstr ""
+
+msgid "Connections"
+msgstr ""
+
+msgid "StratiGraph nodes"
+msgstr ""
+
+msgid ""
+"The nodes this computer knows. Each saved node can be made the "
+"**default**, edited, tested and removed. **Add a node…** opens the node "
+"selector, where you write a node's address and test it: EMStudio says "
+"whether the address answers, whether it is a StratiGraph node, which "
+"version it runs and which ways of signing in it offers. You choose a "
+"node, sign in and pick its rooms from the chip at the top right of the "
+"window."
+msgstr ""
+
+msgid ""
+"Settings, the Connections tab: the StratiGraph nodes and the synchronised"
+" apps."
+msgstr ""
+
+msgid "Orphan assets"
+msgstr ""
+
+msgid ""
+"This section appears only to the operator of a node. It lists the files "
+"of the node's store that no room cites any more, because their room was "
+"deleted. They stay in the store, so the same file uploaded again is "
+"stored once and joins its new room. The operator can filter them by type "
+"and date, and delete them one at a time."
+msgstr ""
+
+msgid "Synchronised apps"
+msgstr ""
+
+msgid ""
+"The live link with a tool on this machine or on your network. The chosen "
+"tool is the host and EMStudio connects to it. **Sync with** offers "
+"**Blender · EMtools** (the live link with EM Tools); the other entries "
+"are marked *soon* and cannot be chosen. **Protocol** (local or secure), "
+"**Host / IP** and **Port** compose the **Address** shown underneath."
+msgstr ""
+
+msgid "Viewers"
+msgstr ""
+
+msgid "3D viewer"
+msgstr ""
+
+msgid ""
+"Where the 3D lives: the address of an **ATON server** and the path of the"
+" **Heriverse app** under it. The **Scene** line shows the address that "
+"results."
+msgstr ""
+
+msgid ""
+"Settings, the Viewers tab: the ATON server, the Heriverse app and the "
+"thresholds of big 3D assets."
+msgstr ""
+
+msgid "Big 3D assets"
+msgstr ""
+
+msgid ""
+"The limits of EMStudio's own 3D viewer. A whole file or point cloud over "
+"the **Threshold for a whole file (MB)** or the **Threshold for a whole "
+"cloud (points)** does not load by itself: the viewer asks, and proposes "
+"the tileset when the model has one. The **Tileset memory ceiling (MB)** "
+"defaults to an eighth of this machine's memory; the tiles' textures are "
+"reduced to fit it. **Tileset error set automatically** follows this "
+"machine's profile; unticked, every tileset refines to the error chosen "
+"with the slider, and each tileset's bar can still choose its own. The "
+"**Scene memory ceiling (MB)** is set against the estimated weight of each"
+" model before it is loaded: what does not fit is not loaded, and the "
+"scene proposes the version that fits, or asks. The **Tile cache on disk "
+"(MB)** keeps the tiles already seen on this machine, so that a tileset "
+"does not come again over the network; 0 turns it off, and **Empty the "
+"tile cache** clears it."
+msgstr ""
+
+msgid "3D navigation (the Space)"
+msgstr ""
+
+msgid ""
+"As in Blender: middle button to orbit, Shift + middle to pan, Ctrl + "
+"middle to zoom. **Emulate 3 button mouse** makes Alt + left drag the "
+"middle button. **Emulate numpad** makes the digits 1 3 7 5 0 of the top "
+"row act as the keypad's. **Auto Perspective** makes an aligned view "
+"orthographic, and orbiting returns to perspective. **Invert the "
+"trackpad's orbit** turns the scene against the drag of two fingers. "
+"**Left drag in the 3D** chooses what a left drag does: **Automatic** "
+"(orbit, until a middle button is used), **Orbit**, **Box selection, as in"
+" Blender**, or **Pan**. On macOS, choose **Pan** to pan with the three-"
+"finger drag of the Accessibility settings. A line underneath says whether"
+" a middle button has been used on this device."
+msgstr ""
+
+msgid "Images (IIIF)"
+msgstr ""
+
+msgid ""
+"The address of an IIIF Image API service (Cantaloupe, in the StratiGraph "
+"stack). An image's identifier is its checksum, so only the host goes "
+"here. Left empty, the images show without thumbnails from the service."
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid ""
+"Settings, the Advanced tab: the AI provider, the developer option and the"
+" experimental functions."
+msgstr ""
+
+#, fuzzy
+msgid "AI provider"
+msgstr "ספק AI"
+
+msgid ""
+"Who writes the narrative drafts. **Provider** offers **Claude "
+"(Anthropic)** and **Echo — local trial, no key**, which writes a fixed "
+"draft and needs no network. **Model** may stay empty for the provider's "
+"default. The **API key** is pasted and saved with **Save key**, and "
+"**Remove** deletes it. The field stays empty after saving: the key can be"
+" replaced or removed, and it is never shown again."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"The key goes into the system keychain and is passed to EMStudio's local "
+"service, which restarts to receive it. While a draft is being written, "
+"saving waits for it to finish."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"The key applies to the session only: it lives in the memory of EMStudio's"
+" bridge while the bridge runs, and is not saved. The field works while "
+"the bridge answers."
+msgstr ""
+
+#, fuzzy
+msgid "Developer"
+msgstr "פיתוח"
+
+msgid ""
+"**Show node UUIDs (inspector)** shows each node's identifier in the "
+"Inspector. It is off by default."
+msgstr ""
+
+msgid "Experimental functions"
+msgstr ""
+
+msgid ""
+"**Turn on the experimental functions on this machine** opens functions "
+"still being tried. It is off by default and takes effect after a reload."
+msgstr ""
+
+msgid "Add-ons"
+msgstr ""
+
+msgid ""
+"Settings, the Add-ons tab: this machine, the queue, and the tools "
+"EMStudio downloads on request."
+msgstr ""
+
+msgid ""
+"Tools EMStudio calls and does not ship. Each is downloaded on request "
+"from its official releases, at a pinned version whose checksum is "
+"verified. The tab shows this machine (system, processor, graphics, "
+"memory), and for each tool its licence, source and version, and whether "
+"it is **recommended**, **optional**, **not needed** or **not for this "
+"machine** for what you do. The tools are:"
+msgstr ""
+
+msgid "**gltfpack**, which makes the light variants of a model in Ottimizza;"
+msgstr ""
+
+msgid "**Obj2Tiles**, which turns a textured mesh into a 3D Tiles tileset;"
+msgstr ""
+
+msgid ""
+"**3d-tiles-validator**, which checks every tileset against the "
+"specification before it enters the graph;"
+msgstr ""
+
+msgid ""
+"**Node.js**, EMStudio's own copy for the validator, needed only on a "
+"machine without Node.js of its own."
+msgstr ""
+
+msgid ""
+"Each tool can be installed, updated and removed here. The tools that do "
+"not run on this machine are listed apart, each with the reason. The add-"
+"ons live in a folder of their own, outside the installer, and each keeps "
+"its own licence."
+msgstr ""
+
+#, python-format
+msgid ""
+"**The queue: how much of this computer** chooses how many of these tools "
+"work side by side: **All** runs several at once under a ceiling (the "
+"performance cores less one, 60 % of the memory), **Half** uses half of "
+"both, and **One at a time** runs them in turn."
+msgstr ""
+
+msgid ""
+"The last card is **Blender**. It is not an add-on that EMStudio "
+"downloads: it is the Blender of this machine, with its own add-ons (EM "
+"Tools, 3D Survey Collection). EMStudio calls it in the background and "
+"leaves it as it is."
+msgstr ""
+
+msgid ""
+"The add-ons are managed by EMStudio's bridge: when the bridge does not "
+"answer, the tab says so."
+msgstr ""
+

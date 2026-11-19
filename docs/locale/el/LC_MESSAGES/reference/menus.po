@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: el\n"
+"Language-Team: el <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Menus"
+msgstr ""
+
+msgid "*Every command of the menus, where it appears and what it does.*"
+msgstr ""
+
+msgid ""
+"The menu bar at the top of the window holds **File**, **Edit**, **Tools**"
+" and **Help**: the commands that belong to the whole study rather than to"
+" one window. The same menus appear on the desktop and on the web, because"
+" EMStudio draws them from one table of commands. On the macOS desktop the"
+" system's menu bar carries them too, together with the **EMStudio** and "
+"**Window** menus of the Mac; on Windows and Linux the menu bar inside the"
+" window is the only one."
+msgstr ""
+
+msgid "The File menu open."
+msgstr ""
+
+msgid "The Edit menu open."
+msgstr ""
+
+msgid "The Tools menu open."
+msgstr ""
+
+msgid "The Help menu open."
+msgstr ""
+
+msgid ""
+"The commands of a single window are elsewhere: in the window's own "
+"header, in the menu that opens with a right click on the window, and in "
+"the menu *This window's tools* at the right of the header. :doc:`windows`"
+" describes them with each type of window."
+msgstr ""
+
+msgid "How to read the tables"
+msgstr ""
+
+msgid ""
+"A command that exists on some platforms only is drawn only there. In the "
+"tables below, the **Where** column says where each command appears: "
+"*everywhere*, a list of platforms, *desktop only*, or *macOS menu bar* "
+"for the commands that the Mac also shows in the system's menu bar. :doc"
+":`desktop-and-web` collects every difference between the desktop and the "
+"web in one table."
+msgstr ""
+
+msgid ""
+"The keys are given as the Mac shows them (⌘) and as Windows and Linux "
+"show them (Ctrl). Some keys work in the page and are not written beside a"
+" menu command: ``Edit ▸ Undo`` and ``Edit ▸ Redo`` answer to :kbd:`⌘Z` "
+"and :kbd:`⇧⌘Z` (:kbd:`Ctrl+Z`, :kbd:`Ctrl+Shift+Z`), as :doc:`shortcuts` "
+"lists. On the Mac, the **Edit** menu of the system's menu bar holds the "
+"usual commands of text editing (Undo, Redo, Cut, Copy, Paste, Select "
+"All), which act on the field being typed in."
+msgstr ""
+
+msgid ""
+"The **What it does** column repeats the description that EMStudio shows "
+"when the pointer rests on the command. Three commands of **Help** have "
+"none, because their names say it:"
+msgstr ""
+
+msgid ""
+"**Workspaces…** opens the table of the six workspaces, with the question "
+"each answers and its windows (see :doc:`workspaces`);"
+msgstr ""
+
+msgid ""
+"**Shortcuts** opens the list of every key and gesture, with a search "
+"field (see :doc:`shortcuts`);"
+msgstr ""
+
+msgid ""
+"**EM legend** opens the legend of the shapes and lines of the Extended "
+"Matrix (see :doc:`em-legend`)."
+msgstr ""
+
+msgid "Where you work: the mode, the node, the room"
+msgstr ""
+
+msgid ""
+"The chip's menu open under the identity chip at the top right: the "
+"sections Author, Node and account, Where you work, and My space."
+msgstr ""
+
+msgid ""
+"The way you are working (a file of this computer, a live link with "
+"another application, a room of a node) is not a menu of the bar. It has "
+"one place, the section **Where you work** of the chip's menu, the chip at"
+" the top right of the window: click the label at the left of the status "
+"bar, or press :kbd:`⇧⌘L` (:kbd:`Ctrl+Shift+L`), and the menu opens at "
+"that section. Under **Mode** it offers three choices, which correspond to"
+" the three verbs of this manual (see :doc:`/explanation/open-enter-"
+"create`):"
+msgstr ""
+
+msgid "**On this computer**: a file you *open* from the disk;"
+msgstr ""
+
+msgid ""
+"**With an app**: the live link with EM Tools in Blender (or another "
+"application that synchronises with EMStudio), the link the older versions"
+" called *Sidecar*;"
+msgstr ""
+
+msgid "**In a room**: a room you *enter* on a StratiGraph node."
+msgstr ""
+
+msgid ""
+"Under **Synchronised apps** the section lists the applications linked to "
+"EMStudio, with **Find** to look for EM Tools on this computer. Inside a "
+"room, under **Room**, it names the room and offers **Room settings…**, "
+"**Open on the node**, **Leave the room**, **Resources of the room…** and "
+"**Open this room in…**, which opens the same room in the other editor. "
+"The node, your account on it and your rooms are in the other sections of "
+"the same menu, **Node and account** and **My space** (see :doc:`/how-"
+"to/rooms/sign-in`)."
+msgstr ""
+
+msgid ""
+"The table at the end of this page, **Mode**, lists the buttons that the "
+"menu presses for these choices, with the names they carry in the code of "
+"the application (**Standalone**, **Sidecar (sync)**, **Join Room**). The "
+"menu shows the three choices above in their place."
+msgstr ""
+
+msgid "The menus at a glance"
+msgstr ""
+
+msgid ""
+"The menu bar inside the window, on every platform, and the menu bar of "
+"the system, which only the macOS desktop draws."
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "In the window"
+msgstr ""
+
+msgid "macOS menu bar"
+msgstr ""
+
+msgid "EMStudio"
+msgstr ""
+
+msgid "—"
+msgstr ""
+
+msgid "yes"
+msgstr ""
+
+msgid "File"
+msgstr "Αρχείο"
+
+msgid "everywhere"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Tools"
+msgstr ""
+
+msgid "Window"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "macOS"
+msgstr ""
+
+msgid "Windows, Linux"
+msgstr ""
+
+msgid "Where"
+msgstr ""
+
+msgid "What it does"
+msgstr ""
+
+msgid "New"
+msgstr "Νέο"
+
+msgid ":kbd:`⌘N`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+N`"
+msgstr ""
+
+msgid "everywhere · macOS menu bar"
+msgstr ""
+
+msgid "New empty .em.json"
+msgstr ""
+
+msgid "New EM project…"
+msgstr ""
+
+msgid ""
+"Make the folders of a new EM project (the EM standard tree) in a folder "
+"you choose"
+msgstr ""
+
+msgid "Open project…"
+msgstr ""
+
+msgid "Opens a project's folder and the em.json in its EM/"
+msgstr ""
+
+msgid "Reorder by the standard…"
+msgstr ""
+
+msgid ""
+"Shows the plan for the open project's folder (the folders to make, the "
+"files to move) and asks"
+msgstr ""
+
+msgid "Close the project"
+msgstr ""
+
+msgid "Closes every file of the project: the Shelf goes with it"
+msgstr ""
+
+msgid "Open the project folder"
+msgstr ""
+
+msgid ""
+"Shows the folder of the active .em.json in the Finder / Explorer / file "
+"manager, the file selected where the system allows it (in a browser "
+"alone: the path, copied)"
+msgstr ""
+
+msgid "Open…"
+msgstr "Άνοιγμα…"
+
+msgid ":kbd:`⌘O`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+O`"
+msgstr ""
+
+msgid "Open an .em.json file"
+msgstr ""
+
+msgid "Open Recent ▸"
+msgstr ""
+
+msgid "The last files and rooms you opened. Filled when the sub-menu opens."
+msgstr ""
+
+msgid "Open in place of the open files…"
+msgstr ""
+
+msgid ""
+"Choose a file, then close the open ones (asking for those with unsaved "
+"changes) and open it"
+msgstr ""
+
+msgid "Close"
+msgstr "Κλείσιμο"
+
+msgid ":kbd:`⌘W`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ""
+
+msgid ""
+"everywhere · macOS menu bar · the key on the desktop only (the browser "
+"keeps it)"
+msgstr ""
+
+msgid ""
+"Close the active document (asking to save it if needed) and go back to "
+"the start screen"
+msgstr ""
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid ":kbd:`⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+S`"
+msgstr ""
+
+msgid "Save .em.json (⌘S)"
+msgstr ""
+
+msgid "Save As…"
+msgstr "Αποθήκευση ως…"
+
+msgid ":kbd:`⇧⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Shift+S`"
+msgstr ""
+
+msgid "Save .em.json to a new file (⇧⌘S)"
+msgstr ""
+
+msgid "Save all"
+msgstr ""
+
+msgid ":kbd:`⌥⌘S`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+S`"
+msgstr ""
+
+msgid "Save every file with unsaved changes (⌥⌘S)"
+msgstr ""
+
+msgid "Pin version…"
+msgstr ""
+
+msgid ""
+"Freeze the project as a citable snapshot. The DOI is minted by the "
+"Catalog; this is the stable thing it points at."
+msgstr ""
+
+msgid "Porta dentro…"
+msgstr ""
+
+msgid ""
+"Bring files into the graph as part of a document: what each is, the "
+"document, its date, the epoch it represents"
+msgstr ""
+
+msgid "Georeferencing…"
+msgstr ""
+
+msgid "The coordinate system of each graph of the file, and of its models"
+msgstr ""
+
+msgid "Import ▸"
+msgstr ""
+
+msgid "Installed plugins add their commands here, after the rows below."
+msgstr ""
+
+msgid "Import ▸ GraphML…"
+msgstr ""
+
+msgid "Import a yEd GraphML file (needs the local bridge)"
+msgstr ""
+
+msgid "Import ▸ Table with a mapping…"
+msgstr ""
+
+msgid ""
+"Read a table or an XML through a mapping: into a new graph, or onto this "
+"one"
+msgstr ""
+
+msgid "Export ▸"
+msgstr ""
+
+msgid ""
+"Export the current document. Installed plugins add their commands here, "
+"after the rows below."
+msgstr ""
+
+msgid "Export ▸ SVG"
+msgstr ""
+
+msgid "Export the current view as SVG"
+msgstr ""
+
+msgid "Export ▸ Turtle (.ttl)"
+msgstr ""
+
+msgid "Export as RDF/CIDOC Turtle (.ttl) via the s3Dgraphy projection"
+msgstr ""
+
+msgid "Print sheets…"
+msgstr ""
+
+msgid ""
+"Print the recording sheets of the graph: all, the selection, or those the"
+" criteria keep (type, epoch, activity, state, numbers, words)"
+msgstr ""
+
+msgid "Integrate into this file…"
+msgstr ""
+
+msgid ""
+"Merge another emj's graphs into the active graph's file (shared nodes "
+"merge by UUID — offline, no server)"
+msgstr ""
+
+msgid "Find missing files…"
+msgstr ""
+
+msgid ""
+"Look in a folder you choose for the files this document cannot find — by "
+"their sha256, else by name and size — and rewrite their paths relative to"
+" the em.json. One undo."
+msgstr ""
+
+msgid "Collect resources…"
+msgstr ""
+
+msgid ""
+"Copy into the study's folder the files it names outside it (absolute "
+"paths, onedrive://, a .blend elsewhere) — only what each needs, every "
+"copy checked by sha256 — and rewrite their paths relative to the em.json."
+" Never a move; one undo."
+msgstr ""
+
+msgid "Clean the file…"
+msgstr ""
+
+msgid ""
+"Take out of the em.json what is only a way of looking at it (the colour "
+"schemes), after showing what goes. The graphs do not change. One undo."
+msgstr ""
+
+msgid "Create a room…"
+msgstr ""
+
+msgid "A room on this node, yours, empty. Whoever creates it is its owner."
+msgstr ""
+
+msgid "Bring this into a new room…"
+msgstr ""
+
+msgid ""
+"Put the graph you have open on a table on this node. From that moment the"
+" live copy is the node's."
+msgstr ""
+
+msgid "Consolidate for…"
+msgstr ""
+
+msgid ""
+"Archive › Assets for a target: each asset with its versions and textures,"
+" what Heriverse, ATON, the web or a phone will load, what is to do, the "
+"scene's bars against the bands, the queue. Nothing is written until an "
+"action of the queue runs."
+msgstr ""
+
+msgid "Compose a .blend from the graph…"
+msgstr ""
+
+msgid ""
+"A working .blend for Blender from what there is on the disk or in the "
+"room, with no .blend to start from: a working profile, the containers or "
+"epochs; each object carries the graph's tags"
+msgstr ""
+
+msgid "Quit EMStudio"
+msgstr ""
+
+msgid ":kbd:`⌘Q`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Q`"
+msgstr ""
+
+msgid "*desktop only*: Windows, Linux"
+msgstr ""
+
+msgid "Undo"
+msgstr "Αναίρεση"
+
+msgid "Redo"
+msgstr "Επανάληψη"
+
+msgid "Drawn by the system."
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Paste"
+msgstr ""
+
+msgid "Select All"
+msgstr ""
+
+msgid "Add node…"
+msgstr ""
+
+msgid ":kbd:`⇧A`"
+msgstr ""
+
+msgid ":kbd:`Shift+A`"
+msgstr ""
+
+msgid "Add a node (⇧A)"
+msgstr ""
+
+msgid "StratiMiner"
+msgstr "StratiMiner"
+
+msgid ""
+"StratiMiner: build a graph from a folder of unstructured sources, via the"
+" reviewable em\\_data.xlsx table"
+msgstr ""
+
+msgid "Normalise spellings…"
+msgstr ""
+
+msgid ""
+"Bring the edges written with an older spelling to the canonical one, in "
+"the whole graph — one undo step"
+msgstr ""
+"Φέρνει στην κανονική γραφή τις ακμές με παλαιότερη γραφή, σε όλο τον "
+"γράφο — μία αναίρεση"
+
+msgid "Colours…"
+msgstr ""
+
+msgid ""
+"The Colours window of the active Space: colour the proxies by type, epoch"
+" or a property"
+msgstr ""
+
+msgid "Vocabularies…"
+msgstr ""
+
+msgid ""
+"The vocabularies installed on this computer, those this file uses, and "
+"the copy of their terms in the file"
+msgstr ""
+
+msgid "Extensions…"
+msgstr ""
+
+msgid ""
+"The extensions of this computer — community packages and plugins: install"
+" from disk, enable, remove"
+msgstr ""
+
+msgid "Check the chronology…"
+msgstr ""
+
+msgid ""
+"The epochs on a time axis, the overlaps with their delta and their "
+"remedies"
+msgstr ""
+
+msgid "Resources"
+msgstr "Πόροι"
+
+msgid ""
+"Resources: read a DosCo folder against the active graph's documents; the "
+"graph's documents and resources"
+msgstr ""
+
+msgid "Workspaces…"
+msgstr ""
+
+msgid "Shortcuts"
+msgstr ""
+
+msgid "EM legend"
+msgstr ""
+
+msgid "About EMStudio"
+msgstr ""
+
+msgid "web, Windows, Linux"
+msgstr ""
+
+msgid "Settings…"
+msgstr ""
+
+msgid ":kbd:`⌘,`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+,`"
+msgstr ""
+
+msgid "Check for updates…"
+msgstr ""
+
+msgid "EMStudio (macOS menu bar)"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+msgid "Hide EMStudio"
+msgstr ""
+
+msgid "Hide Others"
+msgstr ""
+
+msgid "Show All"
+msgstr ""
+
+msgid "Window (macOS menu bar)"
+msgstr ""
+
+msgid "Minimize"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Enter Full Screen"
+msgstr ""
+
+msgid "Mode"
+msgstr ""
+
+msgid ""
+"The mode, the node and the room are no longer a menu of the top bar: "
+"their one place is the section **Where you work** of the chip's menu, "
+"opened by the left label of the status bar (:kbd:`⇧⌘L`). The buttons "
+"below stay in the page, hidden, and that menu uses them; their labels and"
+" tooltips are these."
+msgstr ""
+
+msgid "Button"
+msgstr ""
+
+msgid "When"
+msgstr ""
+
+msgid "Standalone"
+msgstr ""
+
+msgid "Standalone: editing a local .em.json"
+msgstr ""
+
+msgid "Sidecar (sync)"
+msgstr ""
+
+msgid "Sidecar: live-synced to a host (Blender/EMtools)"
+msgstr ""
+
+msgid "Join Room"
+msgstr ""
+
+msgid ""
+"In a room on a StratiGraph node: the graph lives in the room, shared with"
+" its participants."
+msgstr ""
+
+msgid "Open this room in…"
+msgstr ""
+
+msgid "only in a room"
+msgstr ""
+
+msgid ""
+"Open the same room in the other editor — the graph is the room's, so "
+"nothing is transferred"
+msgstr ""
+
+msgid "Share this room…"
+msgstr ""
+
+msgid ""
+"Who is at this table, and whose the live copy is. Opens the node's panel "
+"for this room, in a new tab — that is where the ACL and the owner live, "
+"and where people, teams, invitations and the transfer are all in one "
+"place. EMStudio used to draw its own; it showed people but not teams, so "
+"it was retired."
+msgstr ""
+

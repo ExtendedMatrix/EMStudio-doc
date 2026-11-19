@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Export the narrative"
+msgstr ""
+
+msgid ""
+"*Make a file of the story to send, print or publish, or copy the link of "
+"its live reader.*"
+msgstr ""
+
+msgid ""
+"The story is exported from its own window, with the **Export ▾** button "
+"in the header of the **Narrative** window. Every file is a snapshot of "
+"the story at the moment of export: the blocks that show the graph become "
+"figures, citations or query cells, and what no person has validated stays"
+" out unless you choose otherwise."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the story in the Narrative workspace. When the graph holds several "
+"stories, pick the one to export with its name at the top of the page."
+msgstr ""
+
+msgid ""
+"Look at **Print** in the header of the window: it shows what Word and "
+"LaTeX will contain, with a gap marked **does not go out: to be verified**"
+" for each AI paragraph not validated yet. **Notebook** shows the cells of"
+" the Jupyter file."
+msgstr ""
+
+msgid ""
+"The files are made by the s3Dgraphy library through EMStudio's local "
+"service. When the service does not answer, EMStudio says so and nothing "
+"is written."
+msgstr ""
+
+msgid "Export a file"
+msgstr ""
+
+msgid ""
+"Press **Export ▾** in the header of the **Narrative** window. The menu "
+"lists:"
+msgstr ""
+
+msgid "**HTML · snapshot**"
+msgstr ""
+
+msgid "One page, frozen at the moment of export, to send by e-mail."
+msgstr ""
+
+msgid "**DOCX**"
+msgstr ""
+
+msgid "A Word document with the figures baked in and the sources cited."
+msgstr ""
+
+msgid "**LaTeX + .bib**"
+msgstr ""
+
+msgid "A LaTeX document with its bibliography, ready to compile without EMStudio."
+msgstr ""
+
+msgid "**Jupyter**"
+msgstr ""
+
+msgid "A notebook whose cells ask the graph instead of quoting it."
+msgstr ""
+
+msgid ""
+"Under the list, a line says how many AI paragraphs not validated, and how"
+" many nodes made with AI that nobody verified, will stay out of the "
+"files; when there are none it says **All the text is validated by a "
+"person**. Installed plugins can add further formats to this menu."
+msgstr ""
+
+msgid ""
+"Choose a format. If something is not validated, a window opens first, "
+"with the title saying how many paragraphs stay out. It lists them chapter"
+" by chapter: a click on **paragraph** and its number takes you to it in "
+"**Write**, where you can verify it (see :doc:`ai-drafts`). Then choose:"
+msgstr ""
+
+msgid ""
+"**Export without them**, followed by how many stay out, the proposed "
+"choice: the file leaves them out;"
+msgstr ""
+
+msgid ""
+"**Export anyway, with ⚠︎ beside them**: the file keeps them, marked, for "
+"this export only;"
+msgstr ""
+
+msgid "**Cancel**."
+msgstr ""
+
+msgid ""
+"The file is downloaded with the name of the graph, and a message confirms"
+" the format."
+msgstr ""
+
+msgid ""
+"The LaTeX export arrives as a ``.zip`` when the story has figures: it "
+"holds ``main.tex``, ``main.bib`` and a ``fig/`` folder, because LaTeX "
+"keeps its figures as separate files. A story without figures arrives as a"
+" ``.tex`` file with its ``.bib`` beside it, in two downloads."
+msgstr ""
+
+msgid "What the blocks become"
+msgstr ""
+
+msgid ""
+"The **Inspector** of each block says, under **Outside EMStudio**, how it "
+"will come out. In Word and LaTeX:"
+msgstr ""
+
+msgid ""
+"a **Matrix** becomes a figure, a slice of the same Matrix as on the "
+"canvas;"
+msgstr ""
+
+msgid "a **Table** becomes a figure with the rows that its filters keep;"
+msgstr ""
+
+msgid "a **Timeline** becomes a figure of the epochs on their axis;"
+msgstr ""
+
+msgid ""
+"a **Map** becomes a figure of its vector layer (the marker, the footprint"
+" when it is known, the north arrow, the coordinates), without the "
+"background tiles;"
+msgstr ""
+
+msgid ""
+"a **Document** becomes its picture under its citation, with its entry in "
+"the bibliography;"
+msgstr ""
+
+msgid ""
+"a **3D scene** becomes the picture of the framing saved in the block (see"
+" :doc:`embeds`); without a saved framing it stays a placeholder with its "
+"link;"
+msgstr ""
+
+msgid ""
+"a standard block, such as the **Bibliography**, is written as the text of"
+" its answer, with the date it was computed;"
+msgstr ""
+
+msgid "a mention keeps the name of its node in the sentence."
+msgstr ""
+
+msgid ""
+"In the Jupyter notebook the blocks become cells that query the graph, and"
+" a 3D scene stays a link. A figure that cannot be drawn leaves its "
+"placeholder, and the export still happens."
+msgstr ""
+
+msgid "Copy the link of the live reader"
+msgstr ""
+
+msgid ""
+"**Live reader · link** copies the address of the reader: the page where "
+"the story is read with its blocks resolved at every opening and its 3D "
+"navigable, for people who do not use EMStudio. The reader reads a "
+"published study, so the link is made for a study opened from the Catalog "
+"of a node. For a study opened from the disk, EMStudio answers **The live "
+"reader reads a published study: open this one from the Catalog (or "
+"publish it) to get its link**."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A document to carry away, in the format the reader needs: an HTML page "
+"for an e-mail, a Word file for a colleague, a LaTeX project for a "
+"publication, a notebook that asks the study again each time it runs. The "
+"story itself stays in the graph, where you keep writing it."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`/reference/export-formats` lists every file EMStudio writes."
+msgstr ""
+
+msgid ":doc:`ai-drafts` for validating the AI paragraphs before exporting."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/files/pin-a-version` to keep the version of the study that "
+"a document cites."
+msgstr ""
+

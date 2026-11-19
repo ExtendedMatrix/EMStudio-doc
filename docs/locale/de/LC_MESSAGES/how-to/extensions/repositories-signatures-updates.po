@@ -1,0 +1,280 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Use repositories, signatures and updates"
+msgstr ""
+
+msgid ""
+"*Add a repository, check what is signed, and keep the extensions of this "
+"computer up to date.*"
+msgstr ""
+
+msgid ""
+"A **repository** is a list of extensions published in one place: the "
+"official list of the Extended Matrix, the list of a project on the "
+"internet, or a folder shared on the laboratory's network. EMStudio reads "
+"the list, its index, and installs from it with the same window and the "
+"same questions as an installation from disk. Every archive is checked "
+"against the fingerprint that the index gives for it before it is opened. "
+"A repository may also be **signed**: then its index and its archives are "
+"taken only when they carry a valid signature of the key you gave for it."
+msgstr ""
+
+msgid ""
+"Repositories belong to the extensions of this computer, and EM Tools in "
+"Blender uses the same ones. They are managed in the desktop application: "
+"the web version lists the packages that the node's administrator "
+"installed (see :doc:`install-packages-and-plugins`)."
+msgstr ""
+
+msgid "Allow online access"
+msgstr ""
+
+msgid "Choose ``Tools ▸ Extensions…`` and scroll to the section **Repositories**."
+msgstr ""
+
+msgid ""
+"Tick **Allow online access** to let EMStudio read the repositories on the"
+" internet. The switch is one for the whole computer, and it is off by "
+"default: off, nothing goes to the network. A repository in a folder works"
+" with the switch off."
+msgstr ""
+
+msgid "Add a repository"
+msgstr ""
+
+msgid "Press **+ Add repository…**. The window **Add a repository** opens."
+msgstr ""
+
+msgid ""
+"In **Address**, write the address of the repository's index "
+"(``https://…`` or ``file://…``) or the path of a folder. Two buttons fill"
+" it for you: **ExtendedMatrix (official)** writes the address of the "
+"official list, and **Choose a folder…** opens the system's folder dialog,"
+" for a folder on the laboratory's network."
+msgstr ""
+
+msgid "**Name** is taken from the address when left empty."
+msgstr ""
+
+msgid ""
+"**Access token (optional)** is for a private repository. It is sent only "
+"to the server of that repository, kept on this computer, and never shown "
+"again."
+msgstr ""
+
+msgid ""
+"**Check for updates at start-up** makes EMStudio read this repository "
+"when it starts and say what can be updated. It is off by default."
+msgstr ""
+
+msgid ""
+"**Trust the reviews of this repository**: a plugin whose code this "
+"repository lists as reviewed then installs without the trust question, "
+"marked with who read it and when. Choosing the official list ticks it."
+msgstr ""
+
+msgid ""
+"**Public key (minisign), optional**: paste the public key that whoever "
+"runs the repository publishes, the line that starts with ``RW``. With a "
+"key, an index or an archive not signed by that key is refused."
+msgstr ""
+
+msgid ""
+"Press **Add**. EMStudio reads the repository at once: a folder always, a "
+"repository on the internet when online access is on."
+msgstr ""
+
+msgid ""
+"Each repository has its row: its name, **folder** or **on the internet**,"
+" **official**, **token set**, and **signed · key …** for a signed one; "
+"its address; how many entries it had and when it was read, or **not read "
+"yet**; and the problems of the last reading. The row offers **Refresh**, "
+"**Check for updates at start-up**, **Trust the reviews of this "
+"repository**, **Access token…**, **Signing key…** and **Remove "
+"repository**. Removing a repository forgets its list; what you installed "
+"from it stays installed."
+msgstr ""
+
+msgid "Install from a repository"
+msgstr ""
+
+msgid "Press **Refresh** on a row, or **Refresh all**, to read the indexes again."
+msgstr ""
+
+msgid ""
+"Under **Offered by the repositories**, each entry gives its name and "
+"kind, a line about it, its version, the repository, its licence and size,"
+" and what its code asks. An entry already installed says so, or offers an"
+" update."
+msgstr ""
+
+msgid ""
+"Press **Install** (or **Update**). EMStudio downloads the archive, checks"
+" it, and opens **Install from …** with the same panels **Data** and "
+"**Code** as an installation from disk (see :doc:`install-packages-and-"
+"plugins`)."
+msgstr ""
+
+msgid "Under the panels, read what comes with it:"
+msgstr ""
+
+msgid "a line that says the archive is the one the repository's index names;"
+msgstr ""
+
+msgid ""
+"for a signed repository, a line that says it is signed by the "
+"repository's key, over that fingerprint;"
+msgstr ""
+
+msgid ""
+"the packages it requires, installed first, with a mark on those that "
+"carry code;"
+msgstr ""
+
+msgid "the packages it offers but does not install;"
+msgstr ""
+
+msgid ""
+"a vocabulary in tier C, downloaded from its source onto this computer "
+"only when online access is on."
+msgstr ""
+
+msgid ""
+"Answer **Install everything**, **Data only** or **Cancel**, as for a "
+"package from disk."
+msgstr ""
+
+msgid "Read a signature"
+msgstr ""
+
+msgid ""
+"A signature says who published the bytes: the holder of a key. It does "
+"not say that anyone read the code. EMStudio shows the two things apart."
+msgstr ""
+
+msgid ""
+"**signed by the key … of …**, beside an installed extension or in the "
+"confirmation, names the key and the repository: these are the bytes that "
+"the repository published, unchanged on the way."
+msgstr ""
+
+msgid ""
+"**reviewed by … on …** names the person who read the code, in the list of"
+" a repository whose reviews you trust."
+msgstr ""
+
+msgid ""
+"To sign a repository after adding it, press **Signing key…** on its row "
+"and paste its public keys, one per line. An empty field makes the "
+"repository unsigned again: only the fingerprints of its index count."
+msgstr ""
+
+msgid "Keep extensions up to date"
+msgstr ""
+
+msgid ""
+"When a repository offers a newer version of something installed, the row "
+"of the extension says so, and **Update** is beside the entry."
+msgstr ""
+
+msgid ""
+"**Update all (…)** updates every extension a repository offers newer, one"
+" after the other. Its window lists first the updates that ask the trust "
+"question again, because what the code asks, what it can do, or where it "
+"comes from has changed. **Update the others** leaves those aside; "
+"**Update all, trusting these too** updates them as well."
+msgstr ""
+
+msgid ""
+"A new version of the data goes beside the old one: no study changes the "
+"version it declares until you update its declaration (see :doc:`install-"
+"packages-and-plugins`)."
+msgstr ""
+
+msgid ""
+"With **Check for updates at start-up** ticked, a message appears a few "
+"seconds after EMStudio starts, **Updates available:** with the list, and "
+"**Extensions…** to open the window. Nothing is installed by itself."
+msgstr ""
+
+msgid "Go back to an earlier version"
+msgstr ""
+
+msgid ""
+"On the row of an installed extension, press **Versions…**. The versions "
+"on this computer appear side by side: **Data** and **Code**, with the one"
+" **in use**."
+msgstr ""
+
+msgid ""
+"On an older code version, **Use this** makes it the active code again, "
+"with no download; the program loads it at its next start. If it asks for "
+"more than the current one, the trust question comes back."
+msgstr ""
+
+msgid ""
+"**Remove this version** takes one version away; a study that declares it "
+"opens all the same, with the labels saved in its values."
+msgstr ""
+
+msgid ""
+"**Remove the old code versions** keeps only the code in use. The data are"
+" never removed in bulk."
+msgstr ""
+
+msgid ""
+"**Clean up…**, at the foot of the window, lists what no installed "
+"extension owns (half-finished installations, old downloads) and removes "
+"it after you confirm."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"Extensions that come from known places: archives checked against their "
+"index, signed by the key you chose to trust when the repository is "
+"signed, updated when you decide, with the trust question asked again "
+"whenever a plugin asks for more."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`install-packages-and-plugins`, for the confirmation's panels and "
+"the trust question."
+msgstr ""
+
+msgid ""
+":doc:`/explanation/extensions-and-trust`, for what a signature and a "
+"review guarantee."
+msgstr ""
+
+msgid ":doc:`/reference/desktop-and-web`, for repositories in a folder."
+msgstr ""
+
+msgid ""
+":doc:`/reference/settings`, section *Add-ons*, for the tools EMStudio "
+"downloads; **Check for updates…** updates EMStudio itself."
+msgstr ""
+

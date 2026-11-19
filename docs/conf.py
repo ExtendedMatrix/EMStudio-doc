@@ -42,11 +42,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_tools', '_includes',
                     'reference/_generated', 'locale']
 
 # -- Languages
-# English is the source; Italian is a gettext translation in
-# docs/locale/it/LC_MESSAGES/, one catalogue per page, as in stratigraph-templates.
-# On Read the Docs the build language comes from READTHEDOCS_LANGUAGE.
-# `sphinx-build -b gettext docs docs/_build/gettext` and
-# `sphinx-intl update -p docs/_build/gettext -l it -d docs/locale` refresh it.
+# English is the source; every language of the partners (the LOCALES of
+# EMStudio's i18n.ts: it, de, el, he, es, pl, ro, fr) is a gettext translation
+# in docs/locale/<lang>/LC_MESSAGES/, one catalogue per page, as in
+# stratigraph-templates. On Read the Docs each language is a translation project
+# and the build language comes from READTHEDOCS_LANGUAGE. docs/translating.rst
+# tells how to refresh the catalogues (gettext, sphinx-intl, _tools/ui_terms.py).
 language = os.environ.get('READTHEDOCS_LANGUAGE', os.environ.get('DOCS_LANGUAGE', 'en')).split('-')[0]
 locale_dirs = ['locale/']
 gettext_compact = False                     # one catalogue per page
@@ -58,10 +59,17 @@ gettext_location = False                    # line numbers would churn the catal
 # of its name beside it (_static/screens/<section>/<lang>/<name>) and is used
 # when present; otherwise the English one stays.
 figure_language_filename = '{path}{language}/{basename}{ext}'
+# Languages written from right to left: the page takes dir="rtl"
+# (_templates/layout.html) and the theme's frame is mirrored (_assets/rtl.css).
+RTL_LANGUAGES = {'he'}
+rtl = language in RTL_LANGUAGES
 
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_assets']
+html_context = {'rtl': rtl}
+html_css_files = ['rtl.css'] if rtl else []
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

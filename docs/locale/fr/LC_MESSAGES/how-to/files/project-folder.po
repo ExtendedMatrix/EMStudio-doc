@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Work with a project folder"
+msgstr ""
+
+msgid "*Create, open, reorder and close an EM project folder.*"
+msgstr ""
+
+msgid ""
+"An EM project is a folder. Its heart is the ``.em.json`` of the study, "
+"kept in the sub-folder ``EM``; around it sit the documents of the "
+"dossier, the 3D survey, the models and the GIS layers. EMStudio knows "
+"this standard arrangement, the *EM standard tree*, and offers four "
+"commands at the top of the File menu to work with it."
+msgstr ""
+
+msgid "The standard tree"
+msgstr ""
+
+msgid ""
+"A new project receives these folders, and a ``README.md`` and a "
+"``LICENCE.md`` at its top:"
+msgstr ""
+
+msgid "``EM``, the Extended Matrix: the ``.em.json`` and its GraphML;"
+msgstr ""
+
+msgid "``EM/DosCo``, the documents of the dossier;"
+msgstr ""
+
+msgid "``EM/proxies``, the 3D proxies of the units;"
+msgstr ""
+
+msgid "``RB``, the reality-based models of the survey;"
+msgstr ""
+
+msgid "``SB``, the source-based models;"
+msgstr ""
+
+msgid "``RM``, the representation models;"
+msgstr ""
+
+msgid "``GIS``, the external layers of the study."
+msgstr ""
+
+msgid "Create a project"
+msgstr ""
+
+msgid "Choose ``File ▸ New EM project…``."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"Choose, in the system's folder dialog, the folder in which the project "
+"will be born."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"EMStudio's own folder selector opens, titled **Where is the new project "
+"to be born?**, starting from the folder that the **Files** window is "
+"showing. Go into the folder and click **Choose this folder**."
+msgstr ""
+
+msgid ""
+"In the dialog **New EM project**, write the **Name of the project** "
+"(EMStudio proposes *Excavation*) and click **Make the folders**."
+msgstr ""
+
+msgid ""
+"EMStudio makes a folder with that name and the standard tree inside it. "
+"The **Files** window moves to the new folder. The project holds no study "
+"yet: start one with ``File ▸ New`` and save it with ``File ▸ Save As…`` "
+"in the folder ``EM`` of the project (see :doc:`open-save-recent`)."
+msgstr ""
+
+msgid ""
+"With no document open, the **Files** window offers the same command as "
+"**+ New project…**, under **Where to start**."
+msgstr ""
+
+msgid "Open a project"
+msgstr ""
+
+msgid "Choose ``File ▸ Open project…``."
+msgstr ""
+
+msgid "Choose the folder of the project in the system's folder dialog."
+msgstr ""
+
+msgid ""
+"Choose the folder in EMStudio's own folder selector, titled **The "
+"project's folder**, and click **Choose this folder**."
+msgstr ""
+
+msgid ""
+"EMStudio looks for the ``.em.json`` in the folder ``EM`` of the project, "
+"and then in the project folder itself. If it finds more than one, the "
+"dialog **Open project** asks which ``.em.json`` of the project to open, "
+"the most recently changed first: choose one in the list and click "
+"**Open…**."
+msgstr ""
+
+msgid ""
+"A folder without any ``.em.json`` is not an EM project, and a message "
+"says so. You may pick the folder ``EM`` itself: EMStudio takes the folder"
+" above it as the project."
+msgstr ""
+
+msgid "Reorder a folder by the standard"
+msgstr ""
+
+msgid ""
+"An existing folder, filled before the standard tree existed, can be put "
+"in order."
+msgstr ""
+
+msgid "Open the study of the project."
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Reorder by the standard…``. The dialog **Reorder … by the"
+" EM standard** lists, line by line, the folders to make and the files to "
+"move. Nothing is overwritten and nothing is deleted."
+msgstr ""
+
+msgid ""
+"A ``.tif`` file can be a georeferenced layer or a scanned document. When "
+"EMStudio cannot tell which, its line offers a choice: **GIS/**, "
+"**EM/DosCo/** or **leave it**."
+msgstr ""
+
+msgid "Click **Reorder**."
+msgstr ""
+
+msgid ""
+"The message **Reordered** says how many files moved and how many folders "
+"were made. Its **Undo** puts the moved files back where they were; the "
+"folders made stay, empty. A file whose destination already exists stays "
+"where it is. A folder already in the standard tree has nothing to move, "
+"and a message says so."
+msgstr ""
+
+msgid "Show the folder of the study"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Open the project folder``, or click the name of the file "
+"in the message of the status bar. The folder of the active ``.em.json`` "
+"opens in the Finder, in File Explorer or in the file manager, with the "
+"file selected where the system allows it. Where no desktop can open a "
+"folder, EMStudio copies the path of the file instead and says where it "
+"is."
+msgstr ""
+
+msgid "Close the project"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Close the project``. Every open file that lies inside the"
+" project folder closes, together with the **Shelf** that belongs to it. "
+"If some of them have unsaved changes, EMStudio asks once for all of them."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A study kept in a folder that every EM tool reads in the same way, with "
+"the files it cites around it. To bring into the folder the files that a "
+"study names elsewhere, see :doc:`find-missing-files`."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`/reference/windows`, the **Files** window and its modes."
+msgstr ""
+
+msgid ""
+":doc:`/reference/desktop-and-web`, the folder dialogs of the two "
+"platforms."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/bring-in/check-a-dosco-folder`, reading a DosCo folder "
+"against the documents of the graph."
+msgstr ""
+

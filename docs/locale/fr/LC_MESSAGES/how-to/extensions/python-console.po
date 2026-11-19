@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Use the Python console"
+msgstr ""
+
+msgid ""
+"*Run Python on the open study, with every change one step of undo and its"
+" code recorded.*"
+msgstr ""
+
+msgid ""
+"The **Python console** runs Python on the study open in EMStudio, through"
+" the ``em`` library of s3Dgraphy, the same that EM Tools and the plugins "
+"use. It reads the graph, the selection and the vocabularies, and it "
+"writes through ``em.write``: each write is one step of ``Edit ▸ Undo``, a"
+" line in the Log, and an act whose chain keeps the code that ran. The "
+"console is among the experimental functions, and a Python script has the "
+"powers of your user on this computer."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid "Use the desktop application: the console works through its bridge."
+msgstr ""
+
+msgid ""
+"Turn on the experimental functions: ``Settings… ▸ Advanced``, section "
+"**Experimental functions**, tick **Turn on the experimental functions on "
+"this machine**, press **Save**, and reload EMStudio when it asks. Off, "
+"the console and its command are not there."
+msgstr ""
+
+msgid "Open a study. The console works on the open one; with none, it says so."
+msgstr ""
+
+msgid "Open the console"
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ Python console…``. The window **Python console** opens; "
+"like the other tool windows, it can float or be detached."
+msgstr ""
+
+msgid ""
+"Its head says **Python · em on «…»** with the name of the open study, and"
+" **experimental**. The first line reminds you that ``em`` is imported, "
+"that ``g`` is ``em.graph``, the graph shown, and that ``sel`` is the "
+"selection."
+msgstr ""
+
+msgid "Read the study"
+msgstr ""
+
+msgid ""
+"The Python console after the line sel: the identifier of the selected "
+"unit printed under it."
+msgstr ""
+
+msgid "Select SU001 in the Matrix."
+msgstr ""
+
+msgid ""
+"In the field at the bottom, write ``sel`` and press :kbd:`Enter`. The "
+"console prints, under your line, the list of the selected nodes (their "
+"identifiers): ``sel`` is read again at every run."
+msgstr ""
+
+msgid "Press **Help** to print ``em.help()``: what ``em`` offers here."
+msgstr ""
+
+msgid ""
+":kbd:`Enter` runs a complete line; for a block of several lines, end it "
+"with an empty line, or press :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run at "
+"once. :kbd:`Shift+Enter` starts a new line. :kbd:`Tab` completes a name."
+msgstr ""
+
+msgid "Write into the study"
+msgstr ""
+
+msgid ""
+"A write is a block opened by ``em.write`` with a label. The label names "
+"the step in the Log and in ``Edit ▸ Undo``."
+msgstr ""
+
+msgid ""
+"Before writing, press **Try** (:kbd:`⌘⇧Enter`, :kbd:`Ctrl+Shift+Enter`). "
+"The same code runs with every write made a proof: the console shows, line"
+" by line, what it would add or change, and that nothing was applied."
+msgstr ""
+
+msgid ""
+"Press **Run**. The console says **written** with the label, the number of"
+" nodes, and that its code is in the chain of the act. The **Inspector** "
+"shows the new description at once."
+msgstr ""
+
+msgid "``Edit ▸ Undo`` takes the whole block back as one step."
+msgstr ""
+
+msgid "The history"
+msgstr ""
+
+msgid ""
+":kbd:`↑` and :kbd:`↓` bring back the code you ran, also from earlier "
+"sessions: the history belongs to this computer. :kbd:`Ctrl+R` searches "
+"it; :kbd:`Enter` takes the line found and :kbd:`Esc` goes back. **Clear**"
+" (:kbd:`Ctrl+L`) empties the console's lines and keeps the history."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"Python on the study, with the safety of the rest of EMStudio: every "
+"change one step of undo, a line in the Log, and an act that records the "
+"code that made it, so that a script's work can be read and checked like "
+"any other."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`install-packages-and-plugins`, for the plugins, and the development"
+" folder for a plugin you are writing."
+msgstr ""
+
+msgid ""
+":doc:`/reference/settings`, section *Advanced*, for the experimental "
+"functions."
+msgstr ""
+
+msgid ":doc:`/how-to/sources/declare-provenance`, to read the chain of an act."
+msgstr ""
+

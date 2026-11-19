@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Create a room"
+msgstr ""
+
+msgid "*Create a room on a StratiGraph node.*"
+msgstr ""
+
+msgid ""
+"A room is a place on a node where a study lives and where the people of a"
+" project work on it together. Whoever creates a room is its owner. A room"
+" with one member is not a lesser room: it is your own table on the node, "
+"and you can invite others to it later."
+msgstr ""
+
+msgid ""
+"This page creates an **empty** room. To put the study you have open into "
+"a new room, with its files, follow :doc:`bring-a-file-into-a-room` "
+"instead: it creates the room in the same gesture."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Creating a room writes its owner on the node, so the node has to know who"
+" you are. Three steps of the chip's menu at the top right must be done: "
+"an **Author**, a **Node** that answers, and **Sign in** on it (see :doc"
+":`sign-in`). If one is missing when you start, EMStudio opens that menu "
+"at the missing step with a sentence such as «To create a room you need to"
+" be signed in on the node: do it here and it goes on by itself», and the "
+"creation resumes once the step is done."
+msgstr ""
+
+msgid "Create the room"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Create a room…``. The same command is **+ New room** in "
+"the section **My space** of the chip's menu, under **Rooms on this "
+"node**."
+msgstr ""
+
+msgid ""
+"The dialog **Create a room** asks for a name, for example «Templu Mare "
+"2026». EMStudio derives the room's identifier from the name, as the "
+"node's own pages do: lower-case letters and digits, with hyphens in place"
+" of spaces and punctuation (``templu-mare-2026``). A name made only of "
+"punctuation gives no identifier, and the dialog waits for another one."
+msgstr ""
+
+msgid ""
+"Press **Create** (or :kbd:`Enter`). **Cancel** (or :kbd:`Esc`) closes the"
+" dialog without creating anything."
+msgstr ""
+
+msgid ""
+"EMStudio asks the node that you are signed in on to create the room, and "
+"enters it at once. On the web the node is the one that serves the page; "
+"on the desktop it is the node you chose in the chip's menu."
+msgstr ""
+
+msgid ""
+"If the node refuses, a message gives its answer with its reason, for "
+"example when a room with the same identifier already exists. If the node "
+"does not answer, the message names it."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid "An empty room on the node, with you as its **owner**."
+msgstr ""
+
+msgid ""
+"The status bar reads **Room**, followed by the name of the room and of "
+"the node, and the section **Where you work** of the chip's menu shows the"
+" room with its commands."
+msgstr ""
+
+msgid ""
+"The room appears under **Your rooms** in the section **My space**, and in"
+" ``File ▸ Open Recent``."
+msgstr ""
+
+msgid ""
+"Next, invite the people of the project, as described in :doc:`enter-and-"
+"share-a-room`."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`bring-a-file-into-a-room`, to create a room that holds your study."
+msgstr ""
+
+msgid ":doc:`sign-in`, for the author, the node and the sign-in."
+msgstr ""
+
+msgid ""
+":doc:`/explanation/open-enter-create`, on the three verbs: open a file, "
+"enter a room, create a room."
+msgstr ""
+

@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Two tiers"
+msgstr ""
+
+msgid ""
+"*One study, two faithful shapes: a property graph to work in, RDF and "
+"CIDOC CRM to reason and share.*"
+msgstr ""
+
+msgid ""
+"EMStudio keeps the Extended Matrix in **two tiers at once**. This is a "
+"deliberate choice of design, and each tier does what the other does "
+"badly."
+msgstr ""
+
+msgid "The property-graph tier"
+msgstr ""
+
+msgid ""
+"While you work, the study is a **property graph**: nodes and relations, "
+"each with its fields. This is the shape that makes the editor responsive:"
+" laying out a large matrix, folding groups, connecting units with a drag "
+"of the handle, filtering, undoing. The ``em.json`` file is this tier "
+"written to disk (see :doc:`/reference/emjson`). A property graph is the "
+"right shape for *doing* the work."
+msgstr ""
+
+msgid "The RDF and CIDOC CRM tier"
+msgstr ""
+
+msgid ""
+"The same study projects to **RDF**, mapped onto **CIDOC CRM** and its "
+"archaeological extensions. This is the right shape for *reasoning about* "
+"the record and *sharing* it: queries in SPARQL, exchange with other "
+"semantic systems, a formal and standard vocabulary. ``File ▸ Export ▸ "
+"Turtle (.ttl)`` writes it (see :doc:`/reference/export-formats`)."
+msgstr ""
+
+msgid ""
+"The projection is made by the s3Dgraphy library, the same one that every "
+"EM tool uses, and the library can also read it back. The round trip, from"
+" the graph to RDF and back to a graph identical to the first, is how the "
+"projection is shown to lose nothing."
+msgstr ""
+
+msgid "Why both"
+msgstr ""
+
+msgid ""
+"Tools built on triples are rigorous but heavy to edit; tools built on "
+"property graphs are quick but semantically loose. EMStudio keeps both: "
+"you edit in the property graph and reason in RDF, and the two are the "
+"same study seen in two ways. A study made here is at once a working "
+"document and a knowledge graph that can be queried."
+msgstr ""
+
+msgid "Neither tier comes first"
+msgstr ""
+
+msgid ""
+"The study is not \"really\" triples with a graph on top, nor \"really\" a"
+" graph with an export to triples. It is one record with two faithful "
+"projections. The narrative, the exports and the other tools all read the "
+"same record, each in the tier that suits what it does."
+msgstr ""
+

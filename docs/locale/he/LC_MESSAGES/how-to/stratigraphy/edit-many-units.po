@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: he\n"
+"Language-Team: he <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Edit many units at once"
+msgstr ""
+
+msgid "*Change a field on several units in one step.*"
+msgstr ""
+
+msgid ""
+"With several nodes selected, an edit goes to the active node, the last "
+"one you clicked. Holding one key while you confirm the edit sends it to "
+"every selected node that has that field. The key is :kbd:`⌘` on macOS and"
+" :kbd:`Alt` on Windows and Linux. The change is one step of ``Edit ▸ "
+"Undo`` and one line in the Log."
+msgstr ""
+
+msgid "Select the units"
+msgstr ""
+
+msgid ""
+"In the Matrix, click a unit, then :kbd:`⇧`-click or :kbd:`⌘`-click "
+"(:kbd:`Ctrl`-click on Windows and Linux) the others, or drag a rectangle "
+"on the empty canvas around them."
+msgstr ""
+
+msgid ""
+"Right-click a group and choose **Select the members** to select what it "
+"holds."
+msgstr ""
+
+msgid ""
+"The last unit you clicked is the active one: the **Inspector** shows its "
+"fields."
+msgstr ""
+
+msgid "Apply a field to the whole selection"
+msgstr ""
+
+msgid ""
+"Hold :kbd:`⌘` (:kbd:`Alt`). Beside every field that can be applied to the"
+" selection, the Inspector says how many nodes it will reach, for example "
+"**Apply to 5 selected nodes · 0 skipped**."
+msgstr ""
+
+msgid ""
+"With the key held, confirm the edit: press :kbd:`Enter` in a field, click"
+" a button, choose in a menu, or release a slider."
+msgstr ""
+
+msgid ""
+"For a text, write it in the active node's field and press :kbd:`⌘Enter` "
+"(:kbd:`Alt+Enter`). On a field you have not changed, the same keys apply "
+"the active node's value to the others."
+msgstr ""
+
+msgid ""
+"The nodes that do not have the field are left as they are and counted as "
+"skipped. The Log records the field and the number of nodes, for example "
+"**«Description» applied to 5 selected nodes (0 skipped, without the "
+"field)**. The selection stays as it was, so that you can go on with the "
+"next field."
+msgstr ""
+
+msgid "The fields that can be applied in this way are:"
+msgstr ""
+
+msgid ""
+"in the **Inspector**: the description, the colour, the value of a "
+"property and the fields of its vocabulary, the start and end of an epoch,"
+" the phase of a unit (for units of the same epoch), the rights of "
+"resources and lots (licence, embargo, author), and the **×** that empties"
+" a field;"
+msgstr ""
+
+msgid ""
+"in the panels the Inspector opens: the epoch of creation of a document, "
+"the type of end of a continuity node, and **End in…** or **Survives "
+"until…** of a unit;"
+msgstr ""
+
+msgid ""
+"in a **Tabular** window: every cell you can edit, such as the first epoch"
+" of a unit in the **Units** sheet. The edit reaches the rows of that "
+"sheet whose nodes are selected."
+msgstr ""
+
+msgid ""
+"The name and the identifier of a node, and its type, are changed one node"
+" at a time: the name is the identity of the node, and the type decides "
+"which fields and relations it has."
+msgstr ""
+
+msgid "Move a selection to another epoch"
+msgstr ""
+
+msgid "Select the units, in the Matrix or in the Outliner."
+msgstr ""
+
+msgid "Press :kbd:`M`, or right-click and choose **Move to epoch… (M)**."
+msgstr ""
+
+msgid ""
+"Choose the epoch. The menu shows the plan before writing it: how many "
+"nodes change, which follow their container, which are left out and why "
+"(an epoch, a node already there, a node that follows its document or its "
+"unit)."
+msgstr ""
+
+msgid ""
+"Confirm with **Move** followed by the number of nodes. The units now "
+"belong to that epoch only, and the message offers **Undo**."
+msgstr ""
+
+msgid ""
+"**Extend to epoch… (Alt+M)** (:kbd:`⌥M` on the Mac) keeps the units where"
+" they are and makes them live in the chosen epoch too. In the menu, "
+"**Move instead (M)** and **Extend instead (Alt+M)** switch between the "
+"two."
+msgstr ""
+
+msgid "Bring old spellings of the relations up to date"
+msgstr ""
+
+msgid ""
+"Files written by older tools may name some relations with an older "
+"spelling, for example **Is bonded to** for **Bonded to**. EMStudio reads "
+"them, and can rewrite them in the whole graph at once."
+msgstr ""
+
+msgid "Choose ``Tools ▸ Normalise spellings…``."
+msgstr ""
+
+msgid ""
+"The window lists how many relations are written under an older spelling, "
+"and what will happen to them: exact duplicates of a relation that already"
+" exists are removed, and the others are rewritten under their current "
+"name, with their data."
+msgstr ""
+
+msgid "Press **Normalise**. One undo takes it all back."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The same description, date, epoch or right on every unit that needs it, "
+"written in one step and undone in one step."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`/reference/inspector` for the fields of each kind of node."
+msgstr ""
+
+msgid ":doc:`check-the-chronology` for the dates of the epochs."
+msgstr ""
+
+msgid ":doc:`filter-the-graph` to see only the units you want to select."
+msgstr ""
+

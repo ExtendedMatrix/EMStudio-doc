@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Workspaces"
+msgstr ""
+
+msgid ""
+"*The six workspaces of EMStudio, their questions and their starting "
+"arrangements, and the workspaces you make yourself.*"
+msgstr ""
+
+msgid ""
+"A **workspace** is an arrangement of windows made for one activity. "
+"EMStudio comes with six, in the bar across the top of the window. Each "
+"answers one question, and its windows are the ones that answer it; the "
+"question appears when you hold the pointer on the workspace's name. "
+"``Help ▸ Workspaces…`` shows the same overview inside the application."
+msgstr ""
+
+msgid ""
+"The study is the same in every workspace. A selection made in one window "
+"is the selection of every window that shows it, in this workspace and in "
+"the others. :doc:`/explanation/workspaces-are-questions` explains the "
+"idea behind the arrangement."
+msgstr ""
+
+msgid "The six workspaces"
+msgstr ""
+
+msgid ""
+"The Workspaces overview opened from Help: one row per workspace, with its"
+" question, its windows and whether it has an Inspector."
+msgstr ""
+
+msgid "Workspace"
+msgstr ""
+
+msgid "Question"
+msgstr ""
+
+msgid "Windows at the start"
+msgstr ""
+
+msgid "**Stratigraphy**"
+msgstr ""
+
+msgid "What is there, in what order, and does it hold?"
+msgstr ""
+
+msgid "Outliner · Graph in **Matrix** mode · Inspector"
+msgstr ""
+
+msgid "**Sources**"
+msgstr ""
+
+msgid "Where does this datum come from?"
+msgstr ""
+
+msgid "Outliner · Viewer & card · Graph in **Matrix** mode · Inspector"
+msgstr ""
+
+msgid "**Archive**"
+msgstr ""
+
+msgid "Which files do I have, and what became a document?"
+msgstr ""
+
+msgid "Outliner · Files (on the **Disk**) · Shelf · Transformation chain (DTC)"
+msgstr ""
+
+msgid "**Narrative**"
+msgstr "**Narrativa**"
+
+msgid "How do I tell it, and what does it rest on?"
+msgstr ""
+
+msgid "Index · Outliner · Narrative · Graph in **Matrix** mode · Inspector"
+msgstr ""
+
+msgid "**Space**"
+msgstr ""
+
+msgid "Where is it, and what shape does it have in each epoch?"
+msgstr ""
+
+msgid ""
+"Outliner · 3D scene · Tabular on the sheet **Models and proxies** · Graph"
+" in **Matrix** mode · Inspector"
+msgstr ""
+
+msgid "**Sheets**"
+msgstr ""
+
+msgid "What does the recording sheet say of this unit?"
+msgstr ""
+
+msgid "Outliner · Sheet · 3D scene · Graph in **Matrix** mode · Viewer & card"
+msgstr ""
+
+msgid "Stratigraphy"
+msgstr ""
+
+msgid ""
+"The workspace where a study opens. The **Outliner** runs down the left "
+"side; the **Graph** window, in **Matrix** mode, takes the middle; the "
+"**Inspector** stands on the right. The warnings about the sequence are in"
+" the status bar (the ⚠ sign) and in the **Warnings** sheet of the Tabular"
+" window."
+msgstr ""
+
+msgid ""
+"The Stratigraphy workspace: the Outliner on the left, the Graph window in"
+" Matrix mode with SU001 selected, the Inspector on the right showing the "
+"unit."
+msgstr ""
+
+msgid "Sources"
+msgstr ""
+
+msgid ""
+"The workspace of documents and of what is extracted from them. The "
+"**Outliner** on the left lists the documents under **Documents**; next to"
+" it the **Viewer & card** shows the document or image chosen, where you "
+"read it, trace regions on it and extract from it. A **Graph** window in "
+"**Matrix** mode follows on the right, and the **Inspector** shows the "
+"fields of the document and its extractions."
+msgstr ""
+
+msgid ""
+"The Sources workspace: the Outliner lists the documents, the Viewer & "
+"card shows the drawing of document D.08, the Matrix and the Inspector "
+"follow it."
+msgstr ""
+
+msgid "Archive"
+msgstr ""
+
+msgid ""
+"The workspace of the files. The **Outliner** is on the left. In the "
+"middle, the **Files** window shows the disk, with the **Shelf** under it:"
+" the list of resources the study works from. On the right, a **Graph** "
+"window fixed on the **Transformation chain (DTC)** draws the steps that "
+"produced each file. The Archive has no Inspector, because a file is not "
+"yet a node of the graph: the **Files** window shows the card of the "
+"document picked in the chain."
+msgstr ""
+
+msgid ""
+"The Archive workspace: the Files window on the disk with the study's "
+"folder, the empty Shelf under it, and the Transformation chain (DTC) on "
+"the right."
+msgstr ""
+
+#, fuzzy
+msgid "Narrative"
+msgstr "Narrativa"
+
+msgid ""
+"The workspace of the story. The left column holds the **Index** of the "
+"story above the **Outliner**. The **Narrative** window, the page, is in "
+"the middle, open for writing. On the right, a **Graph** window in "
+"**Matrix** mode follows the chapter being read, beside the **Inspector**,"
+" which also carries the tools of the page."
+msgstr ""
+
+msgid ""
+"The Narrative workspace: the Index of the story above the Outliner, the "
+"Narrative window open for writing on the first chapter, the Matrix and "
+"the Inspector on the right."
+msgstr ""
+
+msgid "Space"
+msgstr ""
+
+msgid ""
+"The workspace of the places and the shapes. The **Outliner**, on the "
+"left, is synchronised with the 3D view. The **3D scene** shows the models"
+" of an epoch and the proxies of its units, with the **Tabular** window "
+"under it on the sheet **Models and proxies**: what is there and what is "
+"missing. A **Graph** window in **Matrix** mode and the **Inspector** "
+"complete it on the right. A unit picked in the scene is the unit of all "
+"four windows."
+msgstr ""
+
+msgid ""
+"The Space workspace: the Outliner with the proxies of the epoch, the 3D "
+"scene with the proxies of the temple, the Tabular window on Models and "
+"proxies under it, the Matrix and the Inspector on the right."
+msgstr ""
+
+msgid "Sheets"
+msgstr ""
+
+msgid ""
+"The workspace of the recording sheet. The **Outliner** is on the left: "
+"pick a unit and the **Sheet** in the middle shows it. On the right, two "
+"small windows follow the same unit: the **3D scene** with its proxy, and "
+"a **Graph** window in **Matrix** mode framed on the unit and the units it"
+" touches. The **Viewer & card** underneath shows the unit's photographs "
+"and documents."
+msgstr ""
+
+msgid ""
+"The Sheets workspace: the recording sheet of SU001 in the middle, the 3D "
+"scene and the Matrix framed on the unit on the right, the Viewer & card "
+"with its two pictures underneath."
+msgstr ""
+
+msgid "Change a workspace"
+msgstr ""
+
+msgid ""
+"Every workspace can be changed: a window can become another type, an area"
+" can be divided in two, two areas can be joined (see :doc:`windows`). The"
+" workspace keeps the arrangement you give it, also after EMStudio is "
+"closed and opened again."
+msgstr ""
+
+msgid ""
+"One of the six workspaces, once changed, says so: its name turns to "
+"italics, with a small ↺ beside it (*reshaped: ↺ restores the space as it "
+"comes*). Click the ↺, or right-click the name and choose **Reset the "
+"arrangement**, to put the workspace back as EMStudio first arranged it. "
+"The windows you added or moved go away."
+msgstr ""
+
+msgid "Workspaces of your own"
+msgstr ""
+
+msgid "You can add workspaces to the bar, for an arrangement you use often."
+msgstr ""
+
+#, fuzzy
+msgid "New"
+msgstr "Nuevo"
+
+msgid ""
+"Arrange the current workspace the way you want, then press the **+** at "
+"the end of the bar (*New workspace from this arrangement*) and give the "
+"new workspace a name. It starts as a copy of the arrangement in front of "
+"you."
+msgstr ""
+
+msgid "Rename"
+msgstr ""
+
+msgid ""
+"Double-click the name of a workspace, or right-click it and choose "
+"**Rename…**. The six workspaces of EMStudio can be renamed too: the name "
+"you give replaces the one of the dictionary on this computer."
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Right-click the name and choose **Reset the arrangement**."
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid ""
+"Right-click the name of a workspace you made and choose **Remove the "
+"space**. The message that confirms it has an undo, which brings the "
+"workspace back with its arrangement. The six workspaces of EMStudio stay "
+"in the bar."
+msgstr ""
+
+msgid ""
+"The arrangements are kept by the application on this computer, in the "
+"browser's storage on the web (see :doc:`file-locations`): they belong to "
+"the person working, not to the study, and they are never written into the"
+" ``.em.json``."
+msgstr ""
+
+msgid "Two arrangements outside the bar"
+msgstr ""
+
+msgid ""
+"Two further arrangements exist in the code and are not in the bar in 1.6:"
+" **DTC**, the provenance graph of the corpus with the Inspector beside "
+"it, and **Comparisons**, the shelf with a viewer and the Inspector. They "
+"are kept with their arrangements, so that they can come back as they "
+"were. Meanwhile the transformation chain lives in the **Archive** "
+"workspace and in the **DTC** mode of any Graph window, and the shelf "
+"lives in the **Archive** workspace."
+msgstr ""
+

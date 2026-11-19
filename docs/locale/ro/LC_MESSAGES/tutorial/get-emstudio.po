@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Get EMStudio"
+msgstr ""
+
+msgid ""
+"*Install the desktop application, or reach EMStudio on your StratiGraph "
+"node.*"
+msgstr ""
+
+msgid ""
+"EMStudio is one application in two places. The **desktop application** "
+"runs on your own computer and works on the files of your disk, offline. "
+"**EMStudio on the web** is the same editor served by a StratiGraph node, "
+"at the address ``/em/studio/`` of that node: you open it in a browser and"
+" work in the node's rooms. Everything else in this manual is written once"
+" for both; where a step differs, the page shows two tabs, **Desktop** and"
+" **Web**, and remembers the one you chose."
+msgstr ""
+
+msgid ""
+"Choose the tab that fits you. You can use both: a file you work on at "
+"your desk can be brought into a room of the node later (see :doc:`/how-"
+"to/rooms/bring-a-file-into-a-room`)."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "**Download**"
+msgstr ""
+
+msgid ""
+"The releases are published on the GitHub page of the project, "
+"`github.com/ExtendedMatrix/EMStudio/releases "
+"<https://github.com/ExtendedMatrix/EMStudio/releases>`_. Each release "
+"lists one file per system. For version 1.6 the files are named like this:"
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+#, fuzzy
+msgid "File"
+msgstr "Fișier"
+
+msgid "What it is"
+msgstr ""
+
+msgid "macOS (Apple silicon)"
+msgstr ""
+
+msgid "``EMStudio_1.6.0_aarch64.dmg``"
+msgstr ""
+
+msgid "a disk image with the application"
+msgstr ""
+
+msgid "Windows (64 bit)"
+msgstr ""
+
+msgid "``EMStudio_1.6.0_x64-setup.exe``"
+msgstr ""
+
+msgid "the installer (recommended)"
+msgstr ""
+
+msgid "``EMStudio_1.6.0_x64_en-US.msi``"
+msgstr ""
+
+msgid "the same application as a Windows Installer package"
+msgstr ""
+
+msgid "Linux (64 bit)"
+msgstr ""
+
+msgid "``EMStudio_1.6.0_amd64.AppImage``"
+msgstr ""
+
+msgid "one file that runs without installing"
+msgstr ""
+
+msgid "``EMStudio_1.6.0_amd64.deb``"
+msgstr ""
+
+msgid "a package for Debian, Ubuntu and their family"
+msgstr ""
+
+msgid "``EMStudio-1.6.0-1.x86_64.rpm``"
+msgstr ""
+
+msgid "a package for Fedora, openSUSE and their family"
+msgstr ""
+
+msgid ""
+"The development builds of 1.6 carry the number ``1.6.0`` in the file "
+"name; the release page says which build it is (for example "
+"``v1.6.0-dev.136``). The macOS build is made for Apple silicon (M1 and "
+"later). The files ending in ``.sig``, the ``.app.tar.gz`` archive and "
+"``latest.json`` serve the application's own updates: you do not need to "
+"download them."
+msgstr ""
+
+msgid "**Install**"
+msgstr ""
+
+msgid ""
+"On **macOS**, open the ``.dmg`` and drag **EMStudio** into the "
+"**Applications** folder."
+msgstr ""
+
+msgid ""
+"On **Windows**, run the ``-setup.exe`` installer (or the ``.msi`` "
+"package) and follow its steps."
+msgstr ""
+
+msgid ""
+"On **Linux**, either make the AppImage executable (in the file's "
+"properties, or with ``chmod +x``) and run it, or install the ``.deb`` or "
+"the ``.rpm`` package with your system's package manager."
+msgstr ""
+
+msgid "**The first time you open it**"
+msgstr ""
+
+msgid ""
+"The development builds of 1.6 are not signed with a developer "
+"certificate, so the system asks for your confirmation once."
+msgstr ""
+
+msgid ""
+"On macOS the system says that it cannot verify the application. Open "
+"**System Settings ▸ Privacy & Security**, find the line about EMStudio "
+"and choose **Open Anyway**. On older versions of macOS a right click on "
+"the application, then **Open**, does the same. Whoever is used to the "
+"Terminal can also remove the quarantine mark with ``xattr -dr "
+"com.apple.quarantine /Applications/EMStudio.app``."
+msgstr ""
+
+msgid ""
+"On Windows, SmartScreen may show a blue window: choose **More info**, "
+"then **Run anyway**."
+msgstr ""
+
+msgid "From then on EMStudio opens like any other application."
+msgstr ""
+
+msgid "**Updates**"
+msgstr ""
+
+msgid ""
+"The desktop application looks for new releases by itself. On macOS the "
+"command is in the **EMStudio** menu of the menu bar, on Windows and Linux"
+" it is ``Help ▸ Check for updates…``: when a newer release exists, "
+"EMStudio offers to install it and restart."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid "**Reach the node**"
+msgstr ""
+
+msgid ""
+"EMStudio on the web lives on a StratiGraph node, the server of your "
+"institution or of your project. Its address is the node's address "
+"followed by ``/em/studio/``, for example "
+"``https://node.example.org/em/studio/``. Ask the person who runs the node"
+" for the address and for an account. There is nothing to install: any "
+"recent browser opens it."
+msgstr ""
+
+msgid "**Sign in and enter a room**"
+msgstr ""
+
+msgid ""
+"Online, a study lives in a **room** of the node, where the people of the "
+"project work on it together. (The web version can also open an "
+"``.em.json`` from your computer; it gives it back to you as a download.) "
+"Open the address in the browser, then the chip at the top right of the "
+"window. Its menu leads you through the steps: you declare who signs, you "
+"sign in to the node with **Enter with ORCID** or **Enter with the node's "
+"password**, and you choose the room in the section **My space**, under "
+"**Rooms on this node** (see :doc:`/how-to/rooms/sign-in` and :doc:`/how-"
+"to/rooms/enter-and-share-a-room`)."
+msgstr ""
+
+msgid ""
+"A room can also open EMStudio by itself: on the node's own pages, the "
+"button that opens a room in EMStudio brings you to ``/em/studio/`` with "
+"that room already chosen."
+msgstr ""
+
+msgid ""
+"The node serves the version its administrator installed: reloading the "
+"page is enough to receive a newer one."
+msgstr ""
+
+msgid "A note on language"
+msgstr ""
+
+msgid ""
+"EMStudio starts in **English**. The language of the interface is chosen "
+"in **Settings…** (:kbd:`⌘,` on the Mac, :kbd:`Ctrl+,` elsewhere), on the "
+"**General** tab, under **Language**: the application speaks the languages"
+" of the project's partners, and the choice is remembered. This manual "
+"names every command with its English label, as the English interface "
+"shows it."
+msgstr ""
+
+msgid "What next"
+msgstr ""
+
+msgid ""
+"Continue with :doc:`first-launch`, a tour of the six workspaces on the "
+"study of Templu Mare."
+msgstr ""
+

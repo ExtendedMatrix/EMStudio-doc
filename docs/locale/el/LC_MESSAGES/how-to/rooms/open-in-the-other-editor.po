@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: el\n"
+"Language-Team: el <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Open the room in the other editor"
+msgstr ""
+
+msgid ""
+"*Open the same room in EMStudio on the desktop or on the web, or come to "
+"it from EM Tools for Blender.*"
+msgstr ""
+
+msgid ""
+"The graph of a room is the room's, so moving to another editor transfers "
+"nothing: the other editor enters the same room and reads the same graph. "
+"The link that EMStudio asks of the node carries no password or token; the"
+" other editor signs itself in."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Be in the room (see :doc:`enter-and-share-a-room`). The command appears "
+"only while you are in a room."
+msgstr ""
+
+msgid "Switch between the desktop and the web"
+msgstr ""
+
+msgid ""
+"Open the chip's menu at the top right, or click the label at the left of "
+"the status bar (:kbd:`⇧⌘L` on the Mac, :kbd:`Ctrl+Shift+L` elsewhere)."
+msgstr ""
+
+msgid ""
+"In the section **Where you work**, under **Room**, press **Open this room"
+" in…**. EMStudio asks the node how to open the room in the other editor."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"The room opens in EMStudio for the web, the build that the node serves, "
+"in the browser. If the node serves no web build of EMStudio, a message "
+"says so and nothing opens."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"The browser asks the system to open the desktop application on the room. "
+"If no application on this computer answers, the node's page for the room "
+"opens in a new tab and says what to install, and EMStudio says that "
+"nothing opened."
+msgstr ""
+
+msgid ""
+"In the other editor, sign in to the node if it asks you to (see :doc"
+":`sign-in`). It then enters the room."
+msgstr ""
+
+msgid ""
+"Both editors can stay in the room at the same time: each is one more "
+"presence in the room, and what you change in one reaches the other as it "
+"reaches every member."
+msgstr ""
+
+msgid "Come to the room from EM Tools"
+msgstr ""
+
+msgid ""
+"EM Tools for Blender works in rooms too. When Blender is in a room, its "
+"command **Open in EMStudio** opens EMStudio on the same room, with the "
+"unit you chose."
+msgstr ""
+
+msgid ""
+"If EMStudio is already in that room, it stays there and brings that unit "
+"forward: nothing is signed in again."
+msgstr ""
+
+msgid ""
+"If EMStudio is signed in on the node but in another room, or in none, it "
+"enters the room with the access it already has."
+msgstr ""
+
+msgid ""
+"Otherwise EMStudio asks you to sign in to the node first: on the desktop "
+"the sign-in opens in the system's browser, on the web in the same page. "
+"Then it enters the room."
+msgstr ""
+
+msgid ""
+"EMStudio has no command that opens the room in Blender: EM Tools enters "
+"the room from its own panel, as its manual describes."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The same room open in the other editor, with the same graph, without a "
+"copy and without a second login when a session is already there."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`enter-and-share-a-room`, on presence and roles in a room."
+msgstr ""
+
+msgid ""
+":doc:`/reference/desktop-and-web`, for what differs between the two "
+"editors."
+msgstr ""
+
+msgid ":doc:`/explanation/place-in-the-framework`, on EMStudio and EM Tools."
+msgstr ""
+

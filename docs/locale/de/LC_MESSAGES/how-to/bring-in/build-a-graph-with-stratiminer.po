@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Build a graph from a folder with StratiMiner"
+msgstr ""
+
+msgid ""
+"*Build a graph from a folder of sources through a table you can open and "
+"check.*"
+msgstr ""
+
+msgid ""
+"Excavation diaries, reports, lists of units: when a study has its sources"
+" but no graph yet, **StratiMiner** builds one. It works in two halves "
+"joined by a table. The first half produces ``em_data.xlsx``, the table of"
+" the Extended Matrix with its sheets of units, epochs and claims; you can"
+" write it by hand, or have an AI model draft it from the folder of "
+"sources. The second half turns the table into a graph, always in the same"
+" way: the same table gives the same graph. The AI writes only the table, "
+"which you open and correct before anything enters a graph."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"StratiMiner needs no open graph. To draft the table with AI, an AI "
+"provider and its key must be set in ``Settings ▸ Advanced`` (see "
+":doc:`/reference/settings`)."
+msgstr ""
+
+msgid "Open StratiMiner"
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ StratiMiner``. With nothing open, the empty canvas "
+"offers the same panel through the link **build one from your sources**."
+msgstr ""
+
+msgid ""
+"The StratiMiner window: how the em_data.xlsx table is made, by hand or "
+"with the AI, and the Graph creator that turns it into an em.json."
+msgstr ""
+
+msgid "The panel asks first **How do you have the em_data.xlsx table?**"
+msgstr ""
+
+msgid ""
+"**I make it by hand**: fill the sheets yourself, then go to :ref"
+":`stratiminer-graph-creator`."
+msgstr ""
+
+msgid "**I generate it with the AI, from messy data**: follow the steps below."
+msgstr ""
+
+msgid "Draft the table with AI"
+msgstr ""
+
+msgid "In **Source folder**, give the folder that holds the sources."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"Press **…** and choose the folder in the system dialog: its full path is "
+"filled in."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"Press **…** to choose the folder: the browser gives only its name. "
+"Complete the field with the full path of the folder as EMStudio's service"
+" sees it."
+msgstr ""
+
+msgid ""
+"In **Output language**, write the language the table should be written "
+"in, or leave the field empty to keep the language of each source."
+msgstr ""
+
+msgid "Choose one of the two ways."
+msgstr ""
+
+msgid ""
+"**Generate em_data.xlsx (AI)**: EMStudio's service sends the sources to "
+"the AI model and writes the workbook. It reads text files, and PDFs that "
+"carry a text layer; it always lists the files it could not read, and why."
+" A scanned PDF without text is reported as such."
+msgstr ""
+
+msgid ""
+"**Copy prompt for Cowork**: the prompt is copied, to be run in a Cowork "
+"session that can read the folder. This is the way for scans and for every"
+" file the first way reports as unread. When the browser refuses the "
+"clipboard, the prompt appears in a field below, with **Save the prompt to"
+" a file…**."
+msgstr ""
+
+msgid ""
+"When the AI way has finished, the path of the new ``em_data.xlsx`` is "
+"already in the field of the **Graph creator**. Open the workbook in your "
+"spreadsheet program and review it: the units, their epochs, the relations"
+" between them."
+msgstr ""
+
+msgid "Turn the table into a graph"
+msgstr ""
+
+msgid ""
+"Under **Graph creator · em_data.xlsx → em.json**, give the path of the "
+"table, or press **…** to choose it."
+msgstr ""
+
+msgid "The system dialog fills in the real path of the workbook."
+msgstr ""
+
+msgid ""
+"The chosen workbook is copied to EMStudio's service, and the field "
+"receives the path of that copy."
+msgstr ""
+
+msgid ""
+"Press **Transform into em.json**. The **Mapping editor** opens with the "
+"table as its source, read as **None: an EM table**, with **A new graph** "
+"and **Written into the graph** chosen. A line at the top says that the "
+"rows are **StratiMiner's proposals**."
+msgstr ""
+
+msgid ""
+"Press **Apply** (see :doc:`read-a-table-through-a-mapping` for the other "
+"choices of that window)."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The graph opens as a new graph in the workspace, beside the graphs "
+"already open, named after the workbook. The **Log** sums up what the "
+"table produced and lists its warnings. The data drafted by AI stay among "
+"the warnings of the graph until a person verifies them, so the review "
+"continues inside EMStudio."
+msgstr ""
+
+msgid ""
+"Save the graph with ``File ▸ Save as…`` to give it its em.json. The "
+"source folder and the table stay where they are, and you can run "
+"StratiMiner again on a corrected table."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`read-a-table-through-a-mapping`, for the Mapping editor."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/stratigraphy/check-the-chronology`, to check the epochs of "
+"the new graph."
+msgstr ""
+
+msgid ":doc:`/how-to/narrative/ai-drafts`, for the other use of AI in EMStudio."
+msgstr ""
+

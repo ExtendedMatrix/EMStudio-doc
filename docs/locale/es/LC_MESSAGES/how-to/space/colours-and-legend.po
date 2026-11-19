@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Colour the scene and read the legend"
+msgstr ""
+
+msgid "*Colour the proxies by type, epoch or a property, and read the legend.*"
+msgstr ""
+
+msgid ""
+"The proxies of the **3D scene** take, at first, the colour of their "
+"unit's type, as the Extended Matrix draws it. The **Colours** window "
+"gives them other colours, to answer other questions: which units were "
+"born in which epoch, which are new in the epoch shown, which share a "
+"value of a property, such as the material. The colours are a way of "
+"looking: they change the scene, not the units. A set of colours for the "
+"values of a property is a **colour scheme**, and it can be kept in a "
+"``.emc`` file, the file EM Tools uses for the same purpose, or inside the"
+" em.json."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the study in the **Space** workspace and choose an epoch in the bar "
+"of the **3D scene**. The colours apply to the proxies of the epoch shown."
+msgstr ""
+
+msgid "Open the Colours window"
+msgstr ""
+
+msgid ""
+"Press **Colours** in the bar of the **3D scene**, or choose ``Tools ▸ "
+"Colours…``. The window works on the Space it was opened from (from the "
+"Tools menu, the active one). Its first line, **Epoch shown:**, names the "
+"epoch and the number of its proxies."
+msgstr ""
+
+msgid ""
+"The Colours window over the Space: the epoch shown, the choice between "
+"EM, Epochs and Property, and the colour scheme kept in the file."
+msgstr ""
+
+msgid ""
+"The window floats over the page: drag it by its bar and resize it from "
+"its corner. **⇱** takes it out into a window of its own, which you can "
+"move to another screen, and **⇲** brings it back. The **?** explains each"
+" part."
+msgstr ""
+
+msgid ""
+"The **▾** beside **Colours** in the bar, or a right click on it, opens "
+"the quick menu instead: the same three ways of colouring, without the "
+"list of values, and **Open the Colours window…**."
+msgstr ""
+
+msgid "Choose how to colour"
+msgstr ""
+
+msgid "Choose one of the three ways at the top of the window."
+msgstr ""
+
+msgid "**EM**"
+msgstr ""
+
+msgid ""
+"Each proxy in the colour of its unit's type, as always. This is the "
+"starting point."
+msgstr ""
+
+msgid "**Epochs**"
+msgstr ""
+
+msgid ""
+"Two variants. **Epoch of birth** gives every unit the colour of the epoch"
+" it was born in, as EM Tools does. **New and survived** looks at the "
+"epoch shown: the units born there are in full colour, those born before "
+"and still alive are faded. The list gives the epochs with their colours. "
+"An epoch's colour belongs to the graph: changing it here changes the "
+"colour of the epoch node, as one step of undo."
+msgstr ""
+
+msgid "**Property**"
+msgstr ""
+
+msgid "One colour for each value of a property. Continue with the steps below."
+msgstr ""
+
+msgid ""
+"In **Property**, choose the property in the list. Each name is followed "
+"by the number of units of the epoch that have it: in Templu Mare, "
+"``material``."
+msgstr ""
+
+msgid ""
+"Read the values found. Each row gives the **Value**, how many **Units** "
+"have it, and its colour. Text values start from a qualitative palette, "
+"numbers from a scale between their least and their greatest value."
+msgstr ""
+
+msgid ""
+"To change one colour, click its swatch. To see which units have a value, "
+"click the value: the units are selected, and the scene shows them "
+"selected."
+msgstr ""
+
+msgid ""
+"To recolour all the values at once, choose a **Scale** and press **Apply "
+"the scale**. For numbers, **min** and **max** set the ends of the scale. "
+"A scale for numbers chosen for text values is allowed, and the window "
+"warns that the colours will then follow the alphabetical order."
+msgstr ""
+
+msgid ""
+"Look at the two rows at the bottom, which are always there: **has the "
+"property, empty value** and **does not have the property**. Each has its "
+"colour and its count. Tick **leave as it is** to let the units without "
+"the property keep the colour of their type."
+msgstr ""
+
+msgid ""
+"Every change appears at once in the scene, as a draft. At the foot of the"
+" window, **Apply** confirms it, as one step of undo and a line in the "
+"**Log**; **Cancel** puts the colours back as they were. Closing the "
+"window with changes not applied asks whether to apply them, drop them, or"
+" keep editing."
+msgstr ""
+
+msgid "Read the legend"
+msgstr ""
+
+msgid ""
+"With **Epochs** or **Property**, a legend appears in a corner of the "
+"scene: each colour with its epoch or value, and the number of proxies."
+msgstr ""
+
+msgid ""
+"A click on a row isolates those proxies, a second click hides them, a "
+"third gives them back."
+msgstr ""
+
+msgid ""
+"**▾** folds the legend into one line, which says how many values it "
+"holds; **▸** opens it again."
+msgstr ""
+
+msgid ""
+"Drag the legend by its head: it goes to the corner of the scene nearest "
+"to where you drop it. Its corner resizes it. A long legend shows its "
+"first rows, and a last row that says how many more there are opens the "
+"rest."
+msgstr ""
+
+msgid "**✎** opens the **Colours** window on the same scheme."
+msgstr ""
+
+msgid "The legend's place and size are kept for each view, on this computer."
+msgstr ""
+
+msgid "Keep a colour scheme"
+msgstr ""
+
+msgid "A scheme made for a property can outlive the session in two ways."
+msgstr ""
+
+msgid "As a ``.emc`` file"
+msgstr ""
+
+msgid ""
+"**Save .emc…** writes the scheme as a file, and **Open .emc…** reads one,"
+" including those written by EM Tools in Blender. The file keeps the "
+"colours of the values and of the two special rows."
+msgstr ""
+
+msgid "In the em.json"
+msgstr ""
+
+msgid ""
+"The section **In the file**, at the bottom of the window, lists the "
+"schemes the study's file holds, the one this graph uses marked **in "
+"use**."
+msgstr ""
+
+msgid ""
+"**Keep in the file…** asks for a name and puts the scheme on screen into "
+"the file, as the one this graph uses."
+msgstr ""
+
+msgid ""
+"**Use** colours the graph with a scheme of the file, and writes in the "
+"file that the graph uses it; **Stop using** leaves the scheme in the "
+"file."
+msgstr ""
+
+msgid "**×** takes a scheme out of the file."
+msgstr ""
+
+msgid ""
+"**Expel to a folder…** writes each scheme as a ``.emc``, then asks "
+"whether to take the schemes out of the file: **Take them out** or **Keep "
+"them in the file**."
+msgstr ""
+
+msgid ""
+"**Import into the file…** takes one or more ``.emc`` files in, each named"
+" after its file."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"**Expel to a folder…** asks for a folder, starting from the em.json's "
+"own, and writes the ``.emc`` files there. **Import into the file…** opens"
+" the system's dialog, where several files can be picked at once."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"**Expel to a folder…** downloads one ``.emc`` for each scheme into the "
+"browser's downloads. **Import into the file…** opens the browser's file "
+"picker."
+msgstr ""
+
+msgid ""
+"Each of these gestures marks the file as changed, and the message that "
+"follows offers to undo it. The schemes are saved with the file, and a "
+"study opens with the scheme its graph uses. ``File ▸ Clean the file…`` "
+"can take them all out again."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The proxies of the scene are coloured by the question you asked, with a "
+"legend to read them. The colours never change the units: the graph keeps "
+"its types and its values. The choice of colours stays with the view on "
+"this computer, unless you keep the scheme in the file or in a ``.emc``. "
+"EM Tools reads both: a scheme in use in the em.json is applied when the "
+"file is imported into Blender."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`/reference/em-legend`, for the colours and shapes of the Extended "
+"Matrix."
+msgstr ""
+
+msgid ":doc:`/how-to/files/clean-the-file`, to take the schemes out of the file."
+msgstr ""
+
+msgid ":doc:`containers-and-epochs`, for what the scene shows in each epoch."
+msgstr ""
+

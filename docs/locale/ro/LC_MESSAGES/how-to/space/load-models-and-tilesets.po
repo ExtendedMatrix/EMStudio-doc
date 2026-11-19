@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Load models and tilesets"
+msgstr ""
+
+msgid "*Bring 3D models and tilesets into the Space.*"
+msgstr ""
+
+msgid ""
+"The **3D scene** of the Space shows, for the epoch you choose, the "
+"**representation models** (RM) of that epoch and the **proxies** of the "
+"units alive in it. A model enters the scene when the graph knows it as "
+"the representation of a place in an epoch; a file that is only on the "
+"disk is not yet in the Space. This page shows how a model or a tileset "
+"becomes part of an epoch, how a tileset folder becomes a single ``.3tz`` "
+"package, and how to choose what the scene loads."
+msgstr ""
+
+msgid ""
+"A **tileset** (Cesium 3D Tiles) is a model cut into tiles at several "
+"levels of detail, loaded as the camera comes closer. EMStudio reads it in"
+" three forms: a ``.3tz`` package (one file, read piece by piece, never "
+"downloaded whole), a folder with ``tileset.json`` at its root, and the "
+"form RealityScan writes (a ``.json`` beside a folder of the same name)."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the study and the **Space** workspace. The graph needs its epochs: "
+"the scene is drawn epoch by epoch."
+msgstr ""
+
+msgid ""
+"Keep the files in the study's folder, or in a folder the **Files** window"
+" of the **Archive** workspace can reach: the graph then records where "
+"each file is."
+msgstr ""
+
+msgid ""
+"Georeference the graph first if the models carry real coordinates (see "
+":doc:`georeference-a-study`)."
+msgstr ""
+
+msgid "Bring a model into an epoch"
+msgstr ""
+
+msgid ""
+"In the bar of the **3D scene**, choose the epoch the model represents, "
+"for example **II A.D.** in Templu Mare. With many epochs, or with phases,"
+" the bar shows a menu instead of the buttons, with ← and → for the "
+"previous and the next epoch."
+msgstr ""
+
+msgid ""
+"Press **+** in the bar, or drag the file from the **Files** window onto "
+"the scene. Both open *Porta dentro* with the epoch shown already "
+"proposed."
+msgstr ""
+
+msgid ""
+"In the window, leave the role **RM — represents the place in an epoch**, "
+"check the epoch under **Which epoch does it represent?**, and fill **When"
+" were the models acquired?** and **When was this document made?**. The "
+"whole window is described in :doc:`/how-to/bring-in/porta-dentro`."
+msgstr ""
+
+msgid "Press **Porta dentro**."
+msgstr ""
+
+msgid ""
+"A model can also arrive from Blender, when EMStudio works live with EM "
+"Tools (see :doc:`/how-to/extensions/live-sync-with-em-tools`)."
+msgstr ""
+
+msgid "Bring a tileset in"
+msgstr ""
+
+msgid ""
+"Drag the tileset (a ``.3tz``, a ``.zip``, or the folder) onto the **3D "
+"scene** or onto the **Viewer & card**."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"Drag it from the **Files** window, or from the system's file manager: in "
+"both cases EMStudio knows where the file is, and the graph will record "
+"its path."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"Drag it from the **Files** window, so that the graph records where the "
+"file is. A file dragged from your computer into the browser carries no "
+"path: the resource will name the file only, and the preview says so."
+msgstr ""
+
+msgid ""
+"EMStudio recognises the form and shows a preview where you dropped it, "
+"**Preview · TempluMare.3tz** for example, with what it found: **A tileset"
+" package**, **A tileset folder (tileset.json at its root)**, or **The "
+"RealityScan form**, and the position read from the tileset's root (a "
+"latitude and a longitude, or **a local frame, not placed on the Earth**)."
+" A preview is not in the graph: when its position does not fit the study,"
+" it is **Centred for viewing only**, and the files are not changed."
+msgstr ""
+
+msgid ""
+"A folder that is not a package yet shows **Prepare the package (.3tz)** "
+"in the preview's bar, and waits for it. Press it and confirm: EMStudio "
+"writes the ``.3tz`` beside the folder, never inside it and never over "
+"another file, and only reads the original. A folder dragged from your "
+"computer into the browser cannot be prepared, because its path is not "
+"known: drag it from the **Files** window."
+msgstr ""
+
+msgid ""
+"For a package, *Porta dentro* opens by itself, with the preview as one of"
+" its rows; for a folder just prepared, press **Porta dentro…** in the "
+"preview's bar. Choose the document, the epoch the tileset represents, its"
+" role and its date, then press **Porta dentro**. The same button opens "
+"the window again after a cancel."
+msgstr ""
+
+msgid ""
+"The preview closes and the tileset is drawn as a model of its epoch, in "
+"its own frame, and loads the level of detail chosen on the preview."
+msgstr ""
+
+msgid "Pack a tileset folder into a .3tz"
+msgstr ""
+
+msgid ""
+"A ``.3tz`` keeps the whole tileset in one file, which travels and is read"
+" more easily than a folder of thousands of tiles."
+msgstr ""
+
+msgid ""
+"In the **Archive** workspace, open in the **Files** window the tileset's "
+"folder, the one that holds ``tileset.json``."
+msgstr ""
+
+msgid ""
+"In the section **A tileset packed as .3tz**, press **Pack this tileset "
+"into a .3tz**."
+msgstr ""
+
+msgid ""
+"The archive is written beside the folder, with the folder's name, by "
+"EMStudio's bridge on your computer."
+msgstr ""
+
+msgid ""
+"The archive is written beside the folder by the service that serves the "
+"**Files** window. A tileset of your own computer is packed in the desktop"
+" application: the web reads a ``.3tz``."
+msgstr ""
+
+msgid ""
+"The package is written in the canonical profile: the same folder always "
+"gives the same bytes, those 3D Survey Collection writes. If the folder is"
+" stamped, the archive is born stamped as derived from it and appears in "
+"the chain of its provenance; otherwise the section suggests stamping the "
+"folder first."
+msgstr ""
+
+msgid "See what the scene holds"
+msgstr ""
+
+msgid ""
+"The line above the scene sums up the epoch shown: its name, how many "
+"models it has, and how many of its units have a proxy. A click on it "
+"opens the epoch in every **Outliner**, where the epoch's **Models**, "
+"**Proxies**, **RMDoc** and **RMSF** are listed, and **Without proxy** "
+"gathers the units that have no shape yet."
+msgstr ""
+
+msgid ""
+"**Visibility ▾** switches the categories of the scene on and off: **RM "
+"models**, **Tilesets**, **RMDoc**, **RMSF**, **Proxies**, **Sketches**, "
+"**3D extractors** and **Territory / GIS**, each with how many there are "
+"in the epoch. The button says how many categories are off."
+msgstr ""
+
+msgid "``⋯ ▸ Frame the scene again`` brings the camera back on what is drawn."
+msgstr ""
+
+msgid ""
+"When nothing is drawn, a line under **The scene is empty** says why: a "
+"category switched off, a model hidden from the Outliner, a file missing, "
+"units without a proxy, a tileset whose root has not arrived."
+msgstr ""
+
+msgid "Choose what the scene loads"
+msgstr ""
+
+msgid ""
+"A model can have several versions, made for different uses. The chip ⚙ in"
+" the bar shows the hardware profile the scene loads for. A click opens "
+"**The versions the scene loads**: **Robust desktop — the realtime "
+"versions**, **Web — the webXR versions (ATON, Heriverse)**, **Mobile — "
+"the mobile webXR versions (phones, headsets)**, and **As the machine "
+"says**, which goes back to the profile read from the machine."
+msgstr ""
+
+msgid ""
+"On a computer with a graphics card the profile is read as **desktop**: "
+"the scene loads the realtime versions."
+msgstr ""
+
+msgid ""
+"In a browser the profile is read as **web**: the scene loads the versions"
+" made for the web, and a phone or a headset is read as **mobile**."
+msgstr ""
+
+msgid ""
+"A tileset shows a chip in the scene, **Tileset · auto** followed by its "
+"levels and its memory. A click opens its controls in the **Inspector**, "
+"section **Tileset**: **Automatic** lets the detail follow the camera, "
+"within the memory ceiling; **Manual** keeps the level until you ask, with"
+" **More detail here** (then a click on a zone of the model) and **Less "
+"detail**. The memory ceilings and the cache of the tiles are in "
+"``Settings… ▸ Viewers``."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The model or the tileset is a representation model of its epoch, "
+"published by its document, and the Space draws it whenever that epoch is "
+"shown. Its file is cited by the graph: relative to the em.json when it is"
+" beside it, or by its address when it stays in a bucket or in a room. A "
+"packed tileset sits in the graph as the other form of its folder."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`/how-to/bring-in/porta-dentro`, for the window that brings files in."
+msgstr ""
+
+msgid ":doc:`containers-and-epochs`, for a survey made of many models."
+msgstr ""
+
+msgid ":doc:`place-objects`, to move a model in the scene."
+msgstr ""
+
+msgid ""
+":doc:`/reference/settings`, section *Viewers*, for the limits of the 3D "
+"viewer."
+msgstr ""
+
+msgid ""
+":doc:`/reference/desktop-and-web`, for the other differences between the "
+"two versions."
+msgstr ""
+

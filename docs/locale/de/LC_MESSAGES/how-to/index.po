@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "How-to Guides"
+msgstr ""
+
+msgid ""
+"Task-oriented recipes, grouped by workspace. Each guide assumes basic "
+"familiarity with EMStudio (see :ref:`tutorial`) and helps you reach one "
+"objective."
+msgstr ""
+
+msgid ""
+":doc:`files/index`: open, save and reopen; a project folder; integrate "
+"another file; find missing files; clean the file; pin a version."
+msgstr ""
+
+msgid ""
+":doc:`bring-in/index`: *Porta dentro*, a GraphML matrix, a table through "
+"a mapping, StratiMiner, a DosCo folder."
+msgstr ""
+
+msgid ""
+":doc:`stratigraphy/index`: units and their relations, groups, layout, "
+"chronology, many units at once, filters."
+msgstr ""
+
+msgid ""
+":doc:`sources/index`: the provenance of files, documents and media on a "
+"unit, regions traced on images."
+msgstr ""
+
+msgid ""
+":doc:`space/index`: georeferencing, models and tilesets, colours and "
+"legend, placing objects, containers and epochs."
+msgstr ""
+
+msgid ":doc:`sheets/index`: fill the recording sheet and print the sheets."
+msgstr ""
+
+msgid ""
+":doc:`archive/index`: files on disk and in the room, the shelf, versions "
+"for each use, consolidation for a target."
+msgstr ""
+
+msgid ""
+":doc:`narrative/index`: write the story, show the graph in it, draft with"
+" AI, export."
+msgstr ""
+
+msgid ""
+":doc:`rooms/index`: sign in, create a room, bring a file into a room, "
+"enter and share it, open it in the other editor."
+msgstr ""
+
+msgid ""
+":doc:`extensions/index`: live work with EM Tools in Blender, a .blend "
+"from the graph, vocabularies, packages and plugins, repositories and "
+"signatures, the Python console."
+msgstr ""
+

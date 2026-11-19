@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Check a DosCo folder"
+msgstr ""
+
+msgid ""
+"*Read a DosCo folder against the documents of the active graph with "
+"Resources.*"
+msgstr ""
+
+msgid ""
+"The **DosCo** (the documentary corpus of an Extended Matrix study) is the"
+" folder where the files of the documents are kept, each named after its "
+"document: ``D.01 plan.jpg``, ``D.02_section.pdf``, ``D.14-survey.png``. "
+"The name starts with the EM id of the document (``D.`` and a number), "
+"followed by a space, an underscore or a hyphen. Reading the folder "
+"against the graph shows which files have no document in the graph yet, "
+"and turns them into documents."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Open the graph whose documents you want to check: the folder is always "
+"read against the active graph, and its name is shown at the top of the "
+"window. The folder is read by EMStudio's service: on the desktop the "
+"service of this computer, on the web the node's."
+msgstr ""
+
+msgid "Read the folder"
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ Resources``. The window **Resources** opens; the line "
+"beside its title names the graph it reads against, and its **▾** changes "
+"it."
+msgstr ""
+
+msgid ""
+"The same window opens, with the folder already filled in and read, from "
+"**Scan as DosCo…**: in the **Files** window, open a folder, choose "
+"nothing, and find the button in the **Info** tab among the gestures of "
+"the folder. An empty **Shelf** offers it too, for the ``DosCo`` folder of"
+" the study."
+msgstr ""
+
+msgid ""
+"In **DosCo folder**, write the full path of the folder, for example the "
+"``DosCo`` folder beside ``TempluMare.em.json``."
+msgstr ""
+
+msgid "Press **Read the folder**."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The status line says how many files are not yet a document, and three "
+"lists fill the window."
+msgstr ""
+
+msgid "**Files not yet a document**"
+msgstr ""
+
+msgid ""
+"The files of the folder whose EM id is not a document of the graph. Each "
+"row has a preview, the file name and its EM id. Above the list, two notes"
+" report what the reading leaves out: the files without an EM id, and, "
+"marked **▲**, an EM id carried by more than one file."
+msgstr ""
+
+msgid "**Documents of the graph**"
+msgstr ""
+
+msgid "The documents the graph already has, with their previews."
+msgstr ""
+
+msgid "**Resources of the graph**"
+msgstr ""
+
+msgid ""
+"The resources of the graph, each with where its file is: **a file of this"
+" computer**, **a web address** or **on the room's server**."
+msgstr ""
+
+msgid ""
+"Files named with an extractor's id (``D.02.01``) or a combiner's "
+"(``C.3``) are not listed, because those nodes are made in the graph, not "
+"from a file."
+msgstr ""
+
+msgid ""
+"The reading writes a small index, ``.em_resources_manifest.json``, inside"
+" the folder. It gives each file a stable identity that survives the next "
+"readings, and EM Tools in Blender reads the same index."
+msgstr ""
+
+msgid "Make the missing documents"
+msgstr ""
+
+msgid ""
+"In **Files not yet a document**, press **→ Document** on a row. A "
+"document with that EM id as its name is created in the active graph, and "
+"the row leaves the list."
+msgstr ""
+
+msgid ""
+"Select the new document in the **Outliner** and complete it in the "
+"**Inspector**: its description, its date, its licence (see "
+":doc:`/reference/inspector`)."
+msgstr ""
+
+msgid ""
+"To bring files in as documents with their date and licence at once, use "
+"*Porta dentro* instead (see :doc:`porta-dentro`)."
+msgstr ""
+
+msgid "Copy a file to the room's server"
+msgstr ""
+
+msgid ""
+"In **Resources of the graph**, a resource whose file is on this computer "
+"has the button **Copy to the server**. It copies the file to the room's "
+"server with the same identity, and the resource's address becomes the "
+"copy on the server. The graph keeps pointing at the same resource. When "
+"the server cannot take files, the message says why and the resource stays"
+" as it was."
+msgstr ""
+
+msgid ""
+"After a change in the folder, press **Read the folder** again to bring "
+"the lists up to date. **Done** closes the window."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`porta-dentro`, to bring files in as documents."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/sources/documents-and-media`, to read and describe the "
+"documents."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/files/find-missing-files`, when the graph cites files that "
+"have moved."
+msgstr ""
+
+msgid ":doc:`/how-to/rooms/bring-a-file-into-a-room`, for rooms."
+msgstr ""
+

@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Read a table through a mapping"
+msgstr ""
+
+msgid ""
+"*Import a spreadsheet, a database or an XML file by saying what each of "
+"its columns means for the graph.*"
+msgstr ""
+
+msgid ""
+"A table of units kept in a spreadsheet, a site database, an XML export: "
+"each describes the excavation in its own columns. A **mapping** says what"
+" each column is in the Extended Matrix (which column identifies a unit, "
+"which one describes it, which one names another unit it relates to), and "
+"EMStudio reads the table through it. Everything happens in one window, "
+"the **Mapping editor**, which asks three questions in order: what to "
+"read, how to read it, and where and how it enters."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"Decide where the table should land. If the table carries the stratigraphy"
+" itself, it becomes **A new graph**. If the stratigraphy is already in a "
+"graph and the table adds descriptions or properties to its units (the "
+"more common case), open that graph first: the table lands on **This "
+"graph**."
+msgstr ""
+
+msgid "Open the editor"
+msgstr ""
+
+msgid ""
+"Choose ``File ▸ Import ▸ Table with a mapping…``. The **Mapping editor** "
+"opens in a window of its own. Its sections are numbered in the order they"
+" appear."
+msgstr ""
+
+msgid ""
+"The same editor opens, already filled, from two other places: from an "
+"auxiliary file of a graph in the **EMtree**, and from StratiMiner's "
+"**Transform into em.json** (see :doc:`build-a-graph-with-stratiminer`)."
+msgstr ""
+
+msgid "1 · Choose the source"
+msgstr ""
+
+msgid ""
+"In **the source**, write the full path of the file (a ``.sqlite``, "
+"``.xlsx``, ``.csv`` or ``.xml``), or pick it."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"**Browse…** opens the system dialog and fills in the real path of the "
+"file."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"**Browse…** lists the folders that EMStudio's service can read, with "
+"**Places**, **Volumes**, **Bookmarks** and **Recent** at the side. "
+"**Open…** takes a file from your computer instead: the service keeps a "
+"copy of it and reads that. The mapping records the shape of the file, not"
+" its location, so a mapping made on the copy applies to the original "
+"later."
+msgstr ""
+
+msgid ""
+"Press **Read the fields**. EMStudio says how it read the file, for "
+"example **read as xlsx — 14 field(s)**."
+msgstr ""
+
+msgid ""
+"Check the details it proposes. **Header row** says which row holds the "
+"column names (EMStudio proposes the first row with every column filled). "
+"**table / sheet** chooses among the sheets of a workbook or the tables of"
+" a database. For an XML file, **one record is** asks which element is one"
+" record: the repeated elements are offered, the most frequent first."
+msgstr ""
+
+msgid ""
+"In **Language of the source**, say in which language the table is "
+"written. **as the study** keeps the study's working language; another "
+"language is written on every node the import creates."
+msgstr ""
+
+msgid "2 · Say how it is read"
+msgstr ""
+
+msgid "In **How it is read**, choose one of four answers."
+msgstr ""
+
+msgid "**A mapping written here**"
+msgstr ""
+
+msgid ""
+"You describe the columns in the sections that follow. This is the answer "
+"for a table nobody has mapped before."
+msgstr ""
+
+msgid "**A mapping file**"
+msgstr ""
+
+msgid ""
+"A ``*_mapping.json`` written beside the dataset. Write its path, or press"
+" **Choose…**."
+msgstr ""
+
+msgid "**A registered mapping**"
+msgstr ""
+
+msgid ""
+"A mapping that s3Dgraphy already knows by name. The names appear as "
+"buttons: press one. When EMStudio recognises the table, it says so "
+"(**Recognised:** followed by the mapping's name and how many columns "
+"match) and proposes that mapping."
+msgstr ""
+
+msgid "**None: an EM table**"
+msgstr ""
+
+msgid ""
+"An ``em_data.xlsx`` (the table of units, epochs and claims of the "
+"Extended Matrix, the one StratiMiner produces) is read as it is."
+msgstr ""
+
+msgid "3 · Map the fields (a mapping written here)"
+msgstr ""
+
+msgid ""
+"The table **the fields** lists every column with **example values** and "
+"how many sampled records had a value."
+msgstr ""
+
+msgid ""
+"In **map to (CIDOC → EM)**, choose what the column describes: a class of "
+"the Extended Matrix (a stratigraphic unit, an epoch, a document) or a "
+"CIDOC-CRM class. Leave **— no class** for a column that does not matter."
+msgstr ""
+
+msgid ""
+"In **role**, say what the column does for its record: **identifies the "
+"record**, **describes it**, **a property of it** (then give the "
+"**property name**), or **names another record (edge)**. A column left **—"
+" not mapped** is simply not read."
+msgstr ""
+
+msgid ""
+"In **the relations**, press **+ relation** for each link between two "
+"mapped columns: choose the first column, the second, and the relation "
+"between them. Only the relations the Extended Matrix allows between those"
+" two kinds of node are offered."
+msgstr ""
+
+msgid ""
+"In **the mapping**, give the mapping a name and press **Check it**. "
+"EMStudio answers **The mapping is coherent** or lists what prevents it "
+"from being applied."
+msgstr ""
+
+msgid ""
+"To use the mapping again, press **Download the JSON**, or **Save into the"
+" registry** to make it a registered mapping. Saving into the registry "
+"works when EMStudio's service has a folder for the user's mappings; "
+"otherwise, download the JSON and keep it beside the dataset."
+msgstr ""
+
+msgid "Where and how it enters"
+msgstr ""
+
+msgid ""
+"Choose the target: **A new graph**, or **This graph** followed by the "
+"name of the active graph. On **This graph**, a row whose key matches no "
+"unit of the graph creates nothing: it is listed instead."
+msgstr ""
+
+msgid "Choose how the rows land:"
+msgstr ""
+
+msgid ""
+"**Provisional**: the new nodes appear in the graph in blue and stay out "
+"of the saved file until you write them in;"
+msgstr ""
+
+msgid ""
+"**Written into the graph**: the nodes become the graph's and travel with "
+"the saved file;"
+msgstr ""
+
+msgid ""
+"**Attached as an auxiliary file**: the table is kept on this graph as a "
+"source with a life of its own, read again when the file changes, and "
+"written into the graph when you agree. This answer needs **This graph**."
+msgstr ""
+
+msgid "Press **Apply**."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"The editor reports what happened, for example **Written into the graph: "
+"120 record(s) → 120 node(s), 85 edge(s)**. A new graph opens beside the "
+"graphs already open. On the active graph the import is one step of the "
+"history."
+msgstr ""
+
+msgid ""
+"After a provisional import, the editor shows how many provisional nodes "
+"are in the graph, in blue, and offers **Write into the graph** to keep "
+"them or **Take them out** to remove them. An attached table appears as an"
+" auxiliary file of the graph in the **EMtree**."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`build-a-graph-with-stratiminer`, to obtain an ``em_data.xlsx`` from"
+" a folder of sources."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/stratigraphy/edit-many-units`, to review the units after "
+"the import."
+msgstr ""
+
+msgid ":doc:`/reference/windows`, for the EMtree and the other windows."
+msgstr ""
+

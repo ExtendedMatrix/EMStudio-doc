@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: el\n"
+"Language-Team: el <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Install packages and plugins"
+msgstr ""
+
+msgid ""
+"*Install community packages and plugins, use what they add to a study, "
+"enable and remove them.*"
+msgstr ""
+
+msgid "EMStudio grows in two ways, and one window holds both."
+msgstr ""
+
+msgid ""
+"A **community package** carries data only: vocabularies, properties for a"
+" kind of study, extractors and sets of canonical points to place on a "
+"model, ways to combine them, a recording sheet, colour schemes. Every "
+"tool of the Extended Matrix reads it, and it runs no code."
+msgstr ""
+
+msgid ""
+"A **plugin** carries Python code: commands, importers and exporters, "
+"checks, panels. A Python plugin has the powers of your user on this "
+"computer, so EMStudio shows what it asks before installing it."
+msgstr ""
+
+msgid ""
+"A **mixed package** carries both, and you can take its data alone. "
+"Extensions are installed on the computer, not in a study, and EM Tools in"
+" Blender uses the same ones. A study declares the community packages it "
+"uses, as it declares its vocabularies."
+msgstr ""
+
+msgid "Install from disk"
+msgstr ""
+
+msgid "Choose ``Tools ▸ Extensions…``. The window **Extensions** opens."
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid ""
+"At the top, **Install from disk…** takes a ``.zip`` archive, and "
+"**Install from a folder…** takes a package's folder, the one that holds "
+"its ``em-extension.toml``. Choose the archive or the folder."
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid ""
+"Served by a StratiGraph node, the window lists the packages that the "
+"node's administrator installed, and nothing is installed from the page. "
+"Their properties, sheets and vocabularies reach your study all the same. "
+"Packages and plugins of your own are installed in the desktop "
+"application."
+msgstr ""
+
+msgid ""
+"EMStudio reads the archive without writing anything and opens **Install "
+"an extension**. The head gives the name, the version and where it comes "
+"from, here **from disk**."
+msgstr ""
+
+msgid ""
+"The panel **Data** lists the vocabularies the package brings, each with "
+"its licence and tier, and what it adds: properties, extractors, sets of "
+"canonical points, combiners, sheets, colour schemes. It ends with **No "
+"code: read by every tool**."
+msgstr ""
+
+msgid ""
+"The panel **Code**, for a plugin, is marked **NOT VERIFIED, from disk**. "
+"It lists **Permissions, and why:** (each permission with the reason the "
+"plugin gives), **It can:** (for example *read the graph*, *write the "
+"graph*), **It appears in:** (for example *Tools ▸ Extensions*, *File ▸ "
+"Import*, *the context menu of a node*), and the sentence **A Python "
+"plugin has your user's powers on this machine.**"
+msgstr ""
+
+msgid "Answer with one of the buttons:"
+msgstr ""
+
+msgid "**Install everything**: the data and the code, for a mixed package;"
+msgstr ""
+
+msgid ""
+"**Data only**: the vocabularies and the data, no code on this computer; "
+"the code can be installed later from the same window;"
+msgstr ""
+
+msgid "**Install**: for a package that carries one kind only;"
+msgstr ""
+
+msgid "**Cancel**: nothing is installed."
+msgstr ""
+
+msgid ""
+"The answer is your trust in the code. The question is asked again only "
+"when a new version changes what the plugin asks, what it can do or where "
+"it comes from; otherwise the panel says that permissions, capabilities "
+"and source are the same as the last trust, and no new question is asked. "
+"A code that a repository lists as reviewed is marked with who read it and"
+" when (see :doc:`repositories-signatures-updates`)."
+msgstr ""
+
+msgid "Read the list"
+msgstr ""
+
+msgid ""
+"The filter at the top shows **All**, **Community packages** or "
+"**Plugins**. Each row gives the name and the kind (**community package**,"
+" **plugin**, **package + plugin**), **used by this file** when the open "
+"study declares it, its code, version, source and licence, and its state: "
+"**ready**, **incomplete**, **code disabled**, **code not installed**, or "
+"**an update of the code is waiting**."
+msgstr ""
+
+msgid ""
+"The Extensions window: Install from disk, the filter All, Community "
+"packages and Plugins, an installed example package, and the repositories."
+msgstr ""
+
+msgid ""
+"Under **Data**, a row lists its versions and what it brings that the "
+"study can use:"
+msgstr ""
+
+msgid ""
+"**brings … vocabularies**, with **Vocabularies…** to open them (see "
+":doc:`vocabularies`);"
+msgstr ""
+
+msgid ""
+"each colour scheme, with **Into the file**, which copies it into the open"
+" study, where the **Colours** window lists it under *In the file* (see "
+":doc:`/how-to/space/colours-and-legend`);"
+msgstr ""
+
+msgid ""
+"each recording sheet, **in the sheets** when it is verified, and offered "
+"in the **Sheets** workspace (see :doc:`/how-to/sheets/fill-the-recording-"
+"sheet`)."
+msgstr ""
+
+msgid ""
+"Under **Code**, a plugin shows its versions, whether it is verified, and "
+"whether it is **enabled**, with its permissions."
+msgstr ""
+
+msgid "Use a package in a study"
+msgstr ""
+
+msgid ""
+"A study declares the community packages it uses, with their version. When"
+" you open a study that declares a package this computer does not have, a "
+"message says **This file uses packages not installed here**, with "
+"**Extensions…**: the window lists them at the top. The study opens all "
+"the same, and its values keep their labels; install the package to read "
+"its properties and sheets."
+msgstr ""
+
+msgid ""
+"When a newer version of a declared package is installed here, the window "
+"says that the file uses an older version, and offers **Update the "
+"declaration to …**. For a version that may change the meaning of the "
+"data, **What changes…** shows the package's notes first, and **Keep the "
+"old one** leaves the file as it is. A new declaration is saved with the "
+"file and the message that confirms it offers **Undo**."
+msgstr ""
+
+msgid "Place a package's points on a model"
+msgstr ""
+
+msgid ""
+"The extractors and the sets of canonical points of a package become tools"
+" of the **Viewer & card** when it shows a document's 3D model. They "
+"appear in the Viewer's bar after its own six tools, in the group **Tools "
+"of the community packages**; the tooltip of each gives its name, its "
+"package, what it places (a point, a line of two points, a path, a closed "
+"surface) and how many clicks it takes."
+msgstr ""
+
+msgid ""
+"Choose an extractor's tool and click on the model as many times as the "
+"tool says. The extractor enters the graph, with its value, as one step of"
+" ``Edit ▸ Undo``."
+msgstr ""
+
+msgid ""
+"A set of canonical points (the tool marked ⁘) is placed with a guided "
+"pose. A row appears under the tools: **Unit**, the unit whose surface is "
+"read (the selected one, or the one the model is tied to); **Point**, the "
+"point the next click places (✓ placed, \\* required); **Skip**; **⇋**, "
+"the symmetric point; **Expected**; and **Compute**. The hint says **Place"
+" the point:** with its name and how many are placed."
+msgstr ""
+
+msgid ""
+"Click on the model for each point. After three points, **Expected** shows"
+" where the others should be, as a help and never as a value; a point "
+"placed far from where the others expect it is reported and kept as "
+"placed."
+msgstr ""
+
+msgid ""
+"When every required point is placed, the values that the package declares"
+" are computed by themselves and become properties of the unit; "
+"**Compute** runs the computation at any time."
+msgstr ""
+
+msgid ""
+"The **Inspector** shows the pose: **Pose of «…»** with the points placed "
+"out of the set, and the points still missing."
+msgstr ""
+
+msgid ""
+"Placing a package's points needs the desktop application, which writes "
+"them with the package's library: in the web version the tools are visible"
+" but switched off, and their tooltip says so."
+msgstr ""
+
+msgid "Run a plugin's commands"
+msgstr ""
+
+msgid ""
+"Once installed and enabled, a plugin's commands appear where the plugin "
+"says:"
+msgstr ""
+
+msgid ""
+"``Tools ▸ Plugins``, with a section for each plugin, its name and version"
+" and the mark **not verified** for a code from disk, its commands, and "
+"**Open «…»** for its panels; a plugin that did not load is listed with "
+"the reason;"
+msgstr ""
+
+msgid "``File ▸ Import`` and ``File ▸ Export``;"
+msgstr ""
+
+msgid "the context menu of a node in the Matrix and in the Space;"
+msgstr ""
+
+msgid ""
+"the **Warnings** sheet of the **Tabular** window, for a plugin that "
+"checks the study;"
+msgstr ""
+
+msgid "*Porta dentro*, for a file that only a plugin can read;"
+msgstr ""
+
+msgid ""
+"a section of the **Inspector**, a computed column of the **Tabular** "
+"window (read only), a line of the status bar, a tool of the 3D, or a "
+"panel."
+msgstr ""
+
+msgid ""
+"Each change a plugin writes is one step of ``Edit ▸ Undo``, with its line"
+" in the Log, and the act records in its chain which plugin made it. A "
+"file that an exporter returns is saved where you choose."
+msgstr ""
+
+msgid ""
+"The plugins of this computer run in the desktop application, through its "
+"local service. The web version does not load them; inside a room it "
+"offers the plugins of the node instead (see below)."
+msgstr ""
+
+msgid "Enable, disable and remove"
+msgstr ""
+
+msgid ""
+"**Disable** keeps the plugin installed and turns its code off; **Enable**"
+" turns it on again."
+msgstr ""
+
+msgid ""
+"**Install the code…** adds the code to a package installed as data only. "
+"It shows the panel **Code** again and asks the same question."
+msgstr ""
+
+msgid ""
+"**Remove the code** takes the code away and keeps the data: the package "
+"becomes data only."
+msgstr ""
+
+msgid "**Remove the data** takes away every version of the data."
+msgstr ""
+
+msgid "**Remove the package** takes away code and data."
+msgstr ""
+
+msgid ""
+"Each removal says first what goes. The vocabularies a package brought "
+"stay on this computer, like fonts, because a study may use them; a box, "
+"unticked, offers to remove them too. For a plugin, a second unticked box "
+"removes what the plugin saved on this computer (its own settings and "
+"state)."
+msgstr ""
+
+msgid "Load a plugin you are writing"
+msgstr ""
+
+msgid ""
+"With the experimental functions on (``Settings… ▸ Advanced``, "
+"**Experimental functions**), the window has a section **Development "
+"folder (Experimental features)**. Type or choose a folder of this "
+"computer and press **Use**: the plugins in its sub-folders load where "
+"they are, without installing and without the trust question, marked "
+"**development, not verified**. After changing a plugin's files, press "
+"**Reload** on its row. **Clear** forgets the folder."
+msgstr ""
+
+msgid "Plugins of the node, in a room"
+msgstr ""
+
+msgid ""
+"In the web version, inside a room, the window also shows **Plugins of the"
+" node**: code that the node's administrator installed and that the node "
+"runs for the room in a closed space, with no network, none of the node's "
+"files and a time limit. The section says whether the node's isolation is "
+"proved; if it is not, the plugins stay off. The owner of the room, or an "
+"administrator, turns a plugin on with **on in this room**; then its "
+"commands can be run from the section, and what a command writes arrives "
+"as changes of the room. A command that writes is available only to those "
+"who can write in the room."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"Extensions installed once on this computer and shared with EM Tools: "
+"packages whose properties, sheets, colours and tools serve every study "
+"that declares them, and plugins whose commands take their place in the "
+"menus, each act recorded with the plugin that made it."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`repositories-signatures-updates`, to install from a repository and "
+"keep extensions up to date."
+msgstr ""
+
+msgid ":doc:`vocabularies`, for the vocabularies a package brings."
+msgstr ""
+
+msgid ":doc:`python-console`, to run Python on the open study."
+msgstr ""
+
+msgid ""
+":doc:`/explanation/extensions-and-trust`, for what a package, a plugin "
+"and the trust question are."
+msgstr ""
+
+msgid ":doc:`/reference/windows`, *Plugin panel*."
+msgstr ""
+
+msgid ":doc:`/reference/desktop-and-web`."
+msgstr ""
+

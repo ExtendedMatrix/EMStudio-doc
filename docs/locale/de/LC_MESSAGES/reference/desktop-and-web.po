@@ -1,0 +1,405 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Desktop and web"
+msgstr ""
+
+msgid ""
+"*What differs between the desktop application and EMStudio served by a "
+"StratiGraph node.*"
+msgstr ""
+
+msgid ""
+"EMStudio is one application with two ways of reaching it. The **desktop "
+"application** runs on macOS, Windows and Linux and brings its own local "
+"helper, the *bridge*, which reads and writes the files of this computer. "
+"The **web version** is the same editor served by a StratiGraph node at "
+"the address ``/em/studio/`` of that node: you reach it with a browser and"
+" sign in to the node."
+msgstr ""
+
+msgid ""
+"The windows, the workspaces, the graph and almost every command are the "
+"same in both. They differ where a browser and a desktop program are "
+"different by nature: a page in a browser receives the content of a file "
+"but never learns where the file lives on the disk, it cannot choose a "
+"folder through the system's dialog, and it saves by downloading. The "
+"table below lists every difference of version 1.6.0-dev.136, grouped by "
+"theme."
+msgstr ""
+
+msgid "Area"
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid "**Open…** and **Open in place of the open files…**"
+msgstr ""
+
+msgid ""
+"The system's dialog opens. EMStudio keeps the path of the file, so it can"
+" save it in place and reopen it later."
+msgstr ""
+
+msgid ""
+"The browser's file picker opens. EMStudio receives the content of the "
+"file without its path."
+msgstr ""
+
+msgid "**Save**"
+msgstr "**Speichern**"
+
+msgid ""
+"The file is written in its place on the disk. A file that came from a "
+"drop or from a room has no place yet, so the first **Save** asks for one."
+msgstr ""
+
+msgid "The em.json is downloaded by the browser."
+msgstr ""
+
+msgid "**Save As…**"
+msgstr "**Speichern unter…**"
+
+msgid ""
+"The system's dialog proposes the file's own folder. In another folder, "
+"EMStudio offers to rewrite the paths of the resources so that they still "
+"point at the same files."
+msgstr ""
+
+msgid ""
+"The em.json is downloaded under a new name. A dialog reminds you that its"
+" resource paths are relative to the folder where you keep it."
+msgstr ""
+
+msgid "**Open Recent ▸**"
+msgstr ""
+
+msgid ""
+"A recent file reopens from its path. A file that has disappeared is said "
+"so, and you can remove it from the list."
+msgstr ""
+
+msgid ""
+"A file dropped into the browser has no path: drag it in again to reopen "
+"it. A recent room reopens on both platforms."
+msgstr ""
+
+msgid "Files given at launch, and files dropped from the system"
+msgstr ""
+
+msgid ""
+"Files opened with EMStudio from the system, and files or folders dropped "
+"on the window, arrive with their path."
+msgstr ""
+
+msgid "A file dropped on the page arrives as its content only."
+msgstr ""
+
+msgid "**New EM project…** and **Open project…**"
+msgstr ""
+
+msgid "The system's folder dialog opens."
+msgstr ""
+
+msgid ""
+"EMStudio's own folder selector opens inside the page, starting from the "
+"folder that the **Files** window is showing."
+msgstr ""
+
+msgid "Choosing a folder in the **Files** window, and **another folder…**"
+msgstr ""
+
+msgid "The system's folder dialog."
+msgstr ""
+
+msgid "EMStudio's own folder selector, or a path that you type."
+msgstr ""
+
+msgid "**Find missing files…**"
+msgstr ""
+
+msgid ""
+"You can add one more folder to the search through the system's dialog, "
+"and point a missing file at its new place by choosing it."
+msgstr ""
+
+msgid ""
+"The folder to search is given as a path that you type; a missing file is "
+"pointed at its new place through EMStudio's own selector."
+msgstr ""
+
+msgid "**Porta dentro…**"
+msgstr ""
+
+msgid "The system's dialog lets you choose several files at once."
+msgstr ""
+
+msgid "EMStudio's own selector lets you choose one file at a time."
+msgstr ""
+
+msgid "**Import ▸ GraphML…**, **Import ▸ Table with a mapping…**, **StratiMiner**"
+msgstr ""
+
+msgid ""
+"The system's dialog returns the file with its path. A GraphML matrix kept"
+" as em.json is saved beside the GraphML."
+msgstr ""
+
+msgid ""
+"The browser hands the file over and the bridge keeps a working copy. A "
+"GraphML matrix kept as em.json is downloaded under the name you give."
+msgstr ""
+
+msgid "**Export ▸ Turtle (.ttl)**, the files an extension exports"
+msgstr ""
+
+msgid "Saved where you choose."
+msgstr ""
+
+msgid "Downloaded."
+msgstr ""
+
+msgid "**Colours…**: the colour schemes of the file"
+msgstr ""
+
+msgid ""
+"Written into a folder that you choose, and read from several files at "
+"once."
+msgstr ""
+
+msgid ""
+"Written into the browser's downloads, and read through the browser's file"
+" picker."
+msgstr ""
+
+msgid "**Print sheets…**"
+msgstr ""
+
+msgid ""
+"**Print…** opens the system's print dialog, which also makes the PDF "
+"(**Save as PDF**). **One PDF per sheet** needs a bridge that makes PDFs; "
+"the installed application makes its PDF through the print dialog."
+msgstr ""
+
+msgid ""
+"**Print…** prints the preview through the browser's print dialog, which "
+"also makes the single PDF. When the node makes PDFs, one PDF per sheet is"
+" downloaded file by file."
+msgstr ""
+
+msgid "The title of the window"
+msgstr ""
+
+msgid "Shows the open file, with a dot when it has unsaved changes."
+msgstr ""
+
+msgid "The browser's tab keeps its own title."
+msgstr ""
+
+msgid "**Open in a new window**"
+msgstr ""
+
+msgid "The window becomes a window of the system, kept above the main window."
+msgstr ""
+
+msgid "The window becomes a separate browser window."
+msgstr ""
+
+msgid "Signing in to a node (the chip's menu, **Node and account**)"
+msgstr ""
+
+msgid ""
+"The sign-in runs in the system's browser and comes back to the "
+"application; when it does not, the node's answer is pasted in **Paste the"
+" node's answer**. EMStudio asks to sign in only when you ask."
+msgstr ""
+
+msgid "The sign-in runs in the same page. EMStudio can renew it quietly."
+msgstr ""
+
+msgid "**Verify with ORCID**"
+msgstr ""
+
+msgid "The application goes straight to ORCID."
+msgstr ""
+
+msgid ""
+"On the node's default configuration, the verification goes through the "
+"node's own ORCID sign-in."
+msgstr ""
+
+msgid "The node"
+msgstr ""
+
+msgid "None until you configure one in **Settings… ▸ Connections**."
+msgstr ""
+
+msgid "The node that serves the page, found from the page's own address."
+msgstr ""
+
+msgid ""
+"**My space on the node**, and pages opened by **Open with…** "
+"(StratiField, Heriverse)"
+msgstr ""
+
+msgid "Opened in the system's browser."
+msgstr ""
+
+msgid "Opened in a new tab of the browser."
+msgstr ""
+
+msgid "Nodes on the local network, and the personal node of this computer"
+msgstr ""
+
+msgid ""
+"The bridge searches the local network and can turn on a node on this "
+"computer."
+msgstr ""
+
+msgid ""
+"The search of the local network belongs to the bridge of the desktop "
+"application. The saved nodes and the address you type are checked."
+msgstr ""
+
+msgid "The AI key (**Settings… ▸ Advanced ▸ API key**)"
+msgstr ""
+
+msgid "Kept in the system's keychain."
+msgstr ""
+
+msgid "Kept by the bridge for the session."
+msgstr ""
+
+msgid "**Pack this tileset into a .3tz**"
+msgstr ""
+
+msgid "Available."
+msgstr ""
+
+msgid ""
+"Available in the **Files** window for a folder served by the helper "
+"service, which writes the archive. A tileset of your own computer is "
+"packed in the desktop application."
+msgstr ""
+
+msgid "The hardware profile of the **Space** (**Use of this device**)"
+msgstr ""
+
+msgid ""
+"Read as *desktop* on a machine with a graphics card: the scene loads the "
+"realtime versions of the models."
+msgstr ""
+
+msgid ""
+"Read as *web*: the scene loads the versions made for the web. You can "
+"change the profile by hand on both."
+msgstr ""
+
+msgid "**Extensions…** ▸ **Install from disk…**"
+msgstr ""
+
+msgid "From a .zip archive or from a folder."
+msgstr ""
+
+msgid ""
+"Served by a node, the window lists the packages that the node's "
+"administrator installed; the page installs nothing."
+msgstr ""
+
+msgid ""
+"Repositories of extensions in a folder (for example on a NAS), and the "
+"development folder of a plugin"
+msgstr ""
+
+msgid "Chosen through the system's folder dialog."
+msgstr ""
+
+msgid "These folders belong to the desktop application."
+msgstr ""
+
+msgid "Plugins of your own computer, and ``Tools ▸ Python console…``"
+msgstr ""
+
+msgid ""
+"The plugins installed on the node, turned on for the room, run on the "
+"node; plugins and the console of a computer belong to the desktop "
+"application."
+msgstr ""
+
+msgid "**Check for updates…**"
+msgstr ""
+
+msgid ""
+"In **Help** on Windows and Linux, in the **EMStudio** menu on macOS. "
+"EMStudio compares its version with the published releases, and offers "
+"**Download** and, where it can, **Install and restart**."
+msgstr ""
+
+msgid "The version is the one the node serves."
+msgstr ""
+
+msgid "Menus"
+msgstr ""
+
+msgid ""
+"On macOS the system's menu bar carries **File**, **Edit** and **Help**, "
+"plus the **EMStudio** menu (**About EMStudio**, **Settings…**, **Check "
+"for updates…**) and the **Window** menu. On Windows and Linux the menu "
+"bar is inside the window, and **File** ends with **Quit EMStudio**."
+msgstr ""
+
+msgid ""
+"The menu bar is inside the page. **About EMStudio** and **Settings…** are"
+" in **Help**."
+msgstr ""
+
+msgid "Keys"
+msgstr ""
+
+msgid ":kbd:`⌘` on macOS, :kbd:`Ctrl` on Windows and Linux."
+msgstr ""
+
+msgid ""
+"The same keys, except those the browser keeps for itself: **Close** has "
+"no key on the web, because :kbd:`⌘W` and :kbd:`Ctrl+W` close the "
+"browser's tab."
+msgstr ""
+
+msgid "How the manual marks the differences"
+msgstr ""
+
+msgid ""
+"The manual describes the two platforms with one text. Where the steps of "
+"a task really diverge, a page shows two tabs, **Desktop** and **Web**: "
+"choose yours once, and every page of the manual follows your choice. "
+"Where the steps are the same, there are no tabs."
+msgstr ""
+
+msgid ""
+"In the reference tables, *desktop only* marks a command that the web "
+"version does not draw (see :doc:`menus`). A difference among macOS, "
+"Windows and Linux is said in the text of the **Desktop** tab."
+msgstr ""
+

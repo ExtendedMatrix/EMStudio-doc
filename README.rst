@@ -21,12 +21,24 @@ Build locally
 .. code-block:: bash
 
    python3 -m venv .venv
-   .venv/bin/pip install sphinx sphinx_rtd_theme
-   .venv/bin/sphinx-build -b html docs docs/_build/html
+   .venv/bin/pip install -r docs/requirements.txt
+   .venv/bin/sphinx-build -W --keep-going -b html docs docs/_build/html
    # open docs/_build/html/index.html
 
-Screenshots live under ``docs/_static/`` (one folder per page,
-``NN_description.png``) and are referenced with ``.. image::`` /
-``.. figure::`` using ``:width:`` and a descriptive ``:alt:``.
+The screenshots are taken from the application by ``docs/_tools/screenshots.mjs``
+and live under ``docs/_static/screens/`` (``docs/_tools/README.md`` tells how).
+
+Languages
+---------
+
+English is the source. The manual is translated into the languages of the
+EMStudio interface (Italian, German, Greek, Hebrew, Spanish, Polish, Romanian,
+French) through gettext catalogues in ``docs/locale/``; Italian is complete.
+`docs/translating.rst <docs/translating.rst>`_ tells how a language is added,
+updated, built and published.
+
+.. code-block:: bash
+
+   DOCS_LANGUAGE=it .venv/bin/sphinx-build -b html docs docs/_build/html-it
 
 Authored by Emanuel Demetrescu, CNR-ISPC.

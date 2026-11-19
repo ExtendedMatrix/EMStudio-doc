@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "DTC and EM, two planes"
+msgstr ""
+
+msgid ""
+"*The life of a digital file and the interpretation of what it shows: two "
+"records that meet without mixing.*"
+msgstr ""
+
+msgid ""
+"A photograph of a wall answers two different questions. One is about the "
+"photograph: who took it, when, with which camera, what was computed from "
+"it, under which licence it may be used. The other is about the wall: "
+"which unit it is, what lies above and below it, to which epoch it "
+"belongs, what it is interpreted to be. EMStudio keeps the two answers on "
+"two planes."
+msgstr ""
+
+msgid ""
+"The **DTC**, the *digital transformation chain*, records the life of the "
+"digital file: where it was born, through which steps it passed, which "
+"files it produced, who holds the rights."
+msgstr ""
+
+msgid ""
+"The **Extended Matrix** records the interpretation of what the file "
+"shows: the stratigraphic units, their relations and epochs, the "
+"properties read from the documents, the reconstructions."
+msgstr ""
+
+msgid "The DTC plane: the life of a file"
+msgstr ""
+
+msgid ""
+"Every file of a study comes from somewhere. A photographic survey "
+"produces photographs; an alignment of the photographs produces a point "
+"cloud; a mesh is computed from the cloud; a lighter version of the mesh "
+"is made for the web. Each of these is an act, and the DTC records it in "
+"three kinds of statement."
+msgstr ""
+
+msgid ""
+"**An origin**: a file born here, in the field or in the laboratory, or "
+"taken from an archive with its address."
+msgstr ""
+
+msgid ""
+"**A step**: a process that made files from other files, with its kind, "
+"its software and its parameters. A step points back at its inputs, so the"
+" chain can be read from any file to its beginning."
+msgstr ""
+
+msgid ""
+"**Rights and author**: the licence of the file, an embargo when the bytes"
+" must wait, and the person who made it."
+msgstr ""
+
+msgid ""
+"In EMStudio the chain is written where the files are, by *stamping* them "
+"in the **Files** window of the **Archive** workspace. A stamp is a small "
+"file kept next to the file it describes, so it travels with it, and it "
+"stays as it was issued: a correction is a new stamp. The **Transformation"
+" chain (DTC)** window draws the chain of a file; a **Graph** window in "
+"**DTC** mode draws the chains of the whole study (see :doc:`/how-"
+"to/sources/declare-provenance`)."
+msgstr ""
+
+msgid "The EM plane: the interpretation"
+msgstr ""
+
+msgid ""
+"The Extended Matrix is the plane of reasoning about the past. A "
+"stratigraphic unit is not a file: it is an interpretation, supported by "
+"documents. A document is read by an extractor, the extractor gives a "
+"value to a property, the property qualifies a unit, and the unit takes "
+"its place in the sequence. This is the *paradata* of the interpretation: "
+"the path from the evidence to the statement, recorded so that another "
+"scholar can follow it and disagree."
+msgstr ""
+
+msgid "Where the planes meet"
+msgstr ""
+
+msgid ""
+"The two planes touch at the documents. A document of the study, for "
+"example *D.14, photographs of the north wall*, belongs to the Extended "
+"Matrix: units cite it and extractors read it. Its files belong to the "
+"DTC: each one has its chain and its rights. In the **DTC** mode of a "
+"Graph window, the lowest lane, **Used in the record**, shows exactly this"
+" junction: the units and documents that cite the end of each chain."
+msgstr ""
+
+msgid "Keeping the planes apart has practical consequences."
+msgstr ""
+
+msgid ""
+"**A new version of a model leaves the interpretation unchanged.** A "
+"lighter mesh is a new step of the DTC; the unit it shows is the same "
+"unit."
+msgstr ""
+
+msgid ""
+"**A new interpretation leaves the files unchanged.** Reassigning a wall "
+"to another epoch changes the Extended Matrix; the photographs and their "
+"chain stay as they were."
+msgstr ""
+
+msgid ""
+"**Each plane answers its own question.** *Where does this file come "
+"from?* is answered by the chain. *Why do we say this wall is Roman?* is "
+"answered by the paradata."
+msgstr ""
+
+msgid "The attributor and the author"
+msgstr ""
+
+msgid ""
+"On both planes, a statement is an act signed by whoever makes it. The "
+"person who writes down the rights of a photograph is the **attributor**; "
+"the person who took it is the **author**, who may be absent, a colleague "
+"of another project, or unknown. EMStudio records the two separately, with"
+" the date of the attribution. The record can say *attributed by X on this"
+" day* without claiming that X took the photograph."
+msgstr ""
+
+msgid ""
+"The same distinction serves the drafts written with an AI. A paragraph "
+"proposed by a model carries the model as its author and enters the story "
+"only when a person verifies it; both contributions are recorded (see :doc"
+":`narrative-as-graph`)."
+msgstr ""
+
+msgid "Rights that hold"
+msgstr ""
+
+msgid ""
+"The licence and the embargo declared for a file are applied, not only "
+"noted. When a StratiGraph node serves the bytes of a room, an embargo "
+"still running keeps the file for those who work on the study, and the "
+"licence travels with every download. The rule is the same whichever "
+"window or program asks for the file."
+msgstr ""
+
