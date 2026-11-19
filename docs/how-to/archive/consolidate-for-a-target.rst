@@ -39,6 +39,9 @@ Open the list for a target
 Read the card of the target
 ---------------------------
 
+.. image:: /_static/screens/windows/consolidate.jpg
+   :alt: The Files window in the mode Assets after File ▸ Consolidate for…: the card of the target Heriverse / web, incomplete, with its bars for triangles, download and GPU memory, and the list of the assets grouped by container.
+
 Each target switched on has a card at the top of the view. It gives:
 
 - a word for the whole scene: **inside the band**, **outside the band**, or

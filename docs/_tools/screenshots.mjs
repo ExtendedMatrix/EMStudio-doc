@@ -13,6 +13,11 @@
 //   EMSTUDIO_URL     the page (default http://localhost:5336/em/studio/)
 //   EM_BRIDGE        a bridge serving the copy (default http://127.0.0.1:8936;
 //                    "none" to go without: no models, no Files on the disk)
+//   EM_NODE          a node's address, for the chip's menu (menus/who)
+//   EM_NODE_STUB     "1": the page is answered for EM_NODE's /v1/health by the
+//                    script itself, as a node answers it; so a neutral name
+//                    (https://node.example.org/em) stands in the picture and no
+//                    real node is asked
 //   PLAYWRIGHT_CORE  playwright-core's index.js (default: the one of EMStudio's audit)
 //   CHR              the Chromium headless shell
 //
@@ -87,15 +92,58 @@ const boxOf = async (page, sels, pad = 8) => {
   return { x, y, width: Math.min(W, Math.ceil(r.x1 + pad)) - x, height: Math.min(H, Math.ceil(r.y1 + pad)) - y };
 };
 
+/** a window of the workspace magnified (⛶) */
+const max = async (page, type) => { await page.locator(`.tile-area[data-surface-type="${type}"] .win-max`).first().click(); await sleep(2000); };
+
+/** the Files window of the Archive on a folder of the copy (relative to the
+ *  project's root, the folder above EM/) */
+const filesAt = async (page, rel) => {
+  const root = dirname(dirname(DOC));
+  await page.evaluate(([d]) => window.__EM_DRAG__.storageGo(d, "assets:1"), [`${root}/${rel}`]);
+  await page.waitForSelector('.tile-area[data-surface-type="storage"] .storage-row', { timeout: 60000 });
+  await sleep(1500);
+};
+const fileRow = (page, name) => page.locator(`.tile-area[data-surface-type="storage"] .storage-row[data-path$="/${name}"]`).first();
+
+/** files of one folder picked together, then «Put … on the shelf» from the menu */
+const shelve = async (page, rel, names) => {
+  await filesAt(page, rel);
+  for (const [i, n] of names.entries()) { await fileRow(page, n).click({ modifiers: i ? ["Meta"] : [] }); await sleep(300); }
+  await fileRow(page, names[0]).click({ button: "right" }); await sleep(600);
+  await page.locator('button[data-act="put-on-shelf"]').first().click(); await sleep(2000);
+};
+
+/** a region dragged on the image of the Viewer; with `q` the bubble is answered:
+ *  the search, then the property whose label starts with `prop` */
+const trace = async (page, [x0, y0, x1, y1], q, prop) => {
+  await page.mouse.move(x0, y0); await page.mouse.down(); await page.mouse.move(x1, y1, { steps: 10 }); await page.mouse.up();
+  await sleep(1500);
+  if (!q) return;
+  await page.keyboard.type(q); await sleep(1200);
+  if (prop) { await page.locator(".rd-bubble-opt", { hasText: prop }).first().click(); await sleep(2000); }
+};
+
+/** Sources, the document D.11 (the zenithal view) in the Viewer, magnified, the
+ *  tool Region chosen */
+const d11 = async (page) => {
+  await ws(page, "provenance");
+  const id = await page.evaluate(() => { const d = JSON.parse(window.__EM_DRAG__.docJson()); const g = d.graphs[d.active_graph_id]; return g.nodes.find((x) => x.name === "D.11" && x.node_type === "document")?.id; });
+  await page.evaluate((i) => { window.__EM_DRAG__.select(i); window.__EM_DRAG__.jumpTo(i); }, id);
+  await sleep(4000);
+  await max(page, "viewer");
+  await page.locator('.rd-tool[data-tool="rect"]').first().click(); await sleep(800);
+};
+
 const escape = async (page, n = 2) => { for (let i = 0; i < n; i++) { await page.keyboard.press("Escape"); await sleep(250); } };
 
 // ---------------------------------------------------------------- the shots
 //
 // name: the file under screens/ (section/name); clip: a selector (or list) to
-// cut the picture around, null for the whole window; png: true for small,
+// cut the picture around, null for the whole window; rect: a fixed box instead; png: true for small,
 // text-heavy cuts (menus, dialogs), JPEG q85 otherwise.
 
 const MODAL = ".modal:not(.hidden) .modal-card";
+const FILES = '.tile-area[data-surface-type="storage"]';
 const tool = (id) => async (p) => { await click(p, `#${id}`); await sleep(1500); };
 
 const SHOTS = [
@@ -105,7 +153,7 @@ const SHOTS = [
   { name: "workspaces/archive", wait: 8000, prep: async (p) => { await ws(p, "assets"); } },
   { name: "workspaces/narrative", prep: async (p) => { await ws(p, "narrative"); } },
   { name: "workspaces/space", wait: 8000, prep: async (p) => { await ws(p, "space"); } },
-  { name: "workspaces/sheets", wait: 5000, prep: async (p) => { await ws(p, "sheets"); await pick(p, "SU001"); } },
+  { name: "workspaces/sheets", wait: 5000, prep: async (p) => { await ws(p, "sheets"); await pick(p, "SU004"); } },
 
   // the menus of the window, and the chip's menu at the top right
   ...["file", "edit", "tools", "help"].map((m) => ({
@@ -152,6 +200,100 @@ const SHOTS = [
   { name: "dialogs/workspaces", png: true, clip: MODAL, prep: tool("btn-help-workspaces") },
   { name: "dialogs/em-legend", png: true, clip: MODAL, prep: tool("btn-help-legend") },
   { name: "dialogs/stratiminer", png: true, clip: "#tool-float", prep: tool("btn-tool-stratiminer") },
+
+  // Space: the survey of 2015 as a tileset, chosen in the Outliner, the camera
+  // brought closer with the zoom of the scene's bar
+  {
+    name: "workspaces/space-tileset", wait: 25000,
+    prep: async (p) => {
+      await ws(p, "space"); await sleep(4000);
+      await pick(p, "Survey_2015_egm2008", "representation_model");
+      const z = await p.evaluate(() => { const b = document.querySelectorAll('.tile-area[data-surface-type="scene"] .scn-nav-btn')[0].getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+      await p.mouse.move(z.x, z.y); await p.mouse.down(); await p.mouse.move(z.x, z.y - 120, { steps: 20 }); await p.mouse.up();
+    },
+  },
+  // the Outliner of the Space, magnified: the menu of a container with a tileset
+  {
+    name: "windows/outliner-containers", png: true, rect: { x: 8, y: 100, width: 1592, height: 460 },
+    prep: async (p) => {
+      await ws(p, "space"); await sleep(3000);
+      await max(p, "outliner");
+      const ol = '.tile-area[data-surface-type="outliner"]';
+      // the proxies of the first two epochs folded, so that the models show
+      for (let i = 0; i < 2; i++) {
+        await p.evaluate((ol) => { const r = [...document.querySelectorAll(ol + " .uo-row")].filter((e) => /^▾/.test(e.textContent.trim()) && e.querySelector(".uo-tw") && /\d+ \/ \d+/.test(e.textContent))[0]; r?.querySelector(".uo-tw")?.click(); }, ol);
+        await sleep(800);
+      }
+      await p.locator(ol + " .uo-row", { hasText: "Survey2015" }).first().locator(".uo-altchip").click();
+      await sleep(1000);
+    },
+  },
+
+  // Sources: two regions traced on D.11 and read; the bubble of the first
+  {
+    name: "dialogs/what-are-you-extracting", png: true, rect: { x: 600, y: 160, width: 460, height: 600 },
+    prep: async (p) => { await d11(p); await trace(p, [690, 510, 905, 725], "SU001"); },
+  },
+  {
+    name: "windows/viewer-regions", wait: 1500,
+    prep: async (p) => {
+      await d11(p);
+      await trace(p, [690, 510, 905, 725], "SU001", "Material");
+      await trace(p, [945, 655, 1100, 900], "SU002", "definition");
+      await p.locator(".rd-tool.on").first().click();
+    },
+  },
+  // the media of a document, in the Viewer
+  {
+    name: "windows/media", png: true, clip: '.tile-area[data-surface-type="viewer"]', wait: 4000,
+    prep: async (p) => {
+      await ws(p, "provenance");
+      const id = await pick(p, "D.01", "document");
+      await p.evaluate((i) => window.__EM_DRAG__.openMediaViewer(i), id);
+    },
+  },
+
+  // Archive: the Files window, the Shelf, the stamp, the versions, the targets
+  {
+    name: "windows/files", png: true, clip: FILES, wait: 2000,
+    prep: async (p) => {
+      await ws(p, "assets"); await filesAt(p, "EM/DosCo");
+      await p.locator(`${FILES} .files-tab[data-tab="info"]`).first().click();
+    },
+  },
+  {
+    name: "windows/shelf", png: true, clip: '.tile-area[data-surface-type="shelf"]', wait: 3000,
+    prep: async (p) => {
+      await ws(p, "assets");
+      await shelve(p, "EM/DosCo", ["D.06 TMplan1A.JPG", "D.07 Maison Carree Nimes.png", "D.08 Ordine_Corinzio.jpg", "D.11 Zenitale.jpg", "TM003.pdf", "TM009.pdf"]);
+      await shelve(p, "RB/cesium", ["Survey_2015_egm2008.3tz"]);
+      await max(p, "shelf");
+      await p.locator(".shelf-row", { hasText: "D.11 Zenitale" }).first().click();
+    },
+  },
+  {
+    name: "dialogs/stamp", png: true, clip: FILES,
+    prep: async (p) => {
+      await ws(p, "assets"); await max(p, "storage"); await filesAt(p, "EM/DosCo");
+      const row = fileRow(p, "D.11.01.jpg");
+      await row.click(); await sleep(600);
+      await row.click({ button: "right" }); await sleep(600);
+      await p.locator('button[data-act="compose-one"]').first().click(); await sleep(2000);
+      await p.locator('button.stamp-road[data-mode="origin"]').first().click();
+    },
+  },
+  {
+    name: "windows/files-optimise", png: true, clip: FILES,
+    prep: async (p) => {
+      await ws(p, "assets"); await filesAt(p, "EM/proxies");
+      await fileRow(p, "SU001.glb").click(); await sleep(800);
+      await p.locator(`${FILES} .files-tab[data-tab="optimize"]`).first().click();
+    },
+  },
+  {
+    name: "windows/consolidate", wait: 3000,
+    prep: async (p) => { await tool("btn-consolidate")(p); await sleep(40000); await max(p, "storage"); },
+  },
 ];
 
 // ---------------------------------------------------------------- run
@@ -176,6 +318,12 @@ async function fresh(shot) {
   const seed = { "emstudio.locale": LANG };
   if (shot.experimental) seed["emstudio.experimental"] = "1";
   if (shot.node && process.env.EM_NODE) seed["emstudio.settings"] = JSON.stringify({ sync: { hubUrl: process.env.EM_NODE } });
+  if (shot.node && process.env.EM_NODE && process.env.EM_NODE_STUB === "1") {
+    await ctx.route(`${process.env.EM_NODE.replace(/\/+$/, "")}/v1/health`, (r) => r.fulfill({
+      status: 200, contentType: "application/json", headers: { "access-control-allow-origin": "*" },
+      body: JSON.stringify({ service: "stratigraph-server", version: "1.6", auth: "password" }),
+    }));
+  }
   await page.addInitScript(([seed, token]) => {
     // the bridge's secret, as the desktop shell hands it to the page (the console)
     if (token) window.EM_BRIDGE_TOKEN = token;
@@ -209,7 +357,7 @@ for (const shot of SHOTS) {
     const dir = LANG === "en" ? join(OUT, section) : join(OUT, section, LANG);
     mkdirSync(dir, { recursive: true });
     const path = join(dir, `${base}.${shot.png ? "png" : "jpg"}`);
-    const clip = shot.clip ? await boxOf(page, shot.clip, shot.pad ?? 8) : undefined;
+    const clip = shot.rect ?? (shot.clip ? await boxOf(page, shot.clip, shot.pad ?? 8) : undefined);
     await page.screenshot({ path, clip, timeout: 90000, ...(shot.png ? {} : { type: "jpeg", quality: 85 }) });
     console.log(`✓ ${shot.name}`);
     done++;

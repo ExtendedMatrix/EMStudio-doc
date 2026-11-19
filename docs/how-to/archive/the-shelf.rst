@@ -16,6 +16,9 @@ In the **Archive** workspace the **Shelf** sits under the **Files** window. Its
 list fills the left half; the right half shows the preview of the entry you
 choose.
 
+.. image:: /_static/screens/windows/shelf.png
+   :alt: The Shelf magnified with seven entries: a tileset, two PDF plates and four pictures of DosCo; the pills Images, Documents, Tilesets, to stamp, in use in the graph and on the disk; D.11 Zenitale.jpg chosen, with its preview, its facts and its rights on the right.
+
 Put entries on the shelf
 ------------------------
 

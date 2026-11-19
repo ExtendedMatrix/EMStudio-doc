@@ -23,6 +23,9 @@ Before you start
 Trace first, then say what you read
 -----------------------------------
 
+.. image:: /_static/screens/dialogs/what-are-you-extracting.png
+   :alt: The bubble What are you extracting? over a region just traced on D.11: SU001 written in the search field, and the properties of SU001 listed, Material first.
+
 #. In the **Outliner**, under **Documents**, select the document, for example
    D.11, the zenithal view of the Great Temple. The **Viewer & card** shows the
    image. The pin (📌) in the Viewer's bar keeps it on this document while you
@@ -66,6 +69,9 @@ which holds the two readings together.
 
 What you get
 ------------
+
+.. image:: /_static/screens/windows/viewer-regions.jpg
+   :alt: The Viewer & card magnified on D.11, the zenithal view of the Great Temple, with two regions traced and labelled D.11.03 and D.11.04, and the tools Region and Polygon in the bar.
 
 One step of the history, which ``Edit ▸ Undo`` takes back, makes:
 

@@ -29,6 +29,9 @@ Stamp a file that is an origin
 An origin is a file born here: a photograph taken in the field, a scan made in
 the laboratory, a file downloaded from an archive.
 
+.. image:: /_static/screens/dialogs/stamp.png
+   :alt: The Files window magnified on the folder DosCo, the file D.11.01.jpg chosen, and the stamp form on the right: Where does it come from?, with It is an origin and It comes from other files, then Kind, Instrument, Operator, Date, Title and Description.
+
 #. In the **Files** window, right-click the file and choose
    **Stamp this file…**. To stamp several files as one act, pick them first; the
    menu then offers to stamp the picked files together. The **Files** window

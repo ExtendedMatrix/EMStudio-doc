@@ -78,28 +78,41 @@ git -C ~/Documents/GitHub/EMStudio archive v1.6.0-dev.136 | tar -x -C /tmp/emstu
 cd /tmp/emstudio-136/frontend && npm ci && npm run build
 npx vite preview --port 5336 --strictPort &          # the page: localhost:5336/em/studio/
 
-# a COPY of Templu Mare (EM/ with DosCo and proxies, RM/; RB and SB are not needed)
-cp -R ".../TempluMare_v2_for_3DR_2026-10-06/EM" ".../RM" /tmp/TempluMare/
+# a COPY of Templu Mare in a folder with a speaking name (the pictures show its
+# path): EM/ with DosCo and proxies, RM/, and the lightest tileset of RB/cesium
+D=~/EMStudio-examples/TempluMare
+mkdir -p "$D/RB/cesium"
+cp -R ".../TempluMare_v2_for_3DR_2026-10-06/"{EM,RM,LEGGIMI.md,SHIFT.txt} "$D/"
+cp ".../TempluMare_v2_for_3DR_2026-10-06/RB/cesium/Survey_2015_egm2008.3tz" "$D/RB/cesium/"
 
-# a bridge of the same tag on the copy, with a HOME of its own, so that the
-# person's ~/.s3dgraphy is never read or written; the secret opens the console
-cd /tmp/emstudio-136 && HOME=/tmp/man06/home EM_BRIDGE_TOKEN=man06-local \
+# a bridge of the same tag on the copy, with a HOME of its own (its path shows in
+# the Extensions window, so a neutral one), so that the person's ~/.s3dgraphy is
+# never read or written; the secret opens the console
+cd /tmp/emstudio-136 && HOME=/Users/Shared/EMStudio EM_BRIDGE_TOKEN=bench-local \
   PYTHONPATH=~/Documents/GitHub/dtcstamp \
   ~/Documents/GitHub/s3Dgraphy/.venv/bin/python tools/em_bridge.py \
-  --port 8936 --s3dgraphy ~/Documents/GitHub/s3Dgraphy/src --fs-root /tmp/TempluMare &
+  --port 8936 --s3dgraphy ~/Documents/GitHub/s3Dgraphy/src --fs-root "$D" &
 
 # the example package of the Extensions and Vocabularies windows, in that HOME
-python -m s3dgraphy.extensions build ~/Documents/GitHub/em-profiles/examples/example-toolmarks --out /tmp/man06/pkgs
-HOME=/tmp/man06/home python -m s3dgraphy.extensions install /tmp/man06/pkgs/example-toolmarks-0.1.0.zip
+python -m s3dgraphy.extensions build ~/Documents/GitHub/em-profiles/examples/example-toolmarks --out /tmp/pkgs
+HOME=/Users/Shared/EMStudio python -m s3dgraphy.extensions install /tmp/pkgs/example-toolmarks-0.1.0.zip
 ```
 
 Then, from the root of EMStudio-doc:
 
 ```sh
-EM_DOC=/tmp/TempluMare/EM/TempluMare_v11.em.json EM_BRIDGE_TOKEN=man06-local \
-EM_NODE=<a node's address, for the chip's menu> \
+EM_DOC=~/EMStudio-examples/TempluMare/EM/TempluMare_v11.em.json EM_BRIDGE_TOKEN=bench-local \
+EM_NODE=https://node.example.org/em EM_NODE_STUB=1 \
   node docs/_tools/screenshots.mjs --lang en
 ```
+
+`EM_NODE_STUB=1` makes the script answer the page's `/v1/health` for `EM_NODE`
+itself, as a node answers it: the chip's menu (`menus/who`) shows a neutral name
+and no real node is asked.
+
+Some shots act on the copy as a person would, in the page only: they put seven
+files on the Shelf, trace two regions on D.11, open the stamp form. Nothing is
+saved: the `.em.json` of the copy is never written.
 
 ## Languages
 
@@ -113,5 +126,6 @@ pages never change: a translated manual needs only the run with its `--lang`.
 
 Pictures of the desktop alone (the macOS menu bar, a window detached from the main
 one, the system's file and print dialogs) are not taken here: the bench is the web
-build in a browser. They are listed in the report of MICRO-MAN06 for a person to
-take by hand.
+build in a browser. A room on a node (it needs a sign-in) and the live sync with
+Blender are not taken either. They are listed in the reports of MICRO-MAN06 and
+MICRO-MAN08 for a person to take by hand.

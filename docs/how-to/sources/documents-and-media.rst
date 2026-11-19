@@ -43,6 +43,9 @@ strip in the **Inspector**. :kbd:`Esc` cancels the drag.
 Look at the media of a node
 ---------------------------
 
+.. image:: /_static/screens/windows/media.png
+   :alt: The viewer of the images in the Sources workspace on D.01: the grid of its ten media grouped by folder, each with its document and its kind, and the buttons Make a group…, Give a name…, Census as a document… and Place in the Space.
+
 #. Select a unit or a document. The strip shows the first pictures, the
    frontispiece first, and the count, for example **33 media**, with the number
    of models beside it when there are some.

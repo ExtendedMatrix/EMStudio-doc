@@ -29,6 +29,9 @@ Before you start
 Make a version of one model
 ---------------------------
 
+.. image:: /_static/screens/windows/files-optimise.png
+   :alt: The Files window on the folder proxies with SU001.glb chosen and the tab Optimise open: Variants of a model with its five destinations, the engine gltfpack, and the button Optimise 1 model → 1 variant.
+
 #. In the **Files** window, mode **Disk**, choose one or more models (``.glb``,
    ``.gltf`` or ``.obj``) and open the **Optimise** tab of the tools panel.
 #. Under **Variants of a model**, choose the destination: **Preview / catalogue**,

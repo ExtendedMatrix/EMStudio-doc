@@ -122,6 +122,9 @@ current use. The same choice is in the **Inspector** and in the **View** panel
 of the scene (:kbd:`N`) as **Models**, **Tileset** and **Automatic**. The choice
 is yours, kept on this computer; the graph does not change.
 
+.. image:: /_static/screens/windows/outliner-containers.png
+   :alt: The Outliner of the Space magnified: under the epoch 2015, Models holds the container Survey2015, whose menu offers Container: the models, the tileset, automatic, or by use.
+
 To make a tileset the alternative of a container, select the tileset and open its
 section **Alternative** in the **Inspector**: EMStudio measures which models it
 covers and proposes the container they belong to, or makes one.

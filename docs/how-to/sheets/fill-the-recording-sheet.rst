@@ -24,7 +24,7 @@ Open the sheet of a unit
 ------------------------
 
 .. image:: /_static/screens/workspaces/sheets.jpg
-   :alt: The Sheets workspace with the recording sheet of SU001: the head, the boxes filled from the graph, the boxes outside the graph hatched.
+   :alt: The Sheets workspace with the recording sheet of SU004: the head, the boxes filled from the graph, the boxes outside the graph hatched.
 
 #. Choose the **Sheets** workspace in the bar across the top of the window.
    Its question is **What does the recording sheet say of this unit?**

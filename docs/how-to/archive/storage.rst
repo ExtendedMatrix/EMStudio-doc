@@ -27,6 +27,9 @@ Before you start
 Walk the folders
 ----------------
 
+.. image:: /_static/screens/windows/files.png
+   :alt: The Files window in the mode Disk on the folder DosCo of Templu Mare: the places on the left (Project, Favourites, Recent, Allowed folders), the list of the files in the middle, and the tab Info on the right with the gestures of this folder.
+
 #. In the mode menu of the **Files** window, choose **Disk**.
 #. On the left, the **Places**: **Project** (the folders of the EM standard
    tree of the open project, see :doc:`/how-to/files/project-folder`),

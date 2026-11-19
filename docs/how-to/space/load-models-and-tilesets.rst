@@ -127,6 +127,9 @@ provenance; otherwise the section suggests stamping the folder first.
 See what the scene holds
 ------------------------
 
+.. image:: /_static/screens/workspaces/space-tileset.jpg
+   :alt: The Space workspace with the tileset Survey_2015_egm2008 chosen in the Outliner and drawn in the 3D scene with the proxies over it; the chip Tileset · auto at the foot of the scene and the Inspector of the model on the right.
+
 - The line above the scene sums up the epoch shown: its name, how many models
   it has, and how many of its units have a proxy. A click on it opens the epoch in every
   **Outliner**, where the epoch's **Models**, **Proxies**, **RMDoc** and **RMSF**

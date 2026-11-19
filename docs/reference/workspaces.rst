@@ -109,7 +109,7 @@ mode and the **Inspector** complete it on the right. A unit picked in the scene
 is the unit of all four windows.
 
 .. image:: /_static/screens/workspaces/space.jpg
-   :alt: The Space workspace: the Outliner with the proxies of the epoch, the 3D scene with the proxies of the temple, the Tabular window on Models and proxies under it, the Matrix and the Inspector on the right.
+   :alt: The Space workspace: the Outliner with the proxies of the epoch, the 3D scene with the proxies of the temple over the tileset of the 2015 survey, the Tabular window on Models and proxies under it, the Matrix and the Inspector on the right.
 
 Sheets
 ~~~~~~
@@ -121,7 +121,7 @@ follow the same unit: the **3D scene** with its proxy, and a **Graph** window in
 underneath shows the unit's photographs and documents.
 
 .. image:: /_static/screens/workspaces/sheets.jpg
-   :alt: The Sheets workspace: the recording sheet of SU001 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card with its two pictures underneath.
+   :alt: The Sheets workspace: the recording sheet of SU004 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card underneath, empty because the unit has no pictures yet.
 
 Change a workspace
 ------------------
