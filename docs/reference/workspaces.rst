@@ -3,109 +3,150 @@
 Workspaces
 ==========
 
-.. TODO MAN02: rewrite on the six workspaces of workspace.ts; note on the two parked ones. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*The six workspaces of EMStudio, their questions and their starting arrangements, and the workspaces you make yourself.*
 
-The top of the EMStudio window is a row of six tabs — **Documentation · Graph ·
-DTC · Comparisons · Narrative · Annotator** — followed by a ``+``. Each tab is an
-**arrangement**: a named layout of windows for a kind of work, in the spirit of a
-Blender workspace. They are all the same kind of thing (there is no divider and no
-"views" section): switching tab re-lays the windows for that task. The ``+`` opens
-a new, custom arrangement.
+A **workspace** is an arrangement of windows made for one activity. EMStudio
+comes with six, in the bar across the top of the window. Each answers one
+question, and its windows are the ones that answer it; the question appears when
+you hold the pointer on the workspace's name. ``Help ▸ Workspaces…`` shows the
+same overview inside the application.
 
-Every window inside an arrangement keeps a **type selector** at the top-left of its
-toolbar: you can turn any window into a Graph, Narrative, Table, EMtree, Inspector,
-Doc, Viewer, Storage, Annotator or Shelf. The arrangements below are the defaults;
-you are free to recompose them.
+The study is the same in every workspace. A selection made in one window is the
+selection of every window that shows it, in this workspace and in the others.
+:doc:`/explanation/workspaces-are-questions` explains the idea behind the
+arrangement.
 
-.. note::
+The six workspaces
+------------------
 
-   The screenshots on this page use the **Templu Mare** case study (215 nodes, 536
-   edges, 3 epochs), an open dataset shared across Extended Matrix courses and
-   demos.
+.. list-table::
+   :header-rows: 1
+   :widths: 16 34 50
 
-Documentation
--------------
+   * - Workspace
+     - Question
+     - Windows at the start
+   * - **Stratigraphy**
+     - What is there, in what order, and does it hold?
+     - Outliner · Graph in **Matrix** mode · Inspector
+   * - **Sources**
+     - Where does this datum come from?
+     - Outliner · Viewer & card · Graph in **Matrix** mode · Inspector
+   * - **Archive**
+     - Which files do I have, and what became a document?
+     - Outliner · Files (on the **Disk**) · Shelf · Transformation chain (DTC)
+   * - **Narrative**
+     - How do I tell it, and what does it rest on?
+     - Index · Outliner · Narrative · Graph in **Matrix** mode · Inspector
+   * - **Space**
+     - Where is it, and what shape does it have in each epoch?
+     - Outliner · 3D scene · Tabular on the sheet **Models and proxies** · Graph in
+       **Matrix** mode · Inspector
+   * - **Sheets**
+     - What does the recording sheet say of this unit?
+     - Outliner · Sheet · 3D scene · Graph in **Matrix** mode · Viewer & card
 
-Where material comes in. The default arrangement is a **Storage** window in
-Filesystem mode (the disk, fenced to allowed folders), a second **Storage** window
-in S3 mode (the room's object store), and the **Inspector**.
+Stratigraphy
+~~~~~~~~~~~~
 
-.. image:: ../_static/interface/01_documentation.jpg
-   :width: 100%
-   :alt: The Documentation tab — filesystem Storage, S3 Storage, and the Inspector
+The workspace where a study opens. The **Outliner** runs down the left side; the
+**Graph** window, in **Matrix** mode, takes the middle; the **Inspector** stands
+on the right. The warnings about the sequence are in the status bar (the ⚠ sign)
+and in the **Warnings** sheet of the Tabular window.
 
-The object store belongs to a *room*: in Standalone there is nothing to publish to,
-so it explains itself rather than showing an empty box.
+Sources
+~~~~~~~
 
-Graph
------
+The workspace of documents and of what is extracted from them. The **Outliner**
+on the left lists the documents under **Documents**; next to it the
+**Viewer & card** shows the document or image chosen, where you read it, trace
+regions on it and extract from it. A **Graph** window in **Matrix** mode follows
+on the right, and the **Inspector** shows the fields of the document and its
+extractions.
 
-The cockpit of interpretation. The default arrangement is the **Graph** window
-(Matrix Mode by default, with Graph and DTC as further modes of the same window), a
-**Table** below it, and the panels **EMtree** (Multigraph / Outliner) and
-**Inspector** (Inspector / Log) to the side.
+Archive
+~~~~~~~
 
-.. image:: ../_static/interface/02_graph.jpg
-   :width: 100%
-   :alt: The Graph tab — the stratigraphic matrix of Templu Mare with the epoch swimlanes
-
-The matrix is laid out automatically by an epoch-driven engine; groups fold into a
-readable diagram, and a minimap tracks where you are in a large graph.
-
-DTC
----
-
-Provenance. The **Graph** window in **DTC mode** shows the documentation corpus as a
-directed graph — acquisitions, derivations and attributions — beside the
-**Inspector**.
-
-.. image:: ../_static/interface/03_dtc.jpg
-   :width: 100%
-   :alt: The DTC tab — the documentation/provenance corpus in DTC mode, and the Inspector
-
-Empty here means no documentation yet: files dropped in the Documentation tab arrive
-as a batch with their acquisition, and a derivation can be declared from there.
-
-Comparisons
------------
-
-What is not yours. The **Shelf** (the curated list of comparanda — your own study,
-your own Heritage Digital Twin, other Heritage Digital Twins), a **Viewer** to
-preview a selected resource, and the **Inspector**.
-
-.. image:: ../_static/interface/04_comparisons.jpg
-   :width: 100%
-   :alt: The Comparisons tab — the Shelf of comparanda, a Viewer, and the Inspector
-
-The shelf is a saved list you build, not a computed view of a folder: drag files in
-from a Storage window, or paste a URI.
+The workspace of the files. The **Outliner** is on the left. In the middle, the
+**Files** window shows the disk, with the **Shelf** under it: the list of
+resources the study works from. On the right, a **Graph** window fixed on the
+**Transformation chain (DTC)** draws the steps that produced each file. The
+Archive has no Inspector, because a file is not yet a node of the graph: the
+**Files** window shows the card of the document picked in the chain.
 
 Narrative
----------
+~~~~~~~~~
 
-Telling the story. The **Narrative** window — the graph read as prose, with a
-palette to add chapters and to drag *views* onto an embed — beside a **Viewer**. The
-narrative auto-scaffolds from the epochs (here, a chapter per epoch of Templu Mare,
-each with a live matrix embed of its units), and the toolbar carries **Chapter ·
-Insert · Export · IA** for authoring, AI-assisted drafts, and export to HTML, Word,
-LaTeX and Jupyter.
+The workspace of the story. The left column holds the **Index** of the story
+above the **Outliner**. The **Narrative** window, the page, is in the middle,
+open for writing. On the right, a **Graph** window in **Matrix** mode follows the
+chapter being read, beside the **Inspector**, which also carries the tools of
+the page.
 
-.. image:: ../_static/interface/05_narrative.jpg
-   :width: 100%
-   :alt: The Narrative tab — the auto-scaffolded narrative of Templu Mare with a live matrix embed
+Space
+~~~~~
 
-Embeds are *references*, not copies: the matrix of an epoch shown here stays in sync
-with the graph.
+The workspace of the places and the shapes. The **Outliner**, on the left, is
+synchronised with the 3D view. The **3D scene** shows the models of an epoch and
+the proxies of its units, with the **Tabular** window under it on the sheet
+**Models and proxies**: what is there and what is missing. A **Graph** window in **Matrix**
+mode and the **Inspector** complete it on the right. A unit picked in the scene
+is the unit of all four windows.
 
-Annotator
----------
+Sheets
+~~~~~~
 
-Annotating images. The **Annotator** window (an image and the regions traced on it),
-a **Viewer**, and the **Inspector**.
+The workspace of the recording sheet. The **Outliner** is on the left: pick a
+unit and the **Sheet** in the middle shows it. On the right, two small windows
+follow the same unit: the **3D scene** with its proxy, and a **Graph** window in
+**Matrix** mode framed on the unit and the units it touches. The **Viewer & card**
+underneath shows the unit's photographs and documents.
 
-.. image:: ../_static/interface/06_annotator.jpg
-   :width: 100%
-   :alt: The Annotator tab — the annotator surface, a Viewer, and the Inspector
+Change a workspace
+------------------
 
-Select a document or a resource that points at an image to annotate it; its modes
-control what the pointer does (look, trace, mask).
+Every workspace can be changed: a window can become another type, an area can be
+divided in two, two areas can be joined (see :doc:`windows`). The workspace keeps
+the arrangement you give it, also after EMStudio is closed and opened again.
+
+One of the six workspaces, once changed, says so: its name turns to italics,
+with a small ↺ beside it (*reshaped: ↺ restores the space as it comes*). Click the ↺, or right-click the name and choose
+**Reset the arrangement**, to put the workspace back as EMStudio first arranged
+it. The windows you added or moved go away.
+
+Workspaces of your own
+----------------------
+
+You can add workspaces to the bar, for an arrangement you use often.
+
+New
+   Arrange the current workspace the way you want, then press the **+** at the
+   end of the bar (*New workspace from this arrangement*) and give the new
+   workspace a name. It starts as a copy of the arrangement in front of you.
+
+Rename
+   Double-click the name of a workspace, or right-click it and choose
+   **Rename…**. The six workspaces of EMStudio can be renamed too: the name you
+   give replaces the one of the dictionary on this computer.
+
+Reset
+   Right-click the name and choose **Reset the arrangement**.
+
+Remove
+   Right-click the name of a workspace you made and choose **Remove the space**.
+   The message that confirms it has an undo, which brings the workspace back
+   with its arrangement. The six workspaces of EMStudio stay in the bar.
+
+The arrangements are kept by the application on this computer, in the browser's
+storage on the web (see :doc:`file-locations`): they belong to the person working,
+not to the study, and they are never written into the ``.em.json``.
+
+Two arrangements outside the bar
+--------------------------------
+
+Two further arrangements exist in the code and are not in the bar in 1.6:
+**DTC**, the provenance graph of the corpus with the Inspector beside it, and
+**Comparisons**, the shelf with a viewer and the Inspector. They are kept with
+their arrangements, so that they can come back as they were. Meanwhile the
+transformation chain lives in the **Archive** workspace and in the **DTC** mode
+of any Graph window, and the shelf lives in the **Archive** workspace.
