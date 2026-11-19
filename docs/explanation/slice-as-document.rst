@@ -42,8 +42,11 @@ is always the same:
 The third axis, **geometry**, says who places the slice in space, and it changes
 from survey to survey:
 
-- *reality based* when the instrument gives the coordinates (a GeoTIFF with its
-  georeference, for example);
+- *reality based* when the instrument gives the coordinates: a GeoTIFF with
+  its georeference, or the coordinates that the geophysics program prints on
+  its screen captures, copied into the panel as they are (**The origin,
+  according to**: **the instrument**). The person only transcribes them; the
+  position is still the instrument's;
 - *observable* when the position comes from another documentation, such as the
   plan of the report or a figure;
 - *asserted* when it was placed by eye.

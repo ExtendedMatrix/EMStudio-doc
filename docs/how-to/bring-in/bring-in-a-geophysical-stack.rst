@@ -84,6 +84,42 @@ the survey's report, and leave the rest empty.
    for example from the report's plan.
 #. Press **Import**.
 
+.. _how-to-geophysics-screen-captures:
+
+A stack of screen captures
+--------------------------
+
+Some surveys reach you only as captures of the screen of the geophysics
+program: one picture for each slice, with the plot, its axes and its ticks
+(the 601 slices of UA Ilici, Alcudia, are such a stack). The pictures carry no
+coordinates, but the plot does: say once, in the panel, what its ticks stand
+for, and the package places every capture.
+
+#. Open the folder of the captures, as above.
+#. **Captures: x ticks**: what the first and last ticks of the plot stand for
+   on x, in metres, for example ``-50 25``.
+#. **Captures: y ticks**: the same on y, for example ``-22 37``.
+#. **Captures: frame in pixels**: leave it empty, and the frame is measured on
+   the first capture; or write the left, top, right and bottom pixels of those
+   ticks, for example ``610, 170, 1303, 715``, when it is not found.
+#. **Origin (E, N)** and **EPSG**, when the program prints where x = 0, y = 0
+   lies, for example ``701806.741, 4234824.081`` in ``25830``.
+#. **The origin, according to**: **the instrument (its own coordinates)** when
+   you copy the coordinates of the program; **a documentation (figure, plan,
+   report)**, or **by eye**.
+#. Press **Import**.
+
+Writing the ticks is enough: **Format** becomes **Screen captures** by itself.
+**What it is** says the frame before you import, for example **Frame:
+measured on the first capture: x -50…25 m, y -22…37 m**, or what is still
+missing.
+
+.. image:: /_static/screens/geophysics/captures-frame.png
+   :alt: What it is in the Geophysical stack panel for a stack of seven screen captures: format screen captures, 7 slices, depths 0.00–0.03 m, method GPR, and the frame measured on the first capture, x -50…25 m, y -22…37 m.
+
+An origin needs its two numbers: an EPSG or a source alone places nothing, and
+the panel says so. The black of the captures becomes transparent.
+
 What you get
 ------------
 
@@ -132,6 +168,11 @@ under the ground, at their depth, and the sections stand upright beside them.
 - The row also says where the stack is drawn. A stack with an origin, in a study
   georeferenced in the same EPSG, lies in the world; otherwise it is drawn **in
   its own frame**, and the row says why.
+
+- The **Outliner** of the Space has a row for each stack drawn, under **No
+  epoch** ▸ **Slice stacks**, with its slices and sections (``6 slices, 6
+  sections``). Its eye shows or hides the stack; a click selects the stack's
+  acquisition.
 
 Only the pictures of the planes shown are loaded, and a plane that is hidden
 gives its memory back.

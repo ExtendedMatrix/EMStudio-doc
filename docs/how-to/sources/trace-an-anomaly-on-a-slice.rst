@@ -32,15 +32,27 @@ of the package is shown.
    :alt: The Space seen from above on a slice of the Basilica Iulia: the bar Areal anomaly on a slice: 3 points with its tick and cross, and below it the depth cursor at D.03 · 3.00–3.50 m below ground (3/6).
 
 #. Press the tool of the shape you read.
-#. Click on the slice: each click is a point of the anomaly, and the bar counts
-   them, for example **Linear anomaly on a slice: 2 points**. A click elsewhere
-   than on a slice of the stack is answered **Click on a slice of the stack**.
+#. Click on the slice: each click is a point of the anomaly, drawn at once on
+   the plane in yellow, and the bar counts them, for example **Linear anomaly on
+   a slice: 2 points**. A click elsewhere than on a slice of the stack is
+   answered **Click on a slice of the stack**.
 #. A point is written at the first click. Close a line or an area with a double
    click, with **✓** or with :kbd:`Enter`.
-#. To stop without writing, press **✕** or :kbd:`Esc`.
+#. To stop without writing, press **✕** or :kbd:`Esc`: the yellow points go.
+
+.. image:: /_static/screens/geophysics/trace-pending.png
+   :alt: A slice of the Basilica Iulia seen from above: a line of three yellow points being traced, the bar Linear anomaly on a slice: 3 points with its tick and cross, and a cyan line of an anomaly already written.
+
+Once written, the anomaly stays drawn on the plane in cyan, on each slice it
+was read on: a dot, a line, or the closed outline of an area, with its
+vertices.
+
+.. image:: /_static/screens/geophysics/trace-mark.png
+   :alt: The same slice after the tick: the new line is drawn in cyan beside the earlier anomaly, and the bar Linear anomaly on a slice: 0 points waits for the next trace.
 
 The trace is written as one step: ``Edit ▸ Undo`` takes it all back. The same
-trace written twice adds nothing.
+trace written twice adds nothing. A tool stays armed only on its document: when
+the Space shows another study, it is put down.
 
 Read the anomaly on several slices
 ----------------------------------
