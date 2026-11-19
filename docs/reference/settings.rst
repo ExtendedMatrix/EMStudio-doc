@@ -162,8 +162,8 @@ AI provider
          :sync: web
 
          The key applies to the session only: it lives in the memory of
-         EMStudio's local service while the service is up, and is not saved.
-         Where the local service does not answer, the field cannot be used.
+         EMStudio's bridge while the bridge runs, and is not saved. The field
+         works while the bridge answers.
 
 Developer
    **Show node UUIDs (inspector)** shows each node's identifier in the
@@ -202,5 +202,5 @@ The last card is **Blender**. It is not an add-on that EMStudio downloads: it is
 the Blender of this machine, with its own add-ons (EM Tools, 3D Survey
 Collection). EMStudio calls it in the background and leaves it as it is.
 
-The add-ons are managed by EMStudio's local service: where the service does not
-answer, the tab says so and lists nothing.
+The add-ons are managed by EMStudio's bridge: when the bridge does not answer,
+the tab says so.

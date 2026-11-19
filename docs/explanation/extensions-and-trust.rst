@@ -76,9 +76,10 @@ A signature guarantees two things:
 - **that the bytes arrived unchanged**: an archive altered on the way, or on the
   server, no longer matches its signature and is refused.
 
-A signature says nothing about the quality or the intentions of the code. It
-tells you that these are the bytes the repository published; whether the
-repository deserves your trust is a judgement about the people behind it.
+A signature speaks of origin and integrity: these are the bytes the repository
+published. The quality and the intentions of the code are a separate question,
+and whether the repository deserves your trust is a judgement about the people
+behind it.
 
 Reviews
 -------

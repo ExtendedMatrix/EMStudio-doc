@@ -110,7 +110,7 @@ easily than a folder of thousands of tiles.
          :sync: desktop
 
          The archive is written beside the folder, with the folder's name, by
-         EMStudio's local service on your computer.
+         EMStudio's bridge on your computer.
 
       .. tab-item:: Web
          :sync: web

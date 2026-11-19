@@ -20,8 +20,8 @@ Before you start
   **Node** that answers, and **Sign in** on it (see :doc:`sign-in`). If one is
   missing, the gesture opens the menu at that step and goes on by itself once it
   is done.
-- The files are read where they are on your computer, by EMStudio's helper
-  service (the *bridge*). The desktop application starts its own. In the web
+- The files are read where they are on your computer, by EMStudio's local
+  service, the bridge. The desktop application starts its own. In the web
   version, the page needs a bridge running on your computer: without one, the
   window below stops with **The room importer stopped:** and the reason.
 

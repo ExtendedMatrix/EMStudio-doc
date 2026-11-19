@@ -36,8 +36,8 @@ of these is an act, and the DTC records it in three kinds of statement.
 
 In EMStudio the chain is written where the files are, by *stamping* them in the
 **Files** window of the **Archive** workspace. A stamp is a small file kept next
-to the file it describes, so it travels with it, and it is never corrected: a
-mistaken stamp is followed by a new one. The **Transformation chain (DTC)**
+to the file it describes, so it travels with it, and it stays as it was
+issued: a correction is a new stamp. The **Transformation chain (DTC)**
 window draws the chain of a file; a **Graph** window in **DTC** mode draws the
 chains of the whole study (see :doc:`/how-to/sources/declare-provenance`).
 

@@ -24,7 +24,7 @@ Two places hold the machine's part:
 
 On the desktop both are on your computer. On the web, the page's storage is in
 your browser, for the address of the node you opened EMStudio from, and the
-folders of the local service are those of the machine where that service runs.
+folders of the bridge are those of the machine where the bridge runs.
 
 In the page's storage
 ---------------------
@@ -64,13 +64,13 @@ in a place made for secrets.
 
 * On the desktop it goes into the **system keychain** (the Keychain on macOS, the
   Credential Manager on Windows, the Secret Service on Linux), under the name
-  ``org.extendedmatrix.emstudio``, and it is handed to the local service when the
-  service starts. Settings can replace or remove it, never read it back.
-* Where there is no keychain, the key lives in the memory of EMStudio's local
-  service only, and disappears when the service stops.
+  ``org.extendedmatrix.emstudio``, and it is handed to the bridge when the bridge
+  starts. Settings can replace or remove it, never read it back.
+* Where there is no keychain, the key lives in the memory of EMStudio's bridge
+  only, and disappears when the bridge stops.
 
-The local service's folders
----------------------------
+The bridge's folders
+--------------------
 
 These folders are created when they are first needed.
 

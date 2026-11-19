@@ -44,7 +44,7 @@ question you are asking at that moment, and the study is the same there.
 
 A question also says what belongs in a workspace. *Where does this datum come
 from?* needs the documents, the viewer that shows them and the matrix where
-their extractions end up; it does not need the 3D scene. Each workspace opens
+their extractions end up. Each workspace opens
 the windows that answer its question, and only those.
 
 One study, many windows
@@ -70,8 +70,8 @@ as it came. An arrangement you use often can become a workspace of your own,
 with the **+** at the end of the bar.
 
 The arrangements belong to the person who works, not to the study: they are
-kept on the computer (in the browser's storage on the web) and never written
-into the ``em.json``. Two people can read the same study, each in the
+kept on the computer (in the browser's storage on the web), apart from the
+``em.json``. Two people can read the same study, each in the
 arrangement that suits their own questions.
 
 The window types, their modes and the six starting arrangements are described

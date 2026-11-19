@@ -44,7 +44,7 @@ save it here and the draft starts by itself**.
          :sync: desktop
 
          The key goes into the system keychain and stays there for the next
-         sessions. EMStudio's local service restarts to receive it, so the key
+         sessions. EMStudio's bridge restarts to receive it, so the key
          cannot be saved while a draft is being written. Beside the field EMStudio shows
          **✓ key set**.
 

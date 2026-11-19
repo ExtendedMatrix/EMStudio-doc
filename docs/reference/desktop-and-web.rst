@@ -113,7 +113,7 @@ saves by downloading. The table below lists every difference of version
        application. The saved nodes and the address you type are checked.
    * - The AI key (**Settings… ▸ Advanced ▸ API key**)
      - Kept in the system's keychain.
-     - Kept by the helper service for the session.
+     - Kept by the bridge for the session.
    * - **Pack this tileset into a .3tz**
      - Available.
      - Available in the **Files** window for a folder served by the helper

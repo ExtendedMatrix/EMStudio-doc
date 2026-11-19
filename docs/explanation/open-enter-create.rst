@@ -14,13 +14,13 @@ The three verbs
 ---------------
 
 **Open** a file from the disk.
-   ``File ▸ Open…`` reads an ``em.json`` of yours. No server and no network are
-   involved: you are the keeper of the file, and saving writes it back where it
+   ``File ▸ Open…`` reads an ``em.json`` of yours. Your computer is all it
+   needs: you are the keeper of the file, and saving writes it back where it
    came from. This is how EMStudio works on its own.
 
 **Enter** a room.
-   A room is a study that lives on a node. Entering it does not download a
-   file: you attach to the room, receive its graph, and from then on what you
+   A room is a study that lives on a node. Entering it attaches you to the
+   room where the study already is: you receive its graph, and from then on what you
    write is written there, for every member, under your name. The rooms of a
    node are listed in the chip's menu, under **My space**.
 

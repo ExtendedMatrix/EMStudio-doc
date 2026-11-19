@@ -16,7 +16,7 @@ computer.
 Before you start
 ----------------
 
-- Use the desktop application: the console works through its local service.
+- Use the desktop application: the console works through its bridge.
 - Turn on the experimental functions: ``Settings… ▸ Advanced``, section
   **Experimental functions**, tick **Turn on the experimental functions on this
   machine**, press **Save**, and reload EMStudio when it asks. Off, the console

@@ -26,7 +26,7 @@ The graph: File ▸ Export
    ``File ▸ Export ▸ Turtle (.ttl)`` writes the graph as RDF in the Turtle syntax,
    mapped onto CIDOC CRM and its extensions, for a triple store or a SPARQL
    endpoint. The projection is made by the s3Dgraphy library, the same one every
-   EM tool uses, through EMStudio's local service. This is the semantic tier of
+   EM tool uses, through EMStudio's bridge. This is the semantic tier of
    the study (see :doc:`/explanation/two-tier`).
 
 Installed plugins can add their own formats to ``File ▸ Export``, after these two
@@ -76,7 +76,7 @@ paragraphs written with AI are still unvalidated, and how many nodes made with A
 nobody has verified; these stay out of the files. When everything has been
 checked, the menu says **All the text is validated by a person**.
 
-The four files are made by the s3Dgraphy library through EMStudio's local service.
+The four files are made by the s3Dgraphy library through EMStudio's bridge.
 
 Other files EMStudio writes
 ---------------------------
@@ -86,7 +86,7 @@ Some windows write files of their own, each where it belongs:
 * **Recording sheets**: ``File ▸ Print sheets…`` prints the recording sheets of
   the graph, all of them, the selection, or those that chosen criteria keep. On
   the desktop the PDF comes from the system's print dialog (**Print…**, then
-  **Save as PDF**). On the web, EMStudio's local service can also write the PDF
+  **Save as PDF**). On the web, EMStudio's bridge can also write the PDF
   itself when it has the means to; otherwise the same print dialog does it.
 * **Colour schemes**: the **Colours** window saves the scheme on screen as a
   ``.emc`` file with **Save .emc…**, the colour file that EM Tools for Blender
@@ -95,7 +95,7 @@ Some windows write files of their own, each where it belongs:
   system and shift as a ``SHIFT.txt`` line with **Export shift.txt**, the form EM
   Tools and 3D Survey Collection read.
 * **A packed tileset**: a tileset folder can be packed into a single ``.3tz``
-  archive, written beside the folder. In the web version the helper service
+  archive, written beside the folder. In the web version the bridge
   that serves the **Files** window writes it; a tileset of your own computer is
   packed in the desktop application.
 

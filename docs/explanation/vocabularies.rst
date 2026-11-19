@@ -62,7 +62,7 @@ vocabulary summarises.
 - **Tier C** has a licence that keeps the terms with their source: only the card
   of the vocabulary is installed, and the terms are downloaded from the source
   onto your computer, for your use there. Files declare a vocabulary of tier C
-  and keep the labels of their values; they do not carry its terms.
+  and keep the labels of their values, while its terms stay with their source.
 
 Controlled and free text
 ------------------------
@@ -72,8 +72,8 @@ accepts it and marks it as **not controlled**, with the sign ◇, in the
 **Inspector**, in the **Outliner** and in the **Warnings** sheet. **Link to a
 vocabulary…** proposes the terms that the installed vocabularies offer for the
 word; a person chooses, and the word stays as written while the term gives it
-its code. EMStudio never links a word to a term by itself: identity between a
-word and a term is a judgement, and a person makes it.
+its code. The link between a word and a term is always chosen by a person,
+because saying that they mean the same thing is a judgement.
 
 Alignments between vocabularies extend the languages a term can be shown in:
 when a person has verified that a term of one vocabulary is the same as a term
