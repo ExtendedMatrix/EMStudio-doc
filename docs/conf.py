@@ -81,6 +81,10 @@ html_context = {'rtl': rtl}
 suppress_warnings = ['epub.unknown_project_files']
 
 html_css_files = ['brand/stratigraph-theme.css', 'brand/skins.css', 'brand/sphinx-rtd-bridge.css'] + (['rtl.css'] if rtl else [])
+# L'interruttore delle due facce: chiaro, scuro, come il sistema. Senza
+# scelta esplicita vale il sistema di chi legge, che è il modo di serie.
+html_js_files = ['brand/brand-theme-toggle.js']
+
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
