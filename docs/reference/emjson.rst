@@ -3,42 +3,170 @@
 The em.json file
 ================
 
-.. TODO MAN02: update to the 24 Oct specification. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*What EMStudio's file holds, and how it follows the em.json specification.*
 
-``em.json`` is EMStudio's native file: the Extended Matrix as a flat graph, plus the
-metadata to read it and an optional layout. It is the record; the file is how it
-travels between tools.
+An **em.json** file holds the work of an Extended Matrix study: the stratigraphic
+units and their relations in time, the sources and the reasoning behind every
+reconstruction (the paradata), the 3D models and documents they refer to, and the
+way the whole is drawn. It is the file that EMStudio opens and saves, and the same
+file that EM Tools for Blender, Heriverse, the StratiGraph node and the s3Dgraphy
+library read and write. The extension is ``.em.json``; ``.emj`` is read as the same
+thing, and the desktop application registers itself as the editor of ``.emj``
+files.
 
-Shape
------
+The format has a written specification, separate from any one program:
+*em.json — the Extended Matrix document format*, version 1.1 (Release, 25 October
+2026), edited by Emanuel Demetrescu (CNR-ISPC), published at
+https://w3id.org/extendedmatrix/spec/em-json/ with the DOI
+`10.5281/zenodo.23642465 <https://doi.org/10.5281/zenodo.23642465>`__. This page
+is the reader's map of the file as EMStudio 1.6 uses it; the specification is the
+norm.
 
-An ``em.json`` file has:
+A container of graphs
+---------------------
 
-- a **header** — the study's identity (``em_id``, owner, authors, licence, title),
-  the format and schema versions, the **generator** that wrote it, and the
-  **datamodel / ontology versions** it speaks (nodes, connections, qualia; CIDOC-CRM
-  and the CRM extensions);
-- one or more **graphs**, each with a flat list of **nodes** and **edges** (not
-  bucketed by type — the flat shape makes a whole class of bug impossible);
-- an optional **layout** — swimlanes and positions — which is regenerable and does
-  not change the record.
+An em.json file is always a **container**: a header and one or more **graphs**.
+A study graph is one Extended Matrix, the units of a site, a trench or a building
+with their epochs and their paradata. A project with several trenches, or several
+readings of the same site, holds several study graphs in one file, and EMStudio
+opens them all: the Outliner lists them under the file.
 
-Why flat, why versioned
+Three special members of the container are graphs too, recognised by a marker in
+their data and never by their name:
+
+* the **shelf**, what the study shares among its graphs: authors, licences,
+  documents used by more than one graph;
+* the **documentation**, how the digital objects were made: the acquisitions, the
+  transformations and the resources they concern (the chain of the digital twin);
+* the **periodizations**, the shared measures of time, each with its horizons (a
+  label, a start, an end, a colour).
+
+A node that belongs to several graphs keeps one identifier everywhere, which is
+why ``File ▸ Integrate into this file…`` can merge two files by identifier,
+without a server. A relation between a unit of one graph and a unit of another is
+a **link**, kept in the graph where it starts.
+
+An older file holding a single graph, written in the flat form of 1.0, opens as a
+container of one graph.
+
+Nodes, edges, paradata
+----------------------
+
+A **node** has an identifier, a type and, when it needs them, a name, a
+description and the fields its type declares. An **edge** has an identifier, a
+type (the relation), a source and a target in the same graph, and may carry facts
+about itself. The most useful of these says where an edge of relative chronology
+comes from: *derived* from the physical relations, written by a person, or
+*imported* from another program's file.
+
+The types of nodes and edges and their fields are not listed by the format. They
+belong to the **EM datamodel**, which grows at its own pace and maps onto CIDOC
+CRM and its extensions; every file says which versions of the datamodel it
+follows. A reader that meets a type it does not know keeps the node and its type,
+so that saving the file again loses nothing.
+
+The reasoning is part of the graph: a property of a unit is a node, and so are the
+extractor that read it from a source, the combiner that put several extractors
+together, and the document it comes from. Anyone who reads the file can follow a
+reconstruction back to its sources.
+
+A graph is placed in the world by its **geo-position** node: the coordinate
+reference system (an EPSG code) and the shift that brings the local coordinates
+of the 3D scene to it. 3D models, images and documents are **resources**,
+referenced by their address and their digest, and never embedded in the file.
+
+The layout
+----------
+
+How a graph is drawn, the position of each node, the rows of the epochs, the
+folded groups, is kept in the file but can always be computed again. Each graph
+keeps its own layout. The file also carries a copy of the active graph's layout,
+for readers that know only one graph.
+
+The header and the two version numbers
+--------------------------------------
+
+The header says what the file is, which program wrote it last, and which
+datamodel versions it follows; it may carry the study's title, description and
+visibility. Two numbers answer two different questions:
+
+* the **version of the form** (``header.version``, *major.minor*) says which form
+  of em.json the file has. A reader refuses only a major version it does not
+  know and reads every minor version of its own. The container written before the
+  specification is 1.0, the container as specified is 1.1, and every reader of
+  1.0 reads 1.1;
+* the **schema version** (``header.schema_version``, a whole number) grows when the
+  content changes in a way a migration may need to know.
+
+A third, independent number is the **version of the work**, at the top of the
+file: it counts the revisions of the study itself, with a digest of its content.
+``File ▸ Pin version…`` freezes the project at that point as a citable snapshot,
+the stable thing that a DOI minted by the Catalog points at.
+
+A file that uses the types or vocabularies of a community package declares the
+package in the header (its identity and the version the file was written with).
+EMStudio writes this declaration when the file uses an installed package; a
+reader that lacks the package still opens the file.
+
+The colours in the file
 -----------------------
 
-The graph section is deliberately **flat**: ``nodes[]`` and ``edges[]``, where an
-edge's ``source`` and ``target`` *are* its endpoints. The **datamodel versions** in
-the header let a consumer that arrives with an older model be told so, rather than
-silently mismatching — the same check a connector uses when it attaches (see
-:doc:`../explanation/place-in-the-framework`).
+A file can carry, apart from its graphs, the **colour schemes** used to colour
+the proxies in the Space by the value of a property. They live in a section of
+their own, ``presentation``, which touches no node and no edge, and the version of
+the work ignores it: a way of looking is not a new version of the study.
 
-Two tiers
----------
+Each scheme is exactly a ``.emc``, the colour file of EM Tools and EMStudio, with
+its name; for each graph the file names the scheme in use. A short example:
 
-``em.json`` is the fast, editable **property-graph** tier; it projects losslessly to
-**RDF / CIDOC-CRM** (Turtle) for the semantic tier, and the RDF importer brings the
-graph back — the round-trip is isomorphic. See :doc:`../explanation/two-tier`.
+.. code-block:: json
 
-The formal specification of the EM language and of ``em.json`` lives with the
-`Extended Matrix language documentation <https://docs.extendedmatrix.org>`__; this
-page is the reader's map, not the normative spec.
+   "presentation": {
+     "colour_schemes": {
+       "material": {
+         "metadata": {"property_name": "material"},
+         "color_mapping": {"white rock": [0.0, 0.376, 0.0, 1.0]}
+       }
+     },
+     "active_colour_scheme": {"GT16": "material"}
+   }
+
+In EMStudio the schemes of the file are managed in the **Colours** window (``Tools ▸ Colours…``), under
+**In the file**: **Keep in the file…** stores the scheme on screen, **Import into
+the file…** takes ``.emc`` files in, and **Expel to a folder…** writes one
+``.emc`` per scheme. ``File ▸ Clean the file…`` takes the whole section out after
+showing what goes; the graphs stay as they are, and one undo brings it back.
+
+The vocabularies in the file
+----------------------------
+
+A value chosen from a controlled vocabulary is kept twice: the **code** of the
+term, the same in every language, and the **label** written when it was chosen,
+with its language, its vocabulary and the vocabulary's version. A reader that has
+the vocabulary shows the label in its own language; a reader without it shows the
+saved label.
+
+The file also **declares** the vocabularies its values use, as a document
+declares its fonts, in a section ``vocabularies``: which vocabulary, which
+version, its licence, and how many of its terms are used. The section is written
+again at every save, and only when some value carries a code. The vocabularies
+themselves are installed on the machine, not in the file (see
+:doc:`/reference/file-locations`).
+
+The site, its footprint and its GIS layers, the colour schemes and the
+vocabularies are described in the Editor's Draft of em.json 1.2, a minor and
+additive version: a reader of 1.1 reads these files as they are.
+
+What EMStudio keeps out of the file
+-----------------------------------
+
+The arrangement of the workspaces, the windows, the theme and the other
+preferences belong to the machine, not to the study, and stay out of em.json
+(see :doc:`/reference/file-locations`). Two people who open the same file each
+see it in their own arrangement.
+
+.. seealso::
+
+   :doc:`/explanation/two-tier` for the projection of em.json to RDF, and
+   :doc:`/reference/export-formats` for the files EMStudio writes besides
+   em.json.
