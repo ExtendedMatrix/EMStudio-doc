@@ -3,6 +3,119 @@
 Build a graph from a folder with StratiMiner
 ============================================
 
-*Build a graph from a folder of sources through a reviewable table.*
+*Build a graph from a folder of sources through a table you can open and check.*
 
-.. TODO MAN03: write this page (map §3, how-to «Bring material in»).
+Excavation diaries, reports, lists of units: when a study has its sources but no
+graph yet, **StratiMiner** builds one. It works in two halves joined by a table.
+The first half produces ``em_data.xlsx``, the table of the Extended Matrix with
+its sheets of units, epochs and claims; you can write it by hand, or have an AI
+model draft it from the folder of sources. The second half turns the table into
+a graph, always in the same way: the same table gives the same graph. The AI
+writes only the table, which you open and correct before anything enters a
+graph.
+
+Before you start
+----------------
+
+StratiMiner needs no open graph. To draft the table with AI, an AI provider and
+its key must be set in ``Settings ▸ Advanced`` (see :doc:`/reference/settings`).
+
+Open StratiMiner
+----------------
+
+Choose ``Tools ▸ StratiMiner``. With nothing open, the empty canvas offers the
+same panel through the link **build one from your sources**.
+
+The panel asks first **How do you have the em_data.xlsx table?**
+
+- **I make it by hand**: fill the sheets yourself, then go to
+  :ref:`stratiminer-graph-creator`.
+- **I generate it with the AI, from messy data**: follow the steps below.
+
+Draft the table with AI
+-----------------------
+
+#. In **Source folder**, give the folder that holds the sources.
+
+   .. tab-set::
+      :sync-group: platform
+
+      .. tab-item:: Desktop
+         :sync: desktop
+
+         Press **…** and choose the folder in the system dialog: its full path
+         is filled in.
+
+      .. tab-item:: Web
+         :sync: web
+
+         Press **…** to choose the folder: the browser gives only its name.
+         Complete the field with the full path of the folder as EMStudio's
+         service sees it.
+
+#. In **Output language**, write the language the table should be written in,
+   or leave the field empty to keep the language of each source.
+#. Choose one of the two ways.
+
+   - **Generate em_data.xlsx (AI)**: EMStudio's service sends the sources to the
+     AI model and writes the workbook. It reads text files, and PDFs that carry a
+     text layer; it always lists the files it could not read, and why. A scanned
+     PDF without text is reported as such.
+   - **Copy prompt for Cowork**: the prompt is copied, to be run in a
+     Cowork session that can read the folder. This is the way for scans and for
+     every file the first way reports as unread. When the browser refuses the
+     clipboard, the prompt appears in a field below, with **Save the prompt to a
+     file…**.
+
+#. When the AI way has finished, the path of the new ``em_data.xlsx`` is already
+   in the field of the **Graph creator**. Open the workbook in your spreadsheet
+   program and review it: the units, their epochs, the relations between them.
+
+.. _stratiminer-graph-creator:
+
+Turn the table into a graph
+---------------------------
+
+#. Under **Graph creator · em_data.xlsx → em.json**, give the path of the
+   table, or press **…** to choose it.
+
+   .. tab-set::
+      :sync-group: platform
+
+      .. tab-item:: Desktop
+         :sync: desktop
+
+         The system dialog fills in the real path of the workbook.
+
+      .. tab-item:: Web
+         :sync: web
+
+         The chosen workbook is copied to EMStudio's service, and the field
+         receives the path of that copy.
+
+#. Press **Transform into em.json**. The **Mapping editor** opens with the table
+   as its source, read as **None: an EM table**, with **A new graph** and
+   **Written into the graph** chosen. A line at the top says that the rows are
+   **StratiMiner's proposals**.
+#. Press **Apply** (see :doc:`read-a-table-through-a-mapping` for the other
+   choices of that window).
+
+What you get
+------------
+
+The graph opens as a new graph in the workspace, beside the graphs already open,
+named after the workbook. The **Log** sums up what the table produced and lists
+its warnings. The data drafted by AI stay among the warnings of the graph until
+a person verifies them, so the review continues inside EMStudio.
+
+Save the graph with ``File ▸ Save as…`` to give it its em.json. The source folder
+and the table stay where they are, and you can run StratiMiner again on a
+corrected table.
+
+See also
+--------
+
+- :doc:`read-a-table-through-a-mapping`, for the Mapping editor.
+- :doc:`/how-to/stratigraphy/check-the-chronology`, to check the epochs of the
+  new graph.
+- :doc:`/how-to/narrative/ai-drafts`, for the other use of AI in EMStudio.
