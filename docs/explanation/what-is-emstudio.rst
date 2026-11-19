@@ -57,7 +57,7 @@ Part of a framework
 -------------------
 
 EMStudio is one component of the `Extended Matrix Framework
-<https://www.extendedmatrix.org/discover/emf>`_. It shares the s3Dgraphy library
+<https://extendedmatrix.org/about/>`_. It shares the s3Dgraphy library
 with the other tools, so that all of them speak the same EM; it works live with
 EM Tools in Blender; and the studies it produces are the ones that a
 StratiGraph node keeps and Heriverse shows. :doc:`place-in-the-framework` gives

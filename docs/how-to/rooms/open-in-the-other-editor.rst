@@ -30,17 +30,19 @@ Switch between the desktop and the web
       .. tab-item:: Desktop
          :sync: desktop
 
-         The room opens in EMStudio for the web, the build that the node
-         serves, in the browser. If the node serves no web build of EMStudio,
-         a message says so and nothing opens.
+         From EMStudio on the desktop, the other editor is the web: the room
+         opens in the browser, in EMStudio for the web, the build that the node
+         serves. If the node serves no web build of EMStudio, a message says so
+         and nothing opens.
 
       .. tab-item:: Web
          :sync: web
 
-         The browser asks the system to open the desktop application on the
-         room. If no application on this computer answers, the node's page for
-         the room opens in a new tab and says what to install, and EMStudio
-         says that nothing opened.
+         From EMStudio in the browser, the other editor is the desktop
+         application: the browser asks the system to open it on the room. If no
+         application on this computer answers, the node's page for the room
+         opens in a new tab and says what to install, and EMStudio says that
+         nothing opened.
 
 #. In the other editor, sign in to the node if it asks you to (see
    :doc:`sign-in`). It then enters the room.

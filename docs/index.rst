@@ -9,7 +9,7 @@ where every file comes from, place the study in space and in time, fill its
 recording sheets, and tell it as a story whose figures are the record itself.
 
 EMStudio is a component of the `Extended Matrix Framework
-<https://www.extendedmatrix.org/discover/emf>`_, an Open Source and Open Science
+<https://extendedmatrix.org/about/>`_, an Open Source and Open Science
 project developed to manage, visualize, represent and share the data and paradata
 associated with the documentation and the reconstruction of an archaeological
 context, an object, or a collection. EMStudio shares the s3Dgraphy library with

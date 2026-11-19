@@ -115,8 +115,8 @@ many sampled records had a value.
    when EMStudio's service has a folder for the user's mappings; otherwise,
    download the JSON and keep it beside the dataset.
 
-Where and how it enters
------------------------
+4 · Where and how it enters
+---------------------------
 
 #. Choose the target: **A new graph**, or **This graph** followed by the name of
    the active graph. On **This graph**, a row whose key matches no unit of the
