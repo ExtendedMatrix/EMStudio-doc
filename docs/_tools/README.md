@@ -41,12 +41,20 @@ English dictionary lacks (a `KeyError` names it). Teach the reader the new shape
 then regenerate. The rules of `menuRows()` and `keysFor()` are repeated in
 `menus.py`: if they change in EMStudio, change them here too.
 
-## The Italian manual
+## The translated manuals
 
 The generated tables are English, like the rest of the source. Their cells are
-translated through gettext with the page that includes them (MICRO-MAN07); use the
-labels of the `it` block of `i18n.ts`, so that the Italian reader finds the words on
-the screen.
+translated through gettext with the page that includes them. `ui_terms.py` fills
+them, and every other string that is only a label of the interface, with the
+labels of each language's block of `i18n.ts`, so that the reader finds the words
+on the screen:
+
+```sh
+.venv/bin/python docs/_tools/ui_terms.py ~/Documents/GitHub/EMStudio --ref v1.6.0-dev.136
+```
+
+It fills only empty strings and marks *fuzzy* those whose context is uncertain.
+`docs/translating.rst` describes the whole cycle of a language.
 
 # The screenshots
 
