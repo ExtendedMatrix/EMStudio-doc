@@ -3,41 +3,121 @@
 Use the shelf
 =============
 
-.. TODO MAN04: rewrite; the shelf lives in Archive. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*Keep at hand the resources the study works from, find them again, and make
+them documents of the graph.*
 
-*Goal: hold your study next to what is not yours.* This is the **Comparisons** tab —
-the Shelf, a Viewer, and the Inspector.
+The **Files** window shows every file of a folder; the **Shelf** holds only the
+ones you chose: the photographs of a campaign, the models you compare, a page of a
+catalogue on the web. It belongs to the project. It is kept in the ``.em.json``
+of the study, saved with it, and it comes back when the study is opened again.
+With no study open, the **Shelf** says that it belongs to a project.
 
-.. image:: /_static/interface/04_comparisons.jpg
-   :width: 100%
-   :alt: The Comparisons tab — the Shelf of comparanda, a Viewer, and the Inspector
+In the **Archive** workspace the **Shelf** sits under the **Files** window. Its
+list fills the left half; the right half shows the preview of the entry you
+choose.
 
-Build the shelf
----------------
+Put entries on the shelf
+------------------------
 
-The **Shelf** is a curated, savable list of the resources a study works from — not a
-computed view of a folder's contents. You put things on it deliberately:
+#. Drag one or more files from the **Files** window onto the **Shelf**. You can
+   also right-click a file in the **Files** window and choose
+   **Put on the shelf**, or **Put the 3 files on the shelf** (with the number of
+   files chosen). A folder stays out: open it in the **Files** window and drag
+   the files you want.
+#. To put a web address on the shelf, open the **Shelf** menu in the window's
+   header and choose **+ Web address…**. Write the address, which starts with
+   ``http://``, ``https://`` or ``s3://``. In **from where**, say whose the
+   resource is: **from this excavation**, **from another of my excavations**, or
+   **for comparison**. Choose the **access**, then click **Put it on the shelf**.
+#. To rename the shelf, write its name in the field at the top of the list. The
+   count beside it says how many entries it holds.
 
-- **drag a file** onto the shelf from a Storage window (in the Documentation tab); or
-- **paste a URI** into the field at the top (a linked-data resource, another study).
+An address is the identity of a web entry: the same address put twice stays one
+entry. A file keeps the copy of its stamp, so the shelf knows what it is, who
+made it and from which act it comes (see
+:doc:`/how-to/sources/declare-provenance`).
 
-The shelf remembers what you chose; the disk browser shows everything, the shelf
-holds only the ones you picked.
+Find an entry
+-------------
 
-The three fences
-----------------
+#. Write in **Search: name, title, description, EM id, author**. The list keeps
+   the entries that answer.
+#. Press the pills under the field to filter: the kinds (**Images**,
+   **3D models**, **Documents**, **Tilesets** and the others present),
+   **stamped** or **to stamp**, **in use in the graph** or **not in use**,
+   **this study** or **other studies**, and where the bytes are (**on the disk**,
+   **in the room**, **on the web**). Each pill shows how many entries it keeps;
+   a second press releases it.
+#. In **Group by**, choose **No groups**, **By folder**, **By type**,
+   **By act of the stamp** or **By document of the graph**.
 
-Comparanda are grouped by whose they are:
+When nothing answers, **Clear search and filters** brings the whole list back.
+Each line shows the picture, the name, the seal of the stamp, and a dot that is
+full when the entry is in use in the graph.
 
-- **own study** — resources from the study you are editing;
-- **own HDT** — resources from your own Heritage Digital Twin;
-- **other HDT** — resources from someone else's Heritage Digital Twin.
+Read and use an entry
+---------------------
 
-The fence is a fact about *whose* a resource is, and it governs what you may do with
-it (you compare freely; you do not silently absorb what is not yours).
+#. Click an entry. Its preview appears on the right: an image, a document, a
+   model, or what a web page says of itself. **Open in the Viewer** shows it whole,
+   with its card.
+#. The card under the line holds the address, the stamp and the gestures:
 
-Preview
--------
+   * **Make it a document of** followed by the name of the active graph: the
+     entry becomes a document of that graph.
+   * **Title and description…** opens the fields here; they are written in the
+     stamp, and the copy on the shelf follows.
+   * **Show on the disk**: the **Files** window goes to the file's folder and
+     chooses it.
+   * **Open in Scene**, for a tileset.
+   * **Annotate**, for an image: it opens in the Viewer, where you trace on it
+     (see :doc:`/how-to/sources/trace-regions-on-images`).
+   * **✕** takes the entry off the shelf. The file on the disk is not touched,
+     and the message has **Undo**.
 
-Select a resource and the **Viewer** shows it as itself — an image, a document, or a
-3D scene on demand — so you can compare without leaving the tab.
+#. To make several entries documents at once, choose them with :kbd:`⌘`-click
+   (:kbd:`Ctrl`-click on Windows and Linux) and drag them onto a **Graph**
+   window. Each becomes a document of the active graph; the entries that are
+   documents already stay as they are. Dragged onto the **Files** window, an
+   entry shows its file there; dragged onto a **Viewer**, it is shown in it.
+
+Read the shelf as a table
+-------------------------
+
+In the mode menu of the **Shelf**, choose **Table**. The same entries come back
+as rows, with the columns **name**, **type**, **where**, **locator**, **role**,
+**in use**, **size**, **from where**, **recorded**, **access** and **digest**.
+The table is answered by s3Dgraphy through the bridge; without the bridge, use the
+**List** mode. In a narrow window, a click on a row opens its other columns.
+
+Keep, share and empty the shelf
+-------------------------------
+
+The **Shelf** menu in the window's header also holds:
+
+- **Save the shelf**, which downloads the shelf as a file of its own, a
+  ``.shelf.em.json`` that can be opened elsewhere;
+- **Open a shelf…**, which reads such a file back (a study file is refused,
+  because it is not a shelf);
+- **Import from Tropy…**, which brings the items of a Tropy project (see
+  :doc:`/how-to/bring-in/porta-dentro`);
+- **Empty the shelf**, which asks first with the number of entries. The message
+  that follows has **Undo**; the files on the disk are not touched.
+
+When you save a study whose shelf has no file yet, EMStudio asks whether to save
+the shelf in it.
+
+What you get
+------------
+
+A short list of the resources that matter to the study, saved with it, which
+you can search, filter and group, and from which a resource becomes a document of
+the graph with a click or a drag.
+
+See also
+--------
+
+- :doc:`storage`, for the **Files** window and where the bytes live.
+- :doc:`/how-to/sources/documents-and-media`, to tie documents to the units they
+  show.
+- :doc:`/reference/windows`, for the **Shelf** and its modes.
