@@ -1,53 +1,44 @@
 Welcome to the documentation page of EMStudio
 =============================================================
 
-**EMStudio** is an open-source, standalone editor for the **Extended Matrix (EM)**
-language: the place where you *author* a stratigraphic and interpretive record —
-draw the matrix, attach sources and paradata, declare the provenance of every
-asset, compare with what is not yours, and finally *tell the story* and export it.
-It runs as a desktop application, in the browser, and as a self-contained file you
-can open with a double click.
+**EMStudio** is the open-source editor of the **Extended Matrix (EM)**, the
+language with which an archaeologist records a stratigraphic sequence, the
+sources behind every interpretation, and the reconstructions built on them. In
+EMStudio you draw and check the matrix, bring your files in as documents, say
+where every file comes from, place the study in space and in time, fill its
+recording sheets, and tell it as a story whose figures are the record itself.
 
 EMStudio is a component of the `Extended Matrix Framework
 <https://www.extendedmatrix.org/discover/emf>`_, an Open Source and Open Science
 project developed to manage, visualize, represent and share the data and paradata
 associated with the documentation and the reconstruction of an archaeological
-context, an object, or a collection. Within that ecosystem EMStudio is the
-*sovereign editor* of the EM language: it reads and writes ``em.json`` natively,
-projects to RDF for semantic queries, and speaks to the other tools —
-`EM-blender-tools <https://github.com/zalmoxes-laran/EM-blender-tools>`_ for 3D,
-`Heriverse <https://www.heriverse.org>`_ for dissemination, and the s3Dgraphy
-library that all of them share.
+context, an object, or a collection. EMStudio shares the s3Dgraphy library with
+the other tools of the framework, works live with
+`EM Tools <https://github.com/zalmoxes-laran/EM-blender-tools>`_ in Blender, and
+prepares the studies that a StratiGraph node keeps and
+`Heriverse <https://www.heriverse.org>`_ shows.
 
-EMStudio lets you:
+The work is organised in six workspaces, each answering one question about the
+study:
 
-- read, edit and validate the Extended Matrix as a **property graph** (fast,
-  interactive) that projects losslessly to **RDF/CIDOC-CRM** (semantic, queryable);
+- **Stratigraphy**: what is there, in what order, and does it hold?
+- **Sources**: where does this datum come from?
+- **Archive**: which files do I have, and what became a document?
+- **Narrative**: how do I tell it, and what does it rest on?
+- **Space**: where is it, and what shape does it have in each epoch?
+- **Sheets**: what does the recording sheet say of this unit?
 
-- lay out the **stratigraphic matrix** automatically with a layout engine driven
-  by the epochs, and fold groups into a readable diagram;
-
-- bring in **documentation** (files on disk, the shared object store, ingested
-  batches) and declare the **provenance** of every asset with the DTC model
-  (acquisition → derivation → attribution);
-
-- **compare** your study with what is not yours (other studies, other Heritage
-  Digital Twins) on the shelf;
-
-- write a **narrative** — the graph read as a story — with AI-assisted drafts you
-  validate, embeds that stay live references, and **exports** to HTML, Word, LaTeX
-  and Jupyter;
-
-- **annotate images**, place the site on a **map**, and **collaborate** in real
-  time inside a room.
+EMStudio runs as a desktop application on macOS, Windows and Linux, and as a web
+page served by a StratiGraph node. This manual describes both: where a step
+differs, the page shows a tab for each.
 
 EMStudio has been developed by E. Demetrescu at CNR-ISPC (Rome, former CNR-ITABC).
 
 .. admonition:: Remember
 
-   This documentation is under continuous development, and EMStudio is a
-   fast-moving project. Where the interface has moved on from a screenshot,
-   trust the text.
+   This documentation is under continuous development, and this version
+   describes EMStudio |version|. Where a picture and the text disagree,
+   trust the text: it is checked against the program.
 
 .. toctree::
    :hidden:
@@ -61,30 +52,32 @@ EMStudio has been developed by E. Demetrescu at CNR-ISPC (Rome, former CNR-ITABC
 New to EMStudio?
 ----------------
 
-Start with the :ref:`tutorial` — installation, first launch, and a guided first
-contact: load an example study and read its matrix.
+Start with the :ref:`tutorial`: get EMStudio for the desktop or open it on the
+web, walk through the six workspaces on the study of Templu Mare, make a first
+study, and bring your first files in as documents.
 
 Looking for a specific task?
 ----------------------------
 
-Browse the :ref:`how-to` recipes — task-oriented guides grouped by goal (bring
-material in, interpret in the Graph, declare provenance in DTC, compare, write and
-export the narrative, annotate, collaborate).
+Browse the :ref:`how-to` recipes, grouped by workspace: files and projects,
+bringing material in, stratigraphy, sources, space, sheets, archive, narrative,
+rooms, and Blender and extensions.
 
-Need panel details?
--------------------
+Need the details of a window or a menu?
+---------------------------------------
 
-Consult the :ref:`reference` — a tab-by-tab and window-by-window description of the
-interface, the menus, the Inspector fields, the export formats, and the ``em.json``
-file, plus a changelog appendix.
+Consult the :ref:`reference`: the workspaces, the windows, the menus and their
+shortcuts, the settings, the Inspector, the differences between desktop and web,
+the EM legend, the ``em.json`` file, the export formats, where EMStudio keeps
+its files, and the changelog.
 
 Want to understand the design?
 ------------------------------
 
-Read the :ref:`explanation` — the concepts behind EMStudio: the two-tier
-(property-graph + RDF) model, the tabs as *arrangements* of windows, the DTC
-provenance model, the narrative as a reading of the graph, rooms and collaboration,
-and EMStudio's place in the Extended Matrix Framework.
+Read the :ref:`explanation`: what EMStudio is and where it sits in the
+framework, why the workspaces are questions, the three verbs *open*, *enter* and
+*create*, the two tiers of the record, the two planes of DTC and EM, the
+narrative as a reading of the graph, extensions and trust, and vocabularies.
 
 Choose your path
 ----------------
@@ -93,21 +86,31 @@ Choose your path
    :class: tip
 
    Begin with the formal language at `the EM language docs
-   <https://docs.extendedmatrix.org>`__, then come back here for
-   :doc:`tutorial/index` and the :doc:`how-to/stratigraphy/add-and-connect-units` loop. Most of
-   your work happens in the **Graph** tab.
+   <https://docs.extendedmatrix.org>`__, then follow :doc:`tutorial/first-study`
+   and :doc:`how-to/stratigraphy/add-and-connect-units`. Most of the work happens
+   in the **Stratigraphy** and **Sources** workspaces.
+
+.. admonition:: I work on a project with others
+   :class: tip
+
+   Sign in to your StratiGraph node with :doc:`how-to/rooms/sign-in`, then
+   :doc:`how-to/rooms/create-a-room` or
+   :doc:`how-to/rooms/enter-and-share-a-room`.
+   :doc:`explanation/open-enter-create` explains where your work lives.
 
 .. admonition:: I write and publish the story
    :class: tip
 
-   Go to :doc:`how-to/narrative/write-the-narrative` and :doc:`how-to/narrative/export-the-narrative`.
-   The **Narrative** tab is where the graph becomes prose, with AI drafts you sign,
-   and the export bar carries it to HTML, Word, LaTeX and Jupyter.
+   Go to :doc:`how-to/narrative/write-the-narrative` and
+   :doc:`how-to/narrative/export-the-narrative`. The **Narrative** workspace is
+   where the graph becomes prose, with AI drafts that a person verifies, and the
+   **Export ▾** button carries it to HTML, DOCX, LaTeX and Jupyter.
 
 .. admonition:: I want to understand or extend it
    :class: tip
 
-   Read the :ref:`explanation` for the model and the architecture. EMStudio is
-   GPL-3.0; its source lives in the `EMStudio repository
-   <https://github.com/zalmoxes-laran>`__ and it consumes the shared s3Dgraphy
-   library.
+   Read the :ref:`explanation` for the model and the architecture, and
+   :doc:`explanation/extensions-and-trust` before installing packages and
+   plugins. EMStudio is GPL-3.0; its source lives in the `EMStudio repository
+   <https://github.com/ExtendedMatrix/EMStudio>`__ and it uses the shared
+   s3Dgraphy library.
