@@ -27,6 +27,9 @@ Choose ``File ▸ Print sheets…``, or press **Print A4…** in the head of the
 **Sheet** window. The window **Print sheets** opens, with the name and version
 of the definition beside its title.
 
+.. image:: /_static/screens/dialogs/print-sheets.png
+   :alt: The Print sheets window: what to print, the criteria by unit type, epoch, activity and state, the order, the sides and the output, with the count of sheets and pages.
+
 #. Under **What**, choose the sheets to start from:
 
    - **This sheet**, followed by the name of the unit the **Sheet** shows (the

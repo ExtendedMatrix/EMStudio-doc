@@ -29,6 +29,9 @@ relation highlights its lines on the canvas, and a second click takes the
 highlight away. The samples are drawn by the same code that draws the canvas,
 so the legend and the graph always agree.
 
+.. image:: /_static/screens/dialogs/em-legend.png
+   :alt: The EM legend opened from Help: a search field and the relations, each with its line and its name in the data model.
+
 **The whole language.** ``Help ▸ EM legend`` opens the **EM legend**, the
 complete list for someone studying the language: every relation that the
 datamodel declares, with its sample, and every node type, with its glyph or

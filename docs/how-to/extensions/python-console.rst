@@ -35,6 +35,9 @@ Open the console
 Read the study
 --------------
 
+.. image:: /_static/screens/windows/console.png
+   :alt: The Python console after the line sel: the identifier of the selected unit printed under it.
+
 #. Select SU001 in the Matrix.
 #. In the field at the bottom, write ``sel`` and press :kbd:`Enter`. The console
    prints, under your line, the list of the selected nodes (their identifiers):

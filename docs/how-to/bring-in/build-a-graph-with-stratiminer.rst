@@ -26,6 +26,9 @@ Open StratiMiner
 Choose ``Tools ▸ StratiMiner``. With nothing open, the empty canvas offers the
 same panel through the link **build one from your sources**.
 
+.. image:: /_static/screens/dialogs/stratiminer.png
+   :alt: The StratiMiner window: how the em_data.xlsx table is made, by hand or with the AI, and the Graph creator that turns it into an em.json.
+
 The panel asks first **How do you have the em_data.xlsx table?**
 
 - **I make it by hand**: fill the sheets yourself, then go to

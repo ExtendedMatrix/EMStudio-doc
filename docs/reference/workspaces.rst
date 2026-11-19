@@ -19,6 +19,9 @@ arrangement.
 The six workspaces
 ------------------
 
+.. image:: /_static/screens/dialogs/workspaces.png
+   :alt: The Workspaces overview opened from Help: one row per workspace, with its question, its windows and whether it has an Inspector.
+
 .. list-table::
    :header-rows: 1
    :widths: 16 34 50
@@ -54,6 +57,9 @@ The workspace where a study opens. The **Outliner** runs down the left side; the
 on the right. The warnings about the sequence are in the status bar (the ⚠ sign)
 and in the **Warnings** sheet of the Tabular window.
 
+.. image:: /_static/screens/workspaces/stratigraphy.jpg
+   :alt: The Stratigraphy workspace: the Outliner on the left, the Graph window in Matrix mode with SU001 selected, the Inspector on the right showing the unit.
+
 Sources
 ~~~~~~~
 
@@ -63,6 +69,9 @@ on the left lists the documents under **Documents**; next to it the
 regions on it and extract from it. A **Graph** window in **Matrix** mode follows
 on the right, and the **Inspector** shows the fields of the document and its
 extractions.
+
+.. image:: /_static/screens/workspaces/sources.jpg
+   :alt: The Sources workspace: the Outliner lists the documents, the Viewer & card shows the drawing of document D.08, the Matrix and the Inspector follow it.
 
 Archive
 ~~~~~~~
@@ -74,6 +83,9 @@ resources the study works from. On the right, a **Graph** window fixed on the
 Archive has no Inspector, because a file is not yet a node of the graph: the
 **Files** window shows the card of the document picked in the chain.
 
+.. image:: /_static/screens/workspaces/archive.jpg
+   :alt: The Archive workspace: the Files window on the disk with the study's folder, the empty Shelf under it, and the Transformation chain (DTC) on the right.
+
 Narrative
 ~~~~~~~~~
 
@@ -82,6 +94,9 @@ above the **Outliner**. The **Narrative** window, the page, is in the middle,
 open for writing. On the right, a **Graph** window in **Matrix** mode follows the
 chapter being read, beside the **Inspector**, which also carries the tools of
 the page.
+
+.. image:: /_static/screens/workspaces/narrative.jpg
+   :alt: The Narrative workspace: the Index of the story above the Outliner, the Narrative window open for writing on the first chapter, the Matrix and the Inspector on the right.
 
 Space
 ~~~~~
@@ -93,6 +108,9 @@ the proxies of its units, with the **Tabular** window under it on the sheet
 mode and the **Inspector** complete it on the right. A unit picked in the scene
 is the unit of all four windows.
 
+.. image:: /_static/screens/workspaces/space.jpg
+   :alt: The Space workspace: the Outliner with the proxies of the epoch, the 3D scene with the proxies of the temple, the Tabular window on Models and proxies under it, the Matrix and the Inspector on the right.
+
 Sheets
 ~~~~~~
 
@@ -101,6 +119,9 @@ unit and the **Sheet** in the middle shows it. On the right, two small windows
 follow the same unit: the **3D scene** with its proxy, and a **Graph** window in
 **Matrix** mode framed on the unit and the units it touches. The **Viewer & card**
 underneath shows the unit's photographs and documents.
+
+.. image:: /_static/screens/workspaces/sheets.jpg
+   :alt: The Sheets workspace: the recording sheet of SU001 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card with its two pictures underneath.
 
 Change a workspace
 ------------------

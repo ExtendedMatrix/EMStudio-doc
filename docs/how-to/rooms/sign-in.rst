@@ -25,6 +25,9 @@ Say who signs
 An author can be declared offline: nobody has to confirm it for you to start
 working and saving.
 
+.. image:: /_static/screens/menus/who.png
+   :alt: The chip's menu with the Author section on top and its button Say who signs, then the node and account, where you work, and my space.
+
 #. Open the chip's menu. In the section **Author**, press **Say who signs…**.
    The panel **Who you are** opens.
 #. Under **Declare your ORCID iD**, type the iD (``0000-0000-0000-000X``) and,

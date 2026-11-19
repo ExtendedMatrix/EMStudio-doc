@@ -97,6 +97,9 @@ button **Find here…**.
 Collect resources
 -----------------
 
+.. image:: /_static/screens/dialogs/collect-resources.png
+   :alt: The Collect resources window: the folders for 3D models and for documents, the count of files outside the project, and the list of files to copy.
+
 A study may name files outside its folder: a model on another disk, a
 ``.blend`` kept elsewhere, an ``onedrive://`` path. To make the folder of the
 study complete, so that it can be copied, archived or sent as it is:

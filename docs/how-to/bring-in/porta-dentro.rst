@@ -70,6 +70,9 @@ The **Files** window in **Bucket** mode
 Fill the window
 ---------------
 
+.. image:: /_static/screens/dialogs/porta-dentro.png
+   :alt: The Porta dentro window with three pictures: each file with its kind, the document they will belong to, its licence and when it was made.
+
 #. Read the list of files at the top. Beside each name EMStudio says what the
    file is, by its extension: a **picture**, a **3D model**, a **tileset**, a
    **DXF drawing**, a **vector (GIS)**, a **georeferenced image (GIS)**, or a

@@ -16,6 +16,9 @@ Templu Mare has six epochs, from **II A.D.** to the surveys of **2013** and
 Open the Chronology
 -------------------
 
+.. image:: /_static/screens/windows/chronology.jpg
+   :alt: The Chronology window under the Matrix: the epochs as bands on a time axis, and the table of their bounds.
+
 Use one of these:
 
 - ``Tools ▸ Check the chronology…``;

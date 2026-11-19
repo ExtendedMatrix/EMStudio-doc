@@ -30,6 +30,9 @@ Language
    draft, the option **I have read this translation — mark it validated** turns
    off the “AI draft” badge on this computer.
 
+.. image:: /_static/screens/settings/general.png
+   :alt: Settings, the General tab: language, texts of the graph, theme, Matrix layout and interaction.
+
 Texts of the graph
    **Show the texts in** sets the language the texts of the graph are shown in,
    where the study holds a translation of them.
@@ -60,6 +63,9 @@ Files on this computer
 Identity
 --------
 
+.. image:: /_static/screens/settings/identity.png
+   :alt: Settings, the Identity tab: the ORCID iD, name and surname, with Declare and Verify with ORCID.
+
 Identity (ORCID)
    The ORCID iD is the identity: what you create and change carries the
    signature of the current author. Write the **ORCID iD**, and if you wish a
@@ -85,6 +91,9 @@ StratiGraph nodes
    signing in it offers. You choose a node, sign in and pick its rooms from the
    chip at the top right of the window.
 
+.. image:: /_static/screens/settings/connections.png
+   :alt: Settings, the Connections tab: the StratiGraph nodes and the synchronised apps.
+
 Orphan assets
    This section appears only to the operator of a node. It lists the files of the
    node's store that no room cites any more, because their room was deleted. They
@@ -105,6 +114,9 @@ Viewers
 3D viewer
    Where the 3D lives: the address of an **ATON server** and the path of the
    **Heriverse app** under it. The **Scene** line shows the address that results.
+
+.. image:: /_static/screens/settings/viewers.png
+   :alt: Settings, the Viewers tab: the ATON server, the Heriverse app and the thresholds of big 3D assets.
 
 Big 3D assets
    The limits of EMStudio's own 3D viewer. A whole file or point cloud over the
@@ -141,6 +153,9 @@ Images (IIIF)
 Advanced
 --------
 
+.. image:: /_static/screens/settings/advanced.png
+   :alt: Settings, the Advanced tab: the AI provider, the developer option and the experimental functions.
+
 AI provider
    Who writes the narrative drafts. **Provider** offers **Claude (Anthropic)** and
    **Echo — local trial, no key**, which writes a fixed draft and needs no network.
@@ -175,6 +190,9 @@ Experimental functions
 
 Add-ons
 -------
+
+.. image:: /_static/screens/settings/addons.png
+   :alt: Settings, the Add-ons tab: this machine, the queue, and the tools EMStudio downloads on request.
 
 Tools EMStudio calls and does not ship. Each is downloaded on request from its
 official releases, at a pinned version whose checksum is verified. The tab shows

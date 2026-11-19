@@ -99,6 +99,9 @@ and marks the paragraphs that match. **Story coverage**, closed at first, counts
 how much of the graph the story cites: the units of each epoch, the sources, and
 the reconstructions that no chapter explains yet.
 
+.. image:: /_static/screens/workspaces/narrative.jpg
+   :alt: The Narrative workspace with the Index of the story on the left, its chapters numbered, and the page open on the first chapter.
+
 Read the story
 --------------
 

@@ -12,6 +12,9 @@ nothing selected it says **Select a node to inspect it**. What belongs to the
 whole graph (its name, its metadata, the site) is in the **Study** window, and the
 graph's own node shows the same facts in the Inspector when you select it.
 
+.. image:: /_static/screens/windows/inspector.jpg
+   :alt: The Inspector showing SU001: its type, its other names, two warnings, the description, the media, continuity and the epochs it lives in.
+
 The Inspector draws only the sections that concern the selected node. A
 stratigraphic unit, an epoch, a document, a model and a property each show a
 different set, in the order below.

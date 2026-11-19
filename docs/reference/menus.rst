@@ -12,6 +12,29 @@ from one table of commands. On the macOS desktop the system's menu bar carries
 them too, together with the **EMStudio** and **Window** menus of the Mac; on
 Windows and Linux the menu bar inside the window is the only one.
 
+.. grid:: 2 2 4 4
+   :gutter: 2
+
+   .. grid-item::
+
+      .. image:: /_static/screens/menus/file.png
+         :alt: The File menu open.
+
+   .. grid-item::
+
+      .. image:: /_static/screens/menus/edit.png
+         :alt: The Edit menu open.
+
+   .. grid-item::
+
+      .. image:: /_static/screens/menus/tools.png
+         :alt: The Tools menu open.
+
+   .. grid-item::
+
+      .. image:: /_static/screens/menus/help.png
+         :alt: The Help menu open.
+
 The commands of a single window are elsewhere: in the window's own header, in the
 menu that opens with a right click on the window, and in the menu
 *This window's tools* at the right of the header. :doc:`windows` describes them
@@ -47,6 +70,9 @@ names say it:
 
 Where you work: the mode, the node, the room
 --------------------------------------------
+
+.. image:: /_static/screens/menus/who.png
+   :alt: The chip's menu open under the identity chip at the top right: the sections Author, Node and account, Where you work, and My space.
 
 The way you are working (a file of this computer, a live link with another
 application, a room of a node) is not a menu of the bar. It has one place, the

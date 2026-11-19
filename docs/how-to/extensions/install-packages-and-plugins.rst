@@ -82,6 +82,9 @@ its code, version, source and licence, and its state: **ready**, **incomplete**,
 **code disabled**, **code not installed**, or **an update of the code is
 waiting**.
 
+.. image:: /_static/screens/windows/extensions.png
+   :alt: The Extensions window: Install from disk, the filter All, Community packages and Plugins, an installed example package, and the repositories.
+
 Under **Data**, a row lists its versions and what it brings that the study can
 use:
 

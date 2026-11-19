@@ -28,6 +28,9 @@ The window works on the Space it was opened from (from the Tools menu, the activ
 one). Its first line, **Epoch shown:**, names the epoch and the number of its
 proxies.
 
+.. image:: /_static/screens/windows/colours.jpg
+   :alt: The Colours window over the Space: the epoch shown, the choice between EM, Epochs and Property, and the colour scheme kept in the file.
+
 The window floats over the page: drag it by its bar and resize it from its
 corner. **⇱** takes it out into a window of its own, which you can move to
 another screen, and **⇲** brings it back. The **?** explains each part.

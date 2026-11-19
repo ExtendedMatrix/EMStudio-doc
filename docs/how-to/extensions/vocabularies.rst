@@ -20,6 +20,9 @@ All of this happens in one window, ``Tools ▸ Vocabularies…``, and in the
 Install a vocabulary
 --------------------
 
+.. image:: /_static/screens/windows/vocabularies.png
+   :alt: The Vocabularies window: a vocabulary installed on this computer, the buttons to install, the alignments, and the vocabularies the open file uses.
+
 #. Choose ``Tools ▸ Vocabularies…``. The window **Vocabularies** opens.
 #. In the section **Install**, choose where the vocabulary comes from:
 

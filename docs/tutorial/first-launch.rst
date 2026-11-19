@@ -26,6 +26,9 @@ Open the study
 When nothing is open, the main window says **No graph yet** and offers three
 ways to begin: **Open an em.json**, **Import GraphML**, or **First unit**.
 
+.. image:: /_static/screens/workspaces/stratigraphy.jpg
+   :alt: EMStudio with Templu Mare open in the Stratigraphy workspace: the Outliner on the left, the Graph window in Matrix mode in the middle with SU001 selected, the Inspector on the right.
+
 #. Choose **Open an em.json**, or ``File ▸ Open…`` (:kbd:`⌘O` on the Mac,
    :kbd:`Ctrl+O` elsewhere).
 #. Pick the file of Templu Mare.
