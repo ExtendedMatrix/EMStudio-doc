@@ -183,3 +183,55 @@ to the language of the translation, then, in the English project, *Settings ▸
 Translations* adds it. Read the Docs then builds each language from the same
 sources and shows the languages in the menu of versions; the build reads the
 language from the project, so nothing in the repository changes.
+
+The name of a project cannot be changed once it exists, so every language takes
+its name from the same pattern and keeps it: ``EMStudio-doc`` for the English
+source, ``EMStudio-doc-<language>`` for each translation. The languages of the
+interface have their names reserved here, whether or not they are published yet:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 22 30 48
+
+   * - Language
+     - Project on Read the Docs
+     - Address
+   * - English (source)
+     - ``EMStudio-doc``
+     - https://docs.extendedmatrix.org/projects/emstudio-doc/en/1.6/
+   * - Italian
+     - ``EMStudio-doc-it``
+     - https://docs.extendedmatrix.org/projects/emstudio-doc/it/1.6/
+   * - German
+     - ``EMStudio-doc-de``
+     - not published yet
+   * - Greek
+     - ``EMStudio-doc-el``
+     - not published yet
+   * - Hebrew
+     - ``EMStudio-doc-he``
+     - not published yet
+   * - Spanish
+     - ``EMStudio-doc-es``
+     - not published yet
+   * - Polish
+     - ``EMStudio-doc-pl``
+     - not published yet
+   * - Romanian
+     - ``EMStudio-doc-ro``
+     - not published yet
+   * - French
+     - ``EMStudio-doc-fr``
+     - not published yet
+
+A language is published when its catalogues are complete enough to be read: an
+incomplete one would show its finished paragraphs beside English ones, which is
+honest on a page in progress and confusing on a published manual.
+
+Since 19 November 2026 the manual builds by itself. The Read the Docs
+application is installed on the ExtendedMatrix organisation, so a push on the
+branch ``1.6`` builds the English manual and the Italian one, each in its own
+project, in their HTML, PDF and EPUB forms. ``.readthedocs.yaml`` asks the build
+to stop at the first warning, so a broken reference holds the publication back
+instead of reaching the page. A build can still be started by hand from the
+project's page when one is needed without a commit.
