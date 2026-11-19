@@ -5,4 +5,187 @@ Load models and tilesets
 
 *Bring 3D models and tilesets into the Space.*
 
-.. TODO MAN03: write this page (map §3, how-to «Space»).
+The **3D scene** of the Space shows, for the epoch you choose, the
+**representation models** (RM) of that epoch and the **proxies** of the units
+alive in it. A model enters the scene when the graph knows it as the
+representation of a place in an epoch; a file that is only on the disk is not
+yet in the Space. This page shows how a model or a tileset becomes part of an
+epoch, how a tileset folder becomes a single ``.3tz`` package, and how to choose
+what the scene loads.
+
+A **tileset** (Cesium 3D Tiles) is a model cut into tiles at several levels of
+detail, loaded as the camera comes closer. EMStudio reads it in three forms: a
+``.3tz`` package (one file, read piece by piece, never downloaded whole), a
+folder with ``tileset.json`` at its root, and the form RealityScan writes (a
+``.json`` beside a folder of the same name).
+
+Before you start
+----------------
+
+- Open the study and the **Space** workspace. The graph needs its epochs: the
+  scene is drawn epoch by epoch.
+- Keep the files in the study's folder, or in a folder the **Files** window of
+  the **Archive** workspace can reach: the graph then records where each file is.
+- Georeference the graph first if the models carry real coordinates (see
+  :doc:`georeference-a-study`).
+
+Bring a model into an epoch
+---------------------------
+
+#. In the bar of the **3D scene**, choose the epoch the model represents, for
+   example **II A.D.** in Templu Mare. With many epochs, or with phases, the bar
+   shows a menu instead of the buttons, with ← and → for the previous and the
+   next epoch.
+#. Press **+** in the bar, or drag the file from the **Files** window onto the
+   scene. Both open *Porta dentro* with the epoch shown already proposed.
+#. In the window, leave the role **RM — represents the place in an epoch**, check
+   the epoch under **Which epoch does it represent?**, and fill **When were the
+   models acquired?** and **When was this document made?**. The whole window is
+   described in :doc:`/how-to/bring-in/porta-dentro`.
+#. Press **Porta dentro**.
+
+A model can also arrive from Blender, when EMStudio works live with EM Tools (see
+:doc:`/how-to/extensions/live-sync-with-em-tools`).
+
+Bring a tileset in
+------------------
+
+#. Drag the tileset (a ``.3tz``, a ``.zip``, or the folder) onto the **3D scene**
+   or onto the **Viewer & card**.
+
+   .. tab-set::
+      :sync-group: platform
+
+      .. tab-item:: Desktop
+         :sync: desktop
+
+         Drag it from the **Files** window, or from the system's file manager:
+         in both cases EMStudio knows where the file is, and the graph will
+         record its path.
+
+      .. tab-item:: Web
+         :sync: web
+
+         Drag it from the **Files** window, so that the graph records where the
+         file is. A file dragged from your computer into the browser carries no
+         path: the resource will name the file only, and the preview says so.
+
+#. EMStudio recognises the form and shows a preview where you dropped it,
+   **Preview · TempluMare.3tz** for example, with what it found: **A tileset
+   package**, **A tileset folder (tileset.json at its root)**, or **The
+   RealityScan form**, and the position read from the tileset's root (a latitude
+   and a longitude, or **a local frame, not placed on the Earth**). A preview is
+   not in the graph: when its position does not fit the study, it is **Centred
+   for viewing only**, and the files are not changed.
+#. A folder that is not a package yet shows **Prepare the package (.3tz)** in the
+   preview's bar, and waits for it. Press it and confirm: EMStudio writes the
+   ``.3tz`` beside the folder, never inside it and never over another file, and
+   only reads the original. A folder dragged from your computer into the browser
+   cannot be prepared, because its path is not known: drag it from the **Files**
+   window.
+#. For a package, *Porta dentro* opens by itself, with the preview as one of its
+   rows; for a folder just prepared, press **Porta dentro…** in the preview's
+   bar. Choose the document, the epoch the tileset represents, its role and its
+   date, then press **Porta dentro**. The same button opens the window again
+   after a cancel.
+
+The preview closes and the tileset is drawn as a model of its epoch, in its own
+frame, and loads the level of detail chosen on the preview.
+
+Pack a tileset folder into a .3tz
+---------------------------------
+
+A ``.3tz`` keeps the whole tileset in one file, which travels and is read more
+easily than a folder of thousands of tiles.
+
+#. In the **Archive** workspace, open in the **Files** window the tileset's
+   folder, the one that holds ``tileset.json``.
+#. In the section **A tileset packed as .3tz**, press **Pack this tileset into a
+   .3tz**.
+
+   .. tab-set::
+      :sync-group: platform
+
+      .. tab-item:: Desktop
+         :sync: desktop
+
+         The archive is written beside the folder, with the folder's name, by
+         EMStudio's local service on your computer.
+
+      .. tab-item:: Web
+         :sync: web
+
+         The archive is written beside the folder by the service that serves the
+         **Files** window. A tileset of your own computer is packed in the
+         desktop application: the web reads a ``.3tz``.
+
+The package is written in the canonical profile: the same folder always gives the
+same bytes, those 3D Survey Collection writes. If the folder is stamped, the
+archive is born stamped as derived from it and appears in the chain of its
+provenance; otherwise the section suggests stamping the folder first.
+
+See what the scene holds
+------------------------
+
+- The line above the scene sums up the epoch shown: its name, how many models
+  it has, and how many of its units have a proxy. A click on it opens the epoch in every
+  **Outliner**, where the epoch's **Models**, **Proxies**, **RMDoc** and **RMSF**
+  are listed, and **Without proxy** gathers the units that have no shape yet.
+- **Visibility ▾** switches the categories of the scene on and off: **RM models**,
+  **Tilesets**, **RMDoc**, **RMSF**, **Proxies**, **Sketches**, **3D extractors**
+  and **Territory / GIS**, each with how many there are in the epoch. The button
+  says how many categories are off.
+- ``⋯ ▸ Frame the scene again`` brings the camera back on what is drawn.
+- When nothing is drawn, a line under **The scene is empty** says why: a category
+  switched off, a model hidden from the Outliner, a file missing, units without a
+  proxy, a tileset whose root has not arrived.
+
+Choose what the scene loads
+---------------------------
+
+A model can have several versions, made for different uses. The chip ⚙ in the
+bar shows the hardware profile the scene loads for. A click opens **The versions
+the scene loads**: **Robust desktop — the realtime versions**, **Web — the webXR
+versions (ATON, Heriverse)**, **Mobile — the mobile webXR versions (phones,
+headsets)**, and **As the machine says**, which goes back to the profile read
+from the machine.
+
+.. tab-set::
+   :sync-group: platform
+
+   .. tab-item:: Desktop
+      :sync: desktop
+
+      On a computer with a graphics card the profile is read as **desktop**: the
+      scene loads the realtime versions.
+
+   .. tab-item:: Web
+      :sync: web
+
+      In a browser the profile is read as **web**: the scene loads the versions
+      made for the web, and a phone or a headset is read as **mobile**.
+
+A tileset shows a chip in the scene, **Tileset · auto** followed by its levels
+and its memory. A click opens its controls in the **Inspector**, section
+**Tileset**: **Automatic** lets the detail follow the camera, within the memory
+ceiling; **Manual** keeps the level until you ask, with **More detail here** (then
+a click on a zone of the model) and **Less detail**. The memory ceilings and the
+cache of the tiles are in ``Settings… ▸ Viewers``.
+
+What you get
+------------
+
+The model or the tileset is a representation model of its epoch, published by its
+document, and the Space draws it whenever that epoch is shown. Its file is cited
+by the graph: relative to the em.json when it is beside it, or by its address
+when it stays in a bucket or in a room. A packed tileset sits in the graph as the
+other form of its folder.
+
+See also
+--------
+
+- :doc:`/how-to/bring-in/porta-dentro`, for the window that brings files in.
+- :doc:`containers-and-epochs`, for a survey made of many models.
+- :doc:`place-objects`, to move a model in the scene.
+- :doc:`/reference/settings`, section *Viewers*, for the limits of the 3D viewer.
+- :doc:`/reference/desktop-and-web`, for the other differences between the two versions.
