@@ -15,7 +15,7 @@ Stereo 70 (EPSG:3844), the Romanian national grid.
 Every object with a place in the Space — a model, a tileset, a proxy — inherits
 the georeference of its graph, as it inherits the author or the licence. You set
 it once on the graph; a model that was surveyed in another system receives a
-system of its own (see `Give one model a system of its own`_ below).
+system of its own (see :ref:`how-to-space-georeference-own-system` below).
 
 Before you start
 ----------------
@@ -27,7 +27,7 @@ Before you start
   bridge does not answer: PROJ is not reachable (the fields still write)**: the
   code and the numbers can still be written by hand.
 - If the survey came with a ``SHIFT.txt``, as EM Tools and 3D Survey Collection
-  write it, you can read it instead of typing (see `Read a SHIFT.txt`_).
+  write it, you can read it instead of typing (see :ref:`how-to-space-georeference-shift-txt`).
 
 Set the graph's system
 ----------------------
@@ -87,6 +87,8 @@ that stands in another system) or **already the same**. Press **Apply** to copy
 the system, the shift, the azimuth and the datum operation into each graph. Shift
 Z is not copied. One undo takes back the change in all the graphs.
 
+.. _how-to-space-georeference-own-system:
+
 Give one model a system of its own
 ----------------------------------
 
@@ -118,6 +120,8 @@ or **its own system…**); a click on a name selects the object and opens its
 **Georeferencing** in the Inspector. In the **Outliner** they carry the mark ⌖,
 and the option **Only objects with their own georeference** in the Outliner's
 ☰ menu shows only them.
+
+.. _how-to-space-georeference-shift-txt:
 
 Read a SHIFT.txt
 ----------------

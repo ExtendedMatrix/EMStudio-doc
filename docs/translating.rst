@@ -136,6 +136,12 @@ images and the code blocks are not translated: the catalogue offers only the tex
 around them. In a link with its own title, such as ``:doc:`the first study
 </tutorial/first-study>```, only the title is translated.
 
+An elided word before a bold label or a literal takes the typographic apostrophe,
+``’``, rather than the straight one: Italian writes ``l’**Outliner**``, French
+``l’**Inspecteur**``. The build turns straight quotes into the quotation marks of
+the language, and a straight apostrophe right before a mark of emphasis would
+become a closing quotation mark.
+
 Regenerate the pictures of a language
 -------------------------------------
 
