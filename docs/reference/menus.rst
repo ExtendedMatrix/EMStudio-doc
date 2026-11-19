@@ -1,47 +1,26 @@
+.. _reference-menus:
+
 Menus
 =====
 
-The menu bar at the top of the window holds the actions that are not tied to a
-single window. The exact items evolve with the software; this is the map.
+.. TODO MAN02: complete the prose above the generated tables.
 
-File
-----
+The menu bar at the top of the window holds **File**, **Edit**, **Tools** and
+**Help**: the commands that belong to the whole study rather than to one window.
+The same menus appear on the desktop and on the web, because EMStudio draws them
+from one table of commands. On the macOS desktop the system's menu bar carries
+them too, with the **EMStudio** and **Window** menus of the Mac; on Windows and
+Linux the menu bar inside the window is the only one.
 
-- **New** — start an empty study.
-- **Open…** — open an ``.em.json`` file.
-- **Add to project…** — bring another container into the current project.
-- **Import GraphML…** — read a yEd GraphML matrix, converting it to ``em.json``
-  through the shared library.
-- **Export ▸** — the graph as **SVG**, **GraphML** or **Turtle (.ttl)**, and the
-  narrative as **HTML**, **Word**, **LaTeX** or **Jupyter** (see
-  :doc:`export-formats`).
-- **Publish to StratiGraph…** — publish the study to the Catalog for dissemination.
-- **Save** / **Save as…** — write the study back to ``.em.json``.
-- **Pin version…** — fix a citable version of the study.
+A command that exists on some platforms only is drawn only there. In the tables
+below, the **Where** column says where each command appears, and *desktop only*
+marks what the web version leaves out. The keys are given as the Mac shows them
+(⌘) and as Windows and Linux show them (Ctrl).
 
-Edit
-----
+The mode buttons at the end of the page carry the names the application still
+gives them. Each answers one of the three verbs of the manual: **Standalone** is a
+file you *open* from the disk, **Join Room** is a room you *enter*, and
+**Sidecar (sync)** is the live link with EM Tools in Blender (see
+:doc:`/explanation/open-enter-create`).
 
-Undo and redo (the document keeps a bounded history), and the standard editing
-actions. Selection is a fact about the document, shared across the windows that
-show it.
-
-Mode
-----
-
-The **session mode** — Standalone, or in a room (**Hub**) — and where the app asks
-for the room's access token. The mode is *derived* from whether you are connected,
-not a switch you set for its own sake (see
-:doc:`../explanation/open-enter-create`).
-
-Tools
------
-
-One-shot **instruments** that float, do their job and close — quantitative helpers
-and utilities that are not part of any arrangement.
-
-Help
-----
-
-Documentation, version information, and the about box. The version breakdown lists
-the configuration files and the CIDOC-CRM profile the build carries.
+.. include:: _generated/menus.rst
