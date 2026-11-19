@@ -59,8 +59,8 @@ saves by downloading. The table below lists every difference of version
    * - **Find missing files…**
      - You can add one more folder to the search through the system's dialog,
        and point a missing file at its new place by choosing it.
-     - The search runs in the project's folders, and a new place is given as a
-       path that you type.
+     - The folder to search is given as a path that you type; a missing file
+       is pointed at its new place through EMStudio's own selector.
    * - **Porta dentro…**
      - The system's dialog lets you choose several files at once.
      - EMStudio's own selector lets you choose one file at a time.
@@ -114,8 +114,9 @@ saves by downloading. The table below lists every difference of version
      - Kept by the helper service for the session.
    * - **Pack this tileset into a .3tz**
      - Available.
-     - The web reads a .3tz tileset; packing one is done in the desktop
-       application.
+     - Available in the **Files** window for a folder served by the helper
+       service, which writes the archive. A tileset of your own computer is
+       packed in the desktop application.
    * - The hardware profile of the **Space** (**Use of this device**)
      - Read as *desktop* on a machine with a graphics card: the scene loads the
        realtime versions of the models.

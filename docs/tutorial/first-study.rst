@@ -66,9 +66,10 @@ one:
 #. Drag the handle upwards onto a unit that lies above it, or downwards onto a
    unit that lies below it, and release.
 
-EMStudio chooses the relation that the Extended Matrix allows between the two
-kinds of unit, in that direction, and refuses a direction that the language does
-not allow, with a message that says why. If you release the handle on the empty
+EMStudio offers the relations that the Extended Matrix allows between the two
+kinds of unit, in that direction. When only one is allowed, it is drawn at once;
+when several are allowed, a small menu lets you choose one. A direction that the
+language does not allow is refused, with a message that says why. If you release the handle on the empty
 canvas instead, the **Add** menu opens to create a new unit already connected.
 
 Every change can be taken back with ``Edit ▸ Undo`` (:kbd:`⌘Z` on the Mac,

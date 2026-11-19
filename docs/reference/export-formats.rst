@@ -94,8 +94,9 @@ Some windows write files of their own, each where it belongs:
   system and shift as a ``SHIFT.txt`` line with **Export shift.txt**, the form EM
   Tools and 3D Survey Collection read.
 * **A packed tileset**: a tileset folder can be packed into a single ``.3tz``
-  archive, written beside the folder. This is *desktop only*: the web version
-  reads a ``.3tz`` and leaves the packing to the desktop.
+  archive, written beside the folder. In the web version the helper service
+  that serves the **Files** window writes it; a tileset of your own computer is
+  packed in the desktop application.
 
 .. seealso::
 
