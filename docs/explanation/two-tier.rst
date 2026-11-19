@@ -3,43 +3,48 @@
 Two tiers
 =========
 
-.. TODO MAN05: touch up. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*One study, two faithful shapes: a property graph to work in, RDF and CIDOC CRM to reason and share.*
 
-EMStudio keeps the Extended Matrix in **two tiers at once**, and this is a
-deliberate design choice rather than a compromise.
+EMStudio keeps the Extended Matrix in **two tiers at once**. This is a deliberate
+choice of design, and each tier does what the other does badly.
 
 The property-graph tier
 -----------------------
 
-While you edit, the EM is a **property graph** — nodes and edges with fields. This
-is what makes the tool responsive: laying out a large matrix, folding groups,
-dragging and connecting, filtering, undoing. ``em.json`` is this tier written to
-disk (see :doc:`../reference/emjson`). A property graph is the right shape for *doing*
-the work.
+While you work, the study is a **property graph**: nodes and relations, each
+with its fields. This is the shape that makes the editor responsive: laying out a
+large matrix, folding groups, connecting units with a drag of the handle,
+filtering, undoing. The ``em.json`` file is this tier written to disk (see
+:doc:`/reference/emjson`). A property graph is the right shape for *doing* the
+work.
 
-The RDF / CIDOC-CRM tier
+The RDF and CIDOC CRM tier
+--------------------------
+
+The same study projects to **RDF**, mapped onto **CIDOC CRM** and its
+archaeological extensions. This is the right shape for *reasoning about* the
+record and *sharing* it: queries in SPARQL, exchange with other semantic
+systems, a formal and standard vocabulary. ``File ▸ Export ▸ Turtle (.ttl)``
+writes it (see :doc:`/reference/export-formats`).
+
+The projection is made by the s3Dgraphy library, the same one that every EM tool
+uses, and the library can also read it back. The round trip, from the graph to
+RDF and back to a graph identical to the first, is how the projection is shown
+to lose nothing.
+
+Why both
+--------
+
+Tools built on triples are rigorous but heavy to edit; tools built on property
+graphs are quick but semantically loose. EMStudio keeps both: you edit in the
+property graph and reason in RDF, and the two are the same study seen in two
+ways. A study made here is at once a working document and a knowledge graph
+that can be queried.
+
+Neither tier comes first
 ------------------------
 
-The same record projects **losslessly to RDF**, aligned to **CIDOC-CRM** and its
-archaeological extensions. This is the right shape for *reasoning about* and
-*sharing* the record: SPARQL queries, interchange with other semantic systems, and a
-formal, standard vocabulary. EMStudio exports Turtle, and an RDF importer brings the
-graph back — the round-trip is **isomorphic**, which is how we know the projection
-loses nothing (it even found export bugs the one-way path had hidden).
-
-Why both, not one
------------------
-
-Triple-first tools are rigorous but heavy to edit; property-graph tools are fast but
-semantically loose. EMStudio refuses the choice: you edit in the property graph and
-reason in RDF, and the two are the *same* record seen two ways. This is the "best of
-both worlds" that the Extended Matrix has always aimed at — and it is why a study
-authored here can be both a working document and a queryable knowledge graph.
-
-Neither tier is "primary"
--------------------------
-
-The record is not "really" triples with a graph view, nor "really" a graph with a
-triple export. It is one thing with two faithful projections. The narrative, the
-exports, the connectors — all read the same record; the tier they use is a matter of
-what they need, not of where the truth lives.
+The study is not "really" triples with a graph on top, nor "really" a graph
+with an export to triples. It is one record with two faithful projections. The
+narrative, the exports and the other tools all read the same record, each in the
+tier that suits what it does.

@@ -3,93 +3,100 @@
 Place in the framework
 ======================
 
-.. TODO MAN05: update (the node, EMStudio as a service). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*EMStudio among the other tools of the Extended Matrix Framework: the library, the node, EM Tools, Heriverse.*
 
-EMStudio does not try to be every tool. It is the **hub** other software plugs into,
-the editor that *owns* the EM record while the rest of the ecosystem reads and writes
-the same ``em.json`` and the same shared library.
+EMStudio is the editor of the Extended Matrix Framework, and it works together
+with the other tools of the framework rather than in their place. Each tool does
+one part of the work, and all of them read and write the same study.
 
-The shared library
-------------------
+The shared library: s3Dgraphy
+-----------------------------
 
-All the Extended Matrix tools consume **s3Dgraphy**, the reference implementation of
-the EM language. Because they share it, they speak the same EM: EMStudio, the Blender
-tools, Heriverse and the others all read the same nodes, edges and datamodel. A
-change to the language happens once, in the library, and propagates.
+**s3Dgraphy** is the reference implementation of the EM language: the
+definition of every kind of node and relation, the rules that say which relation
+may join which nodes, the reading and writing of ``em.json``, the projection to
+RDF. EMStudio, EM Tools, the StratiGraph node and StratiField all use it, so
+they speak the same EM. A change to the language is made once, in the library,
+and reaches every tool.
 
-How the change reaches EMStudio
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EMStudio uses the library in two ways. The window you work in carries a copy of
+the library's definitions, so that it can draw the matrix and check a relation
+at once. The heavier work (the RDF projection, the reading of a table through a
+mapping, the chronology, the files on disk) goes to EMStudio's **bridge**, a
+small local service that runs the library itself. When a command needs the
+bridge and the bridge does not answer, EMStudio says so in the window concerned.
 
-"Propagates" is a step someone runs. The frontend is a browser application and
-cannot import the Python library, so it keeps a **vendored copy** of the datamodel
-in ``frontend/src/assets/``:
-
-- the datamodel files (``s3Dgraphy_node_datamodel.json``,
-  ``s3Dgraphy_connections_datamodel.json``, ``em_qualia_types.json``);
-- the visual rules and the generated class registry (``em_visual_rules.json``,
-  ``node_registry.generated.json``);
-- the translations (``datamodel_translations.json``);
-- the 2D icons and DTC glyphs.
-
-After a datamodel change in s3Dgraphy, refresh the copy from the EMStudio
-repository, then review and commit the diff:
-
-.. code-block:: bash
-
-   ./em.sh sync                              # auto-detect s3Dgraphy
-   frontend/scripts/sync-datamodels.sh       # the same script, called directly
-
-Never edit the copies by hand. The script also writes the visual rules for the
-Rust core (``crates/em-core/assets/em_visual_rules.core.json``, without the glyph
-paths), and ``cargo test -p em-core --test visual_rules_core`` checks that the two
-copies agree. From the s3Dgraphy side, ``python -m s3dgraphy.tools.consumer_drift
---check`` fails when EMStudio's connections datamodel is behind the library.
-
-EMStudio's Python sidecar does not use the vendored copy. It installs s3dgraphy
-at the version pinned in ``tools/requirements.txt``, so it moves only when that
-pin moves.
-
-The whole chain, from the datamodel JSON to every tool, is documented once in the
+How a change in the library reaches each tool is described once, in the
 s3Dgraphy manual: `Datamodel propagation
 <https://docs.extendedmatrix.org/projects/s3dgraphy/en/v1.6/DATAMODEL_PROPAGATION.html>`__.
 
-Connectors: one contract, many tools
-------------------------------------
+The StratiGraph node
+--------------------
 
-Other software connects to EMStudio as a **connector**: an adapter that declares what
-it can do and speaks the common wire — ``em.json`` for the graph, a content-addressed
-object store for assets, a CRDT for real-time sharing — with every write carrying its
-**provenance** (a DTC act, attributed to whoever drives the tool). It is the *same*
-contract the field chatbot uses: one interoperability base, many consumers.
+A **StratiGraph node** is the server of a project or an institution: a
+laboratory, an excavation, a museum. It keeps the work that is shared.
 
-A connector declares its **capabilities** — read or write the graph, subscribe to
-changes, attach or resolve assets, materialise or publish 3D, ingest a batch, link
-selection, presence — and EMStudio composes what is possible from them, refusing
-honestly what a tool cannot do (no author, no write).
+- **Rooms.** A room is a study that lives on the node, where the members of a
+  project work together, each with a role (see :doc:`open-enter-create`).
+- **The store of files.** The files of a room (photographs, models, documents)
+  are kept by the node, each under the fingerprint of its content, with the
+  licence and the embargo declared for it.
+- **The Catalog.** The studies the node publishes, fixed and citable, with the
+  reader page that shows a study's narrative to people who do not use EMStudio.
+- **Identity.** The node signs you in through ORCID and knows your role in each
+  room.
+- **EMStudio as a service.** The node serves EMStudio itself, at the address
+  ``/em/studio/`` of the node. The web version is this page: the same program
+  as the desktop application, with the node behind it.
+- **Plugins of the node.** Code that the node's administrator installed, which
+  the node runs for a room in a closed space (see :doc:`extensions-and-trust`).
 
-Sidecar and Hub, and the rendezvous
------------------------------------
+The desktop application works with a node too: you sign in from the chip at the
+top right of the window, and the rooms of the node are then one click away.
+Without a node, EMStudio is complete on its own, on the files of your disk.
 
-A connector meets EMStudio at a **rendezvous**, and the same connector works at every
-rung: **direct** on one machine (a **Sidecar**, no server), a **LAN** server (a **Hub**
-on the local network), or a **cloud** server (a **Hub** on the internet). "Standalone,
-Sidecar, Hub" are the cells of two independent axes — being in a room, and having a
-tool connected — that compose rather than exclude. See
-:doc:`open-enter-create` for the axes and the three layers (document, ephemeral
-interaction, presence) that keep one user's click from driving another's screen.
+EM Tools in Blender
+-------------------
 
-The tools around EMStudio
--------------------------
+**EM Tools** is the Blender add-on of the Extended Matrix: the place where the
+proxies of the units are modelled, the representation models are prepared and
+the reconstruction is built in 3D. EMStudio and EM Tools work together in two
+ways.
 
-- **Blender** (EM-blender-tools) — the reference connector: live graph sync,
-  materialising 3D from the store, publishing baked geometry back.
-- **Heriverse** — dissemination: it reads the published study (graph and 3D) to
-  render it online; a consumer connector at the cloud rung.
-- **Tropy** — sources and photographs, ingested as documents and images.
-- **PyArchInit** — excavation data, live when connected or read as a file when not.
-- **Aioli** — image-based annotation and photogrammetry.
+- **Live.** With the mode **With an app** of the chip's menu, EMStudio and
+  Blender share the study as you work: selecting a unit in one selects it in the
+  other, and the changes made in Blender reach the graph (see
+  :doc:`/how-to/extensions/live-sync-with-em-tools`).
+- **By composing a file.** ``File ▸ Compose a .blend from the graph…`` builds a
+  Blender file from the study, with the models and proxies the graph names (see
+  :doc:`/how-to/extensions/compose-a-blend`).
 
-Each is a connector on the same contract; adding one is a small adapter, not a change
-to EMStudio's core. That is the payoff of a single interoperability base: the
-ecosystem grows by connectors, and the provenance of everything that enters through
-any of them is complete by construction.
+EM Tools reads the colour schemes kept in the ``em.json``, and it uses the same
+vocabularies and extensions installed on the computer.
+
+Heriverse
+---------
+
+**Heriverse** is the platform that shows a study online and in immersive
+reality. The **Archive** workspace prepares the versions of each model for its
+use, among them *Heriverse / web* (see
+:doc:`/how-to/archive/consolidate-for-a-target`). The section **Open with…** of
+the **Inspector** opens a node's scene in Heriverse when a resource of the study
+names one.
+
+Other sources
+-------------
+
+Material from other programs enters the study through *Porta dentro*
+("bringing files in as documents"), through a table read with a mapping, or,
+for Tropy, through **Import from Tropy…** in the menu of the **Shelf** (see
+:doc:`/how-to/bring-in/index`). Whatever enters becomes a document of the study,
+with its date and its provenance.
+
+Every act signed
+----------------
+
+Whatever tool writes into a study, the act carries its author. An edit made in
+EMStudio, a change sent from Blender, a command of a plugin, a draft written
+with an AI: each is recorded with who made it and, when a program made it, with
+the program as well. A study can always answer the question *who said this?*

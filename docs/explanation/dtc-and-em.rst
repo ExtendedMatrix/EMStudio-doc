@@ -3,52 +3,95 @@
 DTC and EM, two planes
 ======================
 
-.. TODO MAN05: touch up; DTC = the life of the digital asset, EM = the interpretation of what it represents. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*The life of a digital file and the interpretation of what it shows: two records that meet without mixing.*
 
-Every asset a study uses — a photograph, a scan, a 3D model, a document — came from
-somewhere and was made somehow. The **DTC** model records that, so the record can
-always answer *where did this come from* and *who says so*.
+A photograph of a wall answers two different questions. One is about the
+photograph: who took it, when, with which camera, what was computed from it,
+under which licence it may be used. The other is about the wall: which unit it
+is, what lies above and below it, to which epoch it belongs, what it is
+interpreted to be. EMStudio keeps the two answers on two planes.
 
-Three acts
-----------
+- The **DTC**, the *digital transformation chain*, records the life of the
+  digital file: where it was born, through which steps it passed, which files it
+  produced, who holds the rights.
+- The **Extended Matrix** records the interpretation of what the file shows: the
+  stratigraphic units, their relations and epochs, the properties read from the
+  documents, the reconstructions.
 
-Provenance is built from three kinds of act:
+The DTC plane: the life of a file
+---------------------------------
 
-- **Acquisition** — material entered the study. Files dropped in the Documentation
-  tab arrive *with* their acquisition; it is the root of a chain.
-- **Derivation** — something was made from other material, with a tool (a mesh from
-  photographs, a drawing from a scan). A derivation points back at its inputs.
-- **Attribution** — who declares the author, licence and embargo of an asset.
+Every file of a study comes from somewhere. A photographic survey produces
+photographs; an alignment of the photographs produces a point cloud; a mesh is
+computed from the cloud; a lighter version of the mesh is made for the web. Each
+of these is an act, and the DTC records it in three kinds of statement.
 
-Together they form a **corpus**: a forest of chains whose leaves can be shared
-between them. It has its own tab (:doc:`../how-to/sources/declare-provenance`) and, in a
-room, lives resident in the object store so the rights can be enforced from it.
+- **An origin**: a file born here, in the field or in the laboratory, or taken
+  from an archive with its address.
+- **A step**: a process that made files from other files, with its kind, its
+  software and its parameters. A step points back at its inputs, so the chain
+  can be read from any file to its beginning.
+- **Rights and author**: the licence of the file, an embargo when the bytes must
+  wait, and the person who made it.
 
-The attributor is not the author
+In EMStudio the chain is written where the files are, by *stamping* them in the
+**Files** window of the **Archive** workspace. A stamp is a small file kept next
+to the file it describes, so it travels with it, and it is never corrected: a
+mistaken stamp is followed by a new one. The **Transformation chain (DTC)**
+window draws the chain of a file; a **Graph** window in **DTC** mode draws the
+chains of the whole study (see :doc:`/how-to/sources/declare-provenance`).
+
+The EM plane: the interpretation
 --------------------------------
 
-Attribution is an **act**, signed by *you* — the **attributor** — at the moment you
-perform it. It is distinct from the **author**, who made the thing and may be absent,
-historical, or unknown. Each attributed field is three-state: absent, a value, or
-explicitly withdrawn. This lets the record say honestly "attributed by X on date Y"
-without pretending X authored the asset. It matters most for AI: a machine-proposed
-statement is authored by the model and *validated* by a human, and both are recorded
-— the question "who made this?" always has an answer.
+The Extended Matrix is the plane of reasoning about the past. A stratigraphic
+unit is not a file: it is an interpretation, supported by documents. A document
+is read by an extractor, the extractor gives a value to a property, the property
+qualifies a unit, and the unit takes its place in the sequence. This is the
+*paradata* of the interpretation: the path from the evidence to the statement,
+recorded so that another scholar can follow it and disagree.
 
-Rights that bite
+Where the planes meet
+---------------------
+
+The two planes touch at the documents. A document of the study, for example
+*D.14, photographs of the north wall*, belongs to the Extended Matrix: units cite
+it and extractors read it. Its files belong to the DTC: each one has its chain
+and its rights. In the **DTC** mode of a Graph window, the lowest lane,
+**Used in the record**, shows exactly this junction: the units and documents that
+cite the end of each chain.
+
+Keeping the planes apart has practical consequences.
+
+- **A new version of a model leaves the interpretation unchanged.** A lighter
+  mesh is a new step of the DTC; the unit it shows is the same unit.
+- **A new interpretation leaves the files unchanged.** Reassigning a wall to
+  another epoch changes the Extended Matrix; the photographs and their chain stay
+  as they were.
+- **Each plane answers its own question.** *Where does this file come from?* is
+  answered by the chain. *Why do we say this wall is Roman?* is answered by the
+  paradata.
+
+The attributor and the author
+-----------------------------
+
+On both planes, a statement is an act signed by whoever makes it. The person who
+writes down the rights of a photograph is the **attributor**; the person who took
+it is the **author**, who may be absent, a colleague of another project, or
+unknown. EMStudio records the two separately, with the date of the attribution.
+The record can say *attributed by X on this day* without claiming that X took the
+photograph.
+
+The same distinction serves the drafts written with an AI. A paragraph proposed
+by a model carries the model as its author and enters the story only when a
+person verifies it; both contributions are recorded (see
+:doc:`narrative-as-graph`).
+
+Rights that hold
 ----------------
 
-The licence and embargo declared here are **enforced**, not annotated. Resolving an
-asset is fail-closed: if the graph is silent it serves; under embargo it refuses with
-the date (to anyone below editor); if the graph is unreadable it refuses rather than
-risk leaking bytes. The rule is the same whether the image is fetched by the viewer,
-by IIIF, or by a connector.
-
-A nested stack
---------------
-
-The DTC (documentation) sits under the Extended Matrix, which sits under the
-Landscape; each level is the transformation-and-reasoning about the level below.
-Documentation is where the material and its provenance live; the matrix is the
-interpretation; the landscape composes sites. See
-:doc:`place-in-the-framework`.
+The licence and the embargo declared for a file are applied, not only noted.
+When a StratiGraph node serves the bytes of a room, an embargo still running
+keeps the file for those who work on the study, and the licence travels with
+every download. The rule is the same whichever window or program asks for the
+file.

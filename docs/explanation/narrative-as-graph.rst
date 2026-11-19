@@ -3,50 +3,69 @@
 Narrative as graph
 ==================
 
-.. TODO MAN05: touch up. The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*The story of a study is a reading of its graph, with the evidence shown where it is argued.*
 
-The **Narrative** is not a separate document you write *about* the study. It is the
-graph **read as a story** — a view of the same record, in prose, with its evidence
-in line.
+The **narrative** is not a separate document written *about* the study. It is
+the graph **read as a story**: a node of the same graph, saved in the same
+``em.json``, whose chapters follow the structure of the record and whose figures
+are parts of the record itself.
 
-Chapters are lanes; embeds are references
------------------------------------------
+Chapters follow the graph
+-------------------------
 
-A narrative is a sequence of **chapters** that anchor to the structure of the graph —
-typically an epoch or an activity — and hold **blocks**: prose, and **embeds**. An
-embed is a *reference*, never a copy: a matrix embed of an epoch shows that epoch's
-units and stays in sync with the graph; a paradata embed shows the evidence chain
-(source → extractor → property → unit) in line. Because embeds are references, the
-story cannot drift from the record it tells.
+A story is made of **chapters**, and a chapter can narrate a *lane* of the
+graph: an epoch, or an activity. When a story is first proposed, EMStudio writes
+one chapter for each epoch, from the oldest to the most recent, each showing the
+Matrix of its epoch. The chapters can then be reordered, divided and rewritten
+freely: the lane says which part of the graph the chapter is about, so that the
+Matrix beside the page follows the chapter being read, and an AI draft knows
+what it is asked to tell.
 
-This is what makes the narrative distinctive: the graph, told as a reading, with the
-matrix, the sources, the 3D and the paradata *shown where they are argued*, and the
-whole thing still queryable as RDF.
+Embeds are references, not copies
+---------------------------------
 
-AI-authorship, made honest
---------------------------
+A chapter holds paragraphs and **embeds**: blocks that show a part of the study,
+for example the Matrix of an epoch, a table, a document with its citation, or a
+3D scene with a saved framing. An embed is a reference to the graph, never a
+copy of it. When a unit changes, the Matrix in the chapter changes with it; when
+a document is renamed, its citation follows. The story cannot drift away from the
+record it tells.
 
-A chapter can be drafted by a model from its scope. EMStudio treats this as a first
-class, documented act rather than a hidden convenience: the **prompt is a source**
-(a belief adoption based on evidence), the draft is authored by the **AI author**
-(model name, version, date), and it becomes knowledge only when a **human validates**
-it. The byline reads "with the assistance of *the model*", the responsible human is
-in the front line, and whoever validates is credited. This is the narrative as the
-first proving ground of the question *who made this?* — where machine and human
-contributions are both recorded, distinctly.
+The same holds for the citations and mentions in the text: a mention of SU001
+typed with :kbd:`[[` is a link to the node, and the **Story coverage** in the **Index**
+counts how much of the graph the story cites and what no chapter explains yet. This is what
+the narrative adds to a report written beside the data: the matrix, the
+sources, the 3D and the paradata *shown where they are argued*.
+
+Authorship made explicit
+------------------------
+
+A paragraph can be drafted by an AI model from its chapter's lane and from the
+documents of the study. EMStudio records this as a documented act. The request
+is a node of the graph, with the documents it rested on; the draft carries the
+model as its author; and it becomes part of the story only when a person reads
+it and presses **✓ I checked it**, which puts that person's name on it. The head
+of the story lists the people under **edited by** and the models under
+**with the assistance of**. Paragraphs that nobody has verified stay out of the
+exported files, unless you choose otherwise when exporting.
+
+The narrative is thus the first place where the question *who made this?* is
+answered for machine and human contributions alike, each recorded for what it
+is (see :doc:`dtc-and-em`, *The attributor and the author*).
 
 Two tiers, here too
 -------------------
 
-The narrative lives in the ``em.json`` record and projects to RDF like the rest:
-chapters and blocks are data, and the citations an embed makes become RDF references
-— not reified as triples first, but written as the graph and projected. See
-:doc:`two-tier`.
+The narrative lives in the ``em.json`` with the rest of the study and projects
+to RDF like the rest: chapters and blocks are data of the graph, and the
+citations of an embed become references in RDF (see :doc:`two-tier`).
 
-From editing to dissemination
------------------------------
+Written, exported, read
+-----------------------
 
-You author the narrative in EMStudio and export it (HTML, Word, LaTeX, Jupyter — see
-:doc:`../how-to/narrative/export-the-narrative`). Beyond the exports, a served **reader** page
-disseminates it with the embeds live, for people who do not run EMStudio. Same
-record, three stages: authored, exported, published.
+The story is written in EMStudio and exported from the **Export ▾** button of
+the **Narrative** window: HTML, DOCX, LaTeX with its bibliography, and a Jupyter
+notebook (see :doc:`/how-to/narrative/export-the-narrative`). For a study
+published in a node's Catalog, **Live reader · link** gives the address of a reader
+page that shows the story with its embeds live, for people who do not use EMStudio. The same record
+passes through three stages: written, exported, published.

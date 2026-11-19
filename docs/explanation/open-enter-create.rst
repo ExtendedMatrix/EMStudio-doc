@@ -3,118 +3,112 @@
 Open, enter, create
 ===================
 
-.. TODO MAN05: rewrite with the three verbs (was «Rooms, Sidecar, and collaboration»). The text below is the 1.6.0-dev.10 page, kept until it is rewritten.
+*The file, the room and the published study: where the copy you are editing lives, and the three verbs that reach it.*
 
-EMStudio can work entirely on its own, alongside another tool on your machine,
-or inside a shared room with other people and their tools. These are not three
-separate "modes" you switch between — they are **two independent axes that
-compose**. Understanding the two axes removes almost every confusion about how
-EMStudio connects to the rest of the ecosystem.
+Before starting to work, one question decides everything else: **where does the
+copy you are editing live?** It has two answers. Either it lives on your disk,
+and it is a file of yours; or it lives on a StratiGraph node, and then it is a
+room. EMStudio names the gesture that reaches each place with a verb.
 
-Two axes, not three modes
+The three verbs
+---------------
+
+**Open** a file from the disk.
+   ``File ▸ Open…`` reads an ``em.json`` of yours. No server and no network are
+   involved: you are the keeper of the file, and saving writes it back where it
+   came from. This is how EMStudio works on its own.
+
+**Enter** a room.
+   A room is a study that lives on a node. Entering it does not download a
+   file: you attach to the room, receive its graph, and from then on what you
+   write is written there, for every member, under your name. The rooms of a
+   node are listed in the chip's menu, under **My space**.
+
+**Create** a room.
+   ``File ▸ Create a room…`` makes a new, empty room on your node;
+   ``File ▸ Bring this into a new room…`` makes a room from the study you have
+   open, with its files. Whoever creates a room is its owner: ownership is born
+   from the gesture.
+
+A study that lives on the node is always a room, even when you are its only
+member. A room with one member is your own table on the node, and it can welcome
+the others later. Working online therefore always means working in a room. The
+web version of EMStudio can also open an ``em.json`` from your computer and give
+it back as a download, which is the verb *open* carried into the browser.
+
+Three keepers, three words
+--------------------------
+
+**The file is an object, the room is a place, the published study is a
+citation.**
+
+- A **file** on your disk is yours. You open it, change it, save it, copy it.
+- A **room** is a place where a study is kept and worked on by its members, each
+  with a role: a *viewer* reads, an *editor* writes, an *admin* also manages
+  the people, the *owner* created it.
+- A **published study** is a version that a node's Catalog has fixed and that
+  others can cite. EMStudio opens it from the Catalog as a copy to work on; the
+  published version stays exactly as it was cited. New work on it continues in a
+  file or in a room, and may become a new published version in its turn.
+
+One passes from one keeper to another only with an explicit gesture:
+**Bring this into a new room…** turns a file into a room; ``File ▸ Save As…``,
+inside a room, makes a copy of the room's study on your disk; a node publishes a
+room's study in its Catalog. Each gesture is named, so that there are never two
+copies that both believe they are the original.
+
+One room, one living graph
+--------------------------
+
+A room is the living copy of its study. Two groups who work on the same study
+work in the same room, as members; a project that divides its work divides it
+by graphs inside the same study, not by parallel rooms. Two rooms can share
+files: the node keeps each file once, under the fingerprint of its content, and
+both rooms cite it.
+
+What travels, and how far
 -------------------------
 
-**Axis 1 — collaboration:** *no room* ↔ *room*. A **room** is a shared envelope
-served by a server (the Field Computing Node, or an institutional/cloud server).
-It carries identity, access control, presence, real-time merge (CRDT), and
-persistence. Without a room you are alone with your document; in a room, one or
-more people share the same record.
+Three kinds of thing travel between the people of a room and between your own
+programs, and each has its own reach.
 
-**Axis 2 — connectors:** *no tool* ↔ *one or more tools connected*. This is about
-tool-to-tool (Blender, Heriverse, Tropy…), not person-to-person.
+**The study** (the graph, the documents, the provenance of the files) reaches
+the whole room. A unit you add is there for every member, with your name on it.
+When two people change the same field, the room keeps one value and EMStudio
+says whose change was kept.
 
-The two axes are orthogonal, and their four cells are the "modes" you may have
-heard named:
+**Presence** reaches the room as information. You see who is in the room and
+which nodes each one has selected, marked on your canvas. Another person's
+selection never moves yours, and yours never moves theirs.
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 40 40
+**The live link between your own programs** reaches only you. With the mode
+**With an app**, a unit selected in EMStudio is selected in Blender and the
+other way round (see :doc:`/how-to/extensions/live-sync-with-em-tools`). This
+tight link belongs to one person's tools, on the same computer or the same
+network; it can stay on while you are in a room.
 
-   * -
-     - no tool
-     - tool connected
-   * - **no room**
-     - **Standalone** — you, your document
-     - **Sidecar** — a tool linked directly (local)
-   * - **room**
-     - Collaborative EMStudio — people, one record
-     - **Hub** — tools join the shared room
+Where you work
+--------------
 
-So **Sidecar and Hub are the same connector over two transports**; the room is a
-layer *on top*, not an alternative. They do not overlap — they compose. You can
-be alone with a Sidecar link to your own Blender, or in a room with three
-colleagues and no tools, or both at once.
+The chip at the top right of the window carries the place you are working in,
+in its section **Where you work**. Under **Mode** it offers three choices:
 
-Where tools meet EMStudio: the rendezvous ladder
-------------------------------------------------
+- **On this computer**: the files of your disk, the verb *open*;
+- **With an app**: the live link with EM Tools in Blender;
+- **In a room**: the last room you were in on your node, the verb *enter*.
 
-"Is there a network in the middle?" only asks *which rendezvous* a connection
-uses. The same connector runs at every rung:
+The status bar repeats the place: **Room** followed by the name of the room and
+of the node, when you are in one. Earlier versions of EMStudio called these
+ways of working *Standalone*, *Sidecar* and *Hub*. The three choices press
+buttons that still carry the older names, **Standalone**, **Sidecar (sync)**
+and **Join Room**, as :doc:`/reference/menus` lists them.
 
-#. **Direct** — same machine, no server = **Sidecar**. Two desktop apps talking
-   (EMStudio desktop + Blender), producing an ``em.json`` on one side and a
-   ``.blend`` on the other.
-#. **LAN server** — a Field Computing Node on the local network = **Hub (local)**.
-   Two EMStudio instances, or Blender on another machine in the same building.
-#. **Cloud server** — an institutional or ECCCH server online = **Hub (global)**.
-   Heriverse online, or a partner tool anywhere on the internet.
-
-Only the transport adapter changes; the shared language (the ``em.json`` graph,
-the content-addressed object store, the real-time CRDT) stays the same. Desktop
-tools tend to sit at rung ① but can climb; online tools (Heriverse) are born at
-rung ③; the **web** version of EMStudio lives from rung ② upward, because a
-browser needs a server to reach another machine.
-
-What is shared, and how far it reaches
---------------------------------------
-
-Three different kinds of state can travel between tools and people, each with its
-own **reach** — and keeping them apart is what makes collaboration feel right
-rather than intrusive.
-
-**1. The document** (the graph, the assets, the DTC provenance — the persistent
-record). Reach: **the whole room**. If you add or edit US1, everyone in the room
-sees it, merged and attributed. This is the point of a room.
-
-**2. Ephemeral interaction** (selection, hover, camera, focus — "click US1 here,
-highlight US1's 3D object there"). Reach: **one user's own linked tools** — the
-**Sidecar link**. It is not a change to the document, and it does **not** reach
-other people.
-
-**3. Presence** (awareness — "Emanuel is looking at US1"). Reach: **the room, as
-information only**, never as a command.
-
-The consequence is the line that matters: a room **never lets one person's click
-drive another person's software**. Driving someone else's selection or camera
-would be hostile, so it is not done. That tight "click-here-selects-there"
-coupling is the Sidecar link, and it is scoped to *your* tools. Even inside a
-room you will want a Sidecar link between your own EMStudio and your own Blender
-or Heriverse — the room shares the document and shows presence; your Sidecar
-link drives your own view.
-
-Examples
+See also
 --------
 
-**EMStudio + Blender, same user, same machine (Sidecar).** Click US1 in EMStudio
-and the object highlights in Blender; select the object in Blender and its node
-selects in EMStudio. This is your compound workstation — ephemeral, personal.
-
-**EMStudio + Heriverse (Hub, cloud).** Heriverse online reads the published study
-(the graph and the 3D from the store) and disseminates it. If you have your own
-Sidecar link to it, clicking a node still focuses the object *for you*; other
-viewers are not driven by your clicks.
-
-**A room with two archaeologists.** You both edit the same matrix; every change
-propagates and is attributed to its author. You see, as presence, where the other
-is working — and you may choose to follow, or not. Neither of you controls the
-other's screen.
-
-Why this matters for plugins
-----------------------------
-
-Because the three reaches are distinct, a connector plugin declares *which layers*
-it participates in — as separate capabilities: ``sync-document`` (room reach),
-``link-selection`` (user reach — the Sidecar interactivity), and ``presence``
-(room reach, information only). The contract itself makes it impossible for one
-user's selection to become another user's command. See
-:doc:`place-in-the-framework` for how connectors fit the wider ecosystem.
+- :doc:`/how-to/files/open-save-recent`, to open and save files.
+- :doc:`/how-to/rooms/sign-in`, :doc:`/how-to/rooms/create-a-room`,
+  :doc:`/how-to/rooms/bring-a-file-into-a-room` and
+  :doc:`/how-to/rooms/enter-and-share-a-room`, for the rooms.
+- :doc:`/how-to/files/pin-a-version`, to freeze a version of a project that the
+  Catalog can cite.
