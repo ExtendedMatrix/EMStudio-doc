@@ -5,4 +5,131 @@ Your first study
 
 *Open a study, read its matrix, add a unit, connect it and save.*
 
-.. TODO MAN02: write (⇧A, connect, save; a GraphML matrix read once).
+In this tutorial you make your first change to a stratigraphic matrix: you add a
+unit, place it in the sequence and save the study. It takes about fifteen
+minutes. We continue on Templu Mare, but work on a copy of the file, so that the
+original stays as it is.
+
+Before you start
+----------------
+
+You need EMStudio and a copy of the ``.em.json`` of Templu Mare (or of any study
+of yours). :doc:`first-launch` shows how the workspaces are arranged.
+
+Open the study and read the matrix
+----------------------------------
+
+#. Choose ``File ▸ Open…`` and pick the copy of the study. It opens in the
+   **Stratigraphy** workspace.
+#. Press :kbd:`0` with the pointer on the matrix to see the whole graph.
+
+The matrix reads from the bottom up, like an excavation seen in section: the
+older units are lower, the more recent higher. Each horizontal band is an
+**epoch**, named at its left edge. A line between two units is a stratigraphic
+relation: the unit above came after the unit below.
+
+The shape of each unit says what kind of unit it is. A rectangle is a
+stratigraphic unit observed in the field; the other shapes are the virtual units
+of a reconstruction and the special finds. ``Help ▸ EM legend`` lists every shape
+and every kind of line, and :doc:`/reference/em-legend` describes them.
+
+#. Click a unit. The **Inspector** on the right shows its name, its description,
+   its epoch and its relations.
+#. Press :kbd:`/` and type the name of a unit, for example ``SU004``: the
+   matrix moves to it.
+
+Add a unit
+----------
+
+#. Click the unit under which the new one lies, so that it is selected.
+#. With the pointer on the matrix, press :kbd:`⇧A` (:kbd:`Shift+A` on Windows
+   and Linux). The **Add** menu opens where the pointer is.
+#. Under **Linked to** and the name of the selected unit, the menu offers the
+   kinds of unit that can sit above or below it. Choose a stratigraphic unit
+   *above* the selected one. You can also type in the search field, for example
+   ``US``, and press :kbd:`Enter`.
+
+The new unit appears in the matrix, already connected to the one you had
+selected, in the epoch where you placed it. EMStudio gives it a name; to change
+it, write the new name in the Inspector and press :kbd:`Enter`. Write a short
+description in the Inspector too.
+
+Without a selection, :kbd:`⇧A` adds a unit alone, in the epoch under the pointer.
+
+Connect two units
+-----------------
+
+A unit usually has more than one relation. To connect the new unit to another
+one:
+
+#. Hold the pointer on the new unit: a small **handle** appears on it.
+#. Drag the handle upwards onto a unit that lies above it, or downwards onto a
+   unit that lies below it, and release.
+
+EMStudio chooses the relation that the Extended Matrix allows between the two
+kinds of unit, in that direction, and refuses a direction that the language does
+not allow, with a message that says why. If you release the handle on the empty
+canvas instead, the **Add** menu opens to create a new unit already connected.
+
+Every change can be taken back with ``Edit ▸ Undo`` (:kbd:`⌘Z` on the Mac,
+:kbd:`Ctrl+Z` elsewhere).
+
+Save
+----
+
+#. Choose ``File ▸ Save`` (:kbd:`⌘S`, :kbd:`Ctrl+S`).
+
+.. tab-set::
+   :sync-group: platform
+
+   .. tab-item:: Desktop
+      :sync: desktop
+
+      The study is written back to its ``.em.json``, in the same place. To
+      keep the original untouched and write a new file, choose
+      ``File ▸ Save As…`` instead.
+
+   .. tab-item:: Web
+      :sync: web
+
+      A file opened from your computer comes back to you as a download: the
+      browser saves the ``.em.json`` in its downloads folder. In a room the
+      changes reach the room as you make them.
+
+A matrix made in yEd
+--------------------
+
+Many studies begin as a GraphML matrix drawn in yEd. EMStudio reads such a file
+once and from then on the study lives in an ``.em.json``.
+
+#. Choose ``File ▸ Import ▸ GraphML…``.
+
+   .. tab-set::
+      :sync-group: platform
+
+      .. tab-item:: Desktop
+         :sync: desktop
+
+         Pick the ``.graphml`` file in the system's dialog. A second dialog
+         asks where to keep the ``.em.json``, beside the GraphML by default:
+         give it a name and confirm.
+
+      .. tab-item:: Web
+         :sync: web
+
+         Pick the ``.graphml`` file in the browser's dialog, then type the
+         name of the ``.em.json`` the graph will live in. The browser
+         downloads the new ``.em.json``.
+
+The message **GraphML read once into** and the name of the new file confirms the
+reading. Continue your work on the ``.em.json``: it holds everything the GraphML
+held, and what EMStudio adds to it. The shapes and colours of yEd are left out,
+because EMStudio draws every unit from the rules of the Extended Matrix.
+:doc:`/how-to/bring-in/import-graphml` gives the details.
+
+What you get
+------------
+
+A copy of Templu Mare with one more unit, placed in the sequence and saved. The
+next tutorial, :doc:`files-to-documents`, brings files into the study as
+documents.
