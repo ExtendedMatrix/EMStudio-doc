@@ -18,6 +18,7 @@ understand the model rather than to perform a task.
    open-enter-create
    two-tier
    dtc-and-em
+   slice-as-document
    narrative-as-graph
    extensions-and-trust
    vocabularies

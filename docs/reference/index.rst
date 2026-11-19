@@ -29,6 +29,7 @@ and web, and the files EMStudio reads and writes.
    emjson
    export-formats
    file-locations
+   geofisica
 
 .. toctree::
    :maxdepth: 1

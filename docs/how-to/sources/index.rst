@@ -11,3 +11,4 @@ Recipes for where a datum comes from: the stamps and the rights of the files, th
    declare-provenance
    documents-and-media
    trace-regions-on-images
+   trace-an-anomaly-on-a-slice

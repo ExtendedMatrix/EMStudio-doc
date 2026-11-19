@@ -1,0 +1,580 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 17:25+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "The Geofisica package"
+msgstr "Il pacchetto Geofisica"
+
+msgid ""
+"*What the geophysics package adds to EMStudio: the formats it reads, the "
+"import panel, the Space, the tools and the Inspector section.*"
+msgstr ""
+"*Che cosa aggiunge a EMStudio il pacchetto per la geofisica: i formati "
+"che legge, il pannello d'importazione, lo Spazio, gli strumenti e la "
+"sezione dell'Ispettore.*"
+
+msgid ""
+"**Geofisica** 0.1.0 is a mixed package of the official list of the "
+"Extended Matrix: its data are the vocabularies of methods, quantities and"
+" anomalies and the colour schemes; its code reads stacks, writes them "
+"into the graph and draws them. The tasks are in :doc:`/how-to/bring-in"
+"/bring-in-a-geophysical-stack` and :doc:`/how-to/sources/trace-an-"
+"anomaly-on-a-slice`."
+msgstr ""
+"**Geofisica** 0.1.0 è un pacchetto misto della lista ufficiale "
+"dell'Extended Matrix: i suoi dati sono i vocabolari di metodi, grandezze "
+"e anomalie e gli schemi di colore; il suo codice legge le pile, le scrive"
+" nel grafo e le disegna. I compiti sono in :doc:`/how-to/bring-in/bring-"
+"in-a-geophysical-stack` e :doc:`/how-to/sources/trace-an-anomaly-"
+"on-a-slice`."
+
+msgid "Item"
+msgstr "Voce"
+
+msgid "Value"
+msgstr "Valore"
+
+msgid "Data"
+msgstr "Dati"
+
+msgid ""
+"vocabularies *anomalie*, *metodi*, *grandezze*; colour schemes grey, "
+"viridis, hot, jet; licence CC-BY-4.0"
+msgstr ""
+"vocabolari *anomalie*, *metodi*, *grandezze*; schemi di colore grigio, "
+"viridis, hot, jet; licenza CC-BY-4.0"
+
+msgid "Code"
+msgstr "Codice"
+
+msgid ""
+"module ``geofisica``, for EMStudio and Blender; licence GPL-3.0-or-later;"
+" it needs the ``em`` API 1.2 or later"
+msgstr ""
+"modulo ``geofisica``, per EMStudio e Blender; licenza GPL-3.0-or-later; "
+"vuole l'API ``em`` 1.2 o successiva"
+
+msgid "Permission"
+msgstr "Permesso"
+
+msgid ""
+"**files**: reads the chosen geophysical stacks and writes their slice "
+"cache"
+msgstr ""
+"**files**: legge le pile geofisiche scelte e scrive la cache delle loro "
+"fette"
+
+msgid "Where it writes"
+msgstr "Dove scrive"
+
+msgid ""
+"the graph, and the cache of pictures in the plugins' own folder (see :doc"
+":`file-locations`); never beside the stack"
+msgstr ""
+"il grafo, e la cache delle immagini nella cartella dei plugin (vedi :doc"
+":`file-locations`); mai accanto alla pila"
+
+msgid "Formats"
+msgstr "Formati"
+
+msgid "The format is read from the files, or chosen in **Format**."
+msgstr "Il formato si legge dai file, oppure si sceglie in **Formato**."
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "What the package reads"
+msgstr "Che cosa legge il pacchetto"
+
+msgid "**CSV grids**"
+msgstr "**griglie CSV**"
+
+msgid ""
+"the GPR slices exported as CSV, the step of the grid in the header, the "
+"depth in the name"
+msgstr ""
+"le fette GPR esportate come CSV, il passo della griglia "
+"nell'intestazione, la profondità nel nome"
+
+msgid "**ASCII matrices**"
+msgstr "**matrici ASCII**"
+
+msgid ""
+"matrices of numbers without a header (``.asc``), ``0`` for no value; the "
+"size on the ground given in the panel; the vertical sections (``VERT…``) "
+"with their length and depth"
+msgstr ""
+"matrici di numeri senza intestazione (``.asc``), ``0`` per nessun valore;"
+" la misura sul terreno data nel pannello; le sezioni verticali "
+"(``VERT…``) con la loro lunghezza e profondità"
+
+msgid "**XYZV volumes**"
+msgstr "**volumi XYZV**"
+
+msgid ""
+"points with a value, divided into planes; a derived resource, not a drawn"
+" document"
+msgstr ""
+"punti con un valore, divisi in piani; una risorsa derivata, non un "
+"documento disegnato"
+
+msgid "**XYZ lines**"
+msgstr "**linee XYZ**"
+
+msgid "XYZ files in blocks ``line N``"
+msgstr "file XYZ a blocchi ``line N``"
+
+msgid "**GeoTIFF rasters**"
+msgstr "**raster GeoTIFF**"
+
+msgid ""
+"float rasters with their georeference, no-value cells, saturated cells "
+"reported, a world file checked against the file's own tags"
+msgstr ""
+"raster in virgola mobile con il loro georiferimento, celle senza valore, "
+"celle sature segnalate, un world file confrontato con i tag del file"
+
+msgid "**Pictures**"
+msgstr "**Immagini**"
+
+msgid "pictures of slices, the size on the ground given in the panel"
+msgstr "immagini di fette, la misura sul terreno data nel pannello"
+
+msgid "**Screen captures**"
+msgstr "**Schermate**"
+
+msgid ""
+"pictures captured from the screen of a geophysics program, with the frame"
+" from pixels to metres declared once for the whole stack"
+msgstr ""
+"immagini catturate dallo schermo di un programma di geofisica, con il "
+"riquadro da pixel a metri dichiarato una volta per tutta la pila"
+
+msgid ""
+"The depth of a slice is read from its name, in metres, centimetres or "
+"millimetres. A product without a depth (an average over the stack, say) "
+"lies at the ground."
+msgstr ""
+"La profondità di una fetta si legge dal suo nome, in metri, centimetri o "
+"millimetri. Un prodotto senza profondità (una media sulla pila, per "
+"esempio) sta al suolo."
+
+msgid "Where it appears"
+msgstr "Dove compare"
+
+msgid "Where"
+msgstr "Dove"
+
+msgid "What"
+msgstr "Che cosa"
+
+msgid "``File ▸ Porta dentro una cartella…``"
+msgstr "``File ▸ Porta dentro una cartella…``"
+
+msgid "**Geophysical stack**: reads a folder and opens the panel with it"
+msgstr "**Pila geofisica**: legge una cartella e apre il pannello con essa"
+
+msgid "``File ▸ Porta dentro…``"
+msgstr "``File ▸ Porta dentro…``"
+
+msgid ""
+"``.asc`` and ``.xyz`` go to the package; ``.csv``, ``.tif``, ``.tiff``, "
+"``.jpg``, ``.jpeg``, ``.png`` offer **Read as:** **Geofisica · "
+"Geophysical stack** beside **EMStudio (as it is)**"
+msgstr ""
+"``.asc`` e ``.xyz`` vanno al pacchetto; ``.csv``, ``.tif``, ``.tiff``, "
+"``.jpg``, ``.jpeg``, ``.png`` offrono **Leggi come:** **Geofisica · Pila "
+"geofisica** accanto a **EMStudio (così com'è)**"
+
+msgid "The panel **Geophysical stack**"
+msgstr "Il pannello **Pila geofisica**"
+
+msgid "the import (below)"
+msgstr "l'importazione (sotto)"
+
+msgid "**Space**, **Visibility ▾** ▸ **Plugin layers**"
+msgstr "**Spazio**, **Visibilità ▾** ▸ **Strati dei plugin**"
+
+msgid "the stacks as planes, with the depth cursor over the scene"
+msgstr "le pile come piani, con il cursore di profondità sopra la scena"
+
+msgid "**Space**, the bar over the scene"
+msgstr "**Spazio**, la barra sopra la scena"
+
+msgid ""
+"**Point anomaly on a slice**, **Linear anomaly on a slice**, **Areal "
+"anomaly on a slice**"
+msgstr ""
+"**Anomalia puntuale su fetta**, **Anomalia lineare su fetta**, **Anomalia"
+" areale su fetta**"
+
+msgid "**Inspector**"
+msgstr "**Ispettore**"
+
+msgid "the section **Geophysical reading**, on a slice, a section or an anomaly"
+msgstr "la sezione **Lettura geofisica**, su una fetta, una sezione o un'anomalia"
+
+msgid "The import panel"
+msgstr "Il pannello d'importazione"
+
+msgid "Field"
+msgstr "Campo"
+
+msgid "Meaning"
+msgstr "Significato"
+
+msgid "**Folder**"
+msgstr "**Cartella**"
+
+msgid "the stack's folder; ``File ▸ Porta dentro una cartella…`` writes it here"
+msgstr ""
+"la cartella della pila; ``File ▸ Porta dentro una cartella…`` la scrive "
+"qui"
+
+msgid "**What it is**"
+msgstr "**Che cos’è**"
+
+msgid ""
+"what the package found: stack, format, slices, sections, depths, method, "
+"what is missing, the documents of this stack already in the graph"
+msgstr ""
+"che cosa ha trovato il pacchetto: pila, formato, fette, sezioni, "
+"profondità, metodo, che cosa manca, i documenti di questa pila già nel "
+"grafo"
+
+msgid "**Method**"
+msgstr "**Metodo**"
+
+msgid ""
+"**as the format suggests**, **GPR (ground-penetrating radar)**, **ERT "
+"(electrical resistivity)**, **Magnetometry**"
+msgstr ""
+"**come suggerisce il formato**, **GPR (georadar)**, **ERT (resistività "
+"elettrica)**, **Magnetometria**"
+
+msgid "**Format**"
+msgstr "**Formato**"
+
+msgid "**read from the files**, or one of the formats above"
+msgstr "**letto dai file**, oppure uno dei formati sopra"
+
+msgid "**Stack name**"
+msgstr "**Nome della pila**"
+
+msgid ""
+"empty: the folder's name. It is the stack's identity: keep it the same to"
+" import again"
+msgstr ""
+"vuoto: il nome della cartella. È l'identità della pila: tienilo uguale "
+"per importare di nuovo"
+
+msgid "**Quantity**, **Unit**"
+msgstr "**Grandezza**, **Unità**"
+
+msgid "what the values measure, and in which unit"
+msgstr "che cosa misurano i valori, e in quale unità"
+
+msgid "**Width (x)**, **Height (y)**"
+msgstr "**Larghezza (x)**, **Altezza (y)**"
+
+msgid "the size of a slice on the ground, in metres"
+msgstr "la misura di una fetta sul terreno, in metri"
+
+msgid "**Sections**"
+msgstr "**Sezioni**"
+
+msgid "length × depth of each line, as ``VERT1=92x8, VERT4=50x8``"
+msgstr "lunghezza × profondità di ogni linea, come ``VERT1=92x8, VERT4=50x8``"
+
+msgid "**Every section: length**, **Every section: depth**"
+msgstr "**Ogni sezione: lunghezza**, **Ogni sezione: profondità**"
+
+msgid "the same size for every section, in metres"
+msgstr "la stessa misura per ogni sezione, in metri"
+
+msgid "**Values in the file**, **…stand for**, **…in**, **…according to**"
+msgstr "**Valori nel file**, **…valgono**, **…in**, **…secondo**"
+
+msgid ""
+"the declared scale: the file's range (``1-255``), what it stands for "
+"(``0-3500``), the unit (``ohm.m``), and where the scale comes from"
+msgstr ""
+"la scala dichiarata: l'intervallo del file (``1-255``), che cosa vale "
+"(``0-3500``), l'unità (``ohm.m``), e da dove viene la scala"
+
+msgid "**Colours**"
+msgstr "**Colori**"
+
+msgid "**the method's**, **grey**, **viridis**, **hot**, **jet**"
+msgstr "**quelli del metodo**, **grigio**, **viridis**, **hot**, **jet**"
+
+msgid "**Colour range**"
+msgstr "**Intervallo dei colori**"
+
+msgid "**as the format suggests**, **one for the whole stack**, **one per slice**"
+msgstr ""
+"**come suggerisce il formato**, **uno per tutta la pila**, **uno per "
+"fetta**"
+
+msgid "**Where the slices are, according to**"
+msgstr "**Dove stanno le fette, secondo**"
+
+msgid ""
+"**the source of the position**, **the instrument (reality based)**, **a "
+"documentation (observable)**, **by eye (asserted)**"
+msgstr ""
+"**la fonte della posizione**, **lo strumento (reality based)**, **una "
+"documentazione (observable)**, **a occhio (asserted)**"
+
+msgid "**Placement (JSON)**"
+msgstr "**Collocazione (JSON)**"
+
+#, python-brace-format
+msgid ""
+"advanced: ``{\"origin\": [E, N], \"rotation\": 0, \"epsg\": 32633, "
+"\"source\": \"figure\"}``"
+msgstr ""
+"avanzato: ``{\"origin\": [E, N], \"rotation\": 0, \"epsg\": 32633, "
+"\"source\": \"figure\"}``"
+
+msgid "**Import**"
+msgstr "**Importa**"
+
+msgid "writes the stack into the graph, as one step"
+msgstr "scrive la pila nel grafo, in un passo solo"
+
+msgid ""
+"A word written in a field wins over the same key in **Placement (JSON)**."
+" A wrong word is refused with its reason, and nothing is written."
+msgstr ""
+"Una parola scritta in un campo vince sulla stessa chiave di "
+"**Collocazione (JSON)**. Una parola sbagliata è rifiutata con la sua "
+"ragione, e non si scrive nulla."
+
+msgid "The stack in the Space"
+msgstr "La pila nello Spazio"
+
+msgid "Control"
+msgstr "Comando"
+
+msgid "What it does"
+msgstr "Che cosa fa"
+
+msgid "The depth cursor"
+msgstr "Il cursore di profondità"
+
+msgid ""
+"over the scene: the stack, the slice, its depth below ground, its place "
+"(``4/6``); **▲** / **▼**, or :kbd:`↑` / :kbd:`↓` with the focus"
+msgstr ""
+"sopra la scena: la pila, la fetta, la sua profondità dal piano di "
+"campagna, il suo posto (``4/6``); **▲** / **▼**, oppure :kbd:`↑` / "
+":kbd:`↓` con il fuoco"
+
+msgid "The row of the stack"
+msgstr "La riga della pila"
+
+msgid ""
+"in **Visibility ▾**: shown or hidden, opacity, mode, slice, **sections "
+"(n)**, where the stack lies"
+msgstr ""
+"in **Visibilità ▾**: mostrata o nascosta, opacità, modo, fetta, **sezioni"
+" (n)**, dove sta la pila"
+
+msgid "**All**, **One at a time**, **Down to**"
+msgstr "**Tutte**, **Una alla volta**, **Fino a**"
+
+msgid ""
+"every slice, the cursor's slice, the slices down to the cursor's. Over 60"
+" planes they are shown one at a time; **Down to** shows at most 60"
+msgstr ""
+"ogni fetta, la fetta del cursore, le fette fino a quella del cursore. "
+"Oltre 60 piani si mostrano uno alla volta; **Fino a** ne mostra al più 60"
+
+msgid "Where it lies"
+msgstr "Dove sta"
+
+msgid ""
+"in the world when the stack has an origin and the study a georeference in"
+" the same EPSG; otherwise **in its own frame**, with the reason (**not "
+"placed in the world**, **the study has no georeference**, **another EPSG "
+"than the study's**)"
+msgstr ""
+"nel mondo quando la pila ha un'origine e lo studio un georiferimento "
+"nello stesso EPSG; altrimenti **nel suo riferimento**, con la ragione "
+"(**non collocata nel mondo**, **lo studio non è georiferito**, **un EPSG "
+"diverso da quello dello studio**)"
+
+msgid "The tracing tools"
+msgstr "Gli strumenti per tracciare"
+
+msgid "Tool"
+msgstr "Strumento"
+
+msgid "What it writes"
+msgstr "Che cosa scrive"
+
+msgid "**◉ Point anomaly on a slice**"
+msgstr "**◉ Anomalia puntuale su fetta**"
+
+msgid "a point, at the first click"
+msgstr "un punto, al primo clic"
+
+msgid "**〰 Linear anomaly on a slice**"
+msgstr "**〰 Anomalia lineare su fetta**"
+
+msgid "a line; a double click, **✓** or :kbd:`Enter` closes it"
+msgstr "una linea; un doppio clic, **✓** o :kbd:`Enter` la chiude"
+
+msgid "**▱ Areal anomaly on a slice**"
+msgstr "**▱ Anomalia areale su fetta**"
+
+msgid "an area; a double click, **✓** or :kbd:`Enter` closes it"
+msgstr "un'area; un doppio clic, **✓** o :kbd:`Enter` la chiude"
+
+msgid ""
+":kbd:`Esc` or **✕** stops. Each trace writes a unit **USD**, its "
+"properties (kind of anomaly, method, top and bottom of the band, "
+"confidence when given), and an extractor of the slice, or a combiner of "
+"the extractors of several slices. The kinds of anomaly are **point "
+"anomaly**, **linear anomaly**, **areal anomaly**, **diffraction "
+"hyperbola**, **high-resistivity zone**, **low-resistivity zone**."
+msgstr ""
+":kbd:`Esc` o **✕** smette. Ogni traccia scrive un'unità **USD**, le sue "
+"proprietà (tipo d'anomalia, metodo, tetto e fondo della banda, confidenza"
+" quando è data) e un estrattore della fetta, oppure un combinatore degli "
+"estrattori di più fette. I tipi d'anomalia sono **anomalia puntuale**, "
+"**anomalia lineare**, **anomalia areale**, **iperbole di diffrazione**, "
+"**zona ad alta resistività**, **zona a bassa resistività**."
+
+msgid "The Inspector section"
+msgstr "La sezione dell'Ispettore"
+
+msgid ""
+"**Geophysical reading** appears on a document of a stack and on a unit "
+"traced on the slices."
+msgstr ""
+"**Lettura geofisica** compare su un documento di una pila e su un'unità "
+"tracciata sulle fette."
+
+msgid ""
+"The Geophysical reading section of the Inspector on a slice of the "
+"Basilica Iulia: method ERT, horizontal slice, depth 1.00–1.50 m below "
+"ground, electrical resistivity, the declared scale, the values in the "
+"file, observable, extent, stack, file, identity and stamp."
+msgstr ""
+"La sezione Lettura geofisica dell'Ispettore su una fetta della Basilica "
+"Iulia: metodo ERT, fetta orizzontale, profondità 1.00–1.50 m dal piano di"
+" campagna, resistività elettrica, la scala dichiarata, i valori nel file,"
+" observable, estensione, pila, file, identità e timbro."
+
+msgid "On"
+msgstr "Su"
+
+msgid "Rows"
+msgstr "Righe"
+
+msgid "A slice or a section"
+msgstr "Una fetta o una sezione"
+
+msgid ""
+"**Method**, **What**, **Depth**, **Quantity**, **Scale of the values**, "
+"**Values in the file**, **Where it lies**, **Extent**, **Stack**, "
+"**File**, **Identity**, **Stamp**"
+msgstr ""
+"**Metodo**, **Che cosa**, **Profondità**, **Grandezza**, **Scala dei "
+"valori**, **Valori nel file**, **Dove sta**, **Estensione**, **Pila**, "
+"**File**, **Identità**, **Timbro**"
+
+msgid "An anomaly"
+msgstr "Un'anomalia"
+
+msgid "**Anomaly**, **Read on**, **Through**, **Bands**, **Slice**"
+msgstr "**Anomalia**, **Letta su**, **Attraverso**, **Bande**, **Fetta**"
+
+msgid ""
+"A stack that cannot be read is answered with its reason, in the language "
+"of the interface: **the stack X cannot be read: …**."
+msgstr ""
+"A una pila che non si legge si risponde con la sua ragione, nella lingua "
+"dell'interfaccia: **la pila X non si legge: …**."
+
+msgid "Commands"
+msgstr "Comandi"
+
+msgid ""
+"For scripts and the Python console (see :doc:`/how-to/extensions/python-"
+"console`)."
+msgstr ""
+"Per gli script e la console Python (vedi :doc:`/how-to/extensions/python-"
+"console`)."
+
+msgid "Command"
+msgstr "Comando"
+
+msgid "Writes"
+msgstr "Scrive"
+
+msgid "``geofisica.read``"
+msgstr "``geofisica.read``"
+
+msgid "yes"
+msgstr "sì"
+
+msgid "the reader of *Porta dentro*: a folder, or a file of a stack"
+msgstr "il lettore di *Porta dentro*: una cartella, o un file di una pila"
+
+msgid "``geofisica.describe``"
+msgstr "``geofisica.describe``"
+
+msgid "no"
+msgstr "no"
+
+msgid "what a folder is, without reading the pictures"
+msgstr "che cos'è una cartella, senza leggere le immagini"
+
+msgid "``geofisica.ingest``"
+msgstr "``geofisica.ingest``"
+
+msgid "**Import a geophysical stack**: the button of the panel"
+msgstr "**Importa una pila geofisica**: il pulsante del pannello"
+
+msgid "``geofisica.layer``"
+msgstr "``geofisica.layer``"
+
+msgid "the stacks as layers of the Space"
+msgstr "le pile come strati dello Spazio"
+
+msgid "``geofisica.section``"
+msgstr "``geofisica.section``"
+
+msgid "the Inspector section"
+msgstr "la sezione dell'Ispettore"
+
+msgid ""
+"``geofisica.trace.point``, ``geofisica.trace.line``, "
+"``geofisica.trace.area``"
+msgstr ""
+"``geofisica.trace.point``, ``geofisica.trace.line``, "
+"``geofisica.trace.area``"
+
+msgid "the three tracing tools"
+msgstr "i tre strumenti per tracciare"
+
