@@ -154,6 +154,8 @@ const SHOTS = [
   { name: "workspaces/narrative", prep: async (p) => { await ws(p, "narrative"); } },
   { name: "workspaces/space", wait: 8000, prep: async (p) => { await ws(p, "space"); } },
   { name: "workspaces/sheets", wait: 5000, prep: async (p) => { await ws(p, "sheets"); await pick(p, "SU004"); } },
+  // MICRO-SEG05 · the seventh (MICRO-SEG02): Script Editor, Python Console under it, the Matrix
+  { name: "workspaces/scripting", wait: 4000, prep: async (p) => { await ws(p, "scripting"); await pick(p, "SU001"); } },
 
   // the menus of the window, and the chip's menu at the top right
   ...["file", "edit", "tools", "help"].map((m) => ({
@@ -175,12 +177,13 @@ const SHOTS = [
   { name: "windows/vocabularies", png: true, clip: "[data-vocab-window]", prep: tool("btn-tool-vocabularies") },
   { name: "windows/extensions", png: true, clip: "[data-ext-window]", prep: tool("btn-tool-extensions") },
   {
-    name: "windows/console", png: true, clip: "[data-console-window]", experimental: true,
+    // MICRO-TIL002: the console is a window type (its root [data-py-console]), not a floating panel
+    name: "windows/console", png: true, clip: "[data-py-console]",
     prep: async (p) => {
       await pick(p, "SU001");
       await tool("btn-tool-console")(p);
       await sleep(2500);
-      const field = await p.$("[data-console-window] textarea");
+      const field = await p.$("[data-py-console] textarea");
       await field.click(); await field.type("sel"); await p.keyboard.press("Enter");
       await sleep(3000);
     },
@@ -197,7 +200,23 @@ const SHOTS = [
   },
   { name: "dialogs/print-sheets", png: true, clip: "#skp .skp-box", prep: tool("btn-print-sheets") },
   { name: "dialogs/collect-resources", png: true, clip: MODAL, prep: tool("btn-collect-files") },
-  { name: "dialogs/workspaces", png: true, clip: MODAL, prep: tool("btn-help-workspaces") },
+  {
+    // MICRO-SEG05 · seven rows: the card made wide and tall enough to show them all, no scroll
+    name: "dialogs/workspaces", png: true, clip: MODAL,
+    prep: async (p) => {
+      await tool("btn-help-workspaces")(p);
+      await p.evaluate(() => {
+        const card = document.querySelector(".modal.ws-help .modal-card");
+        if (!card) return;
+        card.style.maxWidth = "none"; card.style.width = "1100px"; card.style.maxHeight = "none";
+        for (const el of card.querySelectorAll("*")) {
+          const cs = getComputedStyle(el);
+          if (cs.overflowY === "auto" || cs.overflowY === "scroll") { el.style.overflow = "visible"; el.style.maxHeight = "none"; }
+        }
+      });
+      await sleep(500);
+    },
+  },
   { name: "dialogs/em-legend", png: true, clip: MODAL, prep: tool("btn-help-legend") },
   { name: "dialogs/stratiminer", png: true, clip: "#tool-float", prep: tool("btn-tool-stratiminer") },
 
