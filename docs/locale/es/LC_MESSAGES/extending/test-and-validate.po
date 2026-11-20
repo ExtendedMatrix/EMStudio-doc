@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Test and validate a package"
+msgstr ""
+
+msgid ""
+"*Check a package with the validator every tool uses, test its code "
+"without EMStudio, and read what the Extensions window says before "
+"installing.*"
+msgstr ""
+
+msgid ""
+"There is **one validator**. The Extensions window shows its words before "
+"it installs anything, the command line prints them, and the repositories "
+"of the Extended Matrix run it on every proposal. What passes on your "
+"computer passes everywhere, and what it refuses it refuses everywhere, "
+"with the same sentence."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid ""
+"The Python environment of :ref:`extending`, with ``s3dgraphy``. In the "
+"commands below, ``python`` stands for the Python of that environment "
+"(``~/em-packages-venv/bin/python``)."
+msgstr ""
+
+msgid "Validate a folder or an archive"
+msgstr ""
+
+msgid ""
+"Each package gets one line, ``OK`` or ``NO``, and under it its problems: "
+"``error`` (it refuses the package, or the code alone when the problem "
+"concerns only the code) and ``warning`` (advice: never a refusal). Each "
+"problem names the file and the key where it was found."
+msgstr ""
+
+msgid ""
+"``--lang it`` writes the sentences in Italian; ``--json`` writes them as "
+"data, with their code, for a script or a continuous integration."
+msgstr ""
+
+msgid "The command ends with exit code 1 when there is an error, 0 otherwise."
+msgstr ""
+
+msgid "Every sentence, with its code, is in :doc:`validator`."
+msgstr ""
+
+msgid ""
+"A folder that is still a draft often has two kinds of problem: a "
+"fingerprint (``digest``) to compute again after a vocabulary changed, and"
+" a label missing in one of the declared ``languages``. The sentence names"
+" the file and the language."
+msgstr ""
+
+msgid "Build, and validate what you built"
+msgstr ""
+
+msgid ""
+"``build`` writes ``dist/<id>-<version>.zip``, deterministically: the same"
+" folder gives the same bytes. It completes the envelope in the archive "
+"(the ``type``, the fingerprints of the vocabularies, the paths of a "
+"manifest of format 0.1) without ever writing into your folder, and it "
+"validates the result before writing it. ``--dry-run`` says what it would "
+"write."
+msgstr ""
+
+msgid "Read the window before installing"
+msgstr ""
+
+msgid ""
+"In ``Tools ▸ Extensions…``, **Install from a folder…** and **Install from"
+" disk…** run the same validator. An error of the data installs nothing, "
+"and the window says why; an error of the code alone lets the data in and "
+"says *code not installed*, with the reason. Nothing is written before the"
+" confirmation."
+msgstr ""
+
+msgid "Test the code without EMStudio"
+msgstr ""
+
+msgid ""
+"The ``em`` library runs without an application: a script opens a study, "
+"loads the package as the development folder does, and calls its commands "
+"through the same contract that EMStudio uses. A test written this way "
+"runs on any computer, and in the continuous integration of a repository."
+msgstr ""
+
+msgid "Install ``pytest`` in the environment: ``python -m pip install pytest``."
+msgstr ""
+
+msgid ""
+"Beside ``volto-esempio``, make a folder ``tests`` and write "
+"``tests/test_volto_strumenti.py``:"
+msgstr ""
+
+msgid "Run it from the folder that holds ``volto-esempio`` and ``tests``:"
+msgstr ""
+
+msgid "What the test shows:"
+msgstr ""
+
+msgid ""
+"``em.open`` opens a study, and ``em.use`` gives the session an author (an"
+" ORCID): without an author a write is refused, as in EMStudio."
+msgstr ""
+
+msgid ""
+"``plugins.sync(\"emstudio\", dev=True)`` loads the plugins of the "
+"development folder named by ``S3DGRAPHY_PLUGINS_DEV_DIR``, here the "
+"package itself. ``HOME`` points to a temporary folder, so the extensions "
+"installed on your computer are neither read nor touched."
+msgstr ""
+
+msgid ""
+"``plugins.invoke`` runs a command with its slots, and answers with "
+"``ok``, the ``value`` returned, or the reason of a refusal in English and"
+" Italian."
+msgstr ""
+
+msgid ""
+"``plugins.compute`` runs a command that only reads, in the shape of the "
+"slot that shows it (here the rows of a section of the Inspector), and "
+"refuses one that writes."
+msgstr ""
+
+msgid "Test a package proposed to the official repository"
+msgstr ""
+
+msgid ""
+"A package proposed to `em-profiles <https://github.com/ExtendedMatrix/em-"
+"profiles>`__ is also checked for its place in that repository: the folder"
+" named as the id, one prefix per package, a line of curators in "
+"``.github/CODEOWNERS``, and the packages together as the index will list "
+"them. From a copy of em-profiles, with the package in ``profiles/<id>/``:"
+msgstr ""
+
+msgid ""
+"``tools/validate.py`` without arguments checks every package of the "
+"repository, as the continuous integration does on each pull request."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A package checked with the validator of every tool, an archive built "
+"always the same, and code tested by a script that runs anywhere."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`validator`, every sentence of the validator."
+msgstr ""
+
+msgid ":doc:`publish`, what the repositories check."
+msgstr ""
+
+msgid ":doc:`em-api`, the library the tests use."
+msgstr ""
+

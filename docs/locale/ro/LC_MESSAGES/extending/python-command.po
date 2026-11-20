@@ -1,0 +1,414 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Add a command in Python"
+msgstr ""
+
+msgid ""
+"*The package of the first tutorial with code beside its data: a first "
+"command, the development folder, reloading after a change, a command that"
+" writes into the study, and a section of the Inspector.*"
+msgstr ""
+
+msgid ""
+"Data say what a community records; code does what the data cannot say: "
+"read a new format, check a study, compute something outside the closed "
+"set of operations, show a value where the person works. In EMStudio the "
+"code of a package is **Python**, and it reaches the study through one "
+"door, the ``em`` library, the same that the **Python console** and EM "
+"Tools in Blender use."
+msgstr ""
+
+msgid ""
+"In this tutorial the package ``volto-esempio`` becomes a **mixed "
+"package**: its data, unchanged, and a little code that counts the points "
+"of the face, marks units as restoration infills, and adds a section *The "
+"face* to the Inspector. The finished package can be copied from :download"
+":`volto-esempio 0.2.0 </_includes/extending/volto-esempio-0.2.0.zip>`."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid "The package of :doc:`first-package`, installed in EMStudio."
+msgstr ""
+
+msgid ""
+"EMStudio for the desktop: the code of the plugins runs in its local "
+"service, and the web version does not load the plugins of a computer."
+msgstr ""
+
+msgid ""
+"A few lines of Python are enough to follow; the reference of the library "
+"is :doc:`em-api`."
+msgstr ""
+
+msgid "1 · Data and code in two folders"
+msgstr ""
+
+msgid ""
+"A mixed package keeps its two parts apart, so that the data can always be"
+" installed alone, with the guarantee that nothing in them runs."
+msgstr ""
+
+msgid ""
+"In ``volto-esempio``, make a folder ``data`` and move into it everything "
+"but ``em-extension.toml``: ``profile.json``, ``vocab``, ``landmarks``, "
+"``colors``, ``forms``, ``examples`` and **a copy of** ``LICENSE``."
+msgstr ""
+
+msgid ""
+"Make a folder ``code`` beside it, and in it a folder ``volto_strumenti``:"
+" the name of the Python module, unique, with letters, digits and ``_``."
+msgstr ""
+
+msgid "Why a copy of the licence stays in ``data``"
+msgstr ""
+
+msgid ""
+"The data of version 0.1.0 are already installed on your computer. "
+"EMStudio recognises them as the same data only if the files of the data "
+"are the same files, the licence included. They are, so the new archive "
+"leaves the installed data as they are and adds only the code."
+msgstr ""
+
+msgid "2 · The envelope with two sections"
+msgstr ""
+
+msgid "Change the head of ``em-extension.toml`` and the section ``[data]``:"
+msgstr ""
+
+msgid "The archive becomes ``0.2.0``: something new has arrived."
+msgstr ""
+
+msgid ""
+"``[data]`` keeps its own version, ``0.1.0``, because the data have not "
+"changed, and says where they now live, ``root = \"data/\"``."
+msgstr ""
+
+msgid "``type = \"mixed\"`` and a second licence, the one of the code."
+msgstr ""
+
+msgid ""
+"The two ``[[data.vocabularies]]`` stay as they were. At the end of the "
+"file add the section of the code:"
+msgstr ""
+
+msgid ""
+"``[code]`` has its own ``version``, its ``root``, its licence, and its "
+"``entry``: the module and, after ``:``, the object EMStudio calls."
+msgstr ""
+
+msgid ""
+"``hosts`` says where the code runs: ``emstudio`` here; ``blender`` and "
+"``server`` are the other two."
+msgstr ""
+
+msgid ""
+"``[code.descriptor]`` declares what the code may do with a study: ``read-"
+"graph`` to read it, ``write-graph`` to write in it. A command that writes"
+" without this capability is refused at the moment it writes."
+msgstr ""
+
+msgid ""
+"Each ``[[code.commands]]`` declares one command: its ``id``, its "
+"``label`` in the languages of the package, the **slot** where it appears "
+"(``menu.tools@1`` is ``Tools ▸ Plugins``), and whether it writes. A "
+"command exists for EMStudio only once the envelope declares it."
+msgstr ""
+
+msgid "3 · The first command"
+msgstr ""
+
+msgid ""
+"Write ``code/volto_strumenti/__init__.py`` with the first function and "
+"the object named by ``entry``:"
+msgstr ""
+
+msgid ""
+"For now, ``setup`` wires only ``vlt.count``: leave out the two lines of "
+"``vlt.mark_infill`` and ``vlt.section``, which the next steps add with "
+"their functions."
+msgstr ""
+
+msgid ""
+"A command is a function that receives its **slots** (a dictionary, empty "
+"here) and returns a value. ``Tools ▸ Plugins`` shows the value in a "
+"message."
+msgstr ""
+
+msgid ""
+"``em.graph`` is the study open in EMStudio; ``nodes(type=\"extractor\")``"
+" gives its extractors, and ``data`` the data of each node. The points of "
+"the face are the extractors whose kind is ``vlt:punto_del_volto``."
+msgstr ""
+
+msgid ""
+"``em.host.current().language()`` is the language of the interface: the "
+"command answers in it."
+msgstr ""
+
+msgid ""
+"``setup(ctx)`` runs when EMStudio loads the code: ``ctx.command`` binds a"
+" declared command to its function."
+msgstr ""
+
+msgid "Check the package with the validator, as in the first tutorial:"
+msgstr ""
+
+msgid "4 · Try a line in the console first"
+msgstr ""
+
+msgid ""
+"The **Python console** speaks the same ``em`` as the code: it is the "
+"place to try a line before writing it in a file."
+msgstr ""
+
+msgid "Open the example study, ``data/examples/volto.em.json``."
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ Python console…``. The first line reminds you that "
+"``em`` is imported and that ``g`` is the graph shown."
+msgstr ""
+
+msgid "Write, and press :kbd:`Enter`:"
+msgstr ""
+
+msgid ""
+"The console prints ``['US1']``. Press **Help** to read what ``em`` offers"
+" (see :doc:`/how-to/extensions/python-console`)."
+msgstr ""
+
+msgid "5 · Load the code from the development folder"
+msgstr ""
+
+msgid ""
+"The **development folder** loads the plugins you are writing where they "
+"are: no installation, no question of trust, because the person who writes"
+" the code is the person who runs it."
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ Extensions…`` and find the section **Development "
+"folder**."
+msgstr ""
+
+msgid ""
+"Type the folder that holds ``volto-esempio`` (or the folder ``volto-"
+"esempio`` itself), and press **Use**."
+msgstr ""
+
+msgid ""
+"The row of the package appears, marked **development, not verified**, "
+"with its folder and its state: **loaded**. When the code cannot load, the"
+" row says why, in the words of the validator or with the error of Python."
+msgstr ""
+
+msgid ""
+"The section Development folder of the Extensions window: the folder, and "
+"the row volto-esempio v0.1.0, development, not verified, loaded, with the"
+" button Reload."
+msgstr ""
+
+msgid "The package in development: loaded where it is, marked as not verified."
+msgstr ""
+
+msgid "6 · Run it"
+msgstr ""
+
+msgid ""
+"Choose ``Tools ▸ Plugins``. The plugin has its own heading, with its "
+"name, its version and the mark **development**; under it, its command."
+msgstr ""
+
+msgid ""
+"The menu Tools open on Plugins: the heading A face and its measures "
+"(EXAMPLE) 0.1.0 with the mark development, and the command Count the "
+"points of the face."
+msgstr ""
+
+msgid "A command declared in ``menu.tools@1``."
+msgstr ""
+
+msgid ""
+"Choose **Count the points of the face**. A message answers *«Count the "
+"points of the face»: 0 points of the face*: the example study has no "
+"points yet."
+msgstr ""
+
+msgid "7 · Change the code and reload it"
+msgstr ""
+
+msgid "Change the sentence the function returns, and save the file."
+msgstr ""
+
+msgid ""
+"In ``Tools ▸ Extensions…``, press **Reload** on the row of the package. "
+"The code is read again; run the command and read the new sentence."
+msgstr ""
+
+msgid ""
+"A change of ``em-extension.toml`` (a new command, another slot) is read "
+"by **Reload** too, because the envelope is validated each time."
+msgstr ""
+
+msgid "8 · A command that writes"
+msgstr ""
+
+msgid ""
+"A command that changes the study does it inside ``em.write``: one block, "
+"one step of ``Edit ▸ Undo``, one line in the Log, and an act that records"
+" which plugin made the change."
+msgstr ""
+
+msgid "Declare the command in the envelope:"
+msgstr ""
+
+msgid ""
+"``context.node@1`` is the context menu of a node. ``when`` says when it "
+"is offered: here when every selected node is a stratigraphic unit. The "
+"slot ``units`` has the kind ``ids``: EMStudio fills it with the selected "
+"nodes."
+msgstr ""
+
+msgid ""
+"Write the function, and wire it in ``setup`` with "
+"``ctx.command(\"vlt.mark_infill\", mark_infill)``:"
+msgstr ""
+
+msgid ""
+"``tx.set_property`` writes the property ``vlt:stato_superficie`` of each "
+"unit with the concept *restoration infill*: the address of the concept "
+"and its label, as the Inspector would write it."
+msgstr ""
+
+msgid ""
+"Press **Reload**, then open the context menu of ``US1`` in the Matrix. "
+"The command is there, with the mark **development**."
+msgstr ""
+
+msgid ""
+"The context menu of a unit in the Matrix: at the end, before Delete, the "
+"entry Mark as restoration infill, development."
+msgstr ""
+
+msgid "A command declared in ``context.node@1``."
+msgstr ""
+
+msgid ""
+"Choose it. The message says that one step was written, each one a step of"
+" undo; ``Edit ▸ Undo`` takes it back."
+msgstr ""
+
+msgid "9 · A section of the Inspector"
+msgstr ""
+
+msgid ""
+"A command can also show a value where the person reads the unit: a "
+"section of the Inspector. It only reads, so it is declared ``writes = "
+"false``, and EMStudio refuses any write it attempts."
+msgstr ""
+
+msgid "Declare it:"
+msgstr ""
+
+msgid ""
+"The slot ``id`` has the kind ``id``: EMStudio fills it with the unit "
+"shown by the Inspector."
+msgstr ""
+
+msgid ""
+"Write the function, and wire it with ``ctx.command(\"vlt.section\", "
+"face_section)``:"
+msgstr ""
+
+msgid ""
+"The section is a list of rows, each with a ``label`` and a ``value``; a "
+"label written in several languages is shown in the language of the "
+"interface. ``em.vocab.find`` gives the concept of the value, and its "
+"label in that language."
+msgstr ""
+
+msgid ""
+"Press **Reload** and select ``US1``. The Inspector shows the section *The"
+" face*: the width between the eyes (not computed yet) and the state of "
+"the surface, *restoration infill* after step 8."
+msgstr ""
+
+msgid ""
+"The section The face of the Inspector, from the package in development: "
+"Width between the eyes, a dash; State of the surface, restoration infill."
+msgstr ""
+
+msgid "A command declared in ``inspector.section@1``."
+msgstr ""
+
+msgid ""
+"The whole file, as it stands now, is "
+":download:`code/volto_strumenti/__init__.py </_includes/extending/volto-"
+"esempio-misto/code/volto_strumenti/__init__.py>`."
+msgstr ""
+
+msgid "10 · From the development folder to an archive"
+msgstr ""
+
+msgid "Build the archive, from the folder that holds ``volto-esempio``:"
+msgstr ""
+
+msgid ""
+"It writes ``volto-esempio-0.2.0.zip``, always the same bytes for the same"
+" folder, after checking it with the validator."
+msgstr ""
+
+msgid ""
+"Clear the development folder (**Clear**), so that the installed copy is "
+"the one EMStudio loads."
+msgstr ""
+
+msgid ""
+"In ``Tools ▸ Extensions…``, press **Install from disk…** and choose the "
+"archive. The panel **Data** says that the data 0.1.0 are already "
+"installed and identical; the panel **Code** is marked **NOT VERIFIED, "
+"from disk** and says what the code can do. Answer **Install everything**:"
+" this answer is your trust in the code."
+msgstr ""
+
+msgid ""
+"From here, :doc:`test-and-validate` tells how to test the code without "
+"EMStudio, :doc:`permissions-and-trust` what the code may ask, and "
+":doc:`publish` how to give the package to others."
+msgstr ""
+
+msgid "What you have learnt"
+msgstr ""
+
+msgid ""
+"The code of a package is a Python module beside its data. The envelope "
+"declares each command and where it appears; ``setup`` binds the commands "
+"to functions; a function receives the slots EMStudio fills and returns a "
+"value the slot knows how to show. Every write passes through ``em.write``"
+" and becomes one step of undo, recorded with the plugin that made it. The"
+" development folder loads the code where it is, and **Reload** reads it "
+"again."
+msgstr ""
+

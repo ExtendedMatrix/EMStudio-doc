@@ -1,0 +1,27 @@
+{
+  "header": {
+    "format": "em.json",
+    "version": "1.1",
+    "generator": {"tool": "hand-written example of the EMStudio guide", "version": "0.1"},
+    "profiles": [
+      {"iri": "https://w3id.org/extendedmatrix/profile/volto-esempio", "version": "0.1.0"}
+    ]
+  },
+  "graphs": {
+    "volto": {
+      "graph_id": "volto",
+      "name": "A carved face (EXAMPLE)",
+      "nodes": [
+        {"id": "us1", "node_type": "US", "name": "US1", "description": "Surface of the face"},
+        {"id": "p1", "node_type": "property", "name": "vlt:stato_superficie",
+         "description": "original surface",
+         "data": {"property_type": "vlt:stato_superficie",
+                  "value": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/originale",
+                  "label": "original surface", "lang": "en"}}
+      ],
+      "edges": [
+        {"id": "e1", "edge_type": "has_property", "source": "us1", "target": "p1"}
+      ]
+    }
+  }
+}

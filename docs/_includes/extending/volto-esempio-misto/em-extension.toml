@@ -1,0 +1,62 @@
+schema_version = "1.0.0"
+id = "volto-esempio"
+version = "0.2.0"
+name = "A face and its measures (EXAMPLE)"
+tagline = "Points and measures of a carved face, with two commands"
+maintainer = "The curators of the example"
+license = ["SPDX:CC-BY-4.0", "SPDX:GPL-3.0-or-later"]
+em_api_min = "1.0"
+type = "mixed"
+
+[data]
+version = "0.1.0"
+root = "data/"
+profile = "profile.json"
+
+  [[data.vocabularies]]
+  path = "vocab/stato-superficie.ttl"
+  scheme = "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/"
+  version = "0.1.0"
+  license = "SPDX:CC-BY-4.0"
+  tier = "A"
+  digest = "sha256:28258e9baee24b3287398a6f8510c0448a2d0319807486437af519976d3d1e66"
+
+  [[data.vocabularies]]
+  path = "vocab/punti-volto.ttl"
+  scheme = "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/punti-volto/"
+  version = "0.1.0"
+  license = "SPDX:CC-BY-4.0"
+  tier = "A"
+  digest = "sha256:9ebea7c12c7fc8fda4e5e59cc3cd78652308dfeb48b1aab5b66450871b5d2de1"
+
+[code]
+version = "0.1.0"
+root = "code/"
+license = "SPDX:GPL-3.0-or-later"
+entry = "volto_strumenti:plugin"
+hosts = ["emstudio"]
+
+  [code.descriptor]
+  capabilities = ["read-graph", "write-graph"]
+
+  [[code.commands]]
+  id = "vlt.count"
+  label = { en = "Count the points of the face", it = "Conta i punti del volto" }
+  in = ["menu.tools@1"]
+  writes = false
+
+  [[code.commands]]
+  id = "vlt.mark_infill"
+  label = { en = "Mark as restoration infill", it = "Segna come integrazione di restauro" }
+  in = ["context.node@1"]
+  when = "selection:US"
+  writes = true
+  slots = [{ name = "units", kind = "ids" }]
+
+  [[code.commands]]
+  id = "vlt.section"
+  label = { en = "The face", it = "Il volto" }
+  in = ["inspector.section@1"]
+  when = "selection:US"
+  writes = false
+  slots = [{ name = "id", kind = "id" }]

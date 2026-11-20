@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Tutorial"
+msgstr ""
+
+msgid "How-to guides"
+msgstr ""
+
+msgid "Reference"
+msgstr ""
+
+msgid "Explanation"
+msgstr ""
+
+msgid "Extending EMStudio"
+msgstr ""
+
+msgid ""
+"*A guide for whoever wants to build a package of their own: the words, "
+"the points and the measures of a community, its recording sheet, its "
+"colours, and, when they are needed, commands written in Python.*"
+msgstr ""
+
+msgid ""
+"EMStudio speaks one language, the Extended Matrix, and every community "
+"that uses it records things of its own: the values a specialist writes "
+"down, the points a sculpture scholar places on a face, the sheet a "
+"laboratory fills in, the colours with which a team reads its data. A "
+"**package** is the folder in which you write all of this down once, so "
+"that EMStudio, EM Tools in Blender and a StratiGraph node read it the "
+"same way, and so that a study that uses it says so."
+msgstr ""
+
+msgid "This section is written for two kinds of readers:"
+msgstr ""
+
+msgid ""
+"**the researcher of a domain** who uses a computer every day and does not"
+" write programs: the first tutorial builds a whole package with text "
+"files only, and every step can be checked before moving on;"
+msgstr ""
+
+msgid ""
+"**the developer** who wants to add commands, readers, checks or sections "
+"of the Inspector: the second tutorial starts from the same package and "
+"adds Python to it."
+msgstr ""
+
+msgid ""
+"Nobody needs permission to begin. A package works on your own computer "
+"from its first file; publishing it, in a repository of your own or in the"
+" official index, comes later and is described in its own page."
+msgstr ""
+
+msgid "The example of this section"
+msgstr ""
+
+msgid ""
+"Every page follows one example: **a carved face**, its points (the root "
+"of the nose, the outer corners of the eyes), the width between the eyes "
+"that EMStudio computes from them, and the state of its surface (original,"
+" worn, restoration infill). It is an example written for this guide, "
+"marked as such in every file, and not a standard to cite. Its files can "
+"be copied from :download:`volto-esempio 0.1.0 (data only) "
+"</_includes/extending/volto-esempio-0.1.0.zip>` and :download:`volto-"
+"esempio 0.2.0 (data and code) </_includes/extending/volto-"
+"esempio-0.2.0.zip>`."
+msgstr ""
+
+msgid "How the section is organised"
+msgstr ""
+
+msgid "**Tutorials** — learn by doing, in order:"
+msgstr ""
+
+msgid ""
+":doc:`first-package`: from an empty folder to a package of data only, "
+"installed in EMStudio, with a vocabulary, a set of points, a measure, a "
+"recording sheet and a colour scheme."
+msgstr ""
+
+msgid ""
+":doc:`python-command`: the same package with code; a first command, the "
+"development folder, reloading, and a section of the Inspector."
+msgstr ""
+
+msgid "**How-to guides** — one task each:"
+msgstr ""
+
+msgid ""
+":doc:`test-and-validate`: the validator, the tests, the words of the "
+"Extensions window."
+msgstr ""
+
+msgid ""
+":doc:`stamp-derived-files`: a good practice for code that makes files "
+"from other files."
+msgstr ""
+
+msgid ""
+":doc:`publish`: in a repository of your own (also a laboratory's, signed "
+"with its key) or in the official index."
+msgstr ""
+
+msgid ""
+":doc:`new-version`: what changes, which number moves, what the studies "
+"see."
+msgstr ""
+
+msgid ""
+":doc:`permissions-and-trust`: what the code asks, and how a review is "
+"earned."
+msgstr ""
+
+msgid "**Reference** — the details, checked against the program:"
+msgstr ""
+
+msgid ""
+":doc:`envelope`: ``em-extension.toml`` key by key, with its sections "
+"``[data]``, ``[code]`` and ``[requires]``, and the manifest "
+"``profile.json``."
+msgstr ""
+
+msgid ""
+":doc:`slots`: where a command appears, what it receives and what it "
+"returns."
+msgstr ""
+
+msgid ":doc:`em-api`: the essential ``em`` API for a plugin."
+msgstr ""
+
+msgid ":doc:`validator`: every sentence of the validator, with its code."
+msgstr ""
+
+msgid "**Explanation** — why it is built this way:"
+msgstr ""
+
+msgid ""
+":doc:`design`: the two levels, data and code; how a package enters the "
+"graph without inventing node types; the contract of writes; why "
+"signatures and reviews."
+msgstr ""
+
+msgid "What you need"
+msgstr ""
+
+msgid ""
+"**EMStudio for the desktop** (see :doc:`/tutorial/get-emstudio`). The web"
+" version reads the packages a node installed, and does not install your "
+"own."
+msgstr ""
+
+msgid ""
+"**A text editor** that saves plain UTF-8 text: any editor for programmers"
+" works, and so does the editor of your system when it saves plain text."
+msgstr ""
+
+msgid ""
+"**Python 3.9 or later**, only to check and build a package from the "
+"terminal, and for the second tutorial. With Python installed, one command"
+" gives you the same validator that EMStudio uses:"
+msgstr ""
+
+msgid ""
+"``s3dgraphy`` is the library of the Extended Matrix; ``[rdf]`` lets it "
+"read the vocabularies, and ``jsonschema`` lets it check the manifest "
+"against its schema. On Windows the programs of the environment are in "
+"``em-packages-venv\\Scripts\\`` instead of ``em-packages-venv/bin/``."
+msgstr ""
+
+msgid ""
+"The technical specification behind this guide is `EM Profiles, SPEC.md "
+"<https://github.com/ExtendedMatrix/em-profiles/blob/main/SPEC.md>`__, in "
+"the em-profiles repository: the guide tells you how to do things, the "
+"specification is the contract every tool keeps."
+msgstr ""
+

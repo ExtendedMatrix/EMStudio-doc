@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Release a new version"
+msgstr "Pubblicare una nuova versione"
+
+msgid ""
+"*Decide which number moves, raise only the part that changed, and let the"
+" studies that use the package choose when to follow.*"
+msgstr ""
+"*Decidi quale numero si muove, alza solo la parte che è cambiata, e lascia "
+"che gli studi che usano il pacchetto scelgano quando seguirlo.*"
+
+msgid ""
+"A version is a promise to the studies that declare it: **a version is "
+"never reused**. The same id and version with another content is refused "
+"by every tool and by every repository, so that a study never meets two "
+"different packages under one name."
+msgstr ""
+"Una versione è una promessa agli studi che la dichiarano: **una versione "
+"non si riusa mai**. Lo stesso id e la stessa versione con un altro "
+"contenuto vengono rifiutati da ogni strumento e da ogni repository, così "
+"che uno studio non incontri mai due pacchetti diversi sotto un solo nome."
+
+msgid "Which number moves"
+msgstr "Quale numero si muove"
+
+msgid "Versions have three numbers, *major.minor.patch*:"
+msgstr "Le versioni hanno tre numeri, *maggiore.minore.correzione*:"
+
+msgid ""
+"**patch** (``0.1.0`` → ``0.1.1``) for labels, descriptions, colours and "
+"styles;"
+msgstr ""
+"**correzione** (``0.1.0`` → ``0.1.1``) per etichette, descrizioni, colori e "
+"stili;"
+
+msgid ""
+"**minor** (``0.1.0`` → ``0.2.0``) for new types, new concepts, new "
+"points, new combiners, new commands;"
+msgstr ""
+"**minore** (``0.1.0`` → ``0.2.0``) per tipi nuovi, concetti nuovi, punti "
+"nuovi, combinatori nuovi, comandi nuovi;"
+
+msgid ""
+"**major** (``0.x`` → ``1.0.0``, ``1.x`` → ``2.0.0``) when a type is "
+"removed or changes its meaning, its primitive or its operation."
+msgstr ""
+"**maggiore** (``0.x`` → ``1.0.0``, ``1.x`` → ``2.0.0``) quando un tipo "
+"viene tolto o cambia significato, primitiva o operazione."
+
+msgid "A package stays at ``0.x`` while it is ``proposed``."
+msgstr "Un pacchetto resta a ``0.x`` finché è ``proposed``."
+
+msgid "Each part has its own version"
+msgstr "Ogni parte ha la sua versione"
+
+msgid ""
+"An archive has its own ``version``; in a mixed package, ``[data]`` and "
+"``[code]`` have theirs. **Raise only the part that changed**, and always "
+"the archive:"
+msgstr ""
+"Un archivio ha la sua ``version``; in un pacchetto misto, ``[data]`` e "
+"``[code]`` hanno le loro. **Alza solo la parte che è cambiata**, e sempre "
+"l'archivio:"
+
+msgid "What changed"
+msgstr "Che cosa è cambiato"
+
+msgid "``version``"
+msgstr "``versione``"
+
+msgid "``[data].version`` and ``profile.json``"
+msgstr "``[data].version`` e ``profile.json``"
+
+msgid "``[code].version``"
+msgstr "``[code].version``"
+
+msgid "a label of the data"
+msgstr "un'etichetta dei dati"
+
+msgid "0.2.0 → 0.2.1"
+msgstr "0.2.0 → 0.2.1"
+
+msgid "0.1.0 → 0.1.1"
+msgstr "0.1.0 → 0.1.1"
+
+msgid "unchanged"
+msgstr "invariata"
+
+msgid "a fix in the code"
+msgstr "una correzione nel codice"
+
+msgid "a new command"
+msgstr "un comando nuovo"
+
+msgid "0.2.0 → 0.3.0"
+msgstr "0.2.0 → 0.3.0"
+
+msgid "0.1.0 → 0.2.0"
+msgstr "0.1.0 → 0.2.0"
+
+msgid ""
+"The data of a package keep their version in two places that must agree: "
+"``[data].version`` in the envelope and ``version`` in ``profile.json`` "
+"(for a package of data only, the archive's ``version`` is the data's). "
+"The example studies of the package declare it in their header: raise it "
+"there too."
+msgstr ""
+"I dati di un pacchetto tengono la loro versione in due posti che devono "
+"coincidere: ``[data].version`` nella busta e ``version`` in "
+"``profile.json`` (per un pacchetto di soli dati, la ``version`` "
+"dell'archivio è quella dei dati). Gli studi d'esempio del pacchetto la "
+"dichiarano nella loro intestazione: alzala anche lì."
+
+msgid "Steps"
+msgstr "Passi"
+
+msgid "Change the files, and the numbers as in the table."
+msgstr "Cambia i file, e i numeri come nella tabella."
+
+msgid ""
+"For a major version, write ``CHANGELOG.md`` beside the envelope: what "
+"changes in meaning, and what a study should check. EMStudio shows it when"
+" a study is about to follow a major version."
+msgstr ""
+"Per una versione maggiore, scrivi ``CHANGELOG.md`` accanto alla busta: che "
+"cosa cambia nel significato, e che cosa uno studio dovrebbe controllare. "
+"EMStudio lo mostra quando uno studio sta per seguire una versione maggiore."
+
+msgid "Validate and build (see :doc:`test-and-validate`)."
+msgstr "Convalida e costruisci (vedi :doc:`test-and-validate`)."
+
+msgid ""
+"Publish the archive beside the older ones (see :doc:`publish`). In em-"
+"profiles, a pull request with the new version; the curators of the "
+"package review it."
+msgstr ""
+"Pubblica l'archivio accanto ai più vecchi (vedi :doc:`publish`). In "
+"em-profiles, una pull request con la nuova versione; i curatori del "
+"pacchetto la rivedono."
+
+msgid "What the people who use the package see"
+msgstr "Che cosa vedono le persone che usano il pacchetto"
+
+msgid ""
+"**New data sit beside the old ones.** No study changes the version it "
+"declares by itself: when a newer version is installed, the Extensions "
+"window says that the open file uses an older one and offers **Update the "
+"declaration to …**; for a major version, **What changes…** shows the "
+"notes first, and **Keep the old one** leaves the file as it is."
+msgstr ""
+"**I dati nuovi stanno accanto ai vecchi.** Nessuno studio cambia da sé la "
+"versione che dichiara: quando è installata una versione più nuova, la "
+"finestra Estensioni dice che il file aperto ne usa una più vecchia e offre "
+"**Aggiorna la dichiarazione alla …**; per una versione maggiore, **Che cosa "
+"cambia…** mostra prima le note, e **Tieni la vecchia** lascia il file com'è."
+
+msgid ""
+"**New code replaces the old one** on the computer, and the older versions"
+" stay available under **Versions…**. EMStudio loads the new code at its "
+"next start."
+msgstr ""
+"**Il codice nuovo sostituisce il vecchio** sul computer, e le versioni più "
+"vecchie restano disponibili sotto **Versioni…**. EMStudio carica il codice "
+"nuovo al prossimo avvio."
+
+msgid ""
+"**The question of trust comes back only when the code asks for more**: "
+"new permissions, new capabilities, or another origin. An update that "
+"changes none of these installs with the trust already given."
+msgstr ""
+"**La domanda di fiducia torna solo quando il codice chiede di più**: "
+"permessi nuovi, capacità nuove o un'altra provenienza. Un aggiornamento che "
+"non cambia nessuna di queste cose si installa con la fiducia già data."
+
+msgid ""
+"**A review follows the code.** An update whose code section did not "
+"change keeps its review; changed code is code nobody has read yet."
+msgstr ""
+"**Una revisione segue il codice.** Un aggiornamento la cui sezione del "
+"codice non è cambiata tiene la sua revisione; un codice cambiato è un "
+"codice che nessuno ha ancora letto."
+
+msgid "See also"
+msgstr "Vedi anche"
+
+msgid ""
+":doc:`/how-to/extensions/install-packages-and-plugins`, *Use a package in"
+" a study*."
+msgstr ""
+":doc:`/how-to/extensions/install-packages-and-plugins`, *Usare un pacchetto "
+"in uno studio*."
+
+msgid ""
+":doc:`/how-to/extensions/repositories-signatures-updates`, *Keep "
+"extensions up to date*."
+msgstr ""
+":doc:`/how-to/extensions/repositories-signatures-updates`, *Tenere "
+"aggiornate le estensioni*."
+
+msgid ":doc:`permissions-and-trust`."
+msgstr ":doc:`permissions-and-trust`."
+

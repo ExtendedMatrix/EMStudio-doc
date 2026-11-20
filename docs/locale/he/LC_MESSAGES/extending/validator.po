@@ -1,0 +1,2110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: he\n"
+"Language-Team: he <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "What the validator says"
+msgstr ""
+
+msgid ""
+"*Every sentence of the validator and of the tools around it, with its "
+"code and its level, as the library writes them.*"
+msgstr ""
+
+msgid ""
+"The EM tools validate a package with one implementation: the Extensions "
+"window shows its words before installing, ``python -m "
+"s3dgraphy.extensions validate`` prints them, the repositories run them on"
+" every proposal. Each problem has a **code**, a **level** and a sentence "
+"in English and Italian (``--lang it``); the place where it was found (a "
+"file, a key) is written in front of the sentence."
+msgstr ""
+
+msgid ""
+"**error** — it refuses the package, or only its code when the problem "
+"concerns the code alone (the data go in all the same);"
+msgstr ""
+
+msgid "**warning** — advice, never a refusal;"
+msgstr ""
+
+msgid "**info** — what ``build`` changed in the archive it wrote;"
+msgstr ""
+
+msgid ""
+"**refusal** — an operation of the command line or of the window that "
+"stops (an installation, a repository, a removal), with the reason;"
+msgstr ""
+
+msgid ""
+"**—** — said by another path: a file that cannot be read, a signature, a "
+"node's closed space."
+msgstr ""
+
+msgid ""
+"The words between ‹ › are filled in with the case at hand: a path, a key,"
+" a value, a version. ``python -m s3dgraphy.extensions validate --json`` "
+"gives the same problems as data, each with its ``code``."
+msgstr ""
+
+msgid "Reading the package"
+msgstr ""
+
+msgid "Code"
+msgstr ""
+
+msgid "Level"
+msgstr ""
+
+msgid "What it says"
+msgstr ""
+
+msgid "``not_a_package``"
+msgstr ""
+
+msgid "error / refusal"
+msgstr ""
+
+msgid "not a package: no profile.json and no em-extension.toml"
+msgstr ""
+
+msgid "``unreadable``"
+msgstr ""
+
+msgid "error"
+msgstr ""
+
+msgid "cannot be read: ‹why›"
+msgstr ""
+
+msgid "``missing_file``"
+msgstr ""
+
+msgid "‹path›: the file is not in the package"
+msgstr ""
+
+msgid "``bad_json``"
+msgstr ""
+
+msgid "‹path›: not JSON (‹why›)"
+msgstr ""
+
+msgid "``schema``"
+msgstr ""
+
+msgid "‹message›"
+msgstr ""
+
+msgid "``schema_unchecked``"
+msgstr ""
+
+msgid "warning"
+msgstr ""
+
+msgid ""
+"the JSON schema was not checked: jsonschema is not installed (the "
+"coherence checks ran)"
+msgstr ""
+
+msgid "``format_unknown``"
+msgstr ""
+
+msgid "profile\\_format ‹value› is not a version this library reads (0.1, 0.2)"
+msgstr ""
+
+msgid "``required``"
+msgstr ""
+
+msgid "—"
+msgstr ""
+
+msgid "‹key› is required"
+msgstr ""
+
+msgid "Identity"
+msgstr ""
+
+msgid "``name_folder``"
+msgstr ""
+
+msgid "name ‹name› is not the name of its folder ‹folder›"
+msgstr ""
+
+msgid "``prefix_bad``"
+msgstr ""
+
+msgid "prefix ‹prefix›: 2–16 lowercase letters or digits, a letter first"
+msgstr ""
+
+msgid "``version_bad``"
+msgstr ""
+
+msgid "‹key› ‹value› is not a semantic version (MAJOR.MINOR.PATCH)"
+msgstr ""
+
+msgid "``prefix_missing``"
+msgstr ""
+
+msgid "‹type›: a type of the profile carries its prefix ‹prefix›"
+msgstr ""
+
+msgid "``core_redefined``"
+msgstr ""
+
+msgid "‹type›: an id of the core cannot be redefined by a package"
+msgstr ""
+
+msgid "``duplicate_type``"
+msgstr ""
+
+msgid "‹type›: declared twice"
+msgstr ""
+
+msgid "``label_language``"
+msgstr ""
+
+msgid "‹where›: no label in ‹lang›, a language the profile declares"
+msgstr ""
+
+msgid "``unverified_not_declared``"
+msgstr ""
+
+msgid "unverified\\_languages: ‹lang› is not in languages"
+msgstr ""
+
+msgid "Types"
+msgstr ""
+
+msgid "``node_types_suspended``"
+msgstr ""
+
+msgid ""
+"‹type›: node and edge types of packages are suspended in EM 1.6 (D-1); "
+"tools draw it as the core type it specialises"
+msgstr ""
+
+msgid "``not_core_node``"
+msgstr ""
+
+msgid "‹type›: ‹parent› is not a core node type"
+msgstr ""
+
+msgid "``not_core_edge``"
+msgstr ""
+
+msgid "‹type›: ‹parent› is not a core edge type"
+msgstr ""
+
+msgid "``unknown_node_type``"
+msgstr ""
+
+msgid "‹where›: ‹type› is neither a type of the package nor of the core"
+msgstr ""
+
+msgid "``unknown_quale``"
+msgstr ""
+
+msgid "error / warning"
+msgstr ""
+
+msgid "‹where›: ‹quale› is neither a quale of the package nor of the core"
+msgstr ""
+
+msgid "``unknown_edge``"
+msgstr ""
+
+msgid "‹where›: ‹type› is not an edge type of the package nor of the core"
+msgstr ""
+
+msgid "``rule_undeclared``"
+msgstr ""
+
+msgid "visual\\_rules.‹block›.‹key›: not a ‹what› of the package"
+msgstr ""
+
+msgid "``writes_false``"
+msgstr ""
+
+msgid "plugin ‹id›: declares a writing capability with writes=false"
+msgstr ""
+
+msgid "Extractors, landmark sets, combiners"
+msgstr ""
+
+msgid "``geometry_produces``"
+msgstr ""
+
+msgid "‹type›: a ‹primitive› cannot produce ‹produces› (it produces: ‹allowed›)"
+msgstr ""
+
+msgid "``geometry_vertices``"
+msgstr ""
+
+msgid "‹type›: vertices.min ‹min› is greater than vertices.max ‹max›"
+msgstr ""
+
+msgid "``landmark_extractor``"
+msgstr ""
+
+msgid ""
+"‹set›: extractor\\_type ‹type› is not an extractor type of the package "
+"with primitive point"
+msgstr ""
+
+msgid "``landmark_file``"
+msgstr ""
+
+msgid "‹path›: ‹why›"
+msgstr ""
+
+msgid "``landmark_mirror``"
+msgstr ""
+
+msgid "‹set›/‹point›: mirror ‹mirror› is not a point of the set"
+msgstr ""
+
+msgid "``landmark_unknown``"
+msgstr ""
+
+msgid "‹where›: landmark ‹ref› is not a point of a landmark set of the package"
+msgstr ""
+
+msgid "``combiner_arity``"
+msgstr ""
+
+msgid "‹type›: ‹operation› takes ‹want›, here ‹got›"
+msgstr ""
+
+msgid "``combiner_inputs``"
+msgstr ""
+
+msgid "‹type›: ‹operation› takes ‹want› inputs"
+msgstr ""
+
+msgid "Files, readers, sheets, colours, texts"
+msgstr ""
+
+msgid "``reader_plugin``"
+msgstr ""
+
+msgid "‹type›: reader ‹reader› names a plugin the package does not require"
+msgstr ""
+
+msgid "``reader_builtin``"
+msgstr ""
+
+msgid "‹type›: ‹reader› is not a reader the tools have (builtin: ‹known›)"
+msgstr ""
+
+msgid "``form_digest``"
+msgstr ""
+
+msgid "forms ‹id›: the compiled form's digest is ‹got›, the manifest says ‹want›"
+msgstr ""
+
+msgid "``vocab_file``"
+msgstr ""
+
+msgid "``vocab_version``"
+msgstr ""
+
+msgid "‹path›: owl:versionInfo ‹got›, the manifest says ‹want›"
+msgstr ""
+
+msgid "``vocab_not_carried``"
+msgstr ""
+
+msgid ""
+"‹property›: the scheme ‹scheme› is neither carried by the package "
+"([[data.vocabularies]]) nor required ([requires].vocabularies)"
+msgstr ""
+
+msgid "``vocab_version_mismatch``"
+msgstr ""
+
+msgid ""
+"‹scheme›: the profile uses version ‹profile›, the envelope carries "
+"‹envelope›"
+msgstr ""
+
+msgid "``no_example``"
+msgstr ""
+
+msgid "no example document (examples/\\*.em.json): a package shows how it is used"
+msgstr ""
+
+msgid "``example_undeclared``"
+msgstr ""
+
+msgid "‹path›: the example does not declare the profile in header.profiles"
+msgstr ""
+
+msgid "``example_fallback``"
+msgstr ""
+
+msgid "``part_missing``"
+msgstr ""
+
+msgid "parts: ‹path› is not in the package"
+msgstr ""
+
+msgid "``range_bad``"
+msgstr ""
+
+msgid "‹where›: ‹value› is not a version nor a range"
+msgstr ""
+
+msgid "``datamodel_checked``"
+msgstr ""
+
+msgid "verified against ‹key› ‹checked›, here ‹current›: it is read all the same"
+msgstr ""
+
+msgid "The envelope"
+msgstr ""
+
+msgid "``env_key``"
+msgstr ""
+
+msgid "em-extension.toml: ‹key› is required"
+msgstr ""
+
+msgid "``env_id``"
+msgstr ""
+
+msgid ""
+"em-extension.toml: id ‹value› — lowercase letters, digits, '-', '\\_' or "
+"'.', 2–64"
+msgstr ""
+
+msgid "``env_schema_version``"
+msgstr ""
+
+msgid "em-extension.toml: schema\\_version ‹value› — this library reads 1.x"
+msgstr ""
+
+msgid "``env_no_section``"
+msgstr ""
+
+msgid "em-extension.toml: neither [data] nor [code]: a package has at least one"
+msgstr ""
+
+msgid "``env_type``"
+msgstr ""
+
+msgid "em-extension.toml: type ‹value› does not match the sections (‹want›)"
+msgstr ""
+
+msgid "``env_root``"
+msgstr ""
+
+msgid ""
+"em-extension.toml: [‹section›].root is required when the package has both"
+" sections"
+msgstr ""
+
+msgid "``env_roots_overlap``"
+msgstr ""
+
+msgid "em-extension.toml: the roots of [data] and [code] overlap (‹data›, ‹code›)"
+msgstr ""
+
+msgid "``env_profile_id``"
+msgstr ""
+
+msgid "the envelope's id ‹env› is not the profile's name ‹name›"
+msgstr ""
+
+msgid "``env_profile_version``"
+msgstr ""
+
+msgid "[data].version ‹env› is not the profile's version ‹profile›"
+msgstr ""
+
+msgid "``env_license``"
+msgstr ""
+
+msgid "em-extension.toml: license is a list of SPDX:<id>"
+msgstr ""
+
+msgid "``partition_code_in_data``"
+msgstr ""
+
+msgid ""
+"‹path›: an executable file in the data section — the data of a package "
+"carry no code"
+msgstr ""
+
+msgid "``partition_outside``"
+msgstr ""
+
+msgid ""
+"‹path›: outside the roots of the sections (only the envelope, LICENSE\\*,"
+" README\\*, CHANGELOG.md)"
+msgstr ""
+
+msgid "``requires_part``"
+msgstr ""
+
+msgid "[requires] ‹id›: part ‹part› — data, code or any"
+msgstr ""
+
+msgid "``requires_code_optional``"
+msgstr ""
+
+msgid ""
+"[requires] ‹id›: a dependency on code is always optional — the data are "
+"read without plugins"
+msgstr ""
+
+msgid "``requires_self``"
+msgstr ""
+
+msgid "[requires] ‹id›: a package cannot require itself"
+msgstr ""
+
+msgid "``code_entry``"
+msgstr ""
+
+msgid "[code]: entry is required (module:object)"
+msgstr ""
+
+msgid "``code_hosts``"
+msgstr ""
+
+msgid "[code]: hosts ‹value› — emstudio, blender, server"
+msgstr ""
+
+msgid "``permission_reason``"
+msgstr ""
+
+msgid ""
+"[code.permissions] ‹name›: the reason is one sentence of at most 64 "
+"characters, without a final full stop"
+msgstr ""
+
+msgid "``permission_unknown``"
+msgstr ""
+
+msgid ""
+"[code.permissions] ‹name›: not a permission (files, network, clipboard, "
+"processes)"
+msgstr ""
+
+msgid "``tagline``"
+msgstr ""
+
+msgid ""
+"em-extension.toml: tagline — at most 64 characters, without a final full "
+"stop"
+msgstr ""
+
+msgid "``data_vocabulary``"
+msgstr ""
+
+msgid "The vocabularies a package carries"
+msgstr ""
+
+msgid "``vocab_entry_key``"
+msgstr ""
+
+msgid "scheme and version are required"
+msgstr ""
+
+msgid "``vocab_license_missing``"
+msgstr ""
+
+msgid "‹scheme›: no license — the tier is checked against it"
+msgstr ""
+
+msgid "``vocab_tier_bad``"
+msgstr ""
+
+msgid "‹scheme›: fascia ‹value› — A, B or C (the licence allows ‹allowed›)"
+msgstr ""
+
+msgid "``vocab_tier_less_prudent``"
+msgstr ""
+
+msgid ""
+"‹scheme›: fascia ‹tier› is less prudent than the licence ‹license› allows"
+" (fascia ‹allowed›)"
+msgstr ""
+
+msgid "``vocab_tier_c_file``"
+msgstr ""
+
+msgid ""
+"‹scheme›: fascia C is not redistributed — the package carries a pointer "
+"(fetch), not the file ‹path›"
+msgstr ""
+
+msgid "``vocab_tier_c_fetch``"
+msgstr ""
+
+msgid "‹scheme›: fascia C needs fetch.url (where the source is)"
+msgstr ""
+
+msgid "``vocab_path_missing``"
+msgstr ""
+
+msgid "‹scheme›: fascia ‹tier› — the file (path) is missing"
+msgstr ""
+
+msgid "``vocab_digest_missing``"
+msgstr ""
+
+msgid "‹scheme›: no digest (python -m s3dgraphy.extensions build computes it)"
+msgstr ""
+
+msgid "``vocab_digest_mismatch``"
+msgstr ""
+
+msgid ""
+"‹scheme›: the digest does not match the file (‹got›; build computes it "
+"again)"
+msgstr ""
+
+msgid "The archive as a whole"
+msgstr ""
+
+msgid "``type_missing``"
+msgstr ""
+
+msgid "em-extension.toml: no type — build writes ‹want›"
+msgstr ""
+
+msgid "``vocab_path_in_profile``"
+msgstr ""
+
+msgid ""
+"‹scheme›: the file is named in qualia\\_vocabularies[].path (0.1) — build"
+" moves it to [[data.vocabularies]]"
+msgstr ""
+
+msgid "``bare_profile``"
+msgstr ""
+
+msgid ""
+"a bare profile, without em-extension.toml: it is read, but installed and "
+"distributed as an archive after build"
+msgstr ""
+
+msgid "``code_wheel_name``"
+msgstr ""
+
+msgid ""
+"[code] wheels: ‹path› is not a wheel name (name-version-python-abi-"
+"platform.whl)"
+msgstr ""
+
+msgid "``code_platform_unknown``"
+msgstr ""
+
+msgid "[code] platforms: ‹value› — ‹known›"
+msgstr ""
+
+msgid "``code_platform_wheel``"
+msgstr ""
+
+msgid "[code]: declares ‹platform›, but no wheel of ‹dist› runs there"
+msgstr ""
+
+msgid "``code_platforms_undeclared``"
+msgstr ""
+
+msgid ""
+"[code]: platform wheels (‹dists›) and no platforms — the archive would "
+"claim every platform"
+msgstr ""
+
+msgid "``code_stamp_advice``"
+msgstr ""
+
+msgid ""
+"[code]: ‹files› file(s) write files and none stamps them — advice, not an"
+" error: a derived artifact is better with its stamp beside it (ctx.stamp,"
+" SPEC.md «Good practice»)"
+msgstr ""
+
+msgid "``code_outside_root``"
+msgstr ""
+
+msgid "[code]: the code root ‹root› is not in the archive"
+msgstr ""
+
+msgid "The index of a repository"
+msgstr ""
+
+msgid "``index_no_folder``"
+msgstr ""
+
+msgid "‹path›: not a folder"
+msgstr ""
+
+msgid "``index_unreadable``"
+msgstr ""
+
+msgid "the archive cannot be read: ‹why›"
+msgstr ""
+
+msgid "``index_no_envelope``"
+msgstr ""
+
+msgid ""
+"a bare profile is not listed: build it first (python -m "
+"s3dgraphy.extensions build)"
+msgstr ""
+
+msgid "``index_file_name``"
+msgstr ""
+
+msgid "the archive is usually named ‹want›"
+msgstr ""
+
+msgid "``index_blocked``"
+msgstr ""
+
+msgid "‹id› is in the blocklist: not listed"
+msgstr ""
+
+msgid "``index_list_unreadable``"
+msgstr ""
+
+msgid "``index_list_shape``"
+msgstr ""
+
+msgid "‹path›: a list of objects with id (or {{\"‹key›\": [...]}})"
+msgstr ""
+
+msgid "``index_block_reason``"
+msgstr ""
+
+msgid "blocklist: ‹id› has no reason (the window shows it)"
+msgstr ""
+
+msgid "``index_review_shape``"
+msgstr ""
+
+msgid "reviewed: ‹id› needs digest (sha256:…), by and on"
+msgstr ""
+
+msgid "``index_review_unused``"
+msgstr ""
+
+msgid "reviewed: ‹id› ‹digest›… is the digest of no archive listed here"
+msgstr ""
+
+msgid "The list of the reviewed"
+msgstr ""
+
+msgid "``review_no_id``"
+msgstr ""
+
+msgid "refusal"
+msgstr ""
+
+msgid "the archive has no id: it cannot be reviewed"
+msgstr ""
+
+msgid "``review_no_by``"
+msgstr ""
+
+msgid "‹id›: who reviewed it? (by)"
+msgstr ""
+
+msgid "``review_duplicate``"
+msgstr ""
+
+msgid "‹id›: ‹by› already reviewed this code (‹on›)"
+msgstr ""
+
+msgid "``code_reviewed``"
+msgstr ""
+
+msgid ""
+"code reviewed by ‹by› on ‹on› (‹repo›): installed without the trust "
+"question"
+msgstr ""
+
+msgid "``review_arrived``"
+msgstr ""
+
+msgid "‹id› ‹version›: reviewed by ‹by› on ‹on› (‹repo›), now verified"
+msgstr ""
+
+msgid "``review_withdrawn``"
+msgstr ""
+
+msgid ""
+"‹id› ‹version›: its review is no longer in a repository whose reviews "
+"count: it stays installed, not verified"
+msgstr ""
+
+msgid "The signature of a repository"
+msgstr ""
+
+msgid "``sign_key_bad``"
+msgstr ""
+
+msgid "not a minisign public key: ‹what›"
+msgstr ""
+
+msgid "``sign_secret_bad``"
+msgstr ""
+
+msgid "not a minisign secret key, or a damaged one"
+msgstr ""
+
+msgid "``sign_key_encrypted``"
+msgstr ""
+
+msgid ""
+"the secret key is encrypted and this Python has no scrypt to open it: use"
+" a key without password (minisign -W) or install cryptography"
+msgstr ""
+
+msgid "``sign_password_needed``"
+msgstr ""
+
+msgid ""
+"the secret key is encrypted: its password goes in "
+"S3DGRAPHY\\_SIGN\\_PASSWORD"
+msgstr ""
+
+msgid "``sign_password_wrong``"
+msgstr ""
+
+msgid "wrong password for the secret key"
+msgstr ""
+
+msgid "``sign_key_exists``"
+msgstr ""
+
+msgid "‹path› exists already: a secret key is never overwritten (--force)"
+msgstr ""
+
+msgid "``sign_signature_bad``"
+msgstr ""
+
+msgid "not a minisign signature, or a damaged one"
+msgstr ""
+
+msgid "``sign_comment_bad``"
+msgstr ""
+
+msgid "a trusted comment is one line"
+msgstr ""
+
+msgid "``sign_key_unknown``"
+msgstr ""
+
+msgid "signed with the key ‹key\\_id›, which is not one of this repository's"
+msgstr ""
+
+msgid "``sign_mismatch``"
+msgstr ""
+
+msgid "the signature of ‹key\\_id› is not of these bytes: changed after signing"
+msgstr ""
+
+msgid "``sign_comment_forged``"
+msgstr ""
+
+msgid "the trusted comment is not the one ‹key\\_id› signed"
+msgstr ""
+
+msgid "``sign_not_archive``"
+msgstr ""
+
+msgid "the signature of ‹key\\_id› is not an archive's signature"
+msgstr ""
+
+msgid "``sign_not_index``"
+msgstr ""
+
+msgid "the signature of ‹key\\_id› is not an index's signature"
+msgstr ""
+
+msgid "``sign_hash_other``"
+msgstr ""
+
+msgid "signed as ‹want›, but the bytes are ‹got›"
+msgstr ""
+
+msgid "``sign_entry_other``"
+msgstr ""
+
+msgid "signed with ‹key› ‹signed›, but the index says ‹index›"
+msgstr ""
+
+msgid "``sign_no_index``"
+msgstr ""
+
+msgid "‹path›: no index to sign (‹why›)"
+msgstr ""
+
+msgid "``sign_archive_missing``"
+msgstr ""
+
+msgid "‹id›: the archive ‹file› is not in the folder"
+msgstr ""
+
+msgid "``sign_index_missing``"
+msgstr ""
+
+msgid ""
+"‹name›: the repository is signed and its index came without a signature: "
+"the previous copy stays"
+msgstr ""
+
+msgid "``sign_archive_unsigned``"
+msgstr ""
+
+msgid ""
+"‹id› ‹version›: the repository is signed and this archive has no "
+"signature: not opened"
+msgstr ""
+
+msgid "``sign_key_unknown_here``"
+msgstr ""
+
+msgid ""
+"signed with the key ‹key\\_id›, which none of your repositories names: "
+"only the archive\\_hash counts"
+msgstr ""
+
+msgid "``sign_signed``"
+msgstr ""
+
+msgid ""
+"signed by the key ‹key\\_id› of ‹repos›: these are the bytes it published"
+" (not a review of the code)"
+msgstr ""
+
+msgid "``index_duplicate``"
+msgstr ""
+
+msgid "‹id› ‹version› is already listed by ‹other›"
+msgstr ""
+
+msgid "``index_section_reused``"
+msgstr ""
+
+msgid ""
+"‹id›: [‹section›] ‹version› has another content in ‹other› — a version is"
+" never reused"
+msgstr ""
+
+msgid "``index_vocab_conflict``"
+msgstr ""
+
+msgid ""
+"‹scheme› ‹version›: another content in ‹other› — a vocabulary version is "
+"never reused"
+msgstr ""
+
+msgid "``index_vocab_owner``"
+msgstr ""
+
+msgid ""
+"‹scheme›: owned by ‹owner›, which this repository publishes — require it,"
+" do not copy it"
+msgstr ""
+
+msgid "``index_vocab_not_owner``"
+msgstr ""
+
+msgid ""
+"‹scheme›: owned by ‹owner› — when ‹owner› is published, require it "
+"instead of copying it"
+msgstr ""
+
+msgid "``index_vocab_central``"
+msgstr ""
+
+msgid ""
+"‹scheme›: a shared vocabulary of ExtendedMatrix/vocabularies — require "
+"it, do not copy it"
+msgstr ""
+
+msgid "``index_requires_elsewhere``"
+msgstr ""
+
+msgid "[requires] ‹id›: not in this repository (another one must have it)"
+msgstr ""
+
+msgid "``index_requires_cycle``"
+msgstr ""
+
+msgid "[requires] in a cycle: ‹cycle›"
+msgstr ""
+
+msgid "``index_shape``"
+msgstr ""
+
+msgid "not an index: ‹why›"
+msgstr ""
+
+msgid "``index_version``"
+msgstr ""
+
+msgid "index version ‹value›: this library reads ‹want›"
+msgstr ""
+
+msgid "``index_entry_fields``"
+msgstr ""
+
+msgid "missing: ‹keys›"
+msgstr ""
+
+msgid "``index_entry_hash``"
+msgstr ""
+
+msgid "archive\\_hash ‹value› is not sha256:<64 hex>"
+msgstr ""
+
+msgid "``index_size_mismatch``"
+msgstr ""
+
+msgid "‹id›: the download has ‹got› bytes, the index says ‹want›"
+msgstr ""
+
+msgid "``index_hash_mismatch``"
+msgstr ""
+
+msgid "‹id›: the download is not the archive the index names (‹got›, not ‹want›)"
+msgstr ""
+
+msgid "``index_differs``"
+msgstr ""
+
+msgid "‹path› is not the index of these archives: run server-generate again"
+msgstr ""
+
+msgid "The repositories of this computer"
+msgstr ""
+
+msgid "``repo_url_bad``"
+msgstr ""
+
+msgid ""
+"‹url›: not the address of a repository (https://…/index.json, file://…, "
+"or a folder)"
+msgstr ""
+
+msgid "``repo_name_bad``"
+msgstr ""
+
+msgid ""
+"‹name›: a repository's name is lower-case letters, digits, - and \\_ (and"
+" not a reserved word)"
+msgstr ""
+
+msgid "``repo_name_used``"
+msgstr ""
+
+msgid "a repository called ‹name› is already here"
+msgstr ""
+
+msgid "``repo_url_used``"
+msgstr ""
+
+msgid "‹url› is already here, as ‹name›"
+msgstr ""
+
+msgid "``repo_unknown``"
+msgstr ""
+
+msgid "no repository called ‹name›"
+msgstr ""
+
+msgid "``repo_offline``"
+msgstr ""
+
+msgid "‹url›: online access is off («Allow online access»)"
+msgstr ""
+
+msgid "``repo_unreachable``"
+msgstr ""
+
+msgid "‹url›: cannot be read (‹why›)"
+msgstr ""
+
+msgid "``repo_denied``"
+msgstr ""
+
+msgid "‹url›: access refused (‹status›) — check the access token"
+msgstr ""
+
+msgid "``repo_http``"
+msgstr ""
+
+msgid "‹url›: the server answered ‹status›"
+msgstr ""
+
+msgid "``repo_too_big``"
+msgstr ""
+
+msgid "‹url›: more than ‹limit› bytes, not read"
+msgstr ""
+
+msgid "``repo_index_bad``"
+msgstr ""
+
+msgid ""
+"‹name›: the index is not a repository's index (‹why›); the previous copy "
+"is kept"
+msgstr ""
+
+msgid "``repo_not_synced``"
+msgstr ""
+
+msgid "‹name›: the index has not been read yet — «Refresh» first"
+msgstr ""
+
+msgid "``repo_no_entry``"
+msgstr ""
+
+msgid "‹repo› does not offer ‹id› ‹version›"
+msgstr ""
+
+msgid "``repo_blocked``"
+msgstr ""
+
+msgid "‹id› was withdrawn by ‹repo›: ‹reason›"
+msgstr ""
+
+msgid "``repo_blocked_installed``"
+msgstr ""
+
+msgid "‹id› is installed here, and ‹repo› has withdrawn it: ‹reason›"
+msgstr ""
+
+msgid "``repo_requires_unresolved``"
+msgstr ""
+
+msgid ""
+"‹for› requires ‹id› ‹range›, which no repository offers: it installs "
+"incomplete"
+msgstr ""
+
+msgid "``repo_tier_c_no_url``"
+msgstr ""
+
+msgid "‹id›: tier C without a source to fetch from"
+msgstr ""
+
+msgid "``repo_tier_c_offline``"
+msgstr ""
+
+msgid ""
+"‹id›: tier C, not fetched — online access is off; «Download locally» from"
+" ‹url› later"
+msgstr ""
+
+msgid "``repo_tier_c_failed``"
+msgstr ""
+
+msgid "‹id›: tier C, not fetched (‹why›)"
+msgstr ""
+
+msgid "Building an archive"
+msgstr ""
+
+msgid "``build_folder``"
+msgstr ""
+
+msgid "build reads a folder, not ‹what›: unzip it first"
+msgstr ""
+
+msgid "``build_written``"
+msgstr ""
+
+msgid "info"
+msgstr ""
+
+msgid "type = ‹value› written"
+msgstr ""
+
+msgid "``build_moved``"
+msgstr ""
+
+msgid ""
+"‹scheme›: ‹path› moved from qualia\\_vocabularies to "
+"[[data.vocabularies]] (fascia ‹tier›, ‹license›)"
+msgstr ""
+
+msgid "``build_vocab_license``"
+msgstr ""
+
+msgid ""
+"‹scheme›: ‹path› has no licence and the profile has not one licence — "
+"write license in qualia\\_vocabularies"
+msgstr ""
+
+msgid "``build_digest``"
+msgstr ""
+
+msgid "‹what›: digest ‹old› → ‹new›"
+msgstr ""
+
+msgid "``build_requires_profile``"
+msgstr ""
+
+msgid ""
+"[requires] copied into profile.json requires (for a 0.2 reader without "
+"the envelope)"
+msgstr ""
+
+msgid "``build_requires_iri``"
+msgstr ""
+
+msgid ""
+"[requires] ‹id› (‹part›): no IRI known for it — not copied into "
+"profile.json"
+msgstr ""
+
+msgid "``build_requires_translated``"
+msgstr ""
+
+msgid "[requires].profiles ‹iri› → extensions ‹id› (part = data)"
+msgstr ""
+
+msgid "``build_code_optional``"
+msgstr ""
+
+msgid ""
+"[requires] ‹id›: a dependency on code is always optional — optional = "
+"true written"
+msgstr ""
+
+msgid "``build_requires_core``"
+msgstr ""
+
+msgid "[requires].core taken from profile.json requires"
+msgstr ""
+
+msgid "``build_envelope_made``"
+msgstr ""
+
+msgid ""
+"em-extension.toml made from profile.json (a bare profile becomes an "
+"archive)"
+msgstr ""
+
+msgid "``build_refused``"
+msgstr ""
+
+msgid "the archive was not written: ‹count› errors"
+msgstr ""
+
+msgid "``build_toml``"
+msgstr ""
+
+msgid "em-extension.toml: ‹why›"
+msgstr ""
+
+msgid "Installing and activating"
+msgstr ""
+
+msgid "``version_reused``"
+msgstr ""
+
+msgid ""
+"‹name› ‹version› is already installed with other content: a version is "
+"not reused"
+msgstr ""
+
+msgid "``invalid``"
+msgstr ""
+
+msgid "‹name› ‹version›: the package has errors and is not installed"
+msgstr ""
+
+msgid "``profile_missing``"
+msgstr ""
+
+msgid ""
+"the file uses the community package ‹iri› ‹version›, which is not "
+"installed: it opens all the same, with the labels saved in the values"
+msgstr ""
+
+msgid "``profile_other_version``"
+msgstr ""
+
+msgid ""
+"the file uses ‹name› ‹version›; ‹installed› is installed and is read in "
+"its place"
+msgstr ""
+
+msgid "``prefix_clash``"
+msgstr ""
+
+msgid "‹name› and ‹other› both use the prefix ‹prefix›: ‹name› is not activated"
+msgstr ""
+
+msgid "``code_not_installed``"
+msgstr ""
+
+msgid ""
+"the code section is installed apart, by s3dgraphy.extensions, with the "
+"trust question"
+msgstr ""
+
+msgid "Installing by parts"
+msgstr ""
+
+msgid "``ext_not_installed``"
+msgstr ""
+
+msgid "‹id› is not installed"
+msgstr ""
+
+msgid "``ext_no_source``"
+msgstr ""
+
+msgid "‹id›: the archive it came from is no longer at ‹origin›: choose it again"
+msgstr ""
+
+msgid "``ext_data_first``"
+msgstr ""
+
+msgid "‹id›: the code of a package needs its data ‹version› installed first"
+msgstr ""
+
+msgid "``code_trust_required``"
+msgstr ""
+
+msgid "code not installed: the trust question was not answered"
+msgstr ""
+
+msgid "``code_user_choice``"
+msgstr ""
+
+msgid "code not installed: the user's choice (data only)"
+msgstr ""
+
+msgid "``code_removed``"
+msgstr ""
+
+msgid "code removed by the user: the package is data only"
+msgstr ""
+
+msgid "``code_invalid``"
+msgstr ""
+
+msgid "code not installed: ‹problems›"
+msgstr ""
+
+msgid "``code_platform``"
+msgstr ""
+
+msgid "code not installed: it runs on ‹platforms›, this machine is ‹platform›"
+msgstr ""
+
+msgid "``code_wheel_missing``"
+msgstr ""
+
+msgid "[code] wheels: ‹path› is not in the package"
+msgstr ""
+
+msgid "``code_no_wheel``"
+msgstr ""
+
+msgid "code not installed: no wheel of ‹dist› for ‹platform›"
+msgstr ""
+
+msgid "``code_version_reused``"
+msgstr ""
+
+msgid ""
+"code not installed: ‹id› code ‹version› is already installed with other "
+"content — a version is not reused"
+msgstr ""
+
+msgid "The commands of a plugin, their slots, the descriptor"
+msgstr ""
+
+msgid "``code_commands_shape``"
+msgstr ""
+
+msgid "[[code.commands]]: a list of tables"
+msgstr ""
+
+msgid "``code_command_id``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: the id is a letter, then letters, digits, «.», "
+"«\\_», «-»"
+msgstr ""
+
+msgid "``code_command_twice``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: declared twice"
+msgstr ""
+
+msgid "``code_command_label``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: a label is required (a text, or {{it, en}})"
+msgstr ""
+
+msgid "``code_command_writes``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: writes is true or false"
+msgstr ""
+
+msgid "``code_command_slots``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: slots is a list of {{name, kind}} — kinds ‹kinds›"
+msgstr ""
+
+msgid "``code_command_in``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: in — ‹value› is not a slot (name@version)"
+msgstr ""
+
+msgid "``code_command_when``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: when ‹value› does not read (document, "
+"selection:none\\|any\\|one\\|many\\|TYPE\\|TYPE, joined by «and»)"
+msgstr ""
+
+msgid "``code_reader_accept``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a reader (door.reader) declares accept = "
+"[\".ext\", …]"
+msgstr ""
+
+msgid "Readers of «Porta dentro…»: folders, claims, a panel"
+msgstr ""
+
+msgid "``code_reader_claims``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: claims is a list of extensions [\".ext\", …] "
+"(offered as «Read as», never taken)"
+msgstr ""
+
+msgid "``code_reader_folders``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: folders is true or false"
+msgstr ""
+
+msgid "``code_reader_nothing``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a reader (door.reader@2) reads something: accept,"
+" claims or folders = true"
+msgstr ""
+
+msgid "``code_reader_both``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: ‹value› both accepted and claimed: taken (accept "
+"wins)"
+msgstr ""
+
+msgid "``code_reader_panel``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: panel ‹value› is not a panel of this plugin "
+"([[code.panels]])"
+msgstr ""
+
+msgid "``code_reader_path``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a reader has a slot of kind path: the door fills "
+"it with the file or the folder"
+msgstr ""
+
+msgid "``code_reader_v2_field``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: ‹field› belongs to door.reader@2: with @1 it is "
+"not read"
+msgstr ""
+
+msgid "``code_check_writes``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: a check (check@1) only reads: writes = false"
+msgstr ""
+
+msgid "``code_slot_unknown``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: the slot ‹slot› is not known here: the command is"
+" not drawn there"
+msgstr ""
+
+msgid "``code_slot_phase2``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: the slot ‹slot› comes with phase 2: not drawn yet"
+msgstr ""
+
+msgid "``code_slot_newer``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: the slot ‹slot› is newer than this host's: that "
+"entry is turned off"
+msgstr ""
+
+msgid "``code_slot_not_command``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: ‹slot› is a call of the API, not a place for a "
+"command"
+msgstr ""
+
+msgid "Sections, columns, the status bar, tools, panels"
+msgstr ""
+
+msgid "``code_shows_writes``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: ‹slot› shows what the command returns, it only "
+"reads: writes = false"
+msgstr ""
+
+msgid "``code_column_view``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: view ‹value› is not a sheet of the Tabular — "
+"‹views›"
+msgstr ""
+
+msgid "``code_tool_primitive``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a tool of the Space (space.tool@1) declares "
+"primitive = one of ‹known› (not ‹value›)"
+msgstr ""
+
+msgid "``code_tool_geometry``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a tool of the Space receives what was placed: a "
+"slot of kind \"geometry\""
+msgstr ""
+
+msgid "``code_layer_kind``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: a layer of the Space (space.layer@1) declares "
+"layer = one of ‹known› (not ‹value›)"
+msgstr ""
+
+msgid "``code_icon``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: icon ‹value› is one or two characters of text"
+msgstr ""
+
+msgid "``code_section_buttons``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: buttons is a list of command ids, not ‹value›"
+msgstr ""
+
+msgid "``code_button_unknown``"
+msgstr ""
+
+msgid "[[code.commands]] ‹id›: the button ‹value› is not a command of this plugin"
+msgstr ""
+
+msgid "``code_buttons_unused``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: buttons are drawn only in an Inspector section "
+"(inspector.section@1)"
+msgstr ""
+
+msgid "``code_panels_shape``"
+msgstr ""
+
+msgid "[[code.panels]]: a list of tables"
+msgstr ""
+
+msgid "``code_panel_id``"
+msgstr ""
+
+msgid ""
+"[[code.panels]] ‹id›: the id is a letter, then letters, digits, «.», "
+"«\\_», «-»"
+msgstr ""
+
+msgid "``code_panel_twice``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: declared twice"
+msgstr ""
+
+msgid "``code_panel_label``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: a label is required (a text, or {{it, en}})"
+msgstr ""
+
+msgid "``code_panel_place``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: place ‹value› is one of ‹places›"
+msgstr ""
+
+msgid "``code_panel_fields``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: fields is a list of at most ‹max› tables"
+msgstr ""
+
+msgid "``code_panel_field_kind``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: field ‹n› — kind is one of ‹kinds›"
+msgstr ""
+
+msgid "``code_panel_field_name``"
+msgstr ""
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a name (the slot it fills: a letter, "
+"letters, digits, «\\_»)"
+msgstr ""
+
+msgid "``code_panel_field_twice``"
+msgstr ""
+
+msgid "[[code.panels]] ‹id›: field ‹n› — the name ‹value› twice"
+msgstr ""
+
+msgid "``code_panel_choice``"
+msgstr ""
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a choice has options = [\"a\", …] or "
+"[{{value, label}}, …]"
+msgstr ""
+
+msgid "``code_panel_command``"
+msgstr ""
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — the command ‹value› is not a command of"
+" this plugin"
+msgstr ""
+
+msgid "``code_panel_value_writes``"
+msgstr ""
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a value shows what ‹value› returns: "
+"that command only reads (writes = false)"
+msgstr ""
+
+msgid "``code_descriptor``"
+msgstr ""
+
+msgid "[code.descriptor]: a table with capabilities = [ … ]"
+msgstr ""
+
+msgid "``code_capability_unknown``"
+msgstr ""
+
+msgid "[code.descriptor]: unknown capability ‹value› — ‹known›"
+msgstr ""
+
+msgid "``code_writes_no_capability``"
+msgstr ""
+
+msgid ""
+"[[code.commands]] ‹id›: writes, and the descriptor declares no writing "
+"capability: every write will be refused"
+msgstr ""
+
+msgid "``code_updated``"
+msgstr ""
+
+msgid "code updated ‹old› → ‹new›"
+msgstr ""
+
+msgid "``data_beside``"
+msgstr ""
+
+msgid "data ‹new› installed beside ‹old›: each file keeps the version it declares"
+msgstr ""
+
+msgid "``module_collision``"
+msgstr ""
+
+msgid ""
+"the module ‹module› is already loaded by ‹other› ‹version›: disable it "
+"first"
+msgstr ""
+
+msgid "``trust_changed``"
+msgstr ""
+
+msgid "the code asks again: ‹changes› changed since the last trust"
+msgstr ""
+
+msgid "Updates, versions side by side, removal, wheels"
+msgstr ""
+
+msgid "``repo_other_platforms``"
+msgstr ""
+
+msgid "refusal / warning"
+msgstr ""
+
+msgid "‹repo› has ‹id› only for ‹platforms›, not for this machine (‹platform›)"
+msgstr ""
+
+msgid "``update_needs_trust``"
+msgstr ""
+
+msgid ""
+"‹id› ‹version› asks the trust question again (‹changes›): not updated "
+"with the others"
+msgstr ""
+
+msgid "``build_split_none``"
+msgstr ""
+
+msgid ""
+"--split-platforms: [code] names ‹count› platforms, one archive for all is"
+" written"
+msgstr ""
+
+msgid "``code_version_absent``"
+msgstr ""
+
+msgid "‹id›: code ‹version› is not on this machine"
+msgstr ""
+
+msgid "``code_version_active``"
+msgstr ""
+
+msgid ""
+"‹id›: code ‹version› is the one in use — use another version first, or "
+"remove the code"
+msgstr ""
+
+msgid "``code_trust_required_for``"
+msgstr ""
+
+msgid ""
+"‹id› ‹version›: ‹changes› differ from what you trusted — the trust "
+"question first"
+msgstr ""
+
+msgid "``code_switched``"
+msgstr ""
+
+msgid "‹id›: code ‹old› → ‹new›; the program loads it at its next start"
+msgstr ""
+
+msgid "``document_newer_minor``"
+msgstr ""
+
+msgid ""
+"this file uses ‹name› ‹declared›, ‹newest› is here: update the "
+"declaration?"
+msgstr ""
+
+msgid "``document_newer_major``"
+msgstr ""
+
+msgid ""
+"this file uses ‹name› ‹declared›, ‹newest› is here and changes the "
+"content: read what changes before updating the declaration"
+msgstr ""
+
+msgid "The development folder"
+msgstr ""
+
+msgid "``dev_dir_missing``"
+msgstr ""
+
+msgid "the development folder ‹path› is not a folder of this machine"
+msgstr ""
+
+msgid "``dev_no_code``"
+msgstr ""
+
+msgid "‹folder›: no [code] section, nothing to load"
+msgstr ""
+
+msgid "``dev_not_a_package``"
+msgstr ""
+
+msgid "‹folder›: not an extension (‹why›)"
+msgstr ""
+
+msgid "``dev_same_id``"
+msgstr ""
+
+msgid ""
+"‹id› from the development folder (‹folder›) and ‹id› from ‹other›: the "
+"first is loaded"
+msgstr ""
+
+msgid "``dev_hides_installed``"
+msgstr ""
+
+msgid ""
+"the development copy of ‹id› hides the installed ‹version› while it is in"
+" the development folder"
+msgstr ""
+
+msgid "``requires_missing_data``"
+msgstr ""
+
+msgid "incomplete: the data of ‹id› ‹range› are missing"
+msgstr ""
+
+msgid "``requires_missing_code``"
+msgstr ""
+
+msgid "incomplete: the code of ‹id› ‹range› is missing"
+msgstr ""
+
+msgid "``requires_missing_any``"
+msgstr ""
+
+msgid "incomplete: ‹id› ‹range› is missing"
+msgstr ""
+
+msgid "``requires_missing_vocabulary``"
+msgstr ""
+
+msgid "incomplete: the vocabulary ‹scheme› ‹range› is not installed"
+msgstr ""
+
+msgid "``requires_core``"
+msgstr ""
+
+msgid "asks for EM ‹range›; this library is ‹version›"
+msgstr ""
+
+msgid "``requires_optional``"
+msgstr ""
+
+msgid "optional function available: ‹id› ‹range› (‹part›, not installed)"
+msgstr ""
+
+msgid "``requires_cycle``"
+msgstr ""
+
+msgid "[requires]: a cycle — ‹cycle›"
+msgstr ""
+
+msgid "``required_by``"
+msgstr ""
+
+msgid "the data of ‹id› are required by ‹others›: confirm to remove them"
+msgstr ""
+
+msgid "``data_removes_code``"
+msgstr ""
+
+msgid "removing the data of ‹id› removes its code ‹version› too"
+msgstr ""
+
+msgid "The plugins of a node"
+msgstr ""
+
+msgid "``node_isolation_off``"
+msgstr ""
+
+msgid ""
+"the plugins of this node are off: the isolation is not serious "
+"(‹backend›: ‹why›)"
+msgstr ""
+
+msgid "``node_sandbox_none``"
+msgstr ""
+
+msgid "no sandbox on this machine (bubblewrap on Linux, sandbox-exec on macOS)"
+msgstr ""
+
+msgid "``node_sandbox_unknown``"
+msgstr ""
+
+msgid "‹name›: not a sandbox this library knows (‹known›)"
+msgstr ""
+
+msgid "``node_probe_failed``"
+msgstr ""
+
+msgid "the probe did not run in the sandbox ‹backend›: ‹why›"
+msgstr ""
+
+msgid "``node_escape``"
+msgstr ""
+
+msgid "the cage leaks: ‹name› (‹how›)"
+msgstr ""
+
+msgid "``node_not_enforced``"
+msgstr ""
+
+msgid ""
+"‹name›: this system (‹system›) does not keep the limit; the node's "
+"(Linux) does"
+msgstr ""
+
+msgid "``node_probe_network_ok``"
+msgstr ""
+
+msgid "no network"
+msgstr ""
+
+msgid "``node_probe_network_escaped``"
+msgstr ""
+
+msgid "it reached the network"
+msgstr ""
+
+msgid "``node_probe_write_outside_ok``"
+msgstr ""
+
+msgid "no writing outside its folder"
+msgstr ""
+
+msgid "``node_probe_write_outside_escaped``"
+msgstr ""
+
+msgid "it wrote outside its folder"
+msgstr ""
+
+msgid "``node_probe_read_protected_ok``"
+msgstr ""
+
+msgid "the node's files out of reach"
+msgstr ""
+
+msgid "``node_probe_read_protected_escaped``"
+msgstr ""
+
+msgid "it read a file of the node"
+msgstr ""
+
+msgid "``node_probe_spawn_ok``"
+msgstr ""
+
+msgid "no process of its own"
+msgstr ""
+
+msgid "``node_probe_spawn_escaped``"
+msgstr ""
+
+msgid "it started a process"
+msgstr ""
+
+msgid "``node_probe_cpu_ok``"
+msgstr ""
+
+msgid "stopped at its CPU limit"
+msgstr ""
+
+msgid "``node_probe_cpu_escaped``"
+msgstr ""
+
+msgid "it ran past its CPU limit"
+msgstr ""
+
+msgid "``node_probe_memory_ok``"
+msgstr ""
+
+msgid "stopped at its memory limit"
+msgstr ""
+
+msgid "``node_probe_memory_escaped``"
+msgstr ""
+
+msgid "it took memory past its limit"
+msgstr ""
+
+msgid "``node_not_server``"
+msgstr ""
+
+msgid "‹id›: its hosts do not name server — not a plugin of the node"
+msgstr ""
+
+msgid "``node_permission``"
+msgstr ""
+
+msgid "‹id›: asks the permission ‹permission› (‹why›), which the node never gives"
+msgstr ""
+
+msgid "``node_plugin_missing``"
+msgstr ""
+
+msgid "‹id›: active, but its folder is not on the node"
+msgstr ""
+
+msgid "``node_no_plugin``"
+msgstr ""
+
+msgid "‹id› is not a plugin of this node"
+msgstr ""
+
+msgid "``node_not_eligible``"
+msgstr ""
+
+msgid "‹id› cannot run on the node: ‹why›"
+msgstr ""
+
+msgid "``node_not_in_room``"
+msgstr ""
+
+msgid "‹id› is not turned on in the room ‹room›"
+msgstr ""
+
+msgid "``node_room_bad``"
+msgstr ""
+
+msgid "‹room› is not a room"
+msgstr ""
+
+msgid "``node_no_command``"
+msgstr ""
+
+msgid "‹id› has no command ‹command›"
+msgstr ""
+
+msgid "``node_role_read_only``"
+msgstr ""
+
+msgid "‹command› writes, and your role in ‹room› only reads"
+msgstr ""
+
+msgid "``node_limit_bad``"
+msgstr ""
+
+msgid "limits: ‹keys› — the limits are positive numbers among ‹allowed›"
+msgstr ""
+
+msgid "``node_quota_calls``"
+msgstr ""
+
+msgid "‹room›: ‹n› calls a minute at most — wait a moment"
+msgstr ""
+
+msgid "``node_quota_cpu``"
+msgstr ""
+
+msgid "‹room›: the ‹n› seconds of CPU of this hour are used"
+msgstr ""
+
+msgid "``node_quota_busy``"
+msgstr ""
+
+msgid "‹room›: a plugin is already running for this room"
+msgstr ""
+
+msgid "``node_quota_node``"
+msgstr ""
+
+msgid "the node is running ‹n› plugins already — try again shortly"
+msgstr ""
+
+msgid "``node_document_bad``"
+msgstr ""
+
+msgid "the room's document is not readable (‹what›)"
+msgstr ""
+
+msgid "``node_document_big``"
+msgstr ""
+
+msgid "the room's document is more than ‹mb› MB: not given to a plugin"
+msgstr ""
+
+msgid "``node_timeout``"
+msgstr ""
+
+msgid "‹command›: stopped after ‹wall› s"
+msgstr ""
+
+msgid "``node_cpu``"
+msgstr ""
+
+msgid "‹command›: stopped at ‹cpu› s of CPU"
+msgstr ""
+
+msgid "``node_memory``"
+msgstr ""
+
+msgid "‹command›: stopped at ‹mb› MB of memory"
+msgstr ""
+
+msgid "``node_output``"
+msgstr ""
+
+msgid "‹command›: its answer is more than ‹kb› kB, not read"
+msgstr ""
+
+msgid "``node_crashed``"
+msgstr ""
+
+msgid "‹command›: the plugin's process ended without an answer (‹error›)"
+msgstr ""
+
+msgid "``node_sandbox_failed``"
+msgstr ""
+
+msgid "‹command›: the sandbox did not start (‹error›)"
+msgstr ""
+
+msgid "``node_read_only_wrote``"
+msgstr ""
+
+msgid "‹command› is read-only and its answer carried writes: nothing applied"
+msgstr ""
+

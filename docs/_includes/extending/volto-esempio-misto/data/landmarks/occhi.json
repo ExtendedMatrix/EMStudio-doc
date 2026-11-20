@@ -1,0 +1,14 @@
+{
+  "id": "vlt:occhi",
+  "label": {"en": "Points of the eyes", "it": "Punti degli occhi"},
+  "scheme": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/punti-volto/",
+  "order": "listed",
+  "points": [
+    {"id": "nasion", "required": true,
+     "concept": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/punti-volto/nasion"},
+    {"id": "exocanthion_r", "required": true, "side": "right", "mirror": "exocanthion_l",
+     "concept": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/punti-volto/exocanthion"},
+    {"id": "exocanthion_l", "required": true, "side": "left", "mirror": "exocanthion_r",
+     "concept": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/punti-volto/exocanthion"}
+  ]
+}

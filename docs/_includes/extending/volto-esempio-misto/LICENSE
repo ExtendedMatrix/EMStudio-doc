@@ -1,0 +1,8 @@
+volto-esempio — an example package written for the EMStudio guide «Extending EMStudio».
+Not a standard: not to be cited.
+
+data/  the vocabularies, the landmark set, the recording sheet, the colour scheme
+       and the example document: Creative Commons Attribution 4.0 International
+       (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+code/  the Python commands: GNU General Public License, version 3 or later
+       (GPL-3.0-or-later), https://www.gnu.org/licenses/gpl-3.0.html

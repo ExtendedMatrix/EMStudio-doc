@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Stamp the files your code makes"
+msgstr ""
+
+msgid ""
+"*A good practice for code that makes files from other files: one line "
+"writes beside each file the record of how it was made.*"
+msgstr ""
+
+msgid ""
+"A picture cut from a geophysical slice, a cache, a texture baked on a "
+"surface, a table exported from a study: files like these outlive the "
+"session that made them, and are often found alone, years later. A "
+"**stamp** is the small record written beside such a file, "
+"``<file>.stamp.json``, that says which software made it, with which "
+"parameters, from which inputs, and which bytes it produced. Whoever finds"
+" the file can tell what it comes from and check it."
+msgstr ""
+
+msgid ""
+"Stamping is **encouraged, never required**. A package whose code writes "
+"no stamp installs and works exactly as one that does; the validator says "
+"it at most as a piece of advice (``code_stamp_advice``), never as an "
+"error."
+msgstr ""
+
+msgid "When to stamp"
+msgstr ""
+
+msgid ""
+"Every time the code **makes a file from other files**: a converted or "
+"resampled picture, a cache, a baked drape, a glb or a 3tz, an export. Not"
+" for a file it only reads, and not for the study itself: the ``em.json`` "
+"keeps its own history."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid "A package with code (see :doc:`python-command`)."
+msgstr ""
+
+msgid ""
+"Declare in the envelope ``em_api_min = \"1.2\"``: the stamp arrived with "
+"version 1.2 of the ``em`` API."
+msgstr ""
+
+msgid "Stamp a file from a command"
+msgstr ""
+
+msgid ""
+"The example writes a table of the widths between the eyes of every unit "
+"and stamps it:"
+msgstr ""
+
+msgid ""
+"Write the file in the plugin's **own folder**, ``ctx.data_dir`` "
+"(``~/.s3dgraphy/plugins-data/<id>/``), never beside the sources, which "
+"may be read-only or shared."
+msgstr ""
+
+msgid "Call ``ctx.stamp`` with the file and what it was made from:"
+msgstr ""
+
+msgid ""
+"``inputs`` — what the file was made from, **by identity**: a path of a "
+"file (its fingerprint is computed; the path is never written in the "
+"stamp), or a mapping with the ``resource_id`` of a resource of the graph "
+"and, for an input with no bytes, its ``kind``;"
+msgstr ""
+
+msgid "``parameters`` — what a person would need to make the same file again;"
+msgstr ""
+
+msgid ""
+"``dtc_kind`` — the kind of step, from the vocabulary of the DTC: "
+"``format_conversion``, ``transformation``, ``georeferencing``, "
+"``export``, ``lod_generation``…;"
+msgstr ""
+
+msgid "``technique`` — the step in your own words."
+msgstr ""
+
+msgid ""
+"``ctx.stamp`` writes ``widths.csv.stamp.json`` beside the file and "
+"returns the stamp. The plugin is named as the agent, with its id and "
+"version, followed by the library."
+msgstr ""
+
+msgid ""
+"The command is declared like any other, with the permission that says why"
+" it writes files:"
+msgstr ""
+
+msgid ""
+"``writes = false`` refers to the **study**: the command writes a file on "
+"the computer, and nothing in the graph."
+msgstr ""
+
+msgid "What the stamp says"
+msgstr ""
+
+msgid ""
+"``self`` is the file, by its fingerprint: the same bytes made twice are "
+"the same artifact."
+msgstr ""
+
+msgid ""
+"``from`` cites the inputs. When an input is the file of a resource of the"
+" graph, the stamp names that resource, so the chain reads backwards: "
+"acquisition → resource → derived file."
+msgstr ""
+
+msgid "``by`` has no person: the agent is the software named in ``how``."
+msgstr ""
+
+msgid "From a script"
+msgstr ""
+
+msgid ""
+"Outside a plugin, ``em.stamp(file, inputs=[…], …)`` does the same; inside"
+" a plugin's command it finds the calling plugin by itself."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"Files that say where they come from: a stamp beside each file the code "
+"makes, in the format of `dtcstamp <https://github.com/zalmoxes-"
+"laran/dtcstamp>`__, which s3Dgraphy can merge into the DTC of a study."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+"`SPEC.md §6.7 <https://github.com/ExtendedMatrix/em-"
+"profiles/blob/main/SPEC.md>`__, the good practice in the specification."
+msgstr ""
+
+msgid ":doc:`em-api`, ``ctx.stamp`` and ``em.stamp``."
+msgstr ""
+
+msgid ""
+":doc:`/reference/geofisica`, a package that stamps the pictures of its "
+"slices."
+msgstr ""
+

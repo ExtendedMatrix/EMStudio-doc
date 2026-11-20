@@ -1,0 +1,670 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "The envelope and the manifest"
+msgstr ""
+
+msgid ""
+"*The envelope em-extension.toml key by key, with its sections data, code,"
+" requires and build, and the keys of the manifest profile.json.*"
+msgstr ""
+
+msgid ""
+"An archive has an **envelope** at its root, ``em-extension.toml``, "
+"modelled on the manifest of Blender's extensions. It says who the archive"
+" is, which EM it goes with, what it carries and what it asks. A package "
+"with data has a **manifest**, ``profile.json``, which says what it adds "
+"to the language. The contract behind both is `SPEC.md "
+"<https://github.com/ExtendedMatrix/em-profiles/blob/main/SPEC.md>`__ of "
+"em-profiles; the closed sets of values are listed, as the library reads "
+"them, at the end of this page."
+msgstr ""
+
+msgid "The head"
+msgstr ""
+
+msgid "Key"
+msgstr ""
+
+msgid "Required"
+msgstr ""
+
+msgid "What it is"
+msgstr ""
+
+msgid "``schema_version``"
+msgstr ""
+
+msgid "yes"
+msgstr ""
+
+msgid "The form of the envelope: ``\"1.0.0\"``."
+msgstr ""
+
+msgid "``id``"
+msgstr ""
+
+msgid ""
+"The identity of the archive in a repository: 2 to 64 characters, "
+"lowercase letters, digits, ``.``, ``_`` and ``-``, a letter or a digit "
+"first. For a package with data it equals ``name`` in ``profile.json``, "
+"and the folder is named after it."
+msgstr ""
+
+msgid "``version``"
+msgstr ""
+
+msgid "The version of the archive, *major.minor.patch* (see :doc:`new-version`)."
+msgstr ""
+
+msgid "``name``"
+msgstr ""
+
+msgid "The name shown in the Extensions window."
+msgstr ""
+
+msgid "``tagline``"
+msgstr ""
+
+msgid "no"
+msgstr ""
+
+msgid ""
+"One line about it, at most 64 characters, no final full stop (a warning "
+"otherwise)."
+msgstr ""
+
+msgid "``maintainer``"
+msgstr ""
+
+msgid "Who answers for the archive."
+msgstr ""
+
+msgid "``license``"
+msgstr ""
+
+msgid ""
+"A list of SPDX identifiers, each written ``\"SPDX:<id>\"``; one per "
+"section when they differ."
+msgstr ""
+
+msgid "``em_api_min``, ``em_api_max``"
+msgstr ""
+
+msgid "``em_api_min``"
+msgstr ""
+
+msgid ""
+"The versions of the extensions API the archive works with: ``\"1.0\"`` "
+"for data; ``\"1.2\"`` for code that stamps its files. A plugin that asks "
+"for a newer API than the program's is not loaded, and the window says "
+"why."
+msgstr ""
+
+msgid "``type``"
+msgstr ""
+
+msgid ""
+"``community-package``, ``plugin`` or ``mixed``; it must agree with the "
+"sections. ``build`` writes it when it is missing (a warning)."
+msgstr ""
+
+msgid "An archive has at least one of the sections ``[data]`` and ``[code]``."
+msgstr ""
+
+msgid "``[data]``"
+msgstr ""
+
+msgid "``profile``"
+msgstr ""
+
+msgid "The manifest, ``\"profile.json\"``."
+msgstr ""
+
+msgid ""
+"The version of the data; by default the archive's. It equals ``version`` "
+"in ``profile.json``."
+msgstr ""
+
+msgid "``root``"
+msgstr ""
+
+msgid ""
+"Where the data live: ``\".\"`` when the archive has data only, a folder "
+"of their own (``\"data/\"``) when it has code too. The two roots never "
+"overlap."
+msgstr ""
+
+msgid "``[[data.vocabularies]]``"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"One entry per vocabulary file the archive carries: ``path``, ``scheme`` "
+"(the IRI of the ``skos:ConceptScheme`` in the file), ``version`` (its "
+"``owl:versionInfo``), ``license``, ``tier`` (``fascia`` is read as the "
+"same key) and ``digest`` (``\"sha256:…\"``, the fingerprint of the file)."
+" A vocabulary of tier ``C`` has no ``path``: it has ``fetch = { url, "
+"digest, terms }``, and the person downloads it."
+msgstr ""
+
+msgid ""
+"**No executable file lives under the data root** (the extensions are "
+"listed at the end of the page); outside the roots only the envelope, "
+"``LICENSE*``, ``README*`` and ``CHANGELOG.md`` may stand. This is what "
+"lets the data be installed without the question of trust."
+msgstr ""
+
+msgid "``[code]``"
+msgstr ""
+
+msgid "The version of the code; by default the archive's."
+msgstr ""
+
+msgid ""
+"Where the code lives: ``\".\"`` for a plugin alone, ``\"code/\"`` in a "
+"mixed package."
+msgstr ""
+
+msgid "The licence of the code, ``\"SPDX:<id>\"``."
+msgstr ""
+
+msgid "``entry``"
+msgstr ""
+
+msgid ""
+"``\"<module>:<object>\"``: the module imported and the object whose "
+"``setup(ctx)`` is called (a function ``setup`` may be named directly)."
+msgstr ""
+
+msgid "``hosts``"
+msgstr ""
+
+msgid "Where the code runs: a list of ``emstudio``, ``blender``, ``server``."
+msgstr ""
+
+msgid "``platforms``"
+msgstr ""
+
+msgid ""
+"The platforms the archive has wheels for; needed when a wheel is not pure"
+" Python."
+msgstr ""
+
+msgid "``wheels``"
+msgstr ""
+
+msgid ""
+"The paths, under the code root, of the wheels of its dependencies. "
+"Nothing is installed with ``pip``."
+msgstr ""
+
+msgid "``[code.permissions]``"
+msgstr ""
+
+msgid ""
+"``files``, ``network``, ``clipboard``, ``processes``: each with the "
+"reason shown before installing, at most 64 characters, no final full "
+"stop."
+msgstr ""
+
+msgid "``[code.descriptor]``"
+msgstr ""
+
+msgid ""
+"``capabilities`` (``read-graph`` by default; ``write-graph`` to write in "
+"a study), ``host`` (``emstudio-side``), ``transport`` (``[\"direct\"]``),"
+" ``provenance`` (``derivation``). For a plugin of EMStudio, "
+"``capabilities`` is the key that matters."
+msgstr ""
+
+msgid "``[[code.commands]]``"
+msgstr ""
+
+msgid "The commands, below."
+msgstr ""
+
+msgid "``[[code.panels]]``"
+msgstr ""
+
+msgid "The declarative panels, below."
+msgstr ""
+
+msgid "A command, ``[[code.commands]]``"
+msgstr ""
+
+msgid ""
+"Unique in the plugin: letters, digits, ``_``, ``.`` and ``-``, a letter "
+"first. ``ctx.command(id, function)`` binds it."
+msgstr ""
+
+msgid "``label``"
+msgstr ""
+
+#, python-brace-format
+msgid "A text, or one per language: ``{ en = \"…\", it = \"…\" }``."
+msgstr ""
+
+msgid "``in``"
+msgstr "``en``"
+
+msgid ""
+"The slots where it appears, ``[\"menu.tools@1\"]`` (see :doc:`slots`). "
+"Empty: the command exists, and is called from a panel or the console."
+msgstr ""
+
+msgid "``writes``"
+msgstr ""
+
+msgid ""
+"``true`` when it changes the study. By default ``false`` in a slot that "
+"only shows (a check, a section, a column, the status bar, a layer), "
+"``true`` elsewhere."
+msgstr ""
+
+msgid "``slots``"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"What it receives: ``[{ name = \"…\", kind = \"…\", required = false }]``."
+" The kinds are listed at the end of the page; a slot is required unless "
+"``required = false``."
+msgstr ""
+
+msgid "``when``"
+msgstr "``cuándo``"
+
+msgid ""
+"When it is offered, in a small closed grammar: ``document`` (a study is "
+"open), ``selection:none|any|one|many``, ``selection:US|USV`` (every "
+"selected node of these types), joined by ``and``. Empty: always."
+msgstr ""
+
+msgid "``accept``, ``claims``, ``folders``, ``panel``"
+msgstr ""
+
+msgid "For a reader of *Porta dentro…* (``door.reader@2``), see :doc:`slots`."
+msgstr ""
+
+msgid "``primitive``, ``icon``"
+msgstr ""
+
+msgid ""
+"For a tool of the Space (``space.tool@1``): what the person places, and "
+"one or two characters drawn on the button."
+msgstr ""
+
+msgid "``view``"
+msgstr ""
+
+msgid "For a column of the Tabular window: the sheet it joins."
+msgstr ""
+
+msgid "``layer``"
+msgstr ""
+
+msgid "For a layer of the Space: ``raster_stack``."
+msgstr ""
+
+msgid "``buttons``"
+msgstr ""
+
+msgid ""
+"For a section of the Inspector: ids of commands of the same plugin, drawn"
+" as buttons under the rows."
+msgstr ""
+
+msgid "A panel, ``[[code.panels]]``"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"A panel is a few fields drawn by EMStudio, never HTML: ``id``, ``label``,"
+" ``place`` (where it opens the first time), ``when``, and "
+"``[[code.panels.fields]]``. A field has a ``kind``: ``text``, ``number`` "
+"(with ``unit``, ``min``, ``max``, ``step``), ``choice`` (with "
+"``options``, each ``{ value, label }``), ``check``, ``node`` — what the "
+"person fills, with a ``name``: the slot of the same name of the command a"
+" button runs — or ``value`` (a read-only command whose answer is shown) "
+"and ``button`` (a command run with the fields), both with ``command``. "
+"Every field may have ``label`` and ``help``."
+msgstr ""
+
+msgid "``[requires]``"
+msgstr ""
+
+msgid ""
+"Version ranges are those of npm and Blender: ``^``, ``~``, ``>=``/``<``, "
+"``=``, ``*``."
+msgstr ""
+
+msgid ""
+"``part`` says which section of the other archive is needed: ``data``, "
+"``code`` or ``any``. Data never require code as a must: a dependency with"
+" ``part = \"code\"`` is always ``optional = true``."
+msgstr ""
+
+msgid ""
+"A package whose mandatory dependency is missing is installed all the "
+"same, shown as incomplete, and its data stay readable. A repository "
+"installs the dependencies first."
+msgstr ""
+
+msgid "``[build]``"
+msgstr ""
+
+msgid ""
+"``paths`` (the files and folders to put in the archive) and "
+"``paths_exclude_pattern`` (what to leave out; ``__pycache__/`` and "
+"``*.pyc`` by default), as in Blender."
+msgstr ""
+
+msgid "The manifest, ``profile.json``"
+msgstr ""
+
+msgid "``profile_format``"
+msgstr ""
+
+msgid "``\"0.2\"``."
+msgstr ""
+
+msgid "``iri``, ``name``, ``prefix``, ``version``"
+msgstr ""
+
+msgid ""
+"The identity: the address, the name (= the id), the prefix of every type "
+"(2 to 16 lowercase letters or digits, a letter first), the version of the"
+" data."
+msgstr ""
+
+msgid "``lifecycle``"
+msgstr ""
+
+msgid "``proposed``, ``stable`` or ``deprecated``."
+msgstr ""
+
+msgid "``title``, ``description``"
+msgstr ""
+
+msgid "Texts per language."
+msgstr ""
+
+msgid "``languages``, ``unverified_languages``"
+msgstr ""
+
+msgid ""
+"The languages of the package (a label is required in each, for every "
+"type), and those no person has reviewed yet."
+msgstr ""
+
+msgid "``curators``, ``license``, ``parts``"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Who answers for it; the licence of the content, an SPDX identifier; "
+"another licence for a file or a folder (``\"examples/\": {\"license\": "
+"\"CC0-1.0\"}``)."
+msgstr ""
+
+msgid "``is_profile_of``"
+msgstr ""
+
+msgid "The versions of the em.json format and of the EM core it was written for."
+msgstr ""
+
+msgid "``datamodel_checked``"
+msgstr ""
+
+msgid ""
+"The versions of the core's datamodels it was checked against; never a "
+"reason to refuse."
+msgstr ""
+
+msgid "``requires``"
+msgstr ""
+
+msgid "Copied from the envelope's ``[requires]`` by ``build``."
+msgstr ""
+
+msgid "``qualia_vocabularies``"
+msgstr ""
+
+msgid ""
+"A property bound to a SKOS scheme: ``property_type``, ``label``, "
+"``scheme``, ``version``."
+msgstr ""
+
+msgid "``qualia``"
+msgstr ""
+
+msgid ""
+"The package's own properties: ``id``, ``label``, ``data_type`` "
+"(``float``, ``integer``, ``string``, ``boolean``, ``date``, "
+"``controlled_vocabulary``), ``units``, ``mapping``."
+msgstr ""
+
+msgid "``extractor_types``"
+msgstr ""
+
+msgid ""
+"Kinds of reading: ``id``, ``specializes`` (``extractor``), ``label``, "
+"``geometry`` (``primitive``, ``produces``, ``unit``, ``vertices``, "
+"``snap``: ``surface``/``vertex``/``free``, ``frame``: "
+"``model``/``graph``), ``produces``, ``source_documents``, "
+"``input_formats``."
+msgstr ""
+
+msgid "``landmark_sets``"
+msgstr ""
+
+msgid ""
+"Sets of points: ``id``, ``path`` (``landmarks/<id>.json``), "
+"``extractor_type``, ``label``. The file lists ``points``, each with "
+"``id``, ``concept``, ``required``, ``side``, ``mirror``, ``ref``."
+msgstr ""
+
+msgid "``combiner_types``"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Computations: ``id``, ``label``, ``operation``, ``inputs`` "
+"(``{\"landmark\": \"<set>/<point>\"}`` or ``{\"quale\": \"…\"}``), "
+"``produces``, ``unit``."
+msgstr ""
+
+msgid "``document_types``, ``file_types``"
+msgstr ""
+
+msgid ""
+"Documents of the community (``specializes``: ``document``, "
+"``content_nature``, ``formats``) and file types with their ``reader`` "
+"(``builtin:<id>`` or ``plugin:<id>``)."
+msgstr ""
+
+msgid "``forms``"
+msgstr ""
+
+msgid ""
+"Recording sheets: ``id``, ``source`` (``template.yaml``), ``compiled``, "
+"``digest``."
+msgstr ""
+
+msgid "``color_schemes``, ``visual_rules``"
+msgstr ""
+
+msgid ""
+"Colour schemes (``id``, ``path`` of an ``.emc``, ``property``, ``label``)"
+" and how the package's types are drawn."
+msgstr ""
+
+msgid "``i18n``, ``help``, ``examples``"
+msgstr ""
+
+msgid ""
+"Interface strings per language, help pages, and at least one example "
+"study."
+msgstr ""
+
+msgid "``node_types``, ``edge_types``"
+msgstr ""
+
+msgid ""
+"Suspended in EM 1.6: accepted with a warning in a ``proposed`` package, "
+"refused in a ``stable`` one (see :doc:`design`)."
+msgstr ""
+
+msgid "The closed sets"
+msgstr ""
+
+msgid "Values"
+msgstr ""
+
+msgid "``[code].permissions``"
+msgstr ""
+
+msgid "``files``, ``network``, ``clipboard``, ``processes``"
+msgstr ""
+
+msgid "``[code].hosts``"
+msgstr ""
+
+msgid "``emstudio``, ``blender``, ``server``"
+msgstr ""
+
+msgid "``[code].platforms``"
+msgstr ""
+
+msgid ""
+"``macos-arm64``, ``macos-x64``, ``windows-x64``, ``windows-arm64``, "
+"``linux-x64``, ``linux-arm64``"
+msgstr ""
+
+msgid "``[code.descriptor].capabilities``"
+msgstr ""
+
+msgid ""
+"``read-graph``, ``write-graph``, ``subscribe``, ``link-selection``, "
+"``presence``, ``attach-asset``, ``resolve-asset``, ``resolve-preview``, "
+"``materialize-3D``, ``publish-3D``, ``ingest-batch``, ``resolve-uri``"
+msgstr ""
+
+msgid "capabilities that write"
+msgstr ""
+
+msgid "``write-graph``, ``attach-asset``, ``materialize-3D``, ``ingest-batch``"
+msgstr ""
+
+msgid "``kind`` of a slot of a command"
+msgstr ""
+
+msgid "``id``, ``ids``, ``string``, ``number``, ``path``, ``geometry``, ``bool``"
+msgstr ""
+
+msgid "``when``, the selection"
+msgstr ""
+
+msgid "``none``, ``any``, ``one``, ``many``"
+msgstr ""
+
+msgid "``primitive`` of a tool of the Space"
+msgstr ""
+
+msgid ""
+"``point`` (1 click), ``line`` (2 clicks), ``polyline`` (2+ clicks), "
+"``surface`` (3+ clicks)"
+msgstr ""
+
+msgid "``view`` of a column of the Tabular"
+msgstr ""
+
+msgid "``Units``, ``Epochs``, ``Documents``, ``Claims``, ``Authors``"
+msgstr ""
+
+msgid "``layer`` of a layer of the Space"
+msgstr ""
+
+msgid "``raster_stack``"
+msgstr ""
+
+msgid "``kind`` of a field of a panel"
+msgstr ""
+
+msgid ""
+"``number``, ``text``, ``choice``, ``node``, ``check``, ``value``, "
+"``button``"
+msgstr ""
+
+msgid "``place`` of a panel"
+msgstr ""
+
+msgid "``right``, ``left``, ``below``, ``window``"
+msgstr ""
+
+msgid "fields of a panel, at most"
+msgstr ""
+
+msgid "40"
+msgstr ""
+
+msgid "``geometry.primitive`` of an extractor → ``produces``"
+msgstr ""
+
+msgid ""
+"``point`` → ``position``, ``elevation``, ``line`` → ``length``, "
+"``polyline`` → ``length``, ``surface`` → ``area``, ``volume`` → "
+"``volume``"
+msgstr ""
+
+msgid "``operation`` of a combiner"
+msgstr ""
+
+msgid ""
+"``distance`` (2 landmarks), ``angle`` (3 landmarks), ``ratio`` (2 "
+"qualia), ``mean`` (1+ inputs), ``area_of_polygon`` (3+ landmarks), "
+"``elevation_difference`` (2 landmarks), ``angle_between_planes`` (6 "
+"landmarks), ``symmetry_index`` (2+ landmarks)"
+msgstr ""
+
+msgid "``reader`` of a file type, ``builtin:<id>``"
+msgstr ""
+
+msgid ""
+"``gltf``, ``glb``, ``mesh``, ``pointcloud``, ``image``, ``pdf``, ``3tz``,"
+" ``iiif``, ``text``, ``svg``, ``video``, ``audio``"
+msgstr ""
+
+msgid "files never under the data root"
+msgstr ""
+
+msgid ""
+"``.py``, ``.pyc``, ``.pyo``, ``.so``, ``.dylib``, ``.dll``, ``.js``, "
+"``.mjs``, ``.wasm``, ``.whl``, ``.exe``"
+msgstr ""
+
+#~ msgid ""
+#~ "``point`` (1 clicks), ``line`` (2 "
+#~ "clicks), ``polyline`` (2+ clicks), ``surface``"
+#~ " (3+ clicks)"
+#~ msgstr ""
+

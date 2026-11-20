@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pl\n"
+"Language-Team: pl <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Slots"
+msgstr ""
+
+msgid ""
+"*Where a command of a plugin appears, what EMStudio gives it, and what it"
+" gives back.*"
+msgstr ""
+
+msgid ""
+"A **slot** is a place of the interface, or of the work, where EMStudio "
+"accepts something from a plugin. It has a name and a version, "
+"``context.node@1``, a promise the program keeps from one release to the "
+"next. A command lists its slots in ``in``; a slot with a version higher "
+"than the program knows turns that entry off, not the plugin, and the "
+"Extensions window says so."
+msgstr ""
+
+msgid "The slots of this version"
+msgstr ""
+
+msgid "Slot"
+msgstr ""
+
+msgid "Where it appears"
+msgstr ""
+
+msgid "What the command is"
+msgstr ""
+
+msgid "``menu.tools@1``"
+msgstr ""
+
+msgid "``Tools ▸ Plugins``, under the name of the plugin"
+msgstr ""
+
+msgid "a command"
+msgstr ""
+
+msgid "``menu.file.import@1``"
+msgstr ""
+
+msgid "``File ▸ Import``"
+msgstr ""
+
+msgid "``menu.file.export@1``"
+msgstr ""
+
+msgid "``File ▸ Export``; the command returns a file"
+msgstr ""
+
+msgid "returns a file"
+msgstr ""
+
+msgid "``export.narrative@1``"
+msgstr ""
+
+msgid "**Export ▾** of the Narrative; the command returns a file"
+msgstr ""
+
+msgid "``context.node@1``"
+msgstr ""
+
+msgid "the context menu of a node, in the Matrix and in the Space"
+msgstr ""
+
+msgid "``door.reader@2``"
+msgstr ""
+
+msgid "*Porta dentro…*: a reader of a kind of file, or of a folder"
+msgstr ""
+
+msgid "``check@1``"
+msgstr ""
+
+msgid "the **Warnings** sheet of the Tabular window: warnings"
+msgstr ""
+
+msgid "reads only"
+msgstr ""
+
+msgid "``event@1``"
+msgstr ""
+
+msgid "no place: the plugin listens to an event (``ctx.on``)"
+msgstr ""
+
+msgid "a call of the API"
+msgstr ""
+
+msgid "``space.pick@1``"
+msgstr ""
+
+msgid "no place: the plugin asks for a point (``em.app.space.pick``)"
+msgstr ""
+
+msgid "``console@1``"
+msgstr ""
+
+msgid "no place: functions for the console (``em.ext.<id>``)"
+msgstr ""
+
+msgid "``inspector.section@1``"
+msgstr ""
+
+msgid "a section of the Inspector, for some types of node"
+msgstr ""
+
+msgid "``tabular.column@1``"
+msgstr ""
+
+msgid "a computed column of a sheet of the Tabular window"
+msgstr ""
+
+msgid "``statusbar@1``"
+msgstr ""
+
+msgid "a short text in the status bar"
+msgstr ""
+
+msgid "``space.tool@1``"
+msgstr ""
+
+msgid "a tool in the bar of the Space: what the person places"
+msgstr ""
+
+msgid "``panel@1``"
+msgstr ""
+
+msgid "a panel declared in ``[[code.panels]]``"
+msgstr ""
+
+msgid "declared, not a command"
+msgstr ""
+
+msgid "``space.layer@1``"
+msgstr ""
+
+msgid "a layer of the Space, drawn from what the command describes"
+msgstr ""
+
+msgid ""
+"Names reserved for later versions, accepted by the validator with a "
+"warning and not drawn yet: ``context.outliner@1``, ``context.edge@1``, "
+"``palette@1``, ``keymap@1``, ``workspace@1``."
+msgstr ""
+
+msgid "What a command receives"
+msgstr ""
+
+msgid ""
+"A command is a function ``fn(slots)``. ``slots`` is a dictionary whose "
+"keys are the ``name`` of each slot declared in ``[[code.commands]]``; "
+"EMStudio fills them by their ``kind``, and **never invents a value**:"
+msgstr ""
+
+msgid "Kind"
+msgstr ""
+
+msgid "What EMStudio puts there"
+msgstr ""
+
+msgid "``id``"
+msgstr ""
+
+msgid ""
+"A selected node: the first ``id`` slot gets the first selected node, the "
+"second the second. In a section of the Inspector, the node shown."
+msgstr ""
+
+msgid "``ids``"
+msgstr ""
+
+msgid ""
+"All the selected nodes, a list; in a column of the Tabular window, the "
+"rows of the sheet."
+msgstr ""
+
+msgid "``path``"
+msgstr ""
+
+msgid ""
+"The file or folder of a reader, an import or a panel's field; for a "
+"command of a menu whose ``path`` is required, EMStudio asks for a file "
+"first (desktop only)."
+msgstr ""
+
+msgid "``geometry``"
+msgstr ""
+
+msgid ""
+"What the person placed with a tool of the Space: the ``primitive``, its "
+"``vertices`` in the frame of the model, the node it was placed ``on``, "
+"the ``frame``."
+msgstr ""
+
+msgid "``string``, ``number``, ``bool``"
+msgstr ""
+
+msgid ""
+"What the person wrote in the field of a panel of the same ``name``. Never"
+" guessed: a required one that is missing refuses the command, with its "
+"name."
+msgstr ""
+
+msgid "What a command gives back"
+msgstr ""
+
+msgid "What the function returns, and what EMStudio does with it"
+msgstr ""
+
+msgid "``menu.tools@1``, ``context.node@1``"
+msgstr ""
+
+msgid ""
+"Anything: a text is shown in a message, other values as JSON. A command "
+"that wrote says how many steps it wrote."
+msgstr ""
+
+msgid "``menu.file.export@1``, ``export.narrative@1``"
+msgstr ""
+
+msgid ""
+"A file, ``ctx.file(name, content, mime)``: EMStudio saves it where the "
+"person chooses (desktop) or downloads it (web)."
+msgstr ""
+
+msgid "``menu.file.import@1``, ``door.reader@2``"
+msgstr ""
+
+msgid ""
+"What the reading wrote, inside ``em.write``. A reader declares ``accept``"
+" (the extensions it takes, those EMStudio does not know), ``claims`` "
+"(extensions EMStudio knows, offered as *Read as: …* beside its own "
+"reading), ``folders = true`` (it reads a folder), and ``panel`` (a panel "
+"of the plugin where the person says what the files do not)."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"A list of warnings, each ``{\"rule\": …, \"sev\": \"error\" | \"warning\""
+" | \"info\", \"node\": <id or None>, \"txt\": <text or {\"en\": …, "
+"\"it\": …}>}``, shown in the **Warnings** sheet. It only reads."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"Rows: a dictionary ``{label: value}``, a list of ``{\"label\", "
+"\"value\"}`` or of pairs, or a text (one row). At most 40 rows of 200 "
+"characters. It only reads; ``buttons`` names commands drawn under the "
+"rows."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"``{id: value}`` for the rows of the sheet named by ``view``, each at most"
+" 200 characters. It only reads."
+msgstr ""
+
+msgid "One line, at most 80 characters. It only reads."
+msgstr ""
+
+msgid ""
+"What the tool wrote, inside ``em.write``. The command declares "
+"``primitive`` and ``icon``, and a slot of kind ``geometry``."
+msgstr ""
+
+msgid ""
+"The description of a layer, ``layer = \"raster_stack\"``: planes with a "
+"picture, which EMStudio draws. The pictures live in the plugin's own "
+"folder. :doc:`/reference/geofisica` shows one at work."
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"A text may always be a dictionary of languages, ``{\"en\": \"…\", \"it\":"
+" \"…\"}``: EMStudio shows the language of the interface, else English."
+msgstr ""
+
+msgid "Slots that are calls of the API"
+msgstr ""
+
+msgid ""
+"Four slots need no command: the plugin uses them from ``setup(ctx)`` or "
+"from a command."
+msgstr ""
+
+msgid ""
+"``event@1`` — ``ctx.on(event, fn)``: ``fn(payload)`` runs after each "
+"event of every study (the events are listed in :doc:`em-api`). A write in"
+" a listener runs after the event, never inside the step that caused it."
+msgstr ""
+
+msgid ""
+"``space.pick@1`` — ``em.app.space.pick(prompt, primitive)`` asks the "
+"person to place a point (or a line, a path, a surface) in the Space."
+msgstr ""
+
+msgid ""
+"``console@1`` — ``ctx.expose(name, object)`` makes a function available "
+"in the console as ``em.ext.<plugin>.<name>``."
+msgstr ""
+
+msgid ""
+"``panel@1`` — ``[[code.panels]]`` in the envelope (see :doc:`envelope`): "
+"EMStudio draws the fields, the values computed by read-only commands, and"
+" the buttons that run commands with the fields."
+msgstr ""
+
+msgid "Read only means read only"
+msgstr ""
+
+msgid ""
+"A command in a slot that only shows a value (``check``, "
+"``inspector.section``, ``tabular.column``, ``statusbar``, "
+"``space.layer``) is declared ``writes = false``; one declared otherwise "
+"is refused by the validator, and a write it attempts is refused by the "
+"library."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`envelope`, the keys of a command."
+msgstr ""
+
+msgid ":doc:`em-api`, what a function may call."
+msgstr ""
+
+msgid ":doc:`python-command`, three slots at work."
+msgstr ""
+

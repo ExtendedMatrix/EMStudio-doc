@@ -1,0 +1,411 @@
+{
+  "format": "stratigraph-templates/compiled-definition",
+  "format_version": "1",
+  "header": {
+    "id": "vlt-scheda-volto",
+    "version": "0.1.0",
+    "standard": {
+      "authority": "EXAMPLE",
+      "code": "VOLTO",
+      "version": "2026-example",
+      "kind": "field_model",
+      "title": {
+        "en": "Sheet of a carved face (EXAMPLE)",
+        "it": "Scheda di un volto scolpito (ESEMPIO)"
+      },
+      "license": "CC BY 4.0",
+      "attribution": "EMStudio guide, example package volto-esempio",
+      "source": "written for the example of the EMStudio guide; no standard is cited",
+      "invented": true
+    },
+    "source_language": "en",
+    "languages": [
+      "en",
+      "it"
+    ],
+    "vocabularies": [
+      {
+        "id": "vlt:stato-superficie",
+        "authority": "A face and its measures (EXAMPLE)",
+        "status": "resolvable",
+        "origin": "originated",
+        "version": "0.1.0",
+        "uri": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/",
+        "license": "SPDX:CC-BY-4.0"
+      }
+    ],
+    "digest": "sha256:c34ff91159969cdc5ffa70d35a6f6f366b53a8a213e333228e7f6eeb04834b47",
+    "datamodel": {
+      "nodes": "1.6.51",
+      "node_registry": "1.6.41",
+      "connections": "1.6.55",
+      "visual_rules": "1.6.48",
+      "qualia": "1.6.13",
+      "translations": "1.17",
+      "digest": "sha256:feaee8d2599ad9a0672e8963f6ce8bfd409e09359f8dcbd5c3d439e35b17d0be",
+      "files": {
+        "nodes": {
+          "digest": "sha256:21c7a2346f9b670207802c036135ed65f9d055ae7984b78a3a565d8170af2117",
+          "version": "1.6.51"
+        },
+        "node_registry": {
+          "digest": "sha256:5669c0824d7149e22a25d424645b3b78b7c698c5338f3fd639d75c60b31483da",
+          "version": "1.6.41"
+        },
+        "connections": {
+          "digest": "sha256:c1d475a3ea9543dada7ac42ca73452f5c20f185ea56de2787914cad44389ad6b",
+          "version": "1.6.55"
+        },
+        "qualia": {
+          "digest": "sha256:175c189d760b4dc511b0b93ed16e95b354272152458cc9984a8d64bb6db50bca",
+          "version": "1.6.13"
+        }
+      },
+      "em_ttl": "1.6.26",
+      "s3dgraphy": "1.6.0.dev129",
+      "taken_from": {
+        "git_commit": "e2c8fee5a6df015fe509474f5774b0bf3d88ad8d",
+        "git_dirty": false
+      },
+      "snapshot": "registry/s3dgraphy-snapshot.json"
+    },
+    "compiled_by": {
+      "name": "stratigraph-templates",
+      "version": "0.1.0"
+    },
+    "packages": [
+      {
+        "name": "volto-esempio",
+        "iri": "https://w3id.org/extendedmatrix/profile/volto-esempio",
+        "prefix": "vlt",
+        "version": "0.1.0"
+      }
+    ]
+  },
+  "visual": {
+    "identity": {
+      "human_key": [
+        "us"
+      ],
+      "pattern": "US {us}",
+      "unit_field": "us",
+      "uid": {
+        "policy": "minted_by_creator",
+        "opaque": true,
+        "display": "on_request",
+        "derive_from_human_key": false
+      },
+      "deduplication": "by_human_key_in_context"
+    },
+    "provenance": {
+      "per_field": true,
+      "authors": [
+        "human",
+        "ai"
+      ],
+      "states": [
+        "asserted",
+        "ai_drafted",
+        "human_validated"
+      ],
+      "clock": "s3dgraphy_crdt_field_clock"
+    },
+    "paragraphs": [
+      {
+        "id": "volto",
+        "labels": {
+          "en": "The face",
+          "it": "Il volto"
+        },
+        "fields": [
+          "us",
+          "descrizione",
+          "stato",
+          "larghezza"
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "id": "us",
+        "paragraph": "volto",
+        "type": "identifier",
+        "required": true,
+        "repeatable": false,
+        "recorded_in": "unknown",
+        "labels": {
+          "en": "SU",
+          "it": "US"
+        }
+      },
+      {
+        "id": "descrizione",
+        "paragraph": "volto",
+        "type": "longtext",
+        "required": false,
+        "repeatable": false,
+        "recorded_in": "unknown",
+        "labels": {
+          "en": "DESCRIPTION",
+          "it": "DESCRIZIONE"
+        }
+      },
+      {
+        "id": "stato",
+        "paragraph": "volto",
+        "type": "term",
+        "required": false,
+        "repeatable": false,
+        "recorded_in": "unknown",
+        "labels": {
+          "en": "STATE OF THE SURFACE",
+          "it": "STATO DELLA SUPERFICIE"
+        },
+        "vocabulary": {
+          "scheme": "vlt:stato-superficie"
+        }
+      },
+      {
+        "id": "larghezza",
+        "paragraph": "volto",
+        "type": "decimal",
+        "required": false,
+        "repeatable": false,
+        "recorded_in": "unknown",
+        "labels": {
+          "en": "WIDTH BETWEEN THE EYES (m)",
+          "it": "LARGHEZZA TRA GLI OCCHI (m)"
+        },
+        "help": {
+          "en": "Computed from the points of the eyes placed on the model.",
+          "it": "Calcolata dai punti degli occhi posati sul modello."
+        }
+      }
+    ],
+    "sheet": {
+      "page": "A4",
+      "margins_mm": {
+        "top": 12,
+        "right": 12,
+        "bottom": 12,
+        "left": 12
+      },
+      "sides": [
+        {
+          "id": "recto",
+          "labels": {
+            "en": "front",
+            "it": "fronte"
+          },
+          "rows": [
+            {
+              "h": 12.0,
+              "cells": [
+                {
+                  "field": "us",
+                  "block": null,
+                  "block_labels": {},
+                  "rows": [],
+                  "w": 100.0,
+                  "label": "auto",
+                  "rotated": false,
+                  "style": null
+                }
+              ]
+            },
+            {
+              "h": 40.0,
+              "cells": [
+                {
+                  "field": "descrizione",
+                  "block": null,
+                  "block_labels": {},
+                  "rows": [],
+                  "w": 100.0,
+                  "label": "auto",
+                  "rotated": false,
+                  "style": null
+                }
+              ]
+            },
+            {
+              "h": 14.0,
+              "cells": [
+                {
+                  "field": "stato",
+                  "block": null,
+                  "block_labels": {},
+                  "rows": [],
+                  "w": 60.0,
+                  "label": "auto",
+                  "rotated": false,
+                  "style": null
+                },
+                {
+                  "field": "larghezza",
+                  "block": null,
+                  "block_labels": {},
+                  "rows": [],
+                  "w": 40.0,
+                  "label": "auto",
+                  "rotated": false,
+                  "style": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "notes": {}
+  },
+  "recipe": {
+    "operations": [
+      "add_node",
+      "update_field",
+      "remove_node",
+      "add_edge",
+      "remove_edge"
+    ],
+    "unit": {
+      "resolve": {
+        "$unit": {
+          "find": {
+            "human_key": [
+              "us"
+            ],
+            "rule": "by_human_key_in_context"
+          },
+          "create": true
+        }
+      },
+      "steps": [
+        {
+          "emit": {
+            "op": "add_node",
+            "node": {
+              "id": "$unit",
+              "node_type": "$unit.node_type",
+              "name": "$unit.name"
+            }
+          },
+          "when": "created"
+        }
+      ],
+      "name": {
+        "pattern": "US {us}",
+        "unit_field": "us"
+      },
+      "node_type": {
+        "decided_by": null,
+        "table": {},
+        "when_empty": "not decided by the definition",
+        "note": "decided when the unit is CREATED: update_field addresses name, description and data.* only, so an existing unit's node_type cannot be changed by an operation of this vocabulary"
+      }
+    },
+    "fields": {
+      "us": {
+        "verdict": "identity",
+        "steps": [],
+        "names": "$unit",
+        "designator": true
+      },
+      "descrizione": {
+        "verdict": "property",
+        "each": false,
+        "steps": [
+          {
+            "emit": {
+              "op": "update_field",
+              "node_id": "$unit",
+              "field": "description",
+              "value": "$value"
+            }
+          }
+        ]
+      },
+      "stato": {
+        "verdict": "vocabulary",
+        "each": false,
+        "resolve": {
+          "$prop": {
+            "mint": true
+          }
+        },
+        "steps": [
+          {
+            "emit": {
+              "op": "add_node",
+              "node": {
+                "id": "$prop",
+                "node_type": "property",
+                "name": "vlt:stato_superficie",
+                "description": "$value.concept",
+                "data": {
+                  "property_type": "vlt:stato_superficie"
+                }
+              }
+            }
+          },
+          {
+            "emit": {
+              "op": "add_edge",
+              "edge_type": "has_property",
+              "source": "$unit",
+              "target": "$prop"
+            }
+          }
+        ],
+        "property": {
+          "property_type": "vlt:stato_superficie",
+          "registered_qualia": true
+        },
+        "scheme": "vlt:stato-superficie"
+      },
+      "larghezza": {
+        "verdict": "property",
+        "each": false,
+        "resolve": {
+          "$prop": {
+            "mint": true
+          }
+        },
+        "steps": [
+          {
+            "emit": {
+              "op": "add_node",
+              "node": {
+                "id": "$prop",
+                "node_type": "property",
+                "name": "vlt:larghezza_occhi",
+                "description": "$value",
+                "data": {
+                  "property_type": "vlt:larghezza_occhi"
+                }
+              }
+            }
+          },
+          {
+            "emit": {
+              "op": "add_edge",
+              "edge_type": "has_property",
+              "source": "$unit",
+              "target": "$prop"
+            }
+          }
+        ],
+        "property": {
+          "property_type": "vlt:larghezza_occhi",
+          "registered_qualia": true
+        }
+      }
+    },
+    "anchors": {},
+    "open": [
+      {
+        "field": "",
+        "what": "no field has verdict 'node_type': the definition does not say which node type the unit is, so the creator has to"
+      }
+    ]
+  }
+}

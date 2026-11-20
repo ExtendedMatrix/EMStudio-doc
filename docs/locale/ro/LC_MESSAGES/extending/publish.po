@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ro\n"
+"Language-Team: ro <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100"
+" < 20)) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Publish a package"
+msgstr ""
+
+msgid ""
+"*Give a package to others: from a repository of your own — a project's "
+"site, a folder on the laboratory's network, signed with the laboratory's "
+"key — or from the official index of the Extended Matrix.*"
+msgstr ""
+
+msgid ""
+"A **repository** is a folder of archives with an index, ``index.json``, "
+"that EMStudio and EM Tools read. Anybody can serve one. The **official "
+"index**, ``https://extensions.extendedmatrix.org/``, is the repository of"
+" the Extended Matrix: its packages are reviewed, built from their sources"
+" by the continuous integration and signed."
+msgstr ""
+
+msgid "Before you start"
+msgstr ""
+
+msgid "A package that passes the validator (see :doc:`test-and-validate`)."
+msgstr ""
+
+msgid ""
+"The Python environment of :ref:`extending`. ``python`` below stands for "
+"its Python."
+msgstr ""
+
+msgid "Build the archives"
+msgstr ""
+
+msgid ""
+"Each package becomes ``repository/<id>-<version>.zip``. Keep the archives"
+" of the older versions in the same folder: a study may declare them, and "
+"EMStudio keeps versions side by side."
+msgstr ""
+
+msgid "In a repository of your own"
+msgstr ""
+
+msgid "Write the index of the folder:"
+msgstr ""
+
+msgid ""
+"It validates every archive, refuses what the validator refuses, and "
+"writes ``repository/index.json`` (and ``index.html``, a page that lists "
+"the archives to download). The addresses of the archives are relative to "
+"the index, so the same folder works on a web server and as a shared "
+"folder."
+msgstr ""
+
+msgid "Put the folder where others can read it:"
+msgstr ""
+
+msgid ""
+"**on a web server** (the site of a project, a page of a laboratory): its "
+"address is ``https://…/index.json``;"
+msgstr ""
+
+msgid ""
+"**on the laboratory's network** (a NAS, a shared disk): its address is "
+"the folder itself, or ``file:///…/index.json``."
+msgstr ""
+
+msgid ""
+"Give the address to the people who will use the package. In EMStudio they"
+" choose ``Tools ▸ Extensions…``, **+ Add repository…**, write the address"
+" (or **Choose a folder…** for a shared folder) and press **Add** (see "
+":doc:`/how-to/extensions/repositories-signatures-updates`). A repository "
+"on the internet is read only with **Allow online access** turned on; a "
+"folder always."
+msgstr ""
+
+msgid "Sign it with the laboratory's key"
+msgstr ""
+
+msgid ""
+"A signature guarantees that the archives are the ones the laboratory "
+"published, unchanged on the way: a copy altered on the server or on the "
+"network is refused. The signatures are those of `minisign "
+"<https://jedisct1.github.io/minisign/>`__, written beside each file."
+msgstr ""
+
+msgid "Make the laboratory's key pair, once:"
+msgstr ""
+
+msgid ""
+"``lab.key`` is the **secret key**: keep it off the shared folder, in a "
+"safe place, and add ``--encrypt`` (with the password in the variable "
+"``S3DGRAPHY_SIGN_PASSWORD``) to protect it on a laptop. ``lab.pub`` is "
+"the **public key**, the one you give away."
+msgstr ""
+
+msgid "Every time you write the index, sign it:"
+msgstr ""
+
+msgid ""
+"Beside ``index.json`` and every archive a ``.minisig`` file appears, and "
+"``minisign.pub`` with the public key."
+msgstr ""
+
+msgid "Check what a client will check:"
+msgstr ""
+
+msgid ""
+"Give the public key with the address: its last line, the one that starts "
+"with ``RW``. Whoever adds the repository pastes it in **Public key "
+"(minisign), optional**; from then on EMStudio takes from that repository "
+"only what that key signed, and shows **signed by the key … of …** beside "
+"what it installs."
+msgstr ""
+
+msgid "In the official index"
+msgstr ""
+
+msgid ""
+"The official index lists two kinds of archive, from two repositories on "
+"GitHub:"
+msgstr ""
+
+msgid ""
+"**community packages** — data only, or data with the code that serves "
+"them — from `em-profiles <https://github.com/ExtendedMatrix/em-"
+"profiles>`__, folder ``profiles/<id>/``;"
+msgstr ""
+
+msgid ""
+"**plugins** — code without data — from `em-extensions "
+"<https://github.com/ExtendedMatrix/em-extensions>`__, folder "
+"``plugins/<id>/``."
+msgstr ""
+
+msgid "A community package"
+msgstr ""
+
+msgid ""
+"**Open an issue** in em-profiles: say who the community is, what it "
+"records, and why the core and the existing packages are not enough — "
+"checked, not assumed. A vocabulary that already exists (in "
+"`ExtendedMatrix/vocabularies "
+"<https://github.com/ExtendedMatrix/vocabularies>`__, the Getty AAT, "
+"PeriodO, a national thesaurus) is cited, not restated."
+msgstr ""
+
+msgid ""
+"**Send a pull request** that adds ``profiles/<id>/``: the folder named as"
+" the id, its envelope and manifest with your prefix, your vocabularies, "
+"at least one example study, labels in every declared language, and a line"
+" in ``.github/CODEOWNERS`` that makes you and your co-curators the "
+"reviewers of the folder: ``/profiles/<id>/ @you @your-co-curator``."
+msgstr ""
+
+msgid ""
+"**The continuous integration** validates it with the one validator and "
+"checks its place in the repository (see :doc:`test-and-validate`)."
+msgstr ""
+
+msgid ""
+"**The editor reviews the first version** of every package, to keep the "
+"language one: a type the core should have becomes a proposal for the "
+"core. From then on, the curators of the package review its changes."
+msgstr ""
+
+msgid ""
+"Once merged, a pull request in em-extensions moves the index to that "
+"commit of em-profiles (``python tools/generate.py --lock``); the index is"
+" built, published and signed by the continuous integration."
+msgstr ""
+
+msgid "A plugin"
+msgstr ""
+
+msgid ""
+"A pull request in em-extensions that adds ``plugins/<id>/``: the folder "
+"named as the id, an envelope with ``[code]`` and no ``[data]``, every "
+"permission with its reason, the hosts it runs in, its wheels for every "
+"platform it declares, a line ``/plugins/<id>/ @you`` in "
+"``.github/CODEOWNERS``, and the index regenerated with ``python "
+"tools/generate.py``."
+msgstr ""
+
+msgid "Listed is not reviewed"
+msgstr ""
+
+msgid ""
+"Until a person has read the code, EMStudio installs it as **not "
+"verified**, with the question of trust. A **review** is a line in "
+"``reviewed.json`` of em-extensions, written by the editor or by a curator"
+" of a package that requires the plugin, for the fingerprint of the code "
+"section; an author does not review their own code alone. A new version "
+"whose code did not change keeps its review; a code changed by one byte "
+"needs a new one. See :doc:`permissions-and-trust`."
+msgstr ""
+
+msgid "What you get"
+msgstr ""
+
+msgid ""
+"A package that others install from a known place: an index whose archives"
+" are checked against their fingerprints, signed by the key of whoever "
+"publishes them, reviewed by a person when it carries code."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ":doc:`new-version`, to publish the next version."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/extensions/repositories-signatures-updates`, the same from "
+"the side of who installs."
+msgstr ""
+
+msgid ""
+":doc:`/explanation/extensions-and-trust` and :doc:`design`, what a "
+"signature and a review guarantee."
+msgstr ""
+

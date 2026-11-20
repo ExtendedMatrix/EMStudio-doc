@@ -1,0 +1,84 @@
+# EXAMPLE written for the EMStudio guide — not to be cited.
+template:
+  id: vlt-scheda-volto
+  version: "0.1.0"
+  standard:
+    authority: "EXAMPLE"
+    code: "VOLTO"
+    version: "2026-example"
+    kind: field_model
+    invented: true
+    title:
+      en: "Sheet of a carved face (EXAMPLE)"
+      it: "Scheda di un volto scolpito (ESEMPIO)"
+    source: "written for the example of the EMStudio guide; no standard is cited"
+    license: "CC BY 4.0"
+    attribution: "EMStudio guide, example package volto-esempio"
+
+  source_language: en
+  languages: [en, it]
+
+  vocabularies:
+    - vlt:stato-superficie
+
+  identity:
+    human_key:
+      fields: [us]
+      pattern: "US {us}"
+      unit_field: us
+    uid:
+      policy: minted_by_creator
+      opaque: true
+      display: on_request
+      derive_from_human_key: false
+    deduplication: by_human_key_in_context
+
+  provenance:
+    per_field: true
+
+  paragraphs:
+    - id: volto
+      labels: {en: "The face", it: "Il volto"}
+      fields: [us, descrizione, stato, larghezza]
+
+  fields:
+    - id: us
+      labels: {en: "SU", it: "US"}
+      type: identifier
+      required: true
+      graph: {verdict: identity}
+
+    - id: descrizione
+      labels: {en: "DESCRIPTION", it: "DESCRIZIONE"}
+      type: longtext
+      graph: {verdict: property, property_name: description}
+
+    - id: stato
+      labels: {en: "STATE OF THE SURFACE", it: "STATO DELLA SUPERFICIE"}
+      type: term
+      vocabulary: {scheme: vlt:stato-superficie}
+      graph: {verdict: vocabulary, qualia: vlt:stato_superficie}
+
+    - id: larghezza
+      labels: {en: "WIDTH BETWEEN THE EYES (m)", it: "LARGHEZZA TRA GLI OCCHI (m)"}
+      type: decimal
+      help:
+        en: "Computed from the points of the eyes placed on the model."
+        it: "Calcolata dai punti degli occhi posati sul modello."
+      graph: {verdict: property, qualia: vlt:larghezza_occhi}
+
+  sheet:
+    page: A4
+    margins_mm: {top: 12, right: 12, bottom: 12, left: 12}
+    sides:
+      - id: recto
+        labels: {en: "front", it: "fronte"}
+        rows:
+          - h: 12
+            cells: [{field: us, w: 100}]
+          - h: 40
+            cells: [{field: descrizione, w: 100}]
+          - h: 14
+            cells:
+              - {field: stato, w: 60}
+              - {field: larghezza, w: 40}

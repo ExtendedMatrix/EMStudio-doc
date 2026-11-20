@@ -1,0 +1,9 @@
+{
+  "name": "State of the surface (EXAMPLE)",
+  "property": "vlt:stato_superficie",
+  "color_mapping": {
+    "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/originale": "#C8B48C",
+    "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/abrasa": "#9A9A9A",
+    "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/integrata": "#5A8CC8"
+  }
+}

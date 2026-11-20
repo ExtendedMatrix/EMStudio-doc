@@ -1,0 +1,25 @@
+# EXAMPLE written for the EMStudio guide — not to be cited.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix v:    <https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/> .
+
+v: a skos:ConceptScheme ;
+    dct:title "State of the surface (EXAMPLE)"@en , "Stato della superficie (ESEMPIO)"@it ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo "0.1.0" .
+
+v:originale a skos:Concept ; skos:inScheme v: ; skos:topConceptOf v: ;
+    skos:prefLabel "original surface"@en , "superficie originale"@it ;
+    skos:definition "The surface as the sculptor left it."@en , "La superficie come l'ha lasciata lo scultore."@it ;
+    dct:source "Written for the example of the EMStudio guide." .
+
+v:abrasa a skos:Concept ; skos:inScheme v: ; skos:topConceptOf v: ;
+    skos:prefLabel "worn surface"@en , "superficie abrasa"@it ;
+    skos:definition "A surface whose working is lost to wear."@en , "Una superficie la cui lavorazione è persa per l'usura."@it ;
+    dct:source "Written for the example of the EMStudio guide." .
+
+v:integrata a skos:Concept ; skos:inScheme v: ; skos:topConceptOf v: ;
+    skos:prefLabel "restoration infill"@en , "integrazione di restauro"@it ;
+    skos:definition "A part added by a later restoration."@en , "Una parte aggiunta da un restauro successivo."@it ;
+    dct:source "Written for the example of the EMStudio guide." .

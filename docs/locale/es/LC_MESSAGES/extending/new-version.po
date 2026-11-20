@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Release a new version"
+msgstr ""
+
+msgid ""
+"*Decide which number moves, raise only the part that changed, and let the"
+" studies that use the package choose when to follow.*"
+msgstr ""
+
+msgid ""
+"A version is a promise to the studies that declare it: **a version is "
+"never reused**. The same id and version with another content is refused "
+"by every tool and by every repository, so that a study never meets two "
+"different packages under one name."
+msgstr ""
+
+msgid "Which number moves"
+msgstr ""
+
+msgid "Versions have three numbers, *major.minor.patch*:"
+msgstr ""
+
+msgid ""
+"**patch** (``0.1.0`` → ``0.1.1``) for labels, descriptions, colours and "
+"styles;"
+msgstr ""
+
+msgid ""
+"**minor** (``0.1.0`` → ``0.2.0``) for new types, new concepts, new "
+"points, new combiners, new commands;"
+msgstr ""
+
+msgid ""
+"**major** (``0.x`` → ``1.0.0``, ``1.x`` → ``2.0.0``) when a type is "
+"removed or changes its meaning, its primitive or its operation."
+msgstr ""
+
+msgid "A package stays at ``0.x`` while it is ``proposed``."
+msgstr ""
+
+msgid "Each part has its own version"
+msgstr ""
+
+msgid ""
+"An archive has its own ``version``; in a mixed package, ``[data]`` and "
+"``[code]`` have theirs. **Raise only the part that changed**, and always "
+"the archive:"
+msgstr ""
+
+msgid "What changed"
+msgstr ""
+
+msgid "``version``"
+msgstr ""
+
+msgid "``[data].version`` and ``profile.json``"
+msgstr ""
+
+msgid "``[code].version``"
+msgstr ""
+
+msgid "a label of the data"
+msgstr ""
+
+msgid "0.2.0 → 0.2.1"
+msgstr ""
+
+msgid "0.1.0 → 0.1.1"
+msgstr ""
+
+msgid "unchanged"
+msgstr ""
+
+msgid "a fix in the code"
+msgstr ""
+
+msgid "a new command"
+msgstr ""
+
+msgid "0.2.0 → 0.3.0"
+msgstr ""
+
+msgid "0.1.0 → 0.2.0"
+msgstr ""
+
+msgid ""
+"The data of a package keep their version in two places that must agree: "
+"``[data].version`` in the envelope and ``version`` in ``profile.json`` "
+"(for a package of data only, the archive's ``version`` is the data's). "
+"The example studies of the package declare it in their header: raise it "
+"there too."
+msgstr ""
+
+msgid "Steps"
+msgstr ""
+
+msgid "Change the files, and the numbers as in the table."
+msgstr ""
+
+msgid ""
+"For a major version, write ``CHANGELOG.md`` beside the envelope: what "
+"changes in meaning, and what a study should check. EMStudio shows it when"
+" a study is about to follow a major version."
+msgstr ""
+
+msgid "Validate and build (see :doc:`test-and-validate`)."
+msgstr ""
+
+msgid ""
+"Publish the archive beside the older ones (see :doc:`publish`). In em-"
+"profiles, a pull request with the new version; the curators of the "
+"package review it."
+msgstr ""
+
+msgid "What the people who use the package see"
+msgstr ""
+
+msgid ""
+"**New data sit beside the old ones.** No study changes the version it "
+"declares by itself: when a newer version is installed, the Extensions "
+"window says that the open file uses an older one and offers **Update the "
+"declaration to …**; for a major version, **What changes…** shows the "
+"notes first, and **Keep the old one** leaves the file as it is."
+msgstr ""
+
+msgid ""
+"**New code replaces the old one** on the computer, and the older versions"
+" stay available under **Versions…**. EMStudio loads the new code at its "
+"next start."
+msgstr ""
+
+msgid ""
+"**The question of trust comes back only when the code asks for more**: "
+"new permissions, new capabilities, or another origin. An update that "
+"changes none of these installs with the trust already given."
+msgstr ""
+
+msgid ""
+"**A review follows the code.** An update whose code section did not "
+"change keeps its review; changed code is code nobody has read yet."
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid ""
+":doc:`/how-to/extensions/install-packages-and-plugins`, *Use a package in"
+" a study*."
+msgstr ""
+
+msgid ""
+":doc:`/how-to/extensions/repositories-signatures-updates`, *Keep "
+"extensions up to date*."
+msgstr ""
+
+msgid ":doc:`permissions-and-trust`."
+msgstr ""
+

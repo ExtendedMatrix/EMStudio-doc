@@ -1,0 +1,67 @@
+{
+  "profile_format": "0.2",
+  "iri": "https://w3id.org/extendedmatrix/profile/volto-esempio",
+  "name": "volto-esempio",
+  "prefix": "vlt",
+  "version": "0.1.0",
+  "lifecycle": "proposed",
+  "example": true,
+  "title": {"en": "A face and its measures (EXAMPLE)", "it": "Un volto e le sue misure (ESEMPIO)"},
+  "description": {"en": "Example written for the EMStudio guide. Not to be cited.",
+                  "it": "Esempio scritto per la guida di EMStudio. Non citare."},
+  "languages": ["en", "it"],
+  "curators": ["@your-github-handle"],
+  "license": "CC-BY-4.0",
+  "is_profile_of": [
+    {"iri": "https://w3id.org/extendedmatrix/spec/em-json/", "version": "1.1"},
+    {"iri": "https://w3id.org/extendedmatrix/core/", "version": "1.6"}
+  ],
+
+  "qualia_vocabularies": [
+    {"property_type": "vlt:stato_superficie",
+     "label": {"en": "State of the surface", "it": "Stato della superficie"},
+     "scheme": "https://w3id.org/extendedmatrix/profile/volto-esempio/vocab/stato-superficie/",
+     "version": "0.1.0"}
+  ],
+
+  "qualia": [
+    {"id": "vlt:larghezza_occhi",
+     "label": {"en": "Width between the eyes", "it": "Larghezza tra gli occhi"},
+     "data_type": "float", "units": ["m", "cm"]}
+  ],
+
+  "extractor_types": [
+    {"id": "vlt:punto_del_volto", "specializes": "extractor",
+     "label": {"en": "Point of the face", "it": "Punto del volto"},
+     "geometry": {"primitive": "point", "produces": "position", "unit": "m",
+                  "snap": "surface", "frame": "model"},
+     "source_documents": ["3d_model"]}
+  ],
+
+  "landmark_sets": [
+    {"id": "vlt:occhi", "path": "landmarks/occhi.json", "extractor_type": "vlt:punto_del_volto",
+     "label": {"en": "Points of the eyes", "it": "Punti degli occhi"}}
+  ],
+
+  "combiner_types": [
+    {"id": "vlt:c_larghezza_occhi",
+     "label": {"en": "Width between the eyes", "it": "Larghezza tra gli occhi"},
+     "operation": "distance",
+     "inputs": [{"landmark": "vlt:occhi/exocanthion_r"}, {"landmark": "vlt:occhi/exocanthion_l"}],
+     "produces": "vlt:larghezza_occhi", "unit": "m"}
+  ],
+
+  "color_schemes": [
+    {"id": "vlt:stato", "path": "colors/stato-superficie.emc", "property": "vlt:stato_superficie",
+     "label": {"en": "State of the surface", "it": "Stato della superficie"}}
+  ],
+
+  "forms": [
+    {"id": "vlt-scheda-volto",
+     "source": "forms/vlt-scheda-volto/template.yaml",
+     "compiled": "forms/vlt-scheda-volto/0.1.0.json",
+     "digest": "sha256:d6b953823bc2ce16a17015406b2905026770c44f7f5ef6fce70d55cc272afc2f"}
+  ],
+
+  "examples": ["examples/volto.em.json"]
+}

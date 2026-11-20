@@ -1,0 +1,2335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Emanuel Demetrescu
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "What the validator says"
+msgstr "Che cosa dice il validatore"
+
+msgid ""
+"*Every sentence of the validator and of the tools around it, with its "
+"code and its level, as the library writes them.*"
+msgstr ""
+"*Ogni frase del validatore e degli strumenti intorno a lui, con il suo "
+"codice e il suo livello, così come le scrive la libreria.*"
+
+msgid ""
+"The EM tools validate a package with one implementation: the Extensions "
+"window shows its words before installing, ``python -m "
+"s3dgraphy.extensions validate`` prints them, the repositories run them on"
+" every proposal. Each problem has a **code**, a **level** and a sentence "
+"in English and Italian (``--lang it``); the place where it was found (a "
+"file, a key) is written in front of the sentence."
+msgstr ""
+"Gli strumenti EM convalidano un pacchetto con una sola implementazione: la "
+"finestra Estensioni mostra le sue parole prima di installare, ``python -m "
+"s3dgraphy.extensions validate`` le stampa, i repository le eseguono su ogni "
+"proposta. Ogni problema ha un **codice**, un **livello** e una frase in "
+"inglese e in italiano (``--lang it``); il luogo dove è stato trovato (un "
+"file, una chiave) è scritto davanti alla frase."
+
+msgid ""
+"**error** — it refuses the package, or only its code when the problem "
+"concerns the code alone (the data go in all the same);"
+msgstr ""
+"**errore** — rifiuta il pacchetto, o solo il suo codice quando il problema "
+"riguarda solo il codice (i dati entrano comunque);"
+
+msgid "**warning** — advice, never a refusal;"
+msgstr "**avviso** — un consiglio, mai un rifiuto;"
+
+msgid "**info** — what ``build`` changed in the archive it wrote;"
+msgstr ""
+"**informazione** — ciò che ``build`` ha cambiato nell'archivio che ha "
+"scritto;"
+
+msgid ""
+"**refusal** — an operation of the command line or of the window that "
+"stops (an installation, a repository, a removal), with the reason;"
+msgstr ""
+"**rifiuto** — un'operazione della riga di comando o della finestra che si "
+"ferma (un'installazione, un repository, una rimozione), con il motivo;"
+
+msgid ""
+"**—** — said by another path: a file that cannot be read, a signature, a "
+"node's closed space."
+msgstr ""
+"**—** — detto per un'altra strada: un file che non si legge, una firma, lo "
+"spazio chiuso di un nodo."
+
+msgid ""
+"The words between ‹ › are filled in with the case at hand: a path, a key,"
+" a value, a version. ``python -m s3dgraphy.extensions validate --json`` "
+"gives the same problems as data, each with its ``code``."
+msgstr ""
+"Le parole tra ‹ › si riempiono con il caso concreto: un percorso, una "
+"chiave, un valore, una versione. ``python -m s3dgraphy.extensions validate "
+"--json`` dà gli stessi problemi come dati, ciascuno con il suo ``code``."
+
+msgid "Reading the package"
+msgstr "La lettura del pacchetto"
+
+msgid "Code"
+msgstr "Codice"
+
+msgid "Level"
+msgstr "Livello"
+
+msgid "What it says"
+msgstr "Che cosa dice"
+
+msgid "``not_a_package``"
+msgstr "``not_a_package``"
+
+msgid "error / refusal"
+msgstr "errore / rifiuto"
+
+msgid "not a package: no profile.json and no em-extension.toml"
+msgstr "non è un pacchetto: manca profile.json e manca em-extension.toml"
+
+msgid "``unreadable``"
+msgstr "``unreadable``"
+
+msgid "error"
+msgstr "errore"
+
+msgid "cannot be read: ‹why›"
+msgstr "non si legge: ‹why›"
+
+msgid "``missing_file``"
+msgstr "``missing_file``"
+
+msgid "‹path›: the file is not in the package"
+msgstr "‹path›: il file non è nel pacchetto"
+
+msgid "``bad_json``"
+msgstr "``bad_json``"
+
+msgid "‹path›: not JSON (‹why›)"
+msgstr "‹path›: non è JSON (‹why›)"
+
+msgid "``schema``"
+msgstr "``schema``"
+
+msgid "‹message›"
+msgstr "‹message›"
+
+msgid "``schema_unchecked``"
+msgstr "``schema_unchecked``"
+
+msgid "warning"
+msgstr "avviso"
+
+msgid ""
+"the JSON schema was not checked: jsonschema is not installed (the "
+"coherence checks ran)"
+msgstr ""
+"lo schema JSON non è stato controllato: jsonschema non è installato (i "
+"controlli di coerenza sì)"
+
+msgid "``format_unknown``"
+msgstr "``format_unknown``"
+
+msgid "profile\\_format ‹value› is not a version this library reads (0.1, 0.2)"
+msgstr ""
+"profile\\_format ‹value› non è una versione che questa libreria legge (0.1, "
+"0.2)"
+
+msgid "``required``"
+msgstr "``required``"
+
+msgid "—"
+msgstr "—"
+
+msgid "‹key› is required"
+msgstr "‹key› è obbligatorio"
+
+msgid "Identity"
+msgstr "Identità"
+
+msgid "``name_folder``"
+msgstr "``name_folder``"
+
+msgid "name ‹name› is not the name of its folder ‹folder›"
+msgstr "name ‹name› non è il nome della sua cartella ‹folder›"
+
+msgid "``prefix_bad``"
+msgstr "``prefix_bad``"
+
+msgid "prefix ‹prefix›: 2–16 lowercase letters or digits, a letter first"
+msgstr ""
+"prefix ‹prefix›: da 2 a 16 lettere minuscole o cifre, prima una lettera"
+
+msgid "``version_bad``"
+msgstr "``version_bad``"
+
+msgid "‹key› ‹value› is not a semantic version (MAJOR.MINOR.PATCH)"
+msgstr "‹key› ‹value› non è una versione semantica (MAJOR.MINOR.PATCH)"
+
+msgid "``prefix_missing``"
+msgstr "``prefix_missing``"
+
+msgid "‹type›: a type of the profile carries its prefix ‹prefix›"
+msgstr "‹type›: un tipo del pacchetto porta il suo prefisso ‹prefix›"
+
+msgid "``core_redefined``"
+msgstr "``core_redefined``"
+
+msgid "‹type›: an id of the core cannot be redefined by a package"
+msgstr "‹type›: un id del nucleo non si ridefinisce da un pacchetto"
+
+msgid "``duplicate_type``"
+msgstr "``duplicate_type``"
+
+msgid "‹type›: declared twice"
+msgstr "‹type›: dichiarato due volte"
+
+msgid "``label_language``"
+msgstr "``label_language``"
+
+msgid "‹where›: no label in ‹lang›, a language the profile declares"
+msgstr ""
+"‹where›: manca l'etichetta in ‹lang›, una lingua che il pacchetto dichiara"
+
+msgid "``unverified_not_declared``"
+msgstr "``unverified_not_declared``"
+
+msgid "unverified\\_languages: ‹lang› is not in languages"
+msgstr "unverified\\_languages: ‹lang› non è tra le lingue (languages)"
+
+msgid "Types"
+msgstr "Tipi"
+
+msgid "``node_types_suspended``"
+msgstr "``node_types_suspended``"
+
+msgid ""
+"‹type›: node and edge types of packages are suspended in EM 1.6 (D-1); "
+"tools draw it as the core type it specialises"
+msgstr ""
+"‹type›: i tipi di nodo e d'arco dei pacchetti sono sospesi nella EM 1.6 "
+"(D-1); gli strumenti lo disegnano come il tipo del nucleo che specializza"
+
+msgid "``not_core_node``"
+msgstr "``not_core_node``"
+
+msgid "‹type›: ‹parent› is not a core node type"
+msgstr "‹type›: ‹parent› non è un tipo di nodo del nucleo"
+
+msgid "``not_core_edge``"
+msgstr "``not_core_edge``"
+
+msgid "‹type›: ‹parent› is not a core edge type"
+msgstr "‹type›: ‹parent› non è un tipo d'arco del nucleo"
+
+msgid "``unknown_node_type``"
+msgstr "``unknown_node_type``"
+
+msgid "‹where›: ‹type› is neither a type of the package nor of the core"
+msgstr "‹where›: ‹type› non è un tipo del pacchetto né del nucleo"
+
+msgid "``unknown_quale``"
+msgstr "``unknown_quale``"
+
+msgid "error / warning"
+msgstr "errore / avviso"
+
+msgid "‹where›: ‹quale› is neither a quale of the package nor of the core"
+msgstr "‹where›: ‹quale› non è un quale del pacchetto né del nucleo"
+
+msgid "``unknown_edge``"
+msgstr "``unknown_edge``"
+
+msgid "‹where›: ‹type› is not an edge type of the package nor of the core"
+msgstr "‹where›: ‹type› non è un tipo d'arco del pacchetto né del nucleo"
+
+msgid "``rule_undeclared``"
+msgstr "``rule_undeclared``"
+
+msgid "visual\\_rules.‹block›.‹key›: not a ‹what› of the package"
+msgstr "visual\\_rules.‹block›.‹key›: non è un ‹what› del pacchetto"
+
+msgid "``writes_false``"
+msgstr "``writes_false``"
+
+msgid "plugin ‹id›: declares a writing capability with writes=false"
+msgstr "plugin ‹id›: dichiara una capability di scrittura con writes=false"
+
+msgid "Extractors, landmark sets, combiners"
+msgstr "Estrattori, insiemi di punti canonici, combinatori"
+
+msgid "``geometry_produces``"
+msgstr "``geometry_produces``"
+
+msgid "‹type›: a ‹primitive› cannot produce ‹produces› (it produces: ‹allowed›)"
+msgstr ""
+"‹type›: una primitiva ‹primitive› non produce ‹produces› (produce: "
+"‹allowed›)"
+
+msgid "``geometry_vertices``"
+msgstr "``geometry_vertices``"
+
+msgid "‹type›: vertices.min ‹min› is greater than vertices.max ‹max›"
+msgstr "‹type›: vertices.min ‹min› è maggiore di vertices.max ‹max›"
+
+msgid "``landmark_extractor``"
+msgstr "``landmark_extractor``"
+
+msgid ""
+"‹set›: extractor\\_type ‹type› is not an extractor type of the package "
+"with primitive point"
+msgstr ""
+"‹set›: extractor\\_type ‹type› non è un tipo di estrattore del pacchetto "
+"con primitiva point"
+
+msgid "``landmark_file``"
+msgstr "``landmark_file``"
+
+msgid "‹path›: ‹why›"
+msgstr "‹path›: ‹why›"
+
+msgid "``landmark_mirror``"
+msgstr "``landmark_mirror``"
+
+msgid "‹set›/‹point›: mirror ‹mirror› is not a point of the set"
+msgstr "‹set›/‹point›: mirror ‹mirror› non è un punto dell'insieme"
+
+msgid "``landmark_unknown``"
+msgstr "``landmark_unknown``"
+
+msgid "‹where›: landmark ‹ref› is not a point of a landmark set of the package"
+msgstr "‹where›: il punto ‹ref› non è un punto di un insieme del pacchetto"
+
+msgid "``combiner_arity``"
+msgstr "``combiner_arity``"
+
+msgid "‹type›: ‹operation› takes ‹want›, here ‹got›"
+msgstr "‹type›: ‹operation› vuole ‹want›, qui ‹got›"
+
+msgid "``combiner_inputs``"
+msgstr "``combiner_inputs``"
+
+msgid "‹type›: ‹operation› takes ‹want› inputs"
+msgstr "‹type›: ‹operation› vuole come ingressi ‹want›"
+
+msgid "Files, readers, sheets, colours, texts"
+msgstr "File, lettori, schede, colori, testi"
+
+msgid "``reader_plugin``"
+msgstr "``reader_plugin``"
+
+msgid "‹type›: reader ‹reader› names a plugin the package does not require"
+msgstr ""
+"‹type›: il lettore ‹reader› nomina un plugin che il pacchetto non richiede"
+
+msgid "``reader_builtin``"
+msgstr "``reader_builtin``"
+
+msgid "‹type›: ‹reader› is not a reader the tools have (builtin: ‹known›)"
+msgstr "‹type›: ‹reader› non è un lettore degli strumenti (builtin: ‹known›)"
+
+msgid "``form_digest``"
+msgstr "``form_digest``"
+
+msgid "forms ‹id›: the compiled form's digest is ‹got›, the manifest says ‹want›"
+msgstr ""
+"forms ‹id›: il digest della scheda compilata è ‹got›, il manifesto dice "
+"‹want›"
+
+msgid "``vocab_file``"
+msgstr "``vocab_file``"
+
+msgid "``vocab_version``"
+msgstr "``vocab_version``"
+
+msgid "‹path›: owl:versionInfo ‹got›, the manifest says ‹want›"
+msgstr "‹path›: owl:versionInfo ‹got›, il manifesto dice ‹want›"
+
+msgid "``vocab_not_carried``"
+msgstr "``vocab_not_carried``"
+
+msgid ""
+"‹property›: the scheme ‹scheme› is neither carried by the package "
+"([[data.vocabularies]]) nor required ([requires].vocabularies)"
+msgstr ""
+"‹property›: lo schema ‹scheme› non è portato dal pacchetto "
+"([[data.vocabularies]]) né richiesto ([requires].vocabularies)"
+
+msgid "``vocab_version_mismatch``"
+msgstr "``vocab_version_mismatch``"
+
+msgid ""
+"‹scheme›: the profile uses version ‹profile›, the envelope carries "
+"‹envelope›"
+msgstr ""
+"‹scheme›: il profilo usa la versione ‹profile›, la busta porta la ‹envelope›"
+
+msgid "``no_example``"
+msgstr "``no_example``"
+
+msgid "no example document (examples/\\*.em.json): a package shows how it is used"
+msgstr ""
+"manca un documento d'esempio (examples/\\*.em.json): un pacchetto mostra "
+"come si usa"
+
+msgid "``example_undeclared``"
+msgstr "``example_undeclared``"
+
+msgid "‹path›: the example does not declare the profile in header.profiles"
+msgstr "‹path›: l'esempio non dichiara il pacchetto in header.profiles"
+
+msgid "``example_fallback``"
+msgstr "``example_fallback``"
+
+msgid "``part_missing``"
+msgstr "``part_missing``"
+
+msgid "parts: ‹path› is not in the package"
+msgstr "parts: ‹path› non è nel pacchetto"
+
+msgid "``range_bad``"
+msgstr "``range_bad``"
+
+msgid "‹where›: ‹value› is not a version nor a range"
+msgstr "‹where›: ‹value› non è una versione né un intervallo"
+
+msgid "``datamodel_checked``"
+msgstr "``datamodel_checked``"
+
+msgid "verified against ‹key› ‹checked›, here ‹current›: it is read all the same"
+msgstr ""
+"verificato contro ‹key› ‹checked›, qui c'è la ‹current›: si legge lo stesso"
+
+msgid "The envelope"
+msgstr "La busta"
+
+msgid "``env_key``"
+msgstr "``env_key``"
+
+msgid "em-extension.toml: ‹key› is required"
+msgstr "em-extension.toml: ‹key› è obbligatorio"
+
+msgid "``env_id``"
+msgstr "``env_id``"
+
+msgid ""
+"em-extension.toml: id ‹value› — lowercase letters, digits, '-', '\\_' or "
+"'.', 2–64"
+msgstr ""
+"em-extension.toml: id ‹value› — lettere minuscole, cifre, '-', '\\_' o '.', "
+"da 2 a 64"
+
+msgid "``env_schema_version``"
+msgstr "``env_schema_version``"
+
+msgid "em-extension.toml: schema\\_version ‹value› — this library reads 1.x"
+msgstr ""
+"em-extension.toml: schema\\_version ‹value› — questa libreria legge la 1.x"
+
+msgid "``env_no_section``"
+msgstr "``env_no_section``"
+
+msgid "em-extension.toml: neither [data] nor [code]: a package has at least one"
+msgstr "em-extension.toml: né [data] né [code]: un pacchetto ne ha almeno una"
+
+msgid "``env_type``"
+msgstr "``env_type``"
+
+msgid "em-extension.toml: type ‹value› does not match the sections (‹want›)"
+msgstr "em-extension.toml: type ‹value› non coincide con le sezioni (‹want›)"
+
+msgid "``env_root``"
+msgstr "``env_root``"
+
+msgid ""
+"em-extension.toml: [‹section›].root is required when the package has both"
+" sections"
+msgstr ""
+"em-extension.toml: [‹section›].root è obbligatoria quando il pacchetto ha "
+"tutte e due le sezioni"
+
+msgid "``env_roots_overlap``"
+msgstr "``env_roots_overlap``"
+
+msgid "em-extension.toml: the roots of [data] and [code] overlap (‹data›, ‹code›)"
+msgstr ""
+"em-extension.toml: le radici di [data] e [code] si sovrappongono (‹data›, "
+"‹code›)"
+
+msgid "``env_profile_id``"
+msgstr "``env_profile_id``"
+
+msgid "the envelope's id ‹env› is not the profile's name ‹name›"
+msgstr "l'id della busta ‹env› non è il nome del profilo ‹name›"
+
+msgid "``env_profile_version``"
+msgstr "``env_profile_version``"
+
+msgid "[data].version ‹env› is not the profile's version ‹profile›"
+msgstr "[data].version ‹env› non è la versione del profilo ‹profile›"
+
+msgid "``env_license``"
+msgstr "``env_license``"
+
+msgid "em-extension.toml: license is a list of SPDX:<id>"
+msgstr "em-extension.toml: license è un elenco di SPDX:<id>"
+
+msgid "``partition_code_in_data``"
+msgstr "``partition_code_in_data``"
+
+msgid ""
+"‹path›: an executable file in the data section — the data of a package "
+"carry no code"
+msgstr ""
+"‹path›: un file eseguibile nella sezione dati — i dati di un pacchetto non "
+"portano codice"
+
+msgid "``partition_outside``"
+msgstr "``partition_outside``"
+
+msgid ""
+"‹path›: outside the roots of the sections (only the envelope, LICENSE\\*,"
+" README\\*, CHANGELOG.md)"
+msgstr ""
+"‹path›: fuori dalle radici delle sezioni (solo la busta, LICENSE\\*, "
+"README\\*, CHANGELOG.md)"
+
+msgid "``requires_part``"
+msgstr "``requires_part``"
+
+msgid "[requires] ‹id›: part ‹part› — data, code or any"
+msgstr "[requires] ‹id›: part ‹part› — data, code o any"
+
+msgid "``requires_code_optional``"
+msgstr "``requires_code_optional``"
+
+msgid ""
+"[requires] ‹id›: a dependency on code is always optional — the data are "
+"read without plugins"
+msgstr ""
+"[requires] ‹id›: una dipendenza da codice è sempre facoltativa — i dati si "
+"leggono senza plugin"
+
+msgid "``requires_self``"
+msgstr "``requires_self``"
+
+msgid "[requires] ‹id›: a package cannot require itself"
+msgstr "[requires] ‹id›: un pacchetto non richiede se stesso"
+
+msgid "``code_entry``"
+msgstr "``code_entry``"
+
+msgid "[code]: entry is required (module:object)"
+msgstr "[code]: entry è obbligatoria (modulo:oggetto)"
+
+msgid "``code_hosts``"
+msgstr "``code_hosts``"
+
+msgid "[code]: hosts ‹value› — emstudio, blender, server"
+msgstr "[code]: hosts ‹value› — emstudio, blender, server"
+
+msgid "``permission_reason``"
+msgstr "``permission_reason``"
+
+msgid ""
+"[code.permissions] ‹name›: the reason is one sentence of at most 64 "
+"characters, without a final full stop"
+msgstr ""
+"[code.permissions] ‹name›: il perché è una frase di al più 64 caratteri, "
+"senza punto finale"
+
+msgid "``permission_unknown``"
+msgstr "``permission_unknown``"
+
+msgid ""
+"[code.permissions] ‹name›: not a permission (files, network, clipboard, "
+"processes)"
+msgstr ""
+"[code.permissions] ‹name›: non è un permesso (files, network, clipboard, "
+"processes)"
+
+msgid "``tagline``"
+msgstr "``tagline``"
+
+msgid ""
+"em-extension.toml: tagline — at most 64 characters, without a final full "
+"stop"
+msgstr "em-extension.toml: tagline — al più 64 caratteri, senza punto finale"
+
+msgid "``data_vocabulary``"
+msgstr "``data_vocabulary``"
+
+msgid "The vocabularies a package carries"
+msgstr "I vocabolari che un pacchetto porta"
+
+msgid "``vocab_entry_key``"
+msgstr "``vocab_entry_key``"
+
+msgid "scheme and version are required"
+msgstr "scheme e version sono obbligatori"
+
+msgid "``vocab_license_missing``"
+msgstr "``vocab_license_missing``"
+
+msgid "‹scheme›: no license — the tier is checked against it"
+msgstr "‹scheme›: manca license — la fascia si controlla contro di lei"
+
+msgid "``vocab_tier_bad``"
+msgstr "``vocab_tier_bad``"
+
+msgid "‹scheme›: fascia ‹value› — A, B or C (the licence allows ‹allowed›)"
+msgstr ""
+"‹scheme›: fascia ‹value› — A, B o C (la licenza permette la ‹allowed›)"
+
+msgid "``vocab_tier_less_prudent``"
+msgstr "``vocab_tier_less_prudent``"
+
+msgid ""
+"‹scheme›: fascia ‹tier› is less prudent than the licence ‹license› allows"
+" (fascia ‹allowed›)"
+msgstr ""
+"‹scheme›: la fascia ‹tier› è meno prudente di quanto permette la licenza "
+"‹license› (fascia ‹allowed›)"
+
+msgid "``vocab_tier_c_file``"
+msgstr "``vocab_tier_c_file``"
+
+msgid ""
+"‹scheme›: fascia C is not redistributed — the package carries a pointer "
+"(fetch), not the file ‹path›"
+msgstr ""
+"‹scheme›: la fascia C non si ridistribuisce — il pacchetto porta un "
+"puntatore (fetch), non il file ‹path›"
+
+msgid "``vocab_tier_c_fetch``"
+msgstr "``vocab_tier_c_fetch``"
+
+msgid "‹scheme›: fascia C needs fetch.url (where the source is)"
+msgstr "‹scheme›: la fascia C vuole fetch.url (dove sta la fonte)"
+
+msgid "``vocab_path_missing``"
+msgstr "``vocab_path_missing``"
+
+msgid "‹scheme›: fascia ‹tier› — the file (path) is missing"
+msgstr "‹scheme›: fascia ‹tier› — manca il file (path)"
+
+msgid "``vocab_digest_missing``"
+msgstr "``vocab_digest_missing``"
+
+msgid "‹scheme›: no digest (python -m s3dgraphy.extensions build computes it)"
+msgstr ""
+"‹scheme›: manca il digest (lo calcola python -m s3dgraphy.extensions build)"
+
+msgid "``vocab_digest_mismatch``"
+msgstr "``vocab_digest_mismatch``"
+
+msgid ""
+"‹scheme›: the digest does not match the file (‹got›; build computes it "
+"again)"
+msgstr ""
+"‹scheme›: il digest non corrisponde al file (‹got›; build lo ricalcola)"
+
+msgid "The archive as a whole"
+msgstr "L'archivio nel suo insieme"
+
+msgid "``type_missing``"
+msgstr "``type_missing``"
+
+msgid "em-extension.toml: no type — build writes ‹want›"
+msgstr "em-extension.toml: manca type — build scrive ‹want›"
+
+msgid "``vocab_path_in_profile``"
+msgstr "``vocab_path_in_profile``"
+
+msgid ""
+"‹scheme›: the file is named in qualia\\_vocabularies[].path (0.1) — build"
+" moves it to [[data.vocabularies]]"
+msgstr ""
+"‹scheme›: il file è nominato in qualia\\_vocabularies[].path (0.1) — build "
+"lo sposta in [[data.vocabularies]]"
+
+msgid "``bare_profile``"
+msgstr "``bare_profile``"
+
+msgid ""
+"a bare profile, without em-extension.toml: it is read, but installed and "
+"distributed as an archive after build"
+msgstr ""
+"un profilo nudo, senza em-extension.toml: si legge, ma si installa e si "
+"distribuisce come archivio dopo build"
+
+msgid "``code_wheel_name``"
+msgstr "``code_wheel_name``"
+
+msgid ""
+"[code] wheels: ‹path› is not a wheel name (name-version-python-abi-"
+"platform.whl)"
+msgstr ""
+"[code] wheels: ‹path› non è il nome di una ruota "
+"(nome-versione-python-abi-piattaforma.whl)"
+
+msgid "``code_platform_unknown``"
+msgstr "``code_platform_unknown``"
+
+msgid "[code] platforms: ‹value› — ‹known›"
+msgstr "[code] platforms: ‹value› — ‹known›"
+
+msgid "``code_platform_wheel``"
+msgstr "``code_platform_wheel``"
+
+msgid "[code]: declares ‹platform›, but no wheel of ‹dist› runs there"
+msgstr "[code]: dichiara ‹platform›, ma nessuna ruota di ‹dist› gira lì"
+
+msgid "``code_platforms_undeclared``"
+msgstr "``code_platforms_undeclared``"
+
+msgid ""
+"[code]: platform wheels (‹dists›) and no platforms — the archive would "
+"claim every platform"
+msgstr ""
+"[code]: ruote per piattaforma (‹dists›) e nessuna platforms — l'archivio "
+"direbbe di girare ovunque"
+
+msgid "``code_stamp_advice``"
+msgstr "``code_stamp_advice``"
+
+msgid ""
+"[code]: ‹files› file(s) write files and none stamps them — advice, not an"
+" error: a derived artifact is better with its stamp beside it (ctx.stamp,"
+" SPEC.md «Good practice»)"
+msgstr ""
+"[code]: ‹files› file scrivono file e nessuno li timbra — un consiglio, non "
+"un errore: un elaborato derivato sta meglio col suo timbro accanto "
+"(ctx.stamp, SPEC.md «Good practice»)"
+
+msgid "``code_outside_root``"
+msgstr "``code_outside_root``"
+
+msgid "[code]: the code root ‹root› is not in the archive"
+msgstr "[code]: la radice del codice ‹root› non è nell'archivio"
+
+msgid "The index of a repository"
+msgstr "L'indice di un repository"
+
+msgid "``index_no_folder``"
+msgstr "``index_no_folder``"
+
+msgid "‹path›: not a folder"
+msgstr "‹path›: non è una cartella"
+
+msgid "``index_unreadable``"
+msgstr "``index_unreadable``"
+
+msgid "the archive cannot be read: ‹why›"
+msgstr "l'archivio non si legge: ‹why›"
+
+msgid "``index_no_envelope``"
+msgstr "``index_no_envelope``"
+
+msgid ""
+"a bare profile is not listed: build it first (python -m "
+"s3dgraphy.extensions build)"
+msgstr ""
+"un profilo nudo non si elenca: prima build (python -m s3dgraphy.extensions "
+"build)"
+
+msgid "``index_file_name``"
+msgstr "``index_file_name``"
+
+msgid "the archive is usually named ‹want›"
+msgstr "di solito l'archivio si chiama ‹want›"
+
+msgid "``index_blocked``"
+msgstr "``index_blocked``"
+
+msgid "‹id› is in the blocklist: not listed"
+msgstr "‹id› è tra i ritirati: non si elenca"
+
+msgid "``index_list_unreadable``"
+msgstr "``index_list_unreadable``"
+
+msgid "``index_list_shape``"
+msgstr "``index_list_shape``"
+
+msgid "‹path›: a list of objects with id (or {{\"‹key›\": [...]}})"
+msgstr "‹path›: un elenco di oggetti con id (o {{\"‹key›\": [...]}})"
+
+msgid "``index_block_reason``"
+msgstr "``index_block_reason``"
+
+msgid "blocklist: ‹id› has no reason (the window shows it)"
+msgstr "ritirati: ‹id› non ha reason (la finestra la mostra)"
+
+msgid "``index_review_shape``"
+msgstr "``index_review_shape``"
+
+msgid "reviewed: ‹id› needs digest (sha256:…), by and on"
+msgstr "rivisti: ‹id› vuole digest (sha256:…), by e on"
+
+msgid "``index_review_unused``"
+msgstr "``index_review_unused``"
+
+msgid "reviewed: ‹id› ‹digest›… is the digest of no archive listed here"
+msgstr ""
+"rivisti: ‹id› ‹digest›… non è il digest di nessun archivio elencato qui"
+
+msgid "The list of the reviewed"
+msgstr "L'elenco dei rivisti"
+
+msgid "``review_no_id``"
+msgstr "``review_no_id``"
+
+msgid "refusal"
+msgstr "rifiuto"
+
+msgid "the archive has no id: it cannot be reviewed"
+msgstr "l'archivio non ha un id: non si può rivedere"
+
+msgid "``review_no_by``"
+msgstr "``review_no_by``"
+
+msgid "‹id›: who reviewed it? (by)"
+msgstr "‹id›: chi l'ha rivisto? (by)"
+
+msgid "``review_duplicate``"
+msgstr "``review_duplicate``"
+
+msgid "‹id›: ‹by› already reviewed this code (‹on›)"
+msgstr "‹id›: ‹by› ha già rivisto questo codice (‹on›)"
+
+msgid "``code_reviewed``"
+msgstr "``code_reviewed``"
+
+msgid ""
+"code reviewed by ‹by› on ‹on› (‹repo›): installed without the trust "
+"question"
+msgstr ""
+"codice rivisto da ‹by› il ‹on› (‹repo›): si installa senza la domanda di "
+"fiducia"
+
+msgid "``review_arrived``"
+msgstr "``review_arrived``"
+
+msgid "‹id› ‹version›: reviewed by ‹by› on ‹on› (‹repo›), now verified"
+msgstr "‹id› ‹version›: rivisto da ‹by› il ‹on› (‹repo›), ora verificato"
+
+msgid "``review_withdrawn``"
+msgstr "``review_withdrawn``"
+
+msgid ""
+"‹id› ‹version›: its review is no longer in a repository whose reviews "
+"count: it stays installed, not verified"
+msgstr ""
+"‹id› ‹version›: la sua revisione non è più in un repository di cui ti fidi: "
+"resta installato, non verificato"
+
+msgid "The signature of a repository"
+msgstr "La firma di un repository"
+
+msgid "``sign_key_bad``"
+msgstr "``sign_key_bad``"
+
+msgid "not a minisign public key: ‹what›"
+msgstr "non è una chiave pubblica minisign: ‹what›"
+
+msgid "``sign_secret_bad``"
+msgstr "``sign_secret_bad``"
+
+msgid "not a minisign secret key, or a damaged one"
+msgstr "non è una chiave segreta minisign, o è danneggiata"
+
+msgid "``sign_key_encrypted``"
+msgstr "``sign_key_encrypted``"
+
+msgid ""
+"the secret key is encrypted and this Python has no scrypt to open it: use"
+" a key without password (minisign -W) or install cryptography"
+msgstr ""
+"la chiave segreta è cifrata e questo Python non ha scrypt per aprirla: usa "
+"una chiave senza password (minisign -W) o installa cryptography"
+
+msgid "``sign_password_needed``"
+msgstr "``sign_password_needed``"
+
+msgid ""
+"the secret key is encrypted: its password goes in "
+"S3DGRAPHY\\_SIGN\\_PASSWORD"
+msgstr ""
+"la chiave segreta è cifrata: la sua password va in "
+"S3DGRAPHY\\_SIGN\\_PASSWORD"
+
+msgid "``sign_password_wrong``"
+msgstr "``sign_password_wrong``"
+
+msgid "wrong password for the secret key"
+msgstr "password sbagliata per la chiave segreta"
+
+msgid "``sign_key_exists``"
+msgstr "``sign_key_exists``"
+
+msgid "‹path› exists already: a secret key is never overwritten (--force)"
+msgstr "‹path› esiste già: una chiave segreta non si sovrascrive (--force)"
+
+msgid "``sign_signature_bad``"
+msgstr "``sign_signature_bad``"
+
+msgid "not a minisign signature, or a damaged one"
+msgstr "non è una firma minisign, o è danneggiata"
+
+msgid "``sign_comment_bad``"
+msgstr "``sign_comment_bad``"
+
+msgid "a trusted comment is one line"
+msgstr "un commento fidato è una riga sola"
+
+msgid "``sign_key_unknown``"
+msgstr "``sign_key_unknown``"
+
+msgid "signed with the key ‹key\\_id›, which is not one of this repository's"
+msgstr "firmato con la chiave ‹key\\_id›, che non è di questo repository"
+
+msgid "``sign_mismatch``"
+msgstr "``sign_mismatch``"
+
+msgid "the signature of ‹key\\_id› is not of these bytes: changed after signing"
+msgstr "la firma di ‹key\\_id› non è di questi byte: cambiati dopo la firma"
+
+msgid "``sign_comment_forged``"
+msgstr "``sign_comment_forged``"
+
+msgid "the trusted comment is not the one ‹key\\_id› signed"
+msgstr "il commento fidato non è quello che ‹key\\_id› ha firmato"
+
+msgid "``sign_not_archive``"
+msgstr "``sign_not_archive``"
+
+msgid "the signature of ‹key\\_id› is not an archive's signature"
+msgstr "la firma di ‹key\\_id› non è la firma di un archivio"
+
+msgid "``sign_not_index``"
+msgstr "``sign_not_index``"
+
+msgid "the signature of ‹key\\_id› is not an index's signature"
+msgstr "la firma di ‹key\\_id› non è la firma di un indice"
+
+msgid "``sign_hash_other``"
+msgstr "``sign_hash_other``"
+
+msgid "signed as ‹want›, but the bytes are ‹got›"
+msgstr "firmato come ‹want›, ma i byte sono ‹got›"
+
+msgid "``sign_entry_other``"
+msgstr "``sign_entry_other``"
+
+msgid "signed with ‹key› ‹signed›, but the index says ‹index›"
+msgstr "firmato con ‹key› ‹signed›, ma l'indice dice ‹index›"
+
+msgid "``sign_no_index``"
+msgstr "``sign_no_index``"
+
+msgid "‹path›: no index to sign (‹why›)"
+msgstr "‹path›: nessun indice da firmare (‹why›)"
+
+msgid "``sign_archive_missing``"
+msgstr "``sign_archive_missing``"
+
+msgid "‹id›: the archive ‹file› is not in the folder"
+msgstr "‹id›: l'archivio ‹file› non è nella cartella"
+
+msgid "``sign_index_missing``"
+msgstr "``sign_index_missing``"
+
+msgid ""
+"‹name›: the repository is signed and its index came without a signature: "
+"the previous copy stays"
+msgstr ""
+"‹name›: il repository è firmato e il suo indice è arrivato senza firma: "
+"resta la copia di prima"
+
+msgid "``sign_archive_unsigned``"
+msgstr "``sign_archive_unsigned``"
+
+msgid ""
+"‹id› ‹version›: the repository is signed and this archive has no "
+"signature: not opened"
+msgstr ""
+"‹id› ‹version›: il repository è firmato e questo archivio non ha firma: non "
+"aperto"
+
+msgid "``sign_key_unknown_here``"
+msgstr "``sign_key_unknown_here``"
+
+msgid ""
+"signed with the key ‹key\\_id›, which none of your repositories names: "
+"only the archive\\_hash counts"
+msgstr ""
+"firmato con la chiave ‹key\\_id›, che nessuno dei tuoi repository nomina: "
+"conta solo l'archive\\_hash"
+
+msgid "``sign_signed``"
+msgstr "``sign_signed``"
+
+msgid ""
+"signed by the key ‹key\\_id› of ‹repos›: these are the bytes it published"
+" (not a review of the code)"
+msgstr ""
+"firmato dalla chiave ‹key\\_id› di ‹repos›: sono i byte che ha pubblicato "
+"(non una revisione del codice)"
+
+msgid "``index_duplicate``"
+msgstr "``index_duplicate``"
+
+msgid "‹id› ‹version› is already listed by ‹other›"
+msgstr "‹id› ‹version› è già elencato da ‹other›"
+
+msgid "``index_section_reused``"
+msgstr "``index_section_reused``"
+
+msgid ""
+"‹id›: [‹section›] ‹version› has another content in ‹other› — a version is"
+" never reused"
+msgstr ""
+"‹id›: [‹section›] ‹version› ha un altro contenuto in ‹other› — una versione "
+"non si riusa"
+
+msgid "``index_vocab_conflict``"
+msgstr "``index_vocab_conflict``"
+
+msgid ""
+"‹scheme› ‹version›: another content in ‹other› — a vocabulary version is "
+"never reused"
+msgstr ""
+"‹scheme› ‹version›: un altro contenuto in ‹other› — una versione di "
+"vocabolario non si riusa"
+
+msgid "``index_vocab_owner``"
+msgstr "``index_vocab_owner``"
+
+msgid ""
+"‹scheme›: owned by ‹owner›, which this repository publishes — require it,"
+" do not copy it"
+msgstr ""
+"‹scheme›: il padrone è ‹owner›, che questo repository pubblica — "
+"richiedilo, non copiarlo"
+
+msgid "``index_vocab_not_owner``"
+msgstr "``index_vocab_not_owner``"
+
+msgid ""
+"‹scheme›: owned by ‹owner› — when ‹owner› is published, require it "
+"instead of copying it"
+msgstr ""
+"‹scheme›: il padrone è ‹owner› — quando ‹owner› è pubblicato, richiedilo "
+"invece di copiarlo"
+
+msgid "``index_vocab_central``"
+msgstr "``index_vocab_central``"
+
+msgid ""
+"‹scheme›: a shared vocabulary of ExtendedMatrix/vocabularies — require "
+"it, do not copy it"
+msgstr ""
+"‹scheme›: un vocabolario condiviso di ExtendedMatrix/vocabularies — "
+"richiedilo, non copiarlo"
+
+msgid "``index_requires_elsewhere``"
+msgstr "``index_requires_elsewhere``"
+
+msgid "[requires] ‹id›: not in this repository (another one must have it)"
+msgstr "[requires] ‹id›: non è in questo repository (deve averlo un altro)"
+
+msgid "``index_requires_cycle``"
+msgstr "``index_requires_cycle``"
+
+msgid "[requires] in a cycle: ‹cycle›"
+msgstr "[requires] in un ciclo: ‹cycle›"
+
+msgid "``index_shape``"
+msgstr "``index_shape``"
+
+msgid "not an index: ‹why›"
+msgstr "non è un indice: ‹why›"
+
+msgid "``index_version``"
+msgstr "``index_version``"
+
+msgid "index version ‹value›: this library reads ‹want›"
+msgstr "versione dell'indice ‹value›: questa libreria legge ‹want›"
+
+msgid "``index_entry_fields``"
+msgstr "``index_entry_fields``"
+
+msgid "missing: ‹keys›"
+msgstr "mancano: ‹keys›"
+
+msgid "``index_entry_hash``"
+msgstr "``index_entry_hash``"
+
+msgid "archive\\_hash ‹value› is not sha256:<64 hex>"
+msgstr "archive\\_hash ‹value› non è sha256:<64 hex>"
+
+msgid "``index_size_mismatch``"
+msgstr "``index_size_mismatch``"
+
+msgid "‹id›: the download has ‹got› bytes, the index says ‹want›"
+msgstr "‹id›: lo scaricato ha ‹got› byte, l'indice dice ‹want›"
+
+msgid "``index_hash_mismatch``"
+msgstr "``index_hash_mismatch``"
+
+msgid "‹id›: the download is not the archive the index names (‹got›, not ‹want›)"
+msgstr ""
+"‹id›: lo scaricato non è l'archivio che l'indice nomina (‹got›, non ‹want›)"
+
+msgid "``index_differs``"
+msgstr "``index_differs``"
+
+msgid "‹path› is not the index of these archives: run server-generate again"
+msgstr "‹path› non è l'indice di questi archivi: rilancia server-generate"
+
+msgid "The repositories of this computer"
+msgstr "I repository di questo computer"
+
+msgid "``repo_url_bad``"
+msgstr "``repo_url_bad``"
+
+msgid ""
+"‹url›: not the address of a repository (https://…/index.json, file://…, "
+"or a folder)"
+msgstr ""
+"‹url›: non è l'indirizzo di un repository (https://…/index.json, file://… o "
+"una cartella)"
+
+msgid "``repo_name_bad``"
+msgstr "``repo_name_bad``"
+
+msgid ""
+"‹name›: a repository's name is lower-case letters, digits, - and \\_ (and"
+" not a reserved word)"
+msgstr ""
+"‹name›: il nome di un repository è fatto di minuscole, cifre, - e \\_ (e "
+"non è una parola riservata)"
+
+msgid "``repo_name_used``"
+msgstr "``repo_name_used``"
+
+msgid "a repository called ‹name› is already here"
+msgstr "c'è già un repository di nome ‹name›"
+
+msgid "``repo_url_used``"
+msgstr "``repo_url_used``"
+
+msgid "‹url› is already here, as ‹name›"
+msgstr "‹url› c'è già, come ‹name›"
+
+msgid "``repo_unknown``"
+msgstr "``repo_unknown``"
+
+msgid "no repository called ‹name›"
+msgstr "nessun repository di nome ‹name›"
+
+msgid "``repo_offline``"
+msgstr "``repo_offline``"
+
+msgid "‹url›: online access is off («Allow online access»)"
+msgstr "‹url›: l'accesso in rete è spento («Consenti l'accesso in rete»)"
+
+msgid "``repo_unreachable``"
+msgstr "``repo_unreachable``"
+
+msgid "‹url›: cannot be read (‹why›)"
+msgstr "‹url›: non si riesce a leggere (‹why›)"
+
+msgid "``repo_denied``"
+msgstr "``repo_denied``"
+
+msgid "‹url›: access refused (‹status›) — check the access token"
+msgstr "‹url›: accesso negato (‹status›) — controlla il token di accesso"
+
+msgid "``repo_http``"
+msgstr "``repo_http``"
+
+msgid "‹url›: the server answered ‹status›"
+msgstr "‹url›: il server ha risposto ‹status›"
+
+msgid "``repo_too_big``"
+msgstr "``repo_too_big``"
+
+msgid "‹url›: more than ‹limit› bytes, not read"
+msgstr "‹url›: più di ‹limit› byte, non letto"
+
+msgid "``repo_index_bad``"
+msgstr "``repo_index_bad``"
+
+msgid ""
+"‹name›: the index is not a repository's index (‹why›); the previous copy "
+"is kept"
+msgstr ""
+"‹name›: l'indice non è l'indice di un repository (‹why›); resta la copia di "
+"prima"
+
+msgid "``repo_not_synced``"
+msgstr "``repo_not_synced``"
+
+msgid "‹name›: the index has not been read yet — «Refresh» first"
+msgstr "‹name›: l'indice non è ancora stato letto — prima «Aggiorna l'elenco»"
+
+msgid "``repo_no_entry``"
+msgstr "``repo_no_entry``"
+
+msgid "‹repo› does not offer ‹id› ‹version›"
+msgstr "‹repo› non offre ‹id› ‹version›"
+
+msgid "``repo_blocked``"
+msgstr "``repo_blocked``"
+
+msgid "‹id› was withdrawn by ‹repo›: ‹reason›"
+msgstr "‹id› è stato ritirato da ‹repo›: ‹reason›"
+
+msgid "``repo_blocked_installed``"
+msgstr "``repo_blocked_installed``"
+
+msgid "‹id› is installed here, and ‹repo› has withdrawn it: ‹reason›"
+msgstr "‹id› è installato qui, e ‹repo› lo ha ritirato: ‹reason›"
+
+msgid "``repo_requires_unresolved``"
+msgstr "``repo_requires_unresolved``"
+
+msgid ""
+"‹for› requires ‹id› ‹range›, which no repository offers: it installs "
+"incomplete"
+msgstr ""
+"‹for› richiede ‹id› ‹range›, che nessun repository offre: si installa "
+"incompleto"
+
+msgid "``repo_tier_c_no_url``"
+msgstr "``repo_tier_c_no_url``"
+
+msgid "‹id›: tier C without a source to fetch from"
+msgstr "‹id›: fascia C senza una fonte da cui scaricarlo"
+
+msgid "``repo_tier_c_offline``"
+msgstr "``repo_tier_c_offline``"
+
+msgid ""
+"‹id›: tier C, not fetched — online access is off; «Download locally» from"
+" ‹url› later"
+msgstr ""
+"‹id›: fascia C, non scaricato — l'accesso in rete è spento; «Scarica in "
+"locale» da ‹url› più tardi"
+
+msgid "``repo_tier_c_failed``"
+msgstr "``repo_tier_c_failed``"
+
+msgid "‹id›: tier C, not fetched (‹why›)"
+msgstr "‹id›: fascia C, non scaricato (‹why›)"
+
+msgid "Building an archive"
+msgstr "La costruzione di un archivio"
+
+msgid "``build_folder``"
+msgstr "``build_folder``"
+
+msgid "build reads a folder, not ‹what›: unzip it first"
+msgstr "build legge una cartella, non ‹what›: prima scompattala"
+
+msgid "``build_written``"
+msgstr "``build_written``"
+
+msgid "info"
+msgstr "informazione"
+
+msgid "type = ‹value› written"
+msgstr "scritto type = ‹value›"
+
+msgid "``build_moved``"
+msgstr "``build_moved``"
+
+msgid ""
+"‹scheme›: ‹path› moved from qualia\\_vocabularies to "
+"[[data.vocabularies]] (fascia ‹tier›, ‹license›)"
+msgstr ""
+"‹scheme›: ‹path› spostato da qualia\\_vocabularies a [[data.vocabularies]] "
+"(fascia ‹tier›, ‹license›)"
+
+msgid "``build_vocab_license``"
+msgstr "``build_vocab_license``"
+
+msgid ""
+"‹scheme›: ‹path› has no licence and the profile has not one licence — "
+"write license in qualia\\_vocabularies"
+msgstr ""
+"‹scheme›: ‹path› non ha licenza e il profilo non ne ha una sola — scrivi "
+"license in qualia\\_vocabularies"
+
+msgid "``build_digest``"
+msgstr "``build_digest``"
+
+msgid "‹what›: digest ‹old› → ‹new›"
+msgstr "‹what›: digest ‹old› → ‹new›"
+
+msgid "``build_requires_profile``"
+msgstr "``build_requires_profile``"
+
+msgid ""
+"[requires] copied into profile.json requires (for a 0.2 reader without "
+"the envelope)"
+msgstr ""
+"[requires] ricopiato in profile.json requires (per un lettore 0.2 senza "
+"busta)"
+
+msgid "``build_requires_iri``"
+msgstr "``build_requires_iri``"
+
+msgid ""
+"[requires] ‹id› (‹part›): no IRI known for it — not copied into "
+"profile.json"
+msgstr ""
+"[requires] ‹id› (‹part›): non se ne conosce l'IRI — non ricopiato in "
+"profile.json"
+
+msgid "``build_requires_translated``"
+msgstr "``build_requires_translated``"
+
+msgid "[requires].profiles ‹iri› → extensions ‹id› (part = data)"
+msgstr "[requires].profiles ‹iri› → extensions ‹id› (part = data)"
+
+msgid "``build_code_optional``"
+msgstr "``build_code_optional``"
+
+msgid ""
+"[requires] ‹id›: a dependency on code is always optional — optional = "
+"true written"
+msgstr ""
+"[requires] ‹id›: una dipendenza da codice è sempre facoltativa — scritto "
+"optional = true"
+
+msgid "``build_requires_core``"
+msgstr "``build_requires_core``"
+
+msgid "[requires].core taken from profile.json requires"
+msgstr "[requires].core preso da profile.json requires"
+
+msgid "``build_envelope_made``"
+msgstr "``build_envelope_made``"
+
+msgid ""
+"em-extension.toml made from profile.json (a bare profile becomes an "
+"archive)"
+msgstr ""
+"em-extension.toml ricavato da profile.json (un profilo nudo diventa un "
+"archivio)"
+
+msgid "``build_refused``"
+msgstr "``build_refused``"
+
+msgid "the archive was not written: ‹count› errors"
+msgstr "l'archivio non è stato scritto: ‹count› errori"
+
+msgid "``build_toml``"
+msgstr "``build_toml``"
+
+msgid "em-extension.toml: ‹why›"
+msgstr "em-extension.toml: ‹why›"
+
+msgid "Installing and activating"
+msgstr "Installare e attivare"
+
+msgid "``version_reused``"
+msgstr "``version_reused``"
+
+msgid ""
+"‹name› ‹version› is already installed with other content: a version is "
+"not reused"
+msgstr ""
+"‹name› ‹version› è già installato con un contenuto diverso: una versione "
+"non si riusa"
+
+msgid "``invalid``"
+msgstr "``invalid``"
+
+msgid "‹name› ‹version›: the package has errors and is not installed"
+msgstr "‹name› ‹version›: il pacchetto ha errori e non si installa"
+
+msgid "``profile_missing``"
+msgstr "``profile_missing``"
+
+msgid ""
+"the file uses the community package ‹iri› ‹version›, which is not "
+"installed: it opens all the same, with the labels saved in the values"
+msgstr ""
+"il file usa il pacchetto di comunità ‹iri› ‹version›, che non è installato: "
+"si apre lo stesso, con le etichette salvate nei valori"
+
+msgid "``profile_other_version``"
+msgstr "``profile_other_version``"
+
+msgid ""
+"the file uses ‹name› ‹version›; ‹installed› is installed and is read in "
+"its place"
+msgstr ""
+"il file usa ‹name› ‹version›; è installata la ‹installed›, che si legge al "
+"suo posto"
+
+msgid "``prefix_clash``"
+msgstr "``prefix_clash``"
+
+msgid "‹name› and ‹other› both use the prefix ‹prefix›: ‹name› is not activated"
+msgstr ""
+"‹name› e ‹other› usano tutti e due il prefisso ‹prefix›: ‹name› non si "
+"attiva"
+
+msgid "``code_not_installed``"
+msgstr "``code_not_installed``"
+
+msgid ""
+"the code section is installed apart, by s3dgraphy.extensions, with the "
+"trust question"
+msgstr ""
+"la sezione di codice si installa a parte, da s3dgraphy.extensions, con la "
+"domanda di fiducia"
+
+msgid "Installing by parts"
+msgstr "Installare per parti"
+
+msgid "``ext_not_installed``"
+msgstr "``ext_not_installed``"
+
+msgid "‹id› is not installed"
+msgstr "‹id› non è installato"
+
+msgid "``ext_no_source``"
+msgstr "``ext_no_source``"
+
+msgid "‹id›: the archive it came from is no longer at ‹origin›: choose it again"
+msgstr ""
+"‹id›: l'archivio da cui è arrivato non è più in ‹origin›: sceglilo di nuovo"
+
+msgid "``ext_data_first``"
+msgstr "``ext_data_first``"
+
+msgid "‹id›: the code of a package needs its data ‹version› installed first"
+msgstr ""
+"‹id›: il codice di un pacchetto vuole prima i suoi dati ‹version› installati"
+
+msgid "``code_trust_required``"
+msgstr "``code_trust_required``"
+
+msgid "code not installed: the trust question was not answered"
+msgstr "codice non installato: manca la risposta alla domanda di fiducia"
+
+msgid "``code_user_choice``"
+msgstr "``code_user_choice``"
+
+msgid "code not installed: the user's choice (data only)"
+msgstr "codice non installato: scelta dell'utente (solo i dati)"
+
+msgid "``code_removed``"
+msgstr "``code_removed``"
+
+msgid "code removed by the user: the package is data only"
+msgstr "codice rimosso dall'utente: il pacchetto è solo dati"
+
+msgid "``code_invalid``"
+msgstr "``code_invalid``"
+
+msgid "code not installed: ‹problems›"
+msgstr "codice non installato: ‹problems›"
+
+msgid "``code_platform``"
+msgstr "``code_platform``"
+
+msgid "code not installed: it runs on ‹platforms›, this machine is ‹platform›"
+msgstr ""
+"codice non installato: gira su ‹platforms›, questa macchina è ‹platform›"
+
+msgid "``code_wheel_missing``"
+msgstr "``code_wheel_missing``"
+
+msgid "[code] wheels: ‹path› is not in the package"
+msgstr "[code] wheels: ‹path› non è nel pacchetto"
+
+msgid "``code_no_wheel``"
+msgstr "``code_no_wheel``"
+
+msgid "code not installed: no wheel of ‹dist› for ‹platform›"
+msgstr "codice non installato: nessuna ruota di ‹dist› per ‹platform›"
+
+msgid "``code_version_reused``"
+msgstr "``code_version_reused``"
+
+msgid ""
+"code not installed: ‹id› code ‹version› is already installed with other "
+"content — a version is not reused"
+msgstr ""
+"codice non installato: il codice ‹version› di ‹id› è già installato con un "
+"contenuto diverso — una versione non si riusa"
+
+msgid "The commands of a plugin, their slots, the descriptor"
+msgstr "I comandi di un plugin, i loro slot, il descrittore"
+
+msgid "``code_commands_shape``"
+msgstr "``code_commands_shape``"
+
+msgid "[[code.commands]]: a list of tables"
+msgstr "[[code.commands]]: un elenco di tabelle"
+
+msgid "``code_command_id``"
+msgstr "``code_command_id``"
+
+msgid ""
+"[[code.commands]] ‹id›: the id is a letter, then letters, digits, «.», "
+"«\\_», «-»"
+msgstr ""
+"[[code.commands]] ‹id›: l'id è una lettera, poi lettere, cifre, «.», «\\_», "
+"«-»"
+
+msgid "``code_command_twice``"
+msgstr "``code_command_twice``"
+
+msgid "[[code.commands]] ‹id›: declared twice"
+msgstr "[[code.commands]] ‹id›: dichiarato due volte"
+
+msgid "``code_command_label``"
+msgstr "``code_command_label``"
+
+msgid "[[code.commands]] ‹id›: a label is required (a text, or {{it, en}})"
+msgstr "[[code.commands]] ‹id›: serve un'etichetta (un testo, o {{it, en}})"
+
+msgid "``code_command_writes``"
+msgstr "``code_command_writes``"
+
+msgid "[[code.commands]] ‹id›: writes is true or false"
+msgstr "[[code.commands]] ‹id›: writes è true o false"
+
+msgid "``code_command_slots``"
+msgstr "``code_command_slots``"
+
+msgid "[[code.commands]] ‹id›: slots is a list of {{name, kind}} — kinds ‹kinds›"
+msgstr ""
+"[[code.commands]] ‹id›: slots è un elenco di {{name, kind}} — i tipi ‹kinds›"
+
+msgid "``code_command_in``"
+msgstr "``code_command_in``"
+
+msgid "[[code.commands]] ‹id›: in — ‹value› is not a slot (name@version)"
+msgstr "[[code.commands]] ‹id›: in — ‹value› non è uno slot (nome@versione)"
+
+msgid "``code_command_when``"
+msgstr "``code_command_when``"
+
+msgid ""
+"[[code.commands]] ‹id›: when ‹value› does not read (document, "
+"selection:none\\|any\\|one\\|many\\|TYPE\\|TYPE, joined by «and»)"
+msgstr ""
+"[[code.commands]] ‹id›: when ‹value› non si legge (document, "
+"selection:none\\|any\\|one\\|many\\|TIPO\\|TIPO, uniti da «and»)"
+
+msgid "``code_reader_accept``"
+msgstr "``code_reader_accept``"
+
+msgid ""
+"[[code.commands]] ‹id›: a reader (door.reader) declares accept = "
+"[\".ext\", …]"
+msgstr ""
+"[[code.commands]] ‹id›: un lettore (door.reader) dichiara accept = "
+"[\".ext\", …]"
+
+msgid "Readers of «Porta dentro…»: folders, claims, a panel"
+msgstr "I lettori di «Porta dentro…»: cartelle, rivendicazioni, un pannello"
+
+msgid "``code_reader_claims``"
+msgstr "``code_reader_claims``"
+
+msgid ""
+"[[code.commands]] ‹id›: claims is a list of extensions [\".ext\", …] "
+"(offered as «Read as», never taken)"
+msgstr ""
+"[[code.commands]] ‹id›: claims è un elenco di estensioni [\".ext\", …] "
+"(offerte come «Leggi come», mai prese)"
+
+msgid "``code_reader_folders``"
+msgstr "``code_reader_folders``"
+
+msgid "[[code.commands]] ‹id›: folders is true or false"
+msgstr "[[code.commands]] ‹id›: folders è true o false"
+
+msgid "``code_reader_nothing``"
+msgstr "``code_reader_nothing``"
+
+msgid ""
+"[[code.commands]] ‹id›: a reader (door.reader@2) reads something: accept,"
+" claims or folders = true"
+msgstr ""
+"[[code.commands]] ‹id›: un lettore (door.reader@2) legge qualcosa: accept, "
+"claims o folders = true"
+
+msgid "``code_reader_both``"
+msgstr "``code_reader_both``"
+
+msgid ""
+"[[code.commands]] ‹id›: ‹value› both accepted and claimed: taken (accept "
+"wins)"
+msgstr ""
+"[[code.commands]] ‹id›: ‹value› sia in accept sia in claims: presa (vince "
+"accept)"
+
+msgid "``code_reader_panel``"
+msgstr "``code_reader_panel``"
+
+msgid ""
+"[[code.commands]] ‹id›: panel ‹value› is not a panel of this plugin "
+"([[code.panels]])"
+msgstr ""
+"[[code.commands]] ‹id›: panel ‹value› non è un pannello di questo plugin "
+"([[code.panels]])"
+
+msgid "``code_reader_path``"
+msgstr "``code_reader_path``"
+
+msgid ""
+"[[code.commands]] ‹id›: a reader has a slot of kind path: the door fills "
+"it with the file or the folder"
+msgstr ""
+"[[code.commands]] ‹id›: un lettore ha uno slot di tipo path: la porta lo "
+"riempie col file o con la cartella"
+
+msgid "``code_reader_v2_field``"
+msgstr "``code_reader_v2_field``"
+
+msgid ""
+"[[code.commands]] ‹id›: ‹field› belongs to door.reader@2: with @1 it is "
+"not read"
+msgstr ""
+"[[code.commands]] ‹id›: ‹field› è di door.reader@2: con @1 non si legge"
+
+msgid "``code_check_writes``"
+msgstr "``code_check_writes``"
+
+msgid "[[code.commands]] ‹id›: a check (check@1) only reads: writes = false"
+msgstr ""
+"[[code.commands]] ‹id›: un controllo (check@1) legge soltanto: writes = "
+"false"
+
+msgid "``code_slot_unknown``"
+msgstr "``code_slot_unknown``"
+
+msgid ""
+"[[code.commands]] ‹id›: the slot ‹slot› is not known here: the command is"
+" not drawn there"
+msgstr ""
+"[[code.commands]] ‹id›: lo slot ‹slot› qui non esiste: il comando lì non "
+"compare"
+
+msgid "``code_slot_phase2``"
+msgstr "``code_slot_phase2``"
+
+msgid "[[code.commands]] ‹id›: the slot ‹slot› comes with phase 2: not drawn yet"
+msgstr ""
+"[[code.commands]] ‹id›: lo slot ‹slot› arriva con la fase 2: per ora non "
+"compare"
+
+msgid "``code_slot_newer``"
+msgstr "``code_slot_newer``"
+
+msgid ""
+"[[code.commands]] ‹id›: the slot ‹slot› is newer than this host's: that "
+"entry is turned off"
+msgstr ""
+"[[code.commands]] ‹id›: lo slot ‹slot› è più nuovo di quello di questo "
+"programma: quella voce è spenta"
+
+msgid "``code_slot_not_command``"
+msgstr "``code_slot_not_command``"
+
+msgid ""
+"[[code.commands]] ‹id›: ‹slot› is a call of the API, not a place for a "
+"command"
+msgstr ""
+"[[code.commands]] ‹id›: ‹slot› è una chiamata dell'API, non un posto per un "
+"comando"
+
+msgid "Sections, columns, the status bar, tools, panels"
+msgstr "Sezioni, colonne, la barra di stato, strumenti, pannelli"
+
+msgid "``code_shows_writes``"
+msgstr "``code_shows_writes``"
+
+msgid ""
+"[[code.commands]] ‹id›: ‹slot› shows what the command returns, it only "
+"reads: writes = false"
+msgstr ""
+"[[code.commands]] ‹id›: ‹slot› mostra ciò che il comando restituisce, legge "
+"soltanto: writes = false"
+
+msgid "``code_column_view``"
+msgstr "``code_column_view``"
+
+msgid ""
+"[[code.commands]] ‹id›: view ‹value› is not a sheet of the Tabular — "
+"‹views›"
+msgstr ""
+"[[code.commands]] ‹id›: view ‹value› non è un foglio della Tabular — ‹views›"
+
+msgid "``code_tool_primitive``"
+msgstr "``code_tool_primitive``"
+
+msgid ""
+"[[code.commands]] ‹id›: a tool of the Space (space.tool@1) declares "
+"primitive = one of ‹known› (not ‹value›)"
+msgstr ""
+"[[code.commands]] ‹id›: uno strumento dello Spazio (space.tool@1) dichiara "
+"primitive = uno tra ‹known› (non ‹value›)"
+
+msgid "``code_tool_geometry``"
+msgstr "``code_tool_geometry``"
+
+msgid ""
+"[[code.commands]] ‹id›: a tool of the Space receives what was placed: a "
+"slot of kind \"geometry\""
+msgstr ""
+"[[code.commands]] ‹id›: uno strumento dello Spazio riceve ciò che è stato "
+"posato: uno slot di tipo \"geometry\""
+
+msgid "``code_layer_kind``"
+msgstr "``code_layer_kind``"
+
+msgid ""
+"[[code.commands]] ‹id›: a layer of the Space (space.layer@1) declares "
+"layer = one of ‹known› (not ‹value›)"
+msgstr ""
+"[[code.commands]] ‹id›: uno strato dello Spazio (space.layer@1) dichiara "
+"layer = uno tra ‹known› (non ‹value›)"
+
+msgid "``code_icon``"
+msgstr "``code_icon``"
+
+msgid "[[code.commands]] ‹id›: icon ‹value› is one or two characters of text"
+msgstr "[[code.commands]] ‹id›: icon ‹value› è uno o due caratteri di testo"
+
+msgid "``code_section_buttons``"
+msgstr "``code_section_buttons``"
+
+msgid "[[code.commands]] ‹id›: buttons is a list of command ids, not ‹value›"
+msgstr ""
+"[[code.commands]] ‹id›: buttons è un elenco di id di comandi, non ‹value›"
+
+msgid "``code_button_unknown``"
+msgstr "``code_button_unknown``"
+
+msgid "[[code.commands]] ‹id›: the button ‹value› is not a command of this plugin"
+msgstr ""
+"[[code.commands]] ‹id›: il bottone ‹value› non è un comando di questo plugin"
+
+msgid "``code_buttons_unused``"
+msgstr "``code_buttons_unused``"
+
+msgid ""
+"[[code.commands]] ‹id›: buttons are drawn only in an Inspector section "
+"(inspector.section@1)"
+msgstr ""
+"[[code.commands]] ‹id›: i bottoni compaiono solo in una sezione "
+"dell'Inspector (inspector.section@1)"
+
+msgid "``code_panels_shape``"
+msgstr "``code_panels_shape``"
+
+msgid "[[code.panels]]: a list of tables"
+msgstr "[[code.panels]]: un elenco di tabelle"
+
+msgid "``code_panel_id``"
+msgstr "``code_panel_id``"
+
+msgid ""
+"[[code.panels]] ‹id›: the id is a letter, then letters, digits, «.», "
+"«\\_», «-»"
+msgstr ""
+"[[code.panels]] ‹id›: l'id è una lettera, poi lettere, cifre, «.», «\\_», "
+"«-»"
+
+msgid "``code_panel_twice``"
+msgstr "``code_panel_twice``"
+
+msgid "[[code.panels]] ‹id›: declared twice"
+msgstr "[[code.panels]] ‹id›: dichiarato due volte"
+
+msgid "``code_panel_label``"
+msgstr "``code_panel_label``"
+
+msgid "[[code.panels]] ‹id›: a label is required (a text, or {{it, en}})"
+msgstr "[[code.panels]] ‹id›: serve un'etichetta (un testo, o {{it, en}})"
+
+msgid "``code_panel_place``"
+msgstr "``code_panel_place``"
+
+msgid "[[code.panels]] ‹id›: place ‹value› is one of ‹places›"
+msgstr "[[code.panels]] ‹id›: place ‹value› è uno tra ‹places›"
+
+msgid "``code_panel_fields``"
+msgstr "``code_panel_fields``"
+
+msgid "[[code.panels]] ‹id›: fields is a list of at most ‹max› tables"
+msgstr "[[code.panels]] ‹id›: fields è un elenco di al massimo ‹max› tabelle"
+
+msgid "``code_panel_field_kind``"
+msgstr "``code_panel_field_kind``"
+
+msgid "[[code.panels]] ‹id›: field ‹n› — kind is one of ‹kinds›"
+msgstr "[[code.panels]] ‹id›: campo ‹n› — kind è uno tra ‹kinds›"
+
+msgid "``code_panel_field_name``"
+msgstr "``code_panel_field_name``"
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a name (the slot it fills: a letter, "
+"letters, digits, «\\_»)"
+msgstr ""
+"[[code.panels]] ‹id›: campo ‹n› — un nome (lo slot che riempie: una "
+"lettera, lettere, cifre, «\\_»)"
+
+msgid "``code_panel_field_twice``"
+msgstr "``code_panel_field_twice``"
+
+msgid "[[code.panels]] ‹id›: field ‹n› — the name ‹value› twice"
+msgstr "[[code.panels]] ‹id›: campo ‹n› — il nome ‹value› due volte"
+
+msgid "``code_panel_choice``"
+msgstr "``code_panel_choice``"
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a choice has options = [\"a\", …] or "
+"[{{value, label}}, …]"
+msgstr ""
+"[[code.panels]] ‹id›: campo ‹n› — una scelta ha options = [\"a\", …] o "
+"[{{value, label}}, …]"
+
+msgid "``code_panel_command``"
+msgstr "``code_panel_command``"
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — the command ‹value› is not a command of"
+" this plugin"
+msgstr ""
+"[[code.panels]] ‹id›: campo ‹n› — il comando ‹value› non è un comando di "
+"questo plugin"
+
+msgid "``code_panel_value_writes``"
+msgstr "``code_panel_value_writes``"
+
+msgid ""
+"[[code.panels]] ‹id›: field ‹n› — a value shows what ‹value› returns: "
+"that command only reads (writes = false)"
+msgstr ""
+"[[code.panels]] ‹id›: campo ‹n› — un valore mostra ciò che restituisce "
+"‹value›: quel comando legge soltanto (writes = false)"
+
+msgid "``code_descriptor``"
+msgstr "``code_descriptor``"
+
+msgid "[code.descriptor]: a table with capabilities = [ … ]"
+msgstr "[code.descriptor]: una tabella con capabilities = [ … ]"
+
+msgid "``code_capability_unknown``"
+msgstr "``code_capability_unknown``"
+
+msgid "[code.descriptor]: unknown capability ‹value› — ‹known›"
+msgstr "[code.descriptor]: capability sconosciuta ‹value› — ‹known›"
+
+msgid "``code_writes_no_capability``"
+msgstr "``code_writes_no_capability``"
+
+msgid ""
+"[[code.commands]] ‹id›: writes, and the descriptor declares no writing "
+"capability: every write will be refused"
+msgstr ""
+"[[code.commands]] ‹id›: scrive, e il descrittore non dichiara una "
+"capability di scrittura: ogni scrittura sarà rifiutata"
+
+msgid "``code_updated``"
+msgstr "``code_updated``"
+
+msgid "code updated ‹old› → ‹new›"
+msgstr "codice aggiornato ‹old› → ‹new›"
+
+msgid "``data_beside``"
+msgstr "``data_beside``"
+
+msgid "data ‹new› installed beside ‹old›: each file keeps the version it declares"
+msgstr ""
+"dati ‹new› installati accanto a ‹old›: ogni file tiene la versione che "
+"dichiara"
+
+msgid "``module_collision``"
+msgstr "``module_collision``"
+
+msgid ""
+"the module ‹module› is already loaded by ‹other› ‹version›: disable it "
+"first"
+msgstr ""
+"il modulo ‹module› è già caricato da ‹other› ‹version›: disattivalo prima"
+
+msgid "``trust_changed``"
+msgstr "``trust_changed``"
+
+msgid "the code asks again: ‹changes› changed since the last trust"
+msgstr ""
+"il codice chiede di nuovo: dall'ultima fiducia sono cambiati ‹changes›"
+
+msgid "Updates, versions side by side, removal, wheels"
+msgstr "Aggiornamenti, versioni affiancate, rimozione, wheel"
+
+msgid "``repo_other_platforms``"
+msgstr "``repo_other_platforms``"
+
+msgid "refusal / warning"
+msgstr "rifiuto / avviso"
+
+msgid "‹repo› has ‹id› only for ‹platforms›, not for this machine (‹platform›)"
+msgstr ""
+"‹repo› ha ‹id› solo per ‹platforms›, non per questa macchina (‹platform›)"
+
+msgid "``update_needs_trust``"
+msgstr "``update_needs_trust``"
+
+msgid ""
+"‹id› ‹version› asks the trust question again (‹changes›): not updated "
+"with the others"
+msgstr ""
+"‹id› ‹version› chiede di nuovo la fiducia (‹changes›): non aggiornato con "
+"gli altri"
+
+msgid "``build_split_none``"
+msgstr "``build_split_none``"
+
+msgid ""
+"--split-platforms: [code] names ‹count› platforms, one archive for all is"
+" written"
+msgstr ""
+"--split-platforms: [code] nomina ‹count› piattaforme, si scrive un archivio "
+"per tutte"
+
+msgid "``code_version_absent``"
+msgstr "``code_version_absent``"
+
+msgid "‹id›: code ‹version› is not on this machine"
+msgstr "‹id›: il codice ‹version› non è su questa macchina"
+
+msgid "``code_version_active``"
+msgstr "``code_version_active``"
+
+msgid ""
+"‹id›: code ‹version› is the one in use — use another version first, or "
+"remove the code"
+msgstr ""
+"‹id›: il codice ‹version› è quello in uso — usa prima un'altra versione, o "
+"rimuovi il codice"
+
+msgid "``code_trust_required_for``"
+msgstr "``code_trust_required_for``"
+
+msgid ""
+"‹id› ‹version›: ‹changes› differ from what you trusted — the trust "
+"question first"
+msgstr ""
+"‹id› ‹version›: ‹changes› diversi da ciò di cui ti sei fidato — prima la "
+"domanda di fiducia"
+
+msgid "``code_switched``"
+msgstr "``code_switched``"
+
+msgid "‹id›: code ‹old› → ‹new›; the program loads it at its next start"
+msgstr "‹id›: codice ‹old› → ‹new›; il programma lo carica al prossimo avvio"
+
+msgid "``document_newer_minor``"
+msgstr "``document_newer_minor``"
+
+msgid ""
+"this file uses ‹name› ‹declared›, ‹newest› is here: update the "
+"declaration?"
+msgstr ""
+"questo file usa ‹name› ‹declared›, c'è la ‹newest›: aggiornare la "
+"dichiarazione?"
+
+msgid "``document_newer_major``"
+msgstr "``document_newer_major``"
+
+msgid ""
+"this file uses ‹name› ‹declared›, ‹newest› is here and changes the "
+"content: read what changes before updating the declaration"
+msgstr ""
+"questo file usa ‹name› ‹declared›, c'è la ‹newest› e cambia il contenuto: "
+"leggi che cosa cambia prima di aggiornare la dichiarazione"
+
+msgid "The development folder"
+msgstr "La cartella di sviluppo"
+
+msgid "``dev_dir_missing``"
+msgstr "``dev_dir_missing``"
+
+msgid "the development folder ‹path› is not a folder of this machine"
+msgstr "la cartella di sviluppo ‹path› non è una cartella di questa macchina"
+
+msgid "``dev_no_code``"
+msgstr "``dev_no_code``"
+
+msgid "‹folder›: no [code] section, nothing to load"
+msgstr "‹folder›: nessuna sezione [code], niente da caricare"
+
+msgid "``dev_not_a_package``"
+msgstr "``dev_not_a_package``"
+
+msgid "‹folder›: not an extension (‹why›)"
+msgstr "‹folder›: non è un'estensione (‹why›)"
+
+msgid "``dev_same_id``"
+msgstr "``dev_same_id``"
+
+msgid ""
+"‹id› from the development folder (‹folder›) and ‹id› from ‹other›: the "
+"first is loaded"
+msgstr ""
+"‹id› dalla cartella di sviluppo (‹folder›) e ‹id› da ‹other›: si carica il "
+"primo"
+
+msgid "``dev_hides_installed``"
+msgstr "``dev_hides_installed``"
+
+msgid ""
+"the development copy of ‹id› hides the installed ‹version› while it is in"
+" the development folder"
+msgstr ""
+"la copia di sviluppo di ‹id› nasconde la ‹version› installata finché sta "
+"nella cartella di sviluppo"
+
+msgid "``requires_missing_data``"
+msgstr "``requires_missing_data``"
+
+msgid "incomplete: the data of ‹id› ‹range› are missing"
+msgstr "incompleto: mancano i dati di ‹id› ‹range›"
+
+msgid "``requires_missing_code``"
+msgstr "``requires_missing_code``"
+
+msgid "incomplete: the code of ‹id› ‹range› is missing"
+msgstr "incompleto: manca il codice di ‹id› ‹range›"
+
+msgid "``requires_missing_any``"
+msgstr "``requires_missing_any``"
+
+msgid "incomplete: ‹id› ‹range› is missing"
+msgstr "incompleto: manca ‹id› ‹range›"
+
+msgid "``requires_missing_vocabulary``"
+msgstr "``requires_missing_vocabulary``"
+
+msgid "incomplete: the vocabulary ‹scheme› ‹range› is not installed"
+msgstr "incompleto: il vocabolario ‹scheme› ‹range› non è installato"
+
+msgid "``requires_core``"
+msgstr "``requires_core``"
+
+msgid "asks for EM ‹range›; this library is ‹version›"
+msgstr "chiede EM ‹range›; questa libreria è la ‹version›"
+
+msgid "``requires_optional``"
+msgstr "``requires_optional``"
+
+msgid "optional function available: ‹id› ‹range› (‹part›, not installed)"
+msgstr ""
+"funzione facoltativa disponibile: ‹id› ‹range› (‹part›, non installato)"
+
+msgid "``requires_cycle``"
+msgstr "``requires_cycle``"
+
+msgid "[requires]: a cycle — ‹cycle›"
+msgstr "[requires]: un ciclo — ‹cycle›"
+
+msgid "``required_by``"
+msgstr "``required_by``"
+
+msgid "the data of ‹id› are required by ‹others›: confirm to remove them"
+msgstr "i dati di ‹id› sono richiesti da ‹others›: conferma per rimuoverli"
+
+msgid "``data_removes_code``"
+msgstr "``data_removes_code``"
+
+msgid "removing the data of ‹id› removes its code ‹version› too"
+msgstr "rimuovere i dati di ‹id› rimuove anche il suo codice ‹version›"
+
+msgid "The plugins of a node"
+msgstr "I plugin di un nodo"
+
+msgid "``node_isolation_off``"
+msgstr "``node_isolation_off``"
+
+msgid ""
+"the plugins of this node are off: the isolation is not serious "
+"(‹backend›: ‹why›)"
+msgstr ""
+"i plugin di questo nodo sono spenti: l'isolamento non è serio (‹backend›: "
+"‹why›)"
+
+msgid "``node_sandbox_none``"
+msgstr "``node_sandbox_none``"
+
+msgid "no sandbox on this machine (bubblewrap on Linux, sandbox-exec on macOS)"
+msgstr ""
+"nessuna gabbia su questa macchina (bubblewrap su Linux, sandbox-exec su "
+"macOS)"
+
+msgid "``node_sandbox_unknown``"
+msgstr "``node_sandbox_unknown``"
+
+msgid "‹name›: not a sandbox this library knows (‹known›)"
+msgstr "‹name›: non è una gabbia che questa libreria conosce (‹known›)"
+
+msgid "``node_probe_failed``"
+msgstr "``node_probe_failed``"
+
+msgid "the probe did not run in the sandbox ‹backend›: ‹why›"
+msgstr "la prova non è partita nella gabbia ‹backend›: ‹why›"
+
+msgid "``node_escape``"
+msgstr "``node_escape``"
+
+msgid "the cage leaks: ‹name› (‹how›)"
+msgstr "la gabbia perde: ‹name› (‹how›)"
+
+msgid "``node_not_enforced``"
+msgstr "``node_not_enforced``"
+
+msgid ""
+"‹name›: this system (‹system›) does not keep the limit; the node's "
+"(Linux) does"
+msgstr ""
+"‹name›: questo sistema (‹system›) non tiene il limite; quello del nodo "
+"(Linux) sì"
+
+msgid "``node_probe_network_ok``"
+msgstr "``node_probe_network_ok``"
+
+msgid "no network"
+msgstr "niente rete"
+
+msgid "``node_probe_network_escaped``"
+msgstr "``node_probe_network_escaped``"
+
+msgid "it reached the network"
+msgstr "ha raggiunto la rete"
+
+msgid "``node_probe_write_outside_ok``"
+msgstr "``node_probe_write_outside_ok``"
+
+msgid "no writing outside its folder"
+msgstr "non scrive fuori dalla sua cartella"
+
+msgid "``node_probe_write_outside_escaped``"
+msgstr "``node_probe_write_outside_escaped``"
+
+msgid "it wrote outside its folder"
+msgstr "ha scritto fuori dalla sua cartella"
+
+msgid "``node_probe_read_protected_ok``"
+msgstr "``node_probe_read_protected_ok``"
+
+msgid "the node's files out of reach"
+msgstr "i file del nodo fuori portata"
+
+msgid "``node_probe_read_protected_escaped``"
+msgstr "``node_probe_read_protected_escaped``"
+
+msgid "it read a file of the node"
+msgstr "ha letto un file del nodo"
+
+msgid "``node_probe_spawn_ok``"
+msgstr "``node_probe_spawn_ok``"
+
+msgid "no process of its own"
+msgstr "nessun processo suo"
+
+msgid "``node_probe_spawn_escaped``"
+msgstr "``node_probe_spawn_escaped``"
+
+msgid "it started a process"
+msgstr "ha avviato un processo"
+
+msgid "``node_probe_cpu_ok``"
+msgstr "``node_probe_cpu_ok``"
+
+msgid "stopped at its CPU limit"
+msgstr "fermato al suo limite di CPU"
+
+msgid "``node_probe_cpu_escaped``"
+msgstr "``node_probe_cpu_escaped``"
+
+msgid "it ran past its CPU limit"
+msgstr "è andato oltre il suo limite di CPU"
+
+msgid "``node_probe_memory_ok``"
+msgstr "``node_probe_memory_ok``"
+
+msgid "stopped at its memory limit"
+msgstr "fermato al suo limite di memoria"
+
+msgid "``node_probe_memory_escaped``"
+msgstr "``node_probe_memory_escaped``"
+
+msgid "it took memory past its limit"
+msgstr "ha preso memoria oltre il suo limite"
+
+msgid "``node_not_server``"
+msgstr "``node_not_server``"
+
+msgid "‹id›: its hosts do not name server — not a plugin of the node"
+msgstr "‹id›: i suoi hosts non nominano server — non è un plugin del nodo"
+
+msgid "``node_permission``"
+msgstr "``node_permission``"
+
+msgid "‹id›: asks the permission ‹permission› (‹why›), which the node never gives"
+msgstr "‹id›: chiede il permesso ‹permission› (‹why›), che il nodo non dà mai"
+
+msgid "``node_plugin_missing``"
+msgstr "``node_plugin_missing``"
+
+msgid "‹id›: active, but its folder is not on the node"
+msgstr "‹id›: attivo, ma la sua cartella non è sul nodo"
+
+msgid "``node_no_plugin``"
+msgstr "``node_no_plugin``"
+
+msgid "‹id› is not a plugin of this node"
+msgstr "‹id› non è un plugin di questo nodo"
+
+msgid "``node_not_eligible``"
+msgstr "``node_not_eligible``"
+
+msgid "‹id› cannot run on the node: ‹why›"
+msgstr "‹id› non può girare sul nodo: ‹why›"
+
+msgid "``node_not_in_room``"
+msgstr "``node_not_in_room``"
+
+msgid "‹id› is not turned on in the room ‹room›"
+msgstr "‹id› non è acceso nella stanza ‹room›"
+
+msgid "``node_room_bad``"
+msgstr "``node_room_bad``"
+
+msgid "‹room› is not a room"
+msgstr "‹room› non è una stanza"
+
+msgid "``node_no_command``"
+msgstr "``node_no_command``"
+
+msgid "‹id› has no command ‹command›"
+msgstr "‹id› non ha il comando ‹command›"
+
+msgid "``node_role_read_only``"
+msgstr "``node_role_read_only``"
+
+msgid "‹command› writes, and your role in ‹room› only reads"
+msgstr "‹command› scrive, e il tuo ruolo in ‹room› legge soltanto"
+
+msgid "``node_limit_bad``"
+msgstr "``node_limit_bad``"
+
+msgid "limits: ‹keys› — the limits are positive numbers among ‹allowed›"
+msgstr "limiti: ‹keys› — i limiti sono numeri positivi tra ‹allowed›"
+
+msgid "``node_quota_calls``"
+msgstr "``node_quota_calls``"
+
+msgid "‹room›: ‹n› calls a minute at most — wait a moment"
+msgstr "‹room›: al massimo ‹n› chiamate al minuto — aspetta un momento"
+
+msgid "``node_quota_cpu``"
+msgstr "``node_quota_cpu``"
+
+msgid "‹room›: the ‹n› seconds of CPU of this hour are used"
+msgstr "‹room›: i ‹n› secondi di CPU di quest'ora sono finiti"
+
+msgid "``node_quota_busy``"
+msgstr "``node_quota_busy``"
+
+msgid "‹room›: a plugin is already running for this room"
+msgstr "‹room›: un plugin sta già lavorando per questa stanza"
+
+msgid "``node_quota_node``"
+msgstr "``node_quota_node``"
+
+msgid "the node is running ‹n› plugins already — try again shortly"
+msgstr "il nodo sta già facendo girare ‹n› plugin — riprova tra poco"
+
+msgid "``node_document_bad``"
+msgstr "``node_document_bad``"
+
+msgid "the room's document is not readable (‹what›)"
+msgstr "il documento della stanza non si legge (‹what›)"
+
+msgid "``node_document_big``"
+msgstr "``node_document_big``"
+
+msgid "the room's document is more than ‹mb› MB: not given to a plugin"
+msgstr "il documento della stanza supera ‹mb› MB: non si dà a un plugin"
+
+msgid "``node_timeout``"
+msgstr "``node_timeout``"
+
+msgid "‹command›: stopped after ‹wall› s"
+msgstr "‹command›: fermato dopo ‹wall› s"
+
+msgid "``node_cpu``"
+msgstr "``node_cpu``"
+
+msgid "‹command›: stopped at ‹cpu› s of CPU"
+msgstr "‹command›: fermato a ‹cpu› s di CPU"
+
+msgid "``node_memory``"
+msgstr "``node_memory``"
+
+msgid "‹command›: stopped at ‹mb› MB of memory"
+msgstr "‹command›: fermato a ‹mb› MB di memoria"
+
+msgid "``node_output``"
+msgstr "``node_output``"
+
+msgid "‹command›: its answer is more than ‹kb› kB, not read"
+msgstr "‹command›: la sua risposta supera ‹kb› kB, non letta"
+
+msgid "``node_crashed``"
+msgstr "``node_crashed``"
+
+msgid "‹command›: the plugin's process ended without an answer (‹error›)"
+msgstr "‹command›: il processo del plugin è finito senza risposta (‹error›)"
+
+msgid "``node_sandbox_failed``"
+msgstr "``node_sandbox_failed``"
+
+msgid "‹command›: the sandbox did not start (‹error›)"
+msgstr "‹command›: la gabbia non è partita (‹error›)"
+
+msgid "``node_read_only_wrote``"
+msgstr "``node_read_only_wrote``"
+
+msgid "‹command› is read-only and its answer carried writes: nothing applied"
+msgstr ""
+"‹command› è di sola lettura e la sua risposta portava scritture: niente "
+"applicato"
+
