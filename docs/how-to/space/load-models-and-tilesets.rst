@@ -119,6 +119,11 @@ easily than a folder of thousands of tiles.
          **Files** window. A tileset of your own computer is packed in the
          desktop application: the web reads a ``.3tz``.
 
+The RealityScan export (``X.json`` beside the folder ``X``) is packed from here
+too — open the folder ``X``, or the folder that holds the pair — and no study
+needs to be open: the ``.3tz`` and its stamp are written beside the files, and no
+graph is touched.
+
 The package is written in the canonical profile: the same folder always gives the
 same bytes, those 3D Survey Collection writes. If the folder is stamped, the
 archive is born stamped as derived from it and appears in the chain of its
