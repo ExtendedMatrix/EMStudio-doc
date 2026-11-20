@@ -40,10 +40,16 @@ def load_menus(src):
     }
     names['sep'] = const_value(text, 'sep', names, calls)
     names['NOT_MAC_DESKTOP'] = const_value(text, 'NOT_MAC_DESKTOP', names, calls)
+    # MICRO-TIL003: a command no menu draws any more keeps its row with `only: NOWHERE`
+    if re.search(r'\bconst NOWHERE\b', text):
+        names['NOWHERE'] = const_value(text, 'NOWHERE', names, calls)
     return const_value(text, 'MENUS', names, calls)
 
 
 def on_surface(menu, row, surface):
+    if row['kind'] == 'opt':
+        # MICRO-TIL003: the box of a command; on the system's bar a check item under it
+        return True
     if row['kind'] == 'os':
         return surface == 'native'
     if menu['id'] == 'edit' and row['kind'] == 'cmd':
@@ -111,6 +117,9 @@ def menu_table(menu, en):
         name = rst_text(prefix + label_of(row, en))
         if kind == 'os':
             what = 'Drawn by the system.'
+        elif kind == 'opt':
+            # the box sits right under its command; its tooltip names it
+            what = rst_text(en[row['title']]) if row.get('title') else ''
         else:
             what = rst_text(en[row['title']]) if row.get('title') else ''
         if kind == 'sub':
@@ -164,14 +173,34 @@ def to_win(keys):
     return keys.replace('⌘', 'Ctrl+').replace('⇧', 'Shift+').replace('⌥', 'Alt+').replace('⌃', 'Ctrl+')
 
 
-def tools_table(page, en):
+def tools_table(page, en, menu=None):
+    """Tools: the rows of index.html, and the table's own rows (menu-table.ts `tools`)
+    drawn after its anchor, as menu-ui.ts does."""
     rows = []
+
+    def table_rows():
+        for row in (menu or {}).get('rows', []):
+            if row['kind'] != 'cmd' or not on_platform(row, 'web') and not any(
+                    on_platform(row, p) for p in PLATFORMS):
+                continue
+            mac, other = keys_for(row, 'mac'), keys_for(row, 'win')
+            rows.append([rst_text(en[row['label']]), rst_kbd(mac) if mac else '',
+                         rst_kbd(other) if other else '', where(menu, row),
+                         rst_text(en[row['title']]) if row.get('title') else ''])
+
+    anchor = (menu or {}).get('anchor')
+    placed = False
     for b in html_buttons(dropdown(page, 'dd-tools')):
         if b is None:
             continue
-        lab, tit, key, _ = b
+        lab, tit, key, bid = b
         rows.append([rst_text(en[lab]), rst_kbd(key) if key else '', rst_kbd(to_win(key)) if key else '',
                      'everywhere', rst_text(en[tit]) if tit else ''])
+        if anchor and bid == anchor:
+            table_rows()
+            placed = True
+    if menu and not placed:
+        table_rows()
     return list_table(['Command', 'macOS', 'Windows, Linux', 'Where', 'What it does'],
                       rows, [24, 9, 13, 18, 36])
 
@@ -213,7 +242,7 @@ def main():
     # the overview: which menus each surface draws
     bar = []
     for mid in ['app', 'file', 'edit', 'tools', 'window', 'help']:
-        if mid == 'tools':
+        if mid == 'tools' and mid not in menus:
             bar.append([en['toolbar.tools'], 'everywhere', ''])
             continue
         m = menus[mid]
@@ -231,7 +260,7 @@ def main():
         out.append(title(en[menus[mid]['label']]))
         out.append(menu_table(menus[mid], en) + '\n')
     out.append(title(en['toolbar.tools']))
-    out.append(tools_table(page, en) + '\n')
+    out.append(tools_table(page, en, menus.get('tools')) + '\n')
     out.append(title(en['toolbar.help']))
     out.append(menu_table(menus['help'], en) + '\n')
     out.append(title('EMStudio (macOS menu bar)'))
@@ -243,8 +272,8 @@ def main():
                f'one place is the section **{rst_text(en["who.sect.where"])}** of the chip\'s menu, '
                f'opened by the left label of the status bar '
                f'({rst_kbd(next(r for r in keymap_rows(src) if r[0] == "where")[1])}). '
-               'The buttons below stay in the page, hidden, and that menu uses them; '
-               'their labels and tooltips are these.\n\n')
+               'In a room that menu also uses the two gestures below, which stay in the '
+               'page, hidden; their labels and tooltips are these.\n\n')
     out.append(mode_table(page, en))
     write(a.out, ''.join(out))
 

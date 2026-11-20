@@ -61,7 +61,7 @@ The **What it does** column repeats the description that EMStudio shows when the
 pointer rests on the command. Three commands of **Help** have none, because their
 names say it:
 
-- **Workspaces…** opens the table of the six workspaces, with the question each
+- **Workspaces…** opens the table of the seven workspaces, with the question each
   answers and its windows (see :doc:`workspaces`);
 - **Shortcuts** opens the list of every key and gesture, with a search field
   (see :doc:`shortcuts`);
@@ -97,9 +97,11 @@ in…**, which opens the same room in the other editor. The node, your account o
 it and your rooms are in the other sections of the same menu, **Node and
 account** and **My space** (see :doc:`/how-to/rooms/sign-in`).
 
-The table at the end of this page, **Mode**, lists the buttons that the menu
-presses for these choices, with the names they carry in the code of the
-application (**Standalone**, **Sidecar (sync)**, **Join Room**). The menu shows
-the three choices above in their place.
+The same section says which EMStudio service answers: its address, its level
+and the version of s3Dgraphy, or that nobody answers at that address. The
+label at the left of the status bar says it too, in its tooltip.
+
+The table at the end of this page, **Mode**, lists the two gestures of a room
+that the menu uses and that stay hidden in the page.
 
 .. include:: _generated/menus.rst

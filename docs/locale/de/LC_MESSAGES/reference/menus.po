@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -83,8 +83,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"**Workspaces…** opens the table of the six workspaces, with the question "
-"each answers and its windows (see :doc:`workspaces`);"
+"**Workspaces…** opens the table of the seven workspaces, with the "
+"question each answers and its windows (see :doc:`workspaces`);"
 msgstr ""
 
 msgid ""
@@ -140,10 +140,15 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The table at the end of this page, **Mode**, lists the buttons that the "
-"menu presses for these choices, with the names they carry in the code of "
-"the application (**Standalone**, **Sidecar (sync)**, **Join Room**). The "
-"menu shows the three choices above in their place."
+"The same section says which EMStudio service answers: its address, its "
+"level and the version of s3Dgraphy, or that nobody answers at that "
+"address. The label at the left of the status bar says it too, in its "
+"tooltip."
+msgstr ""
+
+msgid ""
+"The table at the end of this page, **Mode**, lists the two gestures of a "
+"room that the menu uses and that stay hidden in the page."
 msgstr ""
 
 msgid "The menus at a glance"
@@ -228,35 +233,6 @@ msgid ""
 "you choose"
 msgstr ""
 
-msgid "Open project…"
-msgstr ""
-
-msgid "Opens a project's folder and the em.json in its EM/"
-msgstr ""
-
-msgid "Reorder by the standard…"
-msgstr ""
-
-msgid ""
-"Shows the plan for the open project's folder (the folders to make, the "
-"files to move) and asks"
-msgstr ""
-
-msgid "Close the project"
-msgstr ""
-
-msgid "Closes every file of the project: the Shelf goes with it"
-msgstr ""
-
-msgid "Open the project folder"
-msgstr ""
-
-msgid ""
-"Shows the folder of the active .em.json in the Finder / Explorer / file "
-"manager, the file selected where the system allows it (in a browser "
-"alone: the path, copied)"
-msgstr ""
-
 msgid "Open…"
 msgstr "Öffnen…"
 
@@ -269,37 +245,24 @@ msgstr ""
 msgid "Open an .em.json file"
 msgstr "Eine .em.json-Datei öffnen"
 
+msgid "Replace the open files"
+msgstr ""
+
+msgid ""
+"Ticked, Open… first closes the open files (asking for those with unsaved "
+"changes), then opens the one chosen"
+msgstr ""
+
+msgid "Open project…"
+msgstr ""
+
+msgid "Opens a project's folder and the em.json in its EM/"
+msgstr ""
+
 msgid "Open Recent ▸"
 msgstr ""
 
 msgid "The last files and rooms you opened. Filled when the sub-menu opens."
-msgstr ""
-
-msgid "Open in place of the open files…"
-msgstr ""
-
-msgid ""
-"Choose a file, then close the open ones (asking for those with unsaved "
-"changes) and open it"
-msgstr ""
-
-msgid "Close"
-msgstr "Schließen"
-
-msgid ":kbd:`⌘W`"
-msgstr ""
-
-msgid ":kbd:`Ctrl+W`"
-msgstr ""
-
-msgid ""
-"everywhere · macOS menu bar · the key on the desktop only (the browser "
-"keeps it)"
-msgstr ""
-
-msgid ""
-"Close the active document (asking to save it if needed) and go back to "
-"the start screen"
 msgstr ""
 
 msgid "Save"
@@ -346,18 +309,20 @@ msgid ""
 "Catalog; this is the stable thing it points at."
 msgstr ""
 
-msgid "Porta dentro…"
+msgid "Bring in…"
 msgstr ""
 
 msgid ""
-"Bring files into the graph as part of a document: what each is, the "
-"document, its date, the epoch it represents"
+"Bring in — files, a folder, or a folder read as DosCo: one window, the "
+"choice in it"
 msgstr ""
 
-msgid "Georeferencing…"
-msgstr "Georeferenzierung…"
+msgid "Integrate into this file…"
+msgstr ""
 
-msgid "The coordinate system of each graph of the file, and of its models"
+msgid ""
+"Merge another emj's graphs into the active graph's file (shared nodes "
+"merge by UUID — offline, no server)"
 msgstr ""
 
 msgid "Import ▸"
@@ -402,64 +367,16 @@ msgstr ""
 msgid "Export as RDF/CIDOC Turtle (.ttl) via the s3Dgraphy projection"
 msgstr "Als RDF/CIDOC-Turtle (.ttl) über die s3Dgraphy-Projektion exportieren"
 
-msgid "Print sheets…"
+msgid "Export ▸ Blender scene (.blend)…"
 msgstr ""
 
 msgid ""
-"Print the recording sheets of the graph: all, the selection, or those the"
-" criteria keep (type, epoch, activity, state, numbers, words)"
+"A working .blend for Blender from what there is on the disk or in the "
+"room, with no .blend to start from: a working profile, the containers or "
+"epochs; each object carries the graph's tags"
 msgstr ""
 
-msgid "Integrate into this file…"
-msgstr ""
-
-msgid ""
-"Merge another emj's graphs into the active graph's file (shared nodes "
-"merge by UUID — offline, no server)"
-msgstr ""
-
-msgid "Find missing files…"
-msgstr ""
-
-msgid ""
-"Look in a folder you choose for the files this document cannot find — by "
-"their sha256, else by name and size — and rewrite their paths relative to"
-" the em.json. One undo."
-msgstr ""
-
-msgid "Collect resources…"
-msgstr ""
-
-msgid ""
-"Copy into the study's folder the files it names outside it (absolute "
-"paths, onedrive://, a .blend elsewhere) — only what each needs, every "
-"copy checked by sha256 — and rewrite their paths relative to the em.json."
-" Never a move; one undo."
-msgstr ""
-
-msgid "Clean the file…"
-msgstr ""
-
-msgid ""
-"Take out of the em.json what is only a way of looking at it (the colour "
-"schemes), after showing what goes. The graphs do not change. One undo."
-msgstr ""
-
-msgid "Create a room…"
-msgstr ""
-
-msgid "A room on this node, yours, empty. Whoever creates it is its owner."
-msgstr ""
-
-msgid "Bring this into a new room…"
-msgstr ""
-
-msgid ""
-"Put the graph you have open on a table on this node. From that moment the"
-" live copy is the node's."
-msgstr ""
-
-msgid "Consolidate for…"
+msgid "Export ▸ Consolidate for…"
 msgstr ""
 
 msgid ""
@@ -469,13 +386,117 @@ msgid ""
 "action of the queue runs."
 msgstr ""
 
-msgid "Compose a .blend from the graph…"
+msgid "Export ▸ Print sheets…"
 msgstr ""
 
 msgid ""
-"A working .blend for Blender from what there is on the disk or in the "
-"room, with no .blend to start from: a working profile, the containers or "
-"epochs; each object carries the graph's tags"
+"Print the recording sheets of the graph: all, the selection, or those the"
+" criteria keep (type, epoch, activity, state, numbers, words)"
+msgstr ""
+
+msgid "External data ▸"
+msgstr ""
+
+msgid ""
+"The files the study points to: find the missing ones, collect them into "
+"the project, open its folder."
+msgstr ""
+
+msgid "External data ▸ Find missing files…"
+msgstr ""
+
+msgid ""
+"Look in a folder you choose for the files this document cannot find — by "
+"their sha256, else by name and size — and rewrite their paths relative to"
+" the em.json. One undo."
+msgstr ""
+
+msgid "External data ▸ Collect resources…"
+msgstr ""
+
+msgid ""
+"Copy into the study's folder the files it names outside it (absolute "
+"paths, onedrive://, a .blend elsewhere) — only what each needs, every "
+"copy checked by sha256 — and rewrite their paths relative to the em.json."
+" Never a move; one undo."
+msgstr ""
+
+msgid "External data ▸ Open the project folder"
+msgstr ""
+
+msgid ""
+"Opens the root of the active .em.json's project (the folder that holds "
+"EM/) in the Finder / Explorer / file manager (in a browser alone: the "
+"path, copied)"
+msgstr ""
+
+msgid "Clean up ▸"
+msgstr ""
+
+msgid ""
+"Tidy the file and the project: the presentation section out of the file, "
+"the folders by the standard."
+msgstr ""
+
+msgid "Clean up ▸ Clean the file…"
+msgstr ""
+
+msgid ""
+"Take out of the em.json what is only a way of looking at it (the colour "
+"schemes), after showing what goes. The graphs do not change. One undo."
+msgstr ""
+
+msgid "Clean up ▸ Reorder by the standard…"
+msgstr ""
+
+msgid ""
+"Shows the plan for the open project's folder (the folders to make, the "
+"files to move) and asks"
+msgstr ""
+
+msgid "Room ▸"
+msgstr ""
+
+msgid "Work together on a node: create a room, or bring this file into a new one."
+msgstr ""
+
+msgid "Room ▸ Create a room…"
+msgstr ""
+
+msgid "A room on this node, yours, empty. Whoever creates it is its owner."
+msgstr ""
+
+msgid "Room ▸ Bring this into a new room…"
+msgstr ""
+
+msgid ""
+"Put the graph you have open on a table on this node. From that moment the"
+" live copy is the node's."
+msgstr ""
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid ":kbd:`⌘W`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ""
+
+msgid ""
+"everywhere · macOS menu bar · the key on the desktop only (the browser "
+"keeps it)"
+msgstr ""
+
+msgid ""
+"Close the active document (asking to save it if needed) and go back to "
+"the start screen"
+msgstr ""
+
+msgid "Close the project"
+msgstr ""
+
+msgid "Closes every file of the project: the Shelf goes with it"
 msgstr ""
 
 msgid "Quit EMStudio"
@@ -577,15 +598,19 @@ msgstr ""
 "Die Epochen auf einer Zeitachse, die Überschneidungen mit ihrem Delta und"
 " ihren Abhilfen"
 
-msgid "Resources"
-msgstr "Ressourcen"
+msgid "Georeferencing…"
+msgstr "Georeferenzierung…"
+
+msgid "The coordinate system of each graph of the file, and of its models"
+msgstr ""
+
+msgid "Read as DosCo…"
+msgstr ""
 
 msgid ""
-"Resources: read a DosCo folder against the active graph's documents; the "
-"graph's documents and resources"
+"Bring in a DosCo folder: each file with an EM id (D.12…) becomes the "
+"document of that id — its date, its licence, its role asked in one block"
 msgstr ""
-"Ressourcen: die gemeinsame Ressourcenebene (Dokumente · RM · DTC · "
-"verwaiste Dateien) über die Bridge"
 
 msgid "Workspaces…"
 msgstr "Arbeitsbereiche…"
@@ -595,6 +620,9 @@ msgstr "Tastenkürzel"
 
 msgid "EM legend"
 msgstr "EM-Legende"
+
+msgid "Python API reference"
+msgstr "Python-API-Referenz"
 
 msgid "About EMStudio"
 msgstr ""
@@ -647,35 +675,15 @@ msgstr ""
 msgid ""
 "The mode, the node and the room are no longer a menu of the top bar: "
 "their one place is the section **Where you work** of the chip's menu, "
-"opened by the left label of the status bar (:kbd:`⇧⌘L`). The buttons "
-"below stay in the page, hidden, and that menu uses them; their labels and"
-" tooltips are these."
+"opened by the left label of the status bar (:kbd:`⇧⌘L`). In a room that "
+"menu also uses the two gestures below, which stay in the page, hidden; "
+"their labels and tooltips are these."
 msgstr ""
 
 msgid "Button"
 msgstr ""
 
 msgid "When"
-msgstr ""
-
-msgid "Standalone"
-msgstr ""
-
-msgid "Standalone: editing a local .em.json"
-msgstr "Eigenständig: eine lokale .em.json bearbeiten"
-
-msgid "Sidecar (sync)"
-msgstr ""
-
-msgid "Sidecar: live-synced to a host (Blender/EMtools)"
-msgstr "Sidecar: live mit einem Host synchronisiert (Blender/EMtools)"
-
-msgid "Join Room"
-msgstr ""
-
-msgid ""
-"In a room on a StratiGraph node: the graph lives in the room, shared with"
-" its participants."
 msgstr ""
 
 msgid "Open this room in…"
@@ -699,4 +707,125 @@ msgid ""
 "place. EMStudio used to draw its own; it showed people but not teams, so "
 "it was retired."
 msgstr ""
+
+#~ msgid "Reorder by the standard…"
+#~ msgstr ""
+
+#~ msgid "Open the project folder"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Shows the folder of the active "
+#~ ".em.json in the Finder / Explorer "
+#~ "/ file manager, the file selected "
+#~ "where the system allows it (in a"
+#~ " browser alone: the path, copied)"
+#~ msgstr ""
+
+#~ msgid "Open in place of the open files…"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose a file, then close the open"
+#~ " ones (asking for those with unsaved"
+#~ " changes) and open it"
+#~ msgstr ""
+
+#~ msgid "Porta dentro…"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bring files into the graph as part"
+#~ " of a document: what each is, "
+#~ "the document, its date, the epoch "
+#~ "it represents"
+#~ msgstr ""
+
+#~ msgid "Print sheets…"
+#~ msgstr ""
+
+#~ msgid "Find missing files…"
+#~ msgstr ""
+
+#~ msgid "Collect resources…"
+#~ msgstr ""
+
+#~ msgid "Clean the file…"
+#~ msgstr ""
+
+#~ msgid "Create a room…"
+#~ msgstr ""
+
+#~ msgid "Bring this into a new room…"
+#~ msgstr ""
+
+#~ msgid "Consolidate for…"
+#~ msgstr ""
+
+#~ msgid "Compose a .blend from the graph…"
+#~ msgstr ""
+
+#~ msgid "Resources"
+#~ msgstr "Ressourcen"
+
+#~ msgid ""
+#~ "Resources: read a DosCo folder against"
+#~ " the active graph's documents; the "
+#~ "graph's documents and resources"
+#~ msgstr ""
+#~ "Ressourcen: die gemeinsame Ressourcenebene "
+#~ "(Dokumente · RM · DTC · verwaiste"
+#~ " Dateien) über die Bridge"
+
+#~ msgid ""
+#~ "The mode, the node and the room"
+#~ " are no longer a menu of the"
+#~ " top bar: their one place is "
+#~ "the section **Where you work** of "
+#~ "the chip's menu, opened by the "
+#~ "left label of the status bar "
+#~ "(:kbd:`⇧⌘L`). The buttons below stay in"
+#~ " the page, hidden, and that menu "
+#~ "uses them; their labels and tooltips "
+#~ "are these."
+#~ msgstr ""
+
+#~ msgid "Standalone"
+#~ msgstr ""
+
+#~ msgid "Standalone: editing a local .em.json"
+#~ msgstr "Eigenständig: eine lokale .em.json bearbeiten"
+
+#~ msgid "Sidecar (sync)"
+#~ msgstr ""
+
+#~ msgid "Sidecar: live-synced to a host (Blender/EMtools)"
+#~ msgstr "Sidecar: live mit einem Host synchronisiert (Blender/EMtools)"
+
+#~ msgid "Join Room"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In a room on a StratiGraph node:"
+#~ " the graph lives in the room, "
+#~ "shared with its participants."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Workspaces…** opens the table of the"
+#~ " six workspaces, with the question "
+#~ "each answers and its windows (see "
+#~ ":doc:`workspaces`);"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The table at the end of this "
+#~ "page, **Mode**, lists the buttons that"
+#~ " the menu presses for these choices,"
+#~ " with the names they carry in "
+#~ "the code of the application "
+#~ "(**Standalone**, **Sidecar (sync)**, **Join "
+#~ "Room**). The menu shows the three "
+#~ "choices above in their place."
+#~ msgstr ""
 

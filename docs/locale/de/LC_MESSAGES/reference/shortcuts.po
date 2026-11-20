@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -133,7 +133,7 @@ msgstr ""
 msgid ":kbd:`Ctrl+Shift+S`"
 msgstr ""
 
-msgid "Save as…"
+msgid "Save As…"
 msgstr "Speichern unter…"
 
 msgid ":kbd:`⌘,`"
@@ -151,7 +151,7 @@ msgstr ""
 msgid ":kbd:`Ctrl+Shift+L`"
 msgstr ""
 
-msgid "Where you are"
+msgid "The chip's menu: author, node, where you work"
 msgstr ""
 
 msgid ":kbd:`⌘Z`"
@@ -366,7 +366,7 @@ msgstr ""
 msgid "Click"
 msgstr ""
 
-msgid "Select the proxy under the cursor (a sketch too)"
+msgid "Select the object under the cursor: a proxy, a model, a sketched shape"
 msgstr ""
 
 msgid "Alt + click (⌘-click, Ctrl-click on Windows/Linux, too)"
@@ -522,7 +522,9 @@ msgstr ""
 msgid ":kbd:`G` · :kbd:`R` · :kbd:`S`"
 msgstr ""
 
-msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
+msgid ""
+"Move, rotate, scale the selection (proxies, models, sketched shapes; not "
+"a tileset, nor what is locked): then X Y Z, a number, Enter or Esc"
 msgstr ""
 
 msgid ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
@@ -759,18 +761,6 @@ msgstr ""
 msgid "File ▸ Open…"
 msgstr "Datei ▸ Öffnen…"
 
-msgid ":kbd:`⌘W`"
-msgstr ""
-
-msgid ":kbd:`Ctrl+W`"
-msgstr ""
-
-msgid "File ▸ Close"
-msgstr "Datei ▸ Schließen"
-
-msgid "*desktop only*: macOS, Windows, Linux (the browser keeps the key)"
-msgstr ""
-
 msgid "File ▸ Save"
 msgstr "Datei ▸ Speichern"
 
@@ -784,6 +774,18 @@ msgid ":kbd:`Ctrl+Alt+S`"
 msgstr ""
 
 msgid "File ▸ Save all"
+msgstr ""
+
+msgid ":kbd:`⌘W`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+W`"
+msgstr ""
+
+msgid "File ▸ Close"
+msgstr "Datei ▸ Schließen"
+
+msgid "*desktop only*: macOS, Windows, Linux (the browser keeps the key)"
 msgstr ""
 
 msgid ":kbd:`⌘Q`"
@@ -803,4 +805,13 @@ msgstr ""
 
 msgid "web, Windows, Linux"
 msgstr ""
+
+#~ msgid "Where you are"
+#~ msgstr ""
+
+#~ msgid "Select the proxy under the cursor (a sketch too)"
+#~ msgstr ""
+
+#~ msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
+#~ msgstr ""
 

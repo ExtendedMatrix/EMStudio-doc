@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: it\n"
@@ -169,7 +169,7 @@ msgstr ":kbd:`⇧⌘S`"
 msgid ":kbd:`Ctrl+Shift+S`"
 msgstr ":kbd:`Ctrl+Shift+S`"
 
-msgid "Save as…"
+msgid "Save As…"
 msgstr "Salva con nome…"
 
 msgid ":kbd:`⌘,`"
@@ -187,8 +187,8 @@ msgstr ":kbd:`⇧⌘L`"
 msgid ":kbd:`Ctrl+Shift+L`"
 msgstr ":kbd:`Ctrl+Shift+L`"
 
-msgid "Where you are"
-msgstr "Dove sei"
+msgid "The chip's menu: author, node, where you work"
+msgstr "Il menu del chip: autore, nodo, dove lavori"
 
 msgid ":kbd:`⌘Z`"
 msgstr ":kbd:`⌘Z`"
@@ -293,13 +293,13 @@ msgid ":kbd:`+` · :kbd:`=`"
 msgstr ":kbd:`+` · :kbd:`=`"
 
 msgid "Zoom in"
-msgstr "Ingrandisci"
+msgstr "Zoom avanti"
 
 msgid ":kbd:`−`"
 msgstr ":kbd:`−`"
 
 msgid "Zoom out"
-msgstr "Riduci"
+msgstr "Zoom indietro"
 
 msgid "Space + drag"
 msgstr "Spazio + trascina"
@@ -404,8 +404,10 @@ msgstr "Nello Spazio (il 3D a fuoco)"
 msgid "Click"
 msgstr "Clic"
 
-msgid "Select the proxy under the cursor (a sketch too)"
-msgstr "Seleziona il proxy sotto il cursore (anche uno schizzo)"
+msgid "Select the object under the cursor: a proxy, a model, a sketched shape"
+msgstr ""
+"Seleziona l'oggetto sotto il cursore: un proxy, un modello, una forma "
+"abbozzata"
 
 msgid "Alt + click (⌘-click, Ctrl-click on Windows/Linux, too)"
 msgstr "Alt + clic (anche ⌘-clic, Ctrl-clic su Windows/Linux)"
@@ -572,8 +574,12 @@ msgstr "Aggiungi una forma base al cursore 3D"
 msgid ":kbd:`G` · :kbd:`R` · :kbd:`S`"
 msgstr ":kbd:`G` · :kbd:`R` · :kbd:`S`"
 
-msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
-msgstr "Sposta, ruota, scala un abbozzo: poi X Y Z, un numero, Invio o Esc"
+msgid ""
+"Move, rotate, scale the selection (proxies, models, sketched shapes; not "
+"a tileset, nor what is locked): then X Y Z, a number, Enter or Esc"
+msgstr ""
+"Sposta, ruota, scala la selezione (proxy, modelli, forme abbozzate; non "
+"un tileset, né ciò che è bloccato): poi X Y Z, un numero, Invio o Esc"
 
 msgid ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
 msgstr ":kbd:`X Y Z` · :kbd:`⇧X ⇧Y ⇧Z`"
@@ -815,6 +821,21 @@ msgstr ":kbd:`Ctrl+O`"
 msgid "File ▸ Open…"
 msgstr "File ▸ Apri…"
 
+msgid "File ▸ Save"
+msgstr "File ▸ Salva"
+
+msgid "File ▸ Save As…"
+msgstr "File ▸ Salva con nome…"
+
+msgid ":kbd:`⌥⌘S`"
+msgstr ":kbd:`⌥⌘S`"
+
+msgid ":kbd:`Ctrl+Alt+S`"
+msgstr ":kbd:`Ctrl+Alt+S`"
+
+msgid "File ▸ Save all"
+msgstr "File ▸ Salva tutto"
+
 msgid ":kbd:`⌘W`"
 msgstr ":kbd:`⌘W`"
 
@@ -826,21 +847,6 @@ msgstr "File ▸ Chiudi"
 
 msgid "*desktop only*: macOS, Windows, Linux (the browser keeps the key)"
 msgstr "*solo desktop*: macOS, Windows, Linux (il browser tiene il tasto per sé)"
-
-msgid "File ▸ Save"
-msgstr "File ▸ Salva"
-
-msgid "File ▸ Save As…"
-msgstr "File ▸ Salva come…"
-
-msgid ":kbd:`⌥⌘S`"
-msgstr ":kbd:`⌥⌘S`"
-
-msgid ":kbd:`Ctrl+Alt+S`"
-msgstr ":kbd:`Ctrl+Alt+S`"
-
-msgid "File ▸ Save all"
-msgstr "File ▸ Salva tutto"
 
 msgid ":kbd:`⌘Q`"
 msgstr ":kbd:`⌘Q`"
@@ -859,4 +865,10 @@ msgstr "Aiuto ▸ Impostazioni…"
 
 msgid "web, Windows, Linux"
 msgstr "web, Windows, Linux"
+
+#~ msgid "Where you are"
+#~ msgstr "Dove sei"
+
+#~ msgid "Select the proxy under the cursor (a sketch too)"
+#~ msgstr "Seleziona il proxy sotto il cursore (anche uno schizzo)"
 
