@@ -195,6 +195,15 @@ msgstr ""
 msgid ":doc:`em-api`: the essential ``em`` API for a plugin."
 msgstr ":doc:`em-api`: l'API ``em`` essenziale per un plugin."
 
+msgid ""
+"`EMStudio Python API <https://docs.extendedmatrix.org/projects/emstudio-"
+"python-api/en/latest/>`__: the complete reference of ``em``, generated "
+"from the code, on its own site."
+msgstr ""
+"`EMStudio Python API <https://docs.extendedmatrix.org/projects/emstudio-"
+"python-api/en/latest/>`__: il riferimento completo di ``em``, generato "
+"dal codice, in un sito suo."
+
 msgid ":doc:`validator`: every sentence of the validator, with its code."
 msgstr ":doc:`validator`: ogni frase del validatore, con il suo codice."
 

@@ -26,7 +26,8 @@ Before you start
 - EMStudio for the desktop: the code of the plugins runs in its local
   service, and the web version does not load the plugins of a computer.
 - A few lines of Python are enough to follow; the reference of the library
-  is :doc:`em-api`.
+  is :doc:`em-api`, and every name of ``em`` is in the `EMStudio Python API
+  <https://docs.extendedmatrix.org/projects/emstudio-python-api/en/latest/>`__.
 
 1 · Data and code in two folders
 --------------------------------

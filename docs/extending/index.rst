@@ -67,6 +67,8 @@ How the section is organised
   ``[data]``, ``[code]`` and ``[requires]``, and the manifest ``profile.json``.
 - :doc:`slots`: where a command appears, what it receives and what it returns.
 - :doc:`em-api`: the essential ``em`` API for a plugin.
+- `EMStudio Python API <https://docs.extendedmatrix.org/projects/emstudio-python-api/en/latest/>`__: the complete
+  reference of ``em``, generated from the code, on its own site.
 - :doc:`validator`: every sentence of the validator, with its code.
 
 **Explanation** — why it is built this way:

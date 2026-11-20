@@ -17,6 +17,13 @@ line. ``em.help()`` prints what is there; this page lists what a plugin needs
 most. The version of the API is ``em.API_VERSION`` (``1.2.0`` in EMStudio
 1.6), which ``em_api_min`` in the envelope is read against.
 
+.. seealso::
+
+   The complete reference of ``em``, generated from the code — every module,
+   class and function, the types of the graph, the slots and the commands of
+   EMStudio — is on its own site: `EMStudio Python API
+   <https://docs.extendedmatrix.org/projects/emstudio-python-api/en/latest/>`__.
+
 The graph
 ---------
 

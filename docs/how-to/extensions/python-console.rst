@@ -48,6 +48,11 @@ Read the study
 empty line, or press :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run at once.
 :kbd:`Shift+Enter` starts a new line. :kbd:`Tab` completes a name.
 
+The head of the window also has the link **Python API reference** (the same
+entry is in the ``Help`` menu): it opens the complete reference of ``em``, the
+`EMStudio Python API <https://docs.extendedmatrix.org/projects/emstudio-python-api/en/latest/>`__, in the browser on
+the desktop and in a new tab on the web.
+
 Write into the study
 --------------------
 
