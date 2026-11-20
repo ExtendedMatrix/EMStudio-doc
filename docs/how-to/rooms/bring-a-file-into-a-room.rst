@@ -128,3 +128,5 @@ See also
 - :doc:`/how-to/sources/declare-provenance`, for stamps and the transformation
   chain of the files on disk.
 - :doc:`/explanation/open-enter-create`, on where the copy you edit lives.
+- The `REST door of a room <https://docs.stratigraph-eccch.eu/projects/node/en/latest/REST-API.html>`__, in the StratiGraph Server manual, for
+  whoever connects another tool to a room.

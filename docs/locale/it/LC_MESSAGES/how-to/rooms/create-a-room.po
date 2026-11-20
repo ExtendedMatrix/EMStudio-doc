@@ -163,3 +163,13 @@ msgstr ""
 ":doc:`/explanation/open-enter-create`, sui tre verbi: aprire un file, "
 "entrare in una stanza, creare una stanza."
 
+msgid ""
+"The `REST door of a room <https://docs.stratigraph-"
+"eccch.eu/projects/node/en/latest/REST-API.html>`__, in the StratiGraph "
+"Server manual, for whoever connects another tool to a room."
+msgstr ""
+"La `porta REST di una stanza <https://docs.stratigraph-"
+"eccch.eu/projects/node/en/latest/REST-API.html>`__, nel manuale di "
+"StratiGraph Server (in inglese), per chi collega un altro strumento a una"
+" stanza."
+

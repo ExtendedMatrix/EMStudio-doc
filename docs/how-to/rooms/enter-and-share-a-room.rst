@@ -126,3 +126,5 @@ See also
 - :doc:`open-in-the-other-editor`, to open the same room elsewhere.
 - :doc:`/reference/menus`, for the panel of the status bar.
 - :doc:`/explanation/open-enter-create`, on the three verbs.
+- The `REST door of a room <https://docs.stratigraph-eccch.eu/projects/node/en/latest/REST-API.html>`__, in the StratiGraph Server manual, for
+  whoever connects another tool to a room.

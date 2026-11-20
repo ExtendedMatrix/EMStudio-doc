@@ -67,3 +67,5 @@ See also
 - :doc:`sign-in`, for the author, the node and the sign-in.
 - :doc:`/explanation/open-enter-create`, on the three verbs: open a file, enter
   a room, create a room.
+- The `REST door of a room <https://docs.stratigraph-eccch.eu/projects/node/en/latest/REST-API.html>`__, in the StratiGraph Server manual, for
+  whoever connects another tool to a room.

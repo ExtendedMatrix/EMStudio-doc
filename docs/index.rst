@@ -49,6 +49,7 @@ EMStudio has been developed by E. Demetrescu at CNR-ISPC (Rome, former CNR-ITABC
    reference/index
    explanation/index
    extending/index
+   acknowledgements
 
 New to EMStudio?
 ----------------

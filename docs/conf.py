@@ -68,7 +68,19 @@ rtl = language in RTL_LANGUAGES
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_assets']
-html_context = {'rtl': rtl}
+# The foot of every page (_templates/footer.html, from stratigraph-brand): the
+# rights, and above them the page of the funding and the reference of
+# the Python API (`import em`), which is a site of its own, in English.
+PYTHON_API_URL = 'https://docs.extendedmatrix.org/projects/emstudio-python-api/en/latest/'
+_FOOT = {
+    'en': ('Funding', 'EMStudio Python API'),
+    'it': ('Finanziamenti', 'API Python di EMStudio'),
+}
+_foot = _FOOT.get(language, _FOOT['en'])
+html_context = {
+    'rtl': rtl,
+    'sg_footer_links': [(_foot[0], 'acknowledgements'), (_foot[1], PYTHON_API_URL)],
+}
 
 # Il marchio, vendorizzato da `stratigraph-brand` con il suo
 # `docs-theme/sync-brand-docs.sh`, come lo vendorizzano le applicazioni: un

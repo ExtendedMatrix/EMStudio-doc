@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2026, Consiglio Nazionale delle Ricerche (CNR) — Istituto di
+# Scienze del Patrimonio Culturale
+# This file is distributed under the same license as the EMStudio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: EMStudio 1.6.0-dev.136\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-20 17:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+msgid "Funding"
+msgstr "Finanziamenti"
+
+msgid "EMStudio has been developed with the support of the following projects."
+msgstr "EMStudio è stato sviluppato con il sostegno dei progetti seguenti."
+
+msgid ""
+"`StratiGraph — Knowledge Graphs for Stratigraphy <https://stratigraph-"
+"eccch.eu>`__ · Horizon Europe · grant agreement `101232855 "
+"<https://cordis.europa.eu/project/id/101232855>`__"
+msgstr ""
+"`StratiGraph — Knowledge Graphs for Stratigraphy <https://stratigraph-"
+"eccch.eu>`__ · Horizon Europe · grant agreement n. `101232855 "
+"<https://cordis.europa.eu/project/id/101232855>`__"
+
+msgid "Funded by the European Union"
+msgstr "Finanziato dall'Unione europea"
+
+msgid "StratiGraph"
+msgstr "StratiGraph"
+
+msgid ""
+"Funded by the European Union. Views and opinions expressed are however "
+"those of the author(s) only and do not necessarily reflect those of the "
+"European Union or the European Research Executive Agency (REA). Neither "
+"the European Union nor the granting authority can be held responsible for"
+" them."
+msgstr ""
+"Finanziato dall'Unione europea. I punti di vista e le opinioni espressi "
+"sono tuttavia esclusivamente quelli degli autori e non riflettono "
+"necessariamente quelli dell'Unione europea o dell'Agenzia esecutiva "
+"europea per la ricerca (REA). Né l'Unione europea né l'autorità che "
+"concede il finanziamento possono esserne ritenute responsabili."
