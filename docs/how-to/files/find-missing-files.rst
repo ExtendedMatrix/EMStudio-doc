@@ -29,7 +29,7 @@ computer.
 Find missing files
 ------------------
 
-#. Choose ``File ▸ Find missing files…``.
+#. Choose ``File ▸ External data ▸ Find missing files…``.
 #. Give the folder to look in.
 
    .. tab-set::
@@ -104,7 +104,7 @@ A study may name files outside its folder: a model on another disk, a
 ``.blend`` kept elsewhere, an ``onedrive://`` path. To make the folder of the
 study complete, so that it can be copied, archived or sent as it is:
 
-#. Choose ``File ▸ Collect resources…``. The window **Collect resources** names
+#. Choose ``File ▸ External data ▸ Collect resources…``. The window **Collect resources** names
    the folder of the study and lists the files that lie outside it, in groups:
    **In OneDrive (onedrive://)**, **Elsewhere on this computer**, **A .blend
    elsewhere** and **On a network share (smb://)**.

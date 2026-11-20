@@ -106,7 +106,7 @@ These folders are created when they are first needed.
    * - The optional tools downloaded on request (for example for tilesets and
        optimised models)
      - ``~/.config/emstudio/addons``
-   * - The work of ``File ▸ Bring this into a new room…``
+   * - The work of ``File ▸ Room ▸ Bring this into a new room…``
      - ``~/.config/emstudio/room-import``
    * - **Thumbnails** of pictures and PDF pages, shared with EM Tools for Blender
      - ``~/.em_cache/thumbs``

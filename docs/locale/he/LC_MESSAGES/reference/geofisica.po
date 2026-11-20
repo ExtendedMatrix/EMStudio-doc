@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 19:19+0100\n"
+"POT-Creation-Date: 2026-11-20 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -156,13 +156,13 @@ msgstr ""
 msgid "What"
 msgstr ""
 
-msgid "``File ▸ Porta dentro una cartella…``"
+msgid "``File ▸ Bring in…``, **A folder…**"
 msgstr ""
 
 msgid "**Geophysical stack**: reads a folder and opens the panel with it"
 msgstr ""
 
-msgid "``File ▸ Porta dentro…``"
+msgid "``File ▸ Bring in…``, **Files…**"
 msgstr ""
 
 msgid ""
@@ -215,7 +215,7 @@ msgstr ""
 msgid "**Folder**"
 msgstr ""
 
-msgid "the stack's folder; ``File ▸ Porta dentro una cartella…`` writes it here"
+msgid "the stack's folder; ``File ▸ Bring in…``, **A folder…**, writes it here"
 msgstr ""
 
 msgid "**What it is**"
@@ -523,7 +523,7 @@ msgstr ""
 msgid "yes"
 msgstr ""
 
-msgid "the reader of *Porta dentro*: a folder, or a file of a stack"
+msgid "the reader of **Bring in…**: a folder, or a file of a stack"
 msgstr ""
 
 msgid "``geofisica.describe``"
@@ -595,5 +595,19 @@ msgstr ""
 #~ " **linear anomaly**, **areal anomaly**, "
 #~ "**diffraction hyperbola**, **high-resistivity "
 #~ "zone**, **low-resistivity zone**."
+#~ msgstr ""
+
+#~ msgid "``File ▸ Porta dentro una cartella…``"
+#~ msgstr ""
+
+#~ msgid "``File ▸ Porta dentro…``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the stack's folder; ``File ▸ Porta "
+#~ "dentro una cartella…`` writes it here"
+#~ msgstr ""
+
+#~ msgid "the reader of *Porta dentro*: a folder, or a file of a stack"
 #~ msgstr ""
 

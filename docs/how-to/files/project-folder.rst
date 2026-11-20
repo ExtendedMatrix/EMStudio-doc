@@ -91,7 +91,7 @@ Reorder a folder by the standard
 An existing folder, filled before the standard tree existed, can be put in order.
 
 #. Open the study of the project.
-#. Choose ``File ▸ Reorder by the standard…``. The dialog **Reorder … by the EM
+#. Choose ``File ▸ Clean up ▸ Reorder by the standard…``. The dialog **Reorder … by the EM
    standard** lists, line by line, the folders to make and the files to move.
    Nothing is overwritten and nothing is deleted.
 #. A ``.tif`` file can be a georeferenced layer or a scanned document. When
@@ -107,11 +107,14 @@ already in the standard tree has nothing to move, and a message says so.
 Show the folder of the study
 ----------------------------
 
-Choose ``File ▸ Open the project folder``, or click the name of the file in the
-message of the status bar. The folder of the active ``.em.json`` opens in the
-Finder, in File Explorer or in the file manager, with the file selected where the
-system allows it. Where no desktop can open a folder, EMStudio copies the path
-of the file instead and says where it is.
+Choose ``File ▸ External data ▸ Open the project folder``. The root of the
+active ``.em.json``'s project, the folder that holds ``EM/``, opens in the
+Finder, in File Explorer or in the file manager. Where no desktop can open a
+folder, EMStudio copies the path instead and says where it is.
+
+To see the file itself, click its name in the message of the status bar: the
+folder of the ``.em.json`` opens, with the file selected where the system allows
+it.
 
 Close the project
 -----------------

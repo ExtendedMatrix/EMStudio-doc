@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Clean"
 msgstr ""
 
-msgid "Choose ``File ▸ Clean the file…``."
+msgid "Choose ``File ▸ Clean up ▸ Clean the file…``."
 msgstr ""
 
 msgid ""
@@ -120,4 +120,7 @@ msgstr ""
 
 msgid ":doc:`pin-a-version`, the version of the study."
 msgstr ""
+
+#~ msgid "Choose ``File ▸ Clean the file…``."
+#~ msgstr ""
 

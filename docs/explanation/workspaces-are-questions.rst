@@ -5,8 +5,8 @@ Workspaces are questions
 
 *Why the bar across the top lists questions about the study rather than steps of a procedure.*
 
-The six names across the top of EMStudio (**Stratigraphy**, **Sources**,
-**Archive**, **Narrative**, **Space**, **Sheets**) are not the stages of a
+The seven names across the top of EMStudio (**Stratigraphy**, **Sources**,
+**Archive**, **Narrative**, **Space**, **Sheets**, **Scripting**) are not the stages of a
 procedure to follow in order. Each one is a **workspace**: an arrangement of
 windows made to answer one question about the study.
 
@@ -28,6 +28,8 @@ windows made to answer one question about the study.
      - Where is it, and what shape does it have in each epoch?
    * - **Sheets**
      - What does the recording sheet say of this unit?
+   * - **Scripting**
+     - What can a script do with this graph?
 
 The question is written in the application too: hold the pointer on the name of
 a workspace and it appears.
@@ -56,14 +58,14 @@ in the Inspector, in this workspace and in the others. Moving from **Space** to
 **Sheets** with SU001 selected brings you to the recording sheet of SU001.
 
 The same window type can serve several questions. A **Graph** window in
-**Matrix** mode appears in five of the six workspaces, because the sequence is
+**Matrix** mode appears in six of the seven workspaces, because the sequence is
 the backbone of every question; in **Archive** the Graph is fixed on the
 **Transformation chain (DTC)**, because there the question is about files.
 
 Arrangements are yours
 ----------------------
 
-The six arrangements are a starting point. Any window can become another type,
+The seven arrangements are a starting point. Any window can become another type,
 any area can be divided or joined, and a workspace keeps the shape you give it.
 A changed workspace shows its name in italics with a small ↺, which puts it back
 as it came. An arrangement you use often can become a workspace of your own,
@@ -74,5 +76,5 @@ kept on the computer (in the browser's storage on the web), apart from the
 ``em.json``. Two people can read the same study, each in the
 arrangement that suits their own questions.
 
-The window types, their modes and the six starting arrangements are described
+The window types, their modes and the seven starting arrangements are described
 in :doc:`/reference/windows` and :doc:`/reference/workspaces`.

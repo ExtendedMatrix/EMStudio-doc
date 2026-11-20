@@ -111,7 +111,7 @@ named after the workbook. The **Log** sums up what the table produced and lists
 its warnings. The data drafted by AI stay among the warnings of the graph until
 a person verifies them, so the review continues inside EMStudio.
 
-Save the graph with ``File ▸ Save as…`` to give it its em.json. The source folder
+Save the graph with ``File ▸ Save As…`` to give it its em.json. The source folder
 and the table stay where they are, and you can run StratiMiner again on a
 corrected table.
 

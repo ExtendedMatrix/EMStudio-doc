@@ -23,7 +23,7 @@ Before you start
 Open the window
 ---------------
 
-Choose ``File ▸ Print sheets…``, or press **Print A4…** in the head of the
+Choose ``File ▸ Export ▸ Print sheets…``, or press **Print A4…** in the head of the
 **Sheet** window. The window **Print sheets** opens, with the name and version
 of the definition beside its title.
 

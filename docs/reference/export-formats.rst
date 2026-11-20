@@ -83,7 +83,7 @@ Other files EMStudio writes
 
 Some windows write files of their own, each where it belongs:
 
-* **Recording sheets**: ``File ▸ Print sheets…`` prints the recording sheets of
+* **Recording sheets**: ``File ▸ Export ▸ Print sheets…`` prints the recording sheets of
   the graph, all of them, the selection, or those that chosen criteria keep. On
   the desktop the PDF comes from the system's print dialog (**Print…**, then
   **Save as PDF**). On the web, EMStudio's bridge can also write the PDF

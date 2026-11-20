@@ -37,12 +37,12 @@ Bring a model into an epoch
    shows a menu instead of the buttons, with ← and → for the previous and the
    next epoch.
 #. Press **+** in the bar, or drag the file from the **Files** window onto the
-   scene. Both open *Porta dentro* with the epoch shown already proposed.
+   scene. Both open **Bring in…** with the epoch shown already proposed.
 #. In the window, leave the role **RM — represents the place in an epoch**, check
    the epoch under **Which epoch does it represent?**, and fill **When were the
    models acquired?** and **When was this document made?**. The whole window is
    described in :doc:`/how-to/bring-in/porta-dentro`.
-#. Press **Porta dentro**.
+#. Press **Bring in**.
 
 A model can also arrive from Blender, when EMStudio works live with EM Tools (see
 :doc:`/how-to/extensions/live-sync-with-em-tools`).
@@ -83,10 +83,10 @@ Bring a tileset in
    only reads the original. A folder dragged from your computer into the browser
    cannot be prepared, because its path is not known: drag it from the **Files**
    window.
-#. For a package, *Porta dentro* opens by itself, with the preview as one of its
-   rows; for a folder just prepared, press **Porta dentro…** in the preview's
+#. For a package, **Bring in…** opens by itself, with the preview as one of its
+   rows; for a folder just prepared, press **Bring in…** in the preview's
    bar. Choose the document, the epoch the tileset represents, its role and its
-   date, then press **Porta dentro**. The same button opens the window again
+   date, then press **Bring in**. The same button opens the window again
    after a cancel.
 
 The preview closes and the tileset is drawn as a model of its epoch, in its own

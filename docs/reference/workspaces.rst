@@ -3,10 +3,10 @@
 Workspaces
 ==========
 
-*The six workspaces of EMStudio, their questions and their starting arrangements, and the workspaces you make yourself.*
+*The seven workspaces of EMStudio, their questions and their starting arrangements, and the workspaces you make yourself.*
 
 A **workspace** is an arrangement of windows made for one activity. EMStudio
-comes with six, in the bar across the top of the window. Each answers one
+comes with seven, in the bar across the top of the window. Each answers one
 question, and its windows are the ones that answer it; the question appears when
 you hold the pointer on the workspace's name. ``Help ▸ Workspaces…`` shows the
 same overview inside the application.
@@ -16,8 +16,8 @@ selection of every window that shows it, in this workspace and in the others.
 :doc:`/explanation/workspaces-are-questions` explains the idea behind the
 arrangement.
 
-The six workspaces
-------------------
+The seven workspaces
+--------------------
 
 .. image:: /_static/screens/dialogs/workspaces.png
    :alt: The Workspaces overview opened from Help: one row per workspace, with its question, its windows and whether it has an Inspector.
@@ -48,6 +48,9 @@ The six workspaces
    * - **Sheets**
      - What does the recording sheet say of this unit?
      - Outliner · Sheet · 3D scene · Graph in **Matrix** mode · Viewer & card
+   * - **Scripting**
+     - What can a script do with this graph?
+     - Script Editor · Python Console · Graph in **Matrix** mode
 
 Stratigraphy
 ~~~~~~~~~~~~
@@ -123,6 +126,21 @@ underneath shows the unit's photographs and documents.
 .. image:: /_static/screens/workspaces/sheets.jpg
    :alt: The Sheets workspace: the recording sheet of SU004 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card underneath, empty because the unit has no pictures yet.
 
+Scripting
+~~~~~~~~~
+
+The workspace of the scripts, the last of the bar. The **Script Editor** takes the
+left, with the **Python Console** under it: a script runs in the console's
+session, and what it prints goes there. A **Graph** window in **Matrix** mode
+stands on the right. There is no Inspector: a script reads the selection
+(``sel``) and the graph (``g``), and what it writes is one step of undo, seen in
+the Matrix beside it. Both windows are marked *beta*, and either can be chosen
+from the window type menu in any area of any workspace. See
+:doc:`/how-to/extensions/python-console`.
+
+.. image:: /_static/screens/workspaces/scripting.jpg
+   :alt: The Scripting workspace: the Script Editor on the left with an empty untitled.py, the Python Console under it, the Matrix on the right with SU001 selected.
+
 Change a workspace
 ------------------
 
@@ -130,7 +148,7 @@ Every workspace can be changed: a window can become another type, an area can be
 divided in two, two areas can be joined (see :doc:`windows`). The workspace keeps
 the arrangement you give it, also after EMStudio is closed and opened again.
 
-One of the six workspaces, once changed, says so: its name turns to italics,
+One of the seven workspaces, once changed, says so: its name turns to italics,
 with a small ↺ beside it (*reshaped: ↺ restores the space as it comes*). Click the ↺, or right-click the name and choose
 **Reset the arrangement**, to put the workspace back as EMStudio first arranged
 it. The windows you added or moved go away.
@@ -147,7 +165,7 @@ New
 
 Rename
    Double-click the name of a workspace, or right-click it and choose
-   **Rename…**. The six workspaces of EMStudio can be renamed too: the name you
+   **Rename…**. The seven workspaces of EMStudio can be renamed too: the name you
    give replaces the one of the dictionary on this computer.
 
 Reset
@@ -156,7 +174,7 @@ Reset
 Remove
    Right-click the name of a workspace you made and choose **Remove the space**.
    The message that confirms it has an undo, which brings the workspace back
-   with its arrangement. The six workspaces of EMStudio stay in the bar.
+   with its arrangement. The seven workspaces of EMStudio stay in the bar.
 
 The arrangements are kept by the application on this computer, in the browser's
 storage on the web (see :doc:`file-locations`): they belong to the person working,

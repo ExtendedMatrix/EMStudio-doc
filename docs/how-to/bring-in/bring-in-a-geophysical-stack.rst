@@ -29,11 +29,11 @@ Before you start
 Open the folder
 ---------------
 
-#. Choose ``File ▸ Porta dentro una cartella…``.
-#. In **Porta dentro: the folder**, go to the stack's folder and press
+#. Choose ``File ▸ Bring in…``, then **A folder…**, and press **Choose…**.
+#. In **Bring in: the folder**, go to the stack's folder and press
    **Choose this folder**.
-#. If more than one add-on reads folders, EMStudio asks **Which add-on reads …?**:
-   choose **Geophysical stack**.
+#. EMStudio asks **Which add-on reads …?**, since reading the folder as DosCo
+   is always one of the choices: choose **Geophysical stack**.
 
 The panel **Geophysical stack** opens on the right, with the folder already in
 its field **Folder**. Under **What it is**, the package says what it found
@@ -42,14 +42,14 @@ sections, the depths, the method, and how many documents of this stack the graph
 already has.
 
 A single file of a stack works as well. A ``.asc`` or ``.xyz`` file brought in
-through ``File ▸ Porta dentro…`` goes to the package, which reads its folder.
+through ``File ▸ Bring in…`` goes to the package, which reads its folder.
 For the files EMStudio reads by itself (``.csv``, ``.tif``, ``.tiff``, ``.jpg``,
 ``.jpeg``, ``.png``), the row of the file offers **Read as:** with the reading of
 EMStudio first, **EMStudio (as it is)**: choose **Geofisica · Geophysical stack**
 to hand the file to the package instead.
 
 .. image:: /_static/screens/geophysics/read-as.png
-   :alt: The Porta dentro window with the GeoTIFF mean_v2.tif: under Read as, Geofisica · Geophysical stack is chosen, and the GIS reading of EMStudio is struck through.
+   :alt: The Bring in window with the GeoTIFF mean_v2.tif: under Read as, Geofisica · Geophysical stack is chosen, and the GIS reading of EMStudio is struck through.
 
 Say what the files do not
 -------------------------

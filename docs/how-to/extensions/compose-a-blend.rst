@@ -32,7 +32,7 @@ Before you start
 Compose from the whole graph
 ----------------------------
 
-#. Choose ``File ▸ Compose a .blend from the graph…``. The window
+#. Choose ``File ▸ Export ▸ Blender scene (.blend)…``. The window
    **Compose a working .blend from the graph** opens.
 #. In **Working profile**, choose what the file is for: **modelling**,
    **offline rendering**, **3D printing** or **archive**. The profiles made for

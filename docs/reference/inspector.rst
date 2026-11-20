@@ -86,7 +86,7 @@ Open with…
    Blender with EM Tools, a Heriverse scene. A tool that cannot open the node here
    is shown with the reason.
 
-Computed chronology (TPQ / TAQ)
+Datings (TPQ / TAQ)
    The unit's start and end as the s3Dgraphy library computes them through its
    relations, each with where it comes from: written on the node, the limit of an
    epoch, or a date on another unit.
@@ -150,7 +150,7 @@ every change of the graph again. A proxy and an anchor always follow their graph
 A GIS sheet stands in the system of its file, which is changed in its GIS panel.
 
 The georeference of the graph itself is edited on the graph's node, under the
-site position, or in the card opened with ``File ▸ Georeferencing…``.
+site position, or in the card opened with ``Tools ▸ Georeferencing…``.
 
 The end of the panel
 --------------------

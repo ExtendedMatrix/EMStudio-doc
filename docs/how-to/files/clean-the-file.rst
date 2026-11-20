@@ -45,7 +45,7 @@ Read what the file holds
 Clean
 -----
 
-#. Choose ``File ▸ Clean the file…``.
+#. Choose ``File ▸ Clean up ▸ Clean the file…``.
 #. The dialog names the file and says what goes, for example *2 colour
    scheme(s), 1 in use*, and that the graphs, their nodes and their edges do not
    change. Click **Clean**.

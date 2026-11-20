@@ -1,11 +1,11 @@
 .. _tutorial-first-launch:
 
-First launch: the six workspaces
-================================
+First launch: the seven workspaces
+==================================
 
-*A tour of EMStudio on the study of Templu Mare: the six workspaces and the questions they answer, the bar, the windows, and how to divide an area.*
+*A tour of EMStudio on the study of Templu Mare: the seven workspaces and the questions they answer, the bar, the windows, and how to divide an area.*
 
-This tour opens a real Extended Matrix study and walks through the six
+This tour opens a real Extended Matrix study and walks through the seven
 workspaces of EMStudio. We use **Templu Mare**, the temple whose study is shared
 across the courses and demonstrations of the Extended Matrix: a graph called
 *Temple*, with its stratigraphic units, its virtual reconstruction, its documents
@@ -61,13 +61,15 @@ Hold the pointer on a workspace's name and its question appears:
      - Where is it, and what shape does it have in each epoch?
    * - **Sheets**
      - What does the recording sheet say of this unit?
+   * - **Scripting**
+     - What can a script do with this graph?
 
 ``Help ▸ Workspaces…`` shows the same table with the windows of each workspace.
 :doc:`/explanation/workspaces-are-questions` explains why the application is
 organised this way.
 
-Walk through the six
---------------------
+Walk through the seven
+----------------------
 
 Click the workspaces one at a time, from left to right. The study is the same in
 all of them: what you select in one window is selected in every window that shows
@@ -102,6 +104,12 @@ the scene: it is the same unit the Outliner, the matrix and the Inspector show.
 **Sheets.** The **Sheet** shows the selected unit as its recording sheet. Around
 it, small windows follow the same unit: its proxy in the scene, its neighbours in
 the matrix, and its photographs and documents below.
+
+**Scripting.** The **Script Editor** on the left holds a Python script, the
+**Python Console** under it runs it and shows what it prints, and the matrix on
+the right shows what the script changed. There is no Inspector here: a script
+reads the selection and the graph, and what it writes is one step of undo, seen
+in the matrix beside it (see :doc:`/how-to/extensions/python-console`).
 
 The windows
 -----------

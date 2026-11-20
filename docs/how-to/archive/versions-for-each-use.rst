@@ -54,7 +54,7 @@ anything.
 Make the versions of the whole study
 ------------------------------------
 
-#. Open the list of the assets with ``File ▸ Consolidate for…``, or choose
+#. Open the list of the assets with ``File ▸ Export ▸ Consolidate for…``, or choose
    **Assets** in the mode menu of the **Files** window, and choose the
    **Target** (see :doc:`consolidate-for-a-target` for reading the list).
 #. Tick the assets to treat and click **Apply and queue**: each one receives the

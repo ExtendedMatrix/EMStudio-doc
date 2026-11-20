@@ -28,7 +28,7 @@ resumes once the step is done.
 Create the room
 ---------------
 
-#. Choose ``File ▸ Create a room…``. The same command is **+ New room** in the
+#. Choose ``File ▸ Room ▸ Create a room…``. The same command is **+ New room** in the
    section **My space** of the chip's menu, under **Rooms on this node**.
 #. The dialog **Create a room** asks for a name, for example «Templu Mare
    2026». EMStudio derives the room's identifier from the name, as the node's

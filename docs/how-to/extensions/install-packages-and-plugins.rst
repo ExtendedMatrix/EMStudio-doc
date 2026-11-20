@@ -161,7 +161,7 @@ Once installed and enabled, a plugin's commands appear where the plugin says:
 - the context menu of a node in the Matrix and in the Space;
 - the **Warnings** sheet of the **Tabular** window, for a plugin that checks
   the study;
-- *Porta dentro*, for a file that only a plugin can read;
+- **Bring in…**, for a file that only a plugin can read;
 - a section of the **Inspector**, a computed column of the **Tabular** window
   (read only), a line of the status bar, a tool of the 3D, or a panel.
 

@@ -144,5 +144,5 @@ English label, as the English interface shows it.
 What next
 ---------
 
-Continue with :doc:`first-launch`, a tour of the six workspaces on the study of
+Continue with :doc:`first-launch`, a tour of the seven workspaces on the study of
 Templu Mare.

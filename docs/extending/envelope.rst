@@ -167,7 +167,7 @@ A command, ``[[code.commands]]``
        open), ``selection:none|any|one|many``, ``selection:US|USV`` (every
        selected node of these types), joined by ``and``. Empty: always.
    * - ``accept``, ``claims``, ``folders``, ``panel``
-     - For a reader of *Porta dentro…* (``door.reader@2``), see :doc:`slots`.
+     - For a reader of **Bring in…** (``door.reader@2``), see :doc:`slots`.
    * - ``primitive``, ``icon``
      - For a tool of the Space (``space.tool@1``): what the person places,
        and one or two characters drawn on the button.

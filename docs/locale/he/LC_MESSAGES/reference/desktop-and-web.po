@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -55,7 +55,7 @@ msgstr ""
 msgid "Web"
 msgstr ""
 
-msgid "**Open…** and **Open in place of the open files…**"
+msgid "**Open…**, also with **Replace the open files**"
 msgstr ""
 
 msgid ""
@@ -150,7 +150,7 @@ msgid ""
 "pointed at its new place through EMStudio's own selector."
 msgstr ""
 
-msgid "**Porta dentro…**"
+msgid "**Bring in…** ▸ **Files…**"
 msgstr ""
 
 msgid "The system's dialog lets you choose several files at once."
@@ -402,4 +402,10 @@ msgid ""
 "version does not draw (see :doc:`menus`). A difference among macOS, "
 "Windows and Linux is said in the text of the **Desktop** tab."
 msgstr ""
+
+#~ msgid "**Open…** and **Open in place of the open files…**"
+#~ msgstr ""
+
+#~ msgid "**Porta dentro…**"
+#~ msgstr ""
 

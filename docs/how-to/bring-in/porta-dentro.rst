@@ -1,11 +1,11 @@
 .. _how-to-bring-in-porta-dentro:
 
-Bring files in with Porta dentro
-================================
+Bring files in as documents
+===========================
 
-*Bring photographs, drawings, 3D models, tilesets and GIS layers into a study as the files of a document, through every door of* Porta dentro.
+*Bring photographs, drawings, 3D models, tilesets and GIS layers into a study as the files of a document, through every door of the window* Bring in.
 
-*Porta dentro* (“bringing files in as documents”) is the one window through
+**Bring in…** is the one window through
 which a file of the disk, or of a bucket, becomes part of a study. The tutorial
 :doc:`/tutorial/files-to-documents` walks it once, with a few photographs. This
 page covers the rest: the ways in, what the window decides by itself, the role
@@ -15,7 +15,7 @@ sessions, and how a document grows over time.
 Before you start
 ----------------
 
-A graph must be open: *Porta dentro* writes into the active graph, and without
+A graph must be open: **Bring in…** writes into the active graph, and without
 one EMStudio answers **Open a document first**. A study file (an ``.em.json`` or
 a GraphML) never goes through this window: it opens as a graph (see
 :doc:`import-graphml`).
@@ -25,8 +25,10 @@ Choose a door
 
 The same window opens from five places.
 
-``File ▸ Porta dentro…``
-   Asks for the files, then opens the window.
+``File ▸ Bring in…``
+   Asks what comes in: **Files…**, **A folder…** or **A folder read as
+   DosCo…**. With **Files…** and **Choose…** it asks for the files, then opens
+   the window. The last choice is remembered.
 
    .. tab-set::
       :sync-group: platform
@@ -58,11 +60,11 @@ A drop on the **3D scene**
 
 The **Files** window
    In **Disk** mode, choose one or more files (:kbd:`Ctrl`-click, or :kbd:`⌘`-click on macOS,
-   and :kbd:`Shift`-click) and open the **Info** tab: the button **Porta dentro…**
-   (**Porta dentro 3 file…** for three files) brings in the selection.
+   and :kbd:`Shift`-click) and open the **Info** tab: the button **Bring in…**
+   (**Bring in 3 files…** for three files) brings in the selection.
 
 The **Files** window in **Bucket** mode
-   Choose the files in the bucket and press **Porta dentro…** at the foot of
+   Choose the files in the bucket and press **Bring in…** at the foot of
    the list. The files stay in the bucket, and the graph cites them by their
    address; the window marks each of them **in the bucket: it stays there, the
    graph cites its address**.
@@ -71,7 +73,7 @@ Fill the window
 ---------------
 
 .. image:: /_static/screens/dialogs/porta-dentro.png
-   :alt: The Porta dentro window with three pictures: each file with its kind, the document they will belong to, its licence and when it was made.
+   :alt: The Bring in window with three pictures: each file with its kind, the document they will belong to, its licence and when it was made.
 
 #. Read the list of files at the top. Beside each name EMStudio says what the
    file is, by its extension: a **picture**, a **3D model**, a **tileset**, a
@@ -112,7 +114,7 @@ Fill the window
 #. Fill **When was this document made?** with a year, a month or a day
    (``2015``, ``2015-06``, ``1835``). The date is required: until it is
    written, the window answers **The document's date is wanted** and stays open.
-#. Press **Porta dentro**.
+#. Press **Bring in**.
 
 Three dates are kept apart in this window, because they answer three different
 questions. A reconstruction made in 2026 (the document's date), from a survey
@@ -149,7 +151,7 @@ document, and its photos become its files.
 #. In **Document**, leave **new** or choose an existing document to merge the
    item into. An item with the same name as a document of the study is proposed
    for merging.
-#. Press **Porta dentro**. All the items come in together.
+#. Press **Bring in**. All the items come in together.
 
 What you get
 ------------

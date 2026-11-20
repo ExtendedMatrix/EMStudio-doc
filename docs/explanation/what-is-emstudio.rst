@@ -23,11 +23,11 @@ EMStudio keeps all of this in one study, and every window shows a part of the
 same study: a selection made in the matrix is the selection of the 3D scene, of
 the recording sheet and of the story.
 
-Six workspaces, six questions
------------------------------
+Seven workspaces, seven questions
+---------------------------------
 
-Across the top of the window run six workspaces: **Stratigraphy**,
-**Sources**, **Archive**, **Narrative**, **Space** and **Sheets**. Each one is an
+Across the top of the window run seven workspaces: **Stratigraphy**,
+**Sources**, **Archive**, **Narrative**, **Space**, **Sheets** and **Scripting**. Each one is an
 arrangement of windows that answers one question about the study, for example
 *where does this datum come from?* or *where is it, and what shape does it have
 in each epoch?*. You move between them as the work asks; the study stays the

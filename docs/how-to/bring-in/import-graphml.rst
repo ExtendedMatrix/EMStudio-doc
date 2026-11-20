@@ -85,7 +85,7 @@ first moment.
 
 If you cancel the save, the graph stays open without a file. The status line
 then says that the GraphML was read but not saved as em.json yet, and
-``File ▸ Save as…`` gives the graph its file later.
+``File ▸ Save As…`` gives the graph its file later.
 
 EMStudio reads GraphML and writes em.json. To share the study with another tool,
 use the formats listed in :doc:`/reference/export-formats`.

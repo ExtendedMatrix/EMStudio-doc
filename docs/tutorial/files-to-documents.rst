@@ -3,13 +3,12 @@
 From files to documents in five minutes
 =======================================
 
-*Bring photographs, drawings and models into a study as documents, with* Porta dentro.
+*Bring photographs, drawings and models into a study as documents, in one window.*
 
 A file on the disk is not yet part of a study. It becomes part of it when the
 graph knows what the file is, which **document** it belongs to, when that
 document was made and, for a model, which epoch it shows. EMStudio does all of
-this in one window, *Porta dentro* (“bringing files in”, the Italian name kept
-in every language, like Templu Mare). In this tutorial you bring a few files into
+this in one window, **Bring in…**. In this tutorial you bring a few files into
 Templu Mare and find them in the study as one document.
 
 Before you start
@@ -23,7 +22,8 @@ scan.
 Bring the files in
 ------------------
 
-#. Choose ``File ▸ Porta dentro…``.
+#. Choose ``File ▸ Bring in…``. The window **Bring in** asks *What comes into
+   the study?*: choose **Files…** and press **Choose…**.
 
    .. tab-set::
       :sync-group: platform
@@ -40,7 +40,7 @@ Bring the files in
          confirm. To bring in several files, repeat the command for each file
          and choose the same document every time.
 
-#. The window **Porta dentro…** lists the files. Next to each name, EMStudio
+#. The window **Bring in…** lists the files. Next to each name, EMStudio
    says what the file is (a picture, a 3D model, a tileset, a drawing, a GIS
    layer) and what it becomes in the study: a picture is **a file of the
    document**, a model can be the representation of the place in an epoch.
@@ -56,7 +56,7 @@ Bring the files in
    survey was made. A reconstruction made in 2026 can represent the II century
    A.D.: the two dates are kept apart.
 #. Choose a **Licence**, or leave **— as it is —**.
-#. Press **Porta dentro**.
+#. Press **Bring in**.
 
 What you get
 ------------
@@ -76,7 +76,7 @@ back.
 Other ways in
 -------------
 
-``File ▸ Porta dentro…`` is one of several doors to the same window. You also
+``File ▸ Bring in…`` is one of several doors to the same window. You also
 reach it by dropping a file on the **3D scene**, with the **+** in the bar of the
 Space, and from a selection of files in the **Files** window of the
 **Archive** workspace. A study file (an ``.em.json`` or a GraphML) is not brought

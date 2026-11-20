@@ -134,7 +134,7 @@ its name; for each graph the file names the scheme in use. A short example:
 In EMStudio the schemes of the file are managed in the **Colours** window (``Tools ▸ Colours…``), under
 **In the file**: **Keep in the file…** stores the scheme on screen, **Import into
 the file…** takes ``.emc`` files in, and **Expel to a folder…** writes one
-``.emc`` per scheme. ``File ▸ Clean the file…`` takes the whole section out after
+``.emc`` per scheme. ``File ▸ Clean up ▸ Clean the file…`` takes the whole section out after
 showing what goes; the graphs stay as they are, and one undo brings it back.
 
 The vocabularies in the file

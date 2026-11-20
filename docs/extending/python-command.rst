@@ -141,7 +141,7 @@ The **Python console** speaks the same ``em`` as the code: it is the place to
 try a line before writing it in a file.
 
 #. Open the example study, ``data/examples/volto.em.json``.
-#. Choose ``Tools ▸ Python console…``. The first line reminds you that
+#. Choose ``Tools ▸ Python console… · beta``. The first line reminds you that
    ``em`` is imported and that ``g`` is the graph shown.
 #. Write, and press :kbd:`Enter`:
 

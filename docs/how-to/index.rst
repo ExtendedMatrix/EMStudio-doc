@@ -10,7 +10,7 @@ with EMStudio (see :ref:`tutorial`) and helps you reach one objective.
 
 - :doc:`files/index`: open, save and reopen; a project folder; integrate another
   file; find missing files; clean the file; pin a version.
-- :doc:`bring-in/index`: *Porta dentro*, a geophysical stack, a GraphML matrix,
+- :doc:`bring-in/index`: files as documents, a geophysical stack, a GraphML matrix,
   a table through a mapping, StratiMiner, a DosCo folder.
 - :doc:`stratigraphy/index`: units and their relations, groups, layout,
   chronology, many units at once, filters.

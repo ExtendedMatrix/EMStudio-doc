@@ -191,7 +191,7 @@ section **Copy on the server**.
 To read the bucket itself, choose the mode **Bucket**: its folders and files are
 listed as on the disk. Typing in the search field filters what is listed;
 :kbd:`Enter` searches the names in the whole bucket under the folder. Chosen
-files enter the study through *Porta dentro* and stay in the bucket, cited by
+files enter the study through **Bring in…** and stay in the bucket, cited by
 their address (see :doc:`/how-to/bring-in/porta-dentro`).
 
 What you get

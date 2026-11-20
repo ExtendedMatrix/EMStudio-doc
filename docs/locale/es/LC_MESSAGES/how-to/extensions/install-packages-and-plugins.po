@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-20 20:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -266,7 +266,7 @@ msgid ""
 "checks the study;"
 msgstr ""
 
-msgid "*Porta dentro*, for a file that only a plugin can read;"
+msgid "**Bring in…**, for a file that only a plugin can read;"
 msgstr ""
 
 msgid ""
@@ -381,4 +381,7 @@ msgstr ""
 
 msgid ":doc:`/reference/desktop-and-web`."
 msgstr ""
+
+#~ msgid "*Porta dentro*, for a file that only a plugin can read;"
+#~ msgstr ""
 

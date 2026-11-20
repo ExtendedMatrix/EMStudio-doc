@@ -16,9 +16,9 @@ context, an object, or a collection. EMStudio shares the s3Dgraphy library with
 the other tools of the framework, works live with
 `EM Tools <https://github.com/zalmoxes-laran/EM-blender-tools>`_ in Blender, and
 prepares the studies that a StratiGraph node keeps and
-`Heriverse <https://www.heriverse.org>`_ shows.
+`Heriverse <https://extendedmatrix.org/tools/heriverse/>`_ shows.
 
-The work is organised in six workspaces, each answering one question about the
+The work is organised in seven workspaces, each answering one question about the
 study:
 
 - **Stratigraphy**: what is there, in what order, and does it hold?
@@ -27,6 +27,7 @@ study:
 - **Narrative**: how do I tell it, and what does it rest on?
 - **Space**: where is it, and what shape does it have in each epoch?
 - **Sheets**: what does the recording sheet say of this unit?
+- **Scripting**: what can a script do with this graph?
 
 EMStudio runs as a desktop application on macOS, Windows and Linux, and as a web
 page served by a StratiGraph node. This manual describes both: where a step
@@ -55,7 +56,7 @@ New to EMStudio?
 ----------------
 
 Start with the :ref:`tutorial`: get EMStudio for the desktop or open it on the
-web, walk through the six workspaces on the study of Templu Mare, make a first
+web, walk through the seven workspaces on the study of Templu Mare, make a first
 study, and bring your first files in as documents.
 
 Looking for a specific task?

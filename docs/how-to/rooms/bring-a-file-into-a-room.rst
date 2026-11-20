@@ -28,7 +28,7 @@ Before you start
 Create the room with the study in it
 ------------------------------------
 
-#. Choose ``File ▸ Bring this into a new room…``. The same command is **Bring into
+#. Choose ``File ▸ Room ▸ Bring this into a new room…``. The same command is **Bring into
    a room…** in the section **My space** of the chip's menu.
 #. The dialog **Bring this into a new room** asks for the room's name, for
    example «Templu Mare 2026». Press **Create and put it there**.
@@ -69,7 +69,7 @@ Create the room with the study in it
    again.
 
 To stop before anything is sent, press **Later**: the room exists and is empty,
-and the graph is not in it. Choosing ``File ▸ Bring this into a new room…`` again
+and the graph is not in it. Choosing ``File ▸ Room ▸ Bring this into a new room…`` again
 with the same name takes it up again.
 
 What you get

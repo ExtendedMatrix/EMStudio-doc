@@ -67,7 +67,7 @@ ways.
   Blender share the study as you work: selecting a unit in one selects it in the
   other, and the changes made in Blender reach the graph (see
   :doc:`/how-to/extensions/live-sync-with-em-tools`).
-- **By composing a file.** ``File ▸ Compose a .blend from the graph…`` builds a
+- **By composing a file.** ``File ▸ Export ▸ Blender scene (.blend)…`` builds a
   Blender file from the study, with the models and proxies the graph names (see
   :doc:`/how-to/extensions/compose-a-blend`).
 
@@ -87,8 +87,8 @@ names one.
 Other sources
 -------------
 
-Material from other programs enters the study through *Porta dentro*
-("bringing files in as documents"), through a table read with a mapping, or,
+Material from other programs enters the study through **Bring in…**
+(files brought in as documents), through a table read with a mapping, or,
 for Tropy, through **Import from Tropy…** in the menu of the **Shelf** (see
 :doc:`/how-to/bring-in/index`). Whatever enters becomes a document of the study,
 with its date and its provenance.

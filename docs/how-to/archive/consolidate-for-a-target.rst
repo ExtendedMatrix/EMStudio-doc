@@ -7,7 +7,7 @@ Consolidate for a target
 
 A study published on Heriverse, opened on a phone, or loaded in a realtime
 engine does not show the heavy master of each model: it loads a version made for
-that use. ``File ▸ Consolidate for…`` opens the list of the study's assets read
+that use. ``File ▸ Export ▸ Consolidate for…`` opens the list of the study's assets read
 for one *target*, so that you can see, before handing the study on, which assets
 have a version for it, how heavy the whole scene will be, and what is still to
 do. Nothing is written while you read: the files and the graph change only when
@@ -25,7 +25,7 @@ Before you start
 Open the list for a target
 --------------------------
 
-#. Choose ``File ▸ Consolidate for…``. EMStudio switches to the **Archive**
+#. Choose ``File ▸ Export ▸ Consolidate for…``. EMStudio switches to the **Archive**
    workspace and puts the **Files** window in its **Assets** mode. The first
    time, a bar shows the reading: the graph, the resources, the measuring of the
    files, the textures.
@@ -40,7 +40,7 @@ Read the card of the target
 ---------------------------
 
 .. image:: /_static/screens/windows/consolidate.jpg
-   :alt: The Files window in the mode Assets after File ▸ Consolidate for…: the card of the target Heriverse / web, incomplete, with its bars for triangles, download and GPU memory, and the list of the assets grouped by container.
+   :alt: The Files window in the mode Assets after File ▸ Export ▸ Consolidate for…: the card of the target Heriverse / web, incomplete, with its bars for triangles, download and GPU memory, and the list of the assets grouped by container.
 
 Each target switched on has a card at the top of the view. It gives:
 

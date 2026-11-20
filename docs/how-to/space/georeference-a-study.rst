@@ -35,7 +35,7 @@ Set the graph's system
 .. image:: /_static/screens/dialogs/georeferencing.png
    :alt: The Georeferencing card of the graph Temple: coordinate system, shifts, north, the datum operation and the exceptions.
 
-#. Choose ``File ▸ Georeferencing…``. The same card opens from the **⌖** button
+#. Choose ``Tools ▸ Georeferencing…``. The same card opens from the **⌖** button
    in the bar of the **3D scene**, from **Georeferencing…** at the foot of the
    scene's **Visibility ▾** menu, and from **Open in the Georeferencing card** in
    the Inspector. It closes with **✕**, with :kbd:`Esc` or with a click outside

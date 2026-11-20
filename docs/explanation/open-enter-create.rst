@@ -25,8 +25,8 @@ The three verbs
    node are listed in the chip's menu, under **My space**.
 
 **Create** a room.
-   ``File ▸ Create a room…`` makes a new, empty room on your node;
-   ``File ▸ Bring this into a new room…`` makes a room from the study you have
+   ``File ▸ Room ▸ Create a room…`` makes a new, empty room on your node;
+   ``File ▸ Room ▸ Bring this into a new room…`` makes a room from the study you have
    open, with its files. Whoever creates a room is its owner: ownership is born
    from the gesture.
 
@@ -47,9 +47,11 @@ citation.**
   with a role: a *viewer* reads, an *editor* writes, an *admin* also manages
   the people, the *owner* created it.
 - A **published study** is a version that a node's Catalog has fixed and that
-  others can cite. EMStudio opens it from the Catalog as a copy to work on; the
-  published version stays exactly as it was cited. New work on it continues in a
-  file or in a room, and may become a new published version in its turn.
+  others can cite. EMStudio opens it from the Catalog **to read**: a change is
+  taken back, **Save** does not save, and the published version stays exactly
+  as it was cited. New work on it continues in a room, with **Create a room
+  from here**, or, on the desktop, in a copy of your own made with **Save As…**;
+  it may become a new published version in its turn.
 
 One passes from one keeper to another only with an explicit gesture:
 **Bring this into a new room…** turns a file into a room; ``File ▸ Save As…``,
@@ -99,9 +101,7 @@ in its section **Where you work**. Under **Mode** it offers three choices:
 
 The status bar repeats the place: **Room** followed by the name of the room and
 of the node, when you are in one. Earlier versions of EMStudio called these
-ways of working *Standalone*, *Sidecar* and *Hub*. The three choices press
-buttons that still carry the older names, **Standalone**, **Sidecar (sync)**
-and **Join Room**, as :doc:`/reference/menus` lists them.
+ways of working *Standalone*, *Sidecar* and *Hub*.
 
 See also
 --------

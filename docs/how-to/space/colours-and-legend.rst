@@ -140,7 +140,7 @@ In the em.json
 
    Each of these gestures marks the file as changed, and the message that
    follows offers to undo it. The schemes are saved with the file, and a study
-   opens with the scheme its graph uses. ``File ▸ Clean the file…`` can take
+   opens with the scheme its graph uses. ``File ▸ Clean up ▸ Clean the file…`` can take
    them all out again.
 
 What you get

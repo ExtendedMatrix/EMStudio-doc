@@ -14,8 +14,7 @@ on the same computer, or on the same network.
 
 In the section **Where you work** of the chip's menu (the chip at the top right
 of the window) this way of working is called **With an app**.
-The older versions called it *Sidecar*, and the button behind the choice still
-carries that name (see :doc:`/reference/menus`).
+The older versions called it *Sidecar*.
 
 Before you start
 ----------------

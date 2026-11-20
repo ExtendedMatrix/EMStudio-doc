@@ -25,7 +25,7 @@ saves by downloading. The table below lists every difference of version
    * - Area
      - Desktop
      - Web
-   * - **Open…** and **Open in place of the open files…**
+   * - **Open…**, also with **Replace the open files**
      - The system's dialog opens. EMStudio keeps the path of the file, so it can
        save it in place and reopen it later.
      - The browser's file picker opens. EMStudio receives the content of the
@@ -61,7 +61,7 @@ saves by downloading. The table below lists every difference of version
        and point a missing file at its new place by choosing it.
      - The folder to search is given as a path that you type; a missing file
        is pointed at its new place through EMStudio's own selector.
-   * - **Porta dentro…**
+   * - **Bring in…** ▸ **Files…**
      - The system's dialog lets you choose several files at once.
      - EMStudio's own selector lets you choose one file at a time.
    * - **Import ▸ GraphML…**, **Import ▸ Table with a mapping…**, **StratiMiner**

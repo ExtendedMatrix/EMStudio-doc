@@ -40,8 +40,10 @@ The file opens beside the files that are already open. A file ending in
 ``.graphml`` given to ``File ▸ Open…`` is read as a GraphML matrix, as described
 in :doc:`/how-to/bring-in/import-graphml`.
 
-To work on one file only, choose ``File ▸ Open in place of the open files…``
-instead. You choose the file first; then EMStudio closes the files that are open,
+To work on one file only, tick the box **Replace the open files** under
+``File ▸ Open…`` and choose **Open…**. The box stays ticked until EMStudio is
+closed; on the macOS menu bar it is a check item. You choose the file first;
+then EMStudio closes the files that are open,
 asking for each one that has unsaved changes, and opens the new one. If you
 answer no to one of the questions, nothing is closed and the new file is not
 opened.
@@ -100,7 +102,7 @@ Save under another name or in another folder
 
          In another folder, the paths of the resources would no longer reach
          their files, because EMStudio writes them relative to the ``.em.json``.
-         The dialog **Save as — another folder** says how many paths are
+         The dialog **Save As… — another folder** says how many paths are
          concerned and offers three answers:
 
          * **Rewrite the paths**, followed by their number, so that each path

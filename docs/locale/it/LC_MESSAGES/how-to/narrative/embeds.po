@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 "**Matrix** (la sequenza di un'epoca), **Tabella** (una query sul grafo), "
 "**Timeline** (le epoche sugli anni), **Mappa** (la posizione del sito) e "
-"**Paradata** (come si arriva a un valore)."
+"**Paradati** (come si arriva a un valore)."
 
 msgid "**Standard blocks**"
 msgstr "**Blocchi standard**"

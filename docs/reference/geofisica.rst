@@ -77,9 +77,9 @@ Where it appears
 
    * - Where
      - What
-   * - ``File ▸ Porta dentro una cartella…``
+   * - ``File ▸ Bring in…``, **A folder…**
      - **Geophysical stack**: reads a folder and opens the panel with it
-   * - ``File ▸ Porta dentro…``
+   * - ``File ▸ Bring in…``, **Files…**
      - ``.asc`` and ``.xyz`` go to the package; ``.csv``, ``.tif``, ``.tiff``,
        ``.jpg``, ``.jpeg``, ``.png`` offer **Read as:** **Geofisica ·
        Geophysical stack** beside **EMStudio (as it is)**
@@ -105,7 +105,7 @@ The import panel
    * - Field
      - Meaning
    * - **Folder**
-     - the stack's folder; ``File ▸ Porta dentro una cartella…`` writes it here
+     - the stack's folder; ``File ▸ Bring in…``, **A folder…**, writes it here
    * - **What it is**
      - what the package found: stack, format, slices, sections, depths, method,
        the frame of the screen captures, what is missing, the documents of this
@@ -261,7 +261,7 @@ For scripts and the Python console (see :doc:`/how-to/extensions/python-console`
      - What
    * - ``geofisica.read``
      - yes
-     - the reader of *Porta dentro*: a folder, or a file of a stack
+     - the reader of **Bring in…**: a folder, or a file of a stack
    * - ``geofisica.describe``
      - no
      - what a folder is, without reading the pictures
