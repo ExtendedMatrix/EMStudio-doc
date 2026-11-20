@@ -5,7 +5,7 @@ import os
 # -- Project information
 
 project = 'EMStudio'
-copyright = '2026, Emanuel Demetrescu'
+copyright = '2026, Consiglio Nazionale delle Ricerche (CNR) — Istituto di Scienze del Patrimonio Culturale'
 author = 'Emanuel Demetrescu'
 
 release = '1.6'
