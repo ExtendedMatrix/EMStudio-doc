@@ -165,17 +165,24 @@ const SHOTS = [
   })),
   { name: "menus/who", png: true, clip: ["#ns-who-chip", "#who-menu"], node: true, prep: tool("ns-who-chip") },
 
-  // Settings, each tab
-  ...["general", "identity", "connections", "viewers", "advanced", "addons"].map((tab) => ({
-    name: `settings/${tab}`, png: true, clip: MODAL,
+  // Settings, each tab. MICRO-SEG11: Extensions (it was the window Tools ▸ Extensions…)
+  // and Third-party tools (it was Add-ons, the tab keeps its id «addons»); the
+  // Extensions page shows what the bench's machine holds (README: Geofisica from the
+  // official repository, data only, and the example package)
+  ...["general", "identity", "connections", "viewers", "extensions", "addons", "advanced"].map((tab) => ({
+    name: `settings/${tab}`, png: true, clip: MODAL, wait: tab === "extensions" ? 2500 : 600,
     prep: async (p) => { await click(p, "#btn-settings"); await sleep(800); await click(p, `#settings-tabs [data-tab-target="${tab}"]`); await sleep(800); },
   })),
+  {
+    // the repositories' selector opened: the panel Repositories, the official first
+    name: "settings/extensions-repositories", png: true, clip: MODAL, wait: 1500,
+    prep: async (p) => { await tool("btn-tool-extensions")(p); await sleep(2000); await click(p, "[data-ext='repos']"); },
+  },
 
   // the windows and the dialogs
   { name: "windows/inspector", clip: '.tile-area[data-surface-type="inspector"]', prep: async (p) => { await pick(p, "SU001"); } },
   { name: "windows/colours", wait: 6000, clip: "[data-colours-window]", prep: async (p) => { await ws(p, "space"); await tool("btn-tool-colours")(p); } },
   { name: "windows/vocabularies", png: true, clip: "[data-vocab-window]", prep: tool("btn-tool-vocabularies") },
-  { name: "windows/extensions", png: true, clip: "[data-ext-window]", prep: tool("btn-tool-extensions") },
   {
     // MICRO-TIL002: the console is a window type (its root [data-py-console]), not a floating panel
     name: "windows/console", png: true, clip: "[data-py-console]",
@@ -187,6 +194,39 @@ const SHOTS = [
       await field.click(); await field.type("sel"); await p.keyboard.press("Enter");
       await sleep(3000);
     },
+  },
+  {
+    // MICRO-SEG11 · the colours of the console (MICRO-SEG09): a result, an error with
+    // its traceback, and the double Tab, its list in green under the line repeated
+    name: "windows/console-colours", png: true, clip: "[data-py-console]",
+    prep: async (p) => {
+      await pick(p, "SU001");
+      await tool("btn-tool-console")(p);
+      await sleep(2500);
+      // the console's area magnified (⛶), so that the three answers stand together
+      await p.evaluate(() => document.querySelector("[data-py-console]").closest(".tile-area").querySelector(".win-max").click());
+      await sleep(1500);
+      const field = await p.$("[data-py-console] textarea");
+      await field.click();
+      for (const line of ["sel", "1/0"]) { await field.type(line); await p.keyboard.press("Enter"); await sleep(2500); }
+      await field.type("g.node"); await p.keyboard.press("Tab"); await sleep(1200); await p.keyboard.press("Tab");
+      await sleep(2500);
+      // the empty part of the magnified area left out of the picture
+      await p.addStyleTag({ content: "[data-py-console]{height:400px!important;max-height:400px!important}" });
+      await sleep(500);
+    },
+  },
+  {
+    // MICRO-SEG11 · Settings ▸ Extensions, the row «Development folder · beta» opened
+    // (experimental functions on). Taken alone, with the bench's development folder
+    // set to a copy of _includes/extending/volto-esempio-misto (README). Up to
+    // 1.6.0-dev.145 a long list squashed the row to its border: the rule that EMStudio
+    // carries after it (MICRO-SEG11, .ext-scroll > *) is put in the page here
+    name: "extending/development-folder", png: true, clip: "[data-ext-dev]", experimental: true, wait: 1500,
+    prep: async (p) => {
+      await p.addStyleTag({ content: ".ext-scroll > * { flex-shrink: 0; }" });
+      await tool("btn-tool-extensions")(p); await sleep(2500); await click(p, "[data-ext-toggle='dev']"); await sleep(800);
+      await p.evaluate(() => document.querySelector("[data-ext-dev]").scrollIntoView({ block: "center" })); },
   },
   { name: "windows/chronology", wait: 3000, prep: tool("btn-tool-chronology") },
   { name: "dialogs/georeferencing", png: true, clip: "[data-gr-card]", prep: tool("btn-georef") },

@@ -98,6 +98,29 @@ python -m s3dgraphy.extensions build ~/Documents/GitHub/em-profiles/examples/exa
 HOME=/Users/Shared/EMStudio python -m s3dgraphy.extensions install /tmp/pkgs/example-toolmarks-0.1.0.zip
 ```
 
+For the pages of the extensions (`settings/extensions`,
+`settings/extensions-repositories`, `extending/development-folder`), the machine of
+the bench also has the official repository, read, and **Geofisica with its data
+only**, as a person's computer has it before the code is installed. Give the bridge
+folders of its own for the extensions (so that the bench's HOME is not changed)
+and ask it, with the bridge's secret for the last call:
+
+```sh
+M=/tmp/em-bench-machine          # S3DGRAPHY_EXTENSIONS_DIR=$M/extensions,
+                                 # S3DGRAPHY_PROFILES_DIR, S3DGRAPHY_PLUGINS_DIR,
+                                 # EM_VOCABULARIES_DIR, S3DGRAPHY_CONSOLE_DIR under $M,
+                                 # set where the bridge starts
+B=http://127.0.0.1:8936; O="Origin: http://localhost:5336"; J="Content-Type: application/json"
+curl -s -X POST -H "$J" -H "$O" -d '{"path":"/tmp/pkgs/example-toolmarks-0.1.0.zip","parts":"all","trust":false}' $B/extensions/install
+curl -s -X POST -H "$J" -H "$O" -d '{"on":true}' $B/extensions/online
+curl -s -X POST -H "$J" -H "$O" -d '{"url":"https://extensions.extendedmatrix.org/index.json","name":"extendedmatrix","check_on_startup":true,"trust_reviews":true}' $B/extensions/repos/add
+curl -s -X POST -H "$J" -H "$O" -d '{"name":"extendedmatrix"}' $B/extensions/repos/sync
+curl -s -X POST -H "$J" -H "$O" -d '{"repo":"extendedmatrix","id":"geofisica","parts":"data","trust":false,"with_requires":true,"trust_requires":false}' $B/extensions/repos/install
+# the development folder (extending/development-folder only, taken last): a copy of
+# docs/_includes/extending/volto-esempio-misto as /tmp/em-packages/volto-esempio
+curl -s -X POST -H "$J" -H "$O" -H "Authorization: Bearer bench-local" -d '{"dir":"/tmp/em-packages","dev":true}' $B/py/plugins/dev
+```
+
 Then, from the root of EMStudio-doc:
 
 ```sh
