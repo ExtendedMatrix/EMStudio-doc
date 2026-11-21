@@ -4,7 +4,7 @@ Changelog
 =========
 
 This manual follows the **1.6** line of EMStudio, and this version of the manual
-describes EMStudio 1.6.0-dev.136. The page tells what the 1.6 line has brought,
+describes EMStudio 1.6.0-dev.146. The page tells what the 1.6 line has brought,
 grouped by theme rather than release by release. The complete list of changes,
 with the date and the reason of each one, is kept in the CHANGELOG file of the
 EMStudio repository. That file starts on 16 October 2026; the earlier work of the
@@ -35,6 +35,14 @@ in one window serves in all the others. The six workspaces are described in
   document window. The former Annotator workspace became part of **Sources**.
 - A single kind of help sign, the **?**, explains a control in the place where
   you use it. Menus and context menus always open inside the window.
+- A header never scrolls sideways: it has three zones in fixed places, and when
+  a window narrows its labels become icons, then its verbs move into ``⋯``,
+  always in the same order. ``⋯`` never repeats what the bar already holds.
+- Every menu and floating panel closes with a click outside it, which does
+  nothing else, and with Esc; a window where you have written something asks
+  before discarding it.
+- In the **Sheets** workspace the **Outliner** lists the stratigraphic units
+  alone; **Show all** gives every dimension back.
 
 Files, sources and projects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,6 +90,8 @@ Stratigraphy: the Matrix and the Graph
 - Between a property and a document there is always an extractor. When you link a
   property to a document, EMStudio creates the extractor in between and asks for
   its name and text.
+- The **horizons** of a periodization follow their dates, the most recent on
+  top; overlaps and gaps are said on the rows, and nothing is corrected for you.
 
 Sources: documents, images and readings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,7 +119,12 @@ The **Space** has become a place to work in, with the gestures of Blender.
   Blender, and the **N** panel shows the 3D cursor, the transform of the selected
   object and the lens.
 - A click selects the proxy under the pointer, Alt and a click select the model,
-  and a double click moves the centre of the view to the point.
+  and a double click flies towards the point, which becomes the centre of the
+  view.
+- The scene has no list of its own: its rows are in the **Outliner**. **Colours**
+  and **Visibility ▾** stand at the left of its bar, **Globe**, **Plan** and
+  **Site** in the column under the gizmo, and the hardware profile in the line
+  above the scene.
 - The position, rotation and scale of a model or a proxy are kept in the data, and
   the 3D file itself stays unchanged.
 - Proxies can be sketched from fifteen base shapes and then associated with a

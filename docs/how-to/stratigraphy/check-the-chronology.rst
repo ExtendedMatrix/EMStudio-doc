@@ -89,6 +89,45 @@ lanes by date**. A new epoch is added from the menu of an epoch's name in the
 Matrix, with **New epoch above** or **New epoch below**, which propose dates
 between the two neighbours, or with **New epoch…** in the **Add** menu.
 
+Measure time by horizons
+------------------------
+
+At the head of the Chronology window, **Horizons** (marked *beta*) holds the
+periodizations of the project: shared measures of time, kept in the em.json and
+the same for every graph. A unit, an epoch or a graph is inside a horizon when
+its computed interval overlaps it. The Matrix, the Graph and the 3D scene read
+the horizons through the switch **Epochs** / **Horizons** of their bar, window by
+window.
+
+.. image:: /_static/screens/windows/horizons.png
+   :alt: The Horizons panel at the head of the Chronology: the periodization, the note on the order, and three horizons listed by their dates, the most recent on top, two of them marked by their overlap.
+
+#. Choose a periodization in **Periodization**, or make one with **+**; **✎**
+   renames it and **🗑** deletes it with its horizons.
+#. **+ Horizon** adds a horizon right after the most recent one: it starts
+   where that one ends and lasts a hundred years (in an empty list, from 0 to
+   100). Write its name, its **From** and its **To** (negative years are before
+   the common era), and choose its colour.
+#. The list follows the dates: by **From**, then by **To**, the most recent on
+   top, as the bands of the Matrix and the epochs. A row whose **From** or
+   **To** you change takes its place when you leave the field, with
+   :kbd:`Enter` or a click elsewhere, never while you type, and flashes once.
+   There are no arrows to move a row: its dates give its place.
+#. Each horizon is compared with the one before and the one after it in time.
+   An overlap is said on both rows, with its years and its stretch, as
+   **Overlaps … by … years (…–…)**; a gap as **… years uncovered between this
+   and … (…–…)**. A file whose horizon has its **From** after its **To** shows
+   **«From» (…) comes after «To» (…)** on that row. Nothing is corrected for
+   you: you decide, and every change is one step of ``Edit ▸ Undo``.
+#. A **From** after the **To** is refused as you write it: the message says
+   **«From» (…) cannot come after «To» (…): nothing written**, and the field goes
+   back to the year saved.
+#. **Show** chooses the horizons the views draw, in this session only;
+   **Nodes** counts the nodes inside each one; **×** deletes a horizon.
+
+The order that a file stores for its horizons is read only to decide between
+two horizons with the same dates; EMStudio never rewrites it.
+
 Read the dating of each unit
 ----------------------------
 
@@ -119,8 +158,8 @@ What you get
 ------------
 
 Epochs that follow each other without overlaps, phases inside their epochs, bands
-in chronological order, and a dating for each unit that you can trace back to
-the relation it comes from.
+in chronological order, horizons in the order of their dates, and a dating for
+each unit that you can trace back to the relation it comes from.
 
 See also
 --------

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20 20:06+0100\n"
+"POT-Creation-Date: 2026-11-21 11:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -384,8 +384,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Move: the centre of rotation and the zoom go to the point under the "
-"cursor; nothing is selected"
+"Fly towards the point under the cursor, which becomes the centre of "
+"rotation; nothing is selected. A click, the wheel or a key stops the "
+"flight"
 msgstr ""
 
 msgid ":kbd:`⇧B`"
@@ -508,12 +509,6 @@ msgid ":kbd:`Home`"
 msgstr ""
 
 msgid "Frame everything"
-msgstr ""
-
-msgid ":kbd:`T`"
-msgstr ""
-
-msgid "Open and close the Space's Outliner"
 msgstr ""
 
 msgid "Add a base shape at the 3D cursor"
@@ -816,5 +811,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Move, rotate, scale a sketch: then X Y Z, a number, Enter or Esc"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Move: the centre of rotation and "
+#~ "the zoom go to the point under "
+#~ "the cursor; nothing is selected"
+#~ msgstr ""
+
+#~ msgid ":kbd:`T`"
+#~ msgstr ""
+
+#~ msgid "Open and close the Space's Outliner"
 #~ msgstr ""
 

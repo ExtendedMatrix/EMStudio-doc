@@ -10,7 +10,7 @@ author = 'Emanuel Demetrescu'
 
 release = '1.6'
 # The version described, copied from EMStudio's frontend/package.json (tag v1.6.0-dev.145).
-version = '1.6.0-dev.145'
+version = '1.6.0-dev.146'
 
 # -- General configuration
 

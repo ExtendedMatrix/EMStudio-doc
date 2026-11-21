@@ -144,6 +144,15 @@ See what the scene holds
   and **Territory / GIS**, each with how many there are in the epoch. The button
   says how many categories are off.
 - ``⋯ ▸ Frame the scene again`` brings the camera back on what is drawn.
+- Double-click a point of a model or of a proxy: the camera flies towards it,
+  and the point becomes the centre of rotation. Nothing is selected. Each
+  double click brings the camera closer, to about a third of the distance, never
+  nearer than seventy centimetres. A click on the scene, the wheel or a key stops
+  the flight where it is. Framing the selection (:kbd:`.` or :kbd:`F`, **Frame**
+  in the menu of a row of the **Outliner**, or a double click on that row) flies
+  in the same way, and so does going to a unit from the Matrix; **Home**, which
+  frames everything, still jumps. When the system asks to reduce motion, the
+  camera does not fly: it is there at once, and the scene fades in.
 - When nothing is drawn, a line under **The scene is empty** says why: a category
   switched off, a model hidden from the Outliner, a file missing, units without a
   proxy, a tileset whose root has not arrived.
@@ -151,9 +160,10 @@ See what the scene holds
 Choose what the scene loads
 ---------------------------
 
-A model can have several versions, made for different uses. The chip ⚙ in the
-bar shows the hardware profile the scene loads for. A click opens **The versions
-the scene loads**: **Robust desktop — the realtime versions**, **Web — the webXR
+A model can have several versions, made for different uses. The line above
+the scene shows the hardware profile the scene loads for, as a word after the
+view: **desktop ▾**, **web ▾** or **mobile ▾**; its tooltip says why. A click
+opens **The versions the scene loads**: **Robust desktop — the realtime versions**, **Web — the webXR
 versions (ATON, Heriverse)**, **Mobile — the mobile webXR versions (phones,
 headsets)**, and **As the machine says**, which goes back to the profile read
 from the machine.

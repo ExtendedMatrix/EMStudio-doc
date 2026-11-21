@@ -117,14 +117,15 @@ is the unit of all four windows.
 Sheets
 ~~~~~~
 
-The workspace of the recording sheet. The **Outliner** is on the left: pick a
-unit and the **Sheet** in the middle shows it. On the right, two small windows
+The workspace of the recording sheet. The **Outliner** is on the left, with the
+stratigraphic units alone (**Show all** at its head gives back every dimension
+of the graph): pick a unit and the **Sheet** in the middle shows it. On the right, two small windows
 follow the same unit: the **3D scene** with its proxy, and a **Graph** window in
 **Matrix** mode framed on the unit and the units it touches. The **Viewer & card**
 underneath shows the unit's photographs and documents.
 
 .. image:: /_static/screens/workspaces/sheets.jpg
-   :alt: The Sheets workspace: the recording sheet of SU004 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card underneath, empty because the unit has no pictures yet.
+   :alt: The Sheets workspace: the Outliner with the stratigraphic units alone and Show all at its head, the recording sheet of SU004 in the middle, the 3D scene and the Matrix framed on the unit on the right, the Viewer & card underneath, empty because the unit has no pictures yet.
 
 Scripting
 ~~~~~~~~~

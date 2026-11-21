@@ -22,7 +22,9 @@ Before you start
 ----------------
 
 Open the study in the **Space** workspace, with an **Outliner** beside the
-**3D scene** (the Space's arrangement has one on the left). The models must
+**3D scene** (the Space's arrangement has one on the left). The scene has no
+list of its own: its rows are those of the Outliner. In a workspace without
+one, turn a window into an **Outliner** from its type menu. The models must
 already be in the graph (see :doc:`load-models-and-tilesets`).
 
 Read the scene by epochs
@@ -36,7 +38,9 @@ Read the scene by epochs
    **Models**, **RMDoc** and **RMSF**. Under **Models**, a container lists its
    members that live in that epoch and, when it has one, its alternative.
    **Without proxy** lists the units alive in the epoch that have no shape. What
-   has no epoch, and the GIS layers, are under **No epoch**.
+   has no epoch, and the GIS layers, are under **No epoch**. A model whose
+   alternative is drawn in its place has its name in italics and a green
+   **⇄**, whose tooltip says what replaces it.
 #. A click on a row selects the object in the scene and stays in the Space;
    :kbd:`⌘`-click (:kbd:`Ctrl`-click on Windows and Linux) adds to the selection,
    :kbd:`Shift`-click selects a range. A right click opens the menu of the

@@ -21,7 +21,8 @@ Open the filter
 #. Click the funnel at the top right of the canvas (**Filters — visible
    nodes/edges & display**).
 #. The panel is titled with the mode it filters, for example **Detail level —
-   Matrix view**. Press :kbd:`Esc` or **✕** to close it.
+   Matrix view**. Press :kbd:`Esc` or **✕**, or click outside it, to close it:
+   that click only closes the panel and selects nothing.
 
 Start from a template
 ---------------------

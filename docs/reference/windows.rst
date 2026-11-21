@@ -49,6 +49,34 @@ Close
    **Close window** removes the window from the workspace. The message that
    follows offers **Reopen**.
 
+The header
+   Every header has three zones, always in the same places. At the left, fixed:
+   the window type and its **?**. In the centre, what the window shows: its
+   modes, its context (the sheet of a Tabular window, the epoch of the 3D
+   scene). At the right, its actions: filters, the search field, ``⋯`` and
+   **⛶**. A header never scrolls sideways. When the window is too narrow for
+   it, the header gives way always in the same order: the labels become icons
+   (the name stays in the tooltip), then the verbs move into ``⋯``, listed under
+   **In the bar (no room for them)**, then the search field becomes a magnifier,
+   and last the main command of the centre narrows. In a very narrow window
+   **Epochs** / **Horizons** become **E** / **H**, and the modes and the **?**
+   move into ``⋯`` too; there the **?** becomes **What this window is**.
+   ``⋯`` holds only what is not already in the bar: when it has nothing, it is
+   not shown.
+
+Menus and panels
+   A menu or a panel that opens over the windows (a menu of the header, the
+   filter, the overlays of a canvas, **Visibility ▾**, **Colours ▾**, a context
+   menu) closes with a click outside it or with :kbd:`Esc`. The click that
+   closes does nothing else: it does not select the node under it, nor open
+   another menu; the next click works as usual. :kbd:`Esc` closes the topmost
+   panel only, so a submenu closes before its menu. Pressing again the button
+   that opened a panel closes it, and the focus goes back to that button. A
+   window where you have written something (a dialog with a field, the form of
+   a new document, **Copy the selection into…**) does not close with a click outside: :kbd:`Esc`
+   asks **Discard what you wrote in this window?**, with **Keep writing** and
+   **Discard**.
+
 A workspace you have reshaped can be restored to its arrangement of origin (see
 :ref:`reference-workspaces`).
 
@@ -74,6 +102,11 @@ Outliner
    click stays selected and the list does not scroll, and the unit's other rows
    are marked by a faint dotted underline, their tooltip saying *The unit
    selected, in another place of the tree*.
+   In the **Sheets** workspace the Outliner lists the stratigraphic units
+   alone, the family the sheets describe, by epoch as elsewhere; a line at its
+   head says **Stratigraphic units —** and their number, and **Show all** gives
+   that window every dimension of the graph again (see
+   :doc:`/how-to/sheets/fill-the-recording-sheet`).
 
 Inspector
    *What is the selection?* The fields of the selected node, section by section
@@ -111,8 +144,12 @@ Tabular
 3D scene
    *Where is it, and what shape does it have in each epoch?* The representation
    models of an epoch and the proxies of its units, in one scene you can orbit,
-   with the epoch selector it shares with the Chronology. It is the main window
-   of Space, and in Sheets it shows the proxy of the unit.
+   with the epoch selector it shares with the Chronology. Its bar holds, at the
+   left, **Colours ▾** and **Visibility ▾**; in the centre, the epoch; at the
+   right, the actions. The views **Globe**, **Plan** and **Site** are in the
+   column of round buttons under the gizmo, and the hardware profile is a word
+   of the line above the scene. It is the main window of Space, and in Sheets it
+   shows the proxy of the unit.
 
 Sheet
    *What does the recording sheet say of this unit?* The unit as its recording
@@ -129,9 +166,9 @@ Index
    column of Narrative, above the Outliner.
 
 Chronology
-   *Do the epochs hold?* The epochs and phases as bars on a time axis, the
-   overlaps with their difference and their remedies, and the table of the
-   bounds. It opens below the Matrix with ``Tools ▸ Check the chronology…``, and
+   *Do the epochs hold?* The horizons of the project at its head, then the
+   epochs and phases as bars on a time axis, the overlaps with their difference
+   and their remedies, and the table of the bounds. It opens below the Matrix with ``Tools ▸ Check the chronology…``, and
    from an epoch's swimlane, its Inspector and the chronology warnings.
 
 Study

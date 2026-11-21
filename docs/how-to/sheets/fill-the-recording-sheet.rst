@@ -24,7 +24,7 @@ Open the sheet of a unit
 ------------------------
 
 .. image:: /_static/screens/workspaces/sheets.jpg
-   :alt: The Sheets workspace with the recording sheet of SU004: the head, the boxes filled from the graph, the boxes outside the graph hatched.
+   :alt: The Sheets workspace with the recording sheet of SU004, the Outliner listing the stratigraphic units alone: the head, the boxes filled from the graph, the boxes outside the graph hatched.
 
 #. Choose the **Sheets** workspace in the bar across the top of the window.
    Its question is **What does the recording sheet say of this unit?**
@@ -37,6 +37,15 @@ Open the sheet of a unit
 
 When you select something that is not a unit, for example a property in the
 Matrix, the sheet stays on the last unit and says so in a line above the sheet.
+
+The **Outliner** of the Sheets workspace lists only the stratigraphic units, the
+family the sheets describe, by epoch as elsewhere: no documents, authors, models
+or paradata. A line at its head says so, for example **Stratigraphic units —
+116**. **Show all** gives that window every dimension of the graph again (the
+line then says **Every dimension of the graph**), and **Units only** brings the
+units alone back; each Outliner remembers its choice. The Outliners of the other
+workspaces are not changed, and a document or a model selected elsewhere opens
+no row here.
 
 Read the head and the boxes
 ---------------------------

@@ -142,9 +142,12 @@ from there. In the **3D scene**:
 
 - the tooltip of **⌖** gives the graph's system, for example **Georeferencing —
   EPSG:3844, and the models**;
-- **🌐 Globe** in the bar lays the site on its ground, with a basemap and the
-  terrain, and offers the views **Globe**, **Plan** and **Site**; ``⋯ ▸ Go to the
-  site`` brings the camera back to it;
+- the round button **🌐**, in the column under the gizmo, lays the site on its
+  ground, with a basemap and the terrain. Under it appear the views **Globe**,
+  **Plan** and **Site**, as the round buttons **G**, **P** and **S**, the one in
+  use in the colour of the accent; their whole names are in the tooltips. When
+  the gizmo is switched off, the column goes with it and the three views are in
+  the scene's ``⋯``. ``⋯ ▸ Go to the site`` brings the camera back to the site;
 - tilesets and models with a system of their own are converted into the graph's
   system.
 

@@ -19,15 +19,23 @@ Arrange the whole matrix
 ------------------------
 
 #. Click the **Layout** icon on the bar of the Graph window (its tooltip says
-   **Arranges this view again; one undo takes it back.**). The same command is
-   ``⋯ ▸ Layout ▸ Layout`` in the window's menu and **Reorder everything** at the
-   foot of the menu that a right click on the empty canvas opens.
+   **Arranges this view again; one undo takes it back.**). In the Matrix the
+   icon has a small arrow **▾** beside it, **Ways to lay out**, which opens
+   **Layout** and **Layout reducing the crossings (Alt+click)**. The same command
+   is **Reorder everything** at the foot of the menu that a right click on the
+   empty canvas opens.
 #. The message **Layout from the hand's arrangement** confirms it. The engine
    starts from the order the units already have, yours included, and arranges
    them again by epochs.
 
-Hold :kbd:`⌥` (:kbd:`Alt`) while you click the icon for a fresh arrangement that
-leaves out the places given by hand: the message is **New layout**.
+The tooltip of the icon gives its two variants. Hold :kbd:`⇧` (:kbd:`Shift`)
+while you click it for a fresh arrangement that leaves out the places given by
+hand: the message is **New layout**. Hold :kbd:`⌥` (:kbd:`Alt`) to lay out
+reducing the crossings, as below.
+
+The Matrix's ``⋯`` menu no longer repeats the layout: the icon and its arrow are
+the only place of these commands in the bar (see :ref:`reference-windows`, *The
+header*).
 
 The layout always arranges the whole graph, also when a filter hides part of it
 (see :doc:`filter-the-graph`), so the study you reopen shows what you saw after
@@ -37,8 +45,10 @@ hidden node leaves its place empty until the next layout.
 Reduce the crossings
 --------------------
 
-#. Choose ``⋯ ▸ Layout ▸ Layout reducing the crossings`` in the window's menu, or
-   the same entry from a right click on the empty canvas.
+#. Click the arrow **▾** beside the **Layout** icon and choose **Layout
+   reducing the crossings (Alt+click)**, or :kbd:`⌥`-click (:kbd:`Alt`-click)
+   the icon itself, or choose the same entry from a right click on the empty
+   canvas.
 #. The engine reorders the units within their bands to cross fewer lines. The
    message gives the count before and after, for example **Laid out reducing the
    crossings: 146 → 86 — one undo takes it back**. When it finds no better order,
@@ -82,7 +92,8 @@ In Graph mode
 -------------
 
 The **Graph** mode of the same window draws the nodes as discs, with no bands.
-``⋯ ▸ Layout`` offers three arrangements: **Layered**, **Radial** and **Force**.
+``⋯ ▸ Layout`` offers three arrangements: **Layered**, **Radial** and **Force**
+(in this mode the **Layout** icon has no arrow: there is one way to lay out).
 A disc you drag stays where you leave it; these places are kept on this
 computer, for each graph, and not in the study. The **Layout** icon forgets them
 and arranges the graph again.

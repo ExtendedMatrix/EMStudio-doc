@@ -17,7 +17,10 @@ Before you start
 ----------------
 
 - Use the desktop application: the console works through its bridge.
-- Open a study. The console works on the open one; with none, it says so.
+- Open a study. The console works on the open one, the study whose graph the
+  Matrix shows, and follows it when you open another; with none, it says
+  **Open a document: the console works on the open one**, and **Run** stays
+  off until a study is open.
 
 Open the console
 ----------------
@@ -53,11 +56,24 @@ Complete a name with Tab
 Tab works as in Blender's console.
 
 - The first :kbd:`Tab` completes the name when only one fits, or the part that
-  all the names share. When several remain, a short note says how many, and
-  that a second :kbd:`Tab` lists them.
+  all the names share. When several remain, the line under the prompt says how
+  many, and that a second :kbd:`Tab` lists them.
 - A second :kbd:`Tab` in a row, on the same text, repeats your line in the
-  console and prints under it every possible name, in columns and in green; your
-  line and the cursor stay where they were.
+  console and prints under it every possible name, in green, one per row: the
+  mark of its kind (**ƒ** a function or a method, **•** a property, **◆** a
+  class, **▣** a module, **=** a value; the word is in the tooltip of the mark),
+  the name whole, never cut, and beside it a short description, the first
+  sentence of its help. The whole help is in the tooltip of the row. Your line
+  and the cursor stay where they were.
+- When only one name fits, the first :kbd:`Tab` completes it and the second
+  prints it with its description: ``g.i`` becomes ``g.id``, then ``id`` is
+  printed with *The graph's id, or None.*
+- A list is printed once. Pressed again on the same line, :kbd:`Tab` prints
+  nothing, and the line under the prompt says **already listed above · change
+  the line to ask again**.
+- After the name of a function and a dot, ``g.chronology.``, :kbd:`Tab` says
+  **chronology is a function: call it with ( )**.
+- ``em.`` lists the public names of ``em`` alone, the same as its ``__all__``.
 - :kbd:`Ctrl+Space` lists at once, as a double :kbd:`Tab`.
 - After ``(``, and when :kbd:`Tab` completes the name of a function
   (``g.chrono`` becomes ``g.chronology(``), the console prints its signature and
@@ -72,7 +88,7 @@ The colours
 -----------
 
 .. image:: /_static/screens/windows/console-colours.png
-   :alt: The Python console: sel and its result in blue, 1/0 and its traceback in red, g.node followed by the double Tab, with the names node and nodes and the signature of node in green.
+   :alt: The Python console: sel and its result in blue, 1/0 and its traceback in red, g.node followed by the double Tab, with node and nodes, each with its mark and a short description, and the signature of node in green.
 
 Each kind of line has its colour, taken from the theme, light or dark:
 
