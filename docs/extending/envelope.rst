@@ -183,7 +183,31 @@ A panel, ``[[code.panels]]``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A panel is a few fields drawn by EMStudio, never HTML: ``id``, ``label``,
-``place`` (where it opens the first time), ``when``, and ``[[code.panels.fields]]``.
+``when``, and ``[[code.panels.fields]]``, with where it goes:
+
+- ``space`` — the editor it lives in: ``"space"`` (the Space, the only one
+  today, and the default);
+- ``region`` — ``"sidebar"``, the sidebar of the Space with its vertical tabs
+  (the default), or ``"window"``, a window of its own;
+- ``tab`` — the tab of the sidebar, a short word (at most 24 characters) or
+  ``{ en = "…", it = "…" }``; without it, the tab takes the **extension's
+  name**. Panels of different extensions that name the same tab share it.
+
+.. code-block:: toml
+
+   [[code.panels]]
+   id = "import"
+   label = { en = "Geophysical stack", it = "Pila geofisica" }
+   space = "space"
+   region = "sidebar"
+   tab = { en = "Geophysics", it = "Geofisica" }   # absent: «Geofisica», the extension's name
+   when = "document"
+
+``place`` (``right``, ``left``, ``below``, ``window``), from the packages written
+before, is still read when ``region`` is absent: ``window`` is a window of its
+own, the three others the sidebar. No panel is placed as a column between the
+areas.
+
 A field has a ``kind``: ``text``, ``number`` (with ``unit``, ``min``,
 ``max``, ``step``), ``choice`` (with ``options``, each ``{ value, label }``),
 ``check``, ``node`` — what the person fills, with a ``name``: the slot of the

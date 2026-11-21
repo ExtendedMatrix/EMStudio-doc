@@ -83,13 +83,13 @@ Where it appears
      - ``.asc`` and ``.xyz`` go to the package; ``.csv``, ``.tif``, ``.tiff``,
        ``.jpg``, ``.jpeg``, ``.png`` offer **Read as:** **Geofisica ·
        Geophysical stack** beside **EMStudio (as it is)**
-   * - The panel **Geophysical stack**
+   * - **Space**, the sidebar (:kbd:`N`), tab **Geofisica**: the panel **Geophysical stack**
      - the import (below)
    * - **Space**, **Visibility ▾** ▸ **Plugin layers**
      - the stacks as planes, with the depth cursor over the scene
    * - **Space**, the **Outliner**, under **No epoch**
      - **Slice stacks**: a row for each stack drawn
-   * - **Space**, the bar over the scene
+   * - **Space**, the toolbar on the left of the scene (:kbd:`T`), under the separator
      - **Point anomaly on a slice**, **Linear anomaly on a slice**, **Areal
        anomaly on a slice**
    * - **Inspector**
@@ -209,9 +209,10 @@ The tracing tools
    * - **▱ Areal anomaly on a slice**
      - an area; a double click, **✓** or :kbd:`Enter` closes it
 
-While you trace, the points placed are drawn on the plane in yellow, and the
-bar counts them (**Linear anomaly on a slice: 1 point**). :kbd:`Esc` or **✕**
-stops. A tool is put down when the Space shows another document. Each trace writes a unit **USD**, its properties
+The tools are in the toolbar on the left of the scene; they can be used once a
+stack is shown. While you trace, the points placed are drawn on the plane in
+yellow, and the line over the scene and the sidebar's tab **Tool** count them
+(**Linear anomaly on a slice: 1 point**). :kbd:`Esc` or **✕** stops. A tool is put down when the Space shows another document. Each trace writes a unit **USD**, its properties
 (kind of anomaly, method, top and bottom of the band, confidence when given),
 and an extractor of the slice, or a combiner of the extractors of several
 slices. The kinds of anomaly are **point anomaly**, **linear anomaly**, **areal

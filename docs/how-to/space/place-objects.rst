@@ -50,14 +50,14 @@ Type the numbers
 
 #. Select the object.
 #. In the **Inspector**, open the section **Transform**, or press :kbd:`N` in the
-   scene to open the **View** panel on its right, section **Selected object**: the
-   two show the same numbers.
+   scene to open the sidebar on its right, tab **Item**: the two show the same
+   numbers.
 #. Change **Position**, **Rotation** or **Scale** and press :kbd:`Enter`. The
    **Quaternion (W X Y Z)** and the **Pivot (m)**, the point the object turns
    about, are shown for reading.
 #. **Reset** puts the object back where its file puts it.
 
-With several objects selected, a value changed in the **View** panel moves them
+With several objects selected, a value changed in the tab **Item** moves them
 all by the same amount. A line under the numbers says where they are written: the
 model's own transform, applied over its file, or the transform of the proxy's
 shape, applied over its file.
@@ -68,14 +68,60 @@ Use the 3D cursor
 The 3D cursor is a point of the scene you choose: new shapes are added there, and
 an object can be brought to it.
 
-- :kbd:`Shift` + right click lays the cursor on the surface under the pointer.
+- With the tool **3D cursor** of the toolbar (:kbd:`T`), a click on a surface
+  lays the cursor there; with any tool, :kbd:`Shift` + right click does the same.
 - :kbd:`Shift+C` puts it on the middle of what is drawn, and frames the view on
   it.
-- The **View** panel shows its position and rotation under **3D cursor**, and
-  **To the centre of the scene** brings it back to the centre.
+- The tab **View** of the sidebar shows its position and rotation under
+  **3D cursor**, and **To the centre of the scene** brings it back to the centre.
 
-The section **Snap** of the same panel sets how :kbd:`Ctrl` rests an object on a
+The section **Snap** of the same tab sets how :kbd:`Ctrl` rests an object on a
 face, with **Align to the normal** to turn it with the surface.
+
+.. _space-sidebar-toolbar:
+
+The sidebar and the toolbar
+---------------------------
+
+The scene has two regions of its own, as Blender's 3D view.
+
+The **toolbar**, on the left edge of the scene, is a column of icons; :kbd:`T`
+shows and hides it. At the top the tools of the Space: **Select** (a click
+selects an object, a drag on the empty or :kbd:`B` a box) and **3D cursor** (a
+click on a surface lays the cursor there). Under a separator come the tools of
+the extensions, for example the three tracing tools of the geophysics package;
+the tooltip says the tool's name and its extension, and a tool that cannot be
+used here is greyed out with the reason (**No slice of Geofisica is shown in
+this Space**). The active tool is lit; :kbd:`Esc` goes back to **Select**.
+
+The **sidebar**, on the right, opens and closes with :kbd:`N` or with the small
+arrow on the edge of the scene. Its vertical tabs, on its right edge, each show
+a set of panels:
+
+- **Item** — the object selected: its position, rotation and scale;
+- **Tool** — the active tool and its options (a trace's points, **Finish the
+  trace**, **Stop tracing**);
+- **View** — the view and the lens, the **3D cursor**, the **Level of detail**,
+  the **Snap**;
+- one tab for each extension that brings panels, named as the extension (or as
+  its panels say): **Geofisica** holds the panel **Geophysical stack**.
+
+The tab you choose is remembered for each workspace. In a narrow window, or on a
+telephone, the sidebar opens over the scene instead of narrowing it.
+
+.. figure:: /_static/screens/space/sidebar-extension.png
+   :alt: The Space with the toolbar on the left of the scene (Select, 3D cursor, a separator, the three tracing tools of Geofisica) and the sidebar on the right, open on the vertical tab Geofisica with the panel Geophysical stack.
+
+   The toolbar on the left; the sidebar on the right, on the tab of an extension.
+
+.. figure:: /_static/screens/space/sidebar-tool.png
+   :alt: The sidebar on the tab Tool while Linear anomaly on a slice is active: the tool's name and its extension, how to trace, No point placed yet, Finish the trace and Stop tracing.
+
+   The tab **Tool** with a tool of an extension active.
+
+From a script, ``em.app.space.sidebar`` lists the tabs (``tabs``) and opens one
+(``open("Geofisica")``), and ``em.app.space.tools`` lists the tools and
+activates one (``activate("geofisica.trace.point")``).
 
 Lock an object where it is
 --------------------------

@@ -128,8 +128,9 @@ Where you will find it
 
 The right half says where each thing the extension brings shows in EMStudio,
 one line per place: **File ▸ Bring in…** (a reader, and whether it reads a
-folder), **Right panel** (or left, below, a window of its own), **Space ▸ Layers**,
-**Space ▸ Tools**, **Inspector** (a section, and the kind of node it
+folder), **Space ▸ sidebar (N) ▸ tab «…»** (the tab of its panels, named as the
+extension unless they name one; or **A window of its own**), **Space ▸ Layers**,
+**Space ▸ toolbar (T)**, **Inspector** (a section, and the kind of node it
 reads), **File ▸ Import** and **File ▸ Export**, **Tools menu**, **A node's
 context menu**, **Checks**, **Tabular ▸ Columns**, **Status bar**,
 **Narrative ▸ Export**, **Vocabularies** (in the Inspector's pickers), and

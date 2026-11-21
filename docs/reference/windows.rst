@@ -148,8 +148,12 @@ Tabular
    left, **Colours ▾** and **Visibility ▾**; in the centre, the epoch; at the
    right, the actions. The views **Globe**, **Plan** and **Site** are in the
    column of round buttons under the gizmo, and the hardware profile is a word
-   of the line above the scene. It is the main window of Space, and in Sheets it
-   shows the proxy of the unit.
+   of the line above the scene. As in Blender, the **toolbar** (:kbd:`T`) is a
+   column of icons on the left edge of the scene, and the **sidebar**
+   (:kbd:`N`) on its right has vertical tabs: **Item**, **Tool**, **View** and
+   one tab for each extension with panels (see :ref:`space-sidebar-toolbar`).
+   It is the main window of Space, and in Sheets it shows the proxy of the
+   unit.
 
 Sheet
    *What does the recording sheet say of this unit?* The unit as its recording

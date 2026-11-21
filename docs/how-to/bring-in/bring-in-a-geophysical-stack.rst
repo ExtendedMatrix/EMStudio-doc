@@ -35,8 +35,8 @@ Open the folder
 #. EMStudio asks **Which extension reads …?**, since reading the folder as DosCo
    is always one of the choices: choose **Geophysical stack**.
 
-The panel **Geophysical stack** opens on the right, with the folder already in
-its field **Folder**. Under **What it is**, the package says what it found
+The panel **Geophysical stack** opens in the Space, in the sidebar's tab
+**Geofisica** (:kbd:`N`), with the folder already in its field **Folder**. Under **What it is**, the package says what it found
 without reading the pictures: the stack, the format, how many slices and
 sections, the depths, the method, and how many documents of this stack the graph
 already has.

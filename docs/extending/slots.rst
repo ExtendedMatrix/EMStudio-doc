@@ -111,7 +111,9 @@ command.
   the console as ``em.ext.<plugin>.<name>``.
 - ``panel@1`` — ``[[code.panels]]`` in the envelope (see :doc:`envelope`):
   EMStudio draws the fields, the values computed by read-only commands, and
-  the buttons that run commands with the fields.
+  the buttons that run commands with the fields, in a tab of the Space's
+  sidebar (``tab``, the extension's name when absent) or in a window of its
+  own (``region = "window"``).
 
 Read only means read only
 -------------------------
@@ -142,13 +144,15 @@ the data. What you declare is what the person reads, before installing.
    * - ``menu.file.import@1``, ``menu.file.export@1``
      - **File ▸ Import**, **File ▸ Export**
    * - ``[[code.panels]]``
-     - **Right panel**, **Left panel**, **Panel below** or
-       **A window of its own**, from its ``place`` (right when it is not given),
-       with the panel's ``label``
+     - **Space ▸ sidebar (N) ▸ tab «…»**, the tab its ``tab`` names (the
+       extension's name when it is not given), or **A window of its own** with
+       ``region = "window"``; with the panel's ``label``
    * - ``space.layer@1``
      - **Space ▸ Layers**
    * - ``space.tool@1``
-     - **Space ▸ Tools**, every tool's label
+     - **Space ▸ toolbar (T)**, every tool's label: the tools of the
+       extensions are under the separator of the toolbar on the left of the
+       scene, their options in the sidebar's tab **Tool**
    * - ``inspector.section@1``
      - **Inspector**, *section* and its label; **Show me** says the kind of
        node to select (its ``when``)
@@ -183,8 +187,9 @@ What this asks of an author:
   (``{"en": …, "it": …}``): the line shows the label, else the id;
 - declare the slots the command really serves: a command in no slot is still
   reachable, but only from Python;
-- declare ``folders = true`` on a reader that takes a folder, and ``place`` on a
-  panel that should not open on the right.
+- declare ``folders = true`` on a reader that takes a folder, and ``tab`` on a
+  panel whose tab should not be your extension's name (``region = "window"``
+  for one that needs a window of its own).
 
 The places are read from the archive before anything is installed (the preview
 of **Install from disk…** and of a repository's **Install** says them), so the

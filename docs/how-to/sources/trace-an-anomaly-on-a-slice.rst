@@ -23,22 +23,26 @@ Before you start
 Trace
 -----
 
-Over the scene, beside the depth cursor, a bar offers the three tools of the
-package: **◉** **Point anomaly on a slice**, **〰** **Linear anomaly on a
-slice** and **▱** **Areal anomaly on a slice**. The bar is there while a stack
-of the package is shown.
+The toolbar on the left of the scene (:kbd:`T`) has, under its separator, the
+three tools of the package: **◉** **Point anomaly on a slice**, **〰** **Linear
+anomaly on a slice** and **▱** **Areal anomaly on a slice**. They can be used
+while a stack of the package is shown; otherwise they are greyed out, and their
+tooltip says why. While you trace, a line over the scene, beside the depth
+cursor, counts the points, with **✓** and **✕**; the sidebar's tab **Tool**
+(:kbd:`N`) says the same, with **Finish the trace** and **Stop tracing**.
 
 .. image:: /_static/screens/geophysics/trace-area.jpg
    :alt: The Space seen from above on a slice of the Basilica Iulia: the bar Areal anomaly on a slice: 3 points with its tick and cross, and below it the depth cursor at D.03 · 3.00–3.50 m below ground (3/6).
 
-#. Press the tool of the shape you read.
+#. Press the tool of the shape you read in the toolbar: it is lit.
 #. Click on the slice: each click is a point of the anomaly, drawn at once on
    the plane in yellow, and the bar counts them, for example **Linear anomaly on
    a slice: 2 points**. A click elsewhere than on a slice of the stack is
    answered **Click on a slice of the stack**.
 #. A point is written at the first click. Close a line or an area with a double
    click, with **✓** or with :kbd:`Enter`.
-#. To stop without writing, press **✕** or :kbd:`Esc`: the yellow points go.
+#. To stop without writing, press **✕** or :kbd:`Esc`: the yellow points go,
+   and the toolbar is back on **Select**.
 
 .. image:: /_static/screens/geophysics/trace-pending.png
    :alt: A slice of the Basilica Iulia seen from above: a line of three yellow points being traced, the bar Linear anomaly on a slice: 3 points with its tick and cross, and a cyan line of an anomaly already written.
