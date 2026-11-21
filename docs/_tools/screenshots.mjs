@@ -443,6 +443,50 @@ const SHOTS = [
       await sleep(600);
     },
   },
+  // MICRO-SEG24 · the figures an epoch or an activity carries: chapter 8
+  // (Virtual Activity 1) narrates VAct.01, «＋ Figure» opens the menu
+  {
+    name: "narrative/figure-menu", wait: 800,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="7"]').scrollIntoView({ block: "start" }));
+      await sleep(600);
+      await click(p, '.tile-area[data-surface-type="narrative"] [data-nv-figure="7"]');
+      await sleep(700);
+    },
+  },
+  // …the Matrix of VAct.01 inserted: the canvas's slice, «Fig. 8.1» and its
+  // automatic caption, the Inspector on the figure
+  {
+    name: "narrative/figure", wait: 1200,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="7"]').scrollIntoView({ block: "start" }));
+      await sleep(600);
+      await click(p, '.tile-area[data-surface-type="narrative"] [data-nv-figure="7"]');
+      await sleep(600);
+      await click(p, '.nv-fig-menu button[data-nv-fig$="|matrix"]');
+      await sleep(1800);
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="7"] .nv-matrix-layout')?.scrollIntoView({ block: "center" }));
+    },
+  },
+  // …and «Coherence with the Matrix» in the Index after VAct.01 was renamed
+  {
+    name: "narrative/coherence", wait: 1000,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await click(p, '.tile-area[data-surface-type="narrative"] [data-nv-figure="7"]');
+      await sleep(600);
+      await click(p, '.nv-fig-menu button[data-nv-fig$="|matrix"]');
+      await sleep(1500);
+      const id = await idOf(p, "VAct.01 Foundations of the temple");
+      await p.evaluate((i) => window.__EM_DRAG__.renameNode(i, "VAct.01 Foundations and podium"), id);
+      await sleep(1500);
+      await p.evaluate(() => { const s = document.querySelector('[data-nidxact="coherence"]'); if (s && !s.parentElement.open) s.click(); });
+      await sleep(800);
+      await p.evaluate(() => document.querySelector(".nidx-coh-sect")?.scrollIntoView({ block: "start" }));
+    },
+  },
 ];
 
 // ---------------------------------------------------------------- run

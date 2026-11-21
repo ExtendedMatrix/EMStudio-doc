@@ -216,6 +216,88 @@ Matrix: an epoch, an activity, or a horizon of the project's periodization.
 **Story coverage** in the **Index** counts what the chapters and sections
 narrate: an epoch narrated, or one of its activities, is told.
 
+Insert the figures of an epoch or an activity
+---------------------------------------------
+
+An epoch or an activity brings with it the things that represent it. A part
+that narrates one can show them as figures.
+
+#. Beside the chips under the title of the chapter, section or subsection,
+   press **＋ Figure** (or right-click the title and choose **Figure…**). The
+   menu lists each epoch and activity the part narrates, with its dates, and
+   under each one the figures it offers:
+
+   - **Matrix**: the part of the Matrix with only those units and what is
+     directly related to them, drawn as the Matrix draws it (an epoch: its
+     band);
+   - **3D model**: the scene of the **Space** with only the proxies and the
+     models that belong to that epoch or activity, the epoch set;
+   - **Plan**: the same scene seen from above, orthographic;
+   - **Three-quarter view**: the same scene seen from the front-right and
+     above, in perspective;
+   - **Sub-epochs** (an epoch only): how the epoch is divided into sub-epochs,
+     each with its dates.
+
+   A figure that has nothing to show yet is greyed, and says why.
+#. The figure goes at the end of the part's own text (a chapter's: before its
+   first section). ``Edit ▸ Undo`` takes it back in one step.
+#. The figure is **live**: what it shows is read from the graph each time the
+   page is drawn. A unit added to the activity appears in its Matrix; a 3D
+   figure shows the models and proxies of today. **▶ Load the scene** draws a
+   3D figure in the page; **Save this framing** keeps a view of your own instead of the
+   plan's or the three-quarter view's.
+#. Under the figure, its number and its caption: **Fig. 8.1**, the chapter's
+   number and the figure's place in it (a running number when the story is not
+   numbered). The caption is written for you, in italics, with the title, the
+   dates and the source: *Plan of II A.D. (100 – 199) · Extended Matrix ·
+   TempluMare_v11.em.json*. Type your own in **Caption** in the **Inspector**
+   to replace it.
+#. To refer to a figure in the text, type ``[[`` in a paragraph: the figures of
+   the story come first in the list. The reference prints its number, **Fig.
+   8.1**, and follows the figure when it moves.
+
+In **Print** and in the exported files each figure becomes a picture with its
+caption: the Matrix and the sub-epochs as drawn, a 3D figure as a still of its
+saved framing or, when it has none, drawn at export with only what is
+pertinent. Scripts reach the same views with ``em.app.space.render(scope,
+view="plan")`` and ``em.app.matrix.render(scope)``.
+
+.. image:: /_static/screens/narrative/figure-menu.jpg
+   :alt: Chapter 8, Virtual Activity 1, narrates VAct.01 Foundations of the temple: under its title the chip and + Figure, and the menu Insert figure open with the activity and its dates 100 – 199, then Matrix, 3D model, Plan and Three-quarter view.
+
+.. image:: /_static/screens/narrative/figure.jpg
+   :alt: The Matrix of VAct.01 inserted in chapter 8: the slice of the Matrix drawn as in the Matrix window, under it Fig. 8.1 and the caption Matrix of VAct.01 Foundations of the temple (100 – 199) · Extended Matrix · TempluMare_v11.em.json; the Inspector shows Figure Fig. 8.1 · Matrix.
+
+Keep the story coherent with the Matrix
+---------------------------------------
+
+The graph keeps changing after a chapter is written. **Coherence with the
+Matrix**, a section of the **Index**, compares what the story narrates and
+shows with the graph as it is now. Its title says how many notices there are.
+They are notices, not errors: nothing changes until you press the button beside
+one, and each button is one step of the history.
+
+- an activity or an epoch **renamed**: **Retitle** when the title still has the
+  old name, otherwise **Keep as it is**;
+- one **deleted**: **Relink** when another one has its name, otherwise
+  **Unlink**;
+- an activity **moved to another epoch**: **Move to** the chapter that narrates
+  the new epoch, with the section's paragraphs;
+- an activity **divided**, part of its units now in an activity the story does
+  not narrate: **Add a section** for it;
+- an epoch **divided into sub-epochs**: **Insert the sub-epochs figure**;
+- sections or subsections **not in the Matrix's order**: **Reorder as the
+  Matrix**, each title with its paragraphs;
+- a figure whose content **changed** since it was made: **Regenerate the
+  figure**;
+- bindings made before this check existed: **Record them now**, so that later
+  changes can be noticed.
+
+A click on a notice takes the page to the part.
+
+.. image:: /_static/screens/narrative/coherence.jpg
+   :alt: The Index with Coherence with the Matrix · 3 open: VAct.01 Foundations of the temple is now called VAct.01 Foundations and podium, in chapters 8 and 11, each with Keep as it is, and 3 bindings with no record yet, with Record them now.
+
 Find your way in a long story
 -----------------------------
 
@@ -248,7 +330,8 @@ What you get
 
 A story that lives in the graph: saved in the study file, divided into
 chapters, sections and subsections, signed chapter by chapter, with its lanes
-tied to the epochs and activities of the Matrix. Two
+tied to the epochs and activities of the Matrix, their figures numbered and
+captioned, and the differences from the Matrix pointed out. Two
 **Narrative** windows can show the same story in two readings, one written and
 one read.
 
