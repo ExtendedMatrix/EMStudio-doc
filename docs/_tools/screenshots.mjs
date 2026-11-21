@@ -312,6 +312,37 @@ const SHOTS = [
     },
   },
 
+  // MICRO-SEG21 · the Outliner of the Space, magnified: the three columns on every
+  // row (isolate · arrow · eye), one row selected, one hidden, one not
+  // selectable, one locked (its padlock beside the name), a survivor's ⟲
+  {
+    name: "windows/outliner-columns", png: true, wait: 1200,
+    rect: { x: 0, y: 98, width: 640, height: 440 },
+    prep: async (p) => {
+      await ws(p, "space"); await sleep(3000);
+      // magnified in a window 640 wide: the name and the columns close enough to be read together
+      await max(p, "outliner");
+      await p.setViewportSize({ width: 640, height: 1000 }); await sleep(1500);
+      const ol = '.tile-area[data-surface-type="outliner"]';
+      const rows = () => p.evaluate((ol) => [...document.querySelectorAll(ol + " .uo-row[data-skey^='proxy:']")]
+        .filter((e) => e.getBoundingClientRect().height > 0).map((e) => e.dataset.skey), ol);
+      // the first epoch's proxies opened, a type of units opened
+      for (let i = 0; i < 3 && (await rows()).length < 6; i++) {
+        await p.evaluate((ol) => { const r = [...document.querySelectorAll(ol + " .uo-row")].find((e) => e.querySelector(".uo-tw")?.textContent === "▸" && !e.dataset.skey && e.dataset.key.includes("/px")); r?.querySelector(".uo-tw")?.click(); }, ol);
+        await sleep(800);
+      }
+      const ks = await rows();
+      if (ks.length < 5) throw new Error(`only ${ks.length} proxies' rows`);
+      const row = (k) => `${ol} .uo-row[data-skey="${k}"]`;
+      await p.locator(`${row(ks[4])} .uo-label`).first().click({ button: "right" }); await sleep(600);
+      await click(p, '.scn-menu [data-s3="pin"]'); await sleep(600);
+      await click(p, `${row(ks[2])} [data-eye]`); await sleep(400);
+      await click(p, `${row(ks[3])} [data-sp="arrow"]`); await sleep(400);
+      await click(p, `${row(ks[1])} .uo-label`); await sleep(500);
+      await p.mouse.move(5, 995);
+    },
+  },
+
   // Sources: two regions traced on D.11 and read; the bubble of the first
   {
     name: "dialogs/what-are-you-extracting", png: true, rect: { x: 600, y: 160, width: 460, height: 600 },

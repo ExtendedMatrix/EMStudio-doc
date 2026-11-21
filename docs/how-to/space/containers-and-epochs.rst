@@ -44,7 +44,10 @@ Read the scene by epochs
 #. A click on a row selects the object in the scene and stays in the Space;
    :kbd:`⌘`-click (:kbd:`Ctrl`-click on Windows and Linux) adds to the selection,
    :kbd:`Shift`-click selects a range. A right click opens the menu of the
-   selection: frame it, hide it, isolate it, go to its unit or model.
+   selection: frame it, hide it, isolate it, lock its position, go to its unit
+   or model. A double click frames the object. At the right of each row the eye
+   shows or hides it, the arrow makes it selectable or not, and the isolate
+   leaves it alone in the scene (see :ref:`the Outliner <reference-windows>`).
 
 Gather models in a container
 ----------------------------

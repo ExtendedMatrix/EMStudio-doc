@@ -126,10 +126,11 @@ activates one (``activate("geofisica.trace.point")``).
 Lock an object where it is
 --------------------------
 
-In the **Outliner**, the padlock of an object's row locks its position: **Lock
-the position (no move, rotation, scale in the Space)**. A locked object does not
-answer to :kbd:`G`, :kbd:`R` or :kbd:`S`, and the scene says why. The padlock is a
-preference of yours, kept on this computer; a click unlocks it.
+In the **Outliner**, right-click an object's row and choose **Lock position**
+(on several rows selected, it locks them all). A locked object does not answer
+to :kbd:`G`, :kbd:`R` or :kbd:`S`, and the scene says why; its row shows a small
+padlock beside the name. The lock is a preference of yours, kept on this
+computer; **Unlock position**, in the same menu, frees it.
 
 Shape a proxy from a base shape
 -------------------------------

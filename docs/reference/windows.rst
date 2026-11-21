@@ -102,6 +102,24 @@ Outliner
    click stays selected and the list does not scroll, and the unit's other rows
    are marked by a faint dotted underline, their tooltip saying *The unit
    selected, in another place of the tree*.
+   At the right of every row stand the same columns, under the icons of the
+   Outliner's head, whether the row is selected, under the pointer or neither:
+   selection and hover change only the row's background. In the **Space**,
+   from the right as in Blender: the **eye** (visible or hidden in the 3D),
+   the **arrow** (selectable or not: full, or an empty outline) and the
+   **isolate** (only this object in the 3D). In the other workspaces the eye
+   alone. With the Outliner in focus :kbd:`H` hides the selection,
+   :kbd:`Shift+H` everything else, :kbd:`Alt+H` shows everything again.
+   **Frame** is the row's double click and its right-click menu, where **Lock
+   position** and **Unlock position** are too; a locked object has a small
+   padlock beside its name. A unit that survives from an earlier epoch has a
+   small **⟲** beside its name, whose tooltip says where it was born.
+
+   .. figure:: /_static/screens/windows/outliner-columns.png
+      :alt: The Outliner of the Space magnified: under the epoch XX sec, the proxies' rows each end with the isolate, the arrow and the eye; SU002 is selected, SU003 hidden (the eye shut), SU004 not selectable (the arrow an outline), SU020 locked (a padlock beside its name), and small ⟲ signs beside the names of the units that survive from an earlier epoch.
+
+      The three columns of the Space's Outliner: the same on every row.
+
    In the **Sheets** workspace the Outliner lists the stratigraphic units
    alone, the family the sheets describe, by epoch as elsewhere; a line at its
    head says **Stratigraphic units —** and their number, and **Show all** gives
