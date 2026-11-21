@@ -83,7 +83,13 @@ come out. In Word and LaTeX:
   :doc:`embeds`); without a saved framing it stays a placeholder with its link;
 - a standard block, such as the **Bibliography**, is written as the text of its
   answer, with the date it was computed;
-- a mention keeps the name of its node in the sentence.
+- a mention keeps the name of its node in the sentence;
+- the titles keep their level: a chapter is a Heading 1 in Word and a
+  ``\section`` in LaTeX, a section a Heading 2 and a ``\subsection``, a
+  subsection a Heading 3 and a ``\subsubsection``; in HTML they are ``h2``,
+  ``h3`` and ``h4``, in the notebook ``##``, ``###`` and ``####``. They carry
+  their numbers (1, 1.1, 1.1.1) unless the story's numbering is off (see
+  :doc:`write-the-narrative`).
 
 In the Jupyter notebook the blocks become cells that query the graph, and a 3D
 scene stays a link. A figure that cannot be drawn leaves its placeholder, and

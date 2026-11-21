@@ -183,8 +183,10 @@ Narrative
    window. It is the main window of Narrative.
 
 Index
-   *What does the story rest on?* The index of a story: its chapters, what still
-   needs writing, and how much of the graph the story covers. It is the left
+   *What does the story rest on?* The index of a story: its chapters with their
+   sections and subsections, numbered, what still needs writing, and how much of
+   the graph the story covers. A title dragged in the Index moves with its
+   paragraphs. It is the left
    column of Narrative, above the Outliner.
 
 Chronology

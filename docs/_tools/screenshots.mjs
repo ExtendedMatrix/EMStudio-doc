@@ -408,6 +408,28 @@ const SHOTS = [
     name: "windows/consolidate", wait: 3000,
     prep: async (p) => { await tool("btn-consolidate")(p); await sleep(40000); await max(p, "storage"); },
   },
+  // MICRO-SEG22 · the «#» paragraphs proposed as titles (the bar, and the first
+  // one with its own «Transform»); then the story with its sections: the Index's
+  // tree, the numbered titles, a section's Inspector with «Transform into…»
+  {
+    name: "narrative/heading-hints", png: true,
+    clip: ['.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="0:3"]', '.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="0:4"]'],
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="0:3"]').scrollIntoView({ block: "center" }));
+    },
+  },
+  {
+    name: "narrative/sections", wait: 1200,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await click(p, '.tile-area[data-surface-type="narrative"] [data-nv-hints-act="all"]'); await sleep(1500);
+      // chapter 4, «Survey of the architectonic fragments»: sections and subsections
+      await click(p, '.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="3:4"]'); await sleep(1000);
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="3:4"]').scrollIntoView({ block: "start" }));
+      await p.evaluate(() => document.querySelector('.nidx-h[data-chapter="3"]')?.scrollIntoView({ block: "center" }));
+    },
+  },
 ];
 
 // ---------------------------------------------------------------- run
