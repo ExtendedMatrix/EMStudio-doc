@@ -9,7 +9,7 @@ The narrative is a node of the graph, saved in the ``.em.json`` with the rest of
 the study. It is made of chapters, and each chapter holds blocks: paragraphs that
 you write, titles of sections and subsections, and blocks that show a part of
 the graph (see :doc:`embeds`). A
-chapter can narrate a *lane* of the graph, an epoch or an activity; the lane is
+chapter can narrate parts of the graph, epochs and activities; the first one is
 what the Matrix beside the page follows and what an AI draft is asked about.
 
 Before you start
@@ -170,17 +170,51 @@ story, and holds in **Write**, **Read**, **Print** and in every exported file.
 Set what a chapter narrates
 ---------------------------
 
-#. Click the title of a chapter. Its **Inspector** shows **Title**,
-   **Narrates the lane** and **Signed by**.
-#. In **Narrates the lane**, choose an epoch, or an activity listed under its
-   epoch, for example *II A.D. › VAct.03 Lintel of the columnade*. The chapter
-   shows the name of its lane beside the title when the two differ, and the
-   Matrix beside the page follows the chapter you are in.
+A chapter, a section or a subsection can narrate one or more parts of the
+Matrix: an epoch, an activity, or a horizon of the project's periodization.
+
+#. Click the title of a chapter, or of a section or subsection. Its
+   **Inspector** shows **Narrates**, a list in order of time: the epochs from
+   the oldest to the most recent, as a story is read, each with its dates
+   beside it, and under each epoch its activities, in order. Every epoch and
+   every activity is listed once. The activities that are in no epoch close
+   the list under **No epoch**. The Matrix beside the page follows the chapter
+   you are in.
+#. When the project has horizons, **Epochs** and **Horizons** above the list
+   choose what it shows. With **Horizons**, each horizon holds the activities
+   of the epochs that fall in it.
+#. Tick what the part narrates: an epoch, one or more activities, or both. A
+   tick removed takes the part off that epoch or activity. Each tick is one
+   step of the history.
+#. When you tick an epoch that has activities, the list asks first what to
+   do, under the epoch, and names the activities:
+
+   - **Only the epoch** ticks the epoch alone;
+   - **The epoch with its activities as sections** (in a chapter) or **as
+     subsections** (in a section) ticks the epoch and adds a title for each
+     activity, at the end of the chapter or section. Each title takes the name
+     of its activity and already narrates it. An activity that a title of the
+     chapter or section already narrates gets no second title;
+   - **Cancel** leaves the part as it was.
+
+   Nothing is added before you choose, and ``Edit ▸ Undo`` takes back the
+   epoch and all its titles in one step. A subsection cannot hold titles, so
+   for a subsection the epoch is ticked alone.
+#. While you write, what the part narrates shows as chips under its title. A
+   click on a chip takes the Matrix to that epoch or activity; a horizon's
+   chip takes it to the oldest epoch that falls in the horizon. In **Read**,
+   **Print** and the exported files the chips do not appear.
 #. Press **I sign** to sign the chapter with your identity. A signature needs
    an identity: if none is declared, EMStudio opens the panel **Who you are**
    (see :doc:`/how-to/rooms/sign-in`).
 #. **☆ make canonical** marks a chapter that a new proposal of the structure
    leaves alone; the Index shows it with ★.
+
+.. image:: /_static/screens/narrative/narrates.jpg
+   :alt: The Narrative workspace on chapter 7, General approach to virtual reconstruction: its Inspector shows Narrates with II A.D. and its dates 100 – 199, and under it the choice Only the epoch, The epoch with its activities as 6 sections (the six activities named, VAct.01 to VAct.06) and Cancel; the activities follow, indented under the epoch.
+
+**Story coverage** in the **Index** counts what the chapters and sections
+narrate: an epoch narrated, or one of its activities, is told.
 
 Find your way in a long story
 -----------------------------

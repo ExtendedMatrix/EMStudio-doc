@@ -430,6 +430,19 @@ const SHOTS = [
       await p.evaluate(() => document.querySelector('.nidx-h[data-chapter="3"]')?.scrollIntoView({ block: "center" }));
     },
   },
+  // MICRO-SEG23 · «Narrates» in order of time: chapter 7's Inspector, the epochs
+  // oldest first with their dates, II A.D.'s activities inside it, and the
+  // question asked when II A.D. is ticked
+  {
+    name: "narrative/narrates", wait: 800,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => { const h = document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="6"] .nv-chapter-head'); h.scrollIntoView({ block: "start" }); h.click(); });
+      await sleep(1200);
+      await p.evaluate(() => [...document.querySelectorAll(".nlp-row")].find((r) => r.querySelector(".nlp-name")?.textContent === "II A.D.")?.querySelector("input").click());
+      await sleep(600);
+    },
+  },
 ];
 
 // ---------------------------------------------------------------- run
