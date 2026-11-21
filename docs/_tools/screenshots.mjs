@@ -229,6 +229,30 @@ const SHOTS = [
       await p.evaluate(() => document.querySelector("[data-ext-dev]").scrollIntoView({ block: "center" })); },
   },
   { name: "windows/chronology", wait: 3000, prep: tool("btn-tool-chronology") },
+  {
+    // MICRO-SEG18 · the Horizons panel at the head of the Chronology (MICRO-SEG16):
+    // a periodization made in the page (Templu Mare has none; nothing is saved),
+    // three horizons dated so that two overlap, listed by their dates, the most
+    // recent on top, the overlap said on both rows
+    name: "windows/horizons", png: true, clip: ".hz-panel", wait: 1500,
+    prep: async (p) => {
+      await tool("btn-tool-chronology")(p); await sleep(1500);
+      await p.locator(".hz-panel .hz-btn", { hasText: "+" }).first().click(); await sleep(1200);
+      const add = p.locator(".hz-panel button").filter({ hasText: /^\+ \S/ }).first();
+      for (let i = 0; i < 3; i++) { await add.click(); await sleep(1000); }
+      const ids = await p.evaluate(() => [...document.querySelectorAll(".hz-panel tr[data-hz-row]")].map((r) => r.dataset.hzRow));
+      ids.reverse();   // the oldest first: the most recent is on top
+      const names = { en: ["Republic", "Early Empire", "Late Antiquity"], it: ["Repubblica", "Alto Impero", "Tarda antichità"] }[LANG] ?? ["Republic", "Early Empire", "Late Antiquity"];
+      const dates = [[-509, -27], [-27, 284], [250, 600]];
+      for (const [i, id] of ids.entries()) {
+        const set = async (sel, v) => { const f = p.locator(sel).first(); await f.fill(String(v)); await f.press("Tab"); await sleep(900); };
+        await set(`[data-hz-name="${id}"]`, names[i]);
+        await set(`[data-hz-num="${id}|start_time"]`, dates[i][0]);
+        await set(`[data-hz-num="${id}|end_time"]`, dates[i][1]);
+      }
+      await p.locator(".hz-panel strong").first().click(); await sleep(1600);   // the last row's flash gone
+    },
+  },
   { name: "dialogs/georeferencing", png: true, clip: "[data-gr-card]", prep: tool("btn-georef") },
   {
     name: "dialogs/porta-dentro", png: true, clip: MODAL,
