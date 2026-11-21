@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20 20:12+0100\n"
+"POT-Creation-Date: 2026-11-21 07:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
@@ -87,7 +87,76 @@ msgstr ""
 msgid ""
 ":kbd:`Enter` runs a complete line; for a block of several lines, end it "
 "with an empty line, or press :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run at "
-"once. :kbd:`Shift+Enter` starts a new line. :kbd:`Tab` completes a name."
+"once. :kbd:`Shift+Enter` starts a new line."
+msgstr ""
+
+msgid "Complete a name with Tab"
+msgstr ""
+
+msgid "Tab works as in Blender's console."
+msgstr ""
+
+msgid ""
+"The first :kbd:`Tab` completes the name when only one fits, or the part "
+"that all the names share. When several remain, a short note says how "
+"many, and that a second :kbd:`Tab` lists them."
+msgstr ""
+
+msgid ""
+"A second :kbd:`Tab` in a row, on the same text, repeats your line in the "
+"console and prints under it every possible name, in columns and in green;"
+" your line and the cursor stay where they were."
+msgstr ""
+
+msgid ":kbd:`Ctrl+Space` lists at once, as a double :kbd:`Tab`."
+msgstr ""
+
+msgid ""
+"After ``(``, and when :kbd:`Tab` completes the name of a function "
+"(``g.chrono`` becomes ``g.chronology(``), the console prints its "
+"signature and the first line of its help, in green. On a name that is "
+"also the start of others (``g.node`` and ``g.nodes``), the double "
+":kbd:`Tab` lists them and gives the signature of the one written."
+msgstr ""
+
+msgid ""
+"Inside a string, :kbd:`Tab` offers the values of the domain (the types of"
+" node, for example)."
+msgstr ""
+
+msgid "The colours"
+msgstr ""
+
+msgid ""
+"The Python console: sel and its result in blue, 1/0 and its traceback in "
+"red, g.node followed by the double Tab, with the names node and nodes and"
+" the signature of node in green."
+msgstr ""
+
+msgid "Each kind of line has its colour, taken from the theme, light or dark:"
+msgstr ""
+
+msgid ""
+"the line you ran is repeated after the prompt ``>>>`` (or ``...``), "
+"coloured as in the Script Editor: keywords, strings and numbers;"
+msgstr ""
+
+msgid "what your code prints is in the colour of the text;"
+msgstr ""
+
+msgid "the value of an expression (``sel``, ``1 + 1``) is in blue;"
+msgstr ""
+
+msgid "a warning of Python (``…Warning:``, with its source line) is in amber;"
+msgstr ""
+
+msgid "an error, with its whole traceback, is in red, once;"
+msgstr ""
+
+msgid "the list of the double :kbd:`Tab`, a signature and its help are in green;"
+msgstr ""
+
+msgid "what the console itself says (the first line, ``em.help()``) is in grey."
 msgstr ""
 
 msgid ""
@@ -230,5 +299,14 @@ msgstr ""
 #~ msgid ""
 #~ ":doc:`/reference/settings`, section *Advanced*, for"
 #~ " the experimental functions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":kbd:`Enter` runs a complete line; for"
+#~ " a block of several lines, end "
+#~ "it with an empty line, or press"
+#~ " :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run "
+#~ "at once. :kbd:`Shift+Enter` starts a new"
+#~ " line. :kbd:`Tab` completes a name."
 #~ msgstr ""
 

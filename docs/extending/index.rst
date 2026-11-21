@@ -53,7 +53,7 @@ How the section is organised
 **How-to guides** — one task each:
 
 - :doc:`test-and-validate`: the validator, the tests, the words of the
-  Extensions window.
+  Extensions page of the Settings.
 - :doc:`stamp-derived-files`: a good practice for code that makes files from
   other files.
 - :doc:`publish`: in a repository of your own (also a laboratory's, signed

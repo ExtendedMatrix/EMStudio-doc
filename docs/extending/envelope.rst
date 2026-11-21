@@ -39,7 +39,7 @@ The head
      - The version of the archive, *major.minor.patch* (see :doc:`new-version`).
    * - ``name``
      - yes
-     - The name shown in the Extensions window.
+     - The name shown on the Extensions page.
    * - ``tagline``
      - no
      - One line about it, at most 64 characters, no final full stop (a

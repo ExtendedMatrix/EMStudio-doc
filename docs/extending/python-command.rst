@@ -159,8 +159,8 @@ The **development folder** loads the plugins you are writing where they are:
 no installation, no question of trust, because the person who writes the
 code is the person who runs it.
 
-#. Choose ``Tools ▸ Extensions…`` and find the section
-   **Development folder**.
+#. Choose ``Tools ▸ Extensions…`` (it opens ``Settings… ▸ Extensions``) and
+   open the row **Development folder**, the last of the page.
 #. Type the folder that holds ``volto-esempio`` (or the folder
    ``volto-esempio`` itself), and press **Use**.
 #. The row of the package appears, marked **development, not verified**,
@@ -169,7 +169,7 @@ code is the person who runs it.
    Python.
 
 .. figure:: /_static/screens/extending/development-folder.png
-   :alt: The section Development folder of the Extensions window: the folder, and the row volto-esempio v0.1.0, development, not verified, loaded, with the button Reload.
+   :alt: The row Development folder of the Extensions page, opened: the folder, and volto-esempio 0.1.0, development, not verified, loaded, with the button Reload.
 
    The package in development: loaded where it is, marked as not verified.
 
@@ -192,7 +192,8 @@ code is the person who runs it.
 ---------------------------------
 
 #. Change the sentence the function returns, and save the file.
-#. In ``Tools ▸ Extensions…``, press **Reload** on the row of the package.
+#. In ``Settings… ▸ Extensions``, press **Reload** on the line of the package,
+   in the row **Development folder**.
    The code is read again; run the command and read the new sentence.
 
 A change of ``em-extension.toml`` (a new command, another slot) is read by
@@ -292,7 +293,7 @@ The whole file, as it stands now, is
 
 #. Clear the development folder (**Clear**), so that the installed copy is
    the one EMStudio loads.
-#. In ``Tools ▸ Extensions…``, press **Install from disk…** and choose the
+#. In ``Settings… ▸ Extensions``, press **Install from disk…** and choose the
    archive. The panel **Data** says that the data 0.1.0 are already
    installed and identical; the panel **Code** is marked
    **NOT VERIFIED, from disk** and says what the code can do. Answer

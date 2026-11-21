@@ -23,7 +23,7 @@ Before you start
 - Open the study from a file saved on this computer: the folder of the em.json
   says where the models are. A study with no file on this computer is refused
   with a message that asks you to save it first.
-- Check that EMStudio finds Blender: ``Settings… ▸ Add-ons``, last card,
+- Check that EMStudio finds Blender: ``Settings… ▸ Third-party tools``, last row,
   **Blender** (see :doc:`/reference/settings`).
 - Let EMStudio find the files of the models (see
   :doc:`/how-to/files/find-missing-files`). A model whose file is missing is
@@ -127,5 +127,5 @@ See also
 - :doc:`/how-to/archive/consolidate-for-a-target`, for the versions a viewer
   will load.
 - :doc:`/how-to/space/containers-and-epochs`, for containers and epochs.
-- :doc:`/reference/settings`, section *Add-ons*, for the Blender of this
+- :doc:`/reference/settings`, section *Third-party tools*, for the Blender of this
   computer.

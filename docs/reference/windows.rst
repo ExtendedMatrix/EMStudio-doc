@@ -69,7 +69,11 @@ Graph
 Outliner
    *What is in the active graph?* The one tree of the study: the open files, their
    graphs, and every dimension of a graph (units, epochs, documents, models). It
-   is the left column of every built-in workspace.
+   is the left column of every built-in workspace. A unit may stand in more than
+   one place of the tree (a document under several epochs, say): the row you
+   click stays selected and the list does not scroll, and the unit's other rows
+   are marked by a faint dotted underline, their tooltip saying *The unit
+   selected, in another place of the tree*.
 
 Inspector
    *What is the selection?* The fields of the selected node, section by section

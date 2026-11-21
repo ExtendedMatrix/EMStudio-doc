@@ -5,7 +5,7 @@ Install packages and plugins
 
 *Install community packages and plugins, use what they add to a study, enable and remove them.*
 
-EMStudio grows in two ways, and one window holds both.
+EMStudio grows in two ways, and one page of the Settings holds both.
 
 - A **community package** carries data only: vocabularies, properties for a kind
   of study, extractors and sets of canonical points to place on a model, ways to
@@ -20,30 +20,149 @@ are installed on the computer, not in a study, and EM Tools in Blender uses the
 same ones. A study declares the community packages it uses, as it declares its
 vocabularies.
 
+The extensions are not the **Third-party tools**, the page below them in the
+Settings: those are programs made by others that EMStudio calls to prepare 3D
+models (gltfpack, Obj2Tiles, Blender…), and they add no vocabulary and no
+command of the EM language (see :doc:`/reference/settings`).
+
+Open the page
+-------------
+
+Open **Settings…** (:kbd:`⌘,` on macOS, :kbd:`Ctrl+,` on Windows and Linux) and
+choose **Extensions** in the column on the left, in the group it makes with
+**Third-party tools**. ``Tools ▸ Extensions…`` is a shortcut: it opens the
+Settings on this page.
+
+.. tab-set::
+   :sync-group: platform
+
+   .. tab-item:: Desktop
+      :sync: desktop
+
+      The page lists the extensions of this computer and what the
+      repositories you use offer, and installs from disk or from a repository.
+
+   .. tab-item:: Web
+      :sync: web
+
+      Served by a StratiGraph node, the page lists the packages that the
+      node's administrator installed, and nothing is installed from the
+      page. Their properties, sheets and vocabularies reach your study all
+      the same. Packages and plugins of your own are installed in the
+      desktop application.
+
+Read the page
+-------------
+
+.. image:: /_static/screens/settings/extensions.png
+   :alt: Settings, the Extensions page: the official repository in the selector, the filters, and the row of Geofisica opened, its data installed and its code not, with What it contains and Where you will find it.
+
+The head of the page gives the title, the **selector of the repositories** and
+**Install from disk…**. The selector shows the address of the repository in use,
+the official one always first, marked **official**, and **+ N more** for the
+others; it opens the panel **Repositories** (see
+:doc:`repositories-signatures-updates`).
+
+Under it, **Search extensions** finds by name and by line; **All**,
+**Installed** and **Updates** choose what is shown, and the chips **Data**,
+**Code** and **Data + code** keep one kind.
+
+The extensions are grouped by the repository they come from (for the official
+one, **OFFICIAL REPOSITORY**, with its key and the time it was checked), then
+**On this computer** for those installed from disk. What a repository offers and
+this computer does not have is a row of the same list, marked
+**Not installed**.
+
+Each row is one line: the name, the version, the kind (**Data**, **Code**,
+**Data + code**), **used by this file** when the open study declares it, the
+line that says what it is, its maintainer and its weight. On the right, the true
+state of the extension and **one** action, in ochre:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 50 50
+
+   * - State
+     - Action
+   * - **Not installed**
+     - **Install**
+   * - **Installed**
+     - —
+   * - **Data installed · code not installed**
+     - **Install the code…**
+   * - **Installed · code switched off**
+     - **Enable**
+   * - **Update 0.1.0 → 0.2.0**
+     - **Update**
+   * - **Installed · a code update is waiting**, **Installed · a requirement is
+       missing**
+     - —
+
+The triangle on the left opens the row. A row that asks something (not
+installed, its code missing or off, an update) opens by itself, and so does the
+only row of the list.
+
+What it contains
+~~~~~~~~~~~~~~~~
+
+The left half of an opened row says what the extension carries, part by part.
+
+- **Data**: its licence, **reads in every tool**, its versions, the
+  vocabularies by name with **Vocabularies…** to open them (see
+  :doc:`vocabularies`), the profile and its colour schemes, each with
+  **Into the file**, which copies it into the open study, where the **Colours**
+  window lists it under *In the file* (see
+  :doc:`/how-to/space/colours-and-legend`), and the recording sheets, offered in
+  the **Sheets** workspace when they are verified (see
+  :doc:`/how-to/sheets/fill-the-recording-sheet`).
+- **Code**: its licence, Python, the programs it runs in (EMStudio, Blender),
+  what it brings counted (for example *8 commands, 1 reader, 1 panel, 1 Space
+  layer, 3 Space tools, 1 Inspector section*), whether it is verified, whether it
+  is on this computer and enabled, and the key that signed it.
+- **Asks to**: each permission, with the reason the plugin gives.
+
+A ● marks a part on this computer, a ○ a part that is not.
+
+Where you will find it
+~~~~~~~~~~~~~~~~~~~~~~
+
+The right half says where each thing the extension brings shows in EMStudio,
+one line per place: **File ▸ Bring in…** (a reader, and whether it reads a
+folder), **Right panel** (or left, below, a window of its own), **Space ▸ Layers**,
+**Space ▸ Tools**, **Inspector** (a section, and the kind of node it
+reads), **File ▸ Import** and **File ▸ Export**, **Tools menu**, **A node's
+context menu**, **Checks**, **Tabular ▸ Columns**, **Status bar**,
+**Narrative ▸ Export**, **Vocabularies** (in the Inspector's pickers), and
+**Python**, the line that runs a command from the console.
+
+- **●** — it is there now.
+- **○** — it appears once the code is installed (or loaded: enabled, or after
+  EMStudio restarts).
+
+The places are known before the code is installed: they are read from what the
+package declares, in the preview of an archive or in the archive it came from,
+and nothing is written to read them.
+
+**Show me**, on each line marked ●, closes the Settings and goes there: the
+**File** menu opens with **Bring in…** lit; the panel opens; the Space shows
+**Visibility** with the plugin's layers; the tool is lit in the Space's bar; the
+Inspector comes forward with a note on what to select; the **Vocabularies**
+window opens; the console opens with the line written, not run.
+
+At the foot
+~~~~~~~~~~~
+
+The bar at the foot counts the repositories in use, the extensions and the
+updates, and offers **Update all (…)** when there are updates, **Clean up…**,
+**Folders** (the folders of this computer, when the pointer rests on it) and
+**How to build an extension**, which opens the guide :doc:`/extending/index`.
+
 Install from disk
 -----------------
 
-#. Choose ``Tools ▸ Extensions…``. The window **Extensions** opens.
-
-   .. tab-set::
-      :sync-group: platform
-
-      .. tab-item:: Desktop
-         :sync: desktop
-
-         At the top, **Install from disk…** takes a ``.zip`` archive, and
-         **Install from a folder…** takes a package's folder, the one that
-         holds its ``em-extension.toml``. Choose the archive or the folder.
-
-      .. tab-item:: Web
-         :sync: web
-
-         Served by a StratiGraph node, the window lists the packages that the
-         node's administrator installed, and nothing is installed from the
-         page. Their properties, sheets and vocabularies reach your study all
-         the same. Packages and plugins of your own are installed in the
-         desktop application.
-
+#. On the page, press **Install from disk…** for a ``.zip`` archive (or drop the
+   archive on the page). On the desktop, **Install from a folder…** takes a
+   package's folder, the one that holds its ``em-extension.toml``.
 #. EMStudio reads the archive without writing anything and opens
    **Install an extension**. The head gives the name, the version and where it
    comes from, here **from disk**.
@@ -61,7 +180,8 @@ Install from disk
 
    - **Install everything**: the data and the code, for a mixed package;
    - **Data only**: the vocabularies and the data, no code on this computer;
-     the code can be installed later from the same window;
+     the row then says **Data installed · code not installed**, and
+     **Install the code…** adds it later;
    - **Install**: for a package that carries one kind only;
    - **Cancel**: nothing is installed.
 
@@ -72,43 +192,16 @@ as the last trust, and no new question is asked. A code that a repository lists
 as reviewed is marked with who read it and when (see
 :doc:`repositories-signatures-updates`).
 
-Read the list
--------------
-
-The filter at the top shows **All**, **Community packages** or **Plugins**. Each
-row gives the name and the kind (**community package**, **plugin**,
-**package + plugin**), **used by this file** when the open study declares it,
-its code, version, source and licence, and its state: **ready**, **incomplete**,
-**code disabled**, **code not installed**, or **an update of the code is
-waiting**.
-
-.. image:: /_static/screens/windows/extensions.png
-   :alt: The Extensions window: Install from disk, the filter All, Community packages and Plugins, an installed example package, and the repositories.
-
-Under **Data**, a row lists its versions and what it brings that the study can
-use:
-
-- **brings … vocabularies**, with **Vocabularies…** to open them (see
-  :doc:`vocabularies`);
-- each colour scheme, with **Into the file**, which copies it into the open
-  study, where the **Colours** window lists it under *In the file* (see
-  :doc:`/how-to/space/colours-and-legend`);
-- each recording sheet, **in the sheets** when it is verified, and offered in
-  the **Sheets** workspace (see :doc:`/how-to/sheets/fill-the-recording-sheet`).
-
-Under **Code**, a plugin shows its versions, whether it is verified, and whether
-it is **enabled**, with its permissions.
-
 Use a package in a study
 ------------------------
 
 A study declares the community packages it uses, with their version. When you
 open a study that declares a package this computer does not have, a message says
-**This file uses packages not installed here**, with **Extensions…**: the window
+**This file uses packages not installed here**, with **Extensions…**: the page
 lists them at the top. The study opens all the same, and its values keep their
 labels; install the package to read its properties and sheets.
 
-When a newer version of a declared package is installed here, the window says
+When a newer version of a declared package is installed here, the page says
 that the file uses an older version, and offers
 **Update the declaration to …**. For a version that may change the meaning of
 the data, **What changes…** shows the package's notes first, and
@@ -151,7 +244,8 @@ switched off, and their tooltip says so.
 Run a plugin's commands
 -----------------------
 
-Once installed and enabled, a plugin's commands appear where the plugin says:
+Once installed and enabled, a plugin's commands appear where the plugin says,
+the places that **Where you will find it** lists:
 
 - ``Tools ▸ Plugins``, with a section for each plugin, its name and version and
   the mark **not verified** for a code from disk, its commands, and
@@ -176,13 +270,20 @@ plugins of the node instead (see below).
 Enable, disable and remove
 --------------------------
 
-- **Disable** keeps the plugin installed and turns its code off; **Enable**
-  turns it on again.
+The gestures of an installed extension are at the foot of its opened row; the
+row's one action is on its line.
+
+- **Disable** keeps the plugin installed and turns its code off; the row then
+  says **Installed · code switched off**, and **Enable** turns it on again.
 - **Install the code…** adds the code to a package installed as data only. It
-  shows the panel **Code** again and asks the same question.
+  shows the panel **Code** again and asks the same question. For an extension
+  that came from a repository, the code comes from that repository, checked
+  against its index and its signature as at the first installation.
 - **Remove the code** takes the code away and keeps the data: the package
   becomes data only.
 - **Remove the data** takes away every version of the data.
+- **Versions…** shows the versions on this computer side by side (see
+  :doc:`repositories-signatures-updates`).
 - **Remove the package** takes away code and data.
 
 Each removal says first what goes. The vocabularies a package brought stay on
@@ -194,17 +295,17 @@ Load a plugin you are writing
 -----------------------------
 
 With the experimental functions on (``Settings… ▸ Advanced``,
-**Experimental functions**), the window has a section
-**Development folder (Experimental features)**. Type or choose a folder of this
-computer and press **Use**: the plugins in its sub-folders load where they are,
-without installing and without the trust question, marked
+**Experimental functions**), the page ends with the row
+**Development folder**, marked **beta**. Open it, type or choose a folder of
+this computer and press **Use**: the plugins in its sub-folders load where they
+are, without installing and without the trust question, marked
 **development, not verified**. After changing a plugin's files, press **Reload**
-on its row. **Clear** forgets the folder.
+on its line. **Clear** forgets the folder.
 
 Plugins of the node, in a room
 ------------------------------
 
-In the web version, inside a room, the window also shows **Plugins of the
+In the web version, inside a room, the page also shows **Plugins of the
 node**: code that the node's administrator installed and that the node runs for
 the room in a closed space, with no network, none of the node's files and a time
 limit. The section says whether the node's isolation is proved; if it is not,

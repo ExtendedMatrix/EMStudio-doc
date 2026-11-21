@@ -124,9 +124,9 @@ saves by downloading. The table below lists every difference of version
        realtime versions of the models.
      - Read as *web*: the scene loads the versions made for the web. You can
        change the profile by hand on both.
-   * - **Extensions…** ▸ **Install from disk…**
+   * - ``Settings… ▸ Extensions`` ▸ **Install from disk…**
      - From a .zip archive or from a folder.
-     - Served by a node, the window lists the packages that the node's
+     - Served by a node, the page lists the packages that the node's
        administrator installed; the page installs nothing.
    * - Repositories of extensions in a folder (for example on a NAS), and the
        development folder of a plugin

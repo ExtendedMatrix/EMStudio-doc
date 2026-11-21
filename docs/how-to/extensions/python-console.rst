@@ -45,7 +45,45 @@ Read the study
 
 :kbd:`Enter` runs a complete line; for a block of several lines, end it with an
 empty line, or press :kbd:`⌘Enter` (:kbd:`Ctrl+Enter`) to run at once.
-:kbd:`Shift+Enter` starts a new line. :kbd:`Tab` completes a name.
+:kbd:`Shift+Enter` starts a new line.
+
+Complete a name with Tab
+------------------------
+
+Tab works as in Blender's console.
+
+- The first :kbd:`Tab` completes the name when only one fits, or the part that
+  all the names share. When several remain, a short note says how many, and
+  that a second :kbd:`Tab` lists them.
+- A second :kbd:`Tab` in a row, on the same text, repeats your line in the
+  console and prints under it every possible name, in columns and in green; your
+  line and the cursor stay where they were.
+- :kbd:`Ctrl+Space` lists at once, as a double :kbd:`Tab`.
+- After ``(``, and when :kbd:`Tab` completes the name of a function
+  (``g.chrono`` becomes ``g.chronology(``), the console prints its signature and
+  the first line of its help, in green. On a name that is also the start of
+  others (``g.node`` and ``g.nodes``), the double :kbd:`Tab` lists them and gives
+  the signature of the one written.
+
+Inside a string, :kbd:`Tab` offers the values of the domain (the types of
+node, for example).
+
+The colours
+-----------
+
+.. image:: /_static/screens/windows/console-colours.png
+   :alt: The Python console: sel and its result in blue, 1/0 and its traceback in red, g.node followed by the double Tab, with the names node and nodes and the signature of node in green.
+
+Each kind of line has its colour, taken from the theme, light or dark:
+
+- the line you ran is repeated after the prompt ``>>>`` (or ``...``), coloured
+  as in the Script Editor: keywords, strings and numbers;
+- what your code prints is in the colour of the text;
+- the value of an expression (``sel``, ``1 + 1``) is in blue;
+- a warning of Python (``…Warning:``, with its source line) is in amber;
+- an error, with its whole traceback, is in red, once;
+- the list of the double :kbd:`Tab`, a signature and its help are in green;
+- what the console itself says (the first line, ``em.help()``) is in grey.
 
 The head of the window also has the link **Python API reference** (the same
 entry is in the ``Help`` menu): it opens the complete reference of ``em``, the

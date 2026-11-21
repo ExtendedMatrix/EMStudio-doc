@@ -3,19 +3,21 @@
 Settings
 ========
 
-*The six tabs of the Settings dialog, section by section.*
+*The seven pages of the Settings dialog, section by section.*
 
 The Settings dialog holds the choices that belong to this computer and to you,
 not to a study: the language of the interface, the theme, your identity, the
-nodes you know, the viewers, the AI provider and the add-ons. A study carries its
+nodes you know, the viewers, the AI provider, the extensions and the third-party
+tools. A study carries its
 own texts, colours and vocabularies with it; the settings stay on the machine.
 
 Open the dialog with **Settings…** (:kbd:`⌘,` on macOS, :kbd:`Ctrl+,` on Windows
 and Linux). On the macOS desktop the command is in the **EMStudio** menu of the
 system's menu bar; on the web, on Windows and on Linux it is in the **Help** menu.
 
-The dialog has six tabs: **General**, **Identity**, **Connections**,
-**Viewers**, **Advanced** and **Add-ons**. The dialog reopens on the tab you last
+The pages are listed in a column on the left, in three groups between thin
+lines: **General**, **Identity**, **Viewers** and **Connections**; then
+**Extensions** and **Third-party tools**; then **Advanced**. The dialog reopens on the page you last
 used. Some commands open it directly on the section they need: asking the
 narrative for a draft before an AI is set up opens **AI provider**, an author's **Edit** opens **Identity**.
 **Save** applies the changes, **Cancel** leaves everything as it was.
@@ -188,17 +190,49 @@ Experimental functions
    **Turn on the experimental functions on this machine** opens functions still
    being tried. It is off by default and takes effect after a reload.
 
-Add-ons
--------
+Extensions
+----------
+
+.. image:: /_static/screens/settings/extensions.png
+   :alt: Settings, the Extensions page: the selector of the repositories, the filters, and the row of Geofisica opened, its data installed and its code not.
+
+The extensions of this computer, the same that EM Tools in Blender uses:
+community packages (data: vocabularies, a profile, sheets, colour schemes, read
+by every tool) and plugins (code: commands, readers, layers and tools of the
+Space, sections of the Inspector). ``Tools ▸ Extensions…`` opens the dialog on
+this page.
+
+At the top, the selector of the repositories (the official one first; it opens
+the panel **Repositories**) and **Install from disk…**; then the search, the
+filters **All**, **Installed**, **Updates** and the chips **Data**, **Code**,
+**Data + code**. One row per extension, grouped by repository, with its state
+and one action; opened, **What it contains** and **Where you will find it**,
+with **Show me**. At the foot, the counts, **Update all (…)**, **Clean up…**,
+**Folders** and **How to build an extension**. With the experimental functions
+on, the last row is the **Development folder**.
+
+The actions of this page are immediate: **Save** and **Cancel** at the foot of
+the dialog do not concern them.
+:doc:`/how-to/extensions/install-packages-and-plugins` and
+:doc:`/how-to/extensions/repositories-signatures-updates` tell how to use it.
+
+Third-party tools
+-----------------
 
 .. image:: /_static/screens/settings/addons.png
-   :alt: Settings, the Add-ons tab: this machine, the queue, and the tools EMStudio downloads on request.
+   :alt: Settings, the Third-party tools page: the line that says the difference from the extensions, this machine, and the table of the tools with Blender as its last row.
 
-Tools EMStudio calls and does not ship. Each is downloaded on request from its
-official releases, at a pinned version whose checksum is verified. The tab shows
-this machine (system, processor, graphics, memory), and for each tool its
-licence, source and version, and whether it is **recommended**, **optional**,
-**not needed** or **not for this machine** for what you do. The tools are:
+Programs made by others that EMStudio calls on this computer to prepare 3D
+models. They add no EM vocabulary or command: that is what the extensions do.
+Each is downloaded on request from its official releases, at a pinned version
+whose checksum is verified. The page shows this machine (system, processor,
+graphics, memory) and, in a blue line, which tools are enough for what you do.
+
+Then one table, a row per tool: **Tool** (its name and version, and whether it
+is **recommended**, **optional**, **not needed** or **not for this machine**,
+with ⓘ for its licence and source), **Used for**, **On this computer** (what is
+installed, or what would be), and the action: **Download and install**,
+update, remove. The tools are:
 
 * **gltfpack**, which makes the light variants of a model in Ottimizza;
 * **Obj2Tiles**, which turns a textured mesh into a 3D Tiles tileset;
@@ -207,18 +241,19 @@ licence, source and version, and whether it is **recommended**, **optional**,
 * **Node.js**, EMStudio's own copy for the validator, needed only on a machine
   without Node.js of its own.
 
-Each tool can be installed, updated and removed here. The tools that do not run
-on this machine are listed apart, each with the reason. The add-ons live in a
-folder of their own, outside the installer, and each keeps its own licence.
+The tools that do not run on this machine are listed apart, each with the
+reason. The third-party tools live in a folder of their own, outside the
+installer, and each keeps its own licence: the line under the table names it.
 
 **The queue: how much of this computer** chooses how many of these tools work side
 by side: **All** runs several at once under a ceiling (the performance cores less
 one, 60 % of the memory), **Half** uses half of both, and **One at a time** runs
 them in turn.
 
-The last card is **Blender**. It is not an add-on that EMStudio downloads: it is
-the Blender of this machine, with its own add-ons (EM Tools, 3D Survey
-Collection). EMStudio calls it in the background and leaves it as it is.
+The last row is **Blender**, with **Locate…**, which opens its card under the
+row. It is not a tool that EMStudio downloads: it is the Blender of this
+machine, with its own add-ons (EM Tools, 3D Survey Collection). EMStudio calls
+it in the background and leaves it as it is.
 
-The add-ons are managed by EMStudio's bridge: when the bridge does not answer,
-the tab says so.
+The third-party tools are managed by EMStudio's bridge: when the bridge does not
+answer, the page says so.

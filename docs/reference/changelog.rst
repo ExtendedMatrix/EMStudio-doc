@@ -135,7 +135,7 @@ Archive: files, stamps and optimisation
 - A tileset is packed as a single .3tz file, which is also recorded in the
   transformation chain. Building a tileset from a textured mesh is available as an
   experimental option.
-- The tools that do this work are add-ons, downloaded on request with their
+- The tools that do this work are third-party tools, downloaded on request with their
   licence shown first. Their jobs run in the background, so you can go on working
   while they run.
 
@@ -184,8 +184,9 @@ Rooms, identity and the node
   and seats the graph only at the end.
 - The owner of a room and the operator of a node can delete a room, and the
   operator can review the files that no room uses any more.
-- The **Settings** are arranged by topic in six tabs: General, Identity,
-  Connections, Viewers, Advanced and Add-ons (see :doc:`/reference/settings`).
+- The **Settings** are arranged by topic in seven pages: General, Identity,
+  Viewers, Connections, Extensions, Third-party tools and Advanced (see
+  :doc:`/reference/settings`).
 
 Desktop and web
 ~~~~~~~~~~~~~~~

@@ -16,8 +16,8 @@ are listed in :doc:`/reference/geofisica`.
 Before you start
 ----------------
 
-- Install **Geofisica** from the official list, in ``Tools ▸ Extensions…``
-  (see :doc:`/how-to/extensions/repositories-signatures-updates` and
+- Install **Geofisica** from the official list, in ``Settings… ▸ Extensions``
+  (``Tools ▸ Extensions…`` opens it; see :doc:`/how-to/extensions/repositories-signatures-updates` and
   :doc:`/how-to/extensions/install-packages-and-plugins`). Its code reads
   files and writes into the graph: answer the trust question for it.
 - Open a study: the stack is written into the active graph.
@@ -32,7 +32,7 @@ Open the folder
 #. Choose ``File ▸ Bring in…``, then **A folder…**, and press **Choose…**.
 #. In **Bring in: the folder**, go to the stack's folder and press
    **Choose this folder**.
-#. EMStudio asks **Which add-on reads …?**, since reading the folder as DosCo
+#. EMStudio asks **Which extension reads …?**, since reading the folder as DosCo
    is always one of the choices: choose **Geophysical stack**.
 
 The panel **Geophysical stack** opens on the right, with the folder already in

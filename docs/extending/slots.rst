@@ -10,7 +10,7 @@ A **slot** is a place of the interface, or of the work, where EMStudio
 accepts something from a plugin. It has a name and a version,
 ``context.node@1``, a promise the program keeps from one release to the next.
 A command lists its slots in ``in``; a slot with a version higher than the
-program knows turns that entry off, not the plugin, and the Extensions window
+program knows turns that entry off, not the plugin, and the Extensions page
 says so.
 
 The slots of this version
@@ -120,6 +120,75 @@ A command in a slot that only shows a value (``check``, ``inspector.section``,
 ``tabular.column``, ``statusbar``, ``space.layer``) is declared
 ``writes = false``; one declared otherwise is refused by the validator, and
 a write it attempts is refused by the library.
+
+From the slots to «Where you will find it»
+------------------------------------------
+
+The Extensions page of the Settings tells the person, for every extension,
+**where it will show** in EMStudio, under *Where you will find it*. Nothing of
+that list is written by hand: EMStudio reads it from your envelope, from the
+``in`` of each command, from ``[[code.panels]]`` and from the vocabularies of
+the data. What you declare is what the person reads, before installing.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 38 62
+
+   * - What you declare
+     - The line of *Where you will find it*
+   * - ``door.reader@2``
+     - **File ▸ Bring in…**, *reader* and the command's label; with
+       ``folders = true``, *it reads a folder*
+   * - ``menu.file.import@1``, ``menu.file.export@1``
+     - **File ▸ Import**, **File ▸ Export**
+   * - ``[[code.panels]]``
+     - **Right panel**, **Left panel**, **Panel below** or
+       **A window of its own**, from its ``place`` (right when it is not given),
+       with the panel's ``label``
+   * - ``space.layer@1``
+     - **Space ▸ Layers**
+   * - ``space.tool@1``
+     - **Space ▸ Tools**, every tool's label
+   * - ``inspector.section@1``
+     - **Inspector**, *section* and its label; **Show me** says the kind of
+       node to select (its ``when``)
+   * - ``tabular.column@1``
+     - **Tabular ▸ Columns**
+   * - ``statusbar@1``
+     - **Status bar**
+   * - ``menu.tools@1``
+     - **Tools menu**
+   * - ``context.node@1``
+     - **A node's context menu**
+   * - ``check@1``
+     - **Checks**
+   * - ``export.narrative@1``
+     - **Narrative ▸ Export**
+   * - ``[[data.vocabularies]]``
+     - **Vocabularies**, *in the Inspector's pickers*, by name
+   * - any command
+     - **Python**: the line that runs it from the console,
+       ``em.plugins.invoke("<plugin>", "<command>", {…})`` with its required
+       slots, for the first command that no menu carries (else the first), and
+       *+ N more commands*
+
+The lines keep this order, one per place, whatever the order of your commands;
+two commands in the same slot share one line, with both labels. A line is
+marked ● when the place is there now (the code loaded, the data installed) and
+○ when it comes with the code, and **Show me** takes the person there.
+
+What this asks of an author:
+
+- give every command and every panel a ``label`` in the languages you can
+  (``{"en": …, "it": …}``): the line shows the label, else the id;
+- declare the slots the command really serves: a command in no slot is still
+  reachable, but only from Python;
+- declare ``folders = true`` on a reader that takes a folder, and ``place`` on a
+  panel that should not open on the right.
+
+The places are read from the archive before anything is installed (the preview
+of **Install from disk…** and of a repository's **Install** says them), so the
+person knows where to look before trusting your code.
 
 See also
 --------

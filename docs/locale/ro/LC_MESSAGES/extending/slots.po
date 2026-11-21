@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20 07:09+0100\n"
+"POT-Creation-Date: 2026-11-21 07:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -34,7 +34,7 @@ msgid ""
 "``context.node@1``, a promise the program keeps from one release to the "
 "next. A command lists its slots in ``in``; a slot with a version higher "
 "than the program knows turns that entry off, not the plugin, and the "
-"Extensions window says so."
+"Extensions page says so."
 msgstr ""
 
 msgid "The slots of this version"
@@ -339,6 +339,123 @@ msgid ""
 "library."
 msgstr ""
 
+msgid "From the slots to «Where you will find it»"
+msgstr ""
+
+msgid ""
+"The Extensions page of the Settings tells the person, for every "
+"extension, **where it will show** in EMStudio, under *Where you will find"
+" it*. Nothing of that list is written by hand: EMStudio reads it from "
+"your envelope, from the ``in`` of each command, from ``[[code.panels]]`` "
+"and from the vocabularies of the data. What you declare is what the "
+"person reads, before installing."
+msgstr ""
+
+msgid "What you declare"
+msgstr ""
+
+msgid "The line of *Where you will find it*"
+msgstr ""
+
+msgid ""
+"**File ▸ Bring in…**, *reader* and the command's label; with ``folders = "
+"true``, *it reads a folder*"
+msgstr ""
+
+msgid "``menu.file.import@1``, ``menu.file.export@1``"
+msgstr ""
+
+msgid "**File ▸ Import**, **File ▸ Export**"
+msgstr ""
+
+msgid "``[[code.panels]]``"
+msgstr ""
+
+msgid ""
+"**Right panel**, **Left panel**, **Panel below** or **A window of its "
+"own**, from its ``place`` (right when it is not given), with the panel's "
+"``label``"
+msgstr ""
+
+msgid "**Space ▸ Layers**"
+msgstr ""
+
+msgid "**Space ▸ Tools**, every tool's label"
+msgstr ""
+
+msgid ""
+"**Inspector**, *section* and its label; **Show me** says the kind of node"
+" to select (its ``when``)"
+msgstr ""
+
+msgid "**Tabular ▸ Columns**"
+msgstr ""
+
+msgid "**Status bar**"
+msgstr ""
+
+msgid "**Tools menu**"
+msgstr ""
+
+msgid "**A node's context menu**"
+msgstr ""
+
+msgid "**Checks**"
+msgstr ""
+
+msgid "**Narrative ▸ Export**"
+msgstr "**Narațiune ▸ Export**"
+
+msgid "``[[data.vocabularies]]``"
+msgstr ""
+
+msgid "**Vocabularies**, *in the Inspector's pickers*, by name"
+msgstr ""
+
+msgid "any command"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"**Python**: the line that runs it from the console, "
+"``em.plugins.invoke(\"<plugin>\", \"<command>\", {…})`` with its required"
+" slots, for the first command that no menu carries (else the first), and "
+"*+ N more commands*"
+msgstr ""
+
+msgid ""
+"The lines keep this order, one per place, whatever the order of your "
+"commands; two commands in the same slot share one line, with both labels."
+" A line is marked ● when the place is there now (the code loaded, the "
+"data installed) and ○ when it comes with the code, and **Show me** takes "
+"the person there."
+msgstr ""
+
+msgid "What this asks of an author:"
+msgstr ""
+
+#, python-brace-format
+msgid ""
+"give every command and every panel a ``label`` in the languages you can "
+"(``{\"en\": …, \"it\": …}``): the line shows the label, else the id;"
+msgstr ""
+
+msgid ""
+"declare the slots the command really serves: a command in no slot is "
+"still reachable, but only from Python;"
+msgstr ""
+
+msgid ""
+"declare ``folders = true`` on a reader that takes a folder, and ``place``"
+" on a panel that should not open on the right."
+msgstr ""
+
+msgid ""
+"The places are read from the archive before anything is installed (the "
+"preview of **Install from disk…** and of a repository's **Install** says "
+"them), so the person knows where to look before trusting your code."
+msgstr ""
+
 msgid "See also"
 msgstr ""
 
@@ -350,4 +467,19 @@ msgstr ""
 
 msgid ":doc:`python-command`, three slots at work."
 msgstr ""
+
+#~ msgid ""
+#~ "A **slot** is a place of the "
+#~ "interface, or of the work, where "
+#~ "EMStudio accepts something from a "
+#~ "plugin. It has a name and a "
+#~ "version, ``context.node@1``, a promise the "
+#~ "program keeps from one release to "
+#~ "the next. A command lists its "
+#~ "slots in ``in``; a slot with a "
+#~ "version higher than the program knows"
+#~ " turns that entry off, not the "
+#~ "plugin, and the Extensions window says"
+#~ " so."
+#~ msgstr ""
 

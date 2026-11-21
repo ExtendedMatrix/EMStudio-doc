@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20 20:12+0100\n"
+"POT-Creation-Date: 2026-11-21 07:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: el\n"
@@ -317,14 +317,14 @@ msgid ""
 "change the profile by hand on both."
 msgstr ""
 
-msgid "**Extensions…** ▸ **Install from disk…**"
+msgid "``Settings… ▸ Extensions`` ▸ **Install from disk…**"
 msgstr ""
 
 msgid "From a .zip archive or from a folder."
 msgstr ""
 
 msgid ""
-"Served by a node, the window lists the packages that the node's "
+"Served by a node, the page lists the packages that the node's "
 "administrator installed; the page installs nothing."
 msgstr ""
 
@@ -407,5 +407,15 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**Porta dentro…**"
+#~ msgstr ""
+
+#~ msgid "**Extensions…** ▸ **Install from disk…**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Served by a node, the window lists"
+#~ " the packages that the node's "
+#~ "administrator installed; the page installs "
+#~ "nothing."
 #~ msgstr ""
 

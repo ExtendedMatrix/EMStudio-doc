@@ -4,9 +4,9 @@ Test and validate a package
 ===========================
 
 *Check a package with the validator every tool uses, test its code without
-EMStudio, and read what the Extensions window says before installing.*
+EMStudio, and read what the Extensions page says before installing.*
 
-There is **one validator**. The Extensions window shows its words before it
+There is **one validator**. The Extensions page shows its words before it
 installs anything, the command line prints them, and the repositories of the
 Extended Matrix run it on every proposal. What passes on your computer passes
 everywhere, and what it refuses it refuses everywhere, with the same
@@ -60,7 +60,7 @@ result before writing it. ``--dry-run`` says what it would write.
 Read the window before installing
 ---------------------------------
 
-In ``Tools ▸ Extensions…``, **Install from a folder…** and
+In ``Settings… ▸ Extensions``, **Install from a folder…** and
 **Install from disk…** run the same validator. An error of the data installs
 nothing, and the window says why; an error of the code alone lets the data in
 and says *code not installed*, with the reason. Nothing is written before the

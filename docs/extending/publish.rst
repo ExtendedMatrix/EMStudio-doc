@@ -53,8 +53,9 @@ In a repository of your own
      the folder itself, or ``file:///…/index.json``.
 
 #. Give the address to the people who will use the package. In EMStudio they
-   choose ``Tools ▸ Extensions…``, **+ Add repository…**, write the address
-   (or **Choose a folder…** for a shared folder) and press **Add** (see
+   open ``Settings… ▸ Extensions``, press the selector of the repositories,
+   write the address under **Add a repository** (or **Choose a folder…** for
+   a shared folder) and press **Add** (see
    :doc:`/how-to/extensions/repositories-signatures-updates`). A repository on
    the internet is read only with **Allow online access** turned on; a
    folder always.

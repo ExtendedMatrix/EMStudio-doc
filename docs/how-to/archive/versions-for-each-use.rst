@@ -23,8 +23,8 @@ Before you start
 - Open the study and switch to the **Archive** workspace.
 - Stamp the masters first (see :doc:`/how-to/sources/declare-provenance`): a
   version made from a stamped file is born stamped as derived from it.
-- When a tool is missing, EMStudio says so and offers to install it, as an
-  add-on in ``Settings… ▸ Advanced``.
+- When a tool is missing, EMStudio says so and offers to install it, as a
+  third-party tool in ``Settings… ▸ Third-party tools``.
 
 Make a version of one model
 ---------------------------

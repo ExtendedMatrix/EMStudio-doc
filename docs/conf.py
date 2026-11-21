@@ -9,8 +9,8 @@ copyright = '2026, Consiglio Nazionale delle Ricerche (CNR) — Istituto di Scie
 author = 'Emanuel Demetrescu'
 
 release = '1.6'
-# The version described, copied from EMStudio's frontend/package.json (tag v1.6.0-dev.143).
-version = '1.6.0-dev.143'
+# The version described, copied from EMStudio's frontend/package.json (tag v1.6.0-dev.145).
+version = '1.6.0-dev.145'
 
 # -- General configuration
 

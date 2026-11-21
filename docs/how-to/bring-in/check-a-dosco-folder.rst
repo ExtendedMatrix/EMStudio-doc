@@ -32,7 +32,7 @@ The same reading starts from four places:
   nothing, and find the button in the **Info** tab among the gestures of the
   folder. An empty **Shelf** offers it too, for the ``DosCo`` folder of the
   study;
-- ``File ▸ Bring in…`` with **A folder…**: when no add-on reads folders, the
+- ``File ▸ Bring in…`` with **A folder…**: when no extension reads folders, the
   folder is read as DosCo.
 
 From the menus, the window **Read as DosCo: the folder** asks for the folder;

@@ -69,7 +69,7 @@ Before you start
      ``"1.0.0"`` today.
    - ``id`` and ``version``: the version of the archive, in three numbers
      (*major.minor.patch*). A package stays at ``0.x`` while it is a proposal.
-   - ``name`` and ``tagline`` are what the Extensions window shows; the
+   - ``name`` and ``tagline`` are what the Extensions page shows; the
      tagline has at most 64 characters and no final full stop.
    - ``maintainer`` is who answers for the package; ``license`` the licence of
      its content, written as an SPDX identifier after ``SPDX:``.
@@ -329,7 +329,8 @@ all.
 10 · Install it in EMStudio
 ---------------------------
 
-#. Choose ``Tools ▸ Extensions…`` and press **Install from a folder…**.
+#. Choose ``Tools ▸ Extensions…`` (it opens ``Settings… ▸ Extensions``) and
+   press **Install from a folder…**.
    Choose the folder ``volto-esempio``.
 #. EMStudio reads the folder, writes nothing yet, and opens
    **Install an extension**. The panel **Data** lists the two vocabularies,
@@ -353,8 +354,8 @@ all.
 #. Select ``US1``: the **Inspector** shows the property
    **State of the surface** with the label of its concept, in the language of
    the interface.
-#. In ``Tools ▸ Extensions…``, the row of the package offers **Into the file**
-   beside the colour scheme: the scheme is copied into the study, and the
+#. In ``Settings… ▸ Extensions``, the opened row of the package offers
+   **Into the file** beside the colour scheme: the scheme is copied into the study, and the
    **Colours** window lists it (see :doc:`/how-to/space/colours-and-legend`).
 #. The **Sheets** workspace offers the sheet *Sheet of a carved face*,
    with its fields bound to the graph (see
@@ -374,7 +375,7 @@ A version, once installed, is a promise: **the same id and version with
 another content is refused**, so that a study never meets two different
 packages under one name. While you are still drafting:
 
-- in ``Tools ▸ Extensions…``, press **Remove the package** on its row, then
+- in ``Settings… ▸ Extensions``, open its row and press **Remove the package**, then
   install the folder again; or
 - raise the last number of the version (``0.1.0`` → ``0.1.1``), in the
   envelope and in ``profile.json``, and install again.
