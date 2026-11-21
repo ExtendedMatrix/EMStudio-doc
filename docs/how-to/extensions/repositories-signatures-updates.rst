@@ -128,6 +128,13 @@ that anyone read the code. EMStudio shows the two things apart.
   repository published, unchanged on the way.
 - **reviewed by … on …** names the person who read the code, in the list of a
   repository whose reviews you trust.
+- A code that is signed and that nobody has reviewed yet says both, and which
+  step is missing: *from extendedmatrix, signed ✓ · one step missing: a review
+  of its code (none in extendedmatrix's list of the reviewed)*. Until a review
+  is listed, its code runs on the trust you gave when you installed it.
+
+.. image:: /_static/screens/settings/extensions-signed.png
+   :alt: The Code part of Geofisica, installed from the official repository: versions 0.1.0, from extendedmatrix, signed, one step missing: a review of its code; under it, signed by the key 269B910A23431722 of extendedmatrix.
 
 To sign a repository after adding it, press **Edit** on its line in the panel
 **Repositories**, then **Signing key…**, and paste its public keys, one per

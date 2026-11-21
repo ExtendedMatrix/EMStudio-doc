@@ -55,7 +55,7 @@ Read the page
 -------------
 
 .. image:: /_static/screens/settings/extensions.png
-   :alt: Settings, the Extensions page: the official repository in the selector, the filters, and the row of Geofisica opened, its data installed and its code not, with What it contains and Where you will find it.
+   :alt: Settings, the Extensions page: the official repository in the selector, the filters, and the row of Geofisica opened, installed from the official repository: What it contains lists its four colour ramps with their stops, Where you will find it has Show me on every line.
 
 The head of the page gives the title, the **selector of the repositories** and
 **Install from disk…**. The selector shows the address of the repository in use,
@@ -109,16 +109,29 @@ The left half of an opened row says what the extension carries, part by part.
 
 - **Data**: its licence, **reads in every tool**, its versions, the
   vocabularies by name with **Vocabularies…** to open them (see
-  :doc:`vocabularies`), the profile and its colour schemes, each with
-  **Into the file**, which copies it into the open study, where the **Colours**
-  window lists it under *In the file* (see
-  :doc:`/how-to/space/colours-and-legend`), and the recording sheets, offered in
-  the **Sheets** workspace when they are verified (see
-  :doc:`/how-to/sheets/fill-the-recording-sheet`).
+  :doc:`vocabularies`), the profile and its colour schemes, and the recording
+  sheets, offered in the **Sheets** workspace when they are verified (see
+  :doc:`/how-to/sheets/fill-the-recording-sheet`). A profile's colours are of
+  two kinds:
+
+  - a **colour scheme** of a property (*Colour scheme «…» (material)*): a colour
+    for each value, with **Into the file**, which copies it into the open study,
+    where the **Colours** window lists it under *In the file* (see
+    :doc:`/how-to/space/colours-and-legend`);
+  - a **colour ramp** (*Colour ramp «Viridis» (5 stops)*): colours along a range
+    of values, the colours of a plugin's slices. Geofisica brings four, *Grey*,
+    *Viridis*, *Hot (amplitude)* and *Jet (resistivity)*; you choose one in the
+    extension's panel (**Colours**), not in the study's colour schemes.
 - **Code**: its licence, Python, the programs it runs in (EMStudio, Blender),
   what it brings counted (for example *8 commands, 1 reader, 1 panel, 1 Space
-  layer, 3 Space tools, 1 Inspector section*), whether it is verified, whether it
-  is on this computer and enabled, and the key that signed it.
+  layer, 3 Space tools, 1 Inspector section*), its versions, whether it is
+  verified, whether it is enabled, and the key that signed it. Verified has two
+  steps: the **signature** (these are the bytes its repository published) and a
+  **review** (someone named has read this code). A code with both is marked
+  **reviewed by … on …**; a code signed and not yet reviewed says so with the
+  step that is missing, *from extendedmatrix, signed ✓ · one step missing: a
+  review of its code*; a code from disk, or from an unsigned repository, says
+  **not verified** (see :doc:`repositories-signatures-updates`).
 - **Asks to**: each permission, with the reason the plugin gives.
 
 A ● marks a part on this computer, a ○ a part that is not.
@@ -144,11 +157,35 @@ The places are known before the code is installed: they are read from what the
 package declares, in the preview of an archive or in the archive it came from,
 and nothing is written to read them.
 
-**Show me**, on each line marked ●, closes the Settings and goes there: the
-**File** menu opens with **Bring in…** lit; the panel opens; the Space shows
-**Visibility** with the plugin's layers; the tool is lit in the Space's bar; the
-Inspector comes forward with a note on what to select; the **Vocabularies**
-window opens; the console opens with the line written, not run.
+**Show me**, on each line marked ●, closes the Settings, brings the right
+workspace to the front and opens the place, lit for a moment by a ring in the
+accent colour (a still ring when the system asks for reduced motion):
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 70
+
+   * - Line
+     - Show me
+   * - **File ▸ Bring in…**, **Import**, **Export**
+     - the **File** menu opens with the entry lit.
+   * - **Space ▸ sidebar (N) ▸ tab «…»**
+     - the **Space**, its sidebar on the extension's tab, the panel lit.
+   * - **Space ▸ Layers**
+     - the same tab, the panel and the layer's row in the Space's Outliner lit
+       (once the study has a stack of its kind).
+   * - **Space ▸ toolbar (T)**
+     - the toolbar shown, the extension's tools lit.
+   * - **Inspector**
+     - a node the section reads is selected (the one selected, else one the
+       extension made) and the Inspector scrolls to the section. With no such
+       node in the study, one line says which kind of node it needs.
+   * - **Vocabularies**
+     - a property whose values they give is selected and **Link to a
+       vocabulary** opens with their terms. With no such property, the
+       **Vocabularies** window opens and one line says why.
+   * - **Python**
+     - the **Scripting** workspace, its console with the line written, not run.
 
 At the foot
 ~~~~~~~~~~~
