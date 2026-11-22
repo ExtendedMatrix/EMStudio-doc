@@ -73,6 +73,14 @@ regions on it and extract from it. A **Graph** window in **Matrix** mode follows
 on the right, and the **Inspector** shows the fields of the document and its
 extractions.
 
+The first time a document with a 3D survey is shown, its scene says what it is
+preparing — **Preparing the survey…**, with the files and versions of the
+document, the 3D engine, the root of the tileset and the first tiles with their
+MB — until the first tile or model is drawn; a root that does not answer yet is
+asked again by itself. The card in the **Inspector** does not wait for it. After
+a file opens, the roots of the documents' tilesets are read in the background,
+never their tiles.
+
 .. image:: /_static/screens/workspaces/sources.jpg
    :alt: The Sources workspace: the Outliner lists the documents, the Viewer & card shows the drawing of document D.08, the Matrix and the Inspector follow it.
 
