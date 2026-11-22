@@ -30,8 +30,8 @@ Open the page
 
 Open **Settings…** (:kbd:`⌘,` on macOS, :kbd:`Ctrl+,` on Windows and Linux) and
 choose **Extensions** in the column on the left, in the group it makes with
-**Third-party tools**. ``Tools ▸ Extensions…`` is a shortcut: it opens the
-Settings on this page.
+**Third-party tools**. The command search (:kbd:`F3`) finds **Extensions…**,
+which opens the Settings on this page.
 
 .. tab-set::
    :sync-group: platform
@@ -144,10 +144,13 @@ one line per place: **File ▸ Bring in…** (a reader, and whether it reads a
 folder), **Space ▸ sidebar (N) ▸ tab «…»** (the tab of its panels, named as the
 extension unless they name one; or **A window of its own**), **Space ▸ Layers**,
 **Space ▸ toolbar (T)**, **Inspector** (a section, and the kind of node it
-reads), **File ▸ Import** and **File ▸ Export**, **Tools menu**, **A node's
-context menu**, **Checks**, **Tabular ▸ Columns**, **Status bar**,
-**Narrative ▸ Export**, **Vocabularies** (in the Inspector's pickers), and
-**Python**, the line that runs a command from the console.
+reads), **File ▸ Import** and **File ▸ Export**,
+**Command search (F3) · Preferences ▸ Extensions** (a command of the plugin
+that no menu draws), **A node's context menu**, **Checks**, **Tabular ▸
+Columns**, **Status bar**, **Narrative ▸ Export**, **Vocabularies** (in the
+Inspector's pickers), and **Python**, the line that runs a command from the
+console. For a command of the plugin, **Show me** opens the command search with
+the commands of that extension.
 
 - **●** — it is there now.
 - **○** — it appears once the code is installed (or loaded: enabled, or after
@@ -211,7 +214,7 @@ Install from disk
 #. The panel **Code**, for a plugin, is marked **NOT VERIFIED, from disk**. It
    lists **Permissions, and why:** (each permission with the reason the plugin
    gives), **It can:** (for example *read the graph*, *write the graph*),
-   **It appears in:** (for example *Tools ▸ Extensions*, *File ▸ Import*,
+   **It appears in:** (for example *File ▸ Import*,
    *the context menu of a node*), and the sentence
    **A Python plugin has your user's powers on this machine.**
 #. Answer with one of the buttons:
@@ -285,10 +288,12 @@ Run a plugin's commands
 Once installed and enabled, a plugin's commands appear where the plugin says,
 the places that **Where you will find it** lists:
 
-- ``Tools ▸ Plugins``, with a section for each plugin, its name and version and
-  the mark **not verified** for a code from disk, its commands, and
-  **Open «…»** for its panels; a plugin that did not load is listed with the
-  reason;
+- the command search (``Edit ▸ Search commands…``, :kbd:`F3`): type the name
+  of the command, or of its extension;
+- ``Settings… ▸ Extensions``, the section **Commands of the plugins** under the
+  extensions, with a section for each plugin, its name and version and the
+  mark **not verified** for a code from disk, its commands, and **Open «…»**
+  for its panels; a plugin that did not load is listed with the reason;
 - ``File ▸ Import`` and ``File ▸ Export``;
 - the context menu of a node in the Matrix and in the Space;
 - the **Warnings** sheet of the **Tabular** window, for a plugin that checks

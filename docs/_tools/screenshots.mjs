@@ -157,21 +157,38 @@ const SHOTS = [
   // MICRO-SEG05 · the seventh (MICRO-SEG02): Script Editor, Python Console under it, the Matrix
   { name: "workspaces/scripting", wait: 4000, prep: async (p) => { await ws(p, "scripting"); await pick(p, "SU001"); } },
 
-  // the menus of the window, and the chip's menu at the top right
-  ...["file", "edit", "tools", "help"].map((m) => ({
+  // the menus of the window, and the chip's menu at the top right. MICRO-SEG29:
+  // Tools is gone, Window is a menu of the page on every platform
+  ...["file", "edit", "window", "help"].map((m) => ({
     name: `menus/${m}`, png: true,
     clip: [`#dd-${m} .dd-toggle`, `#dd-${m} .dd-menu`],
     prep: async (p) => { await click(p, `#dd-${m} .dd-toggle`); await sleep(500); },
   })),
+  {
+    // MICRO-SEG29 · the command search (F3): a word typed in the language of the
+    // pictures, the results with where each command lives now
+    name: "menus/command-search", png: true, clip: ".cmd-search", wait: 800,
+    prep: async (p) => {
+      await p.mouse.click(800, 990); await sleep(300);
+      await p.keyboard.press("F3"); await sleep(800);
+      await p.keyboard.type(LANG === "it" ? "cronologia" : "chronology"); await sleep(800);
+    },
+  },
   { name: "menus/who", png: true, clip: ["#ns-who-chip", "#who-menu"], node: true, prep: tool("ns-who-chip") },
 
   // Settings, each tab. MICRO-SEG11: Extensions (it was the window Tools ▸ Extensions…)
   // and Third-party tools (it was Add-ons, the tab keeps its id «addons»); the
   // Extensions page shows what the bench's machine holds (README: Geofisica from the
-  // official repository, data only, and the example package)
-  ...["general", "identity", "connections", "viewers", "extensions", "addons", "advanced"].map((tab) => ({
-    name: `settings/${tab}`, png: true, clip: MODAL, wait: tab === "extensions" ? 2500 : 600,
-    prep: async (p) => { await click(p, "#btn-settings"); await sleep(800); await click(p, `#settings-tabs [data-tab-target="${tab}"]`); await sleep(800); },
+  // official repository, data only, and the example package). MICRO-SEG29: Colours
+  // (taken from the Space, so that the page names it) and Vocabularies (the page of
+  // the window Tools ▸ Vocabularies… of before: the bench's HOME has the example
+  // package's vocabulary)
+  ...["general", "identity", "connections", "viewers", "colours", "vocabularies", "extensions", "addons", "advanced"].map((tab) => ({
+    name: `settings/${tab}`, png: true, clip: MODAL, wait: tab === "extensions" || tab === "vocabularies" ? 2500 : 600,
+    prep: async (p) => {
+      if (tab === "colours") await ws(p, "space");
+      await click(p, "#btn-settings"); await sleep(800); await click(p, `#settings-tabs [data-tab-target="${tab}"]`); await sleep(800);
+    },
   })),
   {
     // the repositories' selector opened: the panel Repositories, the official first
@@ -182,7 +199,7 @@ const SHOTS = [
   // the windows and the dialogs
   { name: "windows/inspector", clip: '.tile-area[data-surface-type="inspector"]', prep: async (p) => { await pick(p, "SU001"); } },
   { name: "windows/colours", wait: 6000, clip: "[data-colours-window]", prep: async (p) => { await ws(p, "space"); await tool("btn-tool-colours")(p); } },
-  { name: "windows/vocabularies", png: true, clip: "[data-vocab-window]", prep: tool("btn-tool-vocabularies") },
+
   {
     // MICRO-TIL002: the console is a window type (its root [data-py-console]), not a floating panel
     name: "windows/console", png: true, clip: "[data-py-console]",

@@ -2,10 +2,13 @@
 
     python docs/_tools/menus.py ~/Documents/GitHub/EMStudio --ref v1.6.0-dev.136
 
-Sources (read only): ``frontend/src/menu-table.ts`` (File, Edit, Help, and the
-macOS menu bar), the English labels of ``frontend/src/i18n.ts``, and
-``frontend/index.html`` for Tools and for the mode's buttons, which are not in
-the table. The rules of ``menuRows()`` and ``keysFor()`` are repeated here: a
+Sources (read only): ``frontend/src/menu-table.ts`` (File, Edit, Window, Help,
+and the macOS menu bar), the English labels of ``frontend/src/i18n.ts``, and
+``frontend/index.html`` for the mode's buttons, which are not in the table (and
+for Tools, in the versions before MICRO-SEG29 that still have it). Since
+MICRO-SEG29 a command no menu draws (``only: NOWHERE``) may name its ``home``:
+where it lives now (a window's header, the Preferences); those rows make a
+table of their own. The rules of ``menuRows()`` and ``keysFor()`` are repeated here: a
 row is drawn on a platform unless its ``only`` leaves it out; the system's Edit
 on the Mac draws the OS's text editing, the page's Edit the document's undo.
 """
@@ -66,7 +69,13 @@ def drawn(menu, row, platform, surface, parent=None):
         return False
     if parent is not None and not drawn(menu, parent, platform, surface):
         return False
-    return on_platform(row, platform) and on_surface(menu, row, surface)
+    if not (on_platform(row, platform) and on_surface(menu, row, surface)):
+        return False
+    # menuRows(): a sub-menu of fixed rows with none drawn is not drawn (Edit ▸
+    # Clean up on the Mac's system Edit, which draws no command of ours)
+    if row['kind'] == 'sub' and not row.get('dynamic'):
+        return any(drawn(menu, r, platform, surface) for r in row['rows'] if r['kind'] != 'sep')
+    return True
 
 
 def keys_for(row, platform):
@@ -127,6 +136,8 @@ def menu_table(menu, en):
             notes = []
             if row.get('dynamic') == 'recent':
                 notes.append('Filled when the sub-menu opens.')
+            elif row.get('dynamic') == 'workspaces':
+                notes.append('Filled when the sub-menu opens: the workspaces of the bar, the active one marked.')
             if row.get('slot'):
                 notes.append('Installed plugins add their commands here, after the rows below.')
             if what and not what.endswith(('.', '…')):
@@ -143,6 +154,23 @@ def menu_table(menu, en):
         add(row)
     return list_table(['Command', 'macOS', 'Windows, Linux', 'Where', 'What it does'],
                       rows, [24, 9, 13, 18, 36])
+
+
+def homes_table(menus, en):
+    """MICRO-SEG29: the commands no menu draws (``only: NOWHERE``) that say where
+    they live (``home``), the place the command search shows beside them."""
+    rows = []
+
+    def walk(rs):
+        for r in rs:
+            if r['kind'] == 'sub':
+                walk(r['rows'])
+            elif r['kind'] == 'cmd' and r.get('home') and r.get('only') == []:
+                rows.append([rst_text(en[r['label']]), rst_text(en[r['home']]),
+                             rst_text(en[r['title']]) if r.get('title') else ''])
+    for m in menus:
+        walk(m['rows'])
+    return rows
 
 
 def html_buttons(block):
@@ -239,9 +267,12 @@ def main():
         return f'{text}\n{ch * len(text)}\n\n'
 
     out = [banner('menus.py', src)]
-    # the overview: which menus each surface draws
+    # the overview: which menus each surface draws (Tools: index.html's own menu,
+    # until MICRO-SEG29 dissolved it)
+    has_tools = 'id="dd-tools"' in page
+    order = ['app', 'file', 'edit'] + (['tools'] if has_tools or 'tools' in menus else []) + ['window', 'help']
     bar = []
-    for mid in ['app', 'file', 'edit', 'tools', 'window', 'help']:
+    for mid in order:
         if mid == 'tools' and mid not in menus:
             bar.append([en['toolbar.tools'], 'everywhere', ''])
             continue
@@ -256,17 +287,30 @@ def main():
     out.append('The menu bar inside the window, on every platform, and the menu bar of the '
                'system, which only the macOS desktop draws.\n\n')
     out.append(list_table(['Menu', 'In the window', 'macOS menu bar'], bar, [30, 40, 30]) + '\n')
+    win_inside = any('internal' in menus['window']['surfaces'].get(p, []) for p in PLATFORMS)
     for mid in ['file', 'edit']:
         out.append(title(en[menus[mid]['label']]))
         out.append(menu_table(menus[mid], en) + '\n')
-    out.append(title(en['toolbar.tools']))
-    out.append(tools_table(page, en, menus.get('tools')) + '\n')
+    if has_tools:
+        out.append(title(en['toolbar.tools']))
+        out.append(tools_table(page, en, menus.get('tools')) + '\n')
+    if win_inside:
+        out.append(title(en[menus['window']['label']]))
+        out.append(menu_table(menus['window'], en) + '\n')
     out.append(title(en['toolbar.help']))
     out.append(menu_table(menus['help'], en) + '\n')
     out.append(title('EMStudio (macOS menu bar)'))
     out.append(menu_table(menus['app'], en) + '\n')
-    out.append(title(f'{en[menus["window"]["label"]]} (macOS menu bar)'))
-    out.append(menu_table(menus['window'], en) + '\n')
+    if not win_inside:
+        out.append(title(f'{en[menus["window"]["label"]]} (macOS menu bar)'))
+        out.append(menu_table(menus['window'], en) + '\n')
+    homes = homes_table(menus.values(), en)
+    if homes:
+        out.append(title('Commands no menu draws, and where they are'))
+        out.append('These commands are not drawn in any menu: they live where they serve. '
+                   'The command search (``Edit ▸ Search commands…``, :kbd:`F3`) finds each of '
+                   'them by its name and shows the place written here.\n\n')
+        out.append(list_table(['Command', 'Where it is', 'What it does'], homes, [24, 34, 42]) + '\n')
     out.append(title('Mode'))
     out.append('The mode, the node and the room are no longer a menu of the top bar: their '
                f'one place is the section **{rst_text(en["who.sect.where"])}** of the chip\'s menu, '

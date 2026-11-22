@@ -17,8 +17,8 @@ the file means taking out its colour schemes.
 Read what the file holds
 ------------------------
 
-#. Choose ``Tools ▸ Colours…``. The **Colours** window opens on the active
-   Space.
+#. Open the **Colours** window of the active Space: its **Colours ▾**, or
+   ``Settings… ▸ Colours`` and **Open the Colours of the active Space…**.
 #. Look at the part **In the file**. It lists the colour schemes of the file,
    each with its property and the number of its colours, and marks **in use** the
    one the active graph uses.

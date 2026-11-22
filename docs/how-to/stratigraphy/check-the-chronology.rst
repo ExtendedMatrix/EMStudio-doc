@@ -21,7 +21,10 @@ Open the Chronology
 
 Use one of these:
 
-- ``Tools ▸ Check the chronology…``;
+- **Chronology** in the header of the Matrix. When the chronology has
+  warnings the button shows **▲** and their number;
+- the ▲ of the status bar: its pill counts the warnings of the chronology apart,
+  for example **▲ 2 chronology**, and one click opens the window;
 - in the Matrix, right-click the name of an epoch at the left edge and choose
   **Check the chronology…**: the window opens with that epoch selected;
 - from a warning of the study that concerns the chronology, its **Check the
@@ -85,7 +88,8 @@ Put the bands in order
 
 The bands of the Matrix follow the dates of their epochs. When they do not, the
 warnings of the study say **Lanes out of chronological order** and offer **Sort
-lanes by date**. A new epoch is added from the menu of an epoch's name in the
+lanes by date**. The same command is in ``Edit ▸ Clean up ▸ Sort lanes by
+date``, at any time; it is one step of ``Edit ▸ Undo``. A new epoch is added from the menu of an epoch's name in the
 Matrix, with **New epoch above** or **New epoch below**, which propose dates
 between the two neighbours, or with **New epoch…** in the **Add** menu.
 

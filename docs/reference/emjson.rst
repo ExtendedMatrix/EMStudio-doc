@@ -131,7 +131,8 @@ its name; for each graph the file names the scheme in use. A short example:
      "active_colour_scheme": {"GT16": "material"}
    }
 
-In EMStudio the schemes of the file are managed in the **Colours** window (``Tools ▸ Colours…``), under
+In EMStudio the schemes of the file are managed in the **Colours** window (the
+**Colours ▾** of the Space, or ``Settings… ▸ Colours``), under
 **In the file**: **Keep in the file…** stores the scheme on screen, **Import into
 the file…** takes ``.emc`` files in, and **Expel to a folder…** writes one
 ``.emc`` per scheme. ``File ▸ Clean up ▸ Clean the file…`` takes the whole section out after

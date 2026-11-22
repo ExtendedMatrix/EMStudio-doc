@@ -192,8 +192,9 @@ Index
 Chronology
    *Do the epochs hold?* The horizons of the project at its head, then the
    epochs and phases as bars on a time axis, the overlaps with their difference
-   and their remedies, and the table of the bounds. It opens below the Matrix with ``Tools ▸ Check the chronology…``, and
-   from an epoch's swimlane, its Inspector and the chronology warnings.
+   and their remedies, and the table of the bounds. It opens below the Matrix with the button **Chronology** of the Matrix's
+   header (it shows **▲ n** when there are warnings), with the ▲ of the status
+   bar, and from an epoch's swimlane, its Inspector and the chronology warnings.
 
 Study
    *What is this graph?* The graph's own facts: its name and identifier, the

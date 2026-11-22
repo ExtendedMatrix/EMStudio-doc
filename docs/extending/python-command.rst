@@ -92,7 +92,9 @@ add the section of the code:
   writes without this capability is refused at the moment it writes.
 - Each ``[[code.commands]]`` declares one command: its ``id``, its ``label``
   in the languages of the package, the **slot** where it appears
-  (``menu.tools@1`` is ``Tools ▸ Plugins``), and whether it writes. A command
+  (``menu.tools@1`` is the command search, :kbd:`F3`, and the section
+  **Commands of the plugins** of ``Settings… ▸ Extensions``), and whether it
+  writes. A command
   exists for EMStudio only once the envelope declares it.
 
 3 · The first command
@@ -118,8 +120,7 @@ For now, ``setup`` wires only ``vlt.count``: leave out the two lines of
 functions.
 
 - A command is a function that receives its **slots** (a dictionary, empty
-  here) and returns a value. ``Tools ▸ Plugins`` shows the value in a
-  message.
+  here) and returns a value. EMStudio shows the value in a message.
 - ``em.graph`` is the study open in EMStudio; ``nodes(type="extractor")``
   gives its extractors, and ``data`` the data of each node. The points of the
   face are the extractors whose kind is ``vlt:punto_del_volto``.
@@ -141,7 +142,7 @@ The **Python console** speaks the same ``em`` as the code: it is the place to
 try a line before writing it in a file.
 
 #. Open the example study, ``data/examples/volto.em.json``.
-#. Choose ``Tools ▸ Python console… · beta``. The first line reminds you that
+#. Choose ``Window ▸ Python console… · beta``. The first line reminds you that
    ``em`` is imported and that ``g`` is the graph shown.
 #. Write, and press :kbd:`Enter`:
 
@@ -159,8 +160,8 @@ The **development folder** loads the plugins you are writing where they are:
 no installation, no question of trust, because the person who writes the
 code is the person who runs it.
 
-#. Choose ``Tools ▸ Extensions…`` (it opens ``Settings… ▸ Extensions``) and
-   open the row **Development folder**, the last of the page.
+#. Open ``Settings… ▸ Extensions`` and open the row **Development folder**,
+   the last of the page.
 #. Type the folder that holds ``volto-esempio`` (or the folder
    ``volto-esempio`` itself), and press **Use**.
 #. The row of the package appears, marked **development, not verified**,
@@ -176,15 +177,14 @@ code is the person who runs it.
 6 · Run it
 ----------
 
-#. Choose ``Tools ▸ Plugins``. The plugin has its own heading, with its name,
-   its version and the mark **development**; under it, its command.
-
-   .. figure:: /_static/screens/extending/tools-plugins.png
-      :alt: The menu Tools open on Plugins: the heading A face and its measures (EXAMPLE) 0.1.0 with the mark development, and the command Count the points of the face.
-
-      A command declared in ``menu.tools@1``.
-
-#. Choose **Count the points of the face**. A message answers
+#. Press :kbd:`F3` (``Edit ▸ Search commands…``) and type ``face``. The
+   command **Count the points of the face** answers, with the name of its
+   extension where the search says where a command lives. The same command is
+   listed in ``Settings… ▸ Extensions``, in the section **Commands of the
+   plugins** under the extensions: the plugin has its own heading, with its
+   name, its version and the mark **development**; under it, its command.
+#. Press :kbd:`Enter` on **Count the points of the face**, or choose it in the
+   section. A message answers
    *«Count the points of the face»: 0 points of the face*: the example study
    has no points yet.
 

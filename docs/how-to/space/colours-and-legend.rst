@@ -25,10 +25,10 @@ Open the Colours window
 
 Press **Colours** at the left of the bar of the **3D scene**, beside
 **Visibility ▾** (when the bar is narrow it becomes the icon ◐, its name in the
-tooltip), or choose ``Tools ▸ Colours…``. The **▾** beside it opens the quick
-menu of the colours.
-The window works on the Space it was opened from (from the Tools menu, the active
-one). Its first line, **Epoch shown:**, names the epoch and the number of its
+tooltip), or open ``Settings… ▸ Colours`` and press **Open the Colours of the
+active Space…**. The **▾** beside it opens the quick menu of the colours.
+The window works on the Space it was opened from (from the Settings, the active
+one, which the page names). Its first line, **Epoch shown:**, names the epoch and the number of its
 proxies.
 
 .. image:: /_static/screens/windows/colours.jpg

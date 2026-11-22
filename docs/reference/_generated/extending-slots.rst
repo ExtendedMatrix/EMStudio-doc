@@ -10,7 +10,7 @@
      - Where it appears
      - What the command is
    * - ``menu.tools@1``
-     - ``Tools ▸ Plugins``, under the name of the plugin
+     - the command search (``Edit ▸ Search commands…``, :kbd:`F3`), and ``Settings… ▸ Extensions`` ▸ **Commands of the plugins**, under the name of the plugin
      - a command
    * - ``menu.file.import@1``
      - ``File ▸ Import``

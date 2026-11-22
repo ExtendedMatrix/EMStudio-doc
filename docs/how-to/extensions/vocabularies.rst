@@ -14,16 +14,18 @@ each value as it was written, so it opens everywhere, also where a vocabulary is
 missing. When the licence allows it, the file can also carry a copy of the few
 terms it uses.
 
-All of this happens in one window, ``Tools ▸ Vocabularies…``, and in the
+All of this happens in one page, ``Settings… ▸ Vocabularies``, and in the
 **Inspector** of a value.
 
 Install a vocabulary
 --------------------
 
-.. image:: /_static/screens/windows/vocabularies.png
-   :alt: The Vocabularies window: a vocabulary installed on this computer, the buttons to install, the alignments, and the vocabularies the open file uses.
+.. image:: /_static/screens/settings/vocabularies.png
+   :alt: Settings, the Vocabularies page: a vocabulary installed on this computer, the buttons to install, the alignments, and the vocabularies the open file uses.
 
-#. Choose ``Tools ▸ Vocabularies…``. The window **Vocabularies** opens.
+#. Open ``Settings… ▸ Vocabularies``. In the **Inspector**, beside a value
+   linked to a term, **Edit vocabulary…** opens the same page; the command
+   search (:kbd:`F3`) finds it as **Vocabularies…**.
 #. In the section **Install**, choose where the vocabulary comes from:
 
    - **From the central repository…**: the catalogue of the Extended Matrix
@@ -77,7 +79,7 @@ that are not controlled and those whose vocabulary is missing, with
 Read what the file uses, and carry a copy of its terms
 ------------------------------------------------------
 
-#. In the window **Vocabularies**, the section **This file** lists, for the
+#. In ``Settings… ▸ Vocabularies``, the section **This file** lists, for the
    active file, each vocabulary it uses, with its versions and how many terms.
 #. A vocabulary that is not installed here is marked **not installed here (the
    saved labels are shown)**, with **Install** beside it.

@@ -23,11 +23,11 @@ service: on the desktop the service of this computer, on the web the node's.
 Choose the folder
 -----------------
 
-The same reading starts from four places:
+The same reading starts from three places:
 
 - ``File ▸ Bring in…``: choose **A folder read as DosCo…** and press
-  **Choose…**;
-- ``Tools ▸ Read as DosCo…``;
+  **Choose…** (the command search, :kbd:`F3`, finds it as **Read as
+  DosCo…**);
 - **Read this folder as DosCo…** in the **Files** window: open a folder, choose
   nothing, and find the button in the **Info** tab among the gestures of the
   folder. An empty **Shelf** offers it too, for the ``DosCo`` folder of the

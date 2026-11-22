@@ -329,8 +329,7 @@ all.
 10 · Install it in EMStudio
 ---------------------------
 
-#. Choose ``Tools ▸ Extensions…`` (it opens ``Settings… ▸ Extensions``) and
-   press **Install from a folder…**.
+#. Open ``Settings… ▸ Extensions`` and press **Install from a folder…**.
    Choose the folder ``volto-esempio``.
 #. EMStudio reads the folder, writes nothing yet, and opens
    **Install an extension**. The panel **Data** lists the two vocabularies,

@@ -150,7 +150,7 @@ every change of the graph again. A proxy and an anchor always follow their graph
 A GIS sheet stands in the system of its file, which is changed in its GIS panel.
 
 The georeference of the graph itself is edited on the graph's node, under the
-site position, or in the card opened with ``Tools ▸ Georeferencing…``.
+site position, or in the card opened with ``File ▸ Georeferencing…``.
 
 The end of the panel
 --------------------

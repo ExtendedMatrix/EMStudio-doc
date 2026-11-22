@@ -22,7 +22,8 @@ lists the packages that the node's administrator installed (see
 Open the repositories
 ---------------------
 
-#. Open ``Settings… ▸ Extensions`` (``Tools ▸ Extensions…`` is a shortcut to it).
+#. Open ``Settings… ▸ Extensions`` (the command search, :kbd:`F3`, finds it as
+   **Extensions…**).
 #. Press the **selector of the repositories**, at the top of the page: the
    address of the repository in use, **official**, **+ N more** and ▾. The panel
    **Repositories** opens over the list.

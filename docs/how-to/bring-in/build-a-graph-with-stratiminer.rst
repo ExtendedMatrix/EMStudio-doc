@@ -23,8 +23,10 @@ its key must be set in ``Settings ▸ Advanced`` (see :doc:`/reference/settings`
 Open StratiMiner
 ----------------
 
-Choose ``Tools ▸ StratiMiner``. With nothing open, the empty canvas offers the
-same panel through the link **build one from your sources**.
+Choose ``File ▸ Bring in…`` and its fourth choice, **A folder of unstructured
+sources, with StratiMiner…**. With nothing open, the empty canvas offers the
+same panel through the link **build one from your sources**; the command search
+(:kbd:`F3`) finds it as **StratiMiner**.
 
 .. image:: /_static/screens/dialogs/stratiminer.png
    :alt: The StratiMiner window: how the em_data.xlsx table is made, by hand or with the AI, and the Graph creator that turns it into an em.json.

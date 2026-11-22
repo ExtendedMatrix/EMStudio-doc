@@ -132,7 +132,7 @@ saves by downloading. The table below lists every difference of version
        development folder of a plugin
      - Chosen through the system's folder dialog.
      - These folders belong to the desktop application.
-   * - Plugins of your own computer, and ``Tools ▸ Python console…``
+   * - Plugins of your own computer, and ``Window ▸ Python console…``
      - Available.
      - The plugins installed on the node, turned on for the room, run on the
        node; plugins and the console of a computer belong to the desktop

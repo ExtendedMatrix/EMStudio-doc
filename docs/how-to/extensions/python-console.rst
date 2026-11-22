@@ -25,7 +25,7 @@ Before you start
 Open the console
 ----------------
 
-#. Choose ``Tools ▸ Python console… · beta``. A window **Python Console** opens
+#. Choose ``Window ▸ Python console… · beta``. A window **Python Console** opens
    under the active window, or the one this workspace already has comes
    forward. It is a type of window like the others: any area of any workspace
    can become a console from the window type menu of its header, and the

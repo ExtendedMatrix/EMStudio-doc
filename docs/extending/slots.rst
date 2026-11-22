@@ -161,7 +161,8 @@ the data. What you declare is what the person reads, before installing.
    * - ``statusbar@1``
      - **Status bar**
    * - ``menu.tools@1``
-     - **Tools menu**
+     - **Command search (F3) · Preferences ▸ Extensions**; **Show me** opens
+       the command search on the commands of the extension
    * - ``context.node@1``
      - **A node's context menu**
    * - ``check@1``

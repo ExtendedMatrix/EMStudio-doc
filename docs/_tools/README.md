@@ -6,7 +6,7 @@ application draws.
 
 | Script | Reads (EMStudio, read only) | Writes |
 |---|---|---|
-| `menus.py` | `frontend/src/menu-table.ts`, `frontend/index.html` (Tools, the mode buttons), the English labels of `frontend/src/i18n.ts` | `docs/reference/_generated/menus.rst` |
+| `menus.py` | `frontend/src/menu-table.ts` (the menus, and the commands no menu draws with their `home`), `frontend/index.html` (the mode buttons; Tools, in the versions before MICRO-SEG29), the English labels of `frontend/src/i18n.ts` | `docs/reference/_generated/menus.rst` |
 | `shortcuts.py` | `frontend/src/keymap.ts`, the accelerators of `menu-table.ts`, the English labels of `i18n.ts` | `docs/reference/_generated/shortcuts.rst` |
 
 `emsource.py` holds what both share: reading a file of EMStudio (from the working

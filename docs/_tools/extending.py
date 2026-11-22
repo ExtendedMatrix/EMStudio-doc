@@ -123,7 +123,7 @@ def codes(seq):
 #: what the reader is told of each slot, in one line (checked against
 #: s3dgraphy/extensions/slots.py and EMStudio's plugin-commands.ts)
 SLOT_WHERE = {
-    'menu.tools': '``Tools ▸ Plugins``, under the name of the plugin',
+    'menu.tools': 'the command search (``Edit ▸ Search commands…``, :kbd:`F3`), and ``Settings… ▸ Extensions`` ▸ **Commands of the plugins**, under the name of the plugin',
     'menu.file.import': '``File ▸ Import``',
     'menu.file.export': '``File ▸ Export``; the command returns a file',
     'export.narrative': '**Export ▾** of the Narrative; the command returns a file',

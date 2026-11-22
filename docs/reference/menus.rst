@@ -5,12 +5,19 @@ Menus
 
 *Every command of the menus, where it appears and what it does.*
 
-The menu bar at the top of the window holds **File**, **Edit**, **Tools** and
+The menu bar at the top of the window holds **File**, **Edit**, **Window** and
 **Help**: the commands that belong to the whole study rather than to one window.
 The same menus appear on the desktop and on the web, because EMStudio draws them
 from one table of commands. On the macOS desktop the system's menu bar carries
-them too, together with the **EMStudio** and **Window** menus of the Mac; on
-Windows and Linux the menu bar inside the window is the only one.
+them too, together with the **EMStudio** menu of the Mac; its **Window** menu
+adds the Mac's own Minimize, Zoom and Enter Full Screen. On Windows and Linux
+the menu bar inside the window is the only one.
+
+There is no **Tools** menu any more. Each of its commands lives where it
+serves: in the header of the window it works on, in ``File ▸ Bring in…``, in
+``Edit ▸ Clean up``, in the Settings, in **Window**. The table
+:ref:`menus-where-tools-went` says where each one went, and the command search
+(:kbd:`F3`) finds every command by its name.
 
 .. grid:: 2 2 4 4
    :gutter: 2
@@ -27,8 +34,8 @@ Windows and Linux the menu bar inside the window is the only one.
 
    .. grid-item::
 
-      .. image:: /_static/screens/menus/tools.png
-         :alt: The Tools menu open.
+      .. image:: /_static/screens/menus/window.png
+         :alt: The Window menu open: Workspaces, Scripting workspace, Python console, Detach the active window, Bring back the detached windows, Maximise the area, Area headers.
 
    .. grid-item::
 
@@ -39,6 +46,100 @@ The commands of a single window are elsewhere: in the window's own header, in th
 menu that opens with a right click on the window, and in the menu
 *This window's tools* at the right of the header. :doc:`windows` describes them
 with each type of window.
+
+.. _menus-command-search:
+
+Find a command (F3)
+-------------------
+
+``Edit ▸ Search commands…`` opens the command search: one field, and under it
+the commands that answer what you type. Press :kbd:`F3`, or :kbd:`⌘K`
+(:kbd:`Ctrl+K` on Windows and Linux), from anywhere in the window.
+
+.. image:: /_static/screens/menus/command-search.png
+   :alt: The command search open, «chronology» typed in its field: Check the chronology… first, with where it lives, the Matrix header and the ▲ of the status bar.
+
+- Type a part of the name. The search knows every command by its English name
+  and by its Italian name, whatever the language of the interface, and by a few
+  other words: *tools*, *strumenti*, *cronologia*, *colours*, *console*…
+- Each result says where the command lives now (a menu, the header of a window,
+  a page of the Settings) and its keys, if it has any.
+- :kbd:`↑` and :kbd:`↓` choose a result, :kbd:`Enter` runs it, :kbd:`Esc`
+  closes the search. A second :kbd:`F3` closes it too.
+- A command that cannot run now (it needs a document, a selection, or a window
+  of its kind) says so instead of running.
+- The commands of the plugins installed on this computer come in by themselves,
+  with the name of their extension.
+
+``Help ▸ Shortcuts`` lists the search with the other keys (:kbd:`F3` ·
+:kbd:`⌘K`).
+
+.. _menus-where-tools-went:
+
+Where the commands of Tools went
+--------------------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 70
+
+   * - It was
+     - It is now
+   * - ``Tools ▸ Add node…``
+     - **Add ▾** in the header of the **Matrix** (the same menu as :kbd:`⇧A`,
+       which still works).
+   * - ``Tools ▸ Check the chronology…``
+     - **Chronology** in the header of the **Matrix** (it shows **▲ n** when the
+       chronology has warnings), and the ▲ of the status bar: its pill counts
+       the warnings of the chronology apart (**▲ n chronology**), and one click
+       opens the check.
+   * - ``Tools ▸ StratiMiner``
+     - ``File ▸ Bring in…``, its fourth choice: **A folder of unstructured
+       sources, with StratiMiner…**
+   * - ``Tools ▸ Read as DosCo…``
+     - ``File ▸ Bring in…``, the choice **A folder read as DosCo…**, and the
+       button of the empty **Shelf**.
+   * - ``Tools ▸ Normalise spellings…``
+     - ``Edit ▸ Clean up ▸ Normalise spellings…``, beside **Sort lanes by
+       date**.
+   * - ``Tools ▸ Colours…``
+     - ``Settings… ▸ Colours`` (it says which Space, and opens its window), and
+       the **Colours ▾** of the Space, as before.
+   * - ``Tools ▸ Vocabularies…``
+     - ``Settings… ▸ Vocabularies``, and **Edit vocabulary…** beside a value
+       term in the Inspector.
+   * - ``Tools ▸ Extensions…``
+     - ``Settings… ▸ Extensions``, as before.
+   * - ``Tools ▸ Plugins``
+     - ``Settings… ▸ Extensions``, the section **Commands of the plugins** under
+       the extensions; the command search finds the commands too.
+   * - ``Tools ▸ Georeferencing…``
+     - ``File ▸ Georeferencing…`` (next to ``Room ▸``), and the **Visibility ▾**
+       of the Space, as before.
+   * - ``Tools ▸ Python console… · beta``
+     - ``Window ▸ Python console… · beta``.
+
+The command search calls the Settings *Preferences* when it says where a
+command lives: ``Preferences ▸ Colours`` is the page **Colours** of
+**Settings…**.
+
+The Window menu
+---------------
+
+**Window** holds what arranges the window rather than the study:
+
+- **Workspaces ▸** lists the workspaces of the bar, the active one marked; a
+  click brings one to the front.
+- **Scripting workspace** brings the workspace of the Python console and the
+  Script Editor.
+- **Python console… · beta** opens the console (see
+  :doc:`/how-to/extensions/python-console`).
+- **Detach the active window** puts the active window in a window of the system
+  of its own, for another screen; **Bring back the detached windows** puts them
+  all back.
+- **Maximise the area** spreads the active area over the whole workspace, and
+  back (:kbd:`⌃Space`).
+- **Area headers** shows or hides the headers of the areas, for this session.
 
 How to read the tables
 ----------------------

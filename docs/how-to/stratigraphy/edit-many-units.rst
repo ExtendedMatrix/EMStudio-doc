@@ -77,7 +77,7 @@ Files written by older tools may name some relations with an older spelling, for
 example **Is bonded to** for **Bonded to**. EMStudio reads them, and can rewrite
 them in the whole graph at once.
 
-#. Choose ``Tools ▸ Normalise spellings…``.
+#. Choose ``Edit ▸ Clean up ▸ Normalise spellings…``.
 #. The window lists how many relations are written under an older spelling, and
    what will happen to them: exact duplicates of a relation that already exists
    are removed, and the others are rewritten under their current name, with

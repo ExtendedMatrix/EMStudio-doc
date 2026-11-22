@@ -3,21 +3,22 @@
 Settings
 ========
 
-*The seven pages of the Settings dialog, section by section.*
+*The nine pages of the Settings dialog, section by section.*
 
 The Settings dialog holds the choices that belong to this computer and to you,
 not to a study: the language of the interface, the theme, your identity, the
-nodes you know, the viewers, the AI provider, the extensions and the third-party
-tools. A study carries its
+nodes you know, the viewers, the AI provider, the colours and the vocabularies,
+the extensions and the third-party tools. A study carries its
 own texts, colours and vocabularies with it; the settings stay on the machine.
 
 Open the dialog with **Settings…** (:kbd:`⌘,` on macOS, :kbd:`Ctrl+,` on Windows
 and Linux). On the macOS desktop the command is in the **EMStudio** menu of the
 system's menu bar; on the web, on Windows and on Linux it is in the **Help** menu.
 
-The pages are listed in a column on the left, in three groups between thin
+The pages are listed in a column on the left, in four groups between thin
 lines: **General**, **Identity**, **Viewers** and **Connections**; then
-**Extensions** and **Third-party tools**; then **Advanced**. The dialog reopens on the page you last
+**Colours** and **Vocabularies**; then **Extensions** and **Third-party tools**;
+then **Advanced**. The dialog reopens on the page you last
 used. Some commands open it directly on the section they need: asking the
 narrative for a draft before an AI is set up opens **AI provider**, an author's **Edit** opens **Identity**.
 **Save** applies the changes, **Cancel** leaves everything as it was.
@@ -190,6 +191,33 @@ Experimental functions
    **Turn on the experimental functions on this machine** opens functions still
    being tried. It is off by default and takes effect after a reload.
 
+Colours
+-------
+
+.. image:: /_static/screens/settings/colours.png
+   :alt: Settings, the Colours page: what the colours are, the Space they would apply to, and the button Open the Colours of the active Space.
+
+The colours of the proxies in a Space, by type, by epoch or by a property, are
+not a setting of this computer: they are kept in the file, with the Space they
+belong to. The page says so, names the Space of the active workspace, and
+**Open the Colours of the active Space…** opens the **Colours** window of that
+Space (see :doc:`/how-to/space/colours-and-legend`). The **Colours ▾** of the
+Space opens the same window. It was ``Tools ▸ Colours…`` in the earlier
+versions.
+
+Vocabularies
+------------
+
+.. image:: /_static/screens/settings/vocabularies.png
+   :alt: Settings, the Vocabularies page: the vocabularies installed on this computer, the buttons to install them, the alignments, and the vocabularies the open file uses.
+
+The vocabularies installed on this computer, those the open file uses, and the
+copy of their terms that the file carries. The page is the one that the window
+``Tools ▸ Vocabularies…`` of the earlier versions held, drawn inside the
+dialog. **Edit vocabulary…**, beside a value term in the **Inspector**, opens
+the dialog on this page. :doc:`/how-to/extensions/vocabularies` tells how to
+use it. Its actions are immediate, as those of **Extensions**.
+
 Extensions
 ----------
 
@@ -199,8 +227,8 @@ Extensions
 The extensions of this computer, the same that EM Tools in Blender uses:
 community packages (data: vocabularies, a profile, sheets, colour schemes, read
 by every tool) and plugins (code: commands, readers, layers and tools of the
-Space, sections of the Inspector). ``Tools ▸ Extensions…`` opens the dialog on
-this page.
+Space, sections of the Inspector). The command search (:kbd:`F3`) finds
+**Extensions…** and opens the dialog on this page.
 
 At the top, the selector of the repositories (the official one first; it opens
 the panel **Repositories**) and **Install from disk…**; then the search, the
@@ -210,6 +238,12 @@ and one action; opened, **What it contains** and **Where you will find it**,
 with **Show me**. At the foot, the counts, **Update all (…)**, **Clean up…**,
 **Folders** and **How to build an extension**. With the experimental functions
 on, the last row is the **Development folder**.
+
+Under the extensions, the section **Commands of the plugins** lists each plugin
+loaded on this computer with its commands and its panels, and the plugins that
+did not load, each with the reason. It is what the menu *Tools ▸ Plugins* of the
+earlier versions showed. A command of a plugin is also found by the command
+search (:kbd:`F3`), under the name of its extension.
 
 The actions of this page are immediate: **Save** and **Cancel** at the foot of
 the dialog do not concern them.

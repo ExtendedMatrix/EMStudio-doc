@@ -8,6 +8,10 @@ How-to Guides
 Task-oriented recipes, grouped by workspace. Each guide assumes basic familiarity
 with EMStudio (see :ref:`tutorial`) and helps you reach one objective.
 
+When a guide names a command you cannot find, press :kbd:`F3` and type its
+name, in English or in Italian: the command search runs it and says where it
+lives (see :ref:`menus-command-search`).
+
 - :doc:`files/index`: open, save and reopen; a project folder; integrate another
   file; find missing files; clean the file; pin a version.
 - :doc:`bring-in/index`: files as documents, a geophysical stack, a GraphML matrix,

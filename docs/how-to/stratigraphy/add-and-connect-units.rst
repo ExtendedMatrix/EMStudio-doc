@@ -26,7 +26,8 @@ The **Add** menu is one menu with four ways in:
 - :kbd:`⇧A` (:kbd:`Shift+A`) with the pointer on the canvas: the menu opens
   where the pointer is;
 - a right click on the empty canvas, or on the body of an open group;
-- ``Tools ▸ Add node…``;
+- **Add ▾** in the header of the Matrix: the new node is born in the middle of
+  the view;
 - a long press, on a touch screen.
 
 The line under the title says where the new node will be born, for example
