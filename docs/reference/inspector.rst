@@ -168,10 +168,10 @@ Each window says whose it is, as the own and inherited values do:
   unit only.
 
 The obliteration is best annotated on the **functional unit** (the villa, the
-temple, the ruin): its members inherit it. A member that comes into being when
-the obliteration begins, or later, is not reached, and the section says so —
-the destruction layer that covers the ruin is a member of the ruin and is not
-obliterated by it.
+temple, the ruin): its members inherit it, every member alive in the window,
+whenever it comes into being. The layer that obliterates is not inside the
+functional unit it obliterates: the destruction layer, or the earth that covers
+the ruin, is not a member of the ruin.
 
 Every window shows its paradata: who states it (the extractor), on which
 source, and what the extractor says — the doubts («start not known; the date of
@@ -182,9 +182,12 @@ corrected.
 
 Nothing is derived from the stratigraphy. A physical cover (covers, fills) is
 only a hint, listed under the diary: an obliteration where nothing more recent
-covers, or a unit covered for which nobody annotated anything. When the section
-is a single line, the hints are in its tooltip. *Is after* is a relation of
-time and is never read as a cover.
+covers, or a unit covered for which nobody annotated anything. A member that
+covers other members of its own functional unit while that unit is obliterated
+gets the hint «the layer that obliterates is inside the unit it obliterates:
+remove it?» — a question: the membership is never changed for you. When the
+section is a single line, the hints are in its tooltip. *Is after* is a
+relation of time and is never read as a cover.
 
 **+ Annotate an obliteration…** opens the form:
 
