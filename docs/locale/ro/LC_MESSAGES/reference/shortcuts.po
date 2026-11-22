@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 11:41+0100\n"
+"POT-Creation-Date: 2026-11-22 09:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ro\n"
@@ -186,6 +186,15 @@ msgid ":kbd:`/`"
 msgstr ""
 
 msgid "Search the graph"
+msgstr ""
+
+msgid ":kbd:`F3` · :kbd:`⌘K`"
+msgstr ""
+
+msgid ":kbd:`F3` · :kbd:`Ctrl+K`"
+msgstr ""
+
+msgid "Search every command by its name (Edit ▸ Search commands…)"
 msgstr ""
 
 msgid ":kbd:`⌃Space`"
@@ -500,7 +509,24 @@ msgstr ""
 msgid ":kbd:`N`"
 msgstr ""
 
-msgid "The «View» panel on the right: 3D cursor, selected object, view"
+msgid "The sidebar on the right, its tabs: Item, Tool, View and the extensions'"
+msgstr ""
+
+msgid ":kbd:`⇧N`"
+msgstr ""
+
+msgid ":kbd:`Shift+N`"
+msgstr ""
+
+msgid ""
+"Bring the view as it is now into the Narrative's active block (dynamic or"
+" static)"
+msgstr ""
+
+msgid ":kbd:`T`"
+msgstr ""
+
+msgid "The toolbar on the left: select, 3D cursor and the extensions' tools"
 msgstr ""
 
 msgid ":kbd:`.` · :kbd:`F`"
@@ -707,6 +733,42 @@ msgstr ""
 msgid "Mention a node"
 msgstr ""
 
+msgid ":kbd:`⌘⌥1`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+1`"
+msgstr ""
+
+msgid "Narrative, Write: the part into a chapter"
+msgstr ""
+
+msgid ":kbd:`⌘⌥2`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+2`"
+msgstr ""
+
+msgid "Narrative, Write: the part into a section"
+msgstr ""
+
+msgid ":kbd:`⌘⌥3`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+3`"
+msgstr ""
+
+msgid "Narrative, Write: the part into a subsection"
+msgstr ""
+
+msgid ":kbd:`⌘⌥0`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+Alt+0`"
+msgstr ""
+
+msgid "Narrative, Write: the part into a paragraph"
+msgstr ""
+
 msgid "In menus and buttons"
 msgstr ""
 
@@ -796,6 +858,15 @@ msgstr ""
 msgid "*desktop only*: Windows, Linux"
 msgstr ""
 
+msgid ":kbd:`⌘K`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+K`"
+msgstr ""
+
+msgid "Edit ▸ Search commands…"
+msgstr ""
+
 msgid "Help ▸ Settings…"
 msgstr ""
 
@@ -824,5 +895,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Open and close the Space's Outliner"
+#~ msgstr ""
+
+#~ msgid "The «View» panel on the right: 3D cursor, selected object, view"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 07:11+0100\n"
+"POT-Creation-Date: 2026-11-22 09:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -26,13 +26,22 @@ msgid "*Every command of the menus, where it appears and what it does.*"
 msgstr ""
 
 msgid ""
-"The menu bar at the top of the window holds **File**, **Edit**, **Tools**"
-" and **Help**: the commands that belong to the whole study rather than to"
-" one window. The same menus appear on the desktop and on the web, because"
-" EMStudio draws them from one table of commands. On the macOS desktop the"
-" system's menu bar carries them too, together with the **EMStudio** and "
-"**Window** menus of the Mac; on Windows and Linux the menu bar inside the"
-" window is the only one."
+"The menu bar at the top of the window holds **File**, **Edit**, "
+"**Window** and **Help**: the commands that belong to the whole study "
+"rather than to one window. The same menus appear on the desktop and on "
+"the web, because EMStudio draws them from one table of commands. On the "
+"macOS desktop the system's menu bar carries them too, together with the "
+"**EMStudio** menu of the Mac; its **Window** menu adds the Mac's own "
+"Minimize, Zoom and Enter Full Screen. On Windows and Linux the menu bar "
+"inside the window is the only one."
+msgstr ""
+
+msgid ""
+"There is no **Tools** menu any more. Each of its commands lives where it "
+"serves: in the header of the window it works on, in ``File ▸ Bring in…``,"
+" in ``Edit ▸ Clean up``, in the Settings, in **Window**. The table :ref"
+":`menus-where-tools-went` says where each one went, and the command "
+"search (:kbd:`F3`) finds every command by its name."
 msgstr ""
 
 msgid "The File menu open."
@@ -41,7 +50,10 @@ msgstr ""
 msgid "The Edit menu open."
 msgstr ""
 
-msgid "The Tools menu open."
+msgid ""
+"The Window menu open: Workspaces, Scripting workspace, Python console, "
+"Detach the active window, Bring back the detached windows, Maximise the "
+"area, Area headers."
 msgstr ""
 
 msgid "The Help menu open."
@@ -52,6 +64,191 @@ msgid ""
 "header, in the menu that opens with a right click on the window, and in "
 "the menu *This window's tools* at the right of the header. :doc:`windows`"
 " describes them with each type of window."
+msgstr ""
+
+msgid "Find a command (F3)"
+msgstr ""
+
+msgid ""
+"``Edit ▸ Search commands…`` opens the command search: one field, and "
+"under it the commands that answer what you type. Press :kbd:`F3`, or "
+":kbd:`⌘K` (:kbd:`Ctrl+K` on Windows and Linux), from anywhere in the "
+"window."
+msgstr ""
+
+msgid ""
+"The command search open, «chronology» typed in its field: Check the "
+"chronology… first, with where it lives, the Matrix header and the ▲ of "
+"the status bar."
+msgstr ""
+
+msgid ""
+"Type a part of the name. The search knows every command by its English "
+"name and by its Italian name, whatever the language of the interface, and"
+" by a few other words: *tools*, *strumenti*, *cronologia*, *colours*, "
+"*console*…"
+msgstr ""
+
+msgid ""
+"Each result says where the command lives now (a menu, the header of a "
+"window, a page of the Settings) and its keys, if it has any."
+msgstr ""
+
+msgid ""
+":kbd:`↑` and :kbd:`↓` choose a result, :kbd:`Enter` runs it, :kbd:`Esc` "
+"closes the search. A second :kbd:`F3` closes it too."
+msgstr ""
+
+msgid ""
+"A command that cannot run now (it needs a document, a selection, or a "
+"window of its kind) says so instead of running."
+msgstr ""
+
+msgid ""
+"The commands of the plugins installed on this computer come in by "
+"themselves, with the name of their extension."
+msgstr ""
+
+msgid ""
+"``Help ▸ Shortcuts`` lists the search with the other keys (:kbd:`F3` · "
+":kbd:`⌘K`)."
+msgstr ""
+
+msgid "Where the commands of Tools went"
+msgstr ""
+
+msgid "It was"
+msgstr ""
+
+msgid "It is now"
+msgstr ""
+
+msgid "``Tools ▸ Add node…``"
+msgstr ""
+
+msgid ""
+"**Add ▾** in the header of the **Matrix** (the same menu as :kbd:`⇧A`, "
+"which still works)."
+msgstr ""
+
+msgid "``Tools ▸ Check the chronology…``"
+msgstr ""
+
+msgid ""
+"**Chronology** in the header of the **Matrix** (it shows **▲ n** when the"
+" chronology has warnings), and the ▲ of the status bar: its pill counts "
+"the warnings of the chronology apart (**▲ n chronology**), and one click "
+"opens the check."
+msgstr ""
+
+#, fuzzy
+msgid "``Tools ▸ StratiMiner``"
+msgstr "StratiMiner"
+
+msgid ""
+"``File ▸ Bring in…``, its fourth choice: **A folder of unstructured "
+"sources, with StratiMiner…**"
+msgstr ""
+
+msgid "``Tools ▸ Read as DosCo…``"
+msgstr ""
+
+msgid ""
+"``File ▸ Bring in…``, the choice **A folder read as DosCo…**, and the "
+"button of the empty **Shelf**."
+msgstr ""
+
+msgid "``Tools ▸ Normalise spellings…``"
+msgstr ""
+
+msgid "``Edit ▸ Clean up ▸ Normalise spellings…``, beside **Sort lanes by date**."
+msgstr ""
+
+msgid "``Tools ▸ Colours…``"
+msgstr ""
+
+msgid ""
+"``Settings… ▸ Colours`` (it says which Space, and opens its window), and "
+"the **Colours ▾** of the Space, as before."
+msgstr ""
+
+msgid "``Tools ▸ Vocabularies…``"
+msgstr ""
+
+msgid ""
+"``Settings… ▸ Vocabularies``, and **Edit vocabulary…** beside a value "
+"term in the Inspector."
+msgstr ""
+
+msgid "``Tools ▸ Extensions…``"
+msgstr ""
+
+msgid "``Settings… ▸ Extensions``, as before."
+msgstr ""
+
+msgid "``Tools ▸ Plugins``"
+msgstr ""
+
+msgid ""
+"``Settings… ▸ Extensions``, the section **Commands of the plugins** under"
+" the extensions; the command search finds the commands too."
+msgstr ""
+
+msgid "``Tools ▸ Georeferencing…``"
+msgstr ""
+
+msgid ""
+"``File ▸ Georeferencing…`` (next to ``Room ▸``), and the **Visibility ▾**"
+" of the Space, as before."
+msgstr ""
+
+msgid "``Tools ▸ Python console… · beta``"
+msgstr ""
+
+msgid "``Window ▸ Python console… · beta``."
+msgstr ""
+
+msgid ""
+"The command search calls the Settings *Preferences* when it says where a "
+"command lives: ``Preferences ▸ Colours`` is the page **Colours** of "
+"**Settings…**."
+msgstr ""
+
+msgid "The Window menu"
+msgstr ""
+
+msgid "**Window** holds what arranges the window rather than the study:"
+msgstr ""
+
+msgid ""
+"**Workspaces ▸** lists the workspaces of the bar, the active one marked; "
+"a click brings one to the front."
+msgstr ""
+
+msgid ""
+"**Scripting workspace** brings the workspace of the Python console and "
+"the Script Editor."
+msgstr ""
+
+msgid ""
+"**Python console… · beta** opens the console (see :doc:`/how-"
+"to/extensions/python-console`)."
+msgstr ""
+
+msgid ""
+"**Detach the active window** puts the active window in a window of the "
+"system of its own, for another screen; **Bring back the detached "
+"windows** puts them all back."
+msgstr ""
+
+msgid ""
+"**Maximise the area** spreads the active area over the whole workspace, "
+"and back (:kbd:`⌃Space`)."
+msgstr ""
+
+msgid ""
+"**Area headers** shows or hides the headers of the areas, for this "
+"session."
 msgstr ""
 
 msgid "How to read the tables"
@@ -184,9 +381,6 @@ msgid "everywhere"
 msgstr ""
 
 msgid "Edit"
-msgstr ""
-
-msgid "Tools"
 msgstr ""
 
 msgid "Window"
@@ -452,6 +646,12 @@ msgid ""
 "files to move) and asks"
 msgstr ""
 
+msgid "Georeferencing…"
+msgstr ""
+
+msgid "The coordinate system of each graph of the file, and of its models"
+msgstr ""
+
 msgid "Room ▸"
 msgstr ""
 
@@ -518,6 +718,39 @@ msgstr "בצע שוב"
 msgid "Drawn by the system."
 msgstr ""
 
+msgid "Search commands…"
+msgstr ""
+
+msgid ":kbd:`⌘K`"
+msgstr ""
+
+msgid ":kbd:`Ctrl+K`"
+msgstr ""
+
+msgid ""
+"Find any command by its name, in English or in Italian, and see where it "
+"lives (F3)"
+msgstr ""
+
+msgid ""
+"The graph's tidy-ups: spellings, the order of the lanes (one undo step "
+"each)."
+msgstr ""
+
+msgid "Clean up ▸ Normalise spellings…"
+msgstr ""
+
+msgid ""
+"Bring the edges written with an older spelling to the canonical one, in "
+"the whole graph — one undo step"
+msgstr "מביא לכתיב הקנוני קשתות שנכתבו בכתיב ישן, בכל הגרף — ביטול אחד"
+
+msgid "Clean up ▸ Sort lanes by date"
+msgstr ""
+
+msgid "Put the epochs' lanes in the order of their dates (one undo step)"
+msgstr ""
+
 msgid "Cut"
 msgstr ""
 
@@ -530,79 +763,61 @@ msgstr ""
 msgid "Select All"
 msgstr ""
 
-msgid "Add node…"
-msgstr ""
-
-msgid ":kbd:`⇧A`"
-msgstr ""
-
-msgid ":kbd:`Shift+A`"
-msgstr ""
-
-msgid "Add a node (⇧A)"
-msgstr ""
-
-msgid "StratiMiner"
-msgstr "StratiMiner"
-
-msgid ""
-"StratiMiner: build a graph from a folder of unstructured sources, via the"
-" reviewable em\\_data.xlsx table"
-msgstr ""
-
-msgid "Normalise spellings…"
+msgid "Workspaces ▸"
 msgstr ""
 
 msgid ""
-"Bring the edges written with an older spelling to the canonical one, in "
-"the whole graph — one undo step"
-msgstr "מביא לכתיב הקנוני קשתות שנכתבו בכתיב ישן, בכל הגרף — ביטול אחד"
+"The workspaces of the bar: a click brings one to the front. Filled when "
+"the sub-menu opens: the workspaces of the bar, the active one marked."
+msgstr ""
 
-msgid "Colours…"
+msgid "Scripting workspace"
+msgstr ""
+
+msgid "The workspace of the Python console and of the Script Editor"
+msgstr ""
+
+msgid "Python console… · beta"
 msgstr ""
 
 msgid ""
-"The Colours window of the active Space: colour the proxies by type, epoch"
-" or a property"
+"Python on the open document (em of s3Dgraphy): every write one undo step,"
+" its code in the DTC — beta: a young function"
 msgstr ""
 
-msgid "Vocabularies…"
-msgstr ""
-
-msgid ""
-"The vocabularies installed on this computer, those this file uses, and "
-"the copy of their terms in the file"
-msgstr ""
-
-msgid "Extensions…"
+msgid "Detach the active window"
 msgstr ""
 
 msgid ""
-"Settings ▸ Extensions: what EMStudio knows and does — vocabularies, "
-"forms, colours (data) and commands, readers, Space layers and tools "
-"(code), from the repositories you trust"
+"The active window in a system window of its own (another screen, beside "
+"this one)"
 msgstr ""
 
-msgid "Check the chronology…"
+msgid "Bring back the detached windows"
 msgstr ""
 
-msgid ""
-"The epochs on a time axis, the overlaps with their delta and their "
-"remedies"
+msgid "Every detached window back into the main window"
 msgstr ""
 
-msgid "Georeferencing…"
+msgid "Maximise the area"
 msgstr ""
 
-msgid "The coordinate system of each graph of the file, and of its models"
+msgid "The active area over the whole workspace, and back (⌃Space)"
 msgstr ""
 
-msgid "Read as DosCo…"
+msgid "Area headers"
 msgstr ""
 
-msgid ""
-"Bring in a DosCo folder: each file with an EM id (D.12…) becomes the "
-"document of that id — its date, its licence, its role asked in one block"
+msgid "Show or hide the headers of the areas (for this session)"
+msgstr ""
+
+msgid "Minimize"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Enter Full Screen"
 msgstr ""
 
 msgid "Workspaces…"
@@ -650,16 +865,113 @@ msgstr ""
 msgid "Show All"
 msgstr ""
 
-msgid "Window (macOS menu bar)"
+msgid "Commands no menu draws, and where they are"
 msgstr ""
 
-msgid "Minimize"
+msgid ""
+"These commands are not drawn in any menu: they live where they serve. The"
+" command search (``Edit ▸ Search commands…``, :kbd:`F3`) finds each of "
+"them by its name and shows the place written here."
 msgstr ""
 
-msgid "Zoom"
+msgid "Where it is"
 msgstr ""
 
-msgid "Enter Full Screen"
+msgid "Open in place of the open files…"
+msgstr ""
+
+msgid "File ▸ Open (its box «in place of the open files»)"
+msgstr ""
+
+msgid ""
+"Choose a file, then close the open ones (asking for those with unsaved "
+"changes) and open it"
+msgstr ""
+
+msgid "File ▸ Bring in… (one of its choices)"
+msgstr ""
+
+msgid ""
+"Bring in — files into the study as documents: what each is, the document,"
+" its date, the epoch it represents"
+msgstr ""
+
+msgid "Bring in a folder…"
+msgstr ""
+
+msgid ""
+"Bring a folder in: read as DosCo, or by an extension that reads folders "
+"(a stack of geophysical slices, say)"
+msgstr ""
+
+msgid "Read as DosCo…"
+msgstr ""
+
+msgid ""
+"Bring in a DosCo folder: each file with an EM id (D.12…) becomes the "
+"document of that id — its date, its licence, its role asked in one block"
+msgstr ""
+
+msgid "StratiMiner"
+msgstr "StratiMiner"
+
+msgid ""
+"StratiMiner: build a graph from a folder of unstructured sources, via the"
+" reviewable em\\_data.xlsx table"
+msgstr ""
+
+msgid "Add node…"
+msgstr ""
+
+msgid "Matrix header ▸ Add ▾ · ⇧A"
+msgstr ""
+
+msgid "Add a node (⇧A)"
+msgstr ""
+
+msgid "Check the chronology…"
+msgstr ""
+
+msgid "Matrix header · the ▲ of the status bar"
+msgstr ""
+
+msgid ""
+"The epochs on a time axis, the overlaps with their delta and their "
+"remedies"
+msgstr ""
+
+msgid "Colours…"
+msgstr ""
+
+msgid "Preferences ▸ Colours · the Space's Colours ▾"
+msgstr ""
+
+msgid ""
+"The Colours window of the active Space: colour the proxies by type, epoch"
+" or a property"
+msgstr ""
+
+msgid "Vocabularies…"
+msgstr ""
+
+msgid "Preferences ▸ Vocabularies · the Inspector's values"
+msgstr ""
+
+msgid ""
+"The vocabularies installed on this computer, those this file uses, and "
+"the copy of their terms in the file"
+msgstr ""
+
+msgid "Extensions…"
+msgstr ""
+
+msgid "Preferences ▸ Extensions"
+msgstr ""
+
+msgid ""
+"Settings ▸ Extensions: what EMStudio knows and does — vocabularies, "
+"forms, colours (data) and commands, readers, Space layers and tools "
+"(code), from the repositories you trust"
 msgstr ""
 
 msgid "Mode"
@@ -823,5 +1135,40 @@ msgstr ""
 #~ "The extensions of this computer — "
 #~ "community packages and plugins: install "
 #~ "from disk, enable, remove"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The menu bar at the top of "
+#~ "the window holds **File**, **Edit**, "
+#~ "**Tools** and **Help**: the commands "
+#~ "that belong to the whole study "
+#~ "rather than to one window. The "
+#~ "same menus appear on the desktop "
+#~ "and on the web, because EMStudio "
+#~ "draws them from one table of "
+#~ "commands. On the macOS desktop the "
+#~ "system's menu bar carries them too, "
+#~ "together with the **EMStudio** and "
+#~ "**Window** menus of the Mac; on "
+#~ "Windows and Linux the menu bar "
+#~ "inside the window is the only one."
+#~ msgstr ""
+
+#~ msgid "The Tools menu open."
+#~ msgstr ""
+
+#~ msgid "Tools"
+#~ msgstr ""
+
+#~ msgid ":kbd:`⇧A`"
+#~ msgstr ""
+
+#~ msgid ":kbd:`Shift+A`"
+#~ msgstr ""
+
+#~ msgid "Normalise spellings…"
+#~ msgstr ""
+
+#~ msgid "Window (macOS menu bar)"
 #~ msgstr ""
 

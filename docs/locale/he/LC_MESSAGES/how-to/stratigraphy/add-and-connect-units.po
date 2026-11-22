@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: EMStudio 1.6.0-dev.136\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 12:14+0100\n"
+"POT-Creation-Date: 2026-11-22 09:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: he\n"
@@ -58,7 +58,9 @@ msgstr ""
 msgid "a right click on the empty canvas, or on the body of an open group;"
 msgstr ""
 
-msgid "``Tools ▸ Add node…``;"
+msgid ""
+"**Add ▾** in the header of the Matrix: the new node is born in the middle"
+" of the view;"
 msgstr ""
 
 msgid "a long press, on a touch screen."
@@ -306,4 +308,7 @@ msgstr ""
 
 msgid ":doc:`groups-and-folding` to gather the units into groups."
 msgstr ""
+
+#~ msgid "``Tools ▸ Add node…``;"
+#~ msgstr ""
 
