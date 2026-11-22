@@ -542,6 +542,19 @@ const SHOTS = [
       await sleep(2500);
     },
   },
+  // MICRO-SEG31 · the companion 3D is small beside the page: the gizmo, «ⓘ» open on the scene's state, «⋯», «Follow the text»
+  {
+    name: "space/compact-view", png: true, clip: '.tile-area[data-surface-type="scene"]', pad: 0, wait: 6000,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="7"]').scrollIntoView({ block: "start" }));
+      await sleep(600);
+      await click(p, '.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="7:0"]');
+      await sleep(9000);
+      await click(p, '.tile-area[data-surface-type="scene"] [data-vp="info"]');
+      await sleep(600);
+    },
+  },
   // …a unit picked in the 3D: the parts of the story about it lit, in the page and the Index
   {
     name: "narrative/about-unit", wait: 1500,

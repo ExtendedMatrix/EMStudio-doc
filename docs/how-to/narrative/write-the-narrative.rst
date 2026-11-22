@@ -332,10 +332,13 @@ The strip at the top of the scene has three buttons:
   :ref:`how-to-narrative-figures`).
 
 The scene is an area like the others: you can resize it, close it, or change it
-into another kind of window from its header.
+into another kind of window from its header. When it is small, it keeps only
+the gizmo, **Follow the text**, **ⓘ** (what it shows and what it follows) and
+**⋯**, which brings back **Frame this block**, **Insert this view as a figure**
+and the other buttons of the view (see :ref:`how-to-space-compact-view`).
 
 .. image:: /_static/screens/narrative/follow-3d.jpg
-   :alt: Chapter 8, Virtual Activity 1, with its first paragraph active: the 3D scene above the Matrix shows II A.D. with the proxies of VAct.01 Foundations of the temple only, USV102 and USV108 among them, and the strip Follow the text, Frame this block, Insert this view as a figure.
+   :alt: Chapter 8, Virtual Activity 1, with its first paragraph active: the 3D scene above the Matrix, a small area, shows II A.D. with the proxies of VAct.01 Foundations of the temple only, with the gizmo and the buttons ⓘ, ⋯ and Follow the text.
 
 From the scene to the text
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

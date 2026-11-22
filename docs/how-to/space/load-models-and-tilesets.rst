@@ -135,10 +135,16 @@ See what the scene holds
 .. image:: /_static/screens/workspaces/space-tileset.jpg
    :alt: The Space workspace with the tileset Survey_2015_egm2008 chosen in the Outliner and drawn in the 3D scene with the proxies over it; the chip Tileset · auto at the foot of the scene and the Inspector of the model on the right.
 
-- The line above the scene sums up the epoch shown: its name, how many models
-  it has, and how many of its units have a proxy. A click on it opens the epoch in every
+- The line above the scene sums up the epoch shown: its name, how many of its
+  units have a proxy and how many models it has, for example **64 of 108 units in
+  this epoch have a 3D proxy · 87 models**. The units without a proxy are not a
+  fault: they have no shape yet. A click on the line opens the epoch in every
   **Outliner**, where the epoch's **Models**, **Proxies**, **RMDoc** and **RMSF**
   are listed, and **Without proxy** gathers the units that have no shape yet.
+- Only when something does not load, the line adds a warning in red, for
+  example **⚠ 2 models do not load**, with **why**: it names the models (their
+  file is missing, refused or could not be read) and offers **Show in the
+  Outliner**, where the row of each one says which.
 - **Visibility ▾** switches the categories of the scene on and off: **RM models**,
   **Tilesets**, **RMDoc**, **RMSF**, **Proxies**, **Sketches**, **3D extractors**
   and **Territory / GIS**, each with how many there are in the epoch. The button
@@ -156,6 +162,35 @@ See what the scene holds
 - When nothing is drawn, a line under **The scene is empty** says why: a category
   switched off, a model hidden from the Outliner, a file missing, units without a
   proxy, a tileset whose root has not arrived.
+
+.. _how-to-space-compact-view:
+
+When the 3D view is small
+-------------------------
+
+A 3D view takes the form of the room it has, as the regions of Blender hide
+what does not fit. This holds for every 3D view: the Space, the scene beside
+the Narrative, a Space made smaller.
+
+- **Small** (narrower than 520 pixels or lower than 360): only the navigation
+  gizmo, smaller, stays on the scene, with two round buttons in the top left
+  corner. **ⓘ** opens the state of the scene: the view, the epoch, its units
+  with a proxy and its models, what does not load and why, the tileset, the
+  statistics, the hardware profile, and in the Narrative what the scene
+  follows. **⋯** brings back the buttons of the view: the toolbar, the column
+  under the gizmo, the overlays, the side tabs, the legend. The labels of the
+  proxies are off, so as not to cover the scene: **Labels of the proxies** in
+  **ⓘ** turns them on. In the Narrative, **Follow the text** stays beside the
+  two buttons.
+- **Medium** (up to 820 × 520): one line, the summary of the epoch, after **ⓘ**.
+- **Large**: everything as described above.
+
+When something does not load, **ⓘ** carries a red dot: open it to read why.
+The statistics (triangles, vertices, objects, draw calls) are shown only when
+you turn them on: ``Overlays ▸ Statistics``.
+
+.. image:: /_static/screens/space/compact-view.png
+   :alt: The 3D scene beside the Narrative, small: the gizmo, the buttons ⓘ and ⋯ and Follow the text; ⓘ open on This 3D view with the view, the epoch II A.D., its units with a 3D proxy and its models, the statistics off and the hardware profile.
 
 Choose what the scene loads
 ---------------------------
