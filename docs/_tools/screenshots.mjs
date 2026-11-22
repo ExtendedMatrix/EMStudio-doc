@@ -487,6 +487,42 @@ const SHOTS = [
       await p.evaluate(() => document.querySelector(".nidx-coh-sect")?.scrollIntoView({ block: "start" }));
     },
   },
+  // MICRO-SEG26 · the 3D that accompanies the text: chapter 8 (Virtual
+  // Activity 1) cites SU001–SU004, USV102, USV108; its paragraph clicked, the 3D
+  // follows (VAct.01's proxies, the cited units lit)
+  {
+    name: "narrative/follow-3d", wait: 9000,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      await p.evaluate(() => document.querySelector('.tile-area[data-surface-type="narrative"] .nv-chapter[data-chapter="7"]').scrollIntoView({ block: "start" }));
+      await sleep(600);
+      await click(p, '.tile-area[data-surface-type="narrative"] .nv-block-row[data-block="7:0"]');
+      await sleep(2500);
+    },
+  },
+  // …a unit picked in the 3D: the parts of the story about it lit, in the page and the Index
+  {
+    name: "narrative/about-unit", wait: 1500,
+    prep: async (p) => {
+      await ws(p, "narrative");
+      const id = await idOf(p, "USV101");
+      await p.evaluate((i) => window.__EM_DRAG__.aboutUnit(i), id);
+      await sleep(600);
+      await click(p, "[data-nv-about-go=next]");
+      await sleep(1500);
+    },
+  },
+  // …and from the Space, «Bring into the Narrative…» (the viewport's ⋯, Shift+N)
+  {
+    name: "narrative/bring-view", png: true, clip: '[data-app-dialog="nv-bring"] .modal-card', pad: 4, wait: 600,
+    prep: async (p) => {
+      await ws(p, "space");
+      await sleep(4000);
+      const w = await p.evaluate(() => window.__EM_DRAG__.wins().find((x) => x.type === "scene")?.id);
+      await p.evaluate((i) => { void window.__EM_DRAG__.bringView(i, null, "space"); }, w);
+      await p.waitForSelector('[data-app-dialog="nv-bring"]', { timeout: 10000 });
+    },
+  },
 ];
 
 // ---------------------------------------------------------------- run

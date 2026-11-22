@@ -40,7 +40,8 @@ The seven workspaces
      - Outliner · Files (on the **Disk**) · Shelf · Transformation chain (DTC)
    * - **Narrative**
      - How do I tell it, and what does it rest on?
-     - Index · Outliner · Narrative · Graph in **Matrix** mode · Inspector
+     - Index · Outliner · Narrative · 3D scene above a Graph in **Matrix** mode ·
+       Inspector
    * - **Space**
      - Where is it, and what shape does it have in each epoch?
      - Outliner · 3D scene · Tabular on the sheet **Models and proxies** · Graph in
@@ -102,12 +103,13 @@ Narrative
 
 The workspace of the story. The left column holds the **Index** of the story
 above the **Outliner**. The **Narrative** window, the page, is in the middle,
-open for writing. On the right, a **Graph** window in **Matrix** mode follows the
-chapter being read, beside the **Inspector**, which also carries the tools of
-the page.
+open for writing. On the right, a **3D scene** above a **Graph** window in
+**Matrix** mode: both follow the part being written or read (the scene the
+block, see :ref:`how-to-narrative-follow-3d`), beside the **Inspector**, which
+also carries the tools of the page.
 
 .. image:: /_static/screens/workspaces/narrative.jpg
-   :alt: The Narrative workspace: the Index of the story above the Outliner, the Narrative window open for writing on the first chapter, the Matrix and the Inspector on the right.
+   :alt: The Narrative workspace: the Index of the story above the Outliner, the Narrative window open for writing on the first chapter, the 3D scene above the Matrix, and the Inspector on the right.
 
 Space
 ~~~~~

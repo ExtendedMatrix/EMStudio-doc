@@ -20,8 +20,9 @@ Before you start
   reconstruction*, with chapters such as *Virtual Activity 2: colonnade*.
 - Click **Narrative** in the bar of the workspaces. The workspace shows the
   **Index** of the story above the **Outliner** on the left, the **Narrative**
-  window (the page) in the middle, and a **Graph** window in **Matrix** mode
-  beside the **Inspector** on the right (see :doc:`/reference/workspaces`).
+  window (the page) in the middle, a **3D scene** above a **Graph** window in
+  **Matrix** mode, and the **Inspector** on the right (see
+  :doc:`/reference/workspaces`).
 
 Start a story
 -------------
@@ -216,6 +217,8 @@ Matrix: an epoch, an activity, or a horizon of the project's periodization.
 **Story coverage** in the **Index** counts what the chapters and sections
 narrate: an epoch narrated, or one of its activities, is told.
 
+.. _how-to-narrative-figures:
+
 Insert the figures of an epoch or an activity
 ---------------------------------------------
 
@@ -298,6 +301,82 @@ A click on a notice takes the page to the part.
 .. image:: /_static/screens/narrative/coherence.jpg
    :alt: The Index with Coherence with the Matrix · 3 open: VAct.01 Foundations of the temple is now called VAct.01 Foundations and podium, in chapters 8 and 11, each with Keep as it is, and 3 bindings with no record yet, with Record them now.
 
+.. _how-to-narrative-follow-3d:
+
+Follow the text in 3D
+---------------------
+
+The **3D scene** of the Narrative workspace is the scene of the **Space**, and it
+accompanies the text: it follows the block you are on. In **Write** that is the
+block where the cursor is; in **Read**, the block at the upper third of the
+page when you stop scrolling.
+
+- When the block narrates an epoch or an activity (the chips under the title
+  of its chapter, section or subsection), the scene shows that epoch and only
+  the proxies and the models that belong to it, and frames them.
+- The units the block cites (its ``[[`` mentions, the **Cites** row of the
+  **Inspector**) are lit, and the other proxies are faded.
+- A block that narrates and cites nothing leaves the scene where it was.
+
+The camera flies to the new view, as when you double-click in the Space (with
+**Reduce motion** in the system settings it fades instead). While you write it
+waits until the cursor has stayed still for about a second, so the scene never
+moves while you type.
+
+The strip at the top of the scene has three buttons:
+
+- **Follow the text** turns the following off and on. It is on at the start.
+- **Frame this block** flies to the block now.
+- **Insert this view as a figure** puts the view as it is now into the story,
+  after the active block, as a live figure (see
+  :ref:`how-to-narrative-figures`).
+
+The scene is an area like the others: you can resize it, close it, or change it
+into another kind of window from its header.
+
+.. image:: /_static/screens/narrative/follow-3d.jpg
+   :alt: Chapter 8, Virtual Activity 1, with its first paragraph active: the 3D scene above the Matrix shows II A.D. with the proxies of VAct.01 Foundations of the temple only, USV102 and USV108 among them, and the strip Follow the text, Frame this block, Insert this view as a figure.
+
+From the scene to the text
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Click a proxy in the scene. The parts of the story that cite that unit, or
+narrate an activity it belongs to, are lit in the page, and the Index shows how
+many each chapter has. A bar at the top of the page says **«USV101» in 5 parts
+of the story**; **Next ›** and **‹ Previous** take you from one part to the
+next, and **×** removes the light.
+
+.. image:: /_static/screens/narrative/about-unit.jpg
+   :alt: USV101 picked in the 3D: the bar «USV101» in 5 parts of the story · 1/5 with Previous, Next and ×; chapter 8 lit in the page; in the Index, chapter 8 with the count 2.
+
+Bring a view of the Space into the story
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the **Space**, choose **Bring into the Narrative…** from the **⋯** menu of
+the 3D view, or press :kbd:`Shift+N` with the pointer over the scene. The view as
+it is now (the camera, the epoch, the layers shown, the selection, the level of
+detail) goes into the story, after the active block:
+
+- **Dynamic** inserts a live figure: it is drawn again from the graph when the
+  graph changes, and in **Read** **Open in the Space** opens the same view
+  again;
+- **Static** inserts a picture taken now, at high resolution, which does not
+  change with the graph. Its caption carries the date and the view's
+  parameters, for example *XX sec — view from the Space, frozen on 22 Nov 2026,
+  08:40 · epoch XX sec · User · Perspective · layers: …*.
+
+When no block is active, the window proposes the chapters and sections that
+narrate the epoch of the view (or the chapters, when none narrates it).
+``Edit ▸ Undo`` takes the figure back in one step.
+
+.. image:: /_static/screens/narrative/bring-view.png
+   :alt: The window Bring the view into the Narrative: the view as it is now goes into the story; no block is active, choose where; Into 1 · Rilievo e analisi — Introduction; the buttons Cancel, Static and Dynamic.
+
+Scripts read and drive the same things: ``em.app.narrative.follow`` (``True`` or
+``False``), ``em.app.narrative.active`` (the active block, what it narrates and
+cites), ``em.app.narrative.go(chapter, block)``, and the event
+``narrative-block-changed`` (``em.app.on("narrative-block-changed", fn)``).
+
 Find your way in a long story
 -----------------------------
 
@@ -331,7 +410,8 @@ What you get
 A story that lives in the graph: saved in the study file, divided into
 chapters, sections and subsections, signed chapter by chapter, with its lanes
 tied to the epochs and activities of the Matrix, their figures numbered and
-captioned, and the differences from the Matrix pointed out. Two
+captioned, the differences from the Matrix pointed out, and a 3D scene that
+follows the block you are writing or reading. Two
 **Narrative** windows can show the same story in two readings, one written and
 one read.
 
