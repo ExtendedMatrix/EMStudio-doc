@@ -17,7 +17,8 @@ Before you start
 
 - Switch to the **Archive** workspace. The **Files** window is at the centre,
   with the **Shelf** under it, the **Outliner** on the left and the
-  **Transformation chain (DTC)** on the right.
+  **Transformation chain (DTC)** on the right. Here the **Outliner** is the
+  index of the documents and their files (see :doc:`documents-and-files`).
 - Open a study for everything that concerns its files. With no study open, the
   **Files** window shows **Where to start**: **Recent projects**,
   **+ New project…** and **Allowed folders**.

@@ -88,15 +88,17 @@ never their tiles.
 Archive
 ~~~~~~~
 
-The workspace of the files. The **Outliner** is on the left. In the middle, the
-**Files** window shows the disk, with the **Shelf** under it: the list of
-resources the study works from. On the right, a **Graph** window fixed on the
-**Transformation chain (DTC)** draws the steps that produced each file. The
+The workspace of the files. The **Outliner** on the left is the index of the
+documents and their files (see :doc:`/how-to/archive/documents-and-files`). In
+the middle, the **Files** window shows the disk, with the **Shelf** under it: the
+list of resources the study works from. On the right, a **Graph** window fixed on
+the **Transformation chain (DTC)** draws the steps that produced each file. The
 Archive has no Inspector, because a file is not yet a node of the graph: the
-**Files** window shows the card of the document picked in the chain.
+**Files** window shows the card of the document picked in the Outliner or in the
+chain.
 
 .. image:: /_static/screens/workspaces/archive.jpg
-   :alt: The Archive workspace: the Files window on the disk with the study's folder, the empty Shelf under it, and the Transformation chain (DTC) on the right.
+   :alt: The Archive workspace: the Outliner lists the documents grouped by state, the Files window on the disk with the study's folder, the empty Shelf under it, and the Transformation chain (DTC) on the right.
 
 Narrative
 ~~~~~~~~~

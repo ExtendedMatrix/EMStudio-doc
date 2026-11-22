@@ -368,6 +368,31 @@ const SHOTS = [
   },
 
   // Archive: the Files window, the Shelf, the stamp, the versions, the targets
+  // MICRO-SEG28 · the Archive's Outliner: the documents and their files, D.01
+  // opened (its models, the tileset of its container), its card in Files
+  {
+    name: "windows/outliner-documents", png: true, wait: 1500,
+    clip: ['.tile-area[data-surface-type="outliner"]', `${FILES} .dcard`],
+    prep: async (p) => {
+      await ws(p, "assets");
+      const ol = '.tile-area[data-surface-type="outliner"]';
+      await p.waitForSelector(`${ol} .uo-row[data-doc-row="1"]`, { timeout: 30000 });
+      // the selection reveals its row (the index is a virtual list), then it opens
+      const id = await pick(p, "D.01", "document");
+      await p.locator(`${ol} .uo-row[data-doc-row="1"][data-id="${id}"] .uo-label`).first().click(); await sleep(1500);
+      await p.locator(`${ol} .uo-row[data-doc-row="1"][data-id="${id}"] .uo-tw`).first().click(); await sleep(800);
+      await p.evaluate((ol) => [...document.querySelectorAll(`${ol} .uo-row.uo-group`)]
+        .find((e) => /^(Models|Modelli)$/.test(e.querySelector(".uo-label")?.textContent?.trim() ?? ""))?.querySelector(".uo-tw")?.dispatchEvent(new MouseEvent("click", { bubbles: true })), ol);
+      await sleep(800);
+      // D.01's branch in sight: its row at the top of the list
+      await p.evaluate(([ol, id]) => {
+        const sc = document.querySelector(`${ol} .uo-scroll`);
+        const i = window.__EM_DRAG__.uoRows().findIndex((r) => r.id === id && r.docDrop);
+        if (sc && i >= 0) sc.scrollTop = Math.max(0, i * 22 - 44);
+      }, [ol, id]);
+      await sleep(800);
+    },
+  },
   {
     name: "windows/files", png: true, clip: FILES, wait: 2000,
     prep: async (p) => {
