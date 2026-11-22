@@ -79,9 +79,12 @@ Add a node linked to a selected one
 #. Click a unit, for example **SU004**.
 #. Press :kbd:`⇧A` with the pointer where the new node should go.
 #. Under **Linked to SU004** the menu offers what can be born already connected
-   to it. Each entry reads as a phrase: **US (or SU) above SU004** and **US (or
-   SU) below SU004** for the next unit of the sequence, then the paradata that
-   the datamodel lets hang from a unit, such as a **Property**.
+   to it. Each entry reads as a phrase: **US (or SU) later than SU004** and **US
+   (or SU) earlier than SU004** for the next unit of the sequence, then the
+   paradata that the datamodel lets hang from a unit, such as a **Property**.
+   The phrase says the relation, which is one of time; the Matrix draws the
+   later unit above the earlier one, as Harris does, so the new unit appears
+   above or below SU004.
 #. **Context of SU004** gathers the author, the licence, the embargo and the
    link of the unit in one row. **Link to an existing one…** connects SU004 to a
    node that is already in the graph (see below).

@@ -45,9 +45,10 @@ Add a unit
 #. With the pointer on the matrix, press :kbd:`⇧A` (:kbd:`Shift+A` on Windows
    and Linux). The **Add** menu opens where the pointer is.
 #. Under **Linked to** and the name of the selected unit, the menu offers the
-   kinds of unit that can sit above or below it. Choose a stratigraphic unit
-   *above* the selected one. You can also type in the search field, for example
-   ``US``, and press :kbd:`Enter`.
+   kinds of unit that can be later or earlier than it; the matrix draws them
+   above or below it. Choose a stratigraphic unit *later than* the selected
+   one. You can also type in the search field, for example ``US``, and press
+   :kbd:`Enter`.
 
 The new unit appears in the matrix, already connected to the one you had
 selected, in the epoch where you placed it. EMStudio gives it a name; to change
