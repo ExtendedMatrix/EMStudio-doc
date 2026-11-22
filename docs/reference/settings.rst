@@ -189,7 +189,8 @@ Developer
 
 Experimental functions
    **Turn on the experimental functions on this machine** opens functions still
-   being tried. It is off by default and takes effect after a reload.
+   being tried. Under the switch the page names the ones it holds today. It is
+   off by default and takes effect after a reload.
 
 Colours
 -------
