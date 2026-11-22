@@ -134,44 +134,73 @@ it, its container, its members or its life, and finally the project.
 A servile node (a paradata group, a property, an extractor, a combiner, a proxy,
 an annotated region) has no epoch of its own: it follows the node it serves.
 
-Visibility
-----------
+Obliteration
+------------
 
-A stratigraphic unit can exist and be buried: in the post-antique period the
-foundations of a temple are still the same unit, but what is seen is the earth
-that covers them. The **Visibility** section shows the unit's *diary*: the
-windows of time in which it was **in view**, **buried** or **partly in view**,
-each with its start and end. An end is a year, with its scissor when it is
-uncertain («1979 (between 1978 and 1979)»), or the start or the end of an epoch
-of the graph; an open end reaches the edge of the unit's life.
+Something that was part of the perceivable landscape of its time — the walking
+surface and what stood on it or emerged from it — can stop being so while it
+goes on existing: the buried villa exists, the ruin of a temple exists through
+the post-antique period under a field. This is its **obliteration**. It is not
+the life of the unit, not its conservation, and not being under the earth by
+function: a foundation under the building in use, or a fill in its cut, is not
+obliterated.
+
+The obliteration is normally not there, so the **Obliteration** section
+normally takes one quiet line, **+ Annotate an obliteration…**. Nothing said
+means nothing said: it never means «in view». The section opens into the
+unit's *diary* only when something is said, on the unit or on one of its
+containers. Each window is **obliterated** or **partly obliterated**, with its
+start and its end. The end of a window is the return to perception, an
+excavation for instance. Between two windows nothing is said.
+
+An end is a year, with its scissor when it is uncertain («1979 (between 1978
+and 1979)»), or the start or the end of an epoch of the graph. The start is
+often **doubtful**: «at some point of Post antiquity», «not before 600», or
+«start not known».
 
 Each window says whose it is, as the own and inherited values do:
 
 - **declared** on the unit, in plain ink, with **Remove**;
 - **inherited from** a container, in orange, with the container (a click goes
-  there): a functional unit, an activity, a time branch, or an epoch the unit
-  lives in. **Override here…** opens the form with the inherited window, to
-  declare one of the unit's own over it; it holds for this unit only;
-- **derived from the stratigraphy**, with the units that cover it or the cut
-  that opens it. Only physical relations count (covers, fills, cuts):
-  *is after* is a relation of time and is never read as a cover. A unit with
-  only temporal relations has nothing derived, and says so.
+  there). The container is a functional unit, an activity, a time branch, or
+  an epoch the unit lives in. **Override here…** opens the form with the
+  inherited window, to annotate one of the unit's own over it; it holds for this
+  unit only.
 
-A declared or inherited window carries its paradata: who states it (the
-extractor) and on which source. An inherited window keeps those of the
-container: who declared it there stays its author. Precedence: declared on the
-unit, then inherited from the nearest container, then derived. Two windows of
-the same state that touch are shown as one, with the pieces it is made of.
-Conflicts — a declaration against the stratigraphy, a window outside the life of
-the unit, two containers that disagree — are listed, never corrected.
+The obliteration is best annotated on the **functional unit** (the villa, the
+temple, the ruin): its members inherit it. A member that comes into being when
+the obliteration begins, or later, is not reached, and the section says so —
+the destruction layer that covers the ruin is a member of the ruin and is not
+obliterated by it.
 
-**Declare a window…** asks the state, the start and the end (a year with its
-scissor, an epoch, or open), the source (a document of the graph, a new one, or
-none) and who states it. It writes one property with its extractor and source,
-one step of undo. On a container (an epoch, an activity, a time branch, a
-functional unit) the section lists the windows declared there, which its
-members inherit. The diary is computed by the s3Dgraphy library through the
-bridge and never written into the file.
+Every window shows its paradata: who states it (the extractor), on which
+source, and what the extractor says — the doubts («start not known; the date of
+the first excavation to be checked»). An inherited window keeps those of the
+container: who annotated it there stays its author. Two windows that disagree,
+or a window outside the life of the unit, are listed as conflicts and never
+corrected.
+
+Nothing is derived from the stratigraphy. A physical cover (covers, fills) is
+only a hint, listed under the diary: an obliteration where nothing more recent
+covers, or a unit covered for which nobody annotated anything. When the section
+is a single line, the hints are in its tooltip. *Is after* is a relation of
+time and is never read as a cover.
+
+**+ Annotate an obliteration…** opens the form:
+
+- the state;
+- the start, as a year with its scissor, an epoch, or open, and **doubtful**,
+  ticked by default;
+- the end;
+- the source: a document of the graph, a new one, or none;
+- who states it, and the doubts.
+
+It writes one property with its extractor and source, one step of undo. On a
+container the section lists the windows annotated there, which its members
+inherit. The diary is computed by the s3Dgraphy library through the bridge and
+never written into the file. A file that still holds the *visibility* of
+earlier versions is read as an obliteration: *buried* becomes obliterated,
+*partly in view* partly obliterated, *in view* nothing said.
 
 Georeferencing
 --------------
