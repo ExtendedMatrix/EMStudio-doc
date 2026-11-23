@@ -34,8 +34,10 @@ A unit that has no number yet says so beside its type: **Without number**. It wa
 recognised and recorded before anyone assigned its number: from a report, from an
 oral confirmation, while putting old data in order. EMStudio never invents a
 number. A person assigns it, renames the unit and removes the mark. Until then the
-unit is among the warnings («unit without a number — assign one»), and so is a
-unit whose name holds no number at all; neither goes to pyArchInit.
+unit is among the warnings («unit without a number — assign one») and does not go
+to pyArchInit. A unit whose name holds no number at all (X_TOPSOIL) only has a
+warning («name without a number — assign one?»): it goes to pyArchInit with its
+name.
 
 With **Show node UUIDs (inspector)** turned on in the Settings, the node's
 identifier appears under its name.
