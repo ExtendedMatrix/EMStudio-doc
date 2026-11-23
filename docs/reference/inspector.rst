@@ -30,6 +30,13 @@ genre of a unit or the definition of a concept, each read in the interface's
 language. A survey or a document shows **Acquired** and **Valid until**: when the
 representation was made, and until when it holds. A property shows its **Value**.
 
+A unit that has no number yet says so beside its type: **Without number**. It was
+recognised and recorded before anyone assigned its number: from a report, from an
+oral confirmation, while putting old data in order. EMStudio never invents a
+number. A person assigns it, renames the unit and removes the mark. Until then the
+unit is among the warnings («unit without a number — assign one»), and so is a
+unit whose name holds no number at all; neither goes to pyArchInit.
+
 With **Show node UUIDs (inspector)** turned on in the Settings, the node's
 identifier appears under its name.
 
