@@ -12,4 +12,5 @@ Recipes for the Space workspace: where things are and what shape they have in ea
    load-models-and-tilesets
    colours-and-legend
    place-objects
+   wall-from-plan
    containers-and-epochs
