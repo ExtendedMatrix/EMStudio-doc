@@ -76,6 +76,12 @@ recorded) to make that point the next click: you can record the points in
 another order, or record one again before the box is made. :kbd:`Backspace`
 takes the last point back, :kbd:`Esc` clears them all.
 
+An alignment already read (:ref:`how-to-space-alignment`) can give the first
+two points: choose it in the row **Axis from an alignment** of the **Tool**
+tab, or click **Axis of a seven-point box** in the alignment's **Item** tab —
+points 1 and 2 are the ends of its line, and the next click records the
+thickness.
+
 .. image:: /_static/screens/space/box-bar.png
    :alt: The bar over the view says Point 3/7, Thickness, and the document of the clicks
 

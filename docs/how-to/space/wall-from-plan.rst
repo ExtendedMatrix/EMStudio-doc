@@ -89,6 +89,11 @@ wall from its axis: click the axis as a polyline, give the **Thickness**; the
 outline is born on the two sides with sharp joints, then the head is clicked as
 above.
 
+The axis can be an alignment already read (:ref:`how-to-space-alignment`): in
+*Axis + thickness* mode, before the first click, choose it in the row **Axis
+from an alignment**, or click **Axis of a wall** in the alignment's **Item**
+tab. Its points become the axis; :kbd:`Enter` closes the plan.
+
 Which model, which document
 ---------------------------
 
