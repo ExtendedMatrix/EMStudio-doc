@@ -13,4 +13,5 @@ Recipes for the Space workspace: where things are and what shape they have in ea
    colours-and-legend
    place-objects
    wall-from-plan
+   from-elevation
    containers-and-epochs

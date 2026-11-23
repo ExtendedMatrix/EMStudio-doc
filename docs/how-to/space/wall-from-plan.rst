@@ -155,13 +155,21 @@ Associate it with a unit
 #. The glb of the wall is written in ``proxies/`` beside the em.json, and the
    unit has its proxy.
 
+Where the proxy comes from is chosen in the **Tool** tab, as for every tool that
+draws a proxy (:ref:`how-to-space-proxy-document`): **Proxy from a document**
+(the default) or **Semantic shape, no document** — no extractor, the unit's
+proxy *to refine*. Each click can carry a note, written in the small field that
+opens beside the point (:ref:`how-to-space-annotate-points`): it becomes the
+description of its extractor; the **Item** tab shows it in the column **Note**.
+
 With **Annotate the points as extractors** on (the default, in the **Tool** tab)
 each click on a document's model becomes an **extractor** of that document,
 named by the rule ``D.nn.NN``, with the place of the reading on the model; the
 extractors are joined by a **combiner** under the unit's **Proxy Geometry**, in
 its paradata group — the same chain the Proxy Box of EM Tools writes. With the
-switch off, the proxy has no extractors and its paradata only says it was drawn
-in EMStudio. A click that fell on no document makes no extractor.
+switch off, the points make no extractor: one extractor says that the proxy as a
+whole is extracted from its document. A click that fell on no document makes no
+extractor.
 
 Only the clicked points become extractors. The corners of a hidden side are
 estimated, not read from a document: the description of the combiner and of the
