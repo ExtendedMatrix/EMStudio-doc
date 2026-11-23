@@ -15,4 +15,5 @@ Recipes for the Space workspace: where things are and what shape they have in ea
    wall-from-plan
    from-elevation
    seven-point-box
+   annotate-surface
    containers-and-epochs
