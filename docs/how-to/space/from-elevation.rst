@@ -97,7 +97,8 @@ The proxy's document: two modes
 -------------------------------
 
 Every tool that draws a proxy in the Space (**Wall from plan**, **From
-elevation**) asks, in the **Tool** tab, where the proxy comes from:
+elevation**, **Seven-point box**) asks, in the **Tool** tab, where the proxy
+comes from:
 
 - **Proxy from a document** (the default): the proxy is an extraction of a
   document — the one of the model the clicks fall on, shown at all times in the
