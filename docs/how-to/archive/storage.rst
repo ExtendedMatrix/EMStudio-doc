@@ -143,6 +143,12 @@ declared in the **Identity** tab of **Settings…**.
    (the button **Use** followed by a licence offers the StratiGraph default);
    fill **Embargo until** and **Why** when the bytes must wait; give a
    **Name of the lot**, such as ``Flight 2026-03``.
+#. Under **Responsible for publishing**, leave **me** when you answer for
+   publishing these files. When another person answers for it, choose
+   **somebody else (an accredited ORCID iD)** and write **Their ORCID iD**: the
+   room's server accepts only an iD that its node has accredited, and the
+   delivery is not signed until the iD is well formed. Files kept as a
+   reference cannot carry it.
 #. Under **Source of the files (DTC)**, say where the files come from. The
    **Kind of act** lists the kinds of the vocabulary in two families: a capture
    (a photograph, a laser scan, a survey) made the bytes, a retrieval brought
@@ -162,10 +168,22 @@ declared in the **Identity** tab of **Settings…**.
 #. More files can be dropped onto the area under the delivery, picked from the
    disk, or taken from the shelf with a button such as
    **Take the 5 from the shelf**.
-#. Click **Publish** followed by the number of files. Each row says whether its
-   file is **published**, **already there** or **failed**. The bytes go first,
-   then the graph records them by their fingerprint (sha256): the same bytes
-   uploaded twice are one object.
+#. Click **Publish** followed by the number of files. Each file goes to the
+   room together with the record of the delivery: the room's server reads the
+   record before it stores the bytes, and itself writes the file, its author,
+   licence and embargo, and its lot in the room's register. Each row says
+   whether its file is **published**, **already there** or **failed**. A
+   refused file says why — for example that depositing takes the editor role
+   in the room, or that the iD of the responsible is not accredited on the
+   node — and nothing of it is stored. The graph records each file by its
+   fingerprint (sha256): the same bytes uploaded twice are one object.
+
+   One lot is one act: when you change the kind of act, the source, the
+   responsible or the licence between two publications, the next files start a
+   new lot. A room on an older server (StratiGraph Server before
+   1.6.0-dev.93), and any file over 64 MiB, take the files the older way, and
+   the log says so; on such a server a responsible other than you cannot be
+   recorded, and the delivery stops before any file is sent.
 
 In the mode **Graph's files**, the files that are only on this computer have
 **Upload to the room**, and the files that are only in the room have
@@ -212,9 +230,10 @@ What you get
 
 - One window that answers, for each file of the study, where its bytes are: on
   this computer, in the room, in the bucket, or nowhere.
-- Files in the room with their author, licence, embargo and source said once
-  for the whole delivery, written into each file's stamp, and derivations
-  declared between them.
+- Files in the room with their author, licence, embargo, source and the person
+  who answers for publishing said once for the whole delivery, stored by the
+  room's server together with that record and written into each file's stamp,
+  and derivations declared between them.
 - Copies on the server proved identical before the disk copies are freed.
 
 The mode **Documents** of the same window shows the documents of the study as a
