@@ -95,6 +95,12 @@ Limits
   move them toward the camera. Where a mesh of the same object exists, read on
   the mesh; read on the splat what the mesh does not have.
 - An areal cannot be cut on a splat (above).
+- A single file has no levels of detail: seen from afar, its splats smaller
+  than a pixel are not drawn and the model thins out, even to nothing (the
+  east wall's 1.5 million splats of 7 mm, seen from 29 m). Its streamed forms
+  and a tileset of splats keep coarser levels for the distance: for a large
+  scene, convert it (Gaussian Splat Lite's ``gsl-build-rad`` and
+  ``gsl-build-sog``).
 - The *Versions for each use* and the flow of levels of detail of the meshes do
   not apply: a streamed splat chooses its detail by itself, within a budget of
   three million splats and the memory of the tiles (Preferences).
