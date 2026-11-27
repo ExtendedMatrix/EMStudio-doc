@@ -143,6 +143,18 @@ declared in the **Identity** tab of **Settings…**.
    (the button **Use** followed by a licence offers the StratiGraph default);
    fill **Embargo until** and **Why** when the bytes must wait; give a
    **Name of the lot**, such as ``Flight 2026-03``.
+#. Under **Source of the files (DTC)**, say where the files come from. The
+   **Kind of act** lists the kinds of the vocabulary in two families: a capture
+   (a photograph, a laser scan, a survey) made the bytes, a retrieval brought
+   bytes somebody else made. **Ingest** is chosen at the start, and says only
+   that the files entered here. A capture needs **Made on**, the date of the
+   photograph or of the scan, and may say its **Campaign**, **Technique** and
+   **Software**; a download needs **Retrieved from**, a URL or a DOI. The
+   **Source note** takes anything else, such as the archive or the disk the
+   files came from. **Documents** links every file to a document of the study;
+   when a document is selected, it is already chosen. **What will be written**
+   shows the record of the delivery as the room will keep it. Files made from
+   other files are declared later, in **Declare a derivation**.
 #. Choose **Where the bytes live**: **resident (in the room's store)** puts the
    bytes under the node's control, so that the embargo and the licence apply;
    **reference (they stay where they are)** records only where they are, and
@@ -200,8 +212,9 @@ What you get
 
 - One window that answers, for each file of the study, where its bytes are: on
   this computer, in the room, in the bucket, or nowhere.
-- Files in the room with their author, licence and embargo said once for the
-  whole delivery, and derivations declared between them.
+- Files in the room with their author, licence, embargo and source said once
+  for the whole delivery, written into each file's stamp, and derivations
+  declared between them.
 - Copies on the server proved identical before the disk copies are freed.
 
 The mode **Documents** of the same window shows the documents of the study as a
