@@ -17,4 +17,5 @@ Recipes for the Space workspace: where things are and what shape they have in ea
    seven-point-box
    annotate-surface
    alignment
+   gaussian-splats
    containers-and-epochs

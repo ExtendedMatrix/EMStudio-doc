@@ -19,6 +19,10 @@ detail, loaded as the camera comes closer. EMStudio reads it in three forms: a
 folder with ``tileset.json`` at its root, and the form RealityScan writes (a
 ``.json`` beside a folder of the same name).
 
+A **Gaussian splat** is a model too — one file, a streamed scene or a tileset
+of splats — with a rule of its own for the clicks: see
+:ref:`how-to-space-gaussian-splats`.
+
 Before you start
 ----------------
 

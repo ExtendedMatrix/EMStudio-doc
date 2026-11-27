@@ -82,7 +82,10 @@ EMStudio refuses the areal, and says why, when:
 - the surface **turns more than 90°** under the contour (around a column, over
   the corner of a block seen from one side only): split it into two areals, or
   refine it in Blender;
-- the contour crosses itself, or has no area.
+- the contour crosses itself, or has no area;
+- the model is a **Gaussian splat**: it has no triangles to cut. Draw the
+  areal on a mesh of the same object, or the face with *From elevation* (see
+  :ref:`how-to-space-gaussian-splats`).
 
 The contour stays: move a point (Backspace) and close it again.
 
