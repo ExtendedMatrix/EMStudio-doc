@@ -183,7 +183,12 @@ declared in the **Identity** tab of **Settings…**.
    new lot. A room on an older server (StratiGraph Server before
    1.6.0-dev.93), and any file over 64 MiB, take the files the older way, and
    the log says so; on such a server a responsible other than you cannot be
-   recorded, and the delivery stops before any file is sent.
+   recorded, and the delivery stops before any file is sent. If the server
+   fails while it takes a file, the row says **failed** with the server's own
+   words, and the file waits to be published again: it is never sent another
+   way instead. StratiGraph Server 1.6.0-dev.93 is such a case for every file
+   (its door cannot read a file and its record together): publishing to it
+   needs 1.6.0-dev.94 or later.
 
 In the mode **Graph's files**, the files that are only on this computer have
 **Upload to the room**, and the files that are only in the room have
